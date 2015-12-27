@@ -1,0 +1,9 @@
+<map id="libs/memory&#45;manager/src/memoryblobs.cc" name="libs/memory&#45;manager/src/memoryblobs.cc">
+<area shape="rect" id="node3" href="$memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="304,169,488,196"/>
+<area shape="rect" id="node12" href="$threadpool_8hh.html" title="scroom/threadpool.hh" alt="" coords="866,169,1030,196"/>
+<area shape="rect" id="node19" href="$blob-compression_8hh.html" title="blob&#45;compression.hh" alt="" coords="434,95,593,121"/>
+<area shape="rect" id="node9" href="$blockallocator_8hh.html" title="scroom/blockallocator.hh" alt="" coords="147,244,333,271"/>
+<area shape="rect" id="node10" href="$utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="526,244,669,271"/>
+<area shape="rect" id="node16" href="$semaphore_8hh.html" title="scroom/semaphore.hh" alt="" coords="795,244,962,271"/>
+<area shape="rect" id="node18" href="$threadpoolimpl_8hh.html" title="scroom/impl/threadpoolimpl.hh" alt="" coords="1327,244,1553,271"/>
+</map>

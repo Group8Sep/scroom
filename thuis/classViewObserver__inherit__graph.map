@@ -1,0 +1,4 @@
+<map id="ViewObserver" name="ViewObserver">
+<area shape="rect" id="node2" href="$classMeasure.html" title="{Measure\n||+ getPluginName()\l+ getPluginVersion()\l+ registerCapabilities()\l+ viewAdded()\l+ create()\l&#45; Measure()\l}" alt="" coords="5,145,180,296"/>
+<area shape="rect" id="node3" href="$classPipette.html" title="{Pipette\n||+ getPluginName()\l+ getPluginVersion()\l+ registerCapabilities()\l+ viewAdded()\l+ create()\l&#45; Pipette()\l}" alt="" coords="204,145,379,296"/>
+</map>

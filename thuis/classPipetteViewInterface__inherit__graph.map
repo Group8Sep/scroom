@@ -1,0 +1,5 @@
+<map id="PipetteViewInterface" name="PipetteViewInterface">
+<area shape="rect" id="node4" href="$classTiffPresentationWrapper.html" title="{TiffPresentationWrapper\n|&#45; presentation\l|+ ~TiffPresentationWrapper()\l+ load()\l+ getTransformationData()\l+ getRect()\l+ redraw()\l+ getProperty()\l+ isPropertyDefined()\l+ getTitle()\l+ getPixelAverages()\l+ viewAdded()\land 10 more...\l+ create()\l&#45; TiffPresentationWrapper()\l}" alt="" coords="5,455,220,708"/>
+<area shape="rect" id="node5" href="$classTransformPresentation.html" title="{TransformPresentation\n|&#45; transformationData\l&#45; presentation\l&#45; colormappable\l|+ open()\l+ close()\l+ getRect()\l+ redraw()\l+ getProperty()\l+ isPropertyDefined()\l+ getTitle()\l+ getAspectRatio()\l+ getPixelAverages()\l+ setColormap()\land 7 more...\l+ create()\l&#45; TransformPresentation()\l}" alt="" coords="244,440,432,723"/>
+<area shape="rect" id="node2" href="$classScroom_1_1Utils_1_1Base.html" title="Base class that inherits from boost::enable_shared_from_this. " alt="" coords="145,145,305,252"/>
+</map>

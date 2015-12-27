@@ -1,0 +1,19 @@
+<map id="inc/scroom/plugininformationinterface.hh" name="inc/scroom/plugininformationinterface.hh">
+<area shape="rect" id="node2" href="$measure_8hh.html" title="plugins/measure/src\l/measure.hh" alt="" coords="183,80,336,121"/>
+<area shape="rect" id="node5" href="$transparentoverlay_8hh.html" title="plugins/transparent\l&#45;overlay/src/transparentoverlay.hh" alt="" coords="538,80,783,121"/>
+<area shape="rect" id="node8" href="$tiff_8hh.html" title="plugins/tiff/src/tiff.hh" alt="" coords="1000,87,1156,114"/>
+<area shape="rect" id="node11" href="$pipette_8hh.html" title="plugins/pipette/src\l/pipette.hh" alt="" coords="1180,80,1323,121"/>
+<area shape="rect" id="node14" href="$pluginmanager_8hh.html" title="gui/src/pluginmanager.hh" alt="" coords="1655,87,1842,114"/>
+<area shape="rect" id="node17" href="$pluginmanager_8cc.html" title="gui/src/pluginmanager.cc" alt="" coords="1978,177,2162,203"/>
+<area shape="rect" id="node3" href="$plugins_2measure_2src_2main_8cc.html" title="plugins/measure/src\l/main.cc" alt="" coords="5,169,159,211"/>
+<area shape="rect" id="node4" href="$measure_8cc.html" title="plugins/measure/src\l/measure.cc" alt="" coords="183,169,336,211"/>
+<area shape="rect" id="node6" href="$plugins_2transparent-overlay_2src_2main_8cc.html" title="plugins/transparent\l&#45;overlay/src/main.cc" alt="" coords="361,169,515,211"/>
+<area shape="rect" id="node7" href="$transparentoverlay_8cc.html" title="plugins/transparent\l&#45;overlay/src/transparentoverlay.cc" alt="" coords="539,169,782,211"/>
+<area shape="rect" id="node9" href="$plugins_2tiff_2src_2main_8cc.html" title="plugins/tiff/src/main.cc" alt="" coords="807,177,976,203"/>
+<area shape="rect" id="node10" href="$tiff_8cc.html" title="plugins/tiff/src/tiff.cc" alt="" coords="1001,177,1155,203"/>
+<area shape="rect" id="node12" href="$plugins_2pipette_2src_2main_8cc.html" title="plugins/pipette/src\l/main.cc" alt="" coords="1180,169,1323,211"/>
+<area shape="rect" id="node13" href="$pipette_8cc.html" title="plugins/pipette/src\l/pipette.cc" alt="" coords="1347,169,1489,211"/>
+<area shape="rect" id="node15" href="$callbacks_8cc.html" title="gui/src/callbacks.cc" alt="" coords="1513,177,1661,203"/>
+<area shape="rect" id="node16" href="$loader_8cc.html" title="gui/src/loader.cc" alt="" coords="1685,177,1812,203"/>
+<area shape="rect" id="node18" href="$view_8cc.html" title="gui/src/view.cc" alt="" coords="1837,177,1954,203"/>
+</map>

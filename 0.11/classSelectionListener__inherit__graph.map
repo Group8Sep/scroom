@@ -1,0 +1,4 @@
+<map id="SelectionListener" name="SelectionListener">
+<area shape="rect" id="node2" href="$classMeasureHandler.html" title="{MeasureHandler\n|&#45; selection\l&#45; enabled\l|+ MeasureHandler()\l+ ~MeasureHandler()\l+ render()\l+ onSelectionStart()\l+ onSelectionUpdate()\l+ onSelectionEnd()\l+ onEnable()\l+ onDisable()\l+ create()\l&#45; displayMeasurement()\l&#45; drawCross()\l}" alt="" coords="5,197,183,435"/>
+<area shape="rect" id="node3" href="$classPipetteHandler.html" title="{PipetteHandler\n|&#45; selection\l&#45; enabled\l&#45; wasDisabled\l&#45; jobMutex\l&#45; currentJob\l|+ PipetteHandler()\l+ ~PipetteHandler()\l+ render()\l+ onSelectionStart()\l+ onSelectionUpdate()\l+ onSelectionEnd()\l+ onEnable()\l+ onDisable()\l+ computeValues()\l+ displayValues()\l+ create()\l}" alt="" coords="207,175,378,457"/>
+</map>

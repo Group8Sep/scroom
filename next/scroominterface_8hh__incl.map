@@ -1,0 +1,14 @@
+<map id="inc/scroom/scroominterface.hh" name="inc/scroom/scroominterface.hh">
+<area shape="rect" id="node6" href="$bookkeeping_8hh.html" title="scroom/bookkeeping.hh" alt="" coords="820,229,999,256"/>
+<area shape="rect" id="node16" href="$presentationinterface_8hh.html" title="scroom/presentationinterface.hh" alt="" coords="1639,80,1873,107"/>
+<area shape="rect" id="node30" href="$viewinterface_8hh.html" title="scroom/viewinterface.hh" alt="" coords="1665,155,1847,181"/>
+<area shape="rect" id="node10" href="$stuff_8hh.html" title="scroom/stuff.hh" alt="" coords="824,304,947,331"/>
+<area shape="rect" id="node11" href="$utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="459,304,602,331"/>
+<area shape="rect" id="node14" href="$bookkeepingimpl_8hh.html" title="scroom/impl/bookkeepingimpl.hh" alt="" coords="195,304,435,331"/>
+<area shape="rect" id="node20" href="$observable_8hh.html" title="scroom/observable.hh" alt="" coords="1001,155,1167,181"/>
+<area shape="rect" id="node21" href="$rectangle_8hh.html" title="scroom/rectangle.hh" alt="" coords="1965,229,2120,256"/>
+<area shape="rect" id="node24" href="$gtk-helpers_8hh.html" title="scroom/gtk&#45;helpers.hh" alt="" coords="2283,304,2451,331"/>
+<area shape="rect" id="node26" href="$linearsegment_8hh.html" title="scroom/linearsegment.hh" alt="" coords="1817,304,2005,331"/>
+<area shape="rect" id="node29" href="$point_8hh.html" title="scroom/point.hh" alt="" coords="2081,304,2207,331"/>
+<area shape="rect" id="node32" href="$progressinterface_8hh.html" title="scroom/progressinterface.hh" alt="" coords="1381,229,1589,256"/>
+</map>
