@@ -1,0 +1,31 @@
+<map id="inc/scroom/global.hh" name="inc/scroom/global.hh">
+<area shape="rect" id="node2" href="$bitmap-helpers_8hh.html" title="inc/scroom/bitmap&#45;helpers.hh" alt="" coords="509,229,725,256"/>
+<area shape="rect" id="node7" href="$tile_8hh.html" title="inc/scroom/tile.hh" alt="" coords="1557,80,1696,107"/>
+<area shape="rect" id="node3" href="$bitmap-helpers_8cc.html" title="libs/scroom/src/bitmap\l&#45;helpers.cc" alt="" coords="5,304,176,345"/>
+<area shape="rect" id="node4" href="$cmyklayeroperations_8cc.html" title="libs/tiled&#45;bitmap/src\l/cmyklayeroperations.cc" alt="" coords="526,304,709,345"/>
+<area shape="rect" id="node5" href="$layeroperations_8cc.html" title="libs/tiled&#45;bitmap/src\l/layeroperations.cc" alt="" coords="733,304,885,345"/>
+<area shape="rect" id="node6" href="$transparentoverlayviewinfo_8cc.html" title="plugins/transparent\l&#45;overlay/src/transparentoverlayviewinfo.cc" alt="" coords="200,304,501,345"/>
+<area shape="rect" id="node8" href="$pipettelayeroperations_8hh.html" title="inc/scroom/pipettelayeroperations.hh" alt="" coords="1283,155,1549,181"/>
+<area shape="rect" id="node19" href="$tiledbitmapinterface_8hh.html" title="inc/scroom/tiledbitmapinterface.hh" alt="" coords="1712,155,1963,181"/>
+<area shape="rect" id="node20" href="$tiledbitmaplayer_8hh.html" title="inc/scroom/tiledbitmaplayer.hh" alt="" coords="1995,229,2219,256"/>
+<area shape="rect" id="node9" href="$layeroperations_8hh.html" title="inc/scroom/layeroperations.hh" alt="" coords="813,229,1032,256"/>
+<area shape="rect" id="node11" href="$pipetteviewinterface_8hh.html" title="inc/scroom/pipetteviewinterface.hh" alt="" coords="1290,229,1542,256"/>
+<area shape="rect" id="node10" href="$tiffpresentation_8cc.html" title="plugins/tiff/src/tiffpresentation.cc" alt="" coords="1387,490,1623,517"/>
+<area shape="rect" id="node12" href="$transformpresentation_8hh.html" title="inc/scroom/transformpresentation.hh" alt="" coords="1149,311,1411,338"/>
+<area shape="rect" id="node15" href="$tiffpresentation_8hh.html" title="plugins/tiff/src/tiffpresentation.hh" alt="" coords="1323,401,1562,427"/>
+<area shape="rect" id="node16" href="$pipette_8hh.html" title="plugins/pipette/src\l/pipette.hh" alt="" coords="1618,304,1761,345"/>
+<area shape="rect" id="node13" href="$transformpresentation_8cc.html" title="libs/scroom/src/transformpresentation.cc" alt="" coords="960,401,1248,427"/>
+<area shape="rect" id="node14" href="$tiff_8cc.html" title="plugins/tiff/src/tiff.cc" alt="" coords="1208,490,1363,517"/>
+<area shape="rect" id="node17" href="$plugins_2pipette_2src_2main_8cc.html" title="plugins/pipette/src\l/main.cc" alt="" coords="1586,393,1729,435"/>
+<area shape="rect" id="node18" href="$pipette_8cc.html" title="plugins/pipette/src\l/pipette.cc" alt="" coords="1753,393,1895,435"/>
+<area shape="rect" id="node22" href="$tileviewstate_8hh.html" title="libs/tiled&#45;bitmap/src\l/tileviewstate.hh" alt="" coords="2031,304,2183,345"/>
+<area shape="rect" id="node29" href="$tiled-bitmap_8hh.html" title="libs/tiled&#45;bitmap/src\l/tiled&#45;bitmap.hh" alt="" coords="2752,393,2904,435"/>
+<area shape="rect" id="node21" href="$compressedtile_8cc.html" title="libs/tiled&#45;bitmap/src\l/compressedtile.cc" alt="" coords="1971,393,2123,435"/>
+<area shape="rect" id="node26" href="$layer_8cc.html" title="libs/tiled&#45;bitmap/src\l/layer.cc" alt="" coords="2207,304,2359,345"/>
+<area shape="rect" id="node27" href="$layercoordinator_8hh.html" title="libs/tiled&#45;bitmap/src\l/layercoordinator.hh" alt="" coords="2588,304,2740,345"/>
+<area shape="rect" id="node30" href="$tiledbitmapviewdata_8hh.html" title="libs/tiled&#45;bitmap/src\l/tiledbitmapviewdata.hh" alt="" coords="2383,304,2564,345"/>
+<area shape="rect" id="node23" href="$tiled-bitmap_8cc.html" title="libs/tiled&#45;bitmap/src\l/tiled&#45;bitmap.cc" alt="" coords="2417,483,2569,524"/>
+<area shape="rect" id="node24" href="$tiledbitmapviewdata_8cc.html" title="libs/tiled&#45;bitmap/src\l/tiledbitmapviewdata.cc" alt="" coords="2197,393,2376,435"/>
+<area shape="rect" id="node25" href="$tileviewstate_8cc.html" title="libs/tiled&#45;bitmap/src\l/tileviewstate.cc" alt="" coords="2400,393,2552,435"/>
+<area shape="rect" id="node28" href="$layercoordinator_8cc.html" title="libs/tiled&#45;bitmap/src\l/layercoordinator.cc" alt="" coords="2576,393,2728,435"/>
+</map>

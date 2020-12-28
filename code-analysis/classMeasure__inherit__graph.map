@@ -1,0 +1,5 @@
+<map id="Measure" name="Measure">
+<area shape="rect" id="node2" href="$classPluginInformationInterface.html" title="{PluginInformationInterface\n|+ pluginApiVersion\l|+ PluginInformationInterface()\l+ ~PluginInformationInterface()\l+ getPluginName()\l+ getPluginVersion()\l+ registerCapabilities()\l}" alt="" coords="5,145,237,281"/>
+<area shape="rect" id="node3" href="$classViewObserver.html" title="{ViewObserver\n||+ ~ViewObserver()\l+ viewAdded()\l}" alt="" coords="261,167,411,259"/>
+<area shape="rect" id="node4" href="$classScroom_1_1Utils_1_1Base.html" title="Base class that inherits from boost::enable_shared_from_this. " alt="" coords="435,160,595,267"/>
+</map>
