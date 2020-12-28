@@ -1,7 +1,7 @@
 var searchData=
 [
   ['magnitude',['magnitude',['../classScroom_1_1Utils_1_1Point.html#adff07f0c17215b6804a9415fd7118df4',1,'Scroom::Utils::Point']]],
-  ['main',['main',['../unittest-main_8cc.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;unittest-main.cc'],['../gui_2src_2main_8cc.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.cc']]],
+  ['main',['main',['../gui_2src_2main_8cc.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.cc'],['../unittest-main_8cc.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;unittest-main.cc']]],
   ['make_5fpoint',['make_point',['../namespaceScroom_1_1Utils.html#aec6a39c97f4eef824b1c61dfc3b01c72',1,'Scroom::Utils']]],
   ['make_5frect',['make_rect',['../namespaceScroom_1_1Utils.html#ab180ef35718c488735a883d3798c6c8b',1,'Scroom::Utils']]],
   ['make_5fsegment',['make_segment',['../namespaceScroom_1_1Utils.html#aa08251a37a550efbeabbf72d5e4b844d',1,'Scroom::Utils']]],
