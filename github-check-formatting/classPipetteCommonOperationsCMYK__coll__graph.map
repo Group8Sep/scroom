@@ -1,0 +1,6 @@
+<map id="PipetteCommonOperationsCMYK" name="PipetteCommonOperationsCMYK">
+<area shape="rect" id="node2" href="$classPipetteLayerOperations.html" title="{PipetteLayerOperations\n||+ ~PipetteLayerOperations()\l+ sumPixelValues()\l}" alt="" coords="5,410,216,502"/>
+<area shape="rect" id="node3" href="$classScroom_1_1Utils_1_1Base.html" title="Base class that inherits from boost::enable_shared_from_this. " alt="" coords="31,182,191,289"/>
+<area shape="rect" id="node5" href="$classCommonOperations.html" title="{CommonOperations\n||+ ~CommonOperations()\l+ drawPixelValue()\l+ drawPixelValue()\l+ initializeCairo()\l+ drawState()\l+ cacheZoom()\l+ draw()\l}" alt="" coords="241,373,429,539"/>
+<area shape="rect" id="node6" href="$classLayerOperations.html" title="Operations on a layer in the TiledBitmap. " alt="" coords="252,145,417,325"/>
+</map>
