@@ -175,6 +175,7 @@ var hierarchy =
         ] ],
         [ "TiledBitmapViewData", "classTiledBitmapViewData.html", null ]
       ] ],
+      [ "ResizablePresentationInterface", "classResizablePresentationInterface.html", null ],
       [ "Scroom::MemoryBlocks::BlockFactoryInterface", "classScroom_1_1MemoryBlocks_1_1BlockFactoryInterface.html", [
         [ "Scroom::MemoryBlocks::Detail::SwapBasedBlockAllocatorFactory", "classScroom_1_1MemoryBlocks_1_1Detail_1_1SwapBasedBlockAllocatorFactory.html", null ]
       ] ],
@@ -226,6 +227,10 @@ var hierarchy =
       [ "ViewObserver", "classViewObserver.html", [
         [ "Measure", "classMeasure.html", null ],
         [ "Pipette", "classPipette.html", null ]
+      ] ],
+      [ "WorkInterface", "classWorkInterface.html", [
+        [ "anonymous_namespace{progressbarmanager.cc}::ProgressBarPulser", "classanonymous__namespace_02progressbarmanager_8cc_03_1_1ProgressBarPulser.html", null ],
+        [ "PluginManager", "classPluginManager.html", null ]
       ] ]
     ] ],
     [ "ThreadPool::Job", "structThreadPool_1_1Job.html", null ],
@@ -258,7 +263,6 @@ var hierarchy =
     [ "QueueJumper", "classQueueJumper.html", null ],
     [ "Scroom::Detail::ThreadPool::QueueLock", "classScroom_1_1Detail_1_1ThreadPool_1_1QueueLock.html", null ],
     [ "Scroom::Utils::Detail::Registration< T >", "classScroom_1_1Utils_1_1Detail_1_1Registration.html", null ],
-    [ "ResizablePresentationInterface", "classResizablePresentationInterface.html", null ],
     [ "Selection", "structSelection.html", null ],
     [ "Scroom::Semaphore", "classScroom_1_1Semaphore.html", null ],
     [ "shared_ptr", null, [
@@ -292,10 +296,6 @@ var hierarchy =
     [ "Scroom::Utils::ProgressInterfaceBroadcaster::Unsubscriber", "classScroom_1_1Utils_1_1ProgressInterfaceBroadcaster_1_1Unsubscriber.html", null ],
     [ "Scroom::Bookkeeping::Detail::ValueType< V >", "classScroom_1_1Bookkeeping_1_1Detail_1_1ValueType.html", null ],
     [ "ThreadPool::WeakQueue", "classThreadPool_1_1WeakQueue.html", null ],
-    [ "WorkInterface", "classWorkInterface.html", [
-      [ "anonymous_namespace{progressbarmanager.cc}::ProgressBarPulser", "classanonymous__namespace_02progressbarmanager_8cc_03_1_1ProgressBarPulser.html", null ],
-      [ "PluginManager", "classPluginManager.html", null ]
-    ] ],
-    [ "Scroom::GtkHelpers::Detail::Wrapper", "classScroom_1_1GtkHelpers_1_1Detail_1_1Wrapper.html", null ],
-    [ "Scroom::GtkHelpers::Wrapper", "classScroom_1_1GtkHelpers_1_1Wrapper.html", null ]
+    [ "Scroom::GtkHelpers::Wrapper", "classScroom_1_1GtkHelpers_1_1Wrapper.html", null ],
+    [ "Scroom::GtkHelpers::Detail::Wrapper", "classScroom_1_1GtkHelpers_1_1Detail_1_1Wrapper.html", null ]
 ];

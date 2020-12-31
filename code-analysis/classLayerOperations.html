@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-190-gaef4c65</span>
+   &#160;<span id="projectnumber">0.11.1-194-ga61e262</span>
    </div>
   </td>
  </tr>
@@ -125,8 +125,8 @@ Collaboration diagram for LayerOperations:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa83553f22a46c5376d8552e9810262dc"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classLayerOperations.html">LayerOperations</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#aa83553f22a46c5376d8552e9810262dc">Ptr</a></td></tr>
-<tr class="separator:aa83553f22a46c5376d8552e9810262dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fac5c36fe0f27864b12af6e76d69ae8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#a9fac5c36fe0f27864b12af6e76d69ae8">Ptr</a> = boost::shared_ptr&lt; <a class="el" href="classLayerOperations.html">LayerOperations</a> &gt;</td></tr>
+<tr class="separator:a9fac5c36fe0f27864b12af6e76d69ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -136,19 +136,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a464745addca585c466e4ff3ec871ad51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#a464745addca585c466e4ff3ec871ad51">initializeCairo</a> (cairo_t *cr)=0</td></tr>
 <tr class="memdesc:a464745addca585c466e4ff3ec871ad51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the canvas for drawing the bitmap.  <a href="#a464745addca585c466e4ff3ec871ad51">More...</a><br /></td></tr>
 <tr class="separator:a464745addca585c466e4ff3ec871ad51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18dbbea49215d7af4e6127109a3b9b5a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#a18dbbea49215d7af4e6127109a3b9b5a">draw</a> (cairo_t *cr, const <a class="el" href="classConstTile.html#a81a28d4a0497d21235f38c35462a000c">ConstTile::Ptr</a> tile, <a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; double &gt; tileArea, <a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; double &gt; viewArea, int zoom, <a class="el" href="namespaceScroom_1_1Utils.html#aaa042b9004a74d5ed2695a85ddd7c63a">Scroom::Utils::Stuff</a> <a class="el" href="classLayerOperations.html#a6b39508e9c2583588ae2fff7f3889e28">cache</a>)=0</td></tr>
+<tr class="memitem:a18dbbea49215d7af4e6127109a3b9b5a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#a18dbbea49215d7af4e6127109a3b9b5a">draw</a> (cairo_t *cr, const <a class="el" href="classConstTile.html#aa3d92cdcb7283a3957fd4511817ae162">ConstTile::Ptr</a> tile, <a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; double &gt; tileArea, <a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; double &gt; viewArea, int zoom, <a class="el" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a> <a class="el" href="classLayerOperations.html#a6b39508e9c2583588ae2fff7f3889e28">cache</a>)=0</td></tr>
 <tr class="memdesc:a18dbbea49215d7af4e6127109a3b9b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the given tileArea into the given viewArea at the requested zoom level.  <a href="#a18dbbea49215d7af4e6127109a3b9b5a">More...</a><br /></td></tr>
 <tr class="separator:a18dbbea49215d7af4e6127109a3b9b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0ea05d6bd0fb7aecd041c17ad0b6862"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#ab0ea05d6bd0fb7aecd041c17ad0b6862">drawState</a> (cairo_t *cr, <a class="el" href="tiledbitmapinterface_8hh.html#ac84d9b534c1947f639684269d09f7921">TileState</a> s, <a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; double &gt; viewArea)=0</td></tr>
 <tr class="memdesc:ab0ea05d6bd0fb7aecd041c17ad0b6862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the given state into the given viewArea.  <a href="#ab0ea05d6bd0fb7aecd041c17ad0b6862">More...</a><br /></td></tr>
 <tr class="separator:ab0ea05d6bd0fb7aecd041c17ad0b6862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b39508e9c2583588ae2fff7f3889e28"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceScroom_1_1Utils.html#aaa042b9004a74d5ed2695a85ddd7c63a">Scroom::Utils::Stuff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#a6b39508e9c2583588ae2fff7f3889e28">cache</a> (const <a class="el" href="classConstTile.html#a81a28d4a0497d21235f38c35462a000c">ConstTile::Ptr</a> tile)</td></tr>
+<tr class="memitem:a6b39508e9c2583588ae2fff7f3889e28"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#a6b39508e9c2583588ae2fff7f3889e28">cache</a> (const <a class="el" href="classConstTile.html#aa3d92cdcb7283a3957fd4511817ae162">ConstTile::Ptr</a> tile)</td></tr>
 <tr class="memdesc:a6b39508e9c2583588ae2fff7f3889e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache data for use during later <a class="el" href="classLayerOperations.html#ad3c780a2528ee20ca717cfe190b3d568" title="Cache data for use during later draw() calls. ">cacheZoom()</a> calls.  <a href="#a6b39508e9c2583588ae2fff7f3889e28">More...</a><br /></td></tr>
 <tr class="separator:a6b39508e9c2583588ae2fff7f3889e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3c780a2528ee20ca717cfe190b3d568"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceScroom_1_1Utils.html#aaa042b9004a74d5ed2695a85ddd7c63a">Scroom::Utils::Stuff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#ad3c780a2528ee20ca717cfe190b3d568">cacheZoom</a> (const <a class="el" href="classConstTile.html#a81a28d4a0497d21235f38c35462a000c">ConstTile::Ptr</a> tile, int zoom, <a class="el" href="namespaceScroom_1_1Utils.html#aaa042b9004a74d5ed2695a85ddd7c63a">Scroom::Utils::Stuff</a> <a class="el" href="classLayerOperations.html#a6b39508e9c2583588ae2fff7f3889e28">cache</a>)</td></tr>
+<tr class="memitem:ad3c780a2528ee20ca717cfe190b3d568"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#ad3c780a2528ee20ca717cfe190b3d568">cacheZoom</a> (const <a class="el" href="classConstTile.html#aa3d92cdcb7283a3957fd4511817ae162">ConstTile::Ptr</a> tile, int zoom, <a class="el" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a> <a class="el" href="classLayerOperations.html#a6b39508e9c2583588ae2fff7f3889e28">cache</a>)</td></tr>
 <tr class="memdesc:ad3c780a2528ee20ca717cfe190b3d568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache data for use during later <a class="el" href="classLayerOperations.html#a18dbbea49215d7af4e6127109a3b9b5a" title="Draw the given tileArea into the given viewArea at the requested zoom level. ">draw()</a> calls.  <a href="#ad3c780a2528ee20ca717cfe190b3d568">More...</a><br /></td></tr>
 <tr class="separator:ad3c780a2528ee20ca717cfe190b3d568"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e2f563faba4cb6435d393435d0b975b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#a6e2f563faba4cb6435d393435d0b975b">reduce</a> (<a class="el" href="classTile.html#a4b8d0fef6c4289b51cd1f4c1c626d4f4">Tile::Ptr</a> target, const <a class="el" href="classConstTile.html#a81a28d4a0497d21235f38c35462a000c">ConstTile::Ptr</a> source, int x, int y)=0</td></tr>
+<tr class="memitem:a6e2f563faba4cb6435d393435d0b975b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#a6e2f563faba4cb6435d393435d0b975b">reduce</a> (<a class="el" href="classTile.html#a4b8d0fef6c4289b51cd1f4c1c626d4f4">Tile::Ptr</a> target, const <a class="el" href="classConstTile.html#aa3d92cdcb7283a3957fd4511817ae162">ConstTile::Ptr</a> source, int x, int y)=0</td></tr>
 <tr class="memdesc:a6e2f563faba4cb6435d393435d0b975b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduce the source tile by a factor of 8.  <a href="#a6e2f563faba4cb6435d393435d0b975b">More...</a><br /></td></tr>
 <tr class="separator:a6e2f563faba4cb6435d393435d0b975b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -178,14 +178,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="tiledbitmapinterface_8hh_source.html#l00050">50</a> of file <a class="el" href="tiledbitmapinterface_8hh_source.html">tiledbitmapinterface.hh</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aa83553f22a46c5376d8552e9810262dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa83553f22a46c5376d8552e9810262dc">&#9670;&nbsp;</a></span>Ptr</h2>
+<a id="a9fac5c36fe0f27864b12af6e76d69ae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fac5c36fe0f27864b12af6e76d69ae8">&#9670;&nbsp;</a></span>Ptr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="classLayerOperations.html">LayerOperations</a>&gt; <a class="el" href="classLayerOperations.html#aa83553f22a46c5376d8552e9810262dc">LayerOperations::Ptr</a></td>
+          <td class="memname">using <a class="el" href="classLayerOperations.html#a9fac5c36fe0f27864b12af6e76d69ae8">LayerOperations::Ptr</a> =  boost::shared_ptr&lt;<a class="el" href="classLayerOperations.html">LayerOperations</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -205,9 +205,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceScroom_1_1Utils.html#aaa042b9004a74d5ed2695a85ddd7c63a">Scroom::Utils::Stuff</a> LayerOperations::cache </td>
+          <td class="memname">virtual <a class="el" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a> LayerOperations::cache </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classConstTile.html#a81a28d4a0497d21235f38c35462a000c">ConstTile::Ptr</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classConstTile.html#aa3d92cdcb7283a3957fd4511817ae162">ConstTile::Ptr</a>&#160;</td>
           <td class="paramname"><em>tile</em></td><td>)</td>
           <td></td>
         </tr>
@@ -229,10 +229,10 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classOperationsCMYK4.html#a65f485fa7be9e4edfb224df02566ab69">OperationsCMYK4</a>, <a class="el" href="classOperationsCMYK8.html#a7c81959f335c000aaa1cfe204db9f2ce">OperationsCMYK8</a>, <a class="el" href="classOperationsCMYK16.html#add30970b0c17832b7c827ee7a0332ec5">OperationsCMYK16</a>, <a class="el" href="classOperationsCMYK32.html#af28e0ad41646e1e965e256da592a3587">OperationsCMYK32</a>, <a class="el" href="classOperationsColormapped.html#a89ab5ff3dd03fff05d91077fc6bda836">OperationsColormapped</a>, <a class="el" href="classOperations.html#ab938c3da9ec8de6c4b03c932a98fa796">Operations</a>, <a class="el" href="classOperations24bpp.html#a9c574672ebc4019e5298fe86f2865be6">Operations24bpp</a>, <a class="el" href="classOperations8bpp.html#acb050e581fe4621e4513ea8040726c05">Operations8bpp</a>, and <a class="el" href="classOperations1bpp.html#af9a980852d501bc2b9d1d51adae0e3f8">Operations1bpp</a>.</p>
+<p>Reimplemented in <a class="el" href="classOperationsCMYK4.html#aaa39ad20e3de031b4ae14dddf627cd99">OperationsCMYK4</a>, <a class="el" href="classOperationsCMYK8.html#aa0f8b3378ffe69135079ccccba655966">OperationsCMYK8</a>, <a class="el" href="classOperationsCMYK16.html#a7675e63ccee771f5bb16e810c9fd10cb">OperationsCMYK16</a>, <a class="el" href="classOperationsCMYK32.html#ac7a33924a69518252ff423436a919d9b">OperationsCMYK32</a>, <a class="el" href="classOperationsColormapped.html#a685b618dafbd7e29e36b5b4d37dd352d">OperationsColormapped</a>, <a class="el" href="classOperations.html#a34f60a1c9cb73cb9ce8517f2de873855">Operations</a>, <a class="el" href="classOperations24bpp.html#a3f1925349b694d39d20dbe053b23af49">Operations24bpp</a>, <a class="el" href="classOperations8bpp.html#aea746ca5f6670b6860d7c7f9a58c6977">Operations8bpp</a>, and <a class="el" href="classOperations1bpp.html#acd34023681c3d87efaad4616a8af90ac">Operations1bpp</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="tiledbitmapinterface_8hh_source.html#l00126">126</a> of file <a class="el" href="tiledbitmapinterface_8hh_source.html">tiledbitmapinterface.hh</a>.</p>
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="unused_8hh.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a>(tile);</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceScroom_1_1Utils.html#aaa042b9004a74d5ed2695a85ddd7c63a">Scroom::Utils::Stuff</a>();</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  }</div><div class="ttc" id="namespaceScroom_1_1Utils_html_aaa042b9004a74d5ed2695a85ddd7c63a"><div class="ttname"><a href="namespaceScroom_1_1Utils.html#aaa042b9004a74d5ed2695a85ddd7c63a">Scroom::Utils::Stuff</a></div><div class="ttdeci">boost::shared_ptr&lt; void &gt; Stuff</div><div class="ttdoc">Stuff is a pointer to some private data. </div><div class="ttdef"><b>Definition:</b> <a href="stuff_8hh_source.html#l00020">stuff.hh:20</a></div></div>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="unused_8hh.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a>(tile);</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a>();</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  }</div><div class="ttc" id="namespaceScroom_1_1Utils_html_af120558cf332de898d5e994cc6645d9a"><div class="ttname"><a href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a></div><div class="ttdeci">boost::shared_ptr&lt; void &gt; Stuff</div><div class="ttdoc">Stuff is a pointer to some private data. </div><div class="ttdef"><b>Definition:</b> <a href="stuff_8hh_source.html#l00020">stuff.hh:20</a></div></div>
 <div class="ttc" id="unused_8hh_html_a86d500a34c624c2cae56bc25a31b12f3"><div class="ttname"><a href="unused_8hh.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a></div><div class="ttdeci">#define UNUSED(x)</div><div class="ttdef"><b>Definition:</b> <a href="unused_8hh_source.html#l00010">unused.hh:10</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -247,9 +247,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceScroom_1_1Utils.html#aaa042b9004a74d5ed2695a85ddd7c63a">Scroom::Utils::Stuff</a> LayerOperations::cacheZoom </td>
+          <td class="memname">virtual <a class="el" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a> LayerOperations::cacheZoom </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classConstTile.html#a81a28d4a0497d21235f38c35462a000c">ConstTile::Ptr</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classConstTile.html#aa3d92cdcb7283a3957fd4511817ae162">ConstTile::Ptr</a>&#160;</td>
           <td class="paramname"><em>tile</em>, </td>
         </tr>
         <tr>
@@ -261,7 +261,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceScroom_1_1Utils.html#aaa042b9004a74d5ed2695a85ddd7c63a">Scroom::Utils::Stuff</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a>&#160;</td>
           <td class="paramname"><em>cache</em>&#160;</td>
         </tr>
         <tr>
@@ -289,11 +289,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classOperations1bppClipped.html#a57b40a001bd85c57e4251c54725ac84c">Operations1bppClipped</a>, and <a class="el" href="classCommonOperations.html#a0637477c281ebfaed924796b031ffebf">CommonOperations</a>.</p>
+<p>Reimplemented in <a class="el" href="classOperations1bppClipped.html#ab341f8c36d6294b164e801b53ed9f018">Operations1bppClipped</a>, and <a class="el" href="classCommonOperations.html#ac640497d14f970070492fb62663256f7">CommonOperations</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="tiledbitmapinterface_8hh_source.html#l00150">150</a> of file <a class="el" href="tiledbitmapinterface_8hh_source.html">tiledbitmapinterface.hh</a>.</p>
-<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  {</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="unused_8hh.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a>(tile);</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="unused_8hh.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a>(zoom);</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="unused_8hh.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a>(<a class="code" href="classLayerOperations.html#a6b39508e9c2583588ae2fff7f3889e28">cache</a>);</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceScroom_1_1Utils.html#aaa042b9004a74d5ed2695a85ddd7c63a">Scroom::Utils::Stuff</a>();</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  }</div><div class="ttc" id="classLayerOperations_html_a6b39508e9c2583588ae2fff7f3889e28"><div class="ttname"><a href="classLayerOperations.html#a6b39508e9c2583588ae2fff7f3889e28">LayerOperations::cache</a></div><div class="ttdeci">virtual Scroom::Utils::Stuff cache(const ConstTile::Ptr tile)</div><div class="ttdoc">Cache data for use during later cacheZoom() calls. </div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmapinterface_8hh_source.html#l00126">tiledbitmapinterface.hh:126</a></div></div>
-<div class="ttc" id="namespaceScroom_1_1Utils_html_aaa042b9004a74d5ed2695a85ddd7c63a"><div class="ttname"><a href="namespaceScroom_1_1Utils.html#aaa042b9004a74d5ed2695a85ddd7c63a">Scroom::Utils::Stuff</a></div><div class="ttdeci">boost::shared_ptr&lt; void &gt; Stuff</div><div class="ttdoc">Stuff is a pointer to some private data. </div><div class="ttdef"><b>Definition:</b> <a href="stuff_8hh_source.html#l00020">stuff.hh:20</a></div></div>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  {</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="unused_8hh.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a>(tile);</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="unused_8hh.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a>(zoom);</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="unused_8hh.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a>(<a class="code" href="classLayerOperations.html#a6b39508e9c2583588ae2fff7f3889e28">cache</a>);</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a>();</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  }</div><div class="ttc" id="classLayerOperations_html_a6b39508e9c2583588ae2fff7f3889e28"><div class="ttname"><a href="classLayerOperations.html#a6b39508e9c2583588ae2fff7f3889e28">LayerOperations::cache</a></div><div class="ttdeci">virtual Scroom::Utils::Stuff cache(const ConstTile::Ptr tile)</div><div class="ttdoc">Cache data for use during later cacheZoom() calls. </div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmapinterface_8hh_source.html#l00126">tiledbitmapinterface.hh:126</a></div></div>
+<div class="ttc" id="namespaceScroom_1_1Utils_html_af120558cf332de898d5e994cc6645d9a"><div class="ttname"><a href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a></div><div class="ttdeci">boost::shared_ptr&lt; void &gt; Stuff</div><div class="ttdoc">Stuff is a pointer to some private data. </div><div class="ttdef"><b>Definition:</b> <a href="stuff_8hh_source.html#l00020">stuff.hh:20</a></div></div>
 <div class="ttc" id="unused_8hh_html_a86d500a34c624c2cae56bc25a31b12f3"><div class="ttname"><a href="unused_8hh.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a></div><div class="ttdeci">#define UNUSED(x)</div><div class="ttdef"><b>Definition:</b> <a href="unused_8hh_source.html#l00010">unused.hh:10</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -316,7 +316,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classConstTile.html#a81a28d4a0497d21235f38c35462a000c">ConstTile::Ptr</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classConstTile.html#aa3d92cdcb7283a3957fd4511817ae162">ConstTile::Ptr</a>&#160;</td>
           <td class="paramname"><em>tile</em>, </td>
         </tr>
         <tr>
@@ -340,7 +340,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceScroom_1_1Utils.html#aaa042b9004a74d5ed2695a85ddd7c63a">Scroom::Utils::Stuff</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a>&#160;</td>
           <td class="paramname"><em>cache</em>&#160;</td>
         </tr>
         <tr>
@@ -369,7 +369,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classOperations.html#a50a470b55a747238017726623131ac23">Operations</a>, <a class="el" href="classOperations8bpp.html#a52a5122ef13751d23465d178752df0a4">Operations8bpp</a>, <a class="el" href="classOperations1bpp.html#abc56377474fb0d6a142c2cf416c0d2b5">Operations1bpp</a>, and <a class="el" href="classCommonOperations.html#a70af867dadd9f93328c39804b5aa8c9d">CommonOperations</a>.</p>
+<p>Implemented in <a class="el" href="classOperations.html#ae374a98884534b01cad412ed7a328ad6">Operations</a>, <a class="el" href="classOperations8bpp.html#a2dc55faa7a83522a4e7539233c6a5380">Operations8bpp</a>, <a class="el" href="classOperations1bpp.html#a2685c91439850dcb4efd9d52ea193f8a">Operations1bpp</a>, and <a class="el" href="classCommonOperations.html#ac0bca5f2611c1000ee85c517e637e489">CommonOperations</a>.</p>
 
 </div>
 </div>
@@ -417,7 +417,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The associated tile is likely not loaded or not initialized or in whatever other TileState that doesn't allow its contents to be drawn.</p>
 <p>Something needs to be drawn in the given <code>viewArea</code> anyway. Implementors might want to just draw an empty rectangle, maybe color-coded to reflect the state of the tile. </p>
 
-<p>Implemented in <a class="el" href="classCommonOperations.html#afcf1631cd4a708982665145a9e5eb54b">CommonOperations</a>.</p>
+<p>Implemented in <a class="el" href="classCommonOperations.html#acdd24da111ccd9c24e45bedea6035385">CommonOperations</a>.</p>
 
 </div>
 </div>
@@ -447,7 +447,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Return the number of bits per pixel that the layer will use. </p>
 <p>This number will be used to compute the amount of memory required to store one tile </p>
 
-<p>Implemented in <a class="el" href="classOperationsCMYK4.html#a1d700b033af30b838b72008bd6da985f">OperationsCMYK4</a>, <a class="el" href="classOperationsCMYK8.html#acad46b46e129c5bd277a8f149e0a8043">OperationsCMYK8</a>, <a class="el" href="classOperationsCMYK16.html#a12e5741f1fe99cf6d360727febc2e1a5">OperationsCMYK16</a>, <a class="el" href="classOperationsCMYK32.html#a65ac5ef3381da0c534a57d6f84610acf">OperationsCMYK32</a>, <a class="el" href="classOperations1bppClipped.html#a159fc28fee4f296671aa2bc1b064a167">Operations1bppClipped</a>, <a class="el" href="classOperationsColormapped.html#a4e698735956f96103137bd39561d56c1">OperationsColormapped</a>, <a class="el" href="classOperations.html#a7e27858b123519249f2408ea75581bca">Operations</a>, <a class="el" href="classOperations24bpp.html#a8eb2d2a4cc5076aea49779bab019d773">Operations24bpp</a>, <a class="el" href="classOperations8bpp.html#a1054c0764b8218447b2b0ac896407804">Operations8bpp</a>, and <a class="el" href="classOperations1bpp.html#a320634f1325920ed9eca15317087a9d7">Operations1bpp</a>.</p>
+<p>Implemented in <a class="el" href="classOperationsCMYK4.html#a6d966f8782083e14e019b8de58a17f45">OperationsCMYK4</a>, <a class="el" href="classOperationsCMYK8.html#a13995c2ab4d3a716611daa51d803f35a">OperationsCMYK8</a>, <a class="el" href="classOperationsCMYK16.html#ad3b247fb587bce93d52152b0e7b3fc84">OperationsCMYK16</a>, <a class="el" href="classOperationsCMYK32.html#ad279dff988d02c4b08f1b06f6a115ed9">OperationsCMYK32</a>, <a class="el" href="classOperations1bppClipped.html#a8ccd4b7d9e37341e52f65be4fd9d345b">Operations1bppClipped</a>, <a class="el" href="classOperationsColormapped.html#a0586580a22925a7f487ab22563c0f69c">OperationsColormapped</a>, <a class="el" href="classOperations.html#a4462fade86a602b5b0cf30d26297529d">Operations</a>, <a class="el" href="classOperations24bpp.html#a9cfec7016e2fef4b5423ded4949a93f0">Operations24bpp</a>, <a class="el" href="classOperations8bpp.html#a8776034d62533c8d8166e106f8cb79d6">Operations8bpp</a>, and <a class="el" href="classOperations1bpp.html#a9e4be143e521211ab7177d518ca93f5e">Operations1bpp</a>.</p>
 
 </div>
 </div>
@@ -478,7 +478,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Initialize the canvas for drawing the bitmap. </p>
 <p>When <a class="el" href="classTiledBitmapInterface.html#a24dd76d8800fb60b066e28a3bdb57888" title="Redraw a portion of the bitmap. ">TiledBitmapInterface::redraw()</a> is called, (a portion of) the <a class="el" href="classLayer.html">Layer</a> needs to be redrawn. <a class="el" href="classTiledBitmap.html">TiledBitmap</a> will compute which tiles are involved in the redraw, and call <a class="el" href="classLayerOperations.html#a18dbbea49215d7af4e6127109a3b9b5a" title="Draw the given tileArea into the given viewArea at the requested zoom level. ">draw()</a> or <a class="el" href="classLayerOperations.html#ab0ea05d6bd0fb7aecd041c17ad0b6862" title="Draw the given state into the given viewArea. ">drawState()</a> for each of them, as appropriate. However, before doing so, it will first call <a class="el" href="classLayerOperations.html#a464745addca585c466e4ff3ec871ad51" title="Initialize the canvas for drawing the bitmap. ">initializeCairo()</a>. You can take this opportunity to set various properties that are needed in all subsequent calls to <a class="el" href="classLayerOperations.html#a18dbbea49215d7af4e6127109a3b9b5a" title="Draw the given tileArea into the given viewArea at the requested zoom level. ">draw()</a> and <a class="el" href="classLayerOperations.html#ab0ea05d6bd0fb7aecd041c17ad0b6862" title="Draw the given state into the given viewArea. ">drawState()</a>, such as anti-aliasing and line caps. </p>
 
-<p>Implemented in <a class="el" href="classCommonOperations.html#acea1743f3ae3c6a5425f0cb927c23462">CommonOperations</a>.</p>
+<p>Implemented in <a class="el" href="classCommonOperations.html#a0d94da894eb942470e241fa7d2dc6830">CommonOperations</a>.</p>
 
 </div>
 </div>
@@ -500,7 +500,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classConstTile.html#a81a28d4a0497d21235f38c35462a000c">ConstTile::Ptr</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classConstTile.html#aa3d92cdcb7283a3957fd4511817ae162">ConstTile::Ptr</a>&#160;</td>
           <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
@@ -539,9 +539,9 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The <code>target</code> tile belongs to a different layer, and hence possibly has a different bpp than the current one, depending on the <a class="el" href="tiledbitmapinterface_8hh.html#a39407a87d1a6de61ef7d8f645eaf460b" title="Set of LayerOperations, that define how to draw and pre-scale a TiledBitmap. ">LayerSpec</a> given to <a class="el" href="tiledbitmapinterface_8hh.html#afb81a705ea3c38444cb0f4fb12410f43" title="Create a tiled bitmap. ">createTiledBitmap()</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The <code>target</code> tile belongs to a different layer, and hence possibly has a different bpp than the current one, depending on the <a class="el" href="tiledbitmapinterface_8hh.html#a00279dcefa7f911f75fec39af1d48e87" title="Set of LayerOperations, that define how to draw and pre-scale a TiledBitmap. ">LayerSpec</a> given to <a class="el" href="tiledbitmapinterface_8hh.html#afb81a705ea3c38444cb0f4fb12410f43" title="Create a tiled bitmap. ">createTiledBitmap()</a> </dd></dl>
 
-<p>Implemented in <a class="el" href="classOperationsCMYK4.html#aff65ad0278d2196c8827ec739a6e5429">OperationsCMYK4</a>, <a class="el" href="classOperationsCMYK8.html#a891ecfea535de8db31e961bc01d81c3b">OperationsCMYK8</a>, <a class="el" href="classOperationsCMYK16.html#a8e55f0135be1d3d96c125b449fd0e6d5">OperationsCMYK16</a>, <a class="el" href="classOperationsCMYK32.html#a8f0976d58d78f1815fe37b6cdd84e8a5">OperationsCMYK32</a>, <a class="el" href="classOperations1bppClipped.html#a1402f3cf2b989c01efc7bee4a8b9e47a">Operations1bppClipped</a>, <a class="el" href="classOperationsColormapped.html#ad89502c50d1e687873938fe307fba41d">OperationsColormapped</a>, <a class="el" href="classOperations.html#a23562eb3526ce1fd5ef743c438867b00">Operations</a>, <a class="el" href="classOperations24bpp.html#a575208bfbbf48676a858a9a28090e9f3">Operations24bpp</a>, <a class="el" href="classOperations8bpp.html#abd3273a47fc1ea9168224c36cbd40273">Operations8bpp</a>, and <a class="el" href="classOperations1bpp.html#a2209e35fb0d69ebcb52791fa4ca570f6">Operations1bpp</a>.</p>
+<p>Implemented in <a class="el" href="classOperationsCMYK4.html#ad093f1bc8366265854b01ad7ee1b0606">OperationsCMYK4</a>, <a class="el" href="classOperationsCMYK8.html#ad21f1700884225e4d5488c17b0c34227">OperationsCMYK8</a>, <a class="el" href="classOperationsCMYK16.html#adab73859d3906bde9e27f20438ce2857">OperationsCMYK16</a>, <a class="el" href="classOperationsCMYK32.html#a40334ea7f8737e3544415811bf4d0840">OperationsCMYK32</a>, <a class="el" href="classOperations1bppClipped.html#a342d9e12b7d0ce84074d4892223298c9">Operations1bppClipped</a>, <a class="el" href="classOperationsColormapped.html#a34b2ee89a9485f29ae39a2871038c589">OperationsColormapped</a>, <a class="el" href="classOperations.html#a199751a6b7807d0648855c455bf16f3c">Operations</a>, <a class="el" href="classOperations24bpp.html#a301680b8e50ed1376dec31ebfec41226">Operations24bpp</a>, <a class="el" href="classOperations8bpp.html#af87b688c69de7480d899a3d12e22875c">Operations8bpp</a>, and <a class="el" href="classOperations1bpp.html#a44a5aed200d2dca363641322a3e3e2e9">Operations1bpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="tiledbitmapinterface_8hh_source.html#l00150">cacheZoom()</a>.</p>
 

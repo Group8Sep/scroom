@@ -1,7 +1,7 @@
 var classScroom_1_1MemoryBlobs_1_1Blob =
 [
     [ "UnloadData", "classScroom_1_1MemoryBlobs_1_1Blob_1_1UnloadData.html", "classScroom_1_1MemoryBlobs_1_1Blob_1_1UnloadData" ],
-    [ "Ptr", "classScroom_1_1MemoryBlobs_1_1Blob.html#a4114a350ade1131eaec83245a66637c3", null ],
+    [ "Ptr", "classScroom_1_1MemoryBlobs_1_1Blob.html#a261cc92d452cb5fa49d2628cb44a72c7", null ],
     [ "State", "classScroom_1_1MemoryBlobs_1_1Blob.html#a50973e173ac55206712bce2ecfe361ce", [
       [ "UNINITIALIZED", "classScroom_1_1MemoryBlobs_1_1Blob.html#a50973e173ac55206712bce2ecfe361ceada65282c0b4db4b8848e8c4df565495f", null ],
       [ "CLEAN", "classScroom_1_1MemoryBlobs_1_1Blob.html#a50973e173ac55206712bce2ecfe361cea7d62e6518e0d6f756da029ca3d455baf", null ],

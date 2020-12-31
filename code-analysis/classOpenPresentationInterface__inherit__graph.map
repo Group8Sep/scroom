@@ -1,4 +1,4 @@
 <map id="OpenPresentationInterface" name="OpenPresentationInterface">
-<area shape="rect" id="node3" href="$classTiff.html" title="{Tiff\n||+ getPluginName()\l+ getPluginVersion()\l+ registerCapabilities()\l+ getFilters()\l+ open()\l+ ~Tiff()\l+ create()\l&#45; Tiff()\l}" alt="" coords="16,344,191,524"/>
+<area shape="rect" id="node3" href="$classTiff.html" title="{Tiff\n||+ getPluginName()\l+ getPluginVersion()\l+ registerCapabilities()\l+ getFilters()\l+ open()\l+ create()\l&#45; Tiff()\l}" alt="" coords="16,344,191,509"/>
 <area shape="rect" id="node2" href="$classInterface.html" title="{Interface\n||+ Interface()\l+ Interface()\l+ operator=()\l+ Interface()\l+ operator=()\l+ ~Interface()\l}" alt="" coords="45,5,161,156"/>
 </map>

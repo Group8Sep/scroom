@@ -30,6 +30,6 @@ var searchData=
   ['bpp',['bpp',['../classOperations.html#a18069b958a4e6e23bb9f0784f4ee3f90',1,'Operations::bpp()'],['../classTile.html#ab2d50dfc04db90f483e89dccba17a09d',1,'Tile::bpp()'],['../classConstTile.html#a2baa3b6df07d32ff84a0b774def1da03',1,'ConstTile::bpp()'],['../classCompressedTile.html#ae0acac9bbd3f7a6b402ba59ab5a2cd05',1,'CompressedTile::bpp()']]],
   ['bps',['bps',['../classScroom_1_1Bitmap_1_1SampleIterator.html#a94feff7885c31412878a9643ba9c9318',1,'Scroom::Bitmap::SampleIterator::bps()'],['../classPipetteCommonOperationsCMYK.html#a3fdc4e0f0a9f0a47e2e6522aa710f331',1,'PipetteCommonOperationsCMYK::bps()'],['../classPipetteCommonOperationsRGB.html#a55e94b30e388c51824d5c0e6dfb12c27',1,'PipetteCommonOperationsRGB::bps()'],['../classTiffPresentation.html#a1dab3f7f4560c07c69bd5b4160a31f39',1,'TiffPresentation::bps()']]],
   ['buttons',['buttons',['../classTransparentOverlayViewInfo.html#ab7afe5e192137e8f3cf1b5bc4243e82e',1,'TransparentOverlayViewInfo']]],
-  ['byte',['byte',['../global_8hh.html#a0c8186d9b9b7880309c27230bbb5e69d',1,'global.hh']]],
+  ['byte',['byte',['../global_8hh.html#a7528222f65ad403ee1a88ff2b56f9fb7',1,'global.hh']]],
   ['bytefromdouble',['byteFromDouble',['../color_8hh.html#a5f58fb375bbeafcd94a58efff767de34',1,'color.hh']]]
 ];

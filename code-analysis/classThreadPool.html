@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-190-gaef4c65</span>
+   &#160;<span id="projectnumber">0.11.1-194-ga61e262</span>
    </div>
   </td>
  </tr>
@@ -123,10 +123,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a425b5b343e60e62663b65628dc1f9be1"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classThreadPool.html">ThreadPool</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">Ptr</a></td></tr>
-<tr class="separator:a425b5b343e60e62663b65628dc1f9be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfee8402d1b2eef80e554ebacc261d53"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; boost::thread &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#acfee8402d1b2eef80e554ebacc261d53">ThreadPtr</a></td></tr>
-<tr class="separator:acfee8402d1b2eef80e554ebacc261d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60143f0f2001f70595bef06790d77af5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">Ptr</a> = boost::shared_ptr&lt; <a class="el" href="classThreadPool.html">ThreadPool</a> &gt;</td></tr>
+<tr class="separator:a60143f0f2001f70595bef06790d77af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2462248ccdbfc6ffe39622ded661625f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a2462248ccdbfc6ffe39622ded661625f">ThreadPtr</a> = boost::shared_ptr&lt; boost::thread &gt;</td></tr>
+<tr class="separator:a2462248ccdbfc6ffe39622ded661625f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -161,18 +161,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a73c433d79c5967fe95899aa272ca9ba2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a73c433d79c5967fe95899aa272ca9ba2">schedule</a> (boost::shared_ptr&lt; T &gt; fn, <a class="el" href="classThreadPool_1_1Queue.html#a35d9a094994f398ce4f6178e82d65ade">Queue::Ptr</a> queue)</td></tr>
 <tr class="memdesc:a73c433d79c5967fe95899aa272ca9ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule the given job at the given priority.  <a href="#a73c433d79c5967fe95899aa272ca9ba2">More...</a><br /></td></tr>
 <tr class="separator:a73c433d79c5967fe95899aa272ca9ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfabb86a88207d79a7c710f72bfc35ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#abfabb86a88207d79a7c710f72bfc35ff">schedule</a> (boost::function&lt; void()&gt; const &amp;fn, int priority, <a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a> queue)</td></tr>
+<tr class="memitem:abfabb86a88207d79a7c710f72bfc35ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#abfabb86a88207d79a7c710f72bfc35ff">schedule</a> (boost::function&lt; void()&gt; const &amp;fn, int priority, <a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a> queue)</td></tr>
 <tr class="memdesc:abfabb86a88207d79a7c710f72bfc35ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule the given job at the given priority.  <a href="#abfabb86a88207d79a7c710f72bfc35ff">More...</a><br /></td></tr>
 <tr class="separator:abfabb86a88207d79a7c710f72bfc35ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b3d9c3b37000da74c0b4f722299d58c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a8b3d9c3b37000da74c0b4f722299d58c">schedule</a> (boost::function&lt; void()&gt; const &amp;fn, <a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a> queue)</td></tr>
+<tr class="memitem:a8b3d9c3b37000da74c0b4f722299d58c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a8b3d9c3b37000da74c0b4f722299d58c">schedule</a> (boost::function&lt; void()&gt; const &amp;fn, <a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a> queue)</td></tr>
 <tr class="memdesc:a8b3d9c3b37000da74c0b4f722299d58c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule the given job at the given queue.  <a href="#a8b3d9c3b37000da74c0b4f722299d58c">More...</a><br /></td></tr>
 <tr class="separator:a8b3d9c3b37000da74c0b4f722299d58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fef6b4f1f872d57bcbb7c7f4568f2b6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a9fef6b4f1f872d57bcbb7c7f4568f2b6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a9fef6b4f1f872d57bcbb7c7f4568f2b6">schedule</a> (boost::shared_ptr&lt; T &gt; fn, int priority, <a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a> queue)</td></tr>
+<tr class="memitem:a9fef6b4f1f872d57bcbb7c7f4568f2b6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a9fef6b4f1f872d57bcbb7c7f4568f2b6">schedule</a> (boost::shared_ptr&lt; T &gt; fn, int priority, <a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a> queue)</td></tr>
 <tr class="memdesc:a9fef6b4f1f872d57bcbb7c7f4568f2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule the given job at the given priority.  <a href="#a9fef6b4f1f872d57bcbb7c7f4568f2b6">More...</a><br /></td></tr>
 <tr class="separator:a9fef6b4f1f872d57bcbb7c7f4568f2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a997f99315386b0c140a42002abe8d7e9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a997f99315386b0c140a42002abe8d7e9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a997f99315386b0c140a42002abe8d7e9">schedule</a> (boost::shared_ptr&lt; T &gt; fn, <a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a> queue)</td></tr>
+<tr class="memitem:a997f99315386b0c140a42002abe8d7e9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a997f99315386b0c140a42002abe8d7e9">schedule</a> (boost::shared_ptr&lt; T &gt; fn, <a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a> queue)</td></tr>
 <tr class="memdesc:a997f99315386b0c140a42002abe8d7e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule the given job at the given priority.  <a href="#a997f99315386b0c140a42002abe8d7e9">More...</a><br /></td></tr>
 <tr class="separator:a997f99315386b0c140a42002abe8d7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad57346d1687f3d65b169f4c1df2ecff7"><td class="memTemplParams" colspan="2">template&lt;typename R &gt; </td></tr>
@@ -188,39 +188,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7be1104d0dceab521a65bc433ceeeef4"><td class="memTemplItemLeft" align="right" valign="top">boost::unique_future&lt; R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a7be1104d0dceab521a65bc433ceeeef4">schedule</a> (boost::shared_ptr&lt; T &gt; fn, <a class="el" href="classThreadPool_1_1Queue.html#a35d9a094994f398ce4f6178e82d65ade">Queue::Ptr</a> queue)</td></tr>
 <tr class="separator:a7be1104d0dceab521a65bc433ceeeef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3df94a1c69866fe1094e9911d04bbee6"><td class="memTemplParams" colspan="2">template&lt;typename R &gt; </td></tr>
-<tr class="memitem:a3df94a1c69866fe1094e9911d04bbee6"><td class="memTemplItemLeft" align="right" valign="top">boost::unique_future&lt; R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a3df94a1c69866fe1094e9911d04bbee6">schedule</a> (boost::function&lt; R()&gt; const &amp;fn, int priority, <a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a> queue)</td></tr>
+<tr class="memitem:a3df94a1c69866fe1094e9911d04bbee6"><td class="memTemplItemLeft" align="right" valign="top">boost::unique_future&lt; R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a3df94a1c69866fe1094e9911d04bbee6">schedule</a> (boost::function&lt; R()&gt; const &amp;fn, int priority, <a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a> queue)</td></tr>
 <tr class="separator:a3df94a1c69866fe1094e9911d04bbee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5400bb2ce9bfb050f027d1b0d5fca1af"><td class="memTemplParams" colspan="2">template&lt;typename R &gt; </td></tr>
-<tr class="memitem:a5400bb2ce9bfb050f027d1b0d5fca1af"><td class="memTemplItemLeft" align="right" valign="top">boost::unique_future&lt; R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a5400bb2ce9bfb050f027d1b0d5fca1af">schedule</a> (boost::function&lt; R()&gt; const &amp;fn, <a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a> queue)</td></tr>
+<tr class="memitem:a5400bb2ce9bfb050f027d1b0d5fca1af"><td class="memTemplItemLeft" align="right" valign="top">boost::unique_future&lt; R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a5400bb2ce9bfb050f027d1b0d5fca1af">schedule</a> (boost::function&lt; R()&gt; const &amp;fn, <a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a> queue)</td></tr>
 <tr class="separator:a5400bb2ce9bfb050f027d1b0d5fca1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26310bff07515d158c1b78bc4403be7b"><td class="memTemplParams" colspan="2">template&lt;typename R , typename T &gt; </td></tr>
-<tr class="memitem:a26310bff07515d158c1b78bc4403be7b"><td class="memTemplItemLeft" align="right" valign="top">boost::unique_future&lt; R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a26310bff07515d158c1b78bc4403be7b">schedule</a> (boost::shared_ptr&lt; T &gt; fn, int priority, <a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a> queue)</td></tr>
+<tr class="memitem:a26310bff07515d158c1b78bc4403be7b"><td class="memTemplItemLeft" align="right" valign="top">boost::unique_future&lt; R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a26310bff07515d158c1b78bc4403be7b">schedule</a> (boost::shared_ptr&lt; T &gt; fn, int priority, <a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a> queue)</td></tr>
 <tr class="separator:a26310bff07515d158c1b78bc4403be7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e044ede2ae988f29243bb81b847d0b0"><td class="memTemplParams" colspan="2">template&lt;typename R , typename T &gt; </td></tr>
-<tr class="memitem:a0e044ede2ae988f29243bb81b847d0b0"><td class="memTemplItemLeft" align="right" valign="top">boost::unique_future&lt; R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a0e044ede2ae988f29243bb81b847d0b0">schedule</a> (boost::shared_ptr&lt; T &gt; fn, <a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a> queue)</td></tr>
+<tr class="memitem:a0e044ede2ae988f29243bb81b847d0b0"><td class="memTemplItemLeft" align="right" valign="top">boost::unique_future&lt; R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a0e044ede2ae988f29243bb81b847d0b0">schedule</a> (boost::shared_ptr&lt; T &gt; fn, <a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a> queue)</td></tr>
 <tr class="separator:a0e044ede2ae988f29243bb81b847d0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72b7ee59b6fd4d2266233334f9e0011b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadPool.html#acfee8402d1b2eef80e554ebacc261d53">ThreadPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a72b7ee59b6fd4d2266233334f9e0011b">add</a> ()</td></tr>
+<tr class="memitem:a72b7ee59b6fd4d2266233334f9e0011b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadPool.html#a2462248ccdbfc6ffe39622ded661625f">ThreadPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a72b7ee59b6fd4d2266233334f9e0011b">add</a> ()</td></tr>
 <tr class="memdesc:a72b7ee59b6fd4d2266233334f9e0011b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an additional thread to the pool.  <a href="#a72b7ee59b6fd4d2266233334f9e0011b">More...</a><br /></td></tr>
 <tr class="separator:a72b7ee59b6fd4d2266233334f9e0011b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54b4280366447b498a1d08e46e305ef8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classThreadPool.html#acfee8402d1b2eef80e554ebacc261d53">ThreadPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a54b4280366447b498a1d08e46e305ef8">add</a> (int count)</td></tr>
+<tr class="memitem:a54b4280366447b498a1d08e46e305ef8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classThreadPool.html#a2462248ccdbfc6ffe39622ded661625f">ThreadPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a54b4280366447b498a1d08e46e305ef8">add</a> (int count)</td></tr>
 <tr class="memdesc:a54b4280366447b498a1d08e46e305ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the given number of threads to the pool.  <a href="#a54b4280366447b498a1d08e46e305ef8">More...</a><br /></td></tr>
 <tr class="separator:a54b4280366447b498a1d08e46e305ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa4c7f373ae1c02455e2c7f4d2096270e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#aa4c7f373ae1c02455e2c7f4d2096270e">create</a> (bool completeAllJobsBeforeDestruction=false)</td></tr>
+<tr class="memitem:aa4c7f373ae1c02455e2c7f4d2096270e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#aa4c7f373ae1c02455e2c7f4d2096270e">create</a> (bool completeAllJobsBeforeDestruction=false)</td></tr>
 <tr class="memdesc:aa4c7f373ae1c02455e2c7f4d2096270e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classThreadPool.html" title="Generic threadpool. ">ThreadPool</a> with one thread for each core in the system.  <a href="#aa4c7f373ae1c02455e2c7f4d2096270e">More...</a><br /></td></tr>
 <tr class="separator:aa4c7f373ae1c02455e2c7f4d2096270e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01a9a8ed66255d64f64b5140d9ed1884"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a01a9a8ed66255d64f64b5140d9ed1884">create</a> (int count, bool completeAllJobsBeforeDestruction=false)</td></tr>
+<tr class="memitem:a01a9a8ed66255d64f64b5140d9ed1884"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a01a9a8ed66255d64f64b5140d9ed1884">create</a> (int count, bool completeAllJobsBeforeDestruction=false)</td></tr>
 <tr class="memdesc:a01a9a8ed66255d64f64b5140d9ed1884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classThreadPool.html" title="Generic threadpool. ">ThreadPool</a> with the given number of threads.  <a href="#a01a9a8ed66255d64f64b5140d9ed1884">More...</a><br /></td></tr>
 <tr class="separator:a01a9a8ed66255d64f64b5140d9ed1884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:aa18fc8ec52d22c4ed14f781d22730ad3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#aa18fc8ec52d22c4ed14f781d22730ad3">work</a> (<a class="el" href="classThreadPool_1_1PrivateData.html#aa2004d06027490b534a71bda51e329e5">PrivateData::Ptr</a> <a class="el" href="classThreadPool.html#a3a0c10438bec002f4d82ec26b8a22109">priv</a>)</td></tr>
+<tr class="memitem:aa18fc8ec52d22c4ed14f781d22730ad3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#aa18fc8ec52d22c4ed14f781d22730ad3">work</a> (<a class="el" href="classThreadPool_1_1PrivateData.html#ae05fb04b3e3581e9b91a8c5fc4c6fa88">PrivateData::Ptr</a> <a class="el" href="classThreadPool.html#a3a0c10438bec002f4d82ec26b8a22109">priv</a>)</td></tr>
 <tr class="memdesc:aa18fc8ec52d22c4ed14f781d22730ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is executed by each of the threads in the <a class="el" href="classThreadPool.html" title="Generic threadpool. ">ThreadPool</a>.  <a href="#aa18fc8ec52d22c4ed14f781d22730ad3">More...</a><br /></td></tr>
 <tr class="separator:aa18fc8ec52d22c4ed14f781d22730ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a682151037e6b67d6700361c987969798"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a682151037e6b67d6700361c987969798">do_one</a> (<a class="el" href="classThreadPool_1_1PrivateData.html#aa2004d06027490b534a71bda51e329e5">PrivateData::Ptr</a> <a class="el" href="classThreadPool.html#a3a0c10438bec002f4d82ec26b8a22109">priv</a>)</td></tr>
+<tr class="memitem:a682151037e6b67d6700361c987969798"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a682151037e6b67d6700361c987969798">do_one</a> (<a class="el" href="classThreadPool_1_1PrivateData.html#ae05fb04b3e3581e9b91a8c5fc4c6fa88">PrivateData::Ptr</a> <a class="el" href="classThreadPool.html#a3a0c10438bec002f4d82ec26b8a22109">priv</a>)</td></tr>
 <tr class="memdesc:a682151037e6b67d6700361c987969798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute one job.  <a href="#a682151037e6b67d6700361c987969798">More...</a><br /></td></tr>
 <tr class="separator:a682151037e6b67d6700361c987969798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d435b8c6eff3ffcf5b9043bd50048c2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classThreadPool_1_1Queue.html#a35d9a094994f398ce4f6178e82d65ade">Queue::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a7d435b8c6eff3ffcf5b9043bd50048c2">defaultQueue</a> ()</td></tr>
@@ -228,10 +228,10 @@ Static Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a02868ba7fdf289e346b325bee1c346ca"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="classThreadPool.html#acfee8402d1b2eef80e554ebacc261d53">ThreadPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a02868ba7fdf289e346b325bee1c346ca">threads</a></td></tr>
+<tr class="memitem:a02868ba7fdf289e346b325bee1c346ca"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="classThreadPool.html#a2462248ccdbfc6ffe39622ded661625f">ThreadPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a02868ba7fdf289e346b325bee1c346ca">threads</a></td></tr>
 <tr class="memdesc:a02868ba7fdf289e346b325bee1c346ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threads in this <a class="el" href="classThreadPool.html" title="Generic threadpool. ">ThreadPool</a>.  <a href="#a02868ba7fdf289e346b325bee1c346ca">More...</a><br /></td></tr>
 <tr class="separator:a02868ba7fdf289e346b325bee1c346ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a0c10438bec002f4d82ec26b8a22109"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadPool_1_1PrivateData.html#aa2004d06027490b534a71bda51e329e5">PrivateData::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a3a0c10438bec002f4d82ec26b8a22109">priv</a></td></tr>
+<tr class="memitem:a3a0c10438bec002f4d82ec26b8a22109"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadPool_1_1PrivateData.html#ae05fb04b3e3581e9b91a8c5fc4c6fa88">PrivateData::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a3a0c10438bec002f4d82ec26b8a22109">priv</a></td></tr>
 <tr class="separator:a3a0c10438bec002f4d82ec26b8a22109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
@@ -245,14 +245,14 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="threadpool_8hh_source.html#l00052">52</a> of file <a class="el" href="threadpool_8hh_source.html">threadpool.hh</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a425b5b343e60e62663b65628dc1f9be1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a425b5b343e60e62663b65628dc1f9be1">&#9670;&nbsp;</a></span>Ptr</h2>
+<a id="a60143f0f2001f70595bef06790d77af5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60143f0f2001f70595bef06790d77af5">&#9670;&nbsp;</a></span>Ptr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="classThreadPool.html">ThreadPool</a>&gt; <a class="el" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a></td>
+          <td class="memname">using <a class="el" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a> =  boost::shared_ptr&lt;<a class="el" href="classThreadPool.html">ThreadPool</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -261,14 +261,14 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="acfee8402d1b2eef80e554ebacc261d53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfee8402d1b2eef80e554ebacc261d53">&#9670;&nbsp;</a></span>ThreadPtr</h2>
+<a id="a2462248ccdbfc6ffe39622ded661625f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2462248ccdbfc6ffe39622ded661625f">&#9670;&nbsp;</a></span>ThreadPtr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;boost::thread&gt; <a class="el" href="classThreadPool.html#acfee8402d1b2eef80e554ebacc261d53">ThreadPool::ThreadPtr</a></td>
+          <td class="memname">using <a class="el" href="classThreadPool.html#a2462248ccdbfc6ffe39622ded661625f">ThreadPool::ThreadPtr</a> =  boost::shared_ptr&lt;boost::thread&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -427,7 +427,7 @@ Static Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classThreadPool.html#acfee8402d1b2eef80e554ebacc261d53">ThreadPool::ThreadPtr</a> ThreadPool::add </td>
+          <td class="memname"><a class="el" href="classThreadPool.html#a2462248ccdbfc6ffe39622ded661625f">ThreadPool::ThreadPtr</a> ThreadPool::add </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -442,9 +442,9 @@ Static Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00233">233</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00241">add()</a>, and <a class="el" href="threadpoolimpl_8cc_source.html#l00202">ThreadPool()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;{</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <a class="code" href="classThreadPool.html#acfee8402d1b2eef80e554ebacc261d53">ThreadPool::ThreadPtr</a> t = <a class="code" href="classThreadPool.html#acfee8402d1b2eef80e554ebacc261d53">ThreadPool::ThreadPtr</a>(<span class="keyword">new</span> boost::thread(boost::bind(&amp;<a class="code" href="classThreadPool.html#aa18fc8ec52d22c4ed14f781d22730ad3">ThreadPool::work</a>, <a class="code" href="classThreadPool.html#a3a0c10438bec002f4d82ec26b8a22109">priv</a>)));</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <a class="code" href="classThreadPool.html#a02868ba7fdf289e346b325bee1c346ca">threads</a>.push_back(t);</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <a class="code" href="namespaceanonymous__namespace_02progressbarmanager_8cc_03.html#a1cd7ce2821db8912b252ffaa3ec97af9">ThreadList::instance</a>()-&gt;add(t);</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordflow">return</span> t;</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div><div class="ttc" id="classThreadPool_html_a02868ba7fdf289e346b325bee1c346ca"><div class="ttname"><a href="classThreadPool.html#a02868ba7fdf289e346b325bee1c346ca">ThreadPool::threads</a></div><div class="ttdeci">std::list&lt; ThreadPtr &gt; threads</div><div class="ttdoc">Threads in this ThreadPool. </div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00250">threadpool.hh:250</a></div></div>
+<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;{</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <a class="code" href="classThreadPool.html#a2462248ccdbfc6ffe39622ded661625f">ThreadPool::ThreadPtr</a> t = <a class="code" href="classThreadPool.html#a2462248ccdbfc6ffe39622ded661625f">ThreadPool::ThreadPtr</a>(<span class="keyword">new</span> boost::thread(boost::bind(&amp;<a class="code" href="classThreadPool.html#aa18fc8ec52d22c4ed14f781d22730ad3">ThreadPool::work</a>, <a class="code" href="classThreadPool.html#a3a0c10438bec002f4d82ec26b8a22109">priv</a>)));</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <a class="code" href="classThreadPool.html#a02868ba7fdf289e346b325bee1c346ca">threads</a>.push_back(t);</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <a class="code" href="namespaceanonymous__namespace_02progressbarmanager_8cc_03.html#a1cd7ce2821db8912b252ffaa3ec97af9">ThreadList::instance</a>()-&gt;add(t);</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordflow">return</span> t;</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div><div class="ttc" id="classThreadPool_html_a2462248ccdbfc6ffe39622ded661625f"><div class="ttname"><a href="classThreadPool.html#a2462248ccdbfc6ffe39622ded661625f">ThreadPool::ThreadPtr</a></div><div class="ttdeci">boost::shared_ptr&lt; boost::thread &gt; ThreadPtr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00174">threadpool.hh:174</a></div></div>
+<div class="ttc" id="classThreadPool_html_a02868ba7fdf289e346b325bee1c346ca"><div class="ttname"><a href="classThreadPool.html#a02868ba7fdf289e346b325bee1c346ca">ThreadPool::threads</a></div><div class="ttdeci">std::list&lt; ThreadPtr &gt; threads</div><div class="ttdoc">Threads in this ThreadPool. </div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00250">threadpool.hh:250</a></div></div>
 <div class="ttc" id="classThreadPool_html_a3a0c10438bec002f4d82ec26b8a22109"><div class="ttname"><a href="classThreadPool.html#a3a0c10438bec002f4d82ec26b8a22109">ThreadPool::priv</a></div><div class="ttdeci">PrivateData::Ptr priv</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00251">threadpool.hh:251</a></div></div>
-<div class="ttc" id="classThreadPool_html_acfee8402d1b2eef80e554ebacc261d53"><div class="ttname"><a href="classThreadPool.html#acfee8402d1b2eef80e554ebacc261d53">ThreadPool::ThreadPtr</a></div><div class="ttdeci">boost::shared_ptr&lt; boost::thread &gt; ThreadPtr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00174">threadpool.hh:174</a></div></div>
 <div class="ttc" id="namespaceanonymous__namespace_02progressbarmanager_8cc_03_html_a1cd7ce2821db8912b252ffaa3ec97af9"><div class="ttname"><a href="namespaceanonymous__namespace_02progressbarmanager_8cc_03.html#a1cd7ce2821db8912b252ffaa3ec97af9">anonymous_namespace{progressbarmanager.cc}::instance</a></div><div class="ttdeci">ProgressBarPulser::Ptr instance()</div><div class="ttdef"><b>Definition:</b> <a href="progressbarmanager_8cc_source.html#l00043">progressbarmanager.cc:43</a></div></div>
 <div class="ttc" id="classThreadPool_html_aa18fc8ec52d22c4ed14f781d22730ad3"><div class="ttname"><a href="classThreadPool.html#aa18fc8ec52d22c4ed14f781d22730ad3">ThreadPool::work</a></div><div class="ttdeci">static void work(PrivateData::Ptr priv)</div><div class="ttdoc">This is executed by each of the threads in the ThreadPool. </div><div class="ttdef"><b>Definition:</b> <a href="threadpoolimpl_8cc_source.html#l00266">threadpoolimpl.cc:266</a></div></div>
 </div><!-- fragment -->
@@ -457,7 +457,7 @@ Static Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classThreadPool.html#acfee8402d1b2eef80e554ebacc261d53">ThreadPool::ThreadPtr</a> &gt; ThreadPool::add </td>
+          <td class="memname">std::vector&lt; <a class="el" href="classThreadPool.html#a2462248ccdbfc6ffe39622ded661625f">ThreadPool::ThreadPtr</a> &gt; ThreadPool::add </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>count</em></td><td>)</td>
@@ -485,7 +485,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a> ThreadPool::create </td>
+          <td class="memname"><a class="el" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a> ThreadPool::create </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>completeAllJobsBeforeDestruction</em> = <code>false</code></td><td>)</td>
@@ -502,8 +502,8 @@ Static Private Attributes</h2></td></tr>
 <p>Create a <a class="el" href="classThreadPool.html" title="Generic threadpool. ">ThreadPool</a> with one thread for each core in the system. </p>
 
 <p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00223">223</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;{</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classThreadPool.html#ab01897b158a8ed6585e7cb3788f378ac">ThreadPool</a>(completeAllJobsBeforeDestruction));</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;}</div><div class="ttc" id="classThreadPool_html_a425b5b343e60e62663b65628dc1f9be1"><div class="ttname"><a href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; ThreadPool &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00173">threadpool.hh:173</a></div></div>
-<div class="ttc" id="classThreadPool_html_ab01897b158a8ed6585e7cb3788f378ac"><div class="ttname"><a href="classThreadPool.html#ab01897b158a8ed6585e7cb3788f378ac">ThreadPool::ThreadPool</a></div><div class="ttdeci">ThreadPool(bool completeAllJobsBeforeDestruction=false)</div><div class="ttdoc">Create a ThreadPool with one thread for each core in the system. </div><div class="ttdef"><b>Definition:</b> <a href="threadpoolimpl_8cc_source.html#l00202">threadpoolimpl.cc:202</a></div></div>
+<div class="fragment"><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;{</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classThreadPool.html#ab01897b158a8ed6585e7cb3788f378ac">ThreadPool</a>(completeAllJobsBeforeDestruction));</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;}</div><div class="ttc" id="classThreadPool_html_ab01897b158a8ed6585e7cb3788f378ac"><div class="ttname"><a href="classThreadPool.html#ab01897b158a8ed6585e7cb3788f378ac">ThreadPool::ThreadPool</a></div><div class="ttdeci">ThreadPool(bool completeAllJobsBeforeDestruction=false)</div><div class="ttdoc">Create a ThreadPool with one thread for each core in the system. </div><div class="ttdef"><b>Definition:</b> <a href="threadpoolimpl_8cc_source.html#l00202">threadpoolimpl.cc:202</a></div></div>
+<div class="ttc" id="classThreadPool_html_a60143f0f2001f70595bef06790d77af5"><div class="ttname"><a href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; ThreadPool &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00173">threadpool.hh:173</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -517,7 +517,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a> ThreadPool::create </td>
+          <td class="memname"><a class="el" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a> ThreadPool::create </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>count</em>, </td>
@@ -544,8 +544,8 @@ Static Private Attributes</h2></td></tr>
 <p>Create a <a class="el" href="classThreadPool.html" title="Generic threadpool. ">ThreadPool</a> with the given number of threads. </p>
 
 <p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00228">228</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;{</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classThreadPool.html#ab01897b158a8ed6585e7cb3788f378ac">ThreadPool</a>(count, completeAllJobsBeforeDestruction));</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div><div class="ttc" id="classThreadPool_html_a425b5b343e60e62663b65628dc1f9be1"><div class="ttname"><a href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; ThreadPool &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00173">threadpool.hh:173</a></div></div>
-<div class="ttc" id="classThreadPool_html_ab01897b158a8ed6585e7cb3788f378ac"><div class="ttname"><a href="classThreadPool.html#ab01897b158a8ed6585e7cb3788f378ac">ThreadPool::ThreadPool</a></div><div class="ttdeci">ThreadPool(bool completeAllJobsBeforeDestruction=false)</div><div class="ttdoc">Create a ThreadPool with one thread for each core in the system. </div><div class="ttdef"><b>Definition:</b> <a href="threadpoolimpl_8cc_source.html#l00202">threadpoolimpl.cc:202</a></div></div>
+<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;{</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classThreadPool.html#ab01897b158a8ed6585e7cb3788f378ac">ThreadPool</a>(count, completeAllJobsBeforeDestruction));</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div><div class="ttc" id="classThreadPool_html_ab01897b158a8ed6585e7cb3788f378ac"><div class="ttname"><a href="classThreadPool.html#ab01897b158a8ed6585e7cb3788f378ac">ThreadPool::ThreadPool</a></div><div class="ttdeci">ThreadPool(bool completeAllJobsBeforeDestruction=false)</div><div class="ttdoc">Create a ThreadPool with one thread for each core in the system. </div><div class="ttdef"><b>Definition:</b> <a href="threadpoolimpl_8cc_source.html#l00202">threadpoolimpl.cc:202</a></div></div>
+<div class="ttc" id="classThreadPool_html_a60143f0f2001f70595bef06790d77af5"><div class="ttname"><a href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; ThreadPool &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00173">threadpool.hh:173</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -590,7 +590,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void ThreadPool::do_one </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classThreadPool_1_1PrivateData.html#aa2004d06027490b534a71bda51e329e5">PrivateData::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classThreadPool_1_1PrivateData.html#ae05fb04b3e3581e9b91a8c5fc4c6fa88">PrivateData::Ptr</a>&#160;</td>
           <td class="paramname"><em>priv</em></td><td>)</td>
           <td></td>
         </tr>
@@ -843,7 +843,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a>&#160;</td>
           <td class="paramname"><em>queue</em>&#160;</td>
         </tr>
         <tr>
@@ -876,7 +876,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a>&#160;</td>
           <td class="paramname"><em>queue</em>&#160;</td>
         </tr>
         <tr>
@@ -918,7 +918,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a>&#160;</td>
           <td class="paramname"><em>queue</em>&#160;</td>
         </tr>
         <tr>
@@ -954,7 +954,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a>&#160;</td>
           <td class="paramname"><em>queue</em>&#160;</td>
         </tr>
         <tr>
@@ -1141,7 +1141,7 @@ template&lt;typename R &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a>&#160;</td>
           <td class="paramname"><em>queue</em>&#160;</td>
         </tr>
         <tr>
@@ -1175,7 +1175,7 @@ template&lt;typename R &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a>&#160;</td>
           <td class="paramname"><em>queue</em>&#160;</td>
         </tr>
         <tr>
@@ -1215,7 +1215,7 @@ template&lt;typename R , typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a>&#160;</td>
           <td class="paramname"><em>queue</em>&#160;</td>
         </tr>
         <tr>
@@ -1249,7 +1249,7 @@ template&lt;typename R , typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">WeakQueue::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">WeakQueue::Ptr</a>&#160;</td>
           <td class="paramname"><em>queue</em>&#160;</td>
         </tr>
         <tr>
@@ -1278,7 +1278,7 @@ template&lt;typename R , typename T &gt; </div>
         <tr>
           <td class="memname">void ThreadPool::work </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classThreadPool_1_1PrivateData.html#aa2004d06027490b534a71bda51e329e5">PrivateData::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classThreadPool_1_1PrivateData.html#ae05fb04b3e3581e9b91a8c5fc4c6fa88">PrivateData::Ptr</a>&#160;</td>
           <td class="paramname"><em>priv</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1343,7 +1343,7 @@ template&lt;typename R , typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classThreadPool_1_1PrivateData.html#aa2004d06027490b534a71bda51e329e5">PrivateData::Ptr</a> ThreadPool::priv</td>
+          <td class="memname"><a class="el" href="classThreadPool_1_1PrivateData.html#ae05fb04b3e3581e9b91a8c5fc4c6fa88">PrivateData::Ptr</a> ThreadPool::priv</td>
         </tr>
       </table>
   </td>
@@ -1369,7 +1369,7 @@ template&lt;typename R , typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt;<a class="el" href="classThreadPool.html#acfee8402d1b2eef80e554ebacc261d53">ThreadPtr</a>&gt; ThreadPool::threads</td>
+          <td class="memname">std::list&lt;<a class="el" href="classThreadPool.html#a2462248ccdbfc6ffe39622ded661625f">ThreadPtr</a>&gt; ThreadPool::threads</td>
         </tr>
       </table>
   </td>

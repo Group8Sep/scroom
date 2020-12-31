@@ -1,7 +1,7 @@
 var classThreadPool_1_1WeakQueue =
 [
-    [ "Ptr", "classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f", null ],
-    [ "WeakPtr", "classThreadPool_1_1WeakQueue.html#a2fba3851df0ed0590ce0f5b0775b6109", null ],
+    [ "Ptr", "classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee", null ],
+    [ "WeakPtr", "classThreadPool_1_1WeakQueue.html#a7e5f3a4ad5c415488770dba28144d8fd", null ],
     [ "~WeakQueue", "classThreadPool_1_1WeakQueue.html#aecbbc06905e24984abfac79fdce7b7d5", null ],
     [ "WeakQueue", "classThreadPool_1_1WeakQueue.html#a49c6500371382f9615655df771efbac0", null ],
     [ "WeakQueue", "classThreadPool_1_1WeakQueue.html#a2418ea09f16eb53150ebb594df3ca315", null ],

@@ -1,7 +1,7 @@
 var classPresentationInterface =
 [
-    [ "Ptr", "classPresentationInterface.html#ad8733b321c78f6170c1370ec26dbb112", null ],
-    [ "WeakPtr", "classPresentationInterface.html#a0eb55c0d640aeeae3c5d0b07733e0fa9", null ],
+    [ "Ptr", "classPresentationInterface.html#abf309de388e9733c4434f8e1ed78edd5", null ],
+    [ "WeakPtr", "classPresentationInterface.html#aec767500138cc39cfa79125913aee506", null ],
     [ "getAspectRatio", "classPresentationInterface.html#a29ca008cd80d5a7ea8683dafe8ba4114", null ],
     [ "getProperty", "classPresentationInterface.html#ae454b7a8f8886fe4001700b2fbb83b19", null ],
     [ "getRect", "classPresentationInterface.html#a4ff8352b5804eb4518099016face846b", null ],

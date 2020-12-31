@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-190-gaef4c65</span>
+   &#160;<span id="projectnumber">0.11.1-194-ga61e262</span>
    </div>
   </td>
  </tr>
@@ -103,6 +103,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab48e5af89418c01f9968daf60336cf00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e6ff564d21e761f6fd3305e509e2fed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGtkFileFilterListDestroyer.html#a5e6ff564d21e761f6fd3305e509e2fed">~GtkFileFilterListDestroyer</a> ()</td></tr>
 <tr class="separator:a5e6ff564d21e761f6fd3305e509e2fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a627726ae30ef1c91f1c82bf302c30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGtkFileFilterListDestroyer.html#a68a627726ae30ef1c91f1c82bf302c30">GtkFileFilterListDestroyer</a> (const <a class="el" href="classGtkFileFilterListDestroyer.html">GtkFileFilterListDestroyer</a> &amp;)=delete</td></tr>
+<tr class="separator:a68a627726ae30ef1c91f1c82bf302c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad533c517085e3505e4f3f2bc0b9253d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGtkFileFilterListDestroyer.html#ad533c517085e3505e4f3f2bc0b9253d6">GtkFileFilterListDestroyer</a> (<a class="el" href="classGtkFileFilterListDestroyer.html">GtkFileFilterListDestroyer</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:ad533c517085e3505e4f3f2bc0b9253d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b415a606d83083198486cc8a70d9b5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGtkFileFilterListDestroyer.html">GtkFileFilterListDestroyer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGtkFileFilterListDestroyer.html#a8b415a606d83083198486cc8a70d9b5d">operator=</a> (const <a class="el" href="classGtkFileFilterListDestroyer.html">GtkFileFilterListDestroyer</a> &amp;)=delete</td></tr>
+<tr class="separator:a8b415a606d83083198486cc8a70d9b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb86511bf0c2ab8562824ecea7423ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGtkFileFilterListDestroyer.html">GtkFileFilterListDestroyer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGtkFileFilterListDestroyer.html#a5cb86511bf0c2ab8562824ecea7423ab">operator=</a> (<a class="el" href="classGtkFileFilterListDestroyer.html">GtkFileFilterListDestroyer</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a5cb86511bf0c2ab8562824ecea7423ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -114,7 +122,7 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="loader_8cc_source.html#l00057">57</a> of file <a class="el" href="loader_8cc_source.html">loader.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab48e5af89418c01f9968daf60336cf00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab48e5af89418c01f9968daf60336cf00">&#9670;&nbsp;</a></span>GtkFileFilterListDestroyer()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab48e5af89418c01f9968daf60336cf00">&#9670;&nbsp;</a></span>GtkFileFilterListDestroyer() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,6 +176,111 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="loader_8cc_source.html#l00070">70</a> of file <a class="el" href="loader_8cc_source.html">loader.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">while</span>(!<a class="code" href="classGtkFileFilterListDestroyer.html#a443ad79b3a30f4f95d4ef5cb536c9ec5">filters</a>.empty())</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      GtkFileFilter* f = <a class="code" href="classGtkFileFilterListDestroyer.html#a443ad79b3a30f4f95d4ef5cb536c9ec5">filters</a>.front();</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      g_object_ref_sink(f);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      g_object_unref(f);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="classGtkFileFilterListDestroyer.html#a443ad79b3a30f4f95d4ef5cb536c9ec5">filters</a>.pop_front();</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div><div class="ttc" id="classGtkFileFilterListDestroyer_html_a443ad79b3a30f4f95d4ef5cb536c9ec5"><div class="ttname"><a href="classGtkFileFilterListDestroyer.html#a443ad79b3a30f4f95d4ef5cb536c9ec5">GtkFileFilterListDestroyer::filters</a></div><div class="ttdeci">std::list&lt; GtkFileFilter * &gt; &amp; filters</div><div class="ttdef"><b>Definition:</b> <a href="loader_8cc_source.html#l00060">loader.cc:60</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a68a627726ae30ef1c91f1c82bf302c30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68a627726ae30ef1c91f1c82bf302c30">&#9670;&nbsp;</a></span>GtkFileFilterListDestroyer() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GtkFileFilterListDestroyer::GtkFileFilterListDestroyer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGtkFileFilterListDestroyer.html">GtkFileFilterListDestroyer</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad533c517085e3505e4f3f2bc0b9253d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad533c517085e3505e4f3f2bc0b9253d6">&#9670;&nbsp;</a></span>GtkFileFilterListDestroyer() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GtkFileFilterListDestroyer::GtkFileFilterListDestroyer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGtkFileFilterListDestroyer.html">GtkFileFilterListDestroyer</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8b415a606d83083198486cc8a70d9b5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b415a606d83083198486cc8a70d9b5d">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGtkFileFilterListDestroyer.html">GtkFileFilterListDestroyer</a> GtkFileFilterListDestroyer::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGtkFileFilterListDestroyer.html">GtkFileFilterListDestroyer</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cb86511bf0c2ab8562824ecea7423ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cb86511bf0c2ab8562824ecea7423ab">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGtkFileFilterListDestroyer.html">GtkFileFilterListDestroyer</a> GtkFileFilterListDestroyer::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGtkFileFilterListDestroyer.html">GtkFileFilterListDestroyer</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>

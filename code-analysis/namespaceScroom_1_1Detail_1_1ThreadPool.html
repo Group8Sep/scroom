@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-190-gaef4c65</span>
+   &#160;<span id="projectnumber">0.11.1-194-ga61e262</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adbdff2f494948417786589c465d0644a"><td class="memItemLeft" align="right" valign="top">::<a class="el" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1Detail_1_1ThreadPool.html#adbdff2f494948417786589c465d0644a">getDeleter</a> ()</td></tr>
+<tr class="memitem:adbdff2f494948417786589c465d0644a"><td class="memItemLeft" align="right" valign="top">::<a class="el" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1Detail_1_1ThreadPool.html#adbdff2f494948417786589c465d0644a">getDeleter</a> ()</td></tr>
 <tr class="separator:adbdff2f494948417786589c465d0644a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -114,7 +114,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a> Scroom::Detail::ThreadPool::getDeleter </td>
+          <td class="memname"><a class="el" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a> Scroom::Detail::ThreadPool::getDeleter </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -123,8 +123,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="async-deleter_8cc_source.html#l00016">16</a> of file <a class="el" href="async-deleter_8cc_source.html">async-deleter.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="namespaceScroom_1_1MemoryBlocks_1_1RawPageData.html#adf94bb10fff4d644b8512a38a950f123">static ::ThreadPool::Ptr</a> deleter = <a class="code" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">::ThreadPool::Ptr</a>(new ::ThreadPool(1, <span class="keyword">true</span>));</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">return</span> deleter;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      }</div><div class="ttc" id="namespaceScroom_1_1MemoryBlocks_1_1RawPageData_html_adf94bb10fff4d644b8512a38a950f123"><div class="ttname"><a href="namespaceScroom_1_1MemoryBlocks_1_1RawPageData.html#adf94bb10fff4d644b8512a38a950f123">Scroom::MemoryBlocks::RawPageData::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; uint8_t &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="blockallocator_8hh_source.html#l00025">blockallocator.hh:25</a></div></div>
-<div class="ttc" id="classThreadPool_html_a425b5b343e60e62663b65628dc1f9be1"><div class="ttname"><a href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; ThreadPool &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00173">threadpool.hh:173</a></div></div>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="namespaceScroom_1_1MemoryBlocks_1_1RawPageData.html#ab2280d97c5a9153ed26d76f64ef17f10">static ::ThreadPool::Ptr</a> deleter = <a class="code" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">::ThreadPool::Ptr</a>(new ::ThreadPool(1, <span class="keyword">true</span>));</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">return</span> deleter;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      }</div><div class="ttc" id="namespaceScroom_1_1MemoryBlocks_1_1RawPageData_html_ab2280d97c5a9153ed26d76f64ef17f10"><div class="ttname"><a href="namespaceScroom_1_1MemoryBlocks_1_1RawPageData.html#ab2280d97c5a9153ed26d76f64ef17f10">Scroom::MemoryBlocks::RawPageData::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; uint8_t &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="blockallocator_8hh_source.html#l00025">blockallocator.hh:25</a></div></div>
+<div class="ttc" id="classThreadPool_html_a60143f0f2001f70595bef06790d77af5"><div class="ttname"><a href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; ThreadPool &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00173">threadpool.hh:173</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

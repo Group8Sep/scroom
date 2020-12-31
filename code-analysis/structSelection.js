@@ -1,7 +1,7 @@
 var structSelection =
 [
-    [ "ConstPtr", "structSelection.html#a818de2f80ecb351760f69345132c1569", null ],
-    [ "Ptr", "structSelection.html#a0c872a61d8b40bd2195a71a27fadb7b0", null ],
+    [ "ConstPtr", "structSelection.html#afcad13e3a692070684600a872485bedd", null ],
+    [ "Ptr", "structSelection.html#a4ca69c52e74fd36e1c6958e0028c8ddd", null ],
     [ "Selection", "structSelection.html#a3fa57dfb27cea617496736b9a479cbb0", null ],
     [ "Selection", "structSelection.html#a1f46687a759cf302f2cdb9314858f501", null ],
     [ "endsAt", "structSelection.html#a99b4855c3c68bc847fb926c31faed223", null ],

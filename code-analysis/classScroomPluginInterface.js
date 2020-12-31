@@ -1,6 +1,6 @@
 var classScroomPluginInterface =
 [
-    [ "Ptr", "classScroomPluginInterface.html#abba66b5c765543a6bb67ce081c792cbb", null ],
+    [ "Ptr", "classScroomPluginInterface.html#a312afb591ade347d5e06f76d042adc1c", null ],
     [ "registerNewAggregateInterface", "classScroomPluginInterface.html#ae695a416b703bf195830fde9d1850ef1", null ],
     [ "registerNewPresentationInterface", "classScroomPluginInterface.html#ac4cc132e4616196f55783a8c9911ad5d", null ],
     [ "registerOpenInterface", "classScroomPluginInterface.html#aa8c064c4635f01c41a24abf631c682a3", null ],

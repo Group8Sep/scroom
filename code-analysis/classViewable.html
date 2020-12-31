@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-190-gaef4c65</span>
+   &#160;<span id="projectnumber">0.11.1-194-ga61e262</span>
    </div>
   </td>
  </tr>
@@ -106,7 +106,7 @@ Inheritance diagram for Viewable:</div>
 <area shape="rect" id="node6" href="classPresentationBase.html" title="{PresentationBase\n||+ open()\l+ close()\l# observerAdded()\l# viewAdded()\l# viewRemoved()\l# getViews()\l}" alt="" coords="297,1100,443,1251"/>
 <area shape="rect" id="node9" href="classPresentationMock.html" title="{PresentationMock\n||+ MOCK_METHOD1()\l+ MOCK_METHOD1()\l+ MOCK_METHOD0()\l+ MOCK_METHOD4()\l+ MOCK_METHOD2()\l+ MOCK_METHOD1()\l+ MOCK_METHOD0()\l+ create()\l}" alt="" coords="512,1085,671,1265"/>
 <area shape="rect" id="node11" href="classTransformPresentation.html" title="{TransformPresentation\n|&#45; transformationData\l&#45; presentation\l&#45; colormappable\l|+ open()\l+ close()\l+ getRect()\l+ redraw()\l+ getProperty()\l+ isPropertyDefined()\l+ getTitle()\l+ getAspectRatio()\l+ getPixelAverages()\l+ setColormap()\land 7 more...\l+ create()\l&#45; TransformPresentation()\l}" alt="" coords="695,1034,883,1317"/>
-<area shape="rect" id="node7" href="classTiffPresentationWrapper.html" title="{TiffPresentationWrapper\n|&#45; presentation\l|+ ~TiffPresentationWrapper()\l+ load()\l+ getTransformationData()\l+ getRect()\l+ redraw()\l+ getProperty()\l+ isPropertyDefined()\l+ getTitle()\l+ getPixelAverages()\l+ viewAdded()\land 10 more...\l+ create()\l&#45; TiffPresentationWrapper()\l}" alt="" coords="5,1482,220,1735"/>
+<area shape="rect" id="node7" href="classTiffPresentationWrapper.html" title="{TiffPresentationWrapper\n|&#45; presentation\l|+ ~TiffPresentationWrapper()\l+ TiffPresentationWrapper()\l+ TiffPresentationWrapper()\l+ operator=()\l+ operator=()\l+ load()\l+ getTransformationData()\l+ getRect()\l+ redraw()\l+ getProperty()\land 14 more...\l+ create()\l&#45; TiffPresentationWrapper()\l}" alt="" coords="5,1482,220,1735"/>
 <area shape="rect" id="node8" href="classTransparentOverlayPresentation.html" title="{TransparentOverlayPresentation\n|&#45; children\l&#45; sizeDeterminer\l&#45; viewData\l|+ getRect()\l+ redraw()\l+ getProperty()\l+ isPropertyDefined()\l+ getTitle()\l+ viewAdded()\l+ viewRemoved()\l+ getViews()\l+ addPresentation()\l+ create()\l&#45; TransparentOverlayPresentation()\l&#45; setOptimalColor()\l}" alt="" coords="245,1475,495,1743"/>
 <area shape="rect" id="node10" href="classColormappablePresentationMock.html" title="{ColormappablePresentationMock\n||+ create()\l}" alt="" coords="519,1570,757,1647"/>
 <area shape="rect" id="node13" href="classTiledBitmap.html" title="{TiledBitmap\n|&#45; bitmapWidth\l&#45; bitmapHeight\l&#45; ls\l&#45; layers\l&#45; coordinators\l&#45; viewDataMutex\l&#45; viewData\l&#45; tileCount\l&#45; tileFinishedMutex\l&#45; tileFinishedCount\l&#45; fileOperation\l&#45; progressBroadcaster\l&#45; queue\l|+ ~TiledBitmap()\l+ TiledBitmap()\l+ TiledBitmap()\l+ operator=()\l+ operator=()\l+ setSource()\l+ getBottomLayer()\l+ open()\l+ close()\l+ redraw()\l+ clearCaches()\l+ tileCreated()\l+ tileFinished()\l+ create()\l&#45; TiledBitmap()\l&#45; initialize()\l&#45; drawTile()\l&#45; connect()\l}" alt="" coords="907,924,1073,1427"/>
@@ -125,15 +125,15 @@ Collaboration diagram for Viewable:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:a398306f9e46a4b682714c04804cf4b16"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classViewable.html">Viewable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#a398306f9e46a4b682714c04804cf4b16">Ptr</a></td></tr>
 <tr class="separator:a398306f9e46a4b682714c04804cf4b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0405efb13a5af46c0c85080c296c1375"><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr&lt; <a class="el" href="classViewable.html">Viewable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#a0405efb13a5af46c0c85080c296c1375">WeakPtr</a></td></tr>
-<tr class="separator:a0405efb13a5af46c0c85080c296c1375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabdfb7ab64727c93444d8d445ed82b8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#aaabdfb7ab64727c93444d8d445ed82b8">WeakPtr</a> = boost::weak_ptr&lt; <a class="el" href="classViewable.html">Viewable</a> &gt;</td></tr>
+<tr class="separator:aaabdfb7ab64727c93444d8d445ed82b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3e17fe21b5e7bdb916b5c7cbfc65ffbd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#a3e17fe21b5e7bdb916b5c7cbfc65ffbd">open</a> (<a class="el" href="classViewInterface.html#ae92933d2303923b3c487674dff4ab999">ViewInterface::WeakPtr</a> vi)=0</td></tr>
+<tr class="memitem:a3e17fe21b5e7bdb916b5c7cbfc65ffbd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#a3e17fe21b5e7bdb916b5c7cbfc65ffbd">open</a> (<a class="el" href="classViewInterface.html#a728bb2c185daaeaa562a624b7ab96c23">ViewInterface::WeakPtr</a> vi)=0</td></tr>
 <tr class="memdesc:a3e17fe21b5e7bdb916b5c7cbfc65ffbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets called just after the <a class="el" href="classView.html">View</a> is created.  <a href="#a3e17fe21b5e7bdb916b5c7cbfc65ffbd">More...</a><br /></td></tr>
 <tr class="separator:a3e17fe21b5e7bdb916b5c7cbfc65ffbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8068b9af988bf0eb34fad7f8d0c79722"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#a8068b9af988bf0eb34fad7f8d0c79722">close</a> (<a class="el" href="classViewInterface.html#ae92933d2303923b3c487674dff4ab999">ViewInterface::WeakPtr</a> vi)=0</td></tr>
+<tr class="memitem:a8068b9af988bf0eb34fad7f8d0c79722"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#a8068b9af988bf0eb34fad7f8d0c79722">close</a> (<a class="el" href="classViewInterface.html#a728bb2c185daaeaa562a624b7ab96c23">ViewInterface::WeakPtr</a> vi)=0</td></tr>
 <tr class="memdesc:a8068b9af988bf0eb34fad7f8d0c79722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets called just before the <a class="el" href="classView.html">View</a> is destroyed.  <a href="#a8068b9af988bf0eb34fad7f8d0c79722">More...</a><br /></td></tr>
 <tr class="separator:a8068b9af988bf0eb34fad7f8d0c79722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -175,14 +175,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0405efb13a5af46c0c85080c296c1375"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0405efb13a5af46c0c85080c296c1375">&#9670;&nbsp;</a></span>WeakPtr</h2>
+<a id="aaabdfb7ab64727c93444d8d445ed82b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaabdfb7ab64727c93444d8d445ed82b8">&#9670;&nbsp;</a></span>WeakPtr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::weak_ptr&lt;<a class="el" href="classViewable.html">Viewable</a>&gt; <a class="el" href="classViewable.html#a0405efb13a5af46c0c85080c296c1375">Viewable::WeakPtr</a></td>
+          <td class="memname">using <a class="el" href="classViewable.html#aaabdfb7ab64727c93444d8d445ed82b8">Viewable::WeakPtr</a> =  boost::weak_ptr&lt;<a class="el" href="classViewable.html">Viewable</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -204,7 +204,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void Viewable::close </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classViewInterface.html#ae92933d2303923b3c487674dff4ab999">ViewInterface::WeakPtr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classViewInterface.html#a728bb2c185daaeaa562a624b7ab96c23">ViewInterface::WeakPtr</a>&#160;</td>
           <td class="paramname"><em>vi</em></td><td>)</td>
           <td></td>
         </tr>
@@ -219,7 +219,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets called just before the <a class="el" href="classView.html">View</a> is destroyed. </p>
 <dl class="section pre"><dt>Precondition</dt><dd>Should be called from within a Gdk critical section (i.e. between gdk_threads_enter() and gdk_threads_leave() calls) </dd></dl>
 
-<p>Implemented in <a class="el" href="classLayer.html#a3873ac09f791303a2966b2a4a260189c">Layer</a>, <a class="el" href="classCompressedTile.html#acdda5a83bb626bf3f6e42cfd3e99fb17">CompressedTile</a>, <a class="el" href="classPresentationBase.html#a553d47c312cd50bb52dd8ae8b44d6c92">PresentationBase</a>, <a class="el" href="classTiledBitmap.html#a8af8cf4f7c17ed256196ec80fa04ac06">TiledBitmap</a>, and <a class="el" href="classTransformPresentation.html#aae3ccb779a416bfe416f26223104c1bf">TransformPresentation</a>.</p>
+<p>Implemented in <a class="el" href="classLayer.html#a0e1a9f997012b05c921c35c66677c347">Layer</a>, <a class="el" href="classCompressedTile.html#a070926227d5e3c868f4710ec2222935f">CompressedTile</a>, <a class="el" href="classPresentationBase.html#a81cfe78e3adf5a1fecc307e2284578fc">PresentationBase</a>, <a class="el" href="classTiledBitmap.html#ac6c11e9ce82f6e03866c53d5d12a9ac0">TiledBitmap</a>, and <a class="el" href="classTransformPresentation.html#aa8a233e2cf3d2b78088f64321ec0cc6e">TransformPresentation</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gmock_2presentationinterface_8hh_source.html#l00020">PresentationMock::create()</a>.</p>
 
@@ -237,7 +237,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void Viewable::open </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classViewInterface.html#ae92933d2303923b3c487674dff4ab999">ViewInterface::WeakPtr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classViewInterface.html#a728bb2c185daaeaa562a624b7ab96c23">ViewInterface::WeakPtr</a>&#160;</td>
           <td class="paramname"><em>vi</em></td><td>)</td>
           <td></td>
         </tr>
@@ -252,7 +252,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets called just after the <a class="el" href="classView.html">View</a> is created. </p>
 <dl class="section pre"><dt>Precondition</dt><dd>Should be called from within a Gdk critical section (i.e. between gdk_threads_enter() and gdk_threads_leave() calls) </dd></dl>
 
-<p>Implemented in <a class="el" href="classLayer.html#af0275d5354f7f68e22354c62f579c334">Layer</a>, <a class="el" href="classCompressedTile.html#a5922aa59f865b11ba69141455e78cf30">CompressedTile</a>, <a class="el" href="classPresentationBase.html#aafb9cd10f35a2ae02b60875ddaaca4d5">PresentationBase</a>, <a class="el" href="classTiledBitmap.html#ae9452530d1be1c4d8e1bb69047e6dd72">TiledBitmap</a>, and <a class="el" href="classTransformPresentation.html#abadcacf12bd2631161b72c5042ec99bc">TransformPresentation</a>.</p>
+<p>Implemented in <a class="el" href="classLayer.html#afd25e081ea14b44723ccbf3bb1510b35">Layer</a>, <a class="el" href="classCompressedTile.html#a95a09596787a0fb4265b6097005a78fa">CompressedTile</a>, <a class="el" href="classPresentationBase.html#ae964144f0e8da9e7d7067f3d8183a8e4">PresentationBase</a>, <a class="el" href="classTiledBitmap.html#ad17bc560de133e417b01d2f34d731038">TiledBitmap</a>, and <a class="el" href="classTransformPresentation.html#a8aac4359f5f251bf4c89882857d1b0f9">TransformPresentation</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gmock_2presentationinterface_8hh_source.html#l00020">PresentationMock::create()</a>.</p>
 

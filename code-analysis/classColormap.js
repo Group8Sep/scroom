@@ -1,8 +1,8 @@
 var classColormap =
 [
-    [ "ConstPtr", "classColormap.html#a849b9e5007e826efd68a02998c2e5edc", null ],
-    [ "Ptr", "classColormap.html#a6bf9e09dab6a6185a568d29bb0a6bd39", null ],
-    [ "WeakPtr", "classColormap.html#a06980e560efe1170588b8e028ca3b0cd", null ],
+    [ "ConstPtr", "classColormap.html#a5c23481855949d7e372d0a2a41457e83", null ],
+    [ "Ptr", "classColormap.html#a490aa33223a81e71c130036dc980cd63", null ],
+    [ "WeakPtr", "classColormap.html#a6c4e5553dec4f9084e94d5f1accb327f", null ],
     [ "Colormap", "classColormap.html#afbda2916eb43f89f99512e951ca2c7de", null ],
     [ "clone", "classColormap.html#a49ce933aaccba53d75de85a9760b1f04", null ],
     [ "create", "classColormap.html#a9966b8a719d851b5e28b6b99ec6d2245", null ],

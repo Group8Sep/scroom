@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-190-gaef4c65</span>
+   &#160;<span id="projectnumber">0.11.1-194-ga61e262</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ Inheritance diagram for SourcePresentation:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSourcePresentation__inherit__graph.png" border="0" usemap="#SourcePresentation_inherit__map" alt="Inheritance graph"/></div>
 <map name="SourcePresentation_inherit__map" id="SourcePresentation_inherit__map">
-<area shape="rect" id="node3" href="classTiffPresentation.html" title="{TiffPresentation\n|&#45; fileName\l&#45; tif\l&#45; height\l&#45; width\l&#45; tbi\l&#45; bps\l&#45; spp\l&#45; properties\l&#45; views\l&#45; colormapHelper\l&#45; transformationData\l&#45; pipetteLayerOperation\l|+ ~TiffPresentation()\l+ destroy()\l+ load()\l+ getTransformationData()\l+ getRect()\l+ redraw()\l+ getProperty()\l+ isPropertyDefined()\l+ getTitle()\l+ viewAdded()\land 13 more...\l+ create()\l&#45; TiffPresentation()\l&#45; clearCaches()\l}" alt="" coords="5,344,203,773"/>
+<area shape="rect" id="node3" href="classTiffPresentation.html" title="{TiffPresentation\n|&#45; fileName\l&#45; tif\l&#45; height\l&#45; width\l&#45; tbi\l&#45; bps\l&#45; spp\l&#45; properties\l&#45; views\l&#45; colormapHelper\l&#45; transformationData\l&#45; pipetteLayerOperation\l|+ ~TiffPresentation()\l+ TiffPresentation()\l+ TiffPresentation()\l+ operator=()\l+ operator=()\l+ destroy()\l+ load()\l+ getTransformationData()\l+ getRect()\l+ redraw()\land 17 more...\l+ create()\l&#45; TiffPresentation()\l&#45; clearCaches()\l}" alt="" coords="5,344,203,773"/>
 <area shape="rect" id="node2" href="classInterface.html" title="{Interface\n||+ Interface()\l+ Interface()\l+ operator=()\l+ Interface()\l+ operator=()\l+ ~Interface()\l}" alt="" coords="46,5,162,156"/>
 </map>
 </div>
@@ -113,8 +113,8 @@ Collaboration diagram for SourcePresentation:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a48995c55873abf43957f484d91886632"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classSourcePresentation.html">SourcePresentation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSourcePresentation.html#a48995c55873abf43957f484d91886632">Ptr</a></td></tr>
-<tr class="separator:a48995c55873abf43957f484d91886632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc8551f0f8572a899f4270c353375b2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSourcePresentation.html#adcc8551f0f8572a899f4270c353375b2">Ptr</a> = boost::shared_ptr&lt; <a class="el" href="classSourcePresentation.html">SourcePresentation</a> &gt;</td></tr>
+<tr class="separator:adcc8551f0f8572a899f4270c353375b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -146,14 +146,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="tiledbitmapinterface_8hh_source.html#l00195">195</a> of file <a class="el" href="tiledbitmapinterface_8hh_source.html">tiledbitmapinterface.hh</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a48995c55873abf43957f484d91886632"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48995c55873abf43957f484d91886632">&#9670;&nbsp;</a></span>Ptr</h2>
+<a id="adcc8551f0f8572a899f4270c353375b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcc8551f0f8572a899f4270c353375b2">&#9670;&nbsp;</a></span>Ptr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="classSourcePresentation.html">SourcePresentation</a>&gt; <a class="el" href="classSourcePresentation.html#a48995c55873abf43957f484d91886632">SourcePresentation::Ptr</a></td>
+          <td class="memname">using <a class="el" href="classSourcePresentation.html#adcc8551f0f8572a899f4270c353375b2">SourcePresentation::Ptr</a> =  boost::shared_ptr&lt;<a class="el" href="classSourcePresentation.html">SourcePresentation</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -189,7 +189,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Done reading bitmap data. </p>
 <p>Any open files can be closed now </p>
 
-<p>Implemented in <a class="el" href="classTiffPresentation.html#a117fb02d3d5ba5c71bd78993c88253a5">TiffPresentation</a>.</p>
+<p>Implemented in <a class="el" href="classTiffPresentation.html#a1d8b4deb2124679bb8829fe9a7859245">TiffPresentation</a>.</p>
 
 </div>
 </div>
@@ -259,7 +259,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classTiffPresentation.html#af0afcb7ded40cc6b732d669b7b7a7fa6">TiffPresentation</a>.</p>
+<p>Implemented in <a class="el" href="classTiffPresentation.html#a3bf5c67d5756caf72fe82501f15bff42">TiffPresentation</a>.</p>
 
 </div>
 </div>

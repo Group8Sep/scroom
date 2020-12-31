@@ -1,6 +1,6 @@
 var classQueueJumper =
 [
-    [ "Ptr", "classQueueJumper.html#a762d0a2bf93e68110a85e92a1091e026", null ],
+    [ "Ptr", "classQueueJumper.html#ae686df54c2d2c012d6ba89894391daa8", null ],
     [ "QueueJumper", "classQueueJumper.html#a30e699531f2e917d8dd03620fdc2e509", null ],
     [ "create", "classQueueJumper.html#a5b17c2980aa09df97b92423481e24dc1", null ],
     [ "operator()", "classQueueJumper.html#a66bc37b1160a29de9f47ebc0766f2b47", null ],

@@ -1,8 +1,8 @@
 var classLayer =
 [
-    [ "Ptr", "classLayer.html#a1ac49e190484eca087cd57658d7a9644", null ],
+    [ "Ptr", "classLayer.html#ae0d4b7e8822cfd565b9adbb4a0e46f03", null ],
     [ "Layer", "classLayer.html#a7f2c6033253283440a0574d8fcfb571d", null ],
-    [ "close", "classLayer.html#a3873ac09f791303a2966b2a4a260189c", null ],
+    [ "close", "classLayer.html#a0e1a9f997012b05c921c35c66677c347", null ],
     [ "create", "classLayer.html#a79fd1cab4c003fa2376466bc812fddfa", null ],
     [ "fetchData", "classLayer.html#a3047bcacbe02b1aa960b4440d8aaacfa", null ],
     [ "getDepth", "classLayer.html#a72c5400a904c8d8e0bb78ac522a60460", null ],
@@ -13,7 +13,7 @@ var classLayer =
     [ "getTileLine", "classLayer.html#af90b35813138ca6b6881f78ab67cea33", null ],
     [ "getVerTileCount", "classLayer.html#a3b0a9e864d755c8743448e65cb7b3dc7", null ],
     [ "getWidth", "classLayer.html#a39e3b346235715e15d99a0a8ac95e0a7", null ],
-    [ "open", "classLayer.html#af0275d5354f7f68e22354c62f579c334", null ],
+    [ "open", "classLayer.html#afd25e081ea14b44723ccbf3bb1510b35", null ],
     [ "depth", "classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25", null ],
     [ "height", "classLayer.html#a6a0bc24033339368a0ca9747485f0053", null ],
     [ "horTileCount", "classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c", null ],
