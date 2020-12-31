@@ -10,7 +10,7 @@ var searchData=
   ['pipettehandler',['PipetteHandler',['../classPipetteHandler.html#a2bccbbf72b318093ea1f19c21ec8d681',1,'PipetteHandler']]],
   ['pixelsizefromzoom',['pixelSizeFromZoom',['../cairo-helpers_8hh.html#ac7a152a4cc864e9c67acbc6686a9d3a4',1,'pixelSizeFromZoom(int zoom):&#160;cairo-helpers.cc'],['../cairo-helpers_8cc.html#ac7a152a4cc864e9c67acbc6686a9d3a4',1,'pixelSizeFromZoom(int zoom):&#160;cairo-helpers.cc']]],
   ['plugininformation',['PluginInformation',['../structPluginInformation.html#a6c1a588783640e3a6e845486e675182e',1,'PluginInformation']]],
-  ['plugininformationinterface',['PluginInformationInterface',['../classPluginInformationInterface.html#aced25f580444e92771f5b1721f3a3a9e',1,'PluginInformationInterface']]],
+  ['plugininformationinterface',['PluginInformationInterface',['../classPluginInformationInterface.html#a828dd45df53bb5a7a5be4214bc5d4812',1,'PluginInformationInterface']]],
   ['pluginmanager',['PluginManager',['../classPluginManager.html#a25f1e568d8d923e4d2a4f777516b4be5',1,'PluginManager']]],
   ['point',['Point',['../classScroom_1_1Utils_1_1Point.html#a3895bd735a06d13718a39b3d96fcc0d8',1,'Scroom::Utils::Point::Point(value_type x_, value_type y_)'],['../classScroom_1_1Utils_1_1Point.html#a2875e9cb8b19a3cf92ec9d76b21c6471',1,'Scroom::Utils::Point::Point(Point&lt; U &gt; other)'],['../classScroom_1_1Utils_1_1Point.html#aec492d4a72683495c801b42b7a996586',1,'Scroom::Utils::Point::Point(GdkPoint &amp;other)']]],
   ['presentationadded',['presentationAdded',['../classPresentationObserver.html#a2c8ab2b2ac2d09cb32f5dbc8e336b49b',1,'PresentationObserver']]],

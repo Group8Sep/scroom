@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-194-ga61e262</span>
+   &#160;<span id="projectnumber">0.11.1-197-g4997989</span>
    </div>
   </td>
  </tr>
@@ -133,9 +133,9 @@ Protected Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aac5382e9016830f9eee55b9f32215782"><td class="memItemLeft" align="right" valign="top">boost::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueueJumper.html#aac5382e9016830f9eee55b9f32215782">mut</a></td></tr>
 <tr class="separator:aac5382e9016830f9eee55b9f32215782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e5a773c17b4649f07c61b22751f6ba8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueueJumper.html#a9e5a773c17b4649f07c61b22751f6ba8">inQueue</a></td></tr>
+<tr class="memitem:a9e5a773c17b4649f07c61b22751f6ba8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueueJumper.html#a9e5a773c17b4649f07c61b22751f6ba8">inQueue</a> {true}</td></tr>
 <tr class="separator:a9e5a773c17b4649f07c61b22751f6ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26605a27165f871fd14e586fa3c80b6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueueJumper.html#a26605a27165f871fd14e586fa3c80b6e">isSet</a></td></tr>
+<tr class="memitem:a26605a27165f871fd14e586fa3c80b6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueueJumper.html#a26605a27165f871fd14e586fa3c80b6e">isSet</a> {false}</td></tr>
 <tr class="separator:a26605a27165f871fd14e586fa3c80b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af34fdb126ea4078e80dde8038a95c564"><td class="memItemLeft" align="right" valign="top">boost::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueueJumper.html#af34fdb126ea4078e80dde8038a95c564">fn</a></td></tr>
 <tr class="separator:af34fdb126ea4078e80dde8038a95c564"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,19 +215,15 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p><a class="el" href="classQueueJumper.html" title="Jump the queue of a ThreadPool. ">QueueJumper</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00414">414</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
+<p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00421">ThreadPool::Job::Job()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00419">create()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  : <a class="code" href="classQueueJumper.html#a9e5a773c17b4649f07c61b22751f6ba8">inQueue</a>(<span class="keyword">true</span>)</div><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  , <a class="code" href="classQueueJumper.html#a26605a27165f871fd14e586fa3c80b6e">isSet</a>(<span class="keyword">false</span>)</div><div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;{}</div><div class="ttc" id="classQueueJumper_html_a9e5a773c17b4649f07c61b22751f6ba8"><div class="ttname"><a href="classQueueJumper.html#a9e5a773c17b4649f07c61b22751f6ba8">QueueJumper::inQueue</a></div><div class="ttdeci">bool inQueue</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00544">threadpool.hh:544</a></div></div>
-<div class="ttc" id="classQueueJumper_html_a26605a27165f871fd14e586fa3c80b6e"><div class="ttname"><a href="classQueueJumper.html#a26605a27165f871fd14e586fa3c80b6e">QueueJumper::isSet</a></div><div class="ttdeci">bool isSet</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00545">threadpool.hh:545</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -261,11 +257,11 @@ Private Attributes</h2></td></tr>
 </ul>
 <p>The <a class="el" href="classQueueJumper.html" title="Jump the queue of a ThreadPool. ">QueueJumper</a> will be destroyed when both parties have released their reference. </p>
 
-<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00419">419</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00432">432</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00172">DataFetcher::operator()()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classQueueJumper.html#ae686df54c2d2c012d6ba89894391daa8">QueueJumper::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classQueueJumper.html#a30e699531f2e917d8dd03620fdc2e509">QueueJumper</a>()); }</div><div class="ttc" id="classQueueJumper_html_ae686df54c2d2c012d6ba89894391daa8"><div class="ttname"><a href="classQueueJumper.html#ae686df54c2d2c012d6ba89894391daa8">QueueJumper::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; QueueJumper &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00540">threadpool.hh:540</a></div></div>
-<div class="ttc" id="classQueueJumper_html_a30e699531f2e917d8dd03620fdc2e509"><div class="ttname"><a href="classQueueJumper.html#a30e699531f2e917d8dd03620fdc2e509">QueueJumper::QueueJumper</a></div><div class="ttdeci">QueueJumper()</div><div class="ttdoc">QueueJumper. </div><div class="ttdef"><b>Definition:</b> <a href="threadpoolimpl_8cc_source.html#l00414">threadpoolimpl.cc:414</a></div></div>
+<div class="fragment"><div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classQueueJumper.html#ae686df54c2d2c012d6ba89894391daa8">QueueJumper::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classQueueJumper.html#a30e699531f2e917d8dd03620fdc2e509">QueueJumper</a>()); }</div><div class="ttc" id="classQueueJumper_html_ae686df54c2d2c012d6ba89894391daa8"><div class="ttname"><a href="classQueueJumper.html#ae686df54c2d2c012d6ba89894391daa8">QueueJumper::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; QueueJumper &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00540">threadpool.hh:540</a></div></div>
+<div class="ttc" id="classQueueJumper_html_a30e699531f2e917d8dd03620fdc2e509"><div class="ttname"><a href="classQueueJumper.html#a30e699531f2e917d8dd03620fdc2e509">QueueJumper::QueueJumper</a></div><div class="ttdeci">QueueJumper()</div><div class="ttdoc">QueueJumper. </div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -284,8 +280,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00438">438</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;{</div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  boost::mutex::scoped_lock lock(<a class="code" href="classQueueJumper.html#aac5382e9016830f9eee55b9f32215782">mut</a>);</div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classQueueJumper.html#a26605a27165f871fd14e586fa3c80b6e">isSet</a>)</div><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  {</div><div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <a class="code" href="classQueueJumper.html#af34fdb126ea4078e80dde8038a95c564">fn</a>();</div><div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  }</div><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <a class="code" href="classQueueJumper.html#a9e5a773c17b4649f07c61b22751f6ba8">inQueue</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;}</div><div class="ttc" id="classQueueJumper_html_a9e5a773c17b4649f07c61b22751f6ba8"><div class="ttname"><a href="classQueueJumper.html#a9e5a773c17b4649f07c61b22751f6ba8">QueueJumper::inQueue</a></div><div class="ttdeci">bool inQueue</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00544">threadpool.hh:544</a></div></div>
+<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00451">451</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;{</div><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  boost::mutex::scoped_lock lock(<a class="code" href="classQueueJumper.html#aac5382e9016830f9eee55b9f32215782">mut</a>);</div><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classQueueJumper.html#a26605a27165f871fd14e586fa3c80b6e">isSet</a>)</div><div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;  {</div><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <a class="code" href="classQueueJumper.html#af34fdb126ea4078e80dde8038a95c564">fn</a>();</div><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;  }</div><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;  <a class="code" href="classQueueJumper.html#a9e5a773c17b4649f07c61b22751f6ba8">inQueue</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;}</div><div class="ttc" id="classQueueJumper_html_a9e5a773c17b4649f07c61b22751f6ba8"><div class="ttname"><a href="classQueueJumper.html#a9e5a773c17b4649f07c61b22751f6ba8">QueueJumper::inQueue</a></div><div class="ttdeci">bool inQueue</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00544">threadpool.hh:544</a></div></div>
 <div class="ttc" id="classQueueJumper_html_af34fdb126ea4078e80dde8038a95c564"><div class="ttname"><a href="classQueueJumper.html#af34fdb126ea4078e80dde8038a95c564">QueueJumper::fn</a></div><div class="ttdeci">boost::function&lt; void()&gt; fn</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00547">threadpool.hh:547</a></div></div>
 <div class="ttc" id="classQueueJumper_html_aac5382e9016830f9eee55b9f32215782"><div class="ttname"><a href="classQueueJumper.html#aac5382e9016830f9eee55b9f32215782">QueueJumper::mut</a></div><div class="ttdeci">boost::mutex mut</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00543">threadpool.hh:543</a></div></div>
 <div class="ttc" id="classQueueJumper_html_a26605a27165f871fd14e586fa3c80b6e"><div class="ttname"><a href="classQueueJumper.html#a26605a27165f871fd14e586fa3c80b6e">QueueJumper::isSet</a></div><div class="ttdeci">bool isSet</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00545">threadpool.hh:545</a></div></div>
@@ -323,8 +319,8 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00421">421</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;{</div><div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  boost::mutex::scoped_lock lock(<a class="code" href="classQueueJumper.html#aac5382e9016830f9eee55b9f32215782">mut</a>);</div><div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classQueueJumper.html#a9e5a773c17b4649f07c61b22751f6ba8">inQueue</a>)</div><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  {</div><div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="comment">// Our turn hasn&#39;t passed yet. Accept work.</span></div><div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    this-&gt;<a class="code" href="classQueueJumper.html#af34fdb126ea4078e80dde8038a95c564">fn</a> = fn_;</div><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <a class="code" href="classQueueJumper.html#a26605a27165f871fd14e586fa3c80b6e">isSet</a>    = <span class="keyword">true</span>;</div><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  }</div><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  <span class="keywordflow">else</span></div><div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  {</div><div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="comment">// Our turn has passed. We cannot do the work</span></div><div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  }</div><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div><div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classQueueJumper.html#a9e5a773c17b4649f07c61b22751f6ba8">inQueue</a>;</div><div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;}</div><div class="ttc" id="classQueueJumper_html_a9e5a773c17b4649f07c61b22751f6ba8"><div class="ttname"><a href="classQueueJumper.html#a9e5a773c17b4649f07c61b22751f6ba8">QueueJumper::inQueue</a></div><div class="ttdeci">bool inQueue</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00544">threadpool.hh:544</a></div></div>
+<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00434">434</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;{</div><div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;  boost::mutex::scoped_lock lock(<a class="code" href="classQueueJumper.html#aac5382e9016830f9eee55b9f32215782">mut</a>);</div><div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classQueueJumper.html#a9e5a773c17b4649f07c61b22751f6ba8">inQueue</a>)</div><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  {</div><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="comment">// Our turn hasn&#39;t passed yet. Accept work.</span></div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    this-&gt;<a class="code" href="classQueueJumper.html#af34fdb126ea4078e80dde8038a95c564">fn</a> = fn_;</div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <a class="code" href="classQueueJumper.html#a26605a27165f871fd14e586fa3c80b6e">isSet</a>    = <span class="keyword">true</span>;</div><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  }</div><div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  <span class="keywordflow">else</span></div><div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  {</div><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="comment">// Our turn has passed. We cannot do the work</span></div><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  }</div><div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;</div><div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classQueueJumper.html#a9e5a773c17b4649f07c61b22751f6ba8">inQueue</a>;</div><div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;}</div><div class="ttc" id="classQueueJumper_html_a9e5a773c17b4649f07c61b22751f6ba8"><div class="ttname"><a href="classQueueJumper.html#a9e5a773c17b4649f07c61b22751f6ba8">QueueJumper::inQueue</a></div><div class="ttdeci">bool inQueue</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00544">threadpool.hh:544</a></div></div>
 <div class="ttc" id="classQueueJumper_html_af34fdb126ea4078e80dde8038a95c564"><div class="ttname"><a href="classQueueJumper.html#af34fdb126ea4078e80dde8038a95c564">QueueJumper::fn</a></div><div class="ttdeci">boost::function&lt; void()&gt; fn</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00547">threadpool.hh:547</a></div></div>
 <div class="ttc" id="classQueueJumper_html_aac5382e9016830f9eee55b9f32215782"><div class="ttname"><a href="classQueueJumper.html#aac5382e9016830f9eee55b9f32215782">QueueJumper::mut</a></div><div class="ttdeci">boost::mutex mut</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00543">threadpool.hh:543</a></div></div>
 <div class="ttc" id="classQueueJumper_html_a26605a27165f871fd14e586fa3c80b6e"><div class="ttname"><a href="classQueueJumper.html#a26605a27165f871fd14e586fa3c80b6e">QueueJumper::isSet</a></div><div class="ttdeci">bool isSet</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00545">threadpool.hh:545</a></div></div>
@@ -354,8 +350,6 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="threadpool_8hh_source.html#l00547">547</a> of file <a class="el" href="threadpool_8hh_source.html">threadpool.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00438">operator()()</a>, and <a class="el" href="threadpoolimpl_8cc_source.html#l00421">setWork()</a>.</p>
-
 </div>
 </div>
 <a id="a9e5a773c17b4649f07c61b22751f6ba8"></a>
@@ -368,7 +362,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool QueueJumper::inQueue</td>
+          <td class="memname">bool QueueJumper::inQueue {true}</td>
         </tr>
       </table>
   </td>
@@ -379,8 +373,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="threadpool_8hh_source.html#l00544">544</a> of file <a class="el" href="threadpool_8hh_source.html">threadpool.hh</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00438">operator()()</a>, and <a class="el" href="threadpoolimpl_8cc_source.html#l00421">setWork()</a>.</p>
 
 </div>
 </div>
@@ -394,7 +386,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool QueueJumper::isSet</td>
+          <td class="memname">bool QueueJumper::isSet {false}</td>
         </tr>
       </table>
   </td>
@@ -405,8 +397,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="threadpool_8hh_source.html#l00545">545</a> of file <a class="el" href="threadpool_8hh_source.html">threadpool.hh</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00438">operator()()</a>, and <a class="el" href="threadpoolimpl_8cc_source.html#l00421">setWork()</a>.</p>
 
 </div>
 </div>
@@ -431,8 +421,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="threadpool_8hh_source.html#l00543">543</a> of file <a class="el" href="threadpool_8hh_source.html">threadpool.hh</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00438">operator()()</a>, and <a class="el" href="threadpoolimpl_8cc_source.html#l00421">setWork()</a>.</p>
 
 </div>
 </div>

@@ -89,7 +89,7 @@ var NAVTREEINDEX2 =
 "classPluginInformationInterface.html#a1a07f743409718f35d483567902c96fd":[1,0,54,0],
 "classPluginInformationInterface.html#a1ab5cb80b6411a8ed84e81bac21c89a8":[1,0,54,2],
 "classPluginInformationInterface.html#a7abb4ce14ed37b3363a9748b6780d7c9":[1,0,54,3],
-"classPluginInformationInterface.html#aced25f580444e92771f5b1721f3a3a9e":[1,0,54,1],
+"classPluginInformationInterface.html#a828dd45df53bb5a7a5be4214bc5d4812":[1,0,54,1],
 "classPluginInformationInterface.html#ad03455957b757e3ce85e1ceae4bd5270":[1,0,54,5],
 "classPluginManager.html":[1,0,55],
 "classPluginManager.html#a08141144c8b5b63151e1d0b21a9ad75c":[1,0,55,18],

@@ -1,6 +1,6 @@
 var classColor =
 [
-    [ "Color", "classColor.html#a9a742cbe9f9f4037f5d9f4e81a9b2428", null ],
+    [ "Color", "classColor.html#a6fae8aa8b75d27cb134234e75b41caf2", null ],
     [ "Color", "classColor.html#ae26f316e88c4e4f372ec39951bcaac28", null ],
     [ "Color", "classColor.html#a677db6dbf89e2270a6b98cee939b672e", null ],
     [ "getARGB32", "classColor.html#a52fc7f748b78eac3e266df3e58cb4ac5", null ],
