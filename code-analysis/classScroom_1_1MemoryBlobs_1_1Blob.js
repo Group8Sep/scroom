@@ -9,7 +9,6 @@ var classScroom_1_1MemoryBlobs_1_1Blob =
       [ "COMPRESSING", "classScroom_1_1MemoryBlobs_1_1Blob.html#a50973e173ac55206712bce2ecfe361cea79f7443f9062063b8cac1e41d3fa1fff", null ]
     ] ],
     [ "Blob", "classScroom_1_1MemoryBlobs_1_1Blob.html#a8f8dc363aea3e891bf0812467e4fd165", null ],
-    [ "~Blob", "classScroom_1_1MemoryBlobs_1_1Blob.html#a761a01191561967810eb6e8c4cc9fde7", null ],
     [ "compress", "classScroom_1_1MemoryBlobs_1_1Blob.html#a2f3d263c27f8084dbd467aab9f175b35", null ],
     [ "create", "classScroom_1_1MemoryBlobs_1_1Blob.html#a4efac4819c3d9d77e9fbf022c61fe4c2", null ],
     [ "get", "classScroom_1_1MemoryBlobs_1_1Blob.html#a5f92c1a53bb27aafc2c872b3bd9c55a0", null ],

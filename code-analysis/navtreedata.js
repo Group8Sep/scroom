@@ -42,15 +42,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classColormappable.html#a65f7747cb8c21704aed2bcbb05401f8b",
-"classOperations24bpp.html#a3a16af1f5fc66b2f35f8e7667ccb3a8d",
-"classScroom_1_1Bitmap_1_1SampleIterator.html#a103bb667ba5dce21a10941904a8cc4a1",
-"classScroom_1_1Utils_1_1Detail_1_1ProgressStore.html#ad64f01bbb18a7b887d33584e5f1ac94e",
-"classThreadPool.html",
-"classTiledBitmapViewData.html#a86cf1099b453666642cbc60a1a2b41d3",
-"colormap-helpers_8cc_source.html",
-"local_8hh.html#ae2de07f0f9ff468e76d12f302807d3d8",
-"tiledbitmapviewdata_8cc.html#af32b1dddcb044cfdf445db8f34409874"
+"classColormappableMock.html",
+"classOperations8bpp.html#a1054c0764b8218447b2b0ac896407804",
+"classScroom_1_1Bookkeeping_1_1Detail_1_1LValue.html#a27892a1c83a97d703d338641345baaad",
+"classScroom_1_1Utils_1_1Detail_1_1Registration.html",
+"classSizeDeterminer_1_1PresentationData.html#a82e2f748077a93fff8f95a95e720e4b7",
+"classTiledBitmap.html#af92b69aca031f6e9ffeec29e28f11049",
+"classanonymous__namespace_02threadpoolimpl_8cc_03_1_1ThreadList.html#ad3dae87c1bcaebe241130844207a6221",
+"loader_8cc.html",
+"tiled-bitmap_8cc.html#afb81a705ea3c38444cb0f4fb12410f43"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -2,9 +2,13 @@ var classLayerCoordinator =
 [
     [ "Ptr", "classLayerCoordinator.html#a97bbd1b82366e313d717d7486d4596fc", null ],
     [ "~LayerCoordinator", "classLayerCoordinator.html#a278bc7a33cc0f4f07cdbd0fcf980aa6d", null ],
+    [ "LayerCoordinator", "classLayerCoordinator.html#a3eafcda521a02dab43ce39423336214f", null ],
+    [ "LayerCoordinator", "classLayerCoordinator.html#a9e3bb81ad4b4ef95cbb27dc6b3f6e109", null ],
     [ "LayerCoordinator", "classLayerCoordinator.html#ad0f7940315165ccb0d889a98d1775591", null ],
     [ "addSourceTile", "classLayerCoordinator.html#a5234fc9c478871ae4cf5648ffc9eea27", null ],
     [ "create", "classLayerCoordinator.html#a2ced2ea05b51b8480e4a359156eff623", null ],
+    [ "operator=", "classLayerCoordinator.html#a218c9484e747b15ad2e9893bf9eba2dd", null ],
+    [ "operator=", "classLayerCoordinator.html#a69900a72e012376f8f1de903f285ef30", null ],
     [ "reduceSourceTile", "classLayerCoordinator.html#a2b72990673e3a25cbcf352f20b475aad", null ],
     [ "tileFinished", "classLayerCoordinator.html#a8f28b402392cc9ddc31030ebe8f44200", null ],
     [ "lo", "classLayerCoordinator.html#a448c520cd5af1ff7a9544fa1d1e763e8", null ],

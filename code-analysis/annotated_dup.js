@@ -25,6 +25,7 @@ var annotated_dup =
     [ "GObjectUnref", "classGObjectUnref.html", "classGObjectUnref" ],
     [ "GtkFileFilterInfoDeleter", "classGtkFileFilterInfoDeleter.html", "classGtkFileFilterInfoDeleter" ],
     [ "GtkFileFilterListDestroyer", "classGtkFileFilterListDestroyer.html", "classGtkFileFilterListDestroyer" ],
+    [ "Interface", "classInterface.html", "classInterface" ],
     [ "Layer", "classLayer.html", "classLayer" ],
     [ "LayerCoordinator", "classLayerCoordinator.html", "classLayerCoordinator" ],
     [ "LayerOperations", "classLayerOperations.html", "classLayerOperations" ],

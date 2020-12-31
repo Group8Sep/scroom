@@ -2,7 +2,6 @@ var classMeasureHandler =
 [
     [ "Ptr", "classMeasureHandler.html#a8a16f6908458f4bbf1c905d349789263", null ],
     [ "MeasureHandler", "classMeasureHandler.html#a602d94594c68861c21dfa8767fafdd31", null ],
-    [ "~MeasureHandler", "classMeasureHandler.html#a3f87a00e422caeca46011ce7e8bf9528", null ],
     [ "create", "classMeasureHandler.html#a8b0eece69453b6b02885a7975c9c08f2", null ],
     [ "displayMeasurement", "classMeasureHandler.html#a7ad2373524fa790a7351567a8aa015d3", null ],
     [ "drawCross", "classMeasureHandler.html#aa15c75da849a11f21e03d8af8a608e2f", null ],

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-182-g72cecad</span>
+   &#160;<span id="projectnumber">0.11.1-190-gaef4c65</span>
    </div>
   </td>
  </tr>
@@ -113,7 +113,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="threadpool_8hh_source.html#l00154">154</a> of file <a class="el" href="threadpool_8hh_source.html">threadpool.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="threadpool_8hh_source.html#l00163">163</a> of file <a class="el" href="threadpool_8hh_source.html">threadpool.hh</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8086e43220bfb1c1b879e86649fb25f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8086e43220bfb1c1b879e86649fb25f4">&#9670;&nbsp;</a></span>Job() <span class="overload">[1/2]</span></h2>
@@ -132,9 +132,9 @@ Public Attributes</h2></td></tr>
 
 <p><a class="el" href="structThreadPool_1_1Job.html">ThreadPool::Job</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00399">399</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  : <a class="code" href="structThreadPool_1_1Job.html#a0ea65c5ac4b6b32260ff523c47e33440">queue</a>()</div><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  , <a class="code" href="structThreadPool_1_1Job.html#a658aeaa8ac34c28832cdb8f0c080e75f">fn</a>()</div><div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;{}</div><div class="ttc" id="structThreadPool_1_1Job_html_a0ea65c5ac4b6b32260ff523c47e33440"><div class="ttname"><a href="structThreadPool_1_1Job.html#a0ea65c5ac4b6b32260ff523c47e33440">ThreadPool::Job::queue</a></div><div class="ttdeci">boost::shared_ptr&lt; Scroom::Detail::ThreadPool::QueueImpl &gt; queue</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00156">threadpool.hh:156</a></div></div>
-<div class="ttc" id="structThreadPool_1_1Job_html_a658aeaa8ac34c28832cdb8f0c080e75f"><div class="ttname"><a href="structThreadPool_1_1Job.html#a658aeaa8ac34c28832cdb8f0c080e75f">ThreadPool::Job::fn</a></div><div class="ttdeci">boost::function&lt; void()&gt; fn</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00157">threadpool.hh:157</a></div></div>
+<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00403">403</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  : <a class="code" href="structThreadPool_1_1Job.html#a0ea65c5ac4b6b32260ff523c47e33440">queue</a>()</div><div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  , <a class="code" href="structThreadPool_1_1Job.html#a658aeaa8ac34c28832cdb8f0c080e75f">fn</a>()</div><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;{}</div><div class="ttc" id="structThreadPool_1_1Job_html_a0ea65c5ac4b6b32260ff523c47e33440"><div class="ttname"><a href="structThreadPool_1_1Job.html#a0ea65c5ac4b6b32260ff523c47e33440">ThreadPool::Job::queue</a></div><div class="ttdeci">boost::shared_ptr&lt; Scroom::Detail::ThreadPool::QueueImpl &gt; queue</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00165">threadpool.hh:165</a></div></div>
+<div class="ttc" id="structThreadPool_1_1Job_html_a658aeaa8ac34c28832cdb8f0c080e75f"><div class="ttname"><a href="structThreadPool_1_1Job.html#a658aeaa8ac34c28832cdb8f0c080e75f">ThreadPool::Job::fn</a></div><div class="ttdeci">boost::function&lt; void()&gt; fn</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00166">threadpool.hh:166</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -164,9 +164,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00404">404</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  : <a class="code" href="structThreadPool_1_1Job.html#a0ea65c5ac4b6b32260ff523c47e33440">queue</a>(queue_-&gt;get())</div><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  , <a class="code" href="structThreadPool_1_1Job.html#a658aeaa8ac34c28832cdb8f0c080e75f">fn</a>(fn_)</div><div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;{}</div><div class="ttc" id="structThreadPool_1_1Job_html_a0ea65c5ac4b6b32260ff523c47e33440"><div class="ttname"><a href="structThreadPool_1_1Job.html#a0ea65c5ac4b6b32260ff523c47e33440">ThreadPool::Job::queue</a></div><div class="ttdeci">boost::shared_ptr&lt; Scroom::Detail::ThreadPool::QueueImpl &gt; queue</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00156">threadpool.hh:156</a></div></div>
-<div class="ttc" id="structThreadPool_1_1Job_html_a658aeaa8ac34c28832cdb8f0c080e75f"><div class="ttname"><a href="structThreadPool_1_1Job.html#a658aeaa8ac34c28832cdb8f0c080e75f">ThreadPool::Job::fn</a></div><div class="ttdeci">boost::function&lt; void()&gt; fn</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00157">threadpool.hh:157</a></div></div>
+<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00408">408</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  : <a class="code" href="structThreadPool_1_1Job.html#a0ea65c5ac4b6b32260ff523c47e33440">queue</a>(queue_-&gt;get())</div><div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  , <a class="code" href="structThreadPool_1_1Job.html#a658aeaa8ac34c28832cdb8f0c080e75f">fn</a>(fn_)</div><div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;{}</div><div class="ttc" id="structThreadPool_1_1Job_html_a0ea65c5ac4b6b32260ff523c47e33440"><div class="ttname"><a href="structThreadPool_1_1Job.html#a0ea65c5ac4b6b32260ff523c47e33440">ThreadPool::Job::queue</a></div><div class="ttdeci">boost::shared_ptr&lt; Scroom::Detail::ThreadPool::QueueImpl &gt; queue</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00165">threadpool.hh:165</a></div></div>
+<div class="ttc" id="structThreadPool_1_1Job_html_a658aeaa8ac34c28832cdb8f0c080e75f"><div class="ttname"><a href="structThreadPool_1_1Job.html#a658aeaa8ac34c28832cdb8f0c080e75f">ThreadPool::Job::fn</a></div><div class="ttdeci">boost::function&lt; void()&gt; fn</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00166">threadpool.hh:166</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -183,9 +183,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="threadpool_8hh_source.html#l00157">157</a> of file <a class="el" href="threadpool_8hh_source.html">threadpool.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="threadpool_8hh_source.html#l00166">166</a> of file <a class="el" href="threadpool_8hh_source.html">threadpool.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00297">ThreadPool::do_one()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00301">ThreadPool::do_one()</a>.</p>
 
 </div>
 </div>
@@ -201,9 +201,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="threadpool_8hh_source.html#l00156">156</a> of file <a class="el" href="threadpool_8hh_source.html">threadpool.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="threadpool_8hh_source.html#l00165">165</a> of file <a class="el" href="threadpool_8hh_source.html">threadpool.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00297">ThreadPool::do_one()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00301">ThreadPool::do_one()</a>.</p>
 
 </div>
 </div>

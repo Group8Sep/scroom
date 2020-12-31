@@ -1,6 +1,5 @@
 var classCommonOperations =
 [
-    [ "~CommonOperations", "classCommonOperations.html#a7d6331465a18e18327468c098cbde166", null ],
     [ "cacheZoom", "classCommonOperations.html#a0637477c281ebfaed924796b031ffebf", null ],
     [ "draw", "classCommonOperations.html#a70af867dadd9f93328c39804b5aa8c9d", null ],
     [ "drawPixelValue", "classCommonOperations.html#a2cc20679d9f562a298746ad0715ac494", null ],

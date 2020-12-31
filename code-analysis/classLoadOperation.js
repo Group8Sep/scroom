@@ -1,7 +1,6 @@
 var classLoadOperation =
 [
     [ "LoadOperation", "classLoadOperation.html#a5ac551ff16c71e2e283efac8ff805f72", null ],
-    [ "~LoadOperation", "classLoadOperation.html#aed960b901e3b42ddd952b8c42b75c4af", null ],
     [ "abort", "classLoadOperation.html#a9d76ac72914d930746a4e87398867fd8", null ],
     [ "create", "classLoadOperation.html#aa79cd248420c3c112498893a62b5c3ed", null ],
     [ "finished", "classLoadOperation.html#a2ad032626e5341d2fbec4b4114873ebd", null ],

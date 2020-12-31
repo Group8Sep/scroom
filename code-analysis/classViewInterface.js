@@ -2,7 +2,6 @@ var classViewInterface =
 [
     [ "Ptr", "classViewInterface.html#ac7a08ed3d90712571bd4308c154d8503", null ],
     [ "WeakPtr", "classViewInterface.html#ae92933d2303923b3c487674dff4ab999", null ],
-    [ "~ViewInterface", "classViewInterface.html#aa68b666618c52c289cdebe88c8f3ac87", null ],
     [ "addSideWidget", "classViewInterface.html#aa178b3563e9cea8bc9e4df22499d5717", null ],
     [ "addToolButton", "classViewInterface.html#a0270c644d2549cde226519ff75c9c3a1", null ],
     [ "addToToolbar", "classViewInterface.html#a7f744383e0980253ae13e642dc7c574b", null ],

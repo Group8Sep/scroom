@@ -1,5 +1,6 @@
 <map id="libs/memory&#45;manager/src/blob&#45;compression.hh" name="libs/memory&#45;manager/src/blob&#45;compression.hh">
-<area shape="rect" id="node2" href="$memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="279,95,463,121"/>
-<area shape="rect" id="node8" href="$blockallocator_8hh.html" title="scroom/blockallocator.hh" alt="" coords="147,169,333,196"/>
-<area shape="rect" id="node9" href="$utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="519,169,662,196"/>
+<area shape="rect" id="node2" href="$memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="332,95,516,121"/>
+<area shape="rect" id="node8" href="$blockallocator_8hh.html" title="scroom/blockallocator.hh" alt="" coords="190,169,375,196"/>
+<area shape="rect" id="node10" href="$utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="697,169,839,196"/>
+<area shape="rect" id="node9" href="$interface_8hh.html" title="scroom/interface.hh" alt="" coords="168,251,320,278"/>
 </map>

@@ -1,7 +1,6 @@
 var classOperations =
 [
     [ "Operations", "classOperations.html#a00588e0f6844ee39e3123548103cc70f", null ],
-    [ "~Operations", "classOperations.html#a523549d97aabc298558d3c60836e1cbc", null ],
     [ "cache", "classOperations.html#ab938c3da9ec8de6c4b03c932a98fa796", null ],
     [ "create", "classOperations.html#a59ca763acb5f4fc36330ad8add4f55ff", null ],
     [ "draw", "classOperations.html#a50a470b55a747238017726623131ac23", null ],

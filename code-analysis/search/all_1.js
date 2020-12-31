@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['base',['Base',['../classScroom_1_1Utils_1_1Base.html',1,'Scroom::Utils']]],
+  ['base',['Base',['../classScroom_1_1Utils_1_1Base.html',1,'Scroom::Utils::Base'],['../classScroom_1_1Utils_1_1Base.html#ab5cfb041b339d8cdd32b01f346ac4a33',1,'Scroom::Utils::Base::Base()=default'],['../classScroom_1_1Utils_1_1Base.html#a0905ca89614ba5543bec1668ced1f2bf',1,'Scroom::Utils::Base::Base(const Base &amp;)=delete'],['../classScroom_1_1Utils_1_1Base.html#af745d1e7c7e25e4de67ef69ad92819d3',1,'Scroom::Utils::Base::Base(Base &amp;&amp;)=delete']]],
   ['base_5fcomputed',['BASE_COMPUTED',['../classTileViewState.html#a0a229ff2bb85654a101ca1842211842fa588c8eeac5b132c802b90d7639398b9e',1,'TileViewState']]],
   ['basecache',['baseCache',['../classTileViewState.html#a701f3a8c289eed9861b45e612a7151b8',1,'TileViewState']]],
   ['bcl',['bcl',['../layeroperations_8cc.html#ab88c659bf4f68d58f4c6f816d2f49f2b',1,'layeroperations.cc']]],
@@ -11,7 +11,7 @@ var searchData=
   ['bitmap_2dhelpers_2ecc',['bitmap-helpers.cc',['../bitmap-helpers_8cc.html',1,'']]],
   ['bitmap_2dhelpers_2ehh',['bitmap-helpers.hh',['../bitmap-helpers_8hh.html',1,'']]],
   ['bitmapheight',['bitmapHeight',['../classTiledBitmap.html#a31a9a9922388d64cdf7e0b726b87837c',1,'TiledBitmap']]],
-  ['bitmapsurface',['BitmapSurface',['../classScroom_1_1Bitmap_1_1BitmapSurface.html',1,'Scroom::Bitmap::BitmapSurface'],['../classScroom_1_1Bitmap_1_1BitmapSurface.html#ad184ea423900d4ba43742e85ea103ce8',1,'Scroom::Bitmap::BitmapSurface::BitmapSurface(int width, int height, cairo_format_t format)'],['../classScroom_1_1Bitmap_1_1BitmapSurface.html#acbb45137f5deb58e0e2c38a8d465fe3d',1,'Scroom::Bitmap::BitmapSurface::BitmapSurface(int width, int height, cairo_format_t format, int stride, boost::shared_ptr&lt; unsigned char &gt; const &amp;data)']]],
+  ['bitmapsurface',['BitmapSurface',['../classScroom_1_1Bitmap_1_1BitmapSurface.html',1,'Scroom::Bitmap::BitmapSurface'],['../classScroom_1_1Bitmap_1_1BitmapSurface.html#a01b392735034681d7dfabc4fc2f71cfa',1,'Scroom::Bitmap::BitmapSurface::BitmapSurface(const BitmapSurface &amp;)=delete'],['../classScroom_1_1Bitmap_1_1BitmapSurface.html#a619351678bc0f02602a08ff6e97c9a21',1,'Scroom::Bitmap::BitmapSurface::BitmapSurface(BitmapSurface &amp;&amp;)=delete'],['../classScroom_1_1Bitmap_1_1BitmapSurface.html#ad184ea423900d4ba43742e85ea103ce8',1,'Scroom::Bitmap::BitmapSurface::BitmapSurface(int width, int height, cairo_format_t format)'],['../classScroom_1_1Bitmap_1_1BitmapSurface.html#acbb45137f5deb58e0e2c38a8d465fe3d',1,'Scroom::Bitmap::BitmapSurface::BitmapSurface(int width, int height, cairo_format_t format, int stride, boost::shared_ptr&lt; unsigned char &gt; const &amp;data)']]],
   ['bitmapwidth',['bitmapWidth',['../classTiledBitmap.html#a79651024b3ff749b0c3166ee717a260f',1,'TiledBitmap']]],
   ['bitsperbase',['bitsPerBase',['../classScroom_1_1Bitmap_1_1SampleIterator.html#ab58e9ec0d2e1632df23b22c1ea726887',1,'Scroom::Bitmap::SampleIterator']]],
   ['blackish',['blackish',['../classMonochromeColormapHelper.html#a8fa1230073c5c69150346be374976bb0',1,'MonochromeColormapHelper']]],

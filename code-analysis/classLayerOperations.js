@@ -1,7 +1,6 @@
 var classLayerOperations =
 [
     [ "Ptr", "classLayerOperations.html#aa83553f22a46c5376d8552e9810262dc", null ],
-    [ "~LayerOperations", "classLayerOperations.html#aa121258f83e2efcdf98d15f51c8dcbc5", null ],
     [ "cache", "classLayerOperations.html#a6b39508e9c2583588ae2fff7f3889e28", null ],
     [ "cacheZoom", "classLayerOperations.html#ad3c780a2528ee20ca717cfe190b3d568", null ],
     [ "draw", "classLayerOperations.html#a18dbbea49215d7af4e6127109a3b9b5a", null ],

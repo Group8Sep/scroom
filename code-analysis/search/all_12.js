@@ -66,7 +66,7 @@ var searchData=
   ['shortfromdouble',['shortFromDouble',['../color_8hh.html#a4602012b20f6c31c205a715fef9f1be4',1,'color.hh']]],
   ['showmodaldialog',['ShowModalDialog',['../callbacks_8cc.html#a3aab2a4d00901924d72b5a72a3711069',1,'callbacks.cc']]],
   ['showpresentation',['showPresentation',['../classScroomInterface.html#a274e02fa58dba1a1d21e6e87805db37e',1,'ScroomInterface::showPresentation()'],['../classScroomInterfaceImpl.html#a8f7470ee48c79a01aa7ccec65a47f3f3',1,'ScroomInterfaceImpl::showPresentation()']]],
-  ['sidebarmanager',['SidebarManager',['../classSidebarManager.html',1,'SidebarManager'],['../classSidebarManager.html#a7ebaa232c3e5a2a2ab654d3078ca0f66',1,'SidebarManager::SidebarManager()'],['../classView.html#adf597a78b4b8ecce18a14282ab1982c8',1,'View::sidebarManager()']]],
+  ['sidebarmanager',['SidebarManager',['../classSidebarManager.html',1,'SidebarManager'],['../classView.html#adf597a78b4b8ecce18a14282ab1982c8',1,'View::sidebarManager()'],['../classSidebarManager.html#a7ebaa232c3e5a2a2ab654d3078ca0f66',1,'SidebarManager::SidebarManager()']]],
   ['sidebarmanager_2ecc',['sidebarmanager.cc',['../sidebarmanager_8cc.html',1,'']]],
   ['sidebarmanager_2ehh',['sidebarmanager.hh',['../sidebarmanager_8hh.html',1,'']]],
   ['size',['size',['../classScroom_1_1Utils_1_1Segment.html#a35c0fbb0e74dd156bb14da567a6b3177',1,'Scroom::Utils::Segment::size()'],['../classScroom_1_1MemoryBlobs_1_1Blob.html#af187e73ce1bad805c9dd36c53d884472',1,'Scroom::MemoryBlobs::Blob::size()'],['../classScroom_1_1MemoryBlocks_1_1Detail_1_1SwapBasedBlockAllocator.html#a78174c0875d49ce5e8421663bdfafd47',1,'Scroom::MemoryBlocks::Detail::SwapBasedBlockAllocator::size()']]],

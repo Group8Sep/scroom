@@ -1,7 +1,6 @@
 var classOperations8bpp =
 [
     [ "Operations8bpp", "classOperations8bpp.html#a4c350b5ba00b6cd050974fc94573cf08", null ],
-    [ "~Operations8bpp", "classOperations8bpp.html#a5315068bab9588d3d69985eb2c7dc07e", null ],
     [ "cache", "classOperations8bpp.html#acb050e581fe4621e4513ea8040726c05", null ],
     [ "create", "classOperations8bpp.html#af89b28e8f1a6fbe0cf8d0835d4db795a", null ],
     [ "draw", "classOperations8bpp.html#a52a5122ef13751d23465d178752df0a4", null ],

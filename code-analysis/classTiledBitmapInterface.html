@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-182-g72cecad</span>
+   &#160;<span id="projectnumber">0.11.1-190-gaef4c65</span>
    </div>
   </td>
  </tr>
@@ -98,8 +98,9 @@ Inheritance diagram for TiledBitmapInterface:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTiledBitmapInterface__inherit__graph.png" border="0" usemap="#TiledBitmapInterface_inherit__map" alt="Inheritance graph"/></div>
 <map name="TiledBitmapInterface_inherit__map" id="TiledBitmapInterface_inherit__map">
-<area shape="rect" id="node3" href="classTiledBitmap.html" title="{TiledBitmap\n|&#45; bitmapWidth\l&#45; bitmapHeight\l&#45; ls\l&#45; layers\l&#45; coordinators\l&#45; viewDataMutex\l&#45; viewData\l&#45; tileCount\l&#45; tileFinishedMutex\l&#45; tileFinishedCount\l&#45; fileOperation\l&#45; progressBroadcaster\l&#45; queue\l|+ ~TiledBitmap()\l+ setSource()\l+ getBottomLayer()\l+ open()\l+ close()\l+ redraw()\l+ clearCaches()\l+ tileCreated()\l+ tileFinished()\l+ create()\l&#45; TiledBitmap()\l&#45; initialize()\l&#45; drawTile()\l&#45; connect()\l}" alt="" coords="20,344,185,788"/>
-<area shape="rect" id="node2" href="classViewable.html" title="Implement Viewable if you want to be able to receive events when a View is created and/or deleted..." alt="" coords="43,5,162,112"/>
+<area shape="rect" id="node4" href="classTiledBitmap.html" title="{TiledBitmap\n|&#45; bitmapWidth\l&#45; bitmapHeight\l&#45; ls\l&#45; layers\l&#45; coordinators\l&#45; viewDataMutex\l&#45; viewData\l&#45; tileCount\l&#45; tileFinishedMutex\l&#45; tileFinishedCount\l&#45; fileOperation\l&#45; progressBroadcaster\l&#45; queue\l|+ ~TiledBitmap()\l+ TiledBitmap()\l+ TiledBitmap()\l+ operator=()\l+ operator=()\l+ setSource()\l+ getBottomLayer()\l+ open()\l+ close()\l+ redraw()\l+ clearCaches()\l+ tileCreated()\l+ tileFinished()\l+ create()\l&#45; TiledBitmap()\l&#45; initialize()\l&#45; drawTile()\l&#45; connect()\l}" alt="" coords="5,513,171,1016"/>
+<area shape="rect" id="node2" href="classViewable.html" title="Implement Viewable if you want to be able to receive events when a View is created and/or deleted..." alt="" coords="47,204,129,296"/>
+<area shape="rect" id="node3" href="classInterface.html" title="{Interface\n||+ Interface()\l+ Interface()\l+ operator=()\l+ Interface()\l+ operator=()\l+ ~Interface()\l}" alt="" coords="30,5,146,156"/>
 </map>
 </div>
 <div class="dynheader">
@@ -107,7 +108,8 @@ Collaboration diagram for TiledBitmapInterface:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTiledBitmapInterface__coll__graph.png" border="0" usemap="#TiledBitmapInterface_coll__map" alt="Collaboration graph"/></div>
 <map name="TiledBitmapInterface_coll__map" id="TiledBitmapInterface_coll__map">
-<area shape="rect" id="node2" href="classViewable.html" title="Implement Viewable if you want to be able to receive events when a View is created and/or deleted..." alt="" coords="43,5,162,112"/>
+<area shape="rect" id="node2" href="classViewable.html" title="Implement Viewable if you want to be able to receive events when a View is created and/or deleted..." alt="" coords="43,204,126,296"/>
+<area shape="rect" id="node3" href="classInterface.html" title="{Interface\n||+ Interface()\l+ Interface()\l+ operator=()\l+ Interface()\l+ operator=()\l+ ~Interface()\l}" alt="" coords="27,5,143,156"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -123,8 +125,6 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8da5822b1cff9b3508e9d19af43c2a94"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiledBitmapInterface.html#a8da5822b1cff9b3508e9d19af43c2a94">~TiledBitmapInterface</a> ()</td></tr>
-<tr class="separator:a8da5822b1cff9b3508e9d19af43c2a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e02aa68f0a137cb2ec85b2412d98335"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiledBitmapInterface.html#a2e02aa68f0a137cb2ec85b2412d98335">setSource</a> (<a class="el" href="classSourcePresentation.html#a48995c55873abf43957f484d91886632">SourcePresentation::Ptr</a> sp)=0</td></tr>
 <tr class="memdesc:a2e02aa68f0a137cb2ec85b2412d98335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide bitmap data to the <a class="el" href="classTiledBitmap.html">TiledBitmap</a>.  <a href="#a2e02aa68f0a137cb2ec85b2412d98335">More...</a><br /></td></tr>
 <tr class="separator:a2e02aa68f0a137cb2ec85b2412d98335"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,8 +138,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4e53a7165efc43a94e2a407d583c8b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all bitmap caches related to the view.  <a href="#a4e53a7165efc43a94e2a407d583c8b13">More...</a><br /></td></tr>
 <tr class="separator:a4e53a7165efc43a94e2a407d583c8b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classViewable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classViewable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classViewable.html">Viewable</a></td></tr>
-<tr class="memitem:a88daba2706a00e4d0f283dbf89bd6dee inherit pub_methods_classViewable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#a88daba2706a00e4d0f283dbf89bd6dee">~Viewable</a> ()</td></tr>
-<tr class="separator:a88daba2706a00e4d0f283dbf89bd6dee inherit pub_methods_classViewable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e17fe21b5e7bdb916b5c7cbfc65ffbd inherit pub_methods_classViewable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#a3e17fe21b5e7bdb916b5c7cbfc65ffbd">open</a> (<a class="el" href="classViewInterface.html#ae92933d2303923b3c487674dff4ab999">ViewInterface::WeakPtr</a> vi)=0</td></tr>
 <tr class="memdesc:a3e17fe21b5e7bdb916b5c7cbfc65ffbd inherit pub_methods_classViewable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets called just after the <a class="el" href="classView.html">View</a> is created.  <a href="classViewable.html#a3e17fe21b5e7bdb916b5c7cbfc65ffbd">More...</a><br /></td></tr>
 <tr class="separator:a3e17fe21b5e7bdb916b5c7cbfc65ffbd inherit pub_methods_classViewable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,7 +148,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interact with your <a class="el" href="classTiledBitmap.html">TiledBitmap</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmapinterface_8hh_source.html#l00237">237</a> of file <a class="el" href="tiledbitmapinterface_8hh_source.html">tiledbitmapinterface.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmapinterface_8hh_source.html#l00234">234</a> of file <a class="el" href="tiledbitmapinterface_8hh_source.html">tiledbitmapinterface.hh</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="acfc2e23ff01df7826ec4c5591b2281a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acfc2e23ff01df7826ec4c5591b2281a7">&#9670;&nbsp;</a></span>Ptr</h2>
@@ -164,36 +162,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmapinterface_8hh_source.html#l00240">240</a> of file <a class="el" href="tiledbitmapinterface_8hh_source.html">tiledbitmapinterface.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmapinterface_8hh_source.html#l00237">237</a> of file <a class="el" href="tiledbitmapinterface_8hh_source.html">tiledbitmapinterface.hh</a>.</p>
 
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8da5822b1cff9b3508e9d19af43c2a94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8da5822b1cff9b3508e9d19af43c2a94">&#9670;&nbsp;</a></span>~TiledBitmapInterface()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual TiledBitmapInterface::~TiledBitmapInterface </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="tiledbitmapinterface_8hh_source.html#l00242">242</a> of file <a class="el" href="tiledbitmapinterface_8hh_source.html">tiledbitmapinterface.hh</a>.</p>
-<div class="fragment"><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>

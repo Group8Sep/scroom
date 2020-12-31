@@ -20,6 +20,9 @@ var dir_fdaa98eacd9d0ebd1873ba3405fc94c8 =
     [ "function-additor.hh", "function-additor_8hh.html", "function-additor_8hh" ],
     [ "global.hh", "global_8hh.html", "global_8hh" ],
     [ "gtk-helpers.hh", "gtk-helpers_8hh.html", "gtk-helpers_8hh" ],
+    [ "interface.hh", "interface_8hh.html", [
+      [ "Interface", "classInterface.html", "classInterface" ]
+    ] ],
     [ "layeroperations.hh", "layeroperations_8hh.html", [
       [ "CommonOperations", "classCommonOperations.html", "classCommonOperations" ],
       [ "PipetteCommonOperationsCMYK", "classPipetteCommonOperationsCMYK.html", "classPipetteCommonOperationsCMYK" ],
