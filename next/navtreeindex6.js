@@ -83,13 +83,13 @@ var NAVTREEINDEX6 =
 "classTransformationData.html#ad529cd0d56ade19d7729df9825367c03":[1,0,85,0],
 "classTransformationData.html#aec3442eec9b8014199b95a9dca330a50":[1,0,85,3],
 "classTransparentOverlay.html":[1,0,87],
+"classTransparentOverlay.html#a27944f6369fd7690352fd867bf60a8f0":[1,0,87,0],
 "classTransparentOverlay.html#a7971795c058515b3260d6ac0938f8865":[1,0,87,5],
 "classTransparentOverlay.html#a82b6203fda25eace51a0e3bbe7e31d96":[1,0,87,2],
 "classTransparentOverlay.html#aae69c589cf992ca7247d0372cde63399":[1,0,87,3],
 "classTransparentOverlay.html#adcf6bfe4e81d841f20479a12e2ac40c5":[1,0,87,4],
 "classTransparentOverlay.html#ade23d9970b3b5004b388aebd389afc04":[1,0,87,6],
 "classTransparentOverlay.html#ade9a566fbf32bd939324a5906f5fe65a":[1,0,87,1],
-"classTransparentOverlay.html#af4a15a3263f04c0107bc77bdada5451d":[1,0,87,0],
 "classTransparentOverlayPresentation.html":[1,0,88],
 "classTransparentOverlayPresentation.html#a202b5ad17a9deacf342245ff0d3c3c22":[1,0,88,12],
 "classTransparentOverlayPresentation.html#a26622545236d4d72608dab3859aef5cc":[1,0,88,4],
@@ -249,5 +249,5 @@ var NAVTREEINDEX6 =
 "classWorkInterface.html#ada2f2ff83bef1a63cd7285adfbc41f61":[1,0,94,0],
 "classanonymous__namespace_02progressbarmanager_8cc_03_1_1ProgressBarPulser.html":[1,0,0,0],
 "classanonymous__namespace_02progressbarmanager_8cc_03_1_1ProgressBarPulser.html#a34b6021e6edf6d15b438a4680bd28903":[1,0,0,0,4],
-"classanonymous__namespace_02progressbarmanager_8cc_03_1_1ProgressBarPulser.html#a6242f66068f5a25c46cfca155073a2fc":[1,0,0,0,0]
+"classanonymous__namespace_02progressbarmanager_8cc_03_1_1ProgressBarPulser.html#a73eda264a10490369f4454e9e2406290":[1,0,0,0,0]
 };

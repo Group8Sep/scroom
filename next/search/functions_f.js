@@ -7,7 +7,6 @@ var searchData=
   ['pipette',['Pipette',['../classPipette.html#ae5195e52e89159e96a620c2522003f13',1,'Pipette']]],
   ['pipettecommonoperationscmyk',['PipetteCommonOperationsCMYK',['../classPipetteCommonOperationsCMYK.html#a7cbc1f263cbfd217852f892716eb4f42',1,'PipetteCommonOperationsCMYK']]],
   ['pipettecommonoperationsrgb',['PipetteCommonOperationsRGB',['../classPipetteCommonOperationsRGB.html#a3b72a9899c04fefe9ddf89bf5fdf842a',1,'PipetteCommonOperationsRGB']]],
-  ['pipettehandler',['PipetteHandler',['../classPipetteHandler.html#a2bccbbf72b318093ea1f19c21ec8d681',1,'PipetteHandler']]],
   ['pixelsizefromzoom',['pixelSizeFromZoom',['../cairo-helpers_8hh.html#ac7a152a4cc864e9c67acbc6686a9d3a4',1,'pixelSizeFromZoom(int zoom):&#160;cairo-helpers.cc'],['../cairo-helpers_8cc.html#ac7a152a4cc864e9c67acbc6686a9d3a4',1,'pixelSizeFromZoom(int zoom):&#160;cairo-helpers.cc']]],
   ['plugininformation',['PluginInformation',['../structPluginInformation.html#a6c1a588783640e3a6e845486e675182e',1,'PluginInformation']]],
   ['plugininformationinterface',['PluginInformationInterface',['../classPluginInformationInterface.html#a828dd45df53bb5a7a5be4214bc5d4812',1,'PluginInformationInterface']]],

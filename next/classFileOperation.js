@@ -1,6 +1,6 @@
 var classFileOperation =
 [
-    [ "Ptr", "classFileOperation.html#a74043851224b9a38343c05f71f5e188c", null ],
+    [ "Ptr", "classFileOperation.html#a16c544bac4ad7116c94568e4af3eeb53", null ],
     [ "FileOperation", "classFileOperation.html#a322146f2c00ee6e324a7a54f057819c4", null ],
     [ "abort", "classFileOperation.html#ac7b5e19339da76c2c92059d03f91546a", null ],
     [ "doneWaiting", "classFileOperation.html#a9199280ef903474d388891883d1d7e83", null ],

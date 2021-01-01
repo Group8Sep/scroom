@@ -1,6 +1,6 @@
 var classTiff =
 [
-    [ "Ptr", "classTiff.html#ae86ce01bf334ae5840d3e96a23566dea", null ],
+    [ "Ptr", "classTiff.html#a6164de70627adcd2639efd4b01e68473", null ],
     [ "Tiff", "classTiff.html#a0e8668a3c098fc31dd0ce698a4bdfdfd", null ],
     [ "create", "classTiff.html#aaaca8783a30c4e239227f2440cf07bf4", null ],
     [ "getFilters", "classTiff.html#a9d53ce592393c02d2c36dfc924fcb876", null ],

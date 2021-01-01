@@ -1,6 +1,6 @@
 var classScroom_1_1Bitmap_1_1BitmapSurface =
 [
-    [ "Ptr", "classScroom_1_1Bitmap_1_1BitmapSurface.html#a97a7b86e574d893fc68c1f7145d46773", null ],
+    [ "Ptr", "classScroom_1_1Bitmap_1_1BitmapSurface.html#a93485c33d93e99fb8c56422ffa709f4f", null ],
     [ "~BitmapSurface", "classScroom_1_1Bitmap_1_1BitmapSurface.html#a83d3ef3f4aafa31722db153e342a9bd4", null ],
     [ "BitmapSurface", "classScroom_1_1Bitmap_1_1BitmapSurface.html#a01b392735034681d7dfabc4fc2f71cfa", null ],
     [ "BitmapSurface", "classScroom_1_1Bitmap_1_1BitmapSurface.html#a619351678bc0f02602a08ff6e97c9a21", null ],

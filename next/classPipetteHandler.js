@@ -1,7 +1,6 @@
 var classPipetteHandler =
 [
-    [ "Ptr", "classPipetteHandler.html#a72c0481dade4007facd39fee17ed6399", null ],
-    [ "PipetteHandler", "classPipetteHandler.html#a2bccbbf72b318093ea1f19c21ec8d681", null ],
+    [ "Ptr", "classPipetteHandler.html#ac86181e73c2d1f93de3e71657c2ba049", null ],
     [ "computeValues", "classPipetteHandler.html#a679a967296d464b919210be597424d55", null ],
     [ "create", "classPipetteHandler.html#ad47cebd908f64cc79b6e7834e22a3a58", null ],
     [ "displayValues", "classPipetteHandler.html#ad5fd0241cf85b5c040584bc7b05baf2b", null ],

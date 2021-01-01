@@ -1,10 +1,10 @@
 var NAVTREEINDEX3 =
 {
-"classScroom_1_1Bitmap_1_1SampleIterator.html#adfee8eaeb7b7383396a533b4c4b0f82e":[1,0,3,0,1,1],
-"classScroom_1_1Bitmap_1_1SampleIterator.html#ae6f07d4ec58d43ef6fb014a105a24d25":[1,0,3,0,1,12],
-"classScroom_1_1Bitmap_1_1SampleIterator.html#af92761c58aa8b640e0a8cfc1c324b0b5":[1,0,3,0,1,16],
+"classScroom_1_1Bitmap_1_1SampleIterator.html#adfee8eaeb7b7383396a533b4c4b0f82e":[1,0,3,0,1,2],
+"classScroom_1_1Bitmap_1_1SampleIterator.html#ae6f07d4ec58d43ef6fb014a105a24d25":[1,0,3,0,1,13],
+"classScroom_1_1Bitmap_1_1SampleIterator.html#af92761c58aa8b640e0a8cfc1c324b0b5":[1,0,3,0,1,17],
 "classScroom_1_1Bitmap_1_1SampleIterator.html#afd55ab9282ce82f18f529e5d590d663f":[1,0,3,0,1,0],
-"classScroom_1_1Bitmap_1_1SampleIterator.html#afedc31f1aa4db6198eefbe5d9952df73":[1,0,3,0,1,8],
+"classScroom_1_1Bitmap_1_1SampleIterator.html#afedc31f1aa4db6198eefbe5d9952df73":[1,0,3,0,1,9],
 "classScroom_1_1Bookkeeping_1_1Detail_1_1LValue.html":[1,0,3,1,0,0],
 "classScroom_1_1Bookkeeping_1_1Detail_1_1LValue.html#a1e185cb05ed97af290057d7de8b9e3b2":[1,0,3,1,0,0,3],
 "classScroom_1_1Bookkeeping_1_1Detail_1_1LValue.html#a469dd5a710a051e3c1fc3bf9296d35d6":[1,0,3,1,0,0,1],

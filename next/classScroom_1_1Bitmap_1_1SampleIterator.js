@@ -1,6 +1,7 @@
 var classScroom_1_1Bitmap_1_1SampleIterator =
 [
     [ "Base", "classScroom_1_1Bitmap_1_1SampleIterator.html#afd55ab9282ce82f18f529e5d590d663f", null ],
+    [ "SampleIterator", "classScroom_1_1Bitmap_1_1SampleIterator.html#acf90826e2b9857a2ea9364ea1f7aebe7", null ],
     [ "SampleIterator", "classScroom_1_1Bitmap_1_1SampleIterator.html#adfee8eaeb7b7383396a533b4c4b0f82e", null ],
     [ "get", "classScroom_1_1Bitmap_1_1SampleIterator.html#a0d69ab50c30d838fefeb141a546c1120", null ],
     [ "mask", "classScroom_1_1Bitmap_1_1SampleIterator.html#acef5bd0d8bb2a49b0d944f5220d56afe", null ],

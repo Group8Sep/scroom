@@ -1,7 +1,7 @@
 var gtk_helpers_8cc =
 [
     [ "Wrapper", "classScroom_1_1GtkHelpers_1_1Detail_1_1Wrapper.html", "classScroom_1_1GtkHelpers_1_1Detail_1_1Wrapper" ],
-    [ "GtkFuncPtr", "gtk-helpers_8cc.html#a4cb247cd7e7f2d00ada2c3a0bcced04b", null ],
+    [ "GtkFuncPtr", "gtk-helpers_8cc.html#a3b65a7f555d7809b40228a7d522f3fd1", null ],
     [ "GdkMutex", "gtk-helpers_8cc.html#ab76ab2a086ad8d4af4f98d44f435b448", null ],
     [ "gtkWrapper", "gtk-helpers_8cc.html#ab72249ca6d552730978a68f28015e9a6", null ],
     [ "lockGdkMutex", "gtk-helpers_8cc.html#a754301735d48d8b854599fe4fbded235", null ],

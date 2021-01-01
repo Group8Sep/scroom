@@ -80,8 +80,8 @@ var searchData=
   ['gtk_2dhelpers_2ecc',['gtk-helpers.cc',['../gtk-helpers_8cc.html',1,'']]],
   ['gtk_2dhelpers_2ehh',['gtk-helpers.hh',['../gtk-helpers_8hh.html',1,'']]],
   ['gtkfilefilterinfodeleter',['GtkFileFilterInfoDeleter',['../classGtkFileFilterInfoDeleter.html',1,'']]],
-  ['gtkfilefilterinfoptr',['GtkFileFilterInfoPtr',['../loader_8cc.html#a6633ca47aa3b5113fd6bc41abb35f365',1,'loader.cc']]],
+  ['gtkfilefilterinfoptr',['GtkFileFilterInfoPtr',['../loader_8cc.html#aaa2bcc997dd40c9cba73d9beb88ecbc4',1,'loader.cc']]],
   ['gtkfilefilterlistdestroyer',['GtkFileFilterListDestroyer',['../classGtkFileFilterListDestroyer.html',1,'GtkFileFilterListDestroyer'],['../classGtkFileFilterListDestroyer.html#ab48e5af89418c01f9968daf60336cf00',1,'GtkFileFilterListDestroyer::GtkFileFilterListDestroyer(std::list&lt; GtkFileFilter *&gt; &amp;f)'],['../classGtkFileFilterListDestroyer.html#a68a627726ae30ef1c91f1c82bf302c30',1,'GtkFileFilterListDestroyer::GtkFileFilterListDestroyer(const GtkFileFilterListDestroyer &amp;)=delete'],['../classGtkFileFilterListDestroyer.html#ad533c517085e3505e4f3f2bc0b9253d6',1,'GtkFileFilterListDestroyer::GtkFileFilterListDestroyer(GtkFileFilterListDestroyer &amp;&amp;)=delete']]],
-  ['gtkfuncptr',['GtkFuncPtr',['../gtk-helpers_8cc.html#a4cb247cd7e7f2d00ada2c3a0bcced04b',1,'gtk-helpers.cc']]],
+  ['gtkfuncptr',['GtkFuncPtr',['../gtk-helpers_8cc.html#a3b65a7f555d7809b40228a7d522f3fd1',1,'gtk-helpers.cc']]],
   ['gtkwrapper',['gtkWrapper',['../namespaceScroom_1_1GtkHelpers_1_1Detail.html#ab72249ca6d552730978a68f28015e9a6',1,'Scroom::GtkHelpers::Detail']]]
 ];
