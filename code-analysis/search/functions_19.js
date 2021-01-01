@@ -22,5 +22,5 @@ var searchData=
   ['_7etimer',['~Timer',['../classScroom_1_1Utils_1_1Timer.html#a190d136752ada674e047508f952b19a1',1,'Scroom::Utils::Timer']]],
   ['_7eunsubscriber',['~Unsubscriber',['../classScroom_1_1Utils_1_1ProgressInterfaceBroadcaster_1_1Unsubscriber.html#a5f466a78ab7fb22d16a16dac5452e8c3',1,'Scroom::Utils::ProgressInterfaceBroadcaster::Unsubscriber']]],
   ['_7eview',['~View',['../classView.html#a03c7de75b3d338c79b0fd0100153ca1d',1,'View']]],
-  ['_7eweakqueue',['~WeakQueue',['../classThreadPool_1_1WeakQueue.html#aecbbc06905e24984abfac79fdce7b7d5',1,'ThreadPool::WeakQueue']]]
+  ['_7eweakqueue',['~WeakQueue',['../classThreadPool_1_1WeakQueue.html#a57fb885957b226322315678fb6602697',1,'ThreadPool::WeakQueue']]]
 ];

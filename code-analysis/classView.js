@@ -1,6 +1,6 @@
 var classView =
 [
-    [ "Ptr", "classView.html#a63d528cdbcf090a937dd363b9837df75", null ],
+    [ "Ptr", "classView.html#aa9635486d815c2c06bbc45396a977990", null ],
     [ "LocationChangeCause", "classView.html#ae2d38f95cdcab0ebab25ea670f4ebdfb", [
       [ "SCROLLBAR", "classView.html#ae2d38f95cdcab0ebab25ea670f4ebdfba07354fb9b0f0817f5f8d066c09b45a3f", null ],
       [ "TEXTBOX", "classView.html#ae2d38f95cdcab0ebab25ea670f4ebdfbab1b95d85d5aef4ce4a9a9139063009f9", null ],
@@ -37,7 +37,7 @@ var classView =
     [ "on_zoombox_changed", "classView.html#ab38cdfac83b41137e50b3088229d0d7e", null ],
     [ "operator=", "classView.html#ae15a3d0a0394e816da5e314b4f5b1be6", null ],
     [ "operator=", "classView.html#a339c633439d9687656ebd698784bb747", null ],
-    [ "presentationPointToWindowPoint", "classView.html#af5fa9bd4e86a21f7192dd764ba4e382a", null ],
+    [ "presentationPointToWindowPoint", "classView.html#abe3af361a4e757c0790cdee626fa7bd3", null ],
     [ "redraw", "classView.html#a7a4cd04a39fff643d73565bfeaa058c2", null ],
     [ "registerPostRenderer", "classView.html#a832a7a7b6e80728d6ac2a129385007af", null ],
     [ "registerSelectionListener", "classView.html#a4da29ddfc7aa06d204eff05db0f1e9d5", null ],
@@ -55,7 +55,7 @@ var classView =
     [ "updateTextbox", "classView.html#a53280aa4b3288d4f81d4a840f98e5eb9", null ],
     [ "updateXY", "classView.html#a59f68bb3f77221dac47e3d25dde1aea9", null ],
     [ "updateZoom", "classView.html#a54f60e30804881dcfec8bdbff457a4eb", null ],
-    [ "windowPointToPresentationPoint", "classView.html#a889a85ee50786b36ca6d7acd071cd4b0", null ],
+    [ "windowPointToPresentationPoint", "classView.html#a5a4745103b54de5a823c53f2b204a45b", null ],
     [ "aspectRatio", "classView.html#ae5ab81cdeaef480357dd3bdef7ca13d2", null ],
     [ "cachedPoint", "classView.html#a757f82b654de6a716386fbd4063f95f9", null ],
     [ "drawingArea", "classView.html#accd8ae17f10cca1c351ac03a33963b70", null ],

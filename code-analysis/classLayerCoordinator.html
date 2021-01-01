@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-197-g4997989</span>
+   &#160;<span id="projectnumber">0.11.1-204-g04e9d69</span>
    </div>
   </td>
  </tr>
@@ -189,7 +189,7 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a62cf504f112d2bcefde5f28cc8fbea0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerCoordinator.html#a62cf504f112d2bcefde5f28cc8fbea0a">targetTile</a></td></tr>
 <tr class="separator:a62cf504f112d2bcefde5f28cc8fbea0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1999356ab8aa0850573f166cc67dd6e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTile.html#a4b8d0fef6c4289b51cd1f4c1c626d4f4">Tile::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerCoordinator.html#a1999356ab8aa0850573f166cc67dd6e5">targetTileData</a></td></tr>
+<tr class="memitem:a1999356ab8aa0850573f166cc67dd6e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTile.html#ab972367818936946e3b6e669fa649b5b">Tile::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerCoordinator.html#a1999356ab8aa0850573f166cc67dd6e5">targetTileData</a></td></tr>
 <tr class="separator:a1999356ab8aa0850573f166cc67dd6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1b904debfc7f722212d35fe6aab2d01"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a>, std::pair&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerCoordinator.html#af1b904debfc7f722212d35fe6aab2d01">sourceTiles</a></td></tr>
 <tr class="separator:af1b904debfc7f722212d35fe6aab2d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -563,7 +563,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="layercoordinator_8cc_source.html#l00043">43</a> of file <a class="el" href="layercoordinator_8cc_source.html">layercoordinator.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classConstTile.html#aa3d92cdcb7283a3957fd4511817ae162">ConstTile::Ptr</a> tileData = tile-&gt;getConstTileAsync();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">if</span>(!tileData)</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    printf(<span class="stringliteral">&quot;WEIRD: Tile finished but not loaded?\n&quot;</span>);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="threadpool_8hh.html#a4a99c6a6be48be73a9ecf92e6e3f6e9b">CpuBound</a>()-&gt;schedule(boost::bind(&amp;<a class="code" href="classLayerCoordinator.html#a2b72990673e3a25cbcf352f20b475aad">LayerCoordinator::reduceSourceTile</a>, shared_from_this&lt;LayerCoordinator&gt;(), tile, tileData),</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                       <a class="code" href="local_8hh.html#a0a865049f169efddb5dcb94b4b6f2e6b">REDUCE_PRIO</a>);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div><div class="ttc" id="local_8hh_html_a0a865049f169efddb5dcb94b4b6f2e6b"><div class="ttname"><a href="local_8hh.html#a0a865049f169efddb5dcb94b4b6f2e6b">REDUCE_PRIO</a></div><div class="ttdeci">#define REDUCE_PRIO</div><div class="ttdef"><b>Definition:</b> <a href="local_8hh_source.html#l00012">local.hh:12</a></div></div>
-<div class="ttc" id="threadpool_8hh_html_a4a99c6a6be48be73a9ecf92e6e3f6e9b"><div class="ttname"><a href="threadpool_8hh.html#a4a99c6a6be48be73a9ecf92e6e3f6e9b">CpuBound</a></div><div class="ttdeci">ThreadPool::Ptr CpuBound()</div><div class="ttdoc">ThreadPool for cpu-bound tasks. </div><div class="ttdef"><b>Definition:</b> <a href="threadpoolimpl_8cc_source.html#l00465">threadpoolimpl.cc:465</a></div></div>
+<div class="ttc" id="threadpool_8hh_html_a4a99c6a6be48be73a9ecf92e6e3f6e9b"><div class="ttname"><a href="threadpool_8hh.html#a4a99c6a6be48be73a9ecf92e6e3f6e9b">CpuBound</a></div><div class="ttdeci">ThreadPool::Ptr CpuBound()</div><div class="ttdoc">ThreadPool for cpu-bound tasks. </div><div class="ttdef"><b>Definition:</b> <a href="threadpoolimpl_8cc_source.html#l00459">threadpoolimpl.cc:459</a></div></div>
 <div class="ttc" id="classConstTile_html_aa3d92cdcb7283a3957fd4511817ae162"><div class="ttname"><a href="classConstTile.html#aa3d92cdcb7283a3957fd4511817ae162">ConstTile::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; ConstTile &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="tile_8hh_source.html#l00044">tile.hh:44</a></div></div>
 <div class="ttc" id="classLayerCoordinator_html_a2b72990673e3a25cbcf352f20b475aad"><div class="ttname"><a href="classLayerCoordinator.html#a2b72990673e3a25cbcf352f20b475aad">LayerCoordinator::reduceSourceTile</a></div><div class="ttdeci">void reduceSourceTile(CompressedTile::Ptr tile, ConstTile::Ptr const &amp;tileData)</div><div class="ttdoc">Helpers. </div><div class="ttdef"><b>Definition:</b> <a href="layercoordinator_8cc_source.html#l00058">layercoordinator.cc:58</a></div></div>
 </div><!-- fragment -->
@@ -710,7 +710,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classTile.html#a4b8d0fef6c4289b51cd1f4c1c626d4f4">Tile::Ptr</a> LayerCoordinator::targetTileData</td>
+          <td class="memname"><a class="el" href="classTile.html#ab972367818936946e3b6e669fa649b5b">Tile::Ptr</a> LayerCoordinator::targetTileData</td>
         </tr>
       </table>
   </td>

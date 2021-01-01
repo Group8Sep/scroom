@@ -13,7 +13,7 @@ var searchData=
   ['layers',['layers',['../classTiledBitmap.html#a4651ffc5e76d85693c07468ec5e19682',1,'TiledBitmap']]],
   ['layerspec',['LayerSpec',['../tiledbitmapinterface_8hh.html#a00279dcefa7f911f75fec39af1d48e87',1,'tiledbitmapinterface.hh']]],
   ['leftof',['leftOf',['../classScroom_1_1Utils_1_1Rectangle.html#adf62135f8fc93f9269d33baf77f0a083',1,'Scroom::Utils::Rectangle::leftOf(value_type v) const'],['../classScroom_1_1Utils_1_1Rectangle.html#af376cd57a92a47d4f2f2fa751e71abee',1,'Scroom::Utils::Rectangle::leftOf(Rectangle&lt; value_type &gt; const &amp;r) const']]],
-  ['length',['length',['../structSelection.html#a0f3962d1a01cb237a38b6fe0efcd778e',1,'Selection']]],
+  ['length',['length',['../structSelection.html#a400e9fb58887a04db35e354741aa96ec',1,'Selection']]],
   ['lifetimemanager',['lifeTimeManager',['../classTileViewState.html#a4c83ba16f6f5a0b3df38a39ecb95e449',1,'TileViewState']]],
   ['linearsegment_2ehh',['linearsegment.hh',['../linearsegment_8hh.html',1,'']]],
   ['lineoutofbounds',['lineOutOfBounds',['../classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33',1,'Layer']]],

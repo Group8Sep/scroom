@@ -1,5 +1,5 @@
 <map id="LayerOperations" name="LayerOperations">
-<area shape="rect" id="node3" href="$classCommonOperations.html" title="{CommonOperations\n||+ drawPixelValue()\l+ drawPixelValue()\l+ initializeCairo()\l+ drawState()\l+ cacheZoom()\l+ draw()\l}" alt="" coords="505,417,657,568"/>
+<area shape="rect" id="node3" href="$classCommonOperations.html" title="{CommonOperations\n||+ initializeCairo()\l+ drawState()\l+ cacheZoom()\l+ draw()\l+ drawPixelValue()\l+ drawPixelValue()\l}" alt="" coords="505,417,657,568"/>
 <area shape="rect" id="node2" href="$classInterface.html" title="{Interface\n||+ Interface()\l+ Interface()\l+ operator=()\l+ Interface()\l+ operator=()\l+ ~Interface()\l}" alt="" coords="523,5,639,156"/>
 <area shape="rect" id="node4" href="$classOperations.html" title="{Operations\n|# colormapProvider\l# bpp\l# pixelsPerByte\l# pixelOffset\l# pixelMask\l|+ Operations()\l+ getBpp()\l+ cache()\l+ reduce()\l+ draw()\l+ create()\l}" alt="" coords="32,616,184,825"/>
 <area shape="rect" id="node6" href="$classOperations1bpp.html" title="{Operations1bpp\n|&#45; colormapProvider\l|+ Operations1bpp()\l+ getBpp()\l+ cache()\l+ reduce()\l+ draw()\l+ create()\l}" alt="" coords="209,645,359,796"/>

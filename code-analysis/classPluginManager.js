@@ -1,13 +1,13 @@
 var classPluginManager =
 [
-    [ "Ptr", "classPluginManager.html#a19937df67aa9811fdb257cc7e376714e", null ],
+    [ "Ptr", "classPluginManager.html#ad626bc364bf35a5253a405ca92bfe48d", null ],
     [ "PluginManagerState", "classPluginManager.html#abd85725b4ba73b52f19bd7f1b99ffc92", [
       [ "FINDING_DIRECTORIES", "classPluginManager.html#abd85725b4ba73b52f19bd7f1b99ffc92a470bf73cff79da2cb15f1d8d0a499699", null ],
       [ "SCANNING_DIRECTORIES", "classPluginManager.html#abd85725b4ba73b52f19bd7f1b99ffc92a7c315ecbc2715aae97aa8dfe992a4482", null ],
       [ "LOADING_FILES", "classPluginManager.html#abd85725b4ba73b52f19bd7f1b99ffc92afdb83fdc2e9c459eef00366fafee44f1", null ],
       [ "DONE", "classPluginManager.html#abd85725b4ba73b52f19bd7f1b99ffc92abc74eeada87fa2ed42d01e33f8fe06d5", null ]
     ] ],
-    [ "PluginManager", "classPluginManager.html#a25f1e568d8d923e4d2a4f777516b4be5", null ],
+    [ "PluginManager", "classPluginManager.html#a5a54013db8f56f15e342e177f8efe8d3", null ],
     [ "addHook", "classPluginManager.html#a096467c81f951782e079674caabe5e64", null ],
     [ "create", "classPluginManager.html#a42259127148f59da7062e406e6aa6bd1", null ],
     [ "doWork", "classPluginManager.html#a9c6140acf2872b4fa9e495276d8b2cb5", null ],

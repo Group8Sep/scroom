@@ -1,7 +1,7 @@
 var classScroomInterfaceImpl =
 [
     [ "Ptr", "classScroomInterfaceImpl.html#a21e8dc226005368241f3444cce7b1a81", null ],
-    [ "ScroomInterfaceImpl", "classScroomInterfaceImpl.html#ad4df06d0c588da66e5832c4b9362ff19", null ],
+    [ "ScroomInterfaceImpl", "classScroomInterfaceImpl.html#a776cc57e01b5fb3c3b1b3499c227b85a", null ],
     [ "instance", "classScroomInterfaceImpl.html#a3e8a5e572e1df0329737e382521166f9", null ],
     [ "loadPresentation", "classScroomInterfaceImpl.html#a3a3f671f0022edcf0221f232fd884437", null ],
     [ "newAggregate", "classScroomInterfaceImpl.html#ae3492aeeb2776a9ce3f2b887b2bcd2c2", null ],

@@ -1,6 +1,6 @@
 var classChildView =
 [
-    [ "Ptr", "classChildView.html#a528e1223bef4773c9464f0d2a92805d4", null ],
+    [ "Ptr", "classChildView.html#a891771eb3f80ef0f5b225d7e87ed4b38", null ],
     [ "ChildView", "classChildView.html#afd0e7297353a3a13f1860321426d4773", null ],
     [ "addSideWidget", "classChildView.html#a3ac962e90947593473297cfda33e6a05", null ],
     [ "addToolButton", "classChildView.html#a9ac3b04d66ee53e1ff8ee916933fe11d", null ],

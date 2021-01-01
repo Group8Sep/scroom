@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-197-g4997989</span>
+   &#160;<span id="projectnumber">0.11.1-204-g04e9d69</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ Inheritance diagram for LayerOperations:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLayerOperations__inherit__graph.png" border="0" usemap="#LayerOperations_inherit__map" alt="Inheritance graph"/></div>
 <map name="LayerOperations_inherit__map" id="LayerOperations_inherit__map">
-<area shape="rect" id="node3" href="classCommonOperations.html" title="{CommonOperations\n||+ drawPixelValue()\l+ drawPixelValue()\l+ initializeCairo()\l+ drawState()\l+ cacheZoom()\l+ draw()\l}" alt="" coords="505,417,657,568"/>
+<area shape="rect" id="node3" href="classCommonOperations.html" title="{CommonOperations\n||+ initializeCairo()\l+ drawState()\l+ cacheZoom()\l+ draw()\l+ drawPixelValue()\l+ drawPixelValue()\l}" alt="" coords="505,417,657,568"/>
 <area shape="rect" id="node2" href="classInterface.html" title="{Interface\n||+ Interface()\l+ Interface()\l+ operator=()\l+ Interface()\l+ operator=()\l+ ~Interface()\l}" alt="" coords="523,5,639,156"/>
 <area shape="rect" id="node4" href="classOperations.html" title="{Operations\n|# colormapProvider\l# bpp\l# pixelsPerByte\l# pixelOffset\l# pixelMask\l|+ Operations()\l+ getBpp()\l+ cache()\l+ reduce()\l+ draw()\l+ create()\l}" alt="" coords="32,616,184,825"/>
 <area shape="rect" id="node6" href="classOperations1bpp.html" title="{Operations1bpp\n|&#45; colormapProvider\l|+ Operations1bpp()\l+ getBpp()\l+ cache()\l+ reduce()\l+ draw()\l+ create()\l}" alt="" coords="209,645,359,796"/>
@@ -148,7 +148,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3c780a2528ee20ca717cfe190b3d568"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#ad3c780a2528ee20ca717cfe190b3d568">cacheZoom</a> (const <a class="el" href="classConstTile.html#aa3d92cdcb7283a3957fd4511817ae162">ConstTile::Ptr</a> tile, int zoom, <a class="el" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a> <a class="el" href="classLayerOperations.html#a6b39508e9c2583588ae2fff7f3889e28">cache</a>)</td></tr>
 <tr class="memdesc:ad3c780a2528ee20ca717cfe190b3d568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache data for use during later <a class="el" href="classLayerOperations.html#a18dbbea49215d7af4e6127109a3b9b5a" title="Draw the given tileArea into the given viewArea at the requested zoom level. ">draw()</a> calls.  <a href="#ad3c780a2528ee20ca717cfe190b3d568">More...</a><br /></td></tr>
 <tr class="separator:ad3c780a2528ee20ca717cfe190b3d568"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e2f563faba4cb6435d393435d0b975b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#a6e2f563faba4cb6435d393435d0b975b">reduce</a> (<a class="el" href="classTile.html#a4b8d0fef6c4289b51cd1f4c1c626d4f4">Tile::Ptr</a> target, const <a class="el" href="classConstTile.html#aa3d92cdcb7283a3957fd4511817ae162">ConstTile::Ptr</a> source, int x, int y)=0</td></tr>
+<tr class="memitem:a6e2f563faba4cb6435d393435d0b975b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayerOperations.html#a6e2f563faba4cb6435d393435d0b975b">reduce</a> (<a class="el" href="classTile.html#ab972367818936946e3b6e669fa649b5b">Tile::Ptr</a> target, const <a class="el" href="classConstTile.html#aa3d92cdcb7283a3957fd4511817ae162">ConstTile::Ptr</a> source, int x, int y)=0</td></tr>
 <tr class="memdesc:a6e2f563faba4cb6435d393435d0b975b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduce the source tile by a factor of 8.  <a href="#a6e2f563faba4cb6435d393435d0b975b">More...</a><br /></td></tr>
 <tr class="separator:a6e2f563faba4cb6435d393435d0b975b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -494,7 +494,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void LayerOperations::reduce </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classTile.html#a4b8d0fef6c4289b51cd1f4c1c626d4f4">Tile::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classTile.html#ab972367818936946e3b6e669fa649b5b">Tile::Ptr</a>&#160;</td>
           <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>

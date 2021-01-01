@@ -1,6 +1,6 @@
 var classTransparentOverlayPresentation =
 [
-    [ "Ptr", "classTransparentOverlayPresentation.html#a1d6dc28d480b230763fafab0303ef6f0", null ],
+    [ "Ptr", "classTransparentOverlayPresentation.html#af7c8e3a172f6778493e4bd7089763bac", null ],
     [ "ViewDataMap", "classTransparentOverlayPresentation.html#a3023671ed8d9c6525a5de9a320ee2d8f", null ],
     [ "TransparentOverlayPresentation", "classTransparentOverlayPresentation.html#a69a7c85d3b030fe299a1542b3a3f1bed", null ],
     [ "addPresentation", "classTransparentOverlayPresentation.html#a49dc1a6a20e1af36c4b4f1b01e6f9d41", null ],

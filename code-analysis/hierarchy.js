@@ -7,7 +7,7 @@ var hierarchy =
     ] ],
     [ "addable2", null, [
       [ "Scroom::Utils::Rectangle< double >", "classScroom_1_1Utils_1_1Rectangle.html", null ],
-      [ "Scroom::Bitmap::SampleIterator< Base >", "classScroom_1_1Bitmap_1_1SampleIterator.html", null ],
+      [ "Scroom::Bitmap::SampleIterator< ConstBase >", "classScroom_1_1Bitmap_1_1SampleIterator.html", null ],
       [ "Scroom::Utils::Rectangle< T >", "classScroom_1_1Utils_1_1Rectangle.html", null ],
       [ "Scroom::Utils::Segment< T >", "classScroom_1_1Utils_1_1Segment.html", null ],
       [ "Scroom::Utils::Segment< value_type >", "classScroom_1_1Utils_1_1Segment.html", null ]
