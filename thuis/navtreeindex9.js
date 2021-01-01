@@ -1,6 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"tiff_8cc.html":[2,0,3,2,0,1],
 "tiff_8cc_source.html":[2,0,3,2,0,1],
 "tiff_8hh.html":[2,0,3,2,0,2],
 "tiff_8hh_source.html":[2,0,3,2,0,2],

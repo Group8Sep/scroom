@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"classScroom_1_1Utils_1_1Detail_1_1ProgressStore.html":[1,0,3,6,0,1],
 "classScroom_1_1Utils_1_1Detail_1_1ProgressStore.html#a0c8d73d1005a8c20899b105e4645d2b4":[1,0,3,6,0,1,0],
 "classScroom_1_1Utils_1_1Detail_1_1ProgressStore.html#a0dab9f15bb924303175b98434df5d5b6":[1,0,3,6,0,1,4],
 "classScroom_1_1Utils_1_1Detail_1_1ProgressStore.html#a434ec03c3570c3434a8e32c4765fdd98":[1,0,3,6,0,1,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "classSizeDeterminer.html#a12c08750ab3df3e68032241685a17073":[1,0,71,4],
 "classSizeDeterminer.html#a4c2fe9912d7195cb42b139942d8eccf6":[1,0,71,10],
 "classSizeDeterminer.html#a77109055bebbd00f4246a4edfc4a7a3a":[1,0,71,7],
-"classSizeDeterminer.html#a7cc1085176cbbbc99270d506ecfe9c5b":[1,0,71,2]
+"classSizeDeterminer.html#a7cc1085176cbbbc99270d506ecfe9c5b":[1,0,71,2],
+"classSizeDeterminer.html#a8e123a6bcf879916496e7e43a646aa2c":[1,0,71,9]
 };

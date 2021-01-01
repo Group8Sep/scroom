@@ -17,7 +17,7 @@ var searchData=
   ['pipettecolor',['PipetteColor',['../classPipetteLayerOperations.html#ac2e1230385d4439b30668e66df245485',1,'PipetteLayerOperations']]],
   ['pipettecommonoperationscmyk',['PipetteCommonOperationsCMYK',['../classPipetteCommonOperationsCMYK.html',1,'PipetteCommonOperationsCMYK'],['../classPipetteCommonOperationsCMYK.html#a7cbc1f263cbfd217852f892716eb4f42',1,'PipetteCommonOperationsCMYK::PipetteCommonOperationsCMYK()']]],
   ['pipettecommonoperationsrgb',['PipetteCommonOperationsRGB',['../classPipetteCommonOperationsRGB.html',1,'PipetteCommonOperationsRGB'],['../classPipetteCommonOperationsRGB.html#a3b72a9899c04fefe9ddf89bf5fdf842a',1,'PipetteCommonOperationsRGB::PipetteCommonOperationsRGB()']]],
-  ['pipettehandler',['PipetteHandler',['../classPipetteHandler.html',1,'PipetteHandler'],['../classPipetteHandler.html#a2bccbbf72b318093ea1f19c21ec8d681',1,'PipetteHandler::PipetteHandler()']]],
+  ['pipettehandler',['PipetteHandler',['../classPipetteHandler.html',1,'']]],
   ['pipettelayeroperation',['pipetteLayerOperation',['../classTiffPresentation.html#abf8d3ff977d7620908cc4d147a99df8b',1,'TiffPresentation']]],
   ['pipettelayeroperations',['PipetteLayerOperations',['../classPipetteLayerOperations.html',1,'']]],
   ['pipettelayeroperations_2ehh',['pipettelayeroperations.hh',['../pipettelayeroperations_8hh.html',1,'']]],

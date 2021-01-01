@@ -1,6 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"classanonymous__namespace_02progressbarmanager_8cc_03_1_1ProgressBarPulser.html#a73eda264a10490369f4454e9e2406290":[1,0,0,0,0],
 "classanonymous__namespace_02progressbarmanager_8cc_03_1_1ProgressBarPulser.html#a7f11b760761fc08a19745651a1ce1652":[1,0,0,0,1],
 "classanonymous__namespace_02progressbarmanager_8cc_03_1_1ProgressBarPulser.html#a83dccb85bda99fc62494ef8fc2ec1cf5":[1,0,0,0,3],
 "classanonymous__namespace_02progressbarmanager_8cc_03_1_1ProgressBarPulser.html#aad54614ed90f3e52212e6c0d0b17efb4":[1,0,0,0,2],
@@ -109,8 +108,8 @@ var NAVTREEINDEX7 =
 "functions_enum.html":[1,3,4],
 "functions_eval.html":[1,3,5],
 "functions_f.html":[1,3,0,5],
-"functions_func.html":[1,3,1,0],
 "functions_func.html":[1,3,1],
+"functions_func.html":[1,3,1,0],
 "functions_func_0x7e.html":[1,3,1,25],
 "functions_func_b.html":[1,3,1,1],
 "functions_func_c.html":[1,3,1,2],
@@ -154,8 +153,8 @@ var NAVTREEINDEX7 =
 "functions_type.html":[1,3,3],
 "functions_u.html":[1,3,0,20],
 "functions_v.html":[1,3,0,21],
-"functions_vars.html":[1,3,2,0],
 "functions_vars.html":[1,3,2],
+"functions_vars.html":[1,3,2,0],
 "functions_vars_b.html":[1,3,2,1],
 "functions_vars_c.html":[1,3,2,2],
 "functions_vars_d.html":[1,3,2,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX7 =
 "interface_8hh_source.html":[2,0,1,0,15],
 "layer_8cc.html":[2,0,2,4,0,2],
 "layer_8cc_source.html":[2,0,2,4,0,2],
-"layercoordinator_8cc.html":[2,0,2,4,0,3]
+"layercoordinator_8cc.html":[2,0,2,4,0,3],
+"layercoordinator_8cc_source.html":[2,0,2,4,0,3]
 };

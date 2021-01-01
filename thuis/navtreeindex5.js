@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"classSizeDeterminer.html#a8e123a6bcf879916496e7e43a646aa2c":[1,0,71,9],
 "classSizeDeterminer.html#ac91840b2bd2dcdc1bb5a6bdcfe412fe1":[1,0,71,6],
 "classSizeDeterminer.html#ad6d8c41f087229e532b930666bd46780":[1,0,71,8],
 "classSizeDeterminer.html#afa4aea48531c92130dfac227f12e93bd":[1,0,71,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX5 =
 "classTiledBitmap.html#a75f9b982627fe273f321a0643c42d300":[1,0,78,12],
 "classTiledBitmap.html#a76da6add0fb25859acf302a21006ea85":[1,0,78,19],
 "classTiledBitmap.html#a79651024b3ff749b0c3166ee717a260f":[1,0,78,22],
-"classTiledBitmap.html#a812bf679af313885ca24082012332e70":[1,0,78,9]
+"classTiledBitmap.html#a812bf679af313885ca24082012332e70":[1,0,78,9],
+"classTiledBitmap.html#a839c2aeeef28cee5703772c0114f5060":[1,0,78,31]
 };

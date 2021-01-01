@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"classScroom_1_1Bitmap_1_1SampleIterator.html#adb32faa5e8438c1905c620f3fadcfa6c":[1,0,3,0,1,5],
 "classScroom_1_1Bitmap_1_1SampleIterator.html#adfee8eaeb7b7383396a533b4c4b0f82e":[1,0,3,0,1,2],
 "classScroom_1_1Bitmap_1_1SampleIterator.html#ae6f07d4ec58d43ef6fb014a105a24d25":[1,0,3,0,1,13],
 "classScroom_1_1Bitmap_1_1SampleIterator.html#af92761c58aa8b640e0a8cfc1c324b0b5":[1,0,3,0,1,17],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "classScroom_1_1Utils_1_1Detail_1_1ErrorSignalHandler.html#a42e79353fbb1278bbe40d4814b17c71c":[1,0,3,6,0,0,0],
 "classScroom_1_1Utils_1_1Detail_1_1ErrorSignalHandler.html#a483fd983c60c44d6de7d5261c16aea27":[1,0,3,6,0,0,3],
 "classScroom_1_1Utils_1_1Detail_1_1ErrorSignalHandler.html#ac54f53dc342019e8db34f4aa581a5792":[1,0,3,6,0,0,2],
-"classScroom_1_1Utils_1_1Detail_1_1ErrorSignalHandler.html#ae869ccdbf76fd4fcc1439cc4e288630e":[1,0,3,6,0,0,1]
+"classScroom_1_1Utils_1_1Detail_1_1ErrorSignalHandler.html#ae869ccdbf76fd4fcc1439cc4e288630e":[1,0,3,6,0,0,1],
+"classScroom_1_1Utils_1_1Detail_1_1ProgressStore.html":[1,0,3,6,0,1]
 };
