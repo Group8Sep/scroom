@@ -5,5 +5,5 @@ var bookkeeping_8hh =
     [ "Token", "classScroom_1_1Bookkeeping_1_1Token.html", "classScroom_1_1Bookkeeping_1_1Token" ],
     [ "MapBase", "classScroom_1_1Bookkeeping_1_1MapBase.html", "classScroom_1_1Bookkeeping_1_1MapBase" ],
     [ "Map", "classScroom_1_1Bookkeeping_1_1Map.html", "classScroom_1_1Bookkeeping_1_1Map" ],
-    [ "WeakToken", "bookkeeping_8hh.html#a6b126c81b7b6298cebefdc301eed109f", null ]
+    [ "WeakToken", "bookkeeping_8hh.html#a9a246ed917abe21b6bc95f463e992c94", null ]
 ];

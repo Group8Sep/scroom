@@ -1,7 +1,7 @@
 var classScroom_1_1MemoryBlobs_1_1Blob =
 [
     [ "UnloadData", "classScroom_1_1MemoryBlobs_1_1Blob_1_1UnloadData.html", "classScroom_1_1MemoryBlobs_1_1Blob_1_1UnloadData" ],
-    [ "Ptr", "classScroom_1_1MemoryBlobs_1_1Blob.html#a4114a350ade1131eaec83245a66637c3", null ],
+    [ "Ptr", "classScroom_1_1MemoryBlobs_1_1Blob.html#a261cc92d452cb5fa49d2628cb44a72c7", null ],
     [ "State", "classScroom_1_1MemoryBlobs_1_1Blob.html#a50973e173ac55206712bce2ecfe361ce", [
       [ "UNINITIALIZED", "classScroom_1_1MemoryBlobs_1_1Blob.html#a50973e173ac55206712bce2ecfe361ceada65282c0b4db4b8848e8c4df565495f", null ],
       [ "CLEAN", "classScroom_1_1MemoryBlobs_1_1Blob.html#a50973e173ac55206712bce2ecfe361cea7d62e6518e0d6f756da029ca3d455baf", null ],
@@ -9,7 +9,6 @@ var classScroom_1_1MemoryBlobs_1_1Blob =
       [ "COMPRESSING", "classScroom_1_1MemoryBlobs_1_1Blob.html#a50973e173ac55206712bce2ecfe361cea79f7443f9062063b8cac1e41d3fa1fff", null ]
     ] ],
     [ "Blob", "classScroom_1_1MemoryBlobs_1_1Blob.html#a8f8dc363aea3e891bf0812467e4fd165", null ],
-    [ "~Blob", "classScroom_1_1MemoryBlobs_1_1Blob.html#a761a01191561967810eb6e8c4cc9fde7", null ],
     [ "compress", "classScroom_1_1MemoryBlobs_1_1Blob.html#a2f3d263c27f8084dbd467aab9f175b35", null ],
     [ "create", "classScroom_1_1MemoryBlobs_1_1Blob.html#a4efac4819c3d9d77e9fbf022c61fe4c2", null ],
     [ "get", "classScroom_1_1MemoryBlobs_1_1Blob.html#a5f92c1a53bb27aafc2c872b3bd9c55a0", null ],

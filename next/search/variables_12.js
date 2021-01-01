@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['samplesperbase',['samplesPerBase',['../classScroom_1_1Bitmap_1_1SampleIterator.html#a3ab50529928509f39d959321686b3f7b',1,'Scroom::Bitmap::SampleIterator']]],
+  ['samplesperbase',['samplesPerBase',['../classScroom_1_1Bitmap_1_1SampleIterator.html#af92761c58aa8b640e0a8cfc1c324b0b5',1,'Scroom::Bitmap::SampleIterator']]],
   ['scroom_5fdev_5fmode',['SCROOM_DEV_MODE',['../callbacks_8cc.html#ab203333c81b880914c63291cc0c26bea',1,'callbacks.cc']]],
   ['scroom_5fplugin_5fdirs',['SCROOM_PLUGIN_DIRS',['../pluginmanager_8cc.html#a0d5f9293a10a17f15445e2c66a02b193',1,'pluginmanager.cc']]],
   ['scroomxml',['scroomXml',['../classView.html#aacdd752345446647ffcb16473025bf57',1,'View']]],

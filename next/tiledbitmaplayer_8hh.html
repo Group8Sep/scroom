@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-182-g72cecad</span>
+   &#160;<span id="projectnumber">0.11.1-203-g50cfc0e</span>
    </div>
   </td>
  </tr>
@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('tiledbitmaplayer_8hh.html','');});
 <code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
 <code>#include &lt;boost/thread.hpp&gt;</code><br />
 <code>#include &lt;boost/weak_ptr.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="interface_8hh_source.html">scroom/interface.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="memoryblobs_8hh_source.html">scroom/memoryblobs.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="observable_8hh_source.html">scroom/observable.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="presentationinterface_8hh_source.html">scroom/presentationinterface.hh</a>&gt;</code><br />
@@ -108,28 +109,29 @@ Include dependency graph for tiledbitmaplayer.hh:</div>
 <div class="dyncontent">
 <div class="center"><img src="tiledbitmaplayer_8hh__incl.png" border="0" usemap="#inc_2scroom_2tiledbitmaplayer_8hh" alt=""/></div>
 <map name="inc_2scroom_2tiledbitmaplayer_8hh" id="inc_2scroom_2tiledbitmaplayer_8hh">
-<area shape="rect" id="node8" href="memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="1198,379,1382,405"/>
-<area shape="rect" id="node13" href="observable_8hh.html" title="scroom/observable.hh" alt="" coords="1591,304,1757,331"/>
-<area shape="rect" id="node16" href="stuff_8hh.html" title="scroom/stuff.hh" alt="" coords="2501,453,2623,480"/>
-<area shape="rect" id="node19" href="presentationinterface_8hh.html" title="scroom/presentationinterface.hh" alt="" coords="2465,229,2699,256"/>
-<area shape="rect" id="node23" href="rectangle_8hh.html" title="scroom/rectangle.hh" alt="" coords="3742,379,3897,405"/>
-<area shape="rect" id="node37" href="threadpool_8hh.html" title="scroom/threadpool.hh" alt="" coords="521,379,685,405"/>
-<area shape="rect" id="node42" href="tile_8hh.html" title="scroom/tile.hh" alt="" coords="1442,304,1557,331"/>
-<area shape="rect" id="node44" href="tiledbitmapinterface_8hh.html" title="scroom/tiledbitmapinterface.hh" alt="" coords="2826,80,3053,107"/>
-<area shape="rect" id="node11" href="blockallocator_8hh.html" title="scroom/blockallocator.hh" alt="" coords="1197,453,1383,480"/>
-<area shape="rect" id="node12" href="utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="928,453,1071,480"/>
-<area shape="rect" id="node14" href="bookkeeping_8hh.html" title="scroom/bookkeeping.hh" alt="" coords="1914,379,2093,405"/>
-<area shape="rect" id="node17" href="bookkeepingimpl_8hh.html" title="scroom/impl/bookkeepingimpl.hh" alt="" coords="2237,453,2477,480"/>
-<area shape="rect" id="node33" href="viewinterface_8hh.html" title="scroom/viewinterface.hh" alt="" coords="3207,304,3389,331"/>
-<area shape="rect" id="node26" href="gtk-helpers_8hh.html" title="scroom/gtk&#45;helpers.hh" alt="" coords="3411,453,3579,480"/>
-<area shape="rect" id="node29" href="linearsegment_8hh.html" title="scroom/linearsegment.hh" alt="" coords="3705,453,3893,480"/>
-<area shape="rect" id="node32" href="point_8hh.html" title="scroom/point.hh" alt="" coords="4020,453,4147,480"/>
-<area shape="rect" id="node36" href="progressinterface_8hh.html" title="scroom/progressinterface.hh" alt="" coords="3027,379,3235,405"/>
-<area shape="rect" id="node39" href="semaphore_8hh.html" title="scroom/semaphore.hh" alt="" coords="5,453,172,480"/>
-<area shape="rect" id="node41" href="threadpoolimpl_8hh.html" title="scroom/impl/threadpoolimpl.hh" alt="" coords="247,453,474,480"/>
-<area shape="rect" id="node43" href="global_8hh.html" title="scroom/global.hh" alt="" coords="928,379,1063,405"/>
-<area shape="rect" id="node45" href="scroominterface_8hh.html" title="scroom/scroominterface.hh" alt="" coords="2977,155,3177,181"/>
-<area shape="rect" id="node46" href="unused_8hh.html" title="scroom/unused.hh" alt="" coords="3526,155,3667,181"/>
+<area shape="rect" id="node8" href="interface_8hh.html" title="scroom/interface.hh" alt="" coords="3323,535,3475,562"/>
+<area shape="rect" id="node9" href="memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="1239,379,1423,405"/>
+<area shape="rect" id="node14" href="observable_8hh.html" title="scroom/observable.hh" alt="" coords="1849,304,2016,331"/>
+<area shape="rect" id="node17" href="stuff_8hh.html" title="scroom/stuff.hh" alt="" coords="2141,453,2263,480"/>
+<area shape="rect" id="node20" href="presentationinterface_8hh.html" title="scroom/presentationinterface.hh" alt="" coords="3055,229,3290,256"/>
+<area shape="rect" id="node24" href="rectangle_8hh.html" title="scroom/rectangle.hh" alt="" coords="4001,379,4155,405"/>
+<area shape="rect" id="node38" href="threadpool_8hh.html" title="scroom/threadpool.hh" alt="" coords="537,379,701,405"/>
+<area shape="rect" id="node43" href="tile_8hh.html" title="scroom/tile.hh" alt="" coords="1405,304,1519,331"/>
+<area shape="rect" id="node45" href="tiledbitmapinterface_8hh.html" title="scroom/tiledbitmapinterface.hh" alt="" coords="2947,80,3174,107"/>
+<area shape="rect" id="node12" href="blockallocator_8hh.html" title="scroom/blockallocator.hh" alt="" coords="1653,453,1839,480"/>
+<area shape="rect" id="node13" href="utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="979,453,1121,480"/>
+<area shape="rect" id="node15" href="bookkeeping_8hh.html" title="scroom/bookkeeping.hh" alt="" coords="2238,379,2417,405"/>
+<area shape="rect" id="node18" href="bookkeepingimpl_8hh.html" title="scroom/impl/bookkeepingimpl.hh" alt="" coords="2687,453,2927,480"/>
+<area shape="rect" id="node34" href="viewinterface_8hh.html" title="scroom/viewinterface.hh" alt="" coords="3236,304,3419,331"/>
+<area shape="rect" id="node27" href="gtk-helpers_8hh.html" title="scroom/gtk&#45;helpers.hh" alt="" coords="3639,453,3807,480"/>
+<area shape="rect" id="node30" href="linearsegment_8hh.html" title="scroom/linearsegment.hh" alt="" coords="3984,453,4172,480"/>
+<area shape="rect" id="node33" href="point_8hh.html" title="scroom/point.hh" alt="" coords="4299,453,4425,480"/>
+<area shape="rect" id="node37" href="progressinterface_8hh.html" title="scroom/progressinterface.hh" alt="" coords="3103,453,3311,480"/>
+<area shape="rect" id="node40" href="semaphore_8hh.html" title="scroom/semaphore.hh" alt="" coords="5,453,172,480"/>
+<area shape="rect" id="node42" href="threadpoolimpl_8hh.html" title="scroom/impl/threadpoolimpl.hh" alt="" coords="298,453,525,480"/>
+<area shape="rect" id="node44" href="global_8hh.html" title="scroom/global.hh" alt="" coords="979,379,1113,405"/>
+<area shape="rect" id="node46" href="scroominterface_8hh.html" title="scroom/scroominterface.hh" alt="" coords="2893,155,3093,181"/>
+<area shape="rect" id="node47" href="unused_8hh.html" title="scroom/unused.hh" alt="" coords="3167,155,3309,181"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -174,10 +176,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a5845555afcece45c0982c85a3563c18e"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classCompressedTile.html#aa2fdbb75653efab03bb955998cfc47aa">CompressedTile::Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a></td></tr>
-<tr class="separator:a5845555afcece45c0982c85a3563c18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a2a850f232ebb5180c094605ad209a8"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiledbitmaplayer_8hh.html#a7a2a850f232ebb5180c094605ad209a8">CompressedTileGrid</a></td></tr>
-<tr class="separator:a7a2a850f232ebb5180c094605ad209a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3902e4a779f862590474adb2068255b5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a> = std::vector&lt; <a class="el" href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a> &gt;</td></tr>
+<tr class="separator:a3902e4a779f862590474adb2068255b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a439d385552614de1a0814da3706395"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiledbitmaplayer_8hh.html#a6a439d385552614de1a0814da3706395">CompressedTileGrid</a> = std::vector&lt; <a class="el" href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a> &gt;</td></tr>
+<tr class="separator:a6a439d385552614de1a0814da3706395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -206,42 +208,42 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00027">27</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00028">28</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tiled-bitmap_8cc_source.html#l00033">createProvider()</a>, <a class="el" href="compressedtile_8cc_source.html#l00128">CompressedTile::do_load()</a>, <a class="el" href="tiffpresentation_8cc_source.html#l00419">TiffPresentation::getPixelAverages()</a>, <a class="el" href="compressedtile_8cc_source.html#l00052">CompressedTile::getTileSync()</a>, <a class="el" href="tiled-bitmap_8cc_source.html#l00156">TiledBitmap::initialize()</a>, <a class="el" href="layer_8cc_source.html#l00041">Layer::Layer()</a>, <a class="el" href="layer_8cc_source.html#l00172">DataFetcher::operator()()</a>, <a class="el" href="tiled-bitmap_8cc_source.html#l00270">TiledBitmap::redraw()</a>, and <a class="el" href="tiled-bitmap_8cc_source.html#l00051">TileAreaForIndex()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tiled-bitmap_8cc_source.html#l00033">createProvider()</a>, <a class="el" href="compressedtile_8cc_source.html#l00131">CompressedTile::do_load()</a>, <a class="el" href="tiffpresentation_8cc_source.html#l00443">TiffPresentation::getPixelAverages()</a>, <a class="el" href="compressedtile_8cc_source.html#l00053">CompressedTile::getTileSync()</a>, <a class="el" href="tiled-bitmap_8cc_source.html#l00152">TiledBitmap::initialize()</a>, <a class="el" href="layer_8cc_source.html#l00041">Layer::Layer()</a>, <a class="el" href="layer_8cc_source.html#l00172">DataFetcher::operator()()</a>, <a class="el" href="tiled-bitmap_8cc_source.html#l00268">TiledBitmap::redraw()</a>, and <a class="el" href="tiled-bitmap_8cc_source.html#l00051">TileAreaForIndex()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a7a2a850f232ebb5180c094605ad209a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a2a850f232ebb5180c094605ad209a8">&#9670;&nbsp;</a></span>CompressedTileGrid</h2>
+<a id="a6a439d385552614de1a0814da3706395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a439d385552614de1a0814da3706395">&#9670;&nbsp;</a></span>CompressedTileGrid</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a>&gt; <a class="el" href="tiledbitmaplayer_8hh.html#a7a2a850f232ebb5180c094605ad209a8">CompressedTileGrid</a></td>
+          <td class="memname">using <a class="el" href="tiledbitmaplayer_8hh.html#a6a439d385552614de1a0814da3706395">CompressedTileGrid</a> =  std::vector&lt;<a class="el" href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00237">237</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00234">234</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
 
 </div>
 </div>
-<a id="a5845555afcece45c0982c85a3563c18e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5845555afcece45c0982c85a3563c18e">&#9670;&nbsp;</a></span>CompressedTileLine</h2>
+<a id="a3902e4a779f862590474adb2068255b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3902e4a779f862590474adb2068255b5">&#9670;&nbsp;</a></span>CompressedTileLine</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="classCompressedTile.html#aa2fdbb75653efab03bb955998cfc47aa">CompressedTile::Ptr</a>&gt; <a class="el" href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a></td>
+          <td class="memname">using <a class="el" href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a> =  std::vector&lt;<a class="el" href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00236">236</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00233">233</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
 
 </div>
 </div>
@@ -267,12 +269,12 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a4f52bb8f2d5da2afbcf302a471a7aa22a8257ad7491d95b6798756ab4058d7e1c"></a>TSI_LOADING_ASYNCHRONOUSLY&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00034">34</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22ae99ee9bf993a2c1567b467958e9eeb6c">TSI_UNINITIALIZED</a>,</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a4b56dcafb8b31b416ac0a8ceaa7708a7">TSI_NORMAL</a>,</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a5a84d269a576456f9a8a1771672325a6">TSI_OUT_OF_BOUNDS</a>,</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22acc1ed62bf86ee908bdf3b3d087e9287c">TSI_LOADING_SYNCHRONOUSLY</a>,</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a8257ad7491d95b6798756ab4058d7e1c">TSI_LOADING_ASYNCHRONOUSLY</a></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div><div class="ttc" id="tiledbitmaplayer_8hh_html_a4f52bb8f2d5da2afbcf302a471a7aa22a4b56dcafb8b31b416ac0a8ceaa7708a7"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a4b56dcafb8b31b416ac0a8ceaa7708a7">TSI_NORMAL</a></div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00037">tiledbitmaplayer.hh:37</a></div></div>
-<div class="ttc" id="tiledbitmaplayer_8hh_html_a4f52bb8f2d5da2afbcf302a471a7aa22ae99ee9bf993a2c1567b467958e9eeb6c"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22ae99ee9bf993a2c1567b467958e9eeb6c">TSI_UNINITIALIZED</a></div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00036">tiledbitmaplayer.hh:36</a></div></div>
-<div class="ttc" id="tiledbitmaplayer_8hh_html_a4f52bb8f2d5da2afbcf302a471a7aa22a5a84d269a576456f9a8a1771672325a6"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a5a84d269a576456f9a8a1771672325a6">TSI_OUT_OF_BOUNDS</a></div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00038">tiledbitmaplayer.hh:38</a></div></div>
-<div class="ttc" id="tiledbitmaplayer_8hh_html_a4f52bb8f2d5da2afbcf302a471a7aa22a8257ad7491d95b6798756ab4058d7e1c"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a8257ad7491d95b6798756ab4058d7e1c">TSI_LOADING_ASYNCHRONOUSLY</a></div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00040">tiledbitmaplayer.hh:40</a></div></div>
-<div class="ttc" id="tiledbitmaplayer_8hh_html_a4f52bb8f2d5da2afbcf302a471a7aa22acc1ed62bf86ee908bdf3b3d087e9287c"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22acc1ed62bf86ee908bdf3b3d087e9287c">TSI_LOADING_SYNCHRONOUSLY</a></div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00039">tiledbitmaplayer.hh:39</a></div></div>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00035">35</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22ae99ee9bf993a2c1567b467958e9eeb6c">TSI_UNINITIALIZED</a>,</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a4b56dcafb8b31b416ac0a8ceaa7708a7">TSI_NORMAL</a>,</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a5a84d269a576456f9a8a1771672325a6">TSI_OUT_OF_BOUNDS</a>,</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22acc1ed62bf86ee908bdf3b3d087e9287c">TSI_LOADING_SYNCHRONOUSLY</a>,</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a8257ad7491d95b6798756ab4058d7e1c">TSI_LOADING_ASYNCHRONOUSLY</a></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div><div class="ttc" id="tiledbitmaplayer_8hh_html_a4f52bb8f2d5da2afbcf302a471a7aa22a4b56dcafb8b31b416ac0a8ceaa7708a7"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a4b56dcafb8b31b416ac0a8ceaa7708a7">TSI_NORMAL</a></div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00038">tiledbitmaplayer.hh:38</a></div></div>
+<div class="ttc" id="tiledbitmaplayer_8hh_html_a4f52bb8f2d5da2afbcf302a471a7aa22ae99ee9bf993a2c1567b467958e9eeb6c"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22ae99ee9bf993a2c1567b467958e9eeb6c">TSI_UNINITIALIZED</a></div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00037">tiledbitmaplayer.hh:37</a></div></div>
+<div class="ttc" id="tiledbitmaplayer_8hh_html_a4f52bb8f2d5da2afbcf302a471a7aa22a5a84d269a576456f9a8a1771672325a6"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a5a84d269a576456f9a8a1771672325a6">TSI_OUT_OF_BOUNDS</a></div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00039">tiledbitmaplayer.hh:39</a></div></div>
+<div class="ttc" id="tiledbitmaplayer_8hh_html_a4f52bb8f2d5da2afbcf302a471a7aa22a8257ad7491d95b6798756ab4058d7e1c"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a8257ad7491d95b6798756ab4058d7e1c">TSI_LOADING_ASYNCHRONOUSLY</a></div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00041">tiledbitmaplayer.hh:41</a></div></div>
+<div class="ttc" id="tiledbitmaplayer_8hh_html_a4f52bb8f2d5da2afbcf302a471a7aa22acc1ed62bf86ee908bdf3b3d087e9287c"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22acc1ed62bf86ee908bdf3b3d087e9287c">TSI_LOADING_SYNCHRONOUSLY</a></div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00040">tiledbitmaplayer.hh:40</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

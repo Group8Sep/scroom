@@ -3,7 +3,7 @@ var tiledbitmapinterface_8hh =
     [ "LayerOperations", "classLayerOperations.html", "classLayerOperations" ],
     [ "SourcePresentation", "classSourcePresentation.html", "classSourcePresentation" ],
     [ "TiledBitmapInterface", "classTiledBitmapInterface.html", "classTiledBitmapInterface" ],
-    [ "LayerSpec", "tiledbitmapinterface_8hh.html#a39407a87d1a6de61ef7d8f645eaf460b", null ],
+    [ "LayerSpec", "tiledbitmapinterface_8hh.html#a00279dcefa7f911f75fec39af1d48e87", null ],
     [ "TileState", "tiledbitmapinterface_8hh.html#ac84d9b534c1947f639684269d09f7921", [
       [ "TILE_UNINITIALIZED", "tiledbitmapinterface_8hh.html#ac84d9b534c1947f639684269d09f7921af2a7a5d5623523d6e2039ec00fec0239", null ],
       [ "TILE_UNLOADED", "tiledbitmapinterface_8hh.html#ac84d9b534c1947f639684269d09f7921a2b0ca8c75e0afe97b00e5180a0db7898", null ],

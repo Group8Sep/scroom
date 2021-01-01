@@ -1,9 +1,8 @@
 var classOperations24bpp =
 [
     [ "Operations24bpp", "classOperations24bpp.html#a3a16af1f5fc66b2f35f8e7667ccb3a8d", null ],
-    [ "~Operations24bpp", "classOperations24bpp.html#a0891d3f62eefd76f417ec9309b11f367", null ],
-    [ "cache", "classOperations24bpp.html#a9c574672ebc4019e5298fe86f2865be6", null ],
+    [ "cache", "classOperations24bpp.html#a3f1925349b694d39d20dbe053b23af49", null ],
     [ "create", "classOperations24bpp.html#a040d7cb9f01db55dd7ba668ff6fdf215", null ],
-    [ "getBpp", "classOperations24bpp.html#a8eb2d2a4cc5076aea49779bab019d773", null ],
-    [ "reduce", "classOperations24bpp.html#a575208bfbbf48676a858a9a28090e9f3", null ]
+    [ "getBpp", "classOperations24bpp.html#a9cfec7016e2fef4b5423ded4949a93f0", null ],
+    [ "reduce", "classOperations24bpp.html#a301680b8e50ed1376dec31ebfec41226", null ]
 ];

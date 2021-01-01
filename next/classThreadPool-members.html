@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-182-g72cecad</span>
+   &#160;<span id="projectnumber">0.11.1-203-g50cfc0e</span>
    </div>
   </td>
  </tr>
@@ -94,8 +94,10 @@ $(document).ready(function(){initNavTree('classThreadPool.html','');});
   <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#ab7660f5cc0d859c25ab4b7f1038eedd1">defaultPriority</a></td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classThreadPool.html#a7d435b8c6eff3ffcf5b9043bd50048c2">defaultQueue</a>()</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#a682151037e6b67d6700361c987969798">do_one</a>(PrivateData::Ptr priv)</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadPool.html#a207a98b50bc64d3c35a3d784855b8ecf">operator=</a>(const ThreadPool &amp;)=delete</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#ae7dd86f29b236ee9367ea682cf33a367">operator=</a>(ThreadPool &amp;&amp;)=delete</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classThreadPool.html#a3a0c10438bec002f4d82ec26b8a22109">priv</a></td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">Ptr</a> typedef</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">Ptr</a> typedef</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classThreadPool.html#a608c3403d2d99530b22bb732e818f3ea">schedule</a>(boost::function&lt; void()&gt; const &amp;fn, int priority=defaultPriority, Queue::Ptr queue=defaultQueue())</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#adb7b0158c7cf48c58dea0a1116dd75b9">schedule</a>(boost::function&lt; void()&gt; const &amp;fn, Queue::Ptr queue)</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classThreadPool.html#a7051abc7d980a15ca07319b0f5de8aa5">schedule</a>(boost::shared_ptr&lt; T &gt; fn, int priority=defaultPriority, Queue::Ptr queue=defaultQueue())</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
@@ -114,7 +116,9 @@ $(document).ready(function(){initNavTree('classThreadPool.html','');});
   <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#a0e044ede2ae988f29243bb81b847d0b0">schedule</a>(boost::shared_ptr&lt; T &gt; fn, WeakQueue::Ptr queue)</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classThreadPool.html#ab01897b158a8ed6585e7cb3788f378ac">ThreadPool</a>(bool completeAllJobsBeforeDestruction=false)</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#ad4586d49b99febcb8198feed9d904a87">ThreadPool</a>(int count, bool completeAllJobsBeforeDestruction=false)</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classThreadPool.html#acfee8402d1b2eef80e554ebacc261d53">ThreadPtr</a> typedef</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadPool.html#a8af7ebd9779dcab6e0a48f80e8962d08">ThreadPool</a>(const ThreadPool &amp;)=delete</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#ad1bbb23b57e3ae24cdc7df015c49fba1">ThreadPool</a>(ThreadPool &amp;&amp;)=delete</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadPool.html#a2462248ccdbfc6ffe39622ded661625f">ThreadPtr</a> typedef</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#a02868ba7fdf289e346b325bee1c346ca">threads</a></td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classThreadPool.html#aa18fc8ec52d22c4ed14f781d22730ad3">work</a>(PrivateData::Ptr priv)</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#a44d3d2ab618970605e684efc216655eb">~ThreadPool</a>()</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>

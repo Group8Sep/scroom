@@ -4,5 +4,5 @@ var presentationinterface_8hh =
     [ "PresentationInterface", "classPresentationInterface.html", "classPresentationInterface" ],
     [ "PresentationBase", "classPresentationBase.html", "classPresentationBase" ],
     [ "Aggregate", "classAggregate.html", "classAggregate" ],
-    [ "ViewObservable", "presentationinterface_8hh.html#a0de18c9a51ec4f05bf82d741bba9ea16", null ]
+    [ "ViewObservable", "presentationinterface_8hh.html#ae36d25542bd5d3ebd49c3cefe9e7fc5b", null ]
 ];

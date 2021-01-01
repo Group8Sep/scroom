@@ -1,10 +1,10 @@
 var classMeasure =
 [
-    [ "Ptr", "classMeasure.html#ad72b28a5c029d3ed5cb5525d83464fa6", null ],
-    [ "Measure", "classMeasure.html#ab55c93d6121f43c91a337fb7bcd26825", null ],
+    [ "Ptr", "classMeasure.html#a75c64e1bc34fa3c7adedc35ed447916c", null ],
+    [ "Measure", "classMeasure.html#a9736b4daffc3bac4581c322adbebfe1f", null ],
     [ "create", "classMeasure.html#a11a1285a1dfd1a41545b556e8b57a2b4", null ],
-    [ "getPluginName", "classMeasure.html#aa56572fe489b1c631e219648fad03f12", null ],
-    [ "getPluginVersion", "classMeasure.html#ae903989db06215072d126f76af83d1b8", null ],
-    [ "registerCapabilities", "classMeasure.html#aa8428c03730d169dbb37c713b2562338", null ],
-    [ "viewAdded", "classMeasure.html#a7f25d85cb25be30371bac77b2ab7eddb", null ]
+    [ "getPluginName", "classMeasure.html#ac9d396614c76196e1eaf0a97ddc49882", null ],
+    [ "getPluginVersion", "classMeasure.html#afdf8a4560120c9d1b73a4f8ec2641b3c", null ],
+    [ "registerCapabilities", "classMeasure.html#aad7ff6db490577a6f385c9c396e3daba", null ],
+    [ "viewAdded", "classMeasure.html#a76f201de0da18b6b2727a96e07252196", null ]
 ];
