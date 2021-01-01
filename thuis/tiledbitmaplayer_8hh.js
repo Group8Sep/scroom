@@ -5,8 +5,8 @@ var tiledbitmaplayer_8hh =
     [ "CompressedTile", "classCompressedTile.html", "classCompressedTile" ],
     [ "Layer", "classLayer.html", "classLayer" ],
     [ "TILESIZE", "tiledbitmaplayer_8hh.html#a07ae61ed7dc31e9cddbdf9da244567c7", null ],
-    [ "CompressedTileGrid", "tiledbitmaplayer_8hh.html#a7a2a850f232ebb5180c094605ad209a8", null ],
-    [ "CompressedTileLine", "tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e", null ],
+    [ "CompressedTileGrid", "tiledbitmaplayer_8hh.html#a6a439d385552614de1a0814da3706395", null ],
+    [ "CompressedTileLine", "tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5", null ],
     [ "TileStateInternal", "tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22", [
       [ "TSI_UNINITIALIZED", "tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22ae99ee9bf993a2c1567b467958e9eeb6c", null ],
       [ "TSI_NORMAL", "tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a4b56dcafb8b31b416ac0a8ceaa7708a7", null ],

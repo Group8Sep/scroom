@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-176-g834fb6d</span>
+   &#160;<span id="projectnumber">0.11.1-206-g229a3ff</span>
    </div>
   </td>
  </tr>
@@ -106,10 +106,10 @@ Collaboration diagram for ThreadPool::Queue:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a35d9a094994f398ce4f6178e82d65ade"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classThreadPool_1_1Queue.html">Queue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1Queue.html#a35d9a094994f398ce4f6178e82d65ade">Ptr</a></td></tr>
-<tr class="separator:a35d9a094994f398ce4f6178e82d65ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90c28de5a6787844ead3c25e20fae5c6"><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr&lt; <a class="el" href="classThreadPool_1_1Queue.html">Queue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1Queue.html#a90c28de5a6787844ead3c25e20fae5c6">WeakPtr</a></td></tr>
-<tr class="separator:a90c28de5a6787844ead3c25e20fae5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757addfd3fa8afc091aac9f53d2ed350"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1Queue.html#a757addfd3fa8afc091aac9f53d2ed350">Ptr</a> = boost::shared_ptr&lt; <a class="el" href="classThreadPool_1_1Queue.html">Queue</a> &gt;</td></tr>
+<tr class="separator:a757addfd3fa8afc091aac9f53d2ed350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a819236eeed3a079da874cf2702263765"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1Queue.html#a819236eeed3a079da874cf2702263765">WeakPtr</a> = boost::weak_ptr&lt; <a class="el" href="classThreadPool_1_1Queue.html">Queue</a> &gt;</td></tr>
+<tr class="separator:a819236eeed3a079da874cf2702263765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -122,10 +122,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae48cfe05b7bb72f1990557d64ef57acf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classThreadPool_1_1Queue.html#a35d9a094994f398ce4f6178e82d65ade">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1Queue.html#ae48cfe05b7bb72f1990557d64ef57acf">create</a> ()</td></tr>
+<tr class="memitem:ae48cfe05b7bb72f1990557d64ef57acf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classThreadPool_1_1Queue.html#a757addfd3fa8afc091aac9f53d2ed350">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1Queue.html#ae48cfe05b7bb72f1990557d64ef57acf">create</a> ()</td></tr>
 <tr class="memdesc:ae48cfe05b7bb72f1990557d64ef57acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the last reference goes out of scope, synchronously destroy the <a class="el" href="classThreadPool_1_1Queue.html" title="Represent a Queue in the ThreadPool. ">Queue</a>, blocking until any currently running jobs are finished.  <a href="#ae48cfe05b7bb72f1990557d64ef57acf">More...</a><br /></td></tr>
 <tr class="separator:ae48cfe05b7bb72f1990557d64ef57acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60a5cfe128cc80c5d5fbbd6494fb62e2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classThreadPool_1_1Queue.html#a35d9a094994f398ce4f6178e82d65ade">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1Queue.html#a60a5cfe128cc80c5d5fbbd6494fb62e2">createAsync</a> ()</td></tr>
+<tr class="memitem:a60a5cfe128cc80c5d5fbbd6494fb62e2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classThreadPool_1_1Queue.html#a757addfd3fa8afc091aac9f53d2ed350">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1Queue.html#a60a5cfe128cc80c5d5fbbd6494fb62e2">createAsync</a> ()</td></tr>
 <tr class="memdesc:a60a5cfe128cc80c5d5fbbd6494fb62e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the last reference goes out of scope, asynchronously destroy the <a class="el" href="classThreadPool_1_1Queue.html" title="Represent a Queue in the ThreadPool. ">Queue</a>.  <a href="#a60a5cfe128cc80c5d5fbbd6494fb62e2">More...</a><br /></td></tr>
 <tr class="separator:a60a5cfe128cc80c5d5fbbd6494fb62e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -133,6 +133,14 @@ Static Public Member Functions</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a0ea02c66235d2f8bd6da128248d8b55f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1Queue.html#a0ea02c66235d2f8bd6da128248d8b55f">Queue</a> ()</td></tr>
 <tr class="separator:a0ea02c66235d2f8bd6da128248d8b55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b8dee0d10fe3f6f58d4ee4775903fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1Queue.html#ab4b8dee0d10fe3f6f58d4ee4775903fc">Queue</a> (const <a class="el" href="classThreadPool_1_1Queue.html">Queue</a> &amp;)=delete</td></tr>
+<tr class="separator:ab4b8dee0d10fe3f6f58d4ee4775903fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea78a048117e0a301bbb43f98e1fba73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1Queue.html#aea78a048117e0a301bbb43f98e1fba73">Queue</a> (<a class="el" href="classThreadPool_1_1Queue.html">Queue</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:aea78a048117e0a301bbb43f98e1fba73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a747bf700325f1884644bfd77363af4dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadPool_1_1Queue.html">Queue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1Queue.html#a747bf700325f1884644bfd77363af4dd">operator=</a> (const <a class="el" href="classThreadPool_1_1Queue.html">Queue</a> &amp;)=delete</td></tr>
+<tr class="separator:a747bf700325f1884644bfd77363af4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363cc6f75314ecc3d08d55dd8162621a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadPool_1_1Queue.html">Queue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1Queue.html#a363cc6f75314ecc3d08d55dd8162621a">operator=</a> (<a class="el" href="classThreadPool_1_1Queue.html">Queue</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a363cc6f75314ecc3d08d55dd8162621a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -148,14 +156,14 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="threadpool_8hh_source.html#l00085">85</a> of file <a class="el" href="threadpool_8hh_source.html">threadpool.hh</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a35d9a094994f398ce4f6178e82d65ade"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35d9a094994f398ce4f6178e82d65ade">&#9670;&nbsp;</a></span>Ptr</h2>
+<a id="a757addfd3fa8afc091aac9f53d2ed350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757addfd3fa8afc091aac9f53d2ed350">&#9670;&nbsp;</a></span>Ptr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="classThreadPool_1_1Queue.html">Queue</a>&gt; <a class="el" href="classThreadPool_1_1Queue.html#a35d9a094994f398ce4f6178e82d65ade">ThreadPool::Queue::Ptr</a></td>
+          <td class="memname">using <a class="el" href="classThreadPool_1_1Queue.html#a757addfd3fa8afc091aac9f53d2ed350">ThreadPool::Queue::Ptr</a> =  boost::shared_ptr&lt;<a class="el" href="classThreadPool_1_1Queue.html">Queue</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -164,14 +172,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a90c28de5a6787844ead3c25e20fae5c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90c28de5a6787844ead3c25e20fae5c6">&#9670;&nbsp;</a></span>WeakPtr</h2>
+<a id="a819236eeed3a079da874cf2702263765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a819236eeed3a079da874cf2702263765">&#9670;&nbsp;</a></span>WeakPtr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::weak_ptr&lt;<a class="el" href="classThreadPool_1_1Queue.html">Queue</a>&gt; <a class="el" href="classThreadPool_1_1Queue.html#a90c28de5a6787844ead3c25e20fae5c6">ThreadPool::Queue::WeakPtr</a></td>
+          <td class="memname">using <a class="el" href="classThreadPool_1_1Queue.html#a819236eeed3a079da874cf2702263765">ThreadPool::Queue::WeakPtr</a> =  boost::weak_ptr&lt;<a class="el" href="classThreadPool_1_1Queue.html">Queue</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -196,13 +204,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00375">375</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;{ <a class="code" href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">weak</a>-&gt;get()-&gt;deletingQueue(); }</div><div class="ttc" id="classThreadPool_1_1Queue_html_aa317640e62284800e58120f8d702ba20"><div class="ttname"><a href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">ThreadPool::Queue::weak</a></div><div class="ttdeci">boost::shared_ptr&lt; WeakQueue &gt; weak</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00113">threadpool.hh:113</a></div></div>
+<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00395">395</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;{ <a class="code" href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">weak</a>-&gt;get()-&gt;deletingQueue(); }</div><div class="ttc" id="classThreadPool_1_1Queue_html_aa317640e62284800e58120f8d702ba20"><div class="ttname"><a href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">ThreadPool::Queue::weak</a></div><div class="ttdeci">boost::shared_ptr&lt; WeakQueue &gt; weak</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00118">threadpool.hh:118</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <a id="a0ea02c66235d2f8bd6da128248d8b55f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ea02c66235d2f8bd6da128248d8b55f">&#9670;&nbsp;</a></span>Queue()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ea02c66235d2f8bd6da128248d8b55f">&#9670;&nbsp;</a></span>Queue() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,10 +232,62 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00371">371</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  : <a class="code" href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">weak</a>(<a class="code" href="classThreadPool_1_1WeakQueue.html#a505621d98fa3f01d828eb90e8ec23bbd">WeakQueue::create</a>())</div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;{}</div><div class="ttc" id="classThreadPool_1_1WeakQueue_html_a505621d98fa3f01d828eb90e8ec23bbd"><div class="ttname"><a href="classThreadPool_1_1WeakQueue.html#a505621d98fa3f01d828eb90e8ec23bbd">ThreadPool::WeakQueue::create</a></div><div class="ttdeci">static Ptr create()</div><div class="ttdoc">ThreadPool::WeakQueue. </div><div class="ttdef"><b>Definition:</b> <a href="threadpoolimpl_8cc_source.html#l00385">threadpoolimpl.cc:385</a></div></div>
-<div class="ttc" id="classThreadPool_1_1Queue_html_aa317640e62284800e58120f8d702ba20"><div class="ttname"><a href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">ThreadPool::Queue::weak</a></div><div class="ttdeci">boost::shared_ptr&lt; WeakQueue &gt; weak</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00113">threadpool.hh:113</a></div></div>
+<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00391">391</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  : <a class="code" href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">weak</a>(<a class="code" href="classThreadPool_1_1WeakQueue.html#a505621d98fa3f01d828eb90e8ec23bbd">WeakQueue::create</a>())</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;{}</div><div class="ttc" id="classThreadPool_1_1WeakQueue_html_a505621d98fa3f01d828eb90e8ec23bbd"><div class="ttname"><a href="classThreadPool_1_1WeakQueue.html#a505621d98fa3f01d828eb90e8ec23bbd">ThreadPool::WeakQueue::create</a></div><div class="ttdeci">static Ptr create()</div><div class="ttdoc">ThreadPool::WeakQueue. </div><div class="ttdef"><b>Definition:</b> <a href="threadpoolimpl_8cc_source.html#l00405">threadpoolimpl.cc:405</a></div></div>
+<div class="ttc" id="classThreadPool_1_1Queue_html_aa317640e62284800e58120f8d702ba20"><div class="ttname"><a href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">ThreadPool::Queue::weak</a></div><div class="ttdeci">boost::shared_ptr&lt; WeakQueue &gt; weak</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00118">threadpool.hh:118</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="ab4b8dee0d10fe3f6f58d4ee4775903fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4b8dee0d10fe3f6f58d4ee4775903fc">&#9670;&nbsp;</a></span>Queue() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ThreadPool::Queue::Queue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classThreadPool_1_1Queue.html">Queue</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea78a048117e0a301bbb43f98e1fba73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea78a048117e0a301bbb43f98e1fba73">&#9670;&nbsp;</a></span>Queue() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ThreadPool::Queue::Queue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classThreadPool_1_1Queue.html">Queue</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -241,7 +301,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classThreadPool_1_1Queue.html#a35d9a094994f398ce4f6178e82d65ade">ThreadPool::Queue::Ptr</a> ThreadPool::Queue::create </td>
+          <td class="memname"><a class="el" href="classThreadPool_1_1Queue.html#a757addfd3fa8afc091aac9f53d2ed350">ThreadPool::Queue::Ptr</a> ThreadPool::Queue::create </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -257,11 +317,11 @@ Private Attributes</h2></td></tr>
 <p>When the last reference goes out of scope, synchronously destroy the <a class="el" href="classThreadPool_1_1Queue.html" title="Represent a Queue in the ThreadPool. ">Queue</a>, blocking until any currently running jobs are finished. </p>
 <p><a class="el" href="classThreadPool_1_1Queue.html" title="Represent a Queue in the ThreadPool. ">ThreadPool::Queue</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00364">364</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00384">384</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00352">ThreadPool::defaultQueue()</a>, and <a class="el" href="compressedtile_8cc_source.html#l00205">CompressedTile::observerAdded()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classThreadPool_1_1Queue.html#a35d9a094994f398ce4f6178e82d65ade">ThreadPool::Queue::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classThreadPool_1_1Queue.html">ThreadPool::Queue</a>()); }</div><div class="ttc" id="classThreadPool_1_1Queue_html_a35d9a094994f398ce4f6178e82d65ade"><div class="ttname"><a href="classThreadPool_1_1Queue.html#a35d9a094994f398ce4f6178e82d65ade">ThreadPool::Queue::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; Queue &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00088">threadpool.hh:88</a></div></div>
-<div class="ttc" id="classThreadPool_1_1Queue_html"><div class="ttname"><a href="classThreadPool_1_1Queue.html">ThreadPool::Queue</a></div><div class="ttdoc">Represent a Queue in the ThreadPool. </div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00085">threadpool.hh:85</a></div></div>
+<p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00372">ThreadPool::defaultQueue()</a>, and <a class="el" href="compressedtile_8cc_source.html#l00214">CompressedTile::observerAdded()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classThreadPool_1_1Queue.html#a757addfd3fa8afc091aac9f53d2ed350">ThreadPool::Queue::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classThreadPool_1_1Queue.html">ThreadPool::Queue</a>()); }</div><div class="ttc" id="classThreadPool_1_1Queue_html"><div class="ttname"><a href="classThreadPool_1_1Queue.html">ThreadPool::Queue</a></div><div class="ttdoc">Represent a Queue in the ThreadPool. </div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00085">threadpool.hh:85</a></div></div>
+<div class="ttc" id="classThreadPool_1_1Queue_html_a757addfd3fa8afc091aac9f53d2ed350"><div class="ttname"><a href="classThreadPool_1_1Queue.html#a757addfd3fa8afc091aac9f53d2ed350">ThreadPool::Queue::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; Queue &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00088">threadpool.hh:88</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -275,7 +335,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classThreadPool_1_1Queue.html#a35d9a094994f398ce4f6178e82d65ade">ThreadPool::Queue::Ptr</a> ThreadPool::Queue::createAsync </td>
+          <td class="memname"><a class="el" href="classThreadPool_1_1Queue.html#a757addfd3fa8afc091aac9f53d2ed350">ThreadPool::Queue::Ptr</a> ThreadPool::Queue::createAsync </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -291,12 +351,12 @@ Private Attributes</h2></td></tr>
 <p>When the last reference goes out of scope, asynchronously destroy the <a class="el" href="classThreadPool_1_1Queue.html" title="Represent a Queue in the ThreadPool. ">Queue</a>. </p>
 <p>Jobs scheduled on the <a class="el" href="classThreadPool_1_1Queue.html" title="Represent a Queue in the ThreadPool. ">Queue</a> may continue running for some time. </p>
 
-<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00366">366</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00386">386</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tileviewstate_8cc_source.html#l00102">TileViewState::kick()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;{</div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classThreadPool_1_1Queue.html#a35d9a094994f398ce4f6178e82d65ade">ThreadPool::Queue::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classThreadPool_1_1Queue.html">ThreadPool::Queue</a>(), <a class="code" href="classAsyncDeleter.html">AsyncDeleter&lt;ThreadPool::Queue&gt;</a>());</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;}</div><div class="ttc" id="classThreadPool_1_1Queue_html_a35d9a094994f398ce4f6178e82d65ade"><div class="ttname"><a href="classThreadPool_1_1Queue.html#a35d9a094994f398ce4f6178e82d65ade">ThreadPool::Queue::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; Queue &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00088">threadpool.hh:88</a></div></div>
-<div class="ttc" id="classThreadPool_1_1Queue_html"><div class="ttname"><a href="classThreadPool_1_1Queue.html">ThreadPool::Queue</a></div><div class="ttdoc">Represent a Queue in the ThreadPool. </div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00085">threadpool.hh:85</a></div></div>
+<p class="reference">Referenced by <a class="el" href="tileviewstate_8cc_source.html#l00103">TileViewState::kick()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;{</div><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classThreadPool_1_1Queue.html#a757addfd3fa8afc091aac9f53d2ed350">ThreadPool::Queue::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classThreadPool_1_1Queue.html">ThreadPool::Queue</a>(), <a class="code" href="classAsyncDeleter.html">AsyncDeleter&lt;ThreadPool::Queue&gt;</a>());</div><div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;}</div><div class="ttc" id="classThreadPool_1_1Queue_html"><div class="ttname"><a href="classThreadPool_1_1Queue.html">ThreadPool::Queue</a></div><div class="ttdoc">Represent a Queue in the ThreadPool. </div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00085">threadpool.hh:85</a></div></div>
 <div class="ttc" id="classAsyncDeleter_html"><div class="ttname"><a href="classAsyncDeleter.html">AsyncDeleter</a></div><div class="ttdoc">Allow boost shared pointers to asynchronously delete their targets. </div><div class="ttdef"><b>Definition:</b> <a href="async-deleter_8hh_source.html#l00047">async-deleter.hh:47</a></div></div>
+<div class="ttc" id="classThreadPool_1_1Queue_html_a757addfd3fa8afc091aac9f53d2ed350"><div class="ttname"><a href="classThreadPool_1_1Queue.html#a757addfd3fa8afc091aac9f53d2ed350">ThreadPool::Queue::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; Queue &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00088">threadpool.hh:88</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -307,7 +367,7 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classScroom_1_1Detail_1_1ThreadPool_1_1QueueImpl.html#aeaba7e9ce75b03267b990be0b93027b2">QueueImpl::Ptr</a> ThreadPool::Queue::get </td>
+          <td class="memname"><a class="el" href="classScroom_1_1Detail_1_1ThreadPool_1_1QueueImpl.html#a3ef2d52a46ff40531471055d07f78af8">QueueImpl::Ptr</a> ThreadPool::Queue::get </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -315,8 +375,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00377">377</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">weak</a>-&gt;get(); }</div><div class="ttc" id="classThreadPool_1_1Queue_html_aa317640e62284800e58120f8d702ba20"><div class="ttname"><a href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">ThreadPool::Queue::weak</a></div><div class="ttdeci">boost::shared_ptr&lt; WeakQueue &gt; weak</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00113">threadpool.hh:113</a></div></div>
+<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00397">397</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">weak</a>-&gt;get(); }</div><div class="ttc" id="classThreadPool_1_1Queue_html_aa317640e62284800e58120f8d702ba20"><div class="ttname"><a href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">ThreadPool::Queue::weak</a></div><div class="ttdeci">boost::shared_ptr&lt; WeakQueue &gt; weak</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00118">threadpool.hh:118</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -327,7 +387,7 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">ThreadPool::WeakQueue::Ptr</a> ThreadPool::Queue::getWeak </td>
+          <td class="memname"><a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">ThreadPool::WeakQueue::Ptr</a> ThreadPool::Queue::getWeak </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -335,9 +395,61 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00379">379</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">weak</a>; }</div><div class="ttc" id="classThreadPool_1_1Queue_html_aa317640e62284800e58120f8d702ba20"><div class="ttname"><a href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">ThreadPool::Queue::weak</a></div><div class="ttdeci">boost::shared_ptr&lt; WeakQueue &gt; weak</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00113">threadpool.hh:113</a></div></div>
+<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00399">399</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">weak</a>; }</div><div class="ttc" id="classThreadPool_1_1Queue_html_aa317640e62284800e58120f8d702ba20"><div class="ttname"><a href="classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20">ThreadPool::Queue::weak</a></div><div class="ttdeci">boost::shared_ptr&lt; WeakQueue &gt; weak</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00118">threadpool.hh:118</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a747bf700325f1884644bfd77363af4dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a747bf700325f1884644bfd77363af4dd">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classThreadPool_1_1Queue.html">Queue</a>&amp; ThreadPool::Queue::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classThreadPool_1_1Queue.html">Queue</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a363cc6f75314ecc3d08d55dd8162621a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a363cc6f75314ecc3d08d55dd8162621a">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classThreadPool_1_1Queue.html">Queue</a>&amp; ThreadPool::Queue::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classThreadPool_1_1Queue.html">Queue</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -361,9 +473,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="threadpool_8hh_source.html#l00113">113</a> of file <a class="el" href="threadpool_8hh_source.html">threadpool.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="threadpool_8hh_source.html#l00118">118</a> of file <a class="el" href="threadpool_8hh_source.html">threadpool.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00377">get()</a>, <a class="el" href="threadpoolimpl_8cc_source.html#l00379">getWeak()</a>, and <a class="el" href="threadpoolimpl_8cc_source.html#l00375">~Queue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="threadpoolimpl_8cc_source.html#l00397">get()</a>, <a class="el" href="threadpoolimpl_8cc_source.html#l00399">getWeak()</a>, and <a class="el" href="threadpoolimpl_8cc_source.html#l00395">~Queue()</a>.</p>
 
 </div>
 </div>

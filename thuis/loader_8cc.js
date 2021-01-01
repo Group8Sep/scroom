@@ -4,7 +4,7 @@ var loader_8cc =
     [ "GtkFileFilterInfoDeleter", "classGtkFileFilterInfoDeleter.html", "classGtkFileFilterInfoDeleter" ],
     [ "GtkFileFilterListDestroyer", "classGtkFileFilterListDestroyer.html", "classGtkFileFilterListDestroyer" ],
     [ "ScroomInterfaceImpl", "classScroomInterfaceImpl.html", "classScroomInterfaceImpl" ],
-    [ "GtkFileFilterInfoPtr", "loader_8cc.html#a6633ca47aa3b5113fd6bc41abb35f365", null ],
+    [ "GtkFileFilterInfoPtr", "loader_8cc.html#aaa2bcc997dd40c9cba73d9beb88ecbc4", null ],
     [ "charpFromString", "loader_8cc.html#ac708e9d321c829a4df72067713797768", null ],
     [ "create", "loader_8cc.html#aa16c64386dde90b66ae796ec3183dcef", null ],
     [ "destroyGtkFileFilterList", "loader_8cc.html#a3e025cc422a49d3cbb3aa8551ea40d82", null ],

@@ -1,9 +1,8 @@
 var classOperationsCMYK16 =
 [
     [ "OperationsCMYK16", "classOperationsCMYK16.html#ab0facecd39b0ed9dfcebbca8a6da7811", null ],
-    [ "~OperationsCMYK16", "classOperationsCMYK16.html#a0c6de59166f962e3aa61c62b952709bd", null ],
-    [ "cache", "classOperationsCMYK16.html#add30970b0c17832b7c827ee7a0332ec5", null ],
+    [ "cache", "classOperationsCMYK16.html#a7675e63ccee771f5bb16e810c9fd10cb", null ],
     [ "create", "classOperationsCMYK16.html#ae8ef4df2467f4d476e274069a7f3124a", null ],
-    [ "getBpp", "classOperationsCMYK16.html#a12e5741f1fe99cf6d360727febc2e1a5", null ],
-    [ "reduce", "classOperationsCMYK16.html#a8e55f0135be1d3d96c125b449fd0e6d5", null ]
+    [ "getBpp", "classOperationsCMYK16.html#ad3b247fb587bce93d52152b0e7b3fc84", null ],
+    [ "reduce", "classOperationsCMYK16.html#adab73859d3906bde9e27f20438ce2857", null ]
 ];

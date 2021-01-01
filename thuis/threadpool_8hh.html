@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-176-g834fb6d</span>
+   &#160;<span id="projectnumber">0.11.1-206-g229a3ff</span>
    </div>
   </td>
  </tr>
@@ -184,10 +184,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4a99c6a6be48be73a9ecf92e6e3f6e9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadpool_8hh.html#a4a99c6a6be48be73a9ecf92e6e3f6e9b">CpuBound</a> ()</td></tr>
+<tr class="memitem:a4a99c6a6be48be73a9ecf92e6e3f6e9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadpool_8hh.html#a4a99c6a6be48be73a9ecf92e6e3f6e9b">CpuBound</a> ()</td></tr>
 <tr class="memdesc:a4a99c6a6be48be73a9ecf92e6e3f6e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classThreadPool.html" title="Generic threadpool. ">ThreadPool</a> for cpu-bound tasks.  <a href="#a4a99c6a6be48be73a9ecf92e6e3f6e9b">More...</a><br /></td></tr>
 <tr class="separator:a4a99c6a6be48be73a9ecf92e6e3f6e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af979353165a7a214dda8f7f289de81ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadpool_8hh.html#af979353165a7a214dda8f7f289de81ea">Sequentially</a> ()</td></tr>
+<tr class="memitem:af979353165a7a214dda8f7f289de81ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadpool_8hh.html#af979353165a7a214dda8f7f289de81ea">Sequentially</a> ()</td></tr>
 <tr class="memdesc:af979353165a7a214dda8f7f289de81ea"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classThreadPool.html" title="Generic threadpool. ">ThreadPool</a> for executing tasks sequentially.  <a href="#af979353165a7a214dda8f7f289de81ea">More...</a><br /></td></tr>
 <tr class="separator:af979353165a7a214dda8f7f289de81ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -234,7 +234,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a> CpuBound </td>
+          <td class="memname"><a class="el" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a> CpuBound </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -247,11 +247,11 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>a shared pointer to this <a class="el" href="classThreadPool.html" title="Generic threadpool. ">ThreadPool</a> instance</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://github.com/kees-jan/scroom/wiki/StaticInitializationOrderFiasco">https://github.com/kees-jan/scroom/wiki/StaticInitializationOrderFiasco</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00452">452</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00459">459</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00113">Layer::fetchData()</a>, <a class="el" href="compressedtile_8cc_source.html#l00205">CompressedTile::observerAdded()</a>, and <a class="el" href="layercoordinator_8cc_source.html#l00043">LayerCoordinator::tileFinished()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;{</div><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  <span class="keyword">static</span> <a class="code" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a> cpuBound = NotifyThreadList&lt;ThreadPool&gt;(<a class="code" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classThreadPool.html">ThreadPool</a>()), <span class="stringliteral">&quot;CpuBound threadpool&quot;</span>);</div><div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;  <span class="keywordflow">return</span> cpuBound;</div><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;}</div><div class="ttc" id="classThreadPool_html_a425b5b343e60e62663b65628dc1f9be1"><div class="ttname"><a href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; ThreadPool &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00164">threadpool.hh:164</a></div></div>
-<div class="ttc" id="classThreadPool_html"><div class="ttname"><a href="classThreadPool.html">ThreadPool</a></div><div class="ttdoc">Generic threadpool. </div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00052">threadpool.hh:52</a></div></div>
+<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00113">Layer::fetchData()</a>, <a class="el" href="compressedtile_8cc_source.html#l00214">CompressedTile::observerAdded()</a>, and <a class="el" href="layercoordinator_8cc_source.html#l00043">LayerCoordinator::tileFinished()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;{</div><div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  <span class="keyword">static</span> <a class="code" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a> cpuBound = NotifyThreadList&lt;ThreadPool&gt;(<a class="code" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classThreadPool.html">ThreadPool</a>()), <span class="stringliteral">&quot;CpuBound threadpool&quot;</span>);</div><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="keywordflow">return</span> cpuBound;</div><div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;}</div><div class="ttc" id="classThreadPool_html"><div class="ttname"><a href="classThreadPool.html">ThreadPool</a></div><div class="ttdoc">Generic threadpool. </div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00052">threadpool.hh:52</a></div></div>
+<div class="ttc" id="classThreadPool_html_a60143f0f2001f70595bef06790d77af5"><div class="ttname"><a href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; ThreadPool &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00175">threadpool.hh:175</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -262,7 +262,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a> Sequentially </td>
+          <td class="memname"><a class="el" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a> Sequentially </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -277,11 +277,11 @@ bitmaps") are typically scheduled here, such that only one such task runs at a t
 <dl class="section return"><dt>Returns</dt><dd>a shared pointer to this <a class="el" href="classThreadPool.html" title="Generic threadpool. ">ThreadPool</a> instance</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://github.com/kees-jan/scroom/wiki/StaticInitializationOrderFiasco">https://github.com/kees-jan/scroom/wiki/StaticInitializationOrderFiasco</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00459">459</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00466">466</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pipette_8cc_source.html#l00131">PipetteHandler::onSelectionEnd()</a>, and <a class="el" href="tiled-bitmap_8cc_source.html#l00237">TiledBitmap::setSource()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;{</div><div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  <span class="keyword">static</span> <a class="code" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a> sequentially = NotifyThreadList&lt;ThreadPool&gt;(<a class="code" href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classThreadPool.html">ThreadPool</a>(1)), <span class="stringliteral">&quot;Sequential threadpool&quot;</span>);</div><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="keywordflow">return</span> sequentially;</div><div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;}</div><div class="ttc" id="classThreadPool_html_a425b5b343e60e62663b65628dc1f9be1"><div class="ttname"><a href="classThreadPool.html#a425b5b343e60e62663b65628dc1f9be1">ThreadPool::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; ThreadPool &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00164">threadpool.hh:164</a></div></div>
-<div class="ttc" id="classThreadPool_html"><div class="ttname"><a href="classThreadPool.html">ThreadPool</a></div><div class="ttdoc">Generic threadpool. </div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00052">threadpool.hh:52</a></div></div>
+<p class="reference">Referenced by <a class="el" href="pipette_8cc_source.html#l00129">PipetteHandler::onSelectionEnd()</a>, and <a class="el" href="tiled-bitmap_8cc_source.html#l00235">TiledBitmap::setSource()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;{</div><div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  <span class="keyword">static</span> <a class="code" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a> sequentially = NotifyThreadList&lt;ThreadPool&gt;(<a class="code" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classThreadPool.html">ThreadPool</a>(1)), <span class="stringliteral">&quot;Sequential threadpool&quot;</span>);</div><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;</div><div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  <span class="keywordflow">return</span> sequentially;</div><div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;}</div><div class="ttc" id="classThreadPool_html"><div class="ttname"><a href="classThreadPool.html">ThreadPool</a></div><div class="ttdoc">Generic threadpool. </div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00052">threadpool.hh:52</a></div></div>
+<div class="ttc" id="classThreadPool_html_a60143f0f2001f70595bef06790d77af5"><div class="ttname"><a href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; ThreadPool &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00175">threadpool.hh:175</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

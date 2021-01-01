@@ -1,7 +1,7 @@
 var classTileViewState =
 [
-    [ "Ptr", "classTileViewState.html#a04d04133dcd86c7c38850e395c44b6f5", null ],
-    [ "WeakPtr", "classTileViewState.html#a8d5d9b6b4e6d087ba2e5b28401d39954", null ],
+    [ "Ptr", "classTileViewState.html#ab0d300ae511d475e94b30ea31c5dcc2a", null ],
+    [ "WeakPtr", "classTileViewState.html#ad15039b42779b29c0ec06728ee9bbf49", null ],
     [ "State", "classTileViewState.html#a0a229ff2bb85654a101ca1842211842f", [
       [ "INIT", "classTileViewState.html#a0a229ff2bb85654a101ca1842211842fa1d647ad9c158d585079470a6bc769b66", null ],
       [ "LOADED", "classTileViewState.html#a0a229ff2bb85654a101ca1842211842facb0e11734f1bbe827dfb4f08117485e8", null ],
@@ -11,7 +11,9 @@ var classTileViewState =
       [ "ZOOM_COMPUTED", "classTileViewState.html#a0a229ff2bb85654a101ca1842211842fa55fe6567e4b3808995b5ab4746607ee1", null ],
       [ "DONE", "classTileViewState.html#a0a229ff2bb85654a101ca1842211842fa8825562a5c2536d9bbfec985af74bc1d", null ]
     ] ],
-    [ "~TileViewState", "classTileViewState.html#a5509326cfee107947daffbdb52160319", null ],
+    [ "~TileViewState", "classTileViewState.html#ae59f0acfef6570d16d593e5f3a38b307", null ],
+    [ "TileViewState", "classTileViewState.html#a5782968158332de287ccecd406c3f698", null ],
+    [ "TileViewState", "classTileViewState.html#af8abdc5085f1adaefe269049aee929b2", null ],
     [ "TileViewState", "classTileViewState.html#a6a0e8aab5773e42d6bfc8932fe8bf7d4", null ],
     [ "clear", "classTileViewState.html#a43721fbbadd022ad3a1b2e4c228500f4", null ],
     [ "computeBase", "classTileViewState.html#a48605837fb30440abc219e9ac116de22", null ],
@@ -19,11 +21,13 @@ var classTileViewState =
     [ "create", "classTileViewState.html#a0e657cc6a64b8bf9a7fa50019bba7382", null ],
     [ "getCacheResult", "classTileViewState.html#a36289f4d950ab6fa450639a8cac6c859", null ],
     [ "kick", "classTileViewState.html#ad24f5d685c8474a955e26aeb1f3c4cb1", null ],
+    [ "operator=", "classTileViewState.html#a369dacfd50a0eeebc070937f0b1f846a", null ],
+    [ "operator=", "classTileViewState.html#a2d0ab6d4b65771da7f9f11297ebb8471", null ],
     [ "process", "classTileViewState.html#a7e0ebd5d715a102473b2bf594ce5d61b", null ],
     [ "reportDone", "classTileViewState.html#a3ec90b4b6a4b6423c719e4c21cfeeb58", null ],
     [ "setViewData", "classTileViewState.html#ac75421265ce56c4e1358151744e358a0", null ],
     [ "setZoom", "classTileViewState.html#a01f7da254affbddd50ab7f2d1c5ad4c2", null ],
-    [ "tileLoaded", "classTileViewState.html#a3fb11430d47cee04e63f59db66e6186d", null ],
+    [ "tileLoaded", "classTileViewState.html#a4a3045d55976207bb1ffb8a0fe890cb2", null ],
     [ "baseCache", "classTileViewState.html#a701f3a8c289eed9861b45e612a7151b8", null ],
     [ "cpuBound", "classTileViewState.html#a47af900d05c60870942f3c852c59f88d", null ],
     [ "desiredState", "classTileViewState.html#a29b0becb1c1c438a908679ce9258db48", null ],

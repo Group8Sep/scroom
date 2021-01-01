@@ -1,6 +1,7 @@
 <map id="libs/memory&#45;manager/src/blob&#45;compression.cc" name="libs/memory&#45;manager/src/blob&#45;compression.cc">
-<area shape="rect" id="node2" href="$blob-compression_8hh.html" title="blob&#45;compression.hh" alt="" coords="291,95,450,121"/>
-<area shape="rect" id="node3" href="$memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="279,169,463,196"/>
-<area shape="rect" id="node9" href="$blockallocator_8hh.html" title="scroom/blockallocator.hh" alt="" coords="147,244,333,271"/>
-<area shape="rect" id="node10" href="$utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="519,244,662,271"/>
+<area shape="rect" id="node2" href="$blob-compression_8hh.html" title="blob&#45;compression.hh" alt="" coords="345,95,503,121"/>
+<area shape="rect" id="node3" href="$memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="332,169,516,196"/>
+<area shape="rect" id="node9" href="$blockallocator_8hh.html" title="scroom/blockallocator.hh" alt="" coords="190,244,375,271"/>
+<area shape="rect" id="node11" href="$utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="697,244,839,271"/>
+<area shape="rect" id="node10" href="$interface_8hh.html" title="scroom/interface.hh" alt="" coords="168,326,320,353"/>
 </map>

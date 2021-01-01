@@ -1,8 +1,8 @@
 var classSizeDeterminer =
 [
     [ "PresentationData", "classSizeDeterminer_1_1PresentationData.html", "classSizeDeterminer_1_1PresentationData" ],
-    [ "Ptr", "classSizeDeterminer.html#a24a7fff964a8977fa79be99a2472948a", null ],
-    [ "SizeDeterminer", "classSizeDeterminer.html#acd9d0267accd0f1588a5eaa20e068123", null ],
+    [ "Ptr", "classSizeDeterminer.html#afa4aea48531c92130dfac227f12e93bd", null ],
+    [ "SizeDeterminer", "classSizeDeterminer.html#a7cc1085176cbbbc99270d506ecfe9c5b", null ],
     [ "add", "classSizeDeterminer.html#a00d286032b6986d3c0ff299d855e7b4c", null ],
     [ "close", "classSizeDeterminer.html#a12c08750ab3df3e68032241685a17073", null ],
     [ "create", "classSizeDeterminer.html#a0f0610e3652ae288f181b7b48ee2fb66", null ],

@@ -18,11 +18,11 @@ var searchData=
   ['counts',['counts',['../classScroom_1_1Utils_1_1Counter.html#a6e6754ac2721a1b0ba7c1d240f477d46',1,'Scroom::Utils::Counter']]],
   ['cpubound',['cpuBound',['../classScroom_1_1MemoryBlobs_1_1Blob.html#a8132a571d944ee3c1cf742cb04e393ba',1,'Scroom::MemoryBlobs::Blob::cpuBound()'],['../classTileViewState.html#a47af900d05c60870942f3c852c59f88d',1,'TileViewState::cpuBound()']]],
   ['current',['current',['../classanonymous__namespace_02progressbarmanager_8cc_03_1_1ProgressBarPulser.html#a34b6021e6edf6d15b438a4680bd28903',1,'anonymous_namespace{progressbarmanager.cc}::ProgressBarPulser']]],
-  ['currentbase',['currentBase',['../classScroom_1_1Bitmap_1_1SampleIterator.html#a1595c51c4266f134f3c24726f30a5ba1',1,'Scroom::Bitmap::SampleIterator']]],
+  ['currentbase',['currentBase',['../classScroom_1_1Bitmap_1_1SampleIterator.html#ae6f07d4ec58d43ef6fb014a105a24d25',1,'Scroom::Bitmap::SampleIterator']]],
   ['currentdir',['currentDir',['../classPluginManager.html#a3b2e6ce9b04fd017139d55c6e9d14316',1,'PluginManager']]],
   ['currentfile',['currentFile',['../classPluginManager.html#a9e1c4f54af5e9442556a07833c0bbb14',1,'PluginManager']]],
   ['currentfolder',['currentFolder',['../callbacks_8cc.html#a88fd8bb6d81270fb4692717f792a401c',1,'callbacks.cc']]],
   ['currentjob',['currentJob',['../classPipetteHandler.html#a3a17e4d4570e25c39b84967a38085576',1,'PipetteHandler']]],
-  ['currentoffset',['currentOffset',['../classScroom_1_1Bitmap_1_1SampleIterator.html#af2d0a08f658d4473fb82cae6a7f4f392',1,'Scroom::Bitmap::SampleIterator']]],
+  ['currentoffset',['currentOffset',['../classScroom_1_1Bitmap_1_1SampleIterator.html#a992f5f28bafb677070cd9853e77ce638',1,'Scroom::Bitmap::SampleIterator']]],
   ['currentrow',['currentRow',['../classDataFetcher.html#adf6b12f478232da42096269a6f3f2233',1,'DataFetcher']]]
 ];

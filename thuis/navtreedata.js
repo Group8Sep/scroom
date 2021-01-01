@@ -42,15 +42,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classColormappable.html#a65f7747cb8c21704aed2bcbb05401f8b",
-"classOperations24bpp.html#a3a16af1f5fc66b2f35f8e7667ccb3a8d",
-"classScroom_1_1Bitmap_1_1SampleIterator.html#a103bb667ba5dce21a10941904a8cc4a1",
-"classScroom_1_1Utils_1_1Detail_1_1ProgressStore.html#ad64f01bbb18a7b887d33584e5f1ac94e",
-"classThreadPool.html",
-"classTiledBitmapViewData.html#a86cf1099b453666642cbc60a1a2b41d3",
-"colormap-helpers_8cc_source.html",
-"local_8hh.html#ae2de07f0f9ff468e76d12f302807d3d8",
-"tiledbitmapviewdata_8cc.html#af32b1dddcb044cfdf445db8f34409874"
+"classColormappableMock.html",
+"classOperations24bpp.html#a3f1925349b694d39d20dbe053b23af49",
+"classScroom_1_1Bitmap_1_1SampleIterator.html#adb32faa5e8438c1905c620f3fadcfa6c",
+"classScroom_1_1Utils_1_1Detail_1_1ProgressStore.html",
+"classSizeDeterminer.html#a8e123a6bcf879916496e7e43a646aa2c",
+"classTiledBitmap.html#a839c2aeeef28cee5703772c0114f5060",
+"classanonymous__namespace_02progressbarmanager_8cc_03_1_1ProgressBarPulser.html#a73eda264a10490369f4454e9e2406290",
+"layercoordinator_8cc_source.html",
+"tiff_8cc.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

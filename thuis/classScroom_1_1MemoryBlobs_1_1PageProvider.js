@@ -1,11 +1,11 @@
 var classScroom_1_1MemoryBlobs_1_1PageProvider =
 [
     [ "MarkPageFree", "classScroom_1_1MemoryBlobs_1_1PageProvider_1_1MarkPageFree.html", "classScroom_1_1MemoryBlobs_1_1PageProvider_1_1MarkPageFree" ],
-    [ "Ptr", "classScroom_1_1MemoryBlobs_1_1PageProvider.html#a4fb870b6934b76259ab87c66b8f189d1", null ],
+    [ "Ptr", "classScroom_1_1MemoryBlobs_1_1PageProvider.html#a7105b86c9fdfc1a88fe83bee19fa6859", null ],
     [ "PageProvider", "classScroom_1_1MemoryBlobs_1_1PageProvider.html#aaadea74fd603076780c869a3ce350370", null ],
     [ "create", "classScroom_1_1MemoryBlobs_1_1PageProvider.html#a1b4d5f7c0692f14a3a9062cc24034dd4", null ],
     [ "getFreePage", "classScroom_1_1MemoryBlobs_1_1PageProvider.html#a584ecafc325a189ded3be00b95f6ed0d", null ],
-    [ "getPageSize", "classScroom_1_1MemoryBlobs_1_1PageProvider.html#aaf0682d27390f1c8b4415d5310767f19", null ],
+    [ "getPageSize", "classScroom_1_1MemoryBlobs_1_1PageProvider.html#a165710ceb377679e7e681efd32341526", null ],
     [ "markPageFree", "classScroom_1_1MemoryBlobs_1_1PageProvider.html#a1bfc687e8c4b818a6c1ebd2f2dbeb27c", null ],
     [ "MarkPageFree", "classScroom_1_1MemoryBlobs_1_1PageProvider.html#ab1000bd633c88866959e36760b5b0f0f", null ],
     [ "allPages", "classScroom_1_1MemoryBlobs_1_1PageProvider.html#aa289e790e99b7129d997d9e88e865149", null ],
