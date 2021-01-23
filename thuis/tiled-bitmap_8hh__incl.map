@@ -2,7 +2,7 @@
 <area shape="rect" id="node7" href="$interface_8hh.html" title="scroom/interface.hh" alt="" coords="1320,632,1472,659"/>
 <area shape="rect" id="node8" href="$progressinterfacehelpers_8hh.html" title="scroom/progressinterfacehelpers.hh" alt="" coords="2027,483,2283,509"/>
 <area shape="rect" id="node15" href="$scroominterface_8hh.html" title="scroom/scroominterface.hh" alt="" coords="1052,319,1252,345"/>
-<area shape="rect" id="node35" href="$threadpool_8hh.html" title="scroom/threadpool.hh" alt="" coords="3198,244,3362,271"/>
+<area shape="rect" id="node35" href="$threadpool_8hh.html" title="scroom/threadpool.hh" alt="" coords="3265,244,3429,271"/>
 <area shape="rect" id="node41" href="$tiledbitmapinterface_8hh.html" title="scroom/tiledbitmapinterface.hh" alt="" coords="1393,244,1620,271"/>
 <area shape="rect" id="node47" href="$tiledbitmaplayer_8hh.html" title="scroom/tiledbitmaplayer.hh" alt="" coords="2538,169,2739,196"/>
 <area shape="rect" id="node48" href="$layercoordinator_8hh.html" title="layercoordinator.hh" alt="" coords="3739,95,3887,121"/>
@@ -21,7 +21,7 @@
 <area shape="rect" id="node32" href="$point_8hh.html" title="scroom/point.hh" alt="" coords="691,632,818,659"/>
 <area shape="rect" id="node38" href="$semaphore_8hh.html" title="scroom/semaphore.hh" alt="" coords="3790,319,3957,345"/>
 <area shape="rect" id="node40" href="$threadpoolimpl_8hh.html" title="scroom/impl/threadpoolimpl.hh" alt="" coords="3299,319,3525,345"/>
-<area shape="rect" id="node42" href="$tile_8hh.html" title="scroom/tile.hh" alt="" coords="2684,483,2799,509"/>
+<area shape="rect" id="node42" href="$tile_8hh.html" title="scroom/tile.hh" alt="" coords="2685,483,2800,509"/>
 <area shape="rect" id="node46" href="$unused_8hh.html" title="scroom/unused.hh" alt="" coords="1328,319,1469,345"/>
 <area shape="rect" id="node43" href="$global_8hh.html" title="scroom/global.hh" alt="" coords="2814,557,2949,584"/>
 <area shape="rect" id="node44" href="$memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="2973,557,3157,584"/>
