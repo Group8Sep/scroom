@@ -1,14 +1,14 @@
 <map id="inc/scroom/pipettelayeroperations.hh" name="inc/scroom/pipettelayeroperations.hh">
-<area shape="rect" id="node2" href="$layeroperations_8hh.html" title="inc/scroom/layeroperations.hh" alt="" coords="251,80,470,107"/>
-<area shape="rect" id="node6" href="$pipetteviewinterface_8hh.html" title="inc/scroom/pipetteviewinterface.hh" alt="" coords="525,80,777,107"/>
-<area shape="rect" id="node3" href="$cmyklayeroperations_8cc.html" title="libs/tiled&#45;bitmap/src\l/cmyklayeroperations.cc" alt="" coords="5,155,188,196"/>
-<area shape="rect" id="node4" href="$layeroperations_8cc.html" title="libs/tiled&#45;bitmap/src\l/layeroperations.cc" alt="" coords="213,155,365,196"/>
-<area shape="rect" id="node5" href="$tiffpresentation_8cc.html" title="plugins/tiff/src/tiffpresentation.cc" alt="" coords="363,333,599,360"/>
-<area shape="rect" id="node7" href="$transformpresentation_8hh.html" title="inc/scroom/transformpresentation.hh" alt="" coords="683,162,945,189"/>
-<area shape="rect" id="node10" href="$tiffpresentation_8hh.html" title="plugins/tiff/src/tiffpresentation.hh" alt="" coords="440,251,679,278"/>
-<area shape="rect" id="node11" href="$pipette_8hh.html" title="plugins/pipette/src\l/pipette.hh" alt="" coords="1067,155,1209,196"/>
-<area shape="rect" id="node8" href="$transformpresentation_8cc.html" title="libs/scroom/src/transformpresentation.cc" alt="" coords="703,251,991,278"/>
-<area shape="rect" id="node9" href="$tiff_8cc.html" title="plugins/tiff/src/tiff.cc" alt="" coords="786,333,941,360"/>
-<area shape="rect" id="node12" href="$plugins_2pipette_2src_2main_8cc.html" title="plugins/pipette/src\l/main.cc" alt="" coords="1067,244,1209,285"/>
-<area shape="rect" id="node13" href="$pipette_8cc.html" title="plugins/pipette/src\l/pipette.cc" alt="" coords="1233,244,1376,285"/>
+<area shape="rect" id="node2" href="$layeroperations_8hh.html" title="inc/scroom/layeroperations.hh" alt="" coords="104,80,322,107"/>
+<area shape="rect" id="node6" href="$pipetteviewinterface_8hh.html" title="inc/scroom/pipetteviewinterface.hh" alt="" coords="548,80,800,107"/>
+<area shape="rect" id="node8" href="$transformpresentation_8cc.html" title="libs/scroom/src/transformpresentation.cc" alt="" coords="797,251,1085,278"/>
+<area shape="rect" id="node3" href="$cmyklayeroperations_8cc.html" title="libs/tiled&#45;bitmap/src\l/cmyklayeroperations.cc" alt="" coords="26,155,208,196"/>
+<area shape="rect" id="node4" href="$layeroperations_8cc.html" title="libs/tiled&#45;bitmap/src\l/layeroperations.cc" alt="" coords="233,155,385,196"/>
+<area shape="rect" id="node5" href="$tiffpresentation_8cc.html" title="plugins/tiff/src/tiffpresentation.cc" alt="" coords="147,333,383,360"/>
+<area shape="rect" id="node7" href="$transformpresentation_8hh.html" title="inc/scroom/transformpresentation.hh" alt="" coords="628,162,891,189"/>
+<area shape="rect" id="node10" href="$tiffpresentation_8hh.html" title="plugins/tiff/src/tiffpresentation.hh" alt="" coords="483,251,722,278"/>
+<area shape="rect" id="node11" href="$pipette_8hh.html" title="plugins/pipette/src\l/pipette.hh" alt="" coords="410,155,552,196"/>
+<area shape="rect" id="node9" href="$tiff_8cc.html" title="plugins/tiff/src/tiff.cc" alt="" coords="604,333,758,360"/>
+<area shape="rect" id="node12" href="$plugins_2pipette_2src_2main_8cc.html" title="plugins/pipette/src\l/main.cc" alt="" coords="316,244,459,285"/>
+<area shape="rect" id="node13" href="$pipette_8cc.html" title="plugins/pipette/src\l/pipette.cc" alt="" coords="150,244,292,285"/>
 </map>
