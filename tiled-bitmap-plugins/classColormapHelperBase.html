@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-216-gd8ad776</span>
+   &#160;<span id="projectnumber">0.11.1-217-gf38ed90</span>
    </div>
   </td>
  </tr>
@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('classColormapHelperBase.html','');});
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="classColormapHelperBase-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ColormapHelperBase Class Reference</div>  </div>
+<div class="title">ColormapHelperBase Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -97,8 +97,8 @@ Inheritance diagram for ColormapHelperBase:</div>
 <div class="dyncontent">
 <div class="center"><img src="classColormapHelperBase__inherit__graph.png" border="0" usemap="#ColormapHelperBase_inherit__map" alt="Inheritance graph"/></div>
 <map name="ColormapHelperBase_inherit__map" id="ColormapHelperBase_inherit__map">
-<area shape="rect" id="node5" href="classColormapHelper.html" title="{ColormapHelper\n||+ create()\l+ createInverted()\l+ create()\l&#45; ColormapHelper()\l}" alt="" coords="5,880,152,1001"/>
-<area shape="rect" id="node6" href="classMonochromeColormapHelper.html" title="{MonochromeColormapHelper\n|&#45; numberOfColors\l&#45; inverted\l&#45; blackish\l&#45; whitish\l&#45; transparentBackground\l|+ getMonochromeColor()\l+ setMonochromeColor()\l+ setTransparentBackground()\l+ disableTransparentBackground()\l+ getTransparentBackground()\l+ create()\l+ createInverted()\l&#45; MonochromeColormapHelper()\l&#45; regenerateColormap()\l&#45; generateInitialColormap()\l}" alt="" coords="177,807,423,1075"/>
+<area shape="rect" id="node5" href="classColormapHelper.html" title="{ColormapHelper\n||+ getProperties()\l+ create()\l+ createInverted()\l+ create()\l&#45; ColormapHelper()\l}" alt="" coords="5,895,152,1031"/>
+<area shape="rect" id="node6" href="classMonochromeColormapHelper.html" title="{MonochromeColormapHelper\n|&#45; numberOfColors\l&#45; inverted\l&#45; blackish\l&#45; whitish\l&#45; transparentBackground\l|+ getProperties()\l+ getMonochromeColor()\l+ setMonochromeColor()\l+ setTransparentBackground()\l+ disableTransparentBackground()\l+ getTransparentBackground()\l+ create()\l+ createInverted()\l&#45; MonochromeColormapHelper()\l&#45; regenerateColormap()\l&#45; generateInitialColormap()\l}" alt="" coords="177,821,423,1104"/>
 <area shape="rect" id="node2" href="classColormapProvider.html" title="{ColormapProvider\n||+ getColormap()\l}" alt="" coords="12,292,151,369"/>
 <area shape="rect" id="node3" href="classInterface.html" title="{Interface\n||+ Interface()\l+ Interface()\l+ operator=()\l+ Interface()\l+ operator=()\l+ ~Interface()\l}" alt="" coords="131,5,247,156"/>
 <area shape="rect" id="node4" href="classColormappable.html" title="Interface for Colormappable presentations. " alt="" coords="175,204,422,457"/>
@@ -132,6 +132,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a63ec49692e50c732fcc4e024b1102fd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classColormapHelperBase.html#a63ec49692e50c732fcc4e024b1102fd1">ColormapHelperBase</a> (<a class="el" href="classColormap.html#a490aa33223a81e71c130036dc980cd63">Colormap::Ptr</a> const &amp;<a class="el" href="classColormapHelperBase.html#ac21006fadbde96cbd58993ce0e05ca18">colormap</a>)</td></tr>
 <tr class="separator:a63ec49692e50c732fcc4e024b1102fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada34c85b0d1bd9c3634601572561904d"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classColormapHelperBase.html#ada34c85b0d1bd9c3634601572561904d">getProperties</a> ()=0</td></tr>
+<tr class="separator:ada34c85b0d1bd9c3634601572561904d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a6d03551fdab11d5821b2d3b909d712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classColormapHelperBase.html#a6a6d03551fdab11d5821b2d3b909d712">setColormap</a> (<a class="el" href="classColormap.html#a490aa33223a81e71c130036dc980cd63">Colormap::Ptr</a> <a class="el" href="classColormapHelperBase.html#ac21006fadbde96cbd58993ce0e05ca18">colormap</a>) override</td></tr>
 <tr class="memdesc:a6a6d03551fdab11d5821b2d3b909d712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request that the presentation use the given colormap.  <a href="#a6a6d03551fdab11d5821b2d3b909d712">More...</a><br /></td></tr>
 <tr class="separator:a6a6d03551fdab11d5821b2d3b909d712"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,6 +198,9 @@ Static Private Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ColormapHelperBase::ColormapHelperBase </td>
@@ -205,6 +210,11 @@ Static Private Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="colormap-helpers_8cc_source.html#l00017">17</a> of file <a class="el" href="colormap-helpers_8cc_source.html">colormap-helpers.cc</a>.</p>
@@ -370,6 +380,33 @@ Static Private Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="colormap-helpers_8cc_source.html#l00026">26</a> of file <a class="el" href="colormap-helpers_8cc_source.html">colormap-helpers.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classColormapHelperBase.html#a554722edde464a6024011ddc9a2df8ce">originalColormap</a>; }</div><div class="ttc" id="classColormapHelperBase_html_a554722edde464a6024011ddc9a2df8ce"><div class="ttname"><a href="classColormapHelperBase.html#a554722edde464a6024011ddc9a2df8ce">ColormapHelperBase::originalColormap</a></div><div class="ttdeci">Colormap::Ptr originalColormap</div><div class="ttdef"><b>Definition:</b> <a href="colormappable_8hh_source.html#l00163">colormappable.hh:163</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="ada34c85b0d1bd9c3634601572561904d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada34c85b0d1bd9c3634601572561904d">&#9670;&nbsp;</a></span>getProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::map&lt;std::string, std::string&gt; ColormapHelperBase::getProperties </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classMonochromeColormapHelper.html#a0e7bf289b349479185d1fd20e9673ecd">MonochromeColormapHelper</a>, and <a class="el" href="classColormapHelper.html#af9a597f3d5702f9b3940c6f3b0923fbf">ColormapHelper</a>.</p>
+
 </div>
 </div>
 <a id="a97d03cdad03977108e174f6d67106fe3"></a>
@@ -576,7 +613,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="colormappable_8hh_source.html#l00162">162</a> of file <a class="el" href="colormappable_8hh_source.html">colormappable.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="colormap-helpers_8cc_source.html#l00044">getColormap()</a>, <a class="el" href="colormap-helpers_8cc_source.html#l00102">MonochromeColormapHelper::regenerateColormap()</a>, and <a class="el" href="colormap-helpers_8cc_source.html#l00022">setColormap()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colormap-helpers_8cc_source.html#l00044">getColormap()</a>, <a class="el" href="colormap-helpers_8cc_source.html#l00104">MonochromeColormapHelper::regenerateColormap()</a>, and <a class="el" href="colormap-helpers_8cc_source.html#l00022">setColormap()</a>.</p>
 
 </div>
 </div>

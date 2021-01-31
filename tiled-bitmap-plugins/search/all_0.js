@@ -32,7 +32,7 @@ var searchData=
   ['anonymous_5fnamespace_7btransparentoverlaypresentation_2ecc_7d',['anonymous_namespace{transparentoverlaypresentation.cc}',['../namespaceanonymous__namespace_02transparentoverlaypresentation_8cc_03.html',1,'']]],
   ['anonymous_5fnamespace_7btransparentoverlayviewinfo_2ecc_7d',['anonymous_namespace{transparentoverlayviewinfo.cc}',['../namespaceanonymous__namespace_02transparentoverlayviewinfo_8cc_03.html',1,'']]],
   ['areequal',['areEqual',['../namespaceScroom_1_1Utils.html#a62de66cbe67e4fd48bba7a0eff17be69',1,'Scroom::Utils']]],
-  ['aspectratio',['aspectRatio',['../structScroom_1_1TiledBitmap_1_1BitmapMetaData.html#a9033b99f2b9d8b27e5407588c88a8a2e',1,'Scroom::TiledBitmap::BitmapMetaData::aspectRatio()'],['../classTransformationData.html#a47936612795b9ae6f7a8d1da08de6c54',1,'TransformationData::aspectRatio()'],['../classView.html#ae5ab81cdeaef480357dd3bdef7ca13d2',1,'View::aspectRatio()']]],
+  ['aspectratio',['aspectRatio',['../structScroom_1_1TiledBitmap_1_1BitmapMetaData.html#acf26ff10a150a0f048bc38621a150a92',1,'Scroom::TiledBitmap::BitmapMetaData::aspectRatio()'],['../classTransformationData.html#a47936612795b9ae6f7a8d1da08de6c54',1,'TransformationData::aspectRatio()'],['../classView.html#ae5ab81cdeaef480357dd3bdef7ca13d2',1,'View::aspectRatio()']]],
   ['assertionfailed',['assertionFailed',['../namespaceScroom_1_1Utils_1_1Detail.html#af8c0690c57cd03fd54056c062fdc0a64',1,'Scroom::Utils::Detail']]],
   ['assertions_2ecc',['assertions.cc',['../assertions_8cc.html',1,'']]],
   ['assertions_2ehh',['assertions.hh',['../assertions_8hh.html',1,'']]],

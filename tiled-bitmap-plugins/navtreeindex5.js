@@ -1,5 +1,9 @@
 var NAVTREEINDEX5 =
 {
+"classSidebarManager.html#a6f7a8fc05bd3f63817db6d463d27a2b1":[1,0,71,3],
+"classSidebarManager.html#aa33d6b146af35805e7327b5b44a96325":[1,0,71,4],
+"classSidebarManager.html#ab6f09410682d37810e9f8d8476a50485":[1,0,71,2],
+"classSidebarManager.html#ad55b76bd7930ee36b08f6962bad0b92d":[1,0,71,1],
 "classSidebarManager.html#af0dbdadde464305fa2234da905494438":[1,0,71,5],
 "classSizeDeterminer.html":[1,0,72],
 "classSizeDeterminer.html#a00d286032b6986d3c0ff299d855e7b4c":[1,0,72,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX5 =
 "classTiledBitmap.html#a1321844337a934109e3552959a7347db":[1,0,79,32],
 "classTiledBitmap.html#a1a8a9348d4b0c2591b9d2426857eb662":[1,0,79,1],
 "classTiledBitmap.html#a207620c6b7460ae0e9c7425f3c4c592c":[1,0,79,18],
-"classTiledBitmap.html#a2dccd45d1c29711aa6b01a75b1ce9f71":[1,0,79,28],
-"classTiledBitmap.html#a31a9a9922388d64cdf7e0b726b87837c":[1,0,79,21],
-"classTiledBitmap.html#a4651ffc5e76d85693c07468ec5e19682":[1,0,79,25],
-"classTiledBitmap.html#a47e74444f93f451d08c45cdb12a6fbe1":[1,0,79,27],
-"classTiledBitmap.html#a55ff22c02bc29e982f850b46bc7742e0":[1,0,79,0]
+"classTiledBitmap.html#a2dccd45d1c29711aa6b01a75b1ce9f71":[1,0,79,28]
 };

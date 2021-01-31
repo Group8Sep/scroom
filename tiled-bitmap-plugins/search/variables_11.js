@@ -1,7 +1,7 @@
 var searchData=
 [
   ['r',['r',['../classTileViewState.html#a700d539b07d4f86abb5bb49138d609c3',1,'TileViewState']]],
-  ['rect',['rect',['../classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#aca4abc9cf480ae179e3dd255ddc3a705',1,'anonymous_namespace{tiledbitmappresentation.cc}::TiledBitmapPresentation']]],
+  ['rect',['rect',['../structScroom_1_1TiledBitmap_1_1BitmapMetaData.html#ad3eaee769ffd723ea5a4d6eda73963b3',1,'Scroom::TiledBitmap::BitmapMetaData::rect()'],['../classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#aca4abc9cf480ae179e3dd255ddc3a705',1,'anonymous_namespace{tiledbitmappresentation.cc}::TiledBitmapPresentation::rect()']]],
   ['red',['red',['../classColor.html#a2337ea72bc849039f73077d00ab42bbb',1,'Color']]],
   ['redrawpending',['redrawPending',['../classTiledBitmapViewData.html#a3304b2a780bd0a23d4cdd974e842f5d5',1,'TiledBitmapViewData']]],
   ['refcount',['refcount',['../classScroom_1_1MemoryBlobs_1_1Blob.html#ab924d3a347477150af5227609c84e7fe',1,'Scroom::MemoryBlobs::Blob']]],

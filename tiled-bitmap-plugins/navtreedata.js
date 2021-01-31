@@ -42,15 +42,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classColormappableMock.html",
-"classOperations24bpp.html#a3f1925349b694d39d20dbe053b23af49",
-"classScroom_1_1Bitmap_1_1SampleIterator.html#acf324bdbc012551b9ef7d5c9c0e0dbc8",
-"classScroom_1_1Utils_1_1Counter.html#aa66450a14eddc101434a5bae16766562",
-"classSidebarManager.html#af0dbdadde464305fa2234da905494438",
-"classTiledBitmap.html#a5cf6c1aec87cca3d280284ac963d6247",
-"classViewable.html#a3e17fe21b5e7bdb916b5c7cbfc65ffbd",
-"globals_p.html",
-"sizedeterminer_8cc.html#ae9f664d7640561d409d8cec497ef29e7"
+"classColormappable.html#ae43e2fc3d049bbeebac2a64128ea0fc3",
+"classOperations24bpp.html#a040d7cb9f01db55dd7ba668ff6fdf215",
+"classScroom_1_1Bitmap_1_1SampleIterator.html#a9bbc5202d0d2ae494a4167c31e49bdd2",
+"classScroom_1_1Utils_1_1Counter.html#a92a0d7e7bbb8c77addf0f7db3f9a7685",
+"classSidebarManager.html#a6f7a8fc05bd3f63817db6d463d27a2b1",
+"classTiledBitmap.html#a31a9a9922388d64cdf7e0b726b87837c",
+"classViewInterface.html#a9ef9525205c5b997fd578ef5212b1e9d",
+"globals_func.html",
+"semaphore_8hh_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

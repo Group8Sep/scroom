@@ -5,5 +5,5 @@ var searchData=
   ['alive',['alive',['../classThreadPool_1_1PrivateData.html#a9710d6d924eb7597b8e18dcd3edb0d88',1,'ThreadPool::PrivateData']]],
   ['allpages',['allPages',['../classScroom_1_1MemoryBlobs_1_1PageProvider.html#aa289e790e99b7129d997d9e88e865149',1,'Scroom::MemoryBlobs::PageProvider']]],
   ['alpha',['alpha',['../classColor.html#aa14c59ce06c2a70f4683df266e26a261',1,'Color']]],
-  ['aspectratio',['aspectRatio',['../structScroom_1_1TiledBitmap_1_1BitmapMetaData.html#a9033b99f2b9d8b27e5407588c88a8a2e',1,'Scroom::TiledBitmap::BitmapMetaData::aspectRatio()'],['../classTransformationData.html#a47936612795b9ae6f7a8d1da08de6c54',1,'TransformationData::aspectRatio()'],['../classView.html#ae5ab81cdeaef480357dd3bdef7ca13d2',1,'View::aspectRatio()']]]
+  ['aspectratio',['aspectRatio',['../structScroom_1_1TiledBitmap_1_1BitmapMetaData.html#acf26ff10a150a0f048bc38621a150a92',1,'Scroom::TiledBitmap::BitmapMetaData::aspectRatio()'],['../classTransformationData.html#a47936612795b9ae6f7a8d1da08de6c54',1,'TransformationData::aspectRatio()'],['../classView.html#ae5ab81cdeaef480357dd3bdef7ca13d2',1,'View::aspectRatio()']]]
 ];
