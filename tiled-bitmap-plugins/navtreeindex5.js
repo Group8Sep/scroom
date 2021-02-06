@@ -246,8 +246,8 @@ var NAVTREEINDEX5 =
 "classTiledBitmap.html#a0a1a6354cbd694d8965e9c998d6678e6":[1,0,79,16],
 "classTiledBitmap.html#a0cc535a9c8809caf8c108663a62594f5":[1,0,79,13],
 "classTiledBitmap.html#a0e31a158580a4737fc4bc571b30ace4e":[1,0,79,5],
-"classTiledBitmap.html#a1321844337a934109e3552959a7347db":[1,0,79,32],
+"classTiledBitmap.html#a1321844337a934109e3552959a7347db":[1,0,79,33],
 "classTiledBitmap.html#a1a8a9348d4b0c2591b9d2426857eb662":[1,0,79,1],
-"classTiledBitmap.html#a207620c6b7460ae0e9c7425f3c4c592c":[1,0,79,18],
-"classTiledBitmap.html#a2dccd45d1c29711aa6b01a75b1ce9f71":[1,0,79,28]
+"classTiledBitmap.html#a1c983590d74d88002c6f216d646d19c4":[1,0,79,29],
+"classTiledBitmap.html#a207620c6b7460ae0e9c7425f3c4c592c":[1,0,79,18]
 };

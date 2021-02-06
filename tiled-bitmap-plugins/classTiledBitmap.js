@@ -29,6 +29,7 @@ var classTiledBitmap =
     [ "ls", "classTiledBitmap.html#ac35944ff618bf8e40335fa112598ad36", null ],
     [ "progressBroadcaster", "classTiledBitmap.html#a47e74444f93f451d08c45cdb12a6fbe1", null ],
     [ "queue", "classTiledBitmap.html#a2dccd45d1c29711aa6b01a75b1ce9f71", null ],
+    [ "registrations", "classTiledBitmap.html#a1c983590d74d88002c6f216d646d19c4", null ],
     [ "tileCount", "classTiledBitmap.html#abec813ddb2f08f62dbacd234b21ae83f", null ],
     [ "tileFinishedCount", "classTiledBitmap.html#af7acdd49ff8f58b11473eed60733d60e", null ],
     [ "tileFinishedMutex", "classTiledBitmap.html#a839c2aeeef28cee5703772c0114f5060", null ],

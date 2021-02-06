@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classTiledBitmap.html#a2dccd45d1c29711aa6b01a75b1ce9f71":[1,0,79,28],
 "classTiledBitmap.html#a31a9a9922388d64cdf7e0b726b87837c":[1,0,79,21],
 "classTiledBitmap.html#a4651ffc5e76d85693c07468ec5e19682":[1,0,79,25],
 "classTiledBitmap.html#a47e74444f93f451d08c45cdb12a6fbe1":[1,0,79,27],
@@ -12,21 +13,21 @@ var NAVTREEINDEX6 =
 "classTiledBitmap.html#a76da6add0fb25859acf302a21006ea85":[1,0,79,19],
 "classTiledBitmap.html#a79651024b3ff749b0c3166ee717a260f":[1,0,79,22],
 "classTiledBitmap.html#a812bf679af313885ca24082012332e70":[1,0,79,9],
-"classTiledBitmap.html#a839c2aeeef28cee5703772c0114f5060":[1,0,79,31],
-"classTiledBitmap.html#a8c2fe90358c2d097dd6212d0ba8b9081":[1,0,79,33],
+"classTiledBitmap.html#a839c2aeeef28cee5703772c0114f5060":[1,0,79,32],
+"classTiledBitmap.html#a8c2fe90358c2d097dd6212d0ba8b9081":[1,0,79,34],
 "classTiledBitmap.html#a97bcef199c0c95bd63703083283a63dd":[1,0,79,15],
 "classTiledBitmap.html#a98c2d60fc0736a77ab18aeeb461a1da8":[1,0,79,17],
 "classTiledBitmap.html#aa35a88c13abf4d098ae11c9c944a10a5":[1,0,79,11],
 "classTiledBitmap.html#aa65c6d45c8ca17fdba380861368cb113":[1,0,79,2],
 "classTiledBitmap.html#aac0fd55f26ab59b362f0c64d27a9e139":[1,0,79,10],
-"classTiledBitmap.html#abec813ddb2f08f62dbacd234b21ae83f":[1,0,79,29],
+"classTiledBitmap.html#abec813ddb2f08f62dbacd234b21ae83f":[1,0,79,30],
 "classTiledBitmap.html#ac35944ff618bf8e40335fa112598ad36":[1,0,79,26],
 "classTiledBitmap.html#ac362c97e106dd9a7099c553783681767":[1,0,79,4],
 "classTiledBitmap.html#ac6c11e9ce82f6e03866c53d5d12a9ac0":[1,0,79,8],
 "classTiledBitmap.html#ad17bc560de133e417b01d2f34d731038":[1,0,79,14],
 "classTiledBitmap.html#ae5aa47787e953fb6ce26c6b6e5b74690":[1,0,79,24],
 "classTiledBitmap.html#aeaa7e4b4b2622ab6c2b3b2699582aabd":[1,0,79,6],
-"classTiledBitmap.html#af7acdd49ff8f58b11473eed60733d60e":[1,0,79,30],
+"classTiledBitmap.html#af7acdd49ff8f58b11473eed60733d60e":[1,0,79,31],
 "classTiledBitmapInterface.html":[1,0,80],
 "classTiledBitmapInterface.html#a24dd76d8800fb60b066e28a3bdb57888":[1,0,80,3],
 "classTiledBitmapInterface.html#a2e02aa68f0a137cb2ec85b2412d98335":[1,0,80,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classViewInterface.html#a32ec89fa5599b534786d390d171b7287":[1,0,93,6],
 "classViewInterface.html#a44a3236d0a39912b2eb0d3e9745cbea4":[1,0,93,10],
 "classViewInterface.html#a6cf7cb7ff0cd58e749beac9b636e5b41":[1,0,93,0],
-"classViewInterface.html#a728bb2c185daaeaa562a624b7ab96c23":[1,0,93,1],
-"classViewInterface.html#a7f744383e0980253ae13e642dc7c574b":[1,0,93,4]
+"classViewInterface.html#a728bb2c185daaeaa562a624b7ab96c23":[1,0,93,1]
 };

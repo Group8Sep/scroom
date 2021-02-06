@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"semaphore_8hh.html":[2,0,1,0,32],
 "semaphore_8hh_source.html":[2,0,1,0,32],
 "sidebarmanager_8cc.html":[2,0,0,0,9],
 "sidebarmanager_8cc_source.html":[2,0,0,0,9],

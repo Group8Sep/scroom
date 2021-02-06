@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['layer',['Layer',['../classLayer.html#a7f2c6033253283440a0574d8fcfb571d',1,'Layer']]],
+  ['layer',['Layer',['../classLayer.html#a461f24acc6b9fac1f007516bcd380c25',1,'Layer']]],
   ['layercoordinator',['LayerCoordinator',['../classLayerCoordinator.html#a3eafcda521a02dab43ce39423336214f',1,'LayerCoordinator::LayerCoordinator(const LayerCoordinator &amp;)=delete'],['../classLayerCoordinator.html#a9e3bb81ad4b4ef95cbb27dc6b3f6e109',1,'LayerCoordinator::LayerCoordinator(LayerCoordinator &amp;&amp;)=delete'],['../classLayerCoordinator.html#ad0f7940315165ccb0d889a98d1775591',1,'LayerCoordinator::LayerCoordinator(CompressedTile::Ptr targetTile, LayerOperations::Ptr lo)']]],
   ['leftof',['leftOf',['../classScroom_1_1Utils_1_1Rectangle.html#adf62135f8fc93f9269d33baf77f0a083',1,'Scroom::Utils::Rectangle::leftOf(value_type v) const'],['../classScroom_1_1Utils_1_1Rectangle.html#af376cd57a92a47d4f2f2fa751e71abee',1,'Scroom::Utils::Rectangle::leftOf(Rectangle&lt; value_type &gt; const &amp;r) const']]],
   ['length',['length',['../structSelection.html#a400e9fb58887a04db35e354741aa96ec',1,'Selection']]],
