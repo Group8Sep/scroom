@@ -20,5 +20,5 @@ var searchData=
   ['function_2dadditor_2ehh',['function-additor.hh',['../function-additor_8hh.html',1,'']]],
   ['functionadditor',['FunctionAdditor',['../classScroom_1_1Detail_1_1ThreadPool_1_1FunctionAdditor.html',1,'Scroom::Detail::ThreadPool']]],
   ['functionmultiplier',['FunctionMultiplier',['../classScroom_1_1Detail_1_1ThreadPool_1_1FunctionMultiplier.html',1,'Scroom::Detail::ThreadPool::FunctionMultiplier'],['../classScroom_1_1Detail_1_1ThreadPool_1_1FunctionMultiplier.html#ab6c14fa3c884011fb22cc30271615b29',1,'Scroom::Detail::ThreadPool::FunctionMultiplier::FunctionMultiplier()']]],
-  ['functions',['functions',['../classScroom_1_1Detail_1_1ThreadPool_1_1FunctionAdditor.html#a7b0d7fe9ff38d853146d5392b4a83d34',1,'Scroom::Detail::ThreadPool::FunctionAdditor']]]
+  ['functions',['functions',['../classScroom_1_1Detail_1_1ThreadPool_1_1FunctionAdditor.html#a7b0d7fe9ff38d853146d5392b4a83d34',1,'Scroom::Detail::ThreadPool::FunctionAdditor::functions()'],['../classScroom_1_1TiledBitmap_1_1LayerSpecForBitmapper.html#a2c08615ff21468fc4af3444b933f2dcc',1,'Scroom::TiledBitmap::LayerSpecForBitmapper::functions()']]]
 ];

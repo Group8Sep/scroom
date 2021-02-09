@@ -1,5 +1,12 @@
 var NAVTREEINDEX5 =
 {
+"classSelectionListener.html":[1,0,70],
+"classSelectionListener.html#a360cd309c488a14e3413d8d1c18154ef":[1,0,70,1],
+"classSelectionListener.html#ab6786d08620d25fafa02bb7c3f36ab71":[1,0,70,3],
+"classSelectionListener.html#ae33ec7aa0e91177d987e72583f1c9be1":[1,0,70,0],
+"classSelectionListener.html#afd2c75e4116f14edeb9274dc2af584b7":[1,0,70,2],
+"classSidebarManager.html":[1,0,71],
+"classSidebarManager.html#a1d7f45de701454ffe586fb99ab64b5aa":[1,0,71,0],
 "classSidebarManager.html#a6f7a8fc05bd3f63817db6d463d27a2b1":[1,0,71,3],
 "classSidebarManager.html#aa33d6b146af35805e7327b5b44a96325":[1,0,71,4],
 "classSidebarManager.html#ab6f09410682d37810e9f8d8476a50485":[1,0,71,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX5 =
 "classTileViewState.html#aebe3c10c40e343a2df076a126626a464":[1,0,84,24],
 "classTileViewState.html#aedfe78a642c6485c33a0211bb47d9aeb":[1,0,84,33],
 "classTileViewState.html#af8abdc5085f1adaefe269049aee929b2":[1,0,84,5],
-"classTiledBitmap.html":[1,0,79],
-"classTiledBitmap.html#a0a1a6354cbd694d8965e9c998d6678e6":[1,0,79,16],
-"classTiledBitmap.html#a0cc535a9c8809caf8c108663a62594f5":[1,0,79,13],
-"classTiledBitmap.html#a0e31a158580a4737fc4bc571b30ace4e":[1,0,79,5],
-"classTiledBitmap.html#a1321844337a934109e3552959a7347db":[1,0,79,33],
-"classTiledBitmap.html#a1a8a9348d4b0c2591b9d2426857eb662":[1,0,79,1],
-"classTiledBitmap.html#a1c983590d74d88002c6f216d646d19c4":[1,0,79,29],
-"classTiledBitmap.html#a207620c6b7460ae0e9c7425f3c4c592c":[1,0,79,18]
+"classTiledBitmap.html":[1,0,79]
 };

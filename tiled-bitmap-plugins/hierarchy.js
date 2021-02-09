@@ -243,6 +243,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "ThreadPool::Job", "structThreadPool_1_1Job.html", null ],
+    [ "Scroom::TiledBitmap::LayerSpecForBitmapper", "classScroom_1_1TiledBitmap_1_1LayerSpecForBitmapper.html", null ],
     [ "Scroom::Bookkeeping::Detail::LValue< V >", "classScroom_1_1Bookkeeping_1_1Detail_1_1LValue.html", null ],
     [ "Scroom::MemoryBlobs::PageProvider::MarkPageFree", "classScroom_1_1MemoryBlobs_1_1PageProvider_1_1MarkPageFree.html", null ],
     [ "multipliable2", null, [

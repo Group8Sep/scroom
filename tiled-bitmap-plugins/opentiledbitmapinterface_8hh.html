@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-218-g1771ece</span>
+   &#160;<span id="projectnumber">0.11.1-219-g60c5038</span>
    </div>
   </td>
  </tr>
@@ -84,7 +84,8 @@ $(document).ready(function(){initNavTree('opentiledbitmapinterface_8hh.html','')
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">opentiledbitmapinterface.hh File Reference</div>  </div>
 </div><!--header-->
@@ -135,7 +136,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="center"><img src="opentiledbitmapinterface_8hh__dep__incl.png" border="0" usemap="#inc_2scroom_2opentiledbitmapinterface_8hhdep" alt=""/></div>
 <map name="inc_2scroom_2opentiledbitmapinterface_8hhdep" id="inc_2scroom_2opentiledbitmapinterface_8hhdep">
 <area shape="rect" id="node2" href="pluginmanager_8hh.html" title="gui/src/pluginmanager.hh" alt="" coords="237,87,423,114"/>
-<area shape="rect" id="node7" href="tiledbitmappresentation_8cc.html" title="libs/tiled&#45;bitmap/src\l/tiledbitmappresentation.cc" alt="" coords="448,80,649,121"/>
+<area shape="rect" id="node7" href="layerspecforbitmap_8cc.html" title="libs/tiled&#45;bitmap/src\l/layerspecforbitmap.cc" alt="" coords="447,80,618,121"/>
+<area shape="rect" id="node8" href="tiledbitmappresentation_8cc.html" title="libs/tiled&#45;bitmap/src\l/tiledbitmappresentation.cc" alt="" coords="643,80,844,121"/>
 <area shape="rect" id="node3" href="callbacks_8cc.html" title="gui/src/callbacks.cc" alt="" coords="5,169,153,196"/>
 <area shape="rect" id="node4" href="loader_8cc.html" title="gui/src/loader.cc" alt="" coords="177,169,304,196"/>
 <area shape="rect" id="node5" href="pluginmanager_8cc.html" title="gui/src/pluginmanager.cc" alt="" coords="329,169,513,196"/>
@@ -163,11 +165,28 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:af350cefe5aadad50bf8ca5c0d3763a88"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1TiledBitmap.html#af350cefe5aadad50bf8ca5c0d3763a88">Scroom::TiledBitmap::ReloadFunction</a> = std::function&lt; void()&gt;</td></tr>
 <tr class="separator:af350cefe5aadad50bf8ca5c0d3763a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75aad5c865440565d24e1c54846ed146"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1TiledBitmap.html#a75aad5c865440565d24e1c54846ed146">Scroom::TiledBitmap::LayerSpecResult</a> = std::tuple&lt; <a class="el" href="tiledbitmapinterface_8hh.html#a00279dcefa7f911f75fec39af1d48e87">LayerSpec</a>, <a class="el" href="classColormapHelperBase.html#aa1c74d3f214fcfd87d2cff1b82cfb74d">ColormapHelperBase::Ptr</a> &gt;</td></tr>
+<tr class="separator:a75aad5c865440565d24e1c54846ed146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44750b261450728023901225e657a237"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1TiledBitmap.html#a44750b261450728023901225e657a237">Scroom::TiledBitmap::LayerSpecForBitmapFunc</a> = std::function&lt; LayerSpecResult(const BitmapMetaData &amp;bitmapMetaData)&gt;</td></tr>
+<tr class="separator:a44750b261450728023901225e657a237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:abd171862b26335d75a34704553701421"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenPresentationInterface.html#a024ac5be2e623d00e52bea88d45781ac">OpenPresentationInterface::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1TiledBitmap.html#abd171862b26335d75a34704553701421">Scroom::TiledBitmap::ToOpenPresentationInterface</a> (<a class="el" href="classScroom_1_1TiledBitmap_1_1OpenTiledBitmapInterface.html#a8854268aa86ddd4ce64ddeb891bd7fd1">OpenTiledBitmapInterface::Ptr</a> openTiledBitmapInterface)</td></tr>
 <tr class="separator:abd171862b26335d75a34704553701421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a1bb4f862ef52ed08042515ffca9da"><td class="memItemLeft" align="right" valign="top">LayerSpecResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1TiledBitmap.html#a22a1bb4f862ef52ed08042515ffca9da">Scroom::TiledBitmap::LayerSpecForBitmap</a> (const BitmapMetaData &amp;bitmapMetaData)</td></tr>
+<tr class="separator:a22a1bb4f862ef52ed08042515ffca9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a68ed4ea621e837ae62809626d1f7bba4"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1TiledBitmap.html#a68ed4ea621e837ae62809626d1f7bba4">Scroom::TiledBitmap::RGB</a> = &quot;RGB&quot;</td></tr>
+<tr class="separator:a68ed4ea621e837ae62809626d1f7bba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f688fe4903818d5c7d117139a6bbed"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1TiledBitmap.html#a26f688fe4903818d5c7d117139a6bbed">Scroom::TiledBitmap::CMYK</a> = &quot;CMYK&quot;</td></tr>
+<tr class="separator:a26f688fe4903818d5c7d117139a6bbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0451c92ea02ad814ffc4a83ebf51d475"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1TiledBitmap.html#a0451c92ea02ad814ffc4a83ebf51d475">Scroom::TiledBitmap::Greyscale</a> = &quot;Greyscale&quot;</td></tr>
+<tr class="separator:a0451c92ea02ad814ffc4a83ebf51d475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50226c5783a13b33eee2fa92e99280f0"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1TiledBitmap.html#a50226c5783a13b33eee2fa92e99280f0">Scroom::TiledBitmap::Colormapped</a> = &quot;Colormapped&quot;</td></tr>
+<tr class="separator:a50226c5783a13b33eee2fa92e99280f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

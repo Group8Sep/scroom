@@ -8,5 +8,5 @@ var searchData=
   ['filters',['filters',['../classGtkFileFilterListDestroyer.html#a443ad79b3a30f4f95d4ef5cb536c9ec5',1,'GtkFileFilterListDestroyer']]],
   ['fn',['fn',['../structThreadPool_1_1Job.html#a658aeaa8ac34c28832cdb8f0c080e75f',1,'ThreadPool::Job::fn()'],['../classQueueJumper.html#af34fdb126ea4078e80dde8038a95c564',1,'QueueJumper::fn()']]],
   ['freepages',['freePages',['../classScroom_1_1MemoryBlobs_1_1PageProvider.html#aca46cb9c8e2f791083a3c950cfd8e837',1,'Scroom::MemoryBlobs::PageProvider']]],
-  ['functions',['functions',['../classScroom_1_1Detail_1_1ThreadPool_1_1FunctionAdditor.html#a7b0d7fe9ff38d853146d5392b4a83d34',1,'Scroom::Detail::ThreadPool::FunctionAdditor']]]
+  ['functions',['functions',['../classScroom_1_1Detail_1_1ThreadPool_1_1FunctionAdditor.html#a7b0d7fe9ff38d853146d5392b4a83d34',1,'Scroom::Detail::ThreadPool::FunctionAdditor::functions()'],['../classScroom_1_1TiledBitmap_1_1LayerSpecForBitmapper.html#a2c08615ff21468fc4af3444b933f2dcc',1,'Scroom::TiledBitmap::LayerSpecForBitmapper::functions()']]]
 ];
