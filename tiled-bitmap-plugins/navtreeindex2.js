@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"classOperations1bppClipped.html#ab341f8c36d6294b164e801b53ed9f018":[1,0,40,1],
+"classOperations1bppClipped.html#adcc45059dbc366aaa15b045f76f53384":[1,0,40,0],
+"classOperations24bpp.html":[1,0,41],
 "classOperations24bpp.html#a040d7cb9f01db55dd7ba668ff6fdf215":[1,0,41,2],
 "classOperations24bpp.html#a301680b8e50ed1376dec31ebfec41226":[1,0,41,4],
 "classOperations24bpp.html#a3a16af1f5fc66b2f35f8e7667ccb3a8d":[1,0,41,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "classScroom_1_1Bitmap_1_1SampleIterator.html":[1,0,4,0,1],
 "classScroom_1_1Bitmap_1_1SampleIterator.html#a0d69ab50c30d838fefeb141a546c1120":[1,0,4,0,1,3],
 "classScroom_1_1Bitmap_1_1SampleIterator.html#a206a33fab2247db4ec53460938b8287f":[1,0,4,0,1,11],
-"classScroom_1_1Bitmap_1_1SampleIterator.html#a34680de963644fbbd1894196ca2d7736":[1,0,4,0,1,8],
-"classScroom_1_1Bitmap_1_1SampleIterator.html#a4ff8eac9c539fc4d054aee59a67e3e3a":[1,0,4,0,1,12],
-"classScroom_1_1Bitmap_1_1SampleIterator.html#a6dddb604ef3669fd04851f91645b8840":[1,0,4,0,1,10],
-"classScroom_1_1Bitmap_1_1SampleIterator.html#a992f5f28bafb677070cd9853e77ce638":[1,0,4,0,1,14]
+"classScroom_1_1Bitmap_1_1SampleIterator.html#a34680de963644fbbd1894196ca2d7736":[1,0,4,0,1,8]
 };

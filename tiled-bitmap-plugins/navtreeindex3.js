@@ -1,5 +1,8 @@
 var NAVTREEINDEX3 =
 {
+"classScroom_1_1Bitmap_1_1SampleIterator.html#a4ff8eac9c539fc4d054aee59a67e3e3a":[1,0,4,0,1,12],
+"classScroom_1_1Bitmap_1_1SampleIterator.html#a6dddb604ef3669fd04851f91645b8840":[1,0,4,0,1,10],
+"classScroom_1_1Bitmap_1_1SampleIterator.html#a992f5f28bafb677070cd9853e77ce638":[1,0,4,0,1,14],
 "classScroom_1_1Bitmap_1_1SampleIterator.html#a9bbc5202d0d2ae494a4167c31e49bdd2":[1,0,4,0,1,16],
 "classScroom_1_1Bitmap_1_1SampleIterator.html#aa9f579c5fae140309ebbb7117b7ee212":[1,0,4,0,1,7],
 "classScroom_1_1Bitmap_1_1SampleIterator.html#acef5bd0d8bb2a49b0d944f5220d56afe":[1,0,4,0,1,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX3 =
 "classScroom_1_1Utils_1_1Count.html#afe881f26e7bf4991eb586d4df8be0ea2":[1,0,4,7,2,1],
 "classScroom_1_1Utils_1_1Counted.html":[1,0,4,7,3],
 "classScroom_1_1Utils_1_1Counted.html#a1214ca8b981fbb24a2f65c6fd9cf4506":[1,0,4,7,3,2],
-"classScroom_1_1Utils_1_1Counted.html#a31a7135ed33e12cef2b5470b142b5e33":[1,0,4,7,3,3],
-"classScroom_1_1Utils_1_1Counted.html#a3fea7d8dd19fa44b2b142361c9b1ba86":[1,0,4,7,3,4],
-"classScroom_1_1Utils_1_1Counted.html#a44e8fa2a3cbfbbd936376c6d1d012781":[1,0,4,7,3,5],
-"classScroom_1_1Utils_1_1Counted.html#a768ea200f78d7e7186c99551c34e82ec":[1,0,4,7,3,1]
+"classScroom_1_1Utils_1_1Counted.html#a31a7135ed33e12cef2b5470b142b5e33":[1,0,4,7,3,3]
 };

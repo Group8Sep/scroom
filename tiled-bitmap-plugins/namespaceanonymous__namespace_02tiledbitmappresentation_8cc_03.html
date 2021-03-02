@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-219-ga4c6efb</span>
+   &#160;<span id="projectnumber">0.11.1-220-g8fbbda9</span>
    </div>
   </td>
  </tr>
@@ -103,8 +103,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a35301cfe472c7f8d343c5d6a23d8da30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPipetteLayerOperations.html#ac2e1230385d4439b30668e66df245485">PipetteLayerOperations::PipetteColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02tiledbitmappresentation_8cc_03.html#a35301cfe472c7f8d343c5d6a23d8da30">dividePipetteColors</a> (<a class="el" href="classPipetteLayerOperations.html#ac2e1230385d4439b30668e66df245485">PipetteLayerOperations::PipetteColor</a> elements, const int divisor)</td></tr>
 <tr class="memdesc:a35301cfe472c7f8d343c5d6a23d8da30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides each element inside elements by by a constant divisor.  <a href="#a35301cfe472c7f8d343c5d6a23d8da30">More...</a><br /></td></tr>
 <tr class="separator:a35301cfe472c7f8d343c5d6a23d8da30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08900a9c3402ec8442853d0453ee66a1"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; <a class="el" href="classTiledBitmapInterface.html#a57ae79ddeca1be99eae6759dfa1add40">TiledBitmapInterface::Ptr</a>, <a class="el" href="classPipetteLayerOperations.html#af6270105ef3fb21466ece4c480905540">PipetteLayerOperations::Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02tiledbitmappresentation_8cc_03.html#a08900a9c3402ec8442853d0453ee66a1">toTiledBitmap</a> (const <a class="el" href="structScroom_1_1TiledBitmap_1_1BitmapMetaData.html">BitmapMetaData</a> &amp;bmd, <a class="el" href="classLayer.html#ae0d4b7e8822cfd565b9adbb4a0e46f03">Layer::Ptr</a> baseLayer)</td></tr>
-<tr class="separator:a08900a9c3402ec8442853d0453ee66a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a35301cfe472c7f8d343c5d6a23d8da30"></a>
@@ -135,8 +133,8 @@ Functions</h2></td></tr>
 
 <p>Divides each element inside elements by by a constant divisor. </p>
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmappresentation_8cc_source.html#l00040">40</a> of file <a class="el" href="tiledbitmappresentation_8cc_source.html">tiledbitmappresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; elem: elements)</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      elem.second /= divisor;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> elements;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="tiledbitmappresentation_8cc_source.html#l00042">42</a> of file <a class="el" href="tiledbitmappresentation_8cc_source.html">tiledbitmappresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; elem: elements)</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      elem.second /= divisor;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> elements;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="abae3a7fd8f52b1b6ce0a5e0252747cf3"></a>
@@ -167,41 +165,9 @@ Functions</h2></td></tr>
 
 <p>Add two pipette color map values of the same key. </p>
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmappresentation_8cc_source.html#l00022">22</a> of file <a class="el" href="tiledbitmappresentation_8cc_source.html">tiledbitmappresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classPipetteLayerOperations.html#ac2e1230385d4439b30668e66df245485">PipetteLayerOperations::PipetteColor</a> result;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span>(lhs.empty())</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <span class="keywordflow">return</span> rhs;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; rhs.size(); i++)</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      result.push_back({rhs[i].first, rhs[i].second + lhs[i].second});</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div><div class="ttc" id="classPipetteLayerOperations_html_ac2e1230385d4439b30668e66df245485"><div class="ttname"><a href="classPipetteLayerOperations.html#ac2e1230385d4439b30668e66df245485">PipetteLayerOperations::PipetteColor</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, double &gt; &gt; PipetteColor</div><div class="ttdef"><b>Definition:</b> <a href="pipettelayeroperations_8hh_source.html#l00022">pipettelayeroperations.hh:22</a></div></div>
+<p class="definition">Definition at line <a class="el" href="tiledbitmappresentation_8cc_source.html#l00024">24</a> of file <a class="el" href="tiledbitmappresentation_8cc_source.html">tiledbitmappresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classPipetteLayerOperations.html#ac2e1230385d4439b30668e66df245485">PipetteLayerOperations::PipetteColor</a> result;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span>(lhs.empty())</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keywordflow">return</span> rhs;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; rhs.size(); i++)</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      result.push_back({rhs[i].first, rhs[i].second + lhs[i].second});</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  }</div><div class="ttc" id="classPipetteLayerOperations_html_ac2e1230385d4439b30668e66df245485"><div class="ttname"><a href="classPipetteLayerOperations.html#ac2e1230385d4439b30668e66df245485">PipetteLayerOperations::PipetteColor</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, double &gt; &gt; PipetteColor</div><div class="ttdef"><b>Definition:</b> <a href="pipettelayeroperations_8hh_source.html#l00022">pipettelayeroperations.hh:22</a></div></div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a08900a9c3402ec8442853d0453ee66a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08900a9c3402ec8442853d0453ee66a1">&#9670;&nbsp;</a></span>toTiledBitmap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::tuple&lt;<a class="el" href="classTiledBitmapInterface.html#a57ae79ddeca1be99eae6759dfa1add40">TiledBitmapInterface::Ptr</a>, <a class="el" href="classPipetteLayerOperations.html#af6270105ef3fb21466ece4c480905540">PipetteLayerOperations::Ptr</a>&gt; anonymous_namespace{tiledbitmappresentation.cc}::toTiledBitmap </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structScroom_1_1TiledBitmap_1_1BitmapMetaData.html">BitmapMetaData</a> &amp;&#160;</td>
-          <td class="paramname"><em>bmd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classLayer.html#ae0d4b7e8822cfd565b9adbb4a0e46f03">Layer::Ptr</a>&#160;</td>
-          <td class="paramname"><em>baseLayer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="tiledbitmappresentation_8cc_source.html#l00049">49</a> of file <a class="el" href="tiledbitmappresentation_8cc_source.html">tiledbitmappresentation.cc</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="tiledbitmappresentation_8cc_source.html#l00347">anonymous_namespace{tiledbitmappresentation.cc}::OpenTiledBitmapAsPresentation::open()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  {</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Todo... add stuff...</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> std::tuple&lt;TiledBitmapInterface::Ptr, PipetteLayerOperations::Ptr&gt;();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

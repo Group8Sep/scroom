@@ -2,7 +2,7 @@ var searchData=
 [
   ['l',['l',['../classScroom_1_1Bookkeeping_1_1Detail_1_1TokenImpl.html#a8563c6d110d857dd1ae44c3aea223faa',1,'Scroom::Bookkeeping::Detail::TokenImpl']]],
   ['label',['label',['../classScroom_1_1Utils_1_1Timer.html#acff9b970c579627ee211ab94202db480',1,'Scroom::Utils::Timer']]],
-  ['layer',['Layer',['../classLayer.html',1,'Layer'],['../classLayer.html#a461f24acc6b9fac1f007516bcd380c25',1,'Layer::Layer()'],['../classDataFetcher.html#a3a341857d909e1be2592d8effe8af5ba',1,'DataFetcher::layer()'],['../classTiledBitmapViewData.html#a8763e9d5a41ec0562e5ba36bc67d166e',1,'TiledBitmapViewData::layer()']]],
+  ['layer',['Layer',['../classLayer.html',1,'Layer'],['../classDataFetcher.html#a3a341857d909e1be2592d8effe8af5ba',1,'DataFetcher::layer()'],['../classTiledBitmapViewData.html#a8763e9d5a41ec0562e5ba36bc67d166e',1,'TiledBitmapViewData::layer()'],['../classLayer.html#a461f24acc6b9fac1f007516bcd380c25',1,'Layer::Layer()']]],
   ['layer_2ecc',['layer.cc',['../layer_8cc.html',1,'']]],
   ['layercoordinator',['LayerCoordinator',['../classLayerCoordinator.html',1,'LayerCoordinator'],['../classLayerCoordinator.html#a3eafcda521a02dab43ce39423336214f',1,'LayerCoordinator::LayerCoordinator(const LayerCoordinator &amp;)=delete'],['../classLayerCoordinator.html#a9e3bb81ad4b4ef95cbb27dc6b3f6e109',1,'LayerCoordinator::LayerCoordinator(LayerCoordinator &amp;&amp;)=delete'],['../classLayerCoordinator.html#ad0f7940315165ccb0d889a98d1775591',1,'LayerCoordinator::LayerCoordinator(CompressedTile::Ptr targetTile, LayerOperations::Ptr lo)']]],
   ['layercoordinator_2ecc',['layercoordinator.cc',['../layercoordinator_8cc.html',1,'']]],

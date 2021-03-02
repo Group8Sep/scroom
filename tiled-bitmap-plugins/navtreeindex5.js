@@ -1,5 +1,8 @@
 var NAVTREEINDEX5 =
 {
+"classScroom_1_1Utils_1_1Timer.html#acd275dd172f0be0986b05360983366bf":[1,0,4,7,16,0],
+"classScroom_1_1Utils_1_1Timer.html#acff9b970c579627ee211ab94202db480":[1,0,4,7,16,2],
+"classScroom_1_1Utils_1_1Timer.html#ae7a6f8f38141171cb4b6ba82a3cf0d77":[1,0,4,7,16,4],
 "classSelectionListener.html":[1,0,70],
 "classSelectionListener.html#a360cd309c488a14e3413d8d1c18154ef":[1,0,70,1],
 "classSelectionListener.html#ab6786d08620d25fafa02bb7c3f36ab71":[1,0,70,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX5 =
 "classTileViewState.html#adf4f2846835dde265fd29559e79594ae":[1,0,84,26],
 "classTileViewState.html#adf6cc97b7f1eb08245bcf8e748d2c84f":[1,0,84,34],
 "classTileViewState.html#ae59f0acfef6570d16d593e5f3a38b307":[1,0,84,3],
-"classTileViewState.html#aebe3c10c40e343a2df076a126626a464":[1,0,84,24],
-"classTileViewState.html#aedfe78a642c6485c33a0211bb47d9aeb":[1,0,84,33],
-"classTileViewState.html#af8abdc5085f1adaefe269049aee929b2":[1,0,84,5],
-"classTiledBitmap.html":[1,0,79]
+"classTileViewState.html#aebe3c10c40e343a2df076a126626a464":[1,0,84,24]
 };

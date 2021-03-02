@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-219-ga4c6efb</span>
+   &#160;<span id="projectnumber">0.11.1-220-g8fbbda9</span>
    </div>
   </td>
  </tr>
@@ -93,38 +93,42 @@ $(document).ready(function(){initNavTree('tiledbitmappresentation_8cc.html','');
 <code>#include &lt;<a class="el" href="opentiledbitmapinterface_8hh_source.html">scroom/opentiledbitmapinterface.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="pipetteviewinterface_8hh_source.html">scroom/pipetteviewinterface.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="transformpresentation_8hh_source.html">scroom/transformpresentation.hh</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="tiled-bitmap_8hh_source.html">tiled-bitmap.hh</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for tiledbitmappresentation.cc:</div>
 <div class="dyncontent">
 <div class="center"><img src="tiledbitmappresentation_8cc__incl.png" border="0" usemap="#libs_2tiled-bitmap_2src_2tiledbitmappresentation_8cc" alt=""/></div>
 <map name="libs_2tiled-bitmap_2src_2tiledbitmappresentation_8cc" id="libs_2tiled-bitmap_2src_2tiledbitmappresentation_8cc">
-<area shape="rect" id="node3" href="cairo-helpers_8hh.html" title="scroom/cairo&#45;helpers.hh" alt="" coords="2922,393,3101,420"/>
-<area shape="rect" id="node19" href="opentiledbitmapinterface_8hh.html" title="scroom/opentiledbitmapinterface.hh" alt="" coords="1881,95,2139,121"/>
-<area shape="rect" id="node48" href="pipetteviewinterface_8hh.html" title="scroom/pipetteviewinterface.hh" alt="" coords="629,244,858,271"/>
-<area shape="rect" id="node50" href="transformpresentation_8hh.html" title="scroom/transformpresentation.hh" alt="" coords="2135,169,2375,196"/>
-<area shape="rect" id="node7" href="color_8hh.html" title="scroom/color.hh" alt="" coords="2945,468,3070,495"/>
-<area shape="rect" id="node11" href="rectangle_8hh.html" title="scroom/rectangle.hh" alt="" coords="3442,468,3597,495"/>
-<area shape="rect" id="node13" href="gtk-helpers_8hh.html" title="scroom/gtk&#45;helpers.hh" alt="" coords="3339,543,3507,569"/>
-<area shape="rect" id="node16" href="linearsegment_8hh.html" title="scroom/linearsegment.hh" alt="" coords="3076,543,3264,569"/>
-<area shape="rect" id="node18" href="point_8hh.html" title="scroom/point.hh" alt="" coords="3684,543,3811,569"/>
-<area shape="rect" id="node21" href="colormappable_8hh.html" title="scroom/colormappable.hh" alt="" coords="1740,244,1931,271"/>
-<area shape="rect" id="node36" href="interface_8hh.html" title="scroom/interface.hh" alt="" coords="254,625,406,651"/>
-<area shape="rect" id="node38" href="tiledbitmaplayer_8hh.html" title="scroom/tiledbitmaplayer.hh" alt="" coords="1909,169,2111,196"/>
-<area shape="rect" id="node25" href="assertions_8hh.html" title="scroom/assertions.hh" alt="" coords="1583,319,1744,345"/>
-<area shape="rect" id="node27" href="observable_8hh.html" title="scroom/observable.hh" alt="" coords="1756,393,1923,420"/>
-<area shape="rect" id="node34" href="presentationinterface_8hh.html" title="scroom/presentationinterface.hh" alt="" coords="2394,319,2629,345"/>
-<area shape="rect" id="node30" href="bookkeeping_8hh.html" title="scroom/bookkeeping.hh" alt="" coords="2033,468,2211,495"/>
-<area shape="rect" id="node32" href="utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="1340,543,1483,569"/>
-<area shape="rect" id="node31" href="stuff_8hh.html" title="scroom/stuff.hh" alt="" coords="2190,543,2313,569"/>
-<area shape="rect" id="node37" href="viewinterface_8hh.html" title="scroom/viewinterface.hh" alt="" coords="2512,393,2695,420"/>
-<area shape="rect" id="node39" href="memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="1110,468,1294,495"/>
-<area shape="rect" id="node42" href="threadpool_8hh.html" title="scroom/threadpool.hh" alt="" coords="1123,244,1287,271"/>
-<area shape="rect" id="node46" href="tile_8hh.html" title="scroom/tile.hh" alt="" coords="939,393,1054,420"/>
-<area shape="rect" id="node47" href="tiledbitmapinterface_8hh.html" title="scroom/tiledbitmapinterface.hh" alt="" coords="2262,244,2489,271"/>
-<area shape="rect" id="node41" href="blockallocator_8hh.html" title="scroom/blockallocator.hh" alt="" coords="1079,543,1264,569"/>
-<area shape="rect" id="node44" href="semaphore_8hh.html" title="scroom/semaphore.hh" alt="" coords="1321,468,1488,495"/>
-<area shape="rect" id="node45" href="threadpoolimpl_8hh.html" title="scroom/impl/threadpoolimpl.hh" alt="" coords="1091,319,1318,345"/>
-<area shape="rect" id="node49" href="pipettelayeroperations_8hh.html" title="scroom/pipettelayeroperations.hh" alt="" coords="622,319,865,345"/>
+<area shape="rect" id="node3" href="cairo-helpers_8hh.html" title="scroom/cairo&#45;helpers.hh" alt="" coords="274,543,453,569"/>
+<area shape="rect" id="node17" href="opentiledbitmapinterface_8hh.html" title="scroom/opentiledbitmapinterface.hh" alt="" coords="914,169,1173,196"/>
+<area shape="rect" id="node43" href="pipetteviewinterface_8hh.html" title="scroom/pipetteviewinterface.hh" alt="" coords="831,393,1061,420"/>
+<area shape="rect" id="node45" href="transformpresentation_8hh.html" title="scroom/transformpresentation.hh" alt="" coords="1090,319,1330,345"/>
+<area shape="rect" id="node46" href="tiled-bitmap_8hh.html" title="tiled&#45;bitmap.hh" alt="" coords="2870,95,2993,121"/>
+<area shape="rect" id="node7" href="color_8hh.html" title="scroom/color.hh" alt="" coords="301,617,426,644"/>
+<area shape="rect" id="node11" href="rectangle_8hh.html" title="scroom/rectangle.hh" alt="" coords="657,617,811,644"/>
+<area shape="rect" id="node13" href="gtk-helpers_8hh.html" title="scroom/gtk&#45;helpers.hh" alt="" coords="937,692,1105,719"/>
+<area shape="rect" id="node15" href="linearsegment_8hh.html" title="scroom/linearsegment.hh" alt="" coords="623,692,811,719"/>
+<area shape="rect" id="node16" href="point_8hh.html" title="scroom/point.hh" alt="" coords="137,692,264,719"/>
+<area shape="rect" id="node19" href="colormappable_8hh.html" title="scroom/colormappable.hh" alt="" coords="2169,393,2360,420"/>
+<area shape="rect" id="node33" href="interface_8hh.html" title="scroom/interface.hh" alt="" coords="1606,692,1758,719"/>
+<area shape="rect" id="node36" href="tiledbitmaplayer_8hh.html" title="scroom/tiledbitmaplayer.hh" alt="" coords="3101,244,3303,271"/>
+<area shape="rect" id="node23" href="assertions_8hh.html" title="scroom/assertions.hh" alt="" coords="2117,468,2279,495"/>
+<area shape="rect" id="node24" href="observable_8hh.html" title="scroom/observable.hh" alt="" coords="3372,543,3539,569"/>
+<area shape="rect" id="node31" href="presentationinterface_8hh.html" title="scroom/presentationinterface.hh" alt="" coords="1757,468,1991,495"/>
+<area shape="rect" id="node27" href="bookkeeping_8hh.html" title="scroom/bookkeeping.hh" alt="" coords="3395,617,3574,644"/>
+<area shape="rect" id="node29" href="utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="3883,692,4025,719"/>
+<area shape="rect" id="node28" href="stuff_8hh.html" title="scroom/stuff.hh" alt="" coords="3142,692,3265,719"/>
+<area shape="rect" id="node34" href="viewinterface_8hh.html" title="scroom/viewinterface.hh" alt="" coords="1389,543,1572,569"/>
+<area shape="rect" id="node35" href="progressinterface_8hh.html" title="scroom/progressinterface.hh" alt="" coords="1897,617,2105,644"/>
+<area shape="rect" id="node37" href="memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="3598,617,3782,644"/>
+<area shape="rect" id="node38" href="threadpool_8hh.html" title="scroom/threadpool.hh" alt="" coords="3000,393,3164,420"/>
+<area shape="rect" id="node40" href="tile_8hh.html" title="scroom/tile.hh" alt="" coords="2902,543,3017,569"/>
+<area shape="rect" id="node41" href="tiledbitmapinterface_8hh.html" title="scroom/tiledbitmapinterface.hh" alt="" coords="1710,319,1937,345"/>
+<area shape="rect" id="node42" href="scroominterface_8hh.html" title="scroom/scroominterface.hh" alt="" coords="1655,393,1855,420"/>
+<area shape="rect" id="node44" href="pipettelayeroperations_8hh.html" title="scroom/pipettelayeroperations.hh" alt="" coords="983,468,1226,495"/>
+<area shape="rect" id="node48" href="progressinterfacehelpers_8hh.html" title="scroom/progressinterfacehelpers.hh" alt="" coords="3846,543,4102,569"/>
+<area shape="rect" id="node49" href="layercoordinator_8hh.html" title="layercoordinator.hh" alt="" coords="4132,169,4280,196"/>
+<area shape="rect" id="node50" href="tiledbitmapviewdata_8hh.html" title="tiledbitmapviewdata.hh" alt="" coords="2716,169,2893,196"/>
 </map>
 </div>
 </div>
@@ -154,8 +158,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a35301cfe472c7f8d343c5d6a23d8da30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPipetteLayerOperations.html#ac2e1230385d4439b30668e66df245485">PipetteLayerOperations::PipetteColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02tiledbitmappresentation_8cc_03.html#a35301cfe472c7f8d343c5d6a23d8da30">anonymous_namespace{tiledbitmappresentation.cc}::dividePipetteColors</a> (<a class="el" href="classPipetteLayerOperations.html#ac2e1230385d4439b30668e66df245485">PipetteLayerOperations::PipetteColor</a> elements, const int divisor)</td></tr>
 <tr class="memdesc:a35301cfe472c7f8d343c5d6a23d8da30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides each element inside elements by by a constant divisor.  <a href="namespaceanonymous__namespace_02tiledbitmappresentation_8cc_03.html#a35301cfe472c7f8d343c5d6a23d8da30">More...</a><br /></td></tr>
 <tr class="separator:a35301cfe472c7f8d343c5d6a23d8da30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08900a9c3402ec8442853d0453ee66a1"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; <a class="el" href="classTiledBitmapInterface.html#a57ae79ddeca1be99eae6759dfa1add40">TiledBitmapInterface::Ptr</a>, <a class="el" href="classPipetteLayerOperations.html#af6270105ef3fb21466ece4c480905540">PipetteLayerOperations::Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02tiledbitmappresentation_8cc_03.html#a08900a9c3402ec8442853d0453ee66a1">anonymous_namespace{tiledbitmappresentation.cc}::toTiledBitmap</a> (const <a class="el" href="structScroom_1_1TiledBitmap_1_1BitmapMetaData.html">BitmapMetaData</a> &amp;bmd, <a class="el" href="classLayer.html#ae0d4b7e8822cfd565b9adbb4a0e46f03">Layer::Ptr</a> baseLayer)</td></tr>
-<tr class="separator:a08900a9c3402ec8442853d0453ee66a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd171862b26335d75a34704553701421"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenPresentationInterface.html#a024ac5be2e623d00e52bea88d45781ac">OpenPresentationInterface::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1TiledBitmap.html#abd171862b26335d75a34704553701421">Scroom::TiledBitmap::ToOpenPresentationInterface</a> (<a class="el" href="classScroom_1_1TiledBitmap_1_1OpenTiledBitmapInterface.html#a8854268aa86ddd4ce64ddeb891bd7fd1">OpenTiledBitmapInterface::Ptr</a> openTiledBitmapInterface)</td></tr>
 <tr class="separator:abd171862b26335d75a34704553701421"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

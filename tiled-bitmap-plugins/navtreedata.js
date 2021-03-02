@@ -43,14 +43,14 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classColormappable.html#ae43e2fc3d049bbeebac2a64128ea0fc3",
-"classOperations24bpp.html#a040d7cb9f01db55dd7ba668ff6fdf215",
-"classScroom_1_1Bitmap_1_1SampleIterator.html#a9bbc5202d0d2ae494a4167c31e49bdd2",
-"classScroom_1_1Utils_1_1Counted.html#a81eb6433bbb5f9a12ce1fe1c92da9e53",
-"classSelectionListener.html",
-"classTiledBitmap.html#a0a1a6354cbd694d8965e9c998d6678e6",
-"classViewInterface.html#a1599769e7b6fe5d8f1b841a0d1ad6511",
-"globals_b.html",
-"queue_8hh.html"
+"classOperations1bppClipped.html#ab341f8c36d6294b164e801b53ed9f018",
+"classScroom_1_1Bitmap_1_1SampleIterator.html#a4ff8eac9c539fc4d054aee59a67e3e3a",
+"classScroom_1_1Utils_1_1Counted.html#a3fea7d8dd19fa44b2b142361c9b1ba86",
+"classScroom_1_1Utils_1_1Timer.html#acd275dd172f0be0986b05360983366bf",
+"classTileViewState.html#aedfe78a642c6485c33a0211bb47d9aeb",
+"classView.html#afa368c1b3cc3fe7974748ad43f56789f",
+"global_8hh.html",
+"progressinterfacehelpers_8cc.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

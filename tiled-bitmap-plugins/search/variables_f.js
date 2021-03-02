@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['pageprovider',['pageProvider',['../classLayer.html#ad3ce25fb2fef0a59b6520ed131d31d15',1,'Layer']]],
   ['pages',['pages',['../classScroom_1_1MemoryBlobs_1_1Blob.html#a75de1680f4940a0da5026ba820e8325a',1,'Scroom::MemoryBlobs::Blob']]],
   ['panel',['panel',['../classSidebarManager.html#a6f7a8fc05bd3f63817db6d463d27a2b1',1,'SidebarManager']]],
   ['panelwindow',['panelWindow',['../classSidebarManager.html#aa33d6b146af35805e7327b5b44a96325',1,'SidebarManager']]],
