@@ -5,7 +5,7 @@ var classLayer =
     [ "close", "classLayer.html#a0e1a9f997012b05c921c35c66677c347", null ],
     [ "create", "classLayer.html#a8f3623d32725dbc8537779fb7f682e46", null ],
     [ "create", "classLayer.html#ad91888355ff587ff45d585488dc21132", null ],
-    [ "fetchData", "classLayer.html#a3047bcacbe02b1aa960b4440d8aaacfa", null ],
+    [ "fetchData", "classLayer.html#a3d2253a27e5b42cde01f15c85959580c", null ],
     [ "getDepth", "classLayer.html#a7496892cad703e085e3e0145026f1c42", null ],
     [ "getHeight", "classLayer.html#a93762cbd22847abe210805c546329e51", null ],
     [ "getHorTileCount", "classLayer.html#aa95b82451c1bf40bfc09200d4c1336ea", null ],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['datafetcher',['DataFetcher',['../classDataFetcher.html#a6c372d1f9e8c14f8837d277782dca62c',1,'DataFetcher']]],
+  ['datafetcher',['DataFetcher',['../classDataFetcher.html#a11717e9488dea08735d632ddf98bde6f',1,'DataFetcher']]],
   ['dec',['dec',['../classScroom_1_1Utils_1_1Count.html#a4a079db4ca94588183b9ed1f3ed930ff',1,'Scroom::Utils::Count']]],
   ['decompressblob',['decompressBlob',['../namespaceScroom_1_1MemoryBlobs_1_1Detail.html#a3435b06f8f48799a361e7ff452a9bee2',1,'Scroom::MemoryBlobs::Detail']]],
   ['defaultqueue',['defaultQueue',['../classThreadPool.html#a7d435b8c6eff3ffcf5b9043bd50048c2',1,'ThreadPool']]],
@@ -15,7 +15,6 @@ var searchData=
   ['do_5fload',['do_load',['../classCompressedTile.html#a5c520928c3e8faafa0493d77fa7c16d8',1,'CompressedTile']]],
   ['do_5fone',['do_one',['../classThreadPool.html#a682151037e6b67d6700361c987969798',1,'ThreadPool']]],
   ['done',['done',['../classSourcePresentation.html#afd0e0ab48d0b098f2d401f2ceebda539',1,'SourcePresentation::done()'],['../classTiffPresentation.html#a1d8b4deb2124679bb8829fe9a7859245',1,'TiffPresentation::done()']]],
-  ['donewaiting',['doneWaiting',['../classFileOperation.html#a9199280ef903474d388891883d1d7e83',1,'FileOperation']]],
   ['doublefrombyte',['doubleFromByte',['../color_8hh.html#aa1f249efeab2150f54f9455dd2fef207',1,'color.hh']]],
   ['dowork',['doWork',['../classPluginManager.html#a9c6140acf2872b4fa9e495276d8b2cb5',1,'PluginManager::doWork()'],['../classanonymous__namespace_02progressbarmanager_8cc_03_1_1ProgressBarPulser.html#a7f11b760761fc08a19745651a1ce1652',1,'anonymous_namespace{progressbarmanager.cc}::ProgressBarPulser::doWork()'],['../classWorkInterface.html#ada2f2ff83bef1a63cd7285adfbc41f61',1,'WorkInterface::doWork()']]],
   ['draw',['draw',['../classCommonOperations.html#ac0bca5f2611c1000ee85c517e637e489',1,'CommonOperations::draw()'],['../classOperations1bpp.html#a2685c91439850dcb4efd9d52ea193f8a',1,'Operations1bpp::draw()'],['../classOperations8bpp.html#a2dc55faa7a83522a4e7539233c6a5380',1,'Operations8bpp::draw()'],['../classOperations.html#ae374a98884534b01cad412ed7a328ad6',1,'Operations::draw()'],['../classLayerOperations.html#a18dbbea49215d7af4e6127109a3b9b5a',1,'LayerOperations::draw()']]],

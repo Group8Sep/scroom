@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['abort',['abort',['../classScroom_1_1Utils_1_1Detail_1_1ErrorSignalHandler.html#ac54f53dc342019e8db34f4aa581a5792',1,'Scroom::Utils::Detail::ErrorSignalHandler::abort()'],['../classLoadOperation.html#af157cf23cb41afd417609c476e38dd13',1,'LoadOperation::abort()'],['../classFileOperation.html#ac7b5e19339da76c2c92059d03f91546a',1,'FileOperation::abort()'],['../namespaceScroom_1_1Utils_1_1Detail.html#af6ca1b376461c7e9fa52954959a24652',1,'Scroom::Utils::Detail::abort()']]],
+  ['abort',['abort',['../classScroom_1_1Utils_1_1Detail_1_1ErrorSignalHandler.html#ac54f53dc342019e8db34f4aa581a5792',1,'Scroom::Utils::Detail::ErrorSignalHandler::abort()'],['../namespaceScroom_1_1Utils_1_1Detail.html#af6ca1b376461c7e9fa52954959a24652',1,'Scroom::Utils::Detail::abort()']]],
   ['aboutdialog',['aboutDialog',['../callbacks_8cc.html#a9180546c6d9070b28e52a0b62b6f15cf',1,'callbacks.cc']]],
   ['aboutdialogxml',['aboutDialogXml',['../callbacks_8cc.html#a86284ca3353c780129fcb8113fbb167e',1,'callbacks.cc']]],
   ['above',['above',['../classScroom_1_1Utils_1_1Rectangle.html#a9531590fea575c3339a63ec865e0cfb8',1,'Scroom::Utils::Rectangle::above(value_type v) const'],['../classScroom_1_1Utils_1_1Rectangle.html#aea4765c8b1c903617371258c5bb2a3cd',1,'Scroom::Utils::Rectangle::above(Rectangle&lt; value_type &gt; const &amp;r) const']]],

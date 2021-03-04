@@ -9,6 +9,7 @@ var searchData=
   ['_7elayercoordinator',['~LayerCoordinator',['../classLayerCoordinator.html#add0a7d30d6b05046a5c925779e7b2a9a',1,'LayerCoordinator']]],
   ['_7emaptokenimpl',['~MapTokenImpl',['../classScroom_1_1Bookkeeping_1_1Detail_1_1MapTokenImpl.html#a1d59cefa36d2d34bb168f3593187e2db',1,'Scroom::Bookkeeping::Detail::MapTokenImpl']]],
   ['_7eobservable',['~Observable',['../classScroom_1_1Utils_1_1Observable.html#a4f0d66bf65eaa61b77987c2b47e38ac1',1,'Scroom::Utils::Observable']]],
+  ['_7eon_5fscope_5fexit',['~on_scope_exit',['../classScroom_1_1Utils_1_1on__scope__exit.html#af6c3417f141eeaff9fdd7ae17ce64f65',1,'Scroom::Utils::on_scope_exit']]],
   ['_7eprogressbarmanager',['~ProgressBarManager',['../classProgressBarManager.html#a322fe1dd1c888ea54ca8624a9dc8eebd',1,'ProgressBarManager']]],
   ['_7equeue',['~Queue',['../classThreadPool_1_1Queue.html#a2c6be4f191a8b6390e39583b0f085149',1,'ThreadPool::Queue']]],
   ['_7equeuelock',['~QueueLock',['../classScroom_1_1Detail_1_1ThreadPool_1_1QueueLock.html#a168151543f6766a8ce874377f3d4408e',1,'Scroom::Detail::ThreadPool::QueueLock']]],

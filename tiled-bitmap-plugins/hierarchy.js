@@ -133,9 +133,6 @@ var hierarchy =
       [ "ColormapProvider", "classColormapProvider.html", [
         [ "ColormapHelperBase", "classColormapHelperBase.html", null ]
       ] ],
-      [ "FileOperation", "classFileOperation.html", [
-        [ "LoadOperation", "classLoadOperation.html", null ]
-      ] ],
       [ "LayerOperations", "classLayerOperations.html", [
         [ "CommonOperations", "classCommonOperations.html", [
           [ "Operations", "classOperations.html", [
@@ -266,6 +263,7 @@ var hierarchy =
       [ "Scroom::Bookkeeping::MapBase< K, V >", "classScroom_1_1Bookkeeping_1_1MapBase.html", null ]
     ] ],
     [ "anonymous_namespace{threadpoolimpl.cc}::NotifyThreadList< T >", "classanonymous__namespace_02threadpoolimpl_8cc_03_1_1NotifyThreadList.html", null ],
+    [ "Scroom::Utils::on_scope_exit< F >", "classScroom_1_1Utils_1_1on__scope__exit.html", null ],
     [ "Scroom::MemoryBlocks::Page", "classScroom_1_1MemoryBlocks_1_1Page.html", null ],
     [ "PluginInformation", "structPluginInformation.html", null ],
     [ "SizeDeterminer::PresentationData", "classSizeDeterminer_1_1PresentationData.html", null ],
@@ -309,6 +307,6 @@ var hierarchy =
     [ "Scroom::Utils::ProgressInterfaceBroadcaster::Unsubscriber", "classScroom_1_1Utils_1_1ProgressInterfaceBroadcaster_1_1Unsubscriber.html", null ],
     [ "Scroom::Bookkeeping::Detail::ValueType< V >", "classScroom_1_1Bookkeeping_1_1Detail_1_1ValueType.html", null ],
     [ "ThreadPool::WeakQueue", "classThreadPool_1_1WeakQueue.html", null ],
-    [ "Scroom::GtkHelpers::Detail::Wrapper", "classScroom_1_1GtkHelpers_1_1Detail_1_1Wrapper.html", null ],
-    [ "Scroom::GtkHelpers::Wrapper", "classScroom_1_1GtkHelpers_1_1Wrapper.html", null ]
+    [ "Scroom::GtkHelpers::Wrapper", "classScroom_1_1GtkHelpers_1_1Wrapper.html", null ],
+    [ "Scroom::GtkHelpers::Detail::Wrapper", "classScroom_1_1GtkHelpers_1_1Detail_1_1Wrapper.html", null ]
 ];

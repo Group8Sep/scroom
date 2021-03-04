@@ -3,6 +3,7 @@ var searchData=
   ['observable',['Observable',['../classScroom_1_1Utils_1_1Observable.html',1,'Scroom::Utils']]],
   ['observable_3c_20tileinitialisationobserver_20_3e',['Observable&lt; TileInitialisationObserver &gt;',['../classScroom_1_1Utils_1_1Observable.html',1,'Scroom::Utils']]],
   ['observable_3c_20tileloadingobserver_20_3e',['Observable&lt; TileLoadingObserver &gt;',['../classScroom_1_1Utils_1_1Observable.html',1,'Scroom::Utils']]],
+  ['on_5fscope_5fexit',['on_scope_exit',['../classScroom_1_1Utils_1_1on__scope__exit.html',1,'Scroom::Utils']]],
   ['openinterface',['OpenInterface',['../classOpenInterface.html',1,'']]],
   ['openpresentationinterface',['OpenPresentationInterface',['../classOpenPresentationInterface.html',1,'']]],
   ['opentiledbitmapaspresentation',['OpenTiledBitmapAsPresentation',['../classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1OpenTiledBitmapAsPresentation.html',1,'anonymous_namespace{tiledbitmappresentation.cc}']]],

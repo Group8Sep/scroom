@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-220-g8fbbda9</span>
+   &#160;<span id="projectnumber">0.11.1-223-gedc50b3</span>
    </div>
   </td>
  </tr>
@@ -151,8 +151,6 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileOperation.html">FileOperation</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiledBitmap.html">TiledBitmap</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -160,6 +158,8 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ac129d992e87b941219f7c25af1a94e3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiledBitmapInterface.html#a57ae79ddeca1be99eae6759dfa1add40">TiledBitmapInterface::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiled-bitmap_8hh.html#ac129d992e87b941219f7c25af1a94e3e">createTiledBitmap</a> (const <a class="el" href="classLayer.html#ae0d4b7e8822cfd565b9adbb4a0e46f03">Layer::Ptr</a> &amp;bottom, <a class="el" href="tiledbitmapinterface_8hh.html#a00279dcefa7f911f75fec39af1d48e87">LayerSpec</a> const &amp;ls)</td></tr>
 <tr class="separator:ac129d992e87b941219f7c25af1a94e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2c449a49529c6b3c86123e79754fe6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiled-bitmap_8hh.html#ab2c449a49529c6b3c86123e79754fe6f">scheduleLoadingBitmap</a> (const <a class="el" href="classSourcePresentation.html#adcc8551f0f8572a899f4270c353375b2">SourcePresentation::Ptr</a> &amp;sp, const <a class="el" href="classLayer.html#ae0d4b7e8822cfd565b9adbb4a0e46f03">Layer::Ptr</a> &amp;layer, const <a class="el" href="classProgressInterface.html#a9c9d67a3b7abe8c316d9a1e6937a7328">ProgressInterface::Ptr</a> &amp;progress)</td></tr>
+<tr class="separator:ab2c449a49529c6b3c86123e79754fe6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ac129d992e87b941219f7c25af1a94e3e"></a>
@@ -188,8 +188,50 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiled-bitmap_8cc_source.html#l00032">32</a> of file <a class="el" href="tiled-bitmap_8cc_source.html">tiled-bitmap.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTiledBitmap.html#aac0fd55f26ab59b362f0c64d27a9e139">TiledBitmap::create</a>(bottom, ls);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div><div class="ttc" id="classTiledBitmap_html_aac0fd55f26ab59b362f0c64d27a9e139"><div class="ttname"><a href="classTiledBitmap.html#aac0fd55f26ab59b362f0c64d27a9e139">TiledBitmap::create</a></div><div class="ttdeci">static Ptr create(int bitmapWidth, int bitmapHeight, LayerSpec const &amp;ls)</div><div class="ttdef"><b>Definition:</b> <a href="tiled-bitmap_8cc_source.html#l00123">tiled-bitmap.cc:123</a></div></div>
+<p class="definition">Definition at line <a class="el" href="tiled-bitmap_8cc_source.html#l00030">30</a> of file <a class="el" href="tiled-bitmap_8cc_source.html">tiled-bitmap.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTiledBitmap.html#aac0fd55f26ab59b362f0c64d27a9e139">TiledBitmap::create</a>(bottom, ls);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div><div class="ttc" id="classTiledBitmap_html_aac0fd55f26ab59b362f0c64d27a9e139"><div class="ttname"><a href="classTiledBitmap.html#aac0fd55f26ab59b362f0c64d27a9e139">TiledBitmap::create</a></div><div class="ttdeci">static Ptr create(int bitmapWidth, int bitmapHeight, LayerSpec const &amp;ls)</div><div class="ttdef"><b>Definition:</b> <a href="tiled-bitmap_8cc_source.html#l00070">tiled-bitmap.cc:70</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab2c449a49529c6b3c86123e79754fe6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c449a49529c6b3c86123e79754fe6f">&#9670;&nbsp;</a></span>scheduleLoadingBitmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a> scheduleLoadingBitmap </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classSourcePresentation.html#adcc8551f0f8572a899f4270c353375b2">SourcePresentation::Ptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>sp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classLayer.html#ae0d4b7e8822cfd565b9adbb4a0e46f03">Layer::Ptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classProgressInterface.html#a9c9d67a3b7abe8c316d9a1e6937a7328">ProgressInterface::Ptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>progress</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tiled-bitmap_8cc_source.html#l00036">36</a> of file <a class="el" href="tiled-bitmap_8cc_source.html">tiled-bitmap.cc</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="tiled-bitmap_8cc_source.html#l00177">TiledBitmap::setSource()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">auto</span> wait_until_done = boost::make_shared&lt;Scroom::Semaphore&gt;();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">auto</span> queue           = <a class="code" href="classThreadPool_1_1Queue.html#a60a5cfe128cc80c5d5fbbd6494fb62e2">ThreadPool::Queue::createAsync</a>();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">auto</span> weakQueue       = queue-&gt;getWeak();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">auto</span> <a class="code" href="namespaceScroom_1_1Utils_1_1Detail.html#af6ca1b376461c7e9fa52954959a24652">abort</a>           = [wait_until_done, queue]() <span class="keyword">mutable</span> {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    queue.reset();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    wait_until_done-&gt;V();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  };</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">auto</span> on_finished = [wait_until_done] { wait_until_done-&gt;V(); };</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  progress-&gt;setWaiting();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="threadpool_8hh.html#af979353165a7a214dda8f7f289de81ea">Sequentially</a>()-&gt;schedule([progress, layer, sp, weakQueue, on_finished, wait_until_done] {</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    gdk_threads_enter();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    progress-&gt;setWorking(0);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    gdk_threads_leave();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    layer-&gt;fetchData(sp, weakQueue, on_finished);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    wait_until_done-&gt;P();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  });</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespaceScroom_1_1Utils.html#a656a62a7b83145b5ef24da8e62277bf8">Scroom::Utils::on_destruction</a>(<a class="code" href="namespaceScroom_1_1Utils_1_1Detail.html#af6ca1b376461c7e9fa52954959a24652">abort</a>);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div><div class="ttc" id="classThreadPool_1_1Queue_html_a60a5cfe128cc80c5d5fbbd6494fb62e2"><div class="ttname"><a href="classThreadPool_1_1Queue.html#a60a5cfe128cc80c5d5fbbd6494fb62e2">ThreadPool::Queue::createAsync</a></div><div class="ttdeci">static Ptr createAsync()</div><div class="ttdoc">When the last reference goes out of scope, asynchronously destroy the Queue. </div><div class="ttdef"><b>Definition:</b> <a href="threadpoolimpl_8cc_source.html#l00390">threadpoolimpl.cc:390</a></div></div>
+<div class="ttc" id="namespaceScroom_1_1Utils_1_1Detail_html_af6ca1b376461c7e9fa52954959a24652"><div class="ttname"><a href="namespaceScroom_1_1Utils_1_1Detail.html#af6ca1b376461c7e9fa52954959a24652">Scroom::Utils::Detail::abort</a></div><div class="ttdeci">void abort() __attribute__((noreturn))</div><div class="ttdef"><b>Definition:</b> <a href="assertions_8cc_source.html#l00120">assertions.cc:120</a></div></div>
+<div class="ttc" id="threadpool_8hh_html_af979353165a7a214dda8f7f289de81ea"><div class="ttname"><a href="threadpool_8hh.html#af979353165a7a214dda8f7f289de81ea">Sequentially</a></div><div class="ttdeci">ThreadPool::Ptr Sequentially()</div><div class="ttdoc">ThreadPool for executing tasks sequentially. </div><div class="ttdef"><b>Definition:</b> <a href="threadpoolimpl_8cc_source.html#l00470">threadpoolimpl.cc:470</a></div></div>
+<div class="ttc" id="namespaceScroom_1_1Utils_html_a656a62a7b83145b5ef24da8e62277bf8"><div class="ttname"><a href="namespaceScroom_1_1Utils.html#a656a62a7b83145b5ef24da8e62277bf8">Scroom::Utils::on_destruction</a></div><div class="ttdeci">boost::shared_ptr&lt; void &gt; on_destruction(F f)</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8hh_source.html#l00076">utilities.hh:76</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
