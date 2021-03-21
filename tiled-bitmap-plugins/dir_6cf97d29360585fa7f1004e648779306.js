@@ -11,7 +11,9 @@ var dir_6cf97d29360585fa7f1004e648779306 =
     [ "layerspecforbitmap.cc", "layerspecforbitmap_8cc.html", "layerspecforbitmap_8cc" ],
     [ "local.hh", "local_8hh.html", "local_8hh" ],
     [ "tiled-bitmap.cc", "tiled-bitmap_8cc.html", "tiled-bitmap_8cc" ],
-    [ "tiled-bitmap.hh", "tiled-bitmap_8hh.html", "tiled-bitmap_8hh" ],
+    [ "tiled-bitmap.hh", "tiled-bitmap_8hh.html", [
+      [ "TiledBitmap", "classTiledBitmap.html", "classTiledBitmap" ]
+    ] ],
     [ "tiledbitmappresentation.cc", "tiledbitmappresentation_8cc.html", "tiledbitmappresentation_8cc" ],
     [ "tiledbitmapviewdata.cc", "tiledbitmapviewdata_8cc.html", "tiledbitmapviewdata_8cc" ],
     [ "tiledbitmapviewdata.hh", "tiledbitmapviewdata_8hh.html", [

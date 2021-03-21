@@ -13,7 +13,8 @@ var searchData=
   ['blockfactoryinterface',['blockFactoryInterface',['../classScroom_1_1MemoryBlobs_1_1PageProvider.html#a84a5b200bf3acb067e7560acbb6721d4',1,'Scroom::MemoryBlobs::PageProvider']]],
   ['blocksize',['blockSize',['../classScroom_1_1MemoryBlobs_1_1PageProvider.html#a79ae98b3cf75b8717c890a6db16c3f22',1,'Scroom::MemoryBlobs::PageProvider']]],
   ['blue',['blue',['../classColor.html#a0a35e5de46315db828b5bd56866d9fea',1,'Color']]],
+  ['bmd',['bmd',['../classScroom_1_1Tiff_1_1Source.html#a776d232f4f62f2f22663562cf51a51bb',1,'Scroom::Tiff::Source']]],
   ['bpp',['bpp',['../classOperations.html#a18069b958a4e6e23bb9f0784f4ee3f90',1,'Operations::bpp()'],['../classTile.html#ab2d50dfc04db90f483e89dccba17a09d',1,'Tile::bpp()'],['../classConstTile.html#a2baa3b6df07d32ff84a0b774def1da03',1,'ConstTile::bpp()'],['../classCompressedTile.html#ae0acac9bbd3f7a6b402ba59ab5a2cd05',1,'CompressedTile::bpp()']]],
-  ['bps',['bps',['../classScroom_1_1Bitmap_1_1SampleIterator.html#a4ff8eac9c539fc4d054aee59a67e3e3a',1,'Scroom::Bitmap::SampleIterator::bps()'],['../classPipetteCommonOperationsCMYK.html#a3fdc4e0f0a9f0a47e2e6522aa710f331',1,'PipetteCommonOperationsCMYK::bps()'],['../classPipetteCommonOperationsRGB.html#a55e94b30e388c51824d5c0e6dfb12c27',1,'PipetteCommonOperationsRGB::bps()'],['../classTiffPresentation.html#a1dab3f7f4560c07c69bd5b4160a31f39',1,'TiffPresentation::bps()']]],
+  ['bps',['bps',['../classScroom_1_1Bitmap_1_1SampleIterator.html#a4ff8eac9c539fc4d054aee59a67e3e3a',1,'Scroom::Bitmap::SampleIterator::bps()'],['../classPipetteCommonOperationsCMYK.html#a3fdc4e0f0a9f0a47e2e6522aa710f331',1,'PipetteCommonOperationsCMYK::bps()'],['../classPipetteCommonOperationsRGB.html#a55e94b30e388c51824d5c0e6dfb12c27',1,'PipetteCommonOperationsRGB::bps()']]],
   ['buttons',['buttons',['../classTransparentOverlayViewInfo.html#ab7afe5e192137e8f3cf1b5bc4243e82e',1,'TransparentOverlayViewInfo']]]
 ];

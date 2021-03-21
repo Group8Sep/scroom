@@ -17,5 +17,6 @@ var searchData=
   ['operationscmyk32',['OperationsCMYK32',['../classOperationsCMYK32.html',1,'']]],
   ['operationscmyk4',['OperationsCMYK4',['../classOperationsCMYK4.html',1,'']]],
   ['operationscmyk8',['OperationsCMYK8',['../classOperationsCMYK8.html',1,'']]],
-  ['operationscolormapped',['OperationsColormapped',['../classOperationsColormapped.html',1,'']]]
+  ['operationscolormapped',['OperationsColormapped',['../classOperationsColormapped.html',1,'']]],
+  ['optional_5fcleanup',['optional_cleanup',['../classScroom_1_1Utils_1_1optional__cleanup.html',1,'Scroom::Utils']]]
 ];

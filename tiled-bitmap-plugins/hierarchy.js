@@ -74,7 +74,6 @@ var hierarchy =
         ] ],
         [ "PipetteViewInterface", "classPipetteViewInterface.html", [
           [ "anonymous_namespace{tiledbitmappresentation.cc}::TiledBitmapPresentation", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html", null ],
-          [ "TiffPresentationWrapper", "classTiffPresentationWrapper.html", null ],
           [ "TransformPresentation", "classTransformPresentation.html", null ]
         ] ],
         [ "PluginManager", "classPluginManager.html", null ],
@@ -88,19 +87,19 @@ var hierarchy =
           [ "PresentationInterface", "classPresentationInterface.html", [
             [ "PresentationBase", "classPresentationBase.html", [
               [ "anonymous_namespace{tiledbitmappresentation.cc}::TiledBitmapPresentation", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html", null ],
-              [ "TiffPresentationWrapper", "classTiffPresentationWrapper.html", null ],
+              [ "PresentationBaseSimple", "classPresentationBaseSimple.html", [
+                [ "TransformPresentation", "classTransformPresentation.html", null ]
+              ] ],
               [ "TransparentOverlayPresentation", "classTransparentOverlayPresentation.html", null ]
             ] ],
             [ "PresentationMock", "classPresentationMock.html", [
               [ "ColormappablePresentationMock", "classColormappablePresentationMock.html", null ]
-            ] ],
-            [ "TransformPresentation", "classTransformPresentation.html", null ]
+            ] ]
           ] ]
         ] ],
         [ "Scroom::Utils::ProgressInterfaceBroadcaster", "classScroom_1_1Utils_1_1ProgressInterfaceBroadcaster.html", null ],
         [ "Scroom::Utils::ProgressInterfaceMultiplexer", "classScroom_1_1Utils_1_1ProgressInterfaceMultiplexer.html", null ],
         [ "Tiff", "classTiff.html", null ],
-        [ "TiffPresentation", "classTiffPresentation.html", null ],
         [ "TiledBitmap", "classTiledBitmap.html", null ],
         [ "TiledBitmapViewData", "classTiledBitmapViewData.html", null ],
         [ "TransparentOverlay", "classTransparentOverlay.html", null ],
@@ -127,7 +126,6 @@ var hierarchy =
         [ "ColormappableMock", "classColormappableMock.html", [
           [ "ColormappablePresentationMock", "classColormappablePresentationMock.html", null ]
         ] ],
-        [ "TiffPresentationWrapper", "classTiffPresentationWrapper.html", null ],
         [ "TransformPresentation", "classTransformPresentation.html", null ]
       ] ],
       [ "ColormapProvider", "classColormapProvider.html", [
@@ -151,8 +149,7 @@ var hierarchy =
       [ "NewPresentationInterface", "classNewPresentationInterface.html", null ],
       [ "OpenInterface", "classOpenInterface.html", null ],
       [ "OpenPresentationInterface", "classOpenPresentationInterface.html", [
-        [ "anonymous_namespace{tiledbitmappresentation.cc}::OpenTiledBitmapAsPresentation", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1OpenTiledBitmapAsPresentation.html", null ],
-        [ "Tiff", "classTiff.html", null ]
+        [ "anonymous_namespace{tiledbitmappresentation.cc}::OpenTiledBitmapAsPresentation", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1OpenTiledBitmapAsPresentation.html", null ]
       ] ],
       [ "PipetteLayerOperations", "classPipetteLayerOperations.html", null ],
       [ "PipetteViewInterface", "classPipetteViewInterface.html", null ],
@@ -187,7 +184,9 @@ var hierarchy =
       [ "Scroom::MemoryBlocks::BlockInterface", "classScroom_1_1MemoryBlocks_1_1BlockInterface.html", [
         [ "Scroom::MemoryBlocks::Detail::SwapBasedBlockAllocator", "classScroom_1_1MemoryBlocks_1_1Detail_1_1SwapBasedBlockAllocator.html", null ]
       ] ],
-      [ "Scroom::TiledBitmap::OpenTiledBitmapInterface", "classScroom_1_1TiledBitmap_1_1OpenTiledBitmapInterface.html", null ],
+      [ "Scroom::TiledBitmap::OpenTiledBitmapInterface", "classScroom_1_1TiledBitmap_1_1OpenTiledBitmapInterface.html", [
+        [ "Tiff", "classTiff.html", null ]
+      ] ],
       [ "Scroom::Utils::ProgressStateInterface", "classScroom_1_1Utils_1_1ProgressStateInterface.html", [
         [ "Scroom::Utils::ProgressInterfaceFromProgressStateInterface", "classScroom_1_1Utils_1_1ProgressInterfaceFromProgressStateInterface.html", null ],
         [ "Scroom::Utils::ProgressInterfaceMultiplexer::ChildData", "classScroom_1_1Utils_1_1ProgressInterfaceMultiplexer_1_1ChildData.html", null ],
@@ -204,7 +203,7 @@ var hierarchy =
         [ "PipetteHandler", "classPipetteHandler.html", null ]
       ] ],
       [ "SourcePresentation", "classSourcePresentation.html", [
-        [ "TiffPresentation", "classTiffPresentation.html", null ]
+        [ "Scroom::Tiff::Source", "classScroom_1_1Tiff_1_1Source.html", null ]
       ] ],
       [ "TileInitialisationObserver", "classTileInitialisationObserver.html", [
         [ "LayerCoordinator", "classLayerCoordinator.html", null ],
@@ -264,6 +263,7 @@ var hierarchy =
     ] ],
     [ "anonymous_namespace{threadpoolimpl.cc}::NotifyThreadList< T >", "classanonymous__namespace_02threadpoolimpl_8cc_03_1_1NotifyThreadList.html", null ],
     [ "Scroom::Utils::on_scope_exit< F >", "classScroom_1_1Utils_1_1on__scope__exit.html", null ],
+    [ "Scroom::Utils::optional_cleanup< F >", "classScroom_1_1Utils_1_1optional__cleanup.html", null ],
     [ "Scroom::MemoryBlocks::Page", "classScroom_1_1MemoryBlocks_1_1Page.html", null ],
     [ "PluginInformation", "structPluginInformation.html", null ],
     [ "SizeDeterminer::PresentationData", "classSizeDeterminer_1_1PresentationData.html", null ],
@@ -307,6 +307,6 @@ var hierarchy =
     [ "Scroom::Utils::ProgressInterfaceBroadcaster::Unsubscriber", "classScroom_1_1Utils_1_1ProgressInterfaceBroadcaster_1_1Unsubscriber.html", null ],
     [ "Scroom::Bookkeeping::Detail::ValueType< V >", "classScroom_1_1Bookkeeping_1_1Detail_1_1ValueType.html", null ],
     [ "ThreadPool::WeakQueue", "classThreadPool_1_1WeakQueue.html", null ],
-    [ "Scroom::GtkHelpers::Wrapper", "classScroom_1_1GtkHelpers_1_1Wrapper.html", null ],
-    [ "Scroom::GtkHelpers::Detail::Wrapper", "classScroom_1_1GtkHelpers_1_1Detail_1_1Wrapper.html", null ]
+    [ "Scroom::GtkHelpers::Detail::Wrapper", "classScroom_1_1GtkHelpers_1_1Detail_1_1Wrapper.html", null ],
+    [ "Scroom::GtkHelpers::Wrapper", "classScroom_1_1GtkHelpers_1_1Wrapper.html", null ]
 ];

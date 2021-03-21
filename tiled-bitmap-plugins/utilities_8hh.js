@@ -2,6 +2,7 @@ var utilities_8hh =
 [
     [ "Base", "classScroom_1_1Utils_1_1Base.html", "classScroom_1_1Utils_1_1Base" ],
     [ "on_scope_exit", "classScroom_1_1Utils_1_1on__scope__exit.html", "classScroom_1_1Utils_1_1on__scope__exit" ],
+    [ "optional_cleanup", "classScroom_1_1Utils_1_1optional__cleanup.html", "classScroom_1_1Utils_1_1optional__cleanup" ],
     [ "Count", "classScroom_1_1Utils_1_1Count.html", "classScroom_1_1Utils_1_1Count" ],
     [ "Counter", "classScroom_1_1Utils_1_1Counter.html", "classScroom_1_1Utils_1_1Counter" ],
     [ "Counted", "classScroom_1_1Utils_1_1Counted.html", "classScroom_1_1Utils_1_1Counted" ],

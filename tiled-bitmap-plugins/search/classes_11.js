@@ -5,8 +5,6 @@ var searchData=
   ['threadpool',['ThreadPool',['../classThreadPool.html',1,'']]],
   ['threadwaiter',['ThreadWaiter',['../classanonymous__namespace_02threadpoolimpl_8cc_03_1_1ThreadWaiter.html',1,'anonymous_namespace{threadpoolimpl.cc}']]],
   ['tiff',['Tiff',['../classTiff.html',1,'']]],
-  ['tiffpresentation',['TiffPresentation',['../classTiffPresentation.html',1,'']]],
-  ['tiffpresentationwrapper',['TiffPresentationWrapper',['../classTiffPresentationWrapper.html',1,'']]],
   ['tile',['Tile',['../classTile.html',1,'']]],
   ['tiledbitmap',['TiledBitmap',['../classTiledBitmap.html',1,'']]],
   ['tiledbitmapinterface',['TiledBitmapInterface',['../classTiledBitmapInterface.html',1,'']]],

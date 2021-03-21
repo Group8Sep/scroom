@@ -3,6 +3,7 @@ var classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPre
     [ "Ptr", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a6f61cd22b603c1a063c918d99954afff", null ],
     [ "Views", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#adadaf17298cd39062904053f33e1163f", null ],
     [ "TiledBitmapPresentation", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a9adef95e0e33535f8eae9efbddbaed72", null ],
+    [ "add", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a77a67abc662be4945f512ebf34ab7518", null ],
     [ "clearCaches", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#aaff468090d57f28902ed80b3db628b3d", null ],
     [ "create", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#ad342babfeae8bd7fbbe4ba4c81513a25", null ],
     [ "disableTransparentBackground", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a884388f4a9c3cbd7fc833aa3e23b4b52", null ],
@@ -27,6 +28,7 @@ var classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPre
     [ "pipetteLayerOperation", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#ad36fe40b3793407726915be296cf3af8", null ],
     [ "properties", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#acd646459d06eed3a7ff936f054fc63a5", null ],
     [ "rect", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#aca4abc9cf480ae179e3dd255ddc3a705", null ],
+    [ "stuff", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a09f6dc59fbd08bcfb03ca255c0325f94", null ],
     [ "tbi", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a86c5f1a23208e9dcbeee319be0078eef", null ],
     [ "views", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#ab03f22e1a73aa438998bba87ad63b4b4", null ]
 ];

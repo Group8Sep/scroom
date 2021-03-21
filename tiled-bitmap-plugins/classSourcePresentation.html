@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-223-gedc50b3</span>
+   &#160;<span id="projectnumber">0.11.1-226-g44c45ed</span>
    </div>
   </td>
  </tr>
@@ -98,8 +98,8 @@ Inheritance diagram for SourcePresentation:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSourcePresentation__inherit__graph.png" border="0" usemap="#SourcePresentation_inherit__map" alt="Inheritance graph"/></div>
 <map name="SourcePresentation_inherit__map" id="SourcePresentation_inherit__map">
-<area shape="rect" id="node3" href="classTiffPresentation.html" title="{TiffPresentation\n|&#45; fileName\l&#45; tif\l&#45; height\l&#45; width\l&#45; tbi\l&#45; bps\l&#45; spp\l&#45; properties\l&#45; views\l&#45; colormapHelper\l&#45; transformationData\l&#45; pipetteLayerOperation\l|+ ~TiffPresentation()\l+ TiffPresentation()\l+ TiffPresentation()\l+ operator=()\l+ operator=()\l+ destroy()\l+ load()\l+ getTransformationData()\l+ getRect()\l+ redraw()\land 17 more...\l+ create()\l&#45; TiffPresentation()\l&#45; clearCaches()\l}" alt="" coords="5,344,203,773"/>
-<area shape="rect" id="node2" href="classInterface.html" title="{Interface\n||+ Interface()\l+ Interface()\l+ operator=()\l+ Interface()\l+ operator=()\l+ ~Interface()\l}" alt="" coords="46,5,162,156"/>
+<area shape="rect" id="node3" href="classScroom_1_1Tiff_1_1Source.html" title="{Scroom::Tiff::Source\n|&#45; fileName\l&#45; preOpenedTif\l&#45; tif\l&#45; bmd\l|+ reset()\l+ fillTiles()\l+ done()\l+ getName()\l+ create()\l&#45; Source()\l}" alt="" coords="5,359,157,553"/>
+<area shape="rect" id="node2" href="classInterface.html" title="{Interface\n||+ Interface()\l+ Interface()\l+ operator=()\l+ Interface()\l+ operator=()\l+ ~Interface()\l}" alt="" coords="23,5,139,156"/>
 </map>
 </div>
 <div class="dynheader">
@@ -124,6 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afd0e0ab48d0b098f2d401f2ceebda539"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSourcePresentation.html#afd0e0ab48d0b098f2d401f2ceebda539">done</a> ()=0</td></tr>
 <tr class="memdesc:afd0e0ab48d0b098f2d401f2ceebda539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Done reading bitmap data.  <a href="#afd0e0ab48d0b098f2d401f2ceebda539">More...</a><br /></td></tr>
 <tr class="separator:afd0e0ab48d0b098f2d401f2ceebda539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e6b0634b600198b6fe48a0fd6390fb"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSourcePresentation.html#a71e6b0634b600198b6fe48a0fd6390fb">getName</a> ()=0</td></tr>
+<tr class="separator:a71e6b0634b600198b6fe48a0fd6390fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -189,7 +191,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Done reading bitmap data. </p>
 <p>Any open files can be closed now </p>
 
-<p>Implemented in <a class="el" href="classTiffPresentation.html#a1d8b4deb2124679bb8829fe9a7859245">TiffPresentation</a>.</p>
+<p>Implemented in <a class="el" href="classScroom_1_1Tiff_1_1Source.html#aea18cd0d4263ecdb2db438bf664ee5db">Scroom::Tiff::Source</a>.</p>
 
 </div>
 </div>
@@ -259,7 +261,34 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classTiffPresentation.html#a3bf5c67d5756caf72fe82501f15bff42">TiffPresentation</a>.</p>
+<p>Implemented in <a class="el" href="classScroom_1_1Tiff_1_1Source.html#aeacc7ab5c8d2e4f67c763f92ba5f2b6e">Scroom::Tiff::Source</a>.</p>
+
+</div>
+</div>
+<a id="a71e6b0634b600198b6fe48a0fd6390fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e6b0634b600198b6fe48a0fd6390fb">&#9670;&nbsp;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string SourcePresentation::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classScroom_1_1Tiff_1_1Source.html#ae9db526d2b02a92f819240f7ceb66ff1">Scroom::Tiff::Source</a>.</p>
 
 </div>
 </div>

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-223-gedc50b3</span>
+   &#160;<span id="projectnumber">0.11.1-226-g44c45ed</span>
    </div>
   </td>
  </tr>
@@ -197,7 +197,7 @@ bitmaps") are typically scheduled here, such that only one such task runs at a t
 
 <p class="definition">Definition at line <a class="el" href="threadpoolimpl_8cc_source.html#l00470">470</a> of file <a class="el" href="threadpoolimpl_8cc_source.html">threadpoolimpl.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pipette_8cc_source.html#l00124">PipetteHandler::onSelectionEnd()</a>, and <a class="el" href="tiled-bitmap_8cc_source.html#l00036">scheduleLoadingBitmap()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pipette_8cc_source.html#l00124">PipetteHandler::onSelectionEnd()</a>, and <a class="el" href="tiled-bitmap_8cc_source.html#l00030">Scroom::TiledBitmap::scheduleLoadingBitmap()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;{</div><div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  <span class="keyword">static</span> <a class="code" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a> sequentially = NotifyThreadList&lt;ThreadPool&gt;(<a class="code" href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a>(<span class="keyword">new</span> <a class="code" href="classThreadPool.html">ThreadPool</a>(1)), <span class="stringliteral">&quot;Sequential threadpool&quot;</span>);</div><div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;</div><div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;  <span class="keywordflow">return</span> sequentially;</div><div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;}</div><div class="ttc" id="classThreadPool_html"><div class="ttname"><a href="classThreadPool.html">ThreadPool</a></div><div class="ttdoc">Generic threadpool. </div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00052">threadpool.hh:52</a></div></div>
 <div class="ttc" id="classThreadPool_html_a60143f0f2001f70595bef06790d77af5"><div class="ttname"><a href="classThreadPool.html#a60143f0f2001f70595bef06790d77af5">ThreadPool::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; ThreadPool &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="threadpool_8hh_source.html#l00175">threadpool.hh:175</a></div></div>
 </div><!-- fragment -->

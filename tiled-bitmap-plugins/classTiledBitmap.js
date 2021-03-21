@@ -19,6 +19,7 @@ var classTiledBitmap =
     [ "open", "classTiledBitmap.html#ad17bc560de133e417b01d2f34d731038", null ],
     [ "operator=", "classTiledBitmap.html#a97bcef199c0c95bd63703083283a63dd", null ],
     [ "operator=", "classTiledBitmap.html#a0a1a6354cbd694d8965e9c998d6678e6", null ],
+    [ "progressInterface", "classTiledBitmap.html#abbf313b0d61d3e746866fa45e0a8c80c", null ],
     [ "redraw", "classTiledBitmap.html#a98c2d60fc0736a77ab18aeeb461a1da8", null ],
     [ "setSource", "classTiledBitmap.html#a207620c6b7460ae0e9c7425f3c4c592c", null ],
     [ "tileCreated", "classTiledBitmap.html#a76da6add0fb25859acf302a21006ea85", null ],
