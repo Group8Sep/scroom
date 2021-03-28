@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-227-g8b8b7ee</span>
+   &#160;<span id="projectnumber">0.11.1-229-g432b9bc</span>
    </div>
   </td>
  </tr>
@@ -341,7 +341,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="cairo-helpers_8cc_source.html#l00062">62</a> of file <a class="el" href="cairo-helpers_8cc_source.html">cairo-helpers.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="cairo-helpers_8cc_source.html#l00074">drawOutOfBoundsWithBackground()</a>, <a class="el" href="cairo-helpers_8cc_source.html#l00083">drawOutOfBoundsWithBackgroundColor()</a>, <a class="el" href="cairo-helpers_8cc_source.html#l00093">drawOutOfBoundsWithoutBackground()</a>, and <a class="el" href="layeroperations_8cc_source.html#l00078">CommonOperations::drawState()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cairo-helpers_8cc_source.html#l00074">drawOutOfBoundsWithBackground()</a>, <a class="el" href="cairo-helpers_8cc_source.html#l00083">drawOutOfBoundsWithBackgroundColor()</a>, <a class="el" href="cairo-helpers_8cc_source.html#l00093">drawOutOfBoundsWithoutBackground()</a>, and <a class="el" href="layeroperations_8cc_source.html#l00077">CommonOperations::drawState()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  cairo_save(cr);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  c.setColor(cr);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="cairo-helpers_8cc.html#a7eaa96a970e5ff603afbea0a3a0bf761">setClip</a>(cr, viewArea);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  cairo_paint(cr);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  cairo_restore(cr);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div><div class="ttc" id="cairo-helpers_8cc_html_a7eaa96a970e5ff603afbea0a3a0bf761"><div class="ttname"><a href="cairo-helpers_8cc.html#a7eaa96a970e5ff603afbea0a3a0bf761">setClip</a></div><div class="ttdeci">void setClip(cairo_t *cr, double x, double y, double width, double height)</div><div class="ttdef"><b>Definition:</b> <a href="cairo-helpers_8cc_source.html#l00047">cairo-helpers.cc:47</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -484,7 +484,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="cairo-helpers_8cc_source.html#l00047">47</a> of file <a class="el" href="cairo-helpers_8cc_source.html">cairo-helpers.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="layeroperations_8cc_source.html#l00167">CommonOperations::draw()</a>, <a class="el" href="cairo-helpers_8cc_source.html#l00062">drawRectangle()</a>, and <a class="el" href="cairo-helpers_8cc_source.html#l00057">setClip()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="layeroperations_8cc_source.html#l00166">CommonOperations::draw()</a>, <a class="el" href="cairo-helpers_8cc_source.html#l00062">drawRectangle()</a>, and <a class="el" href="cairo-helpers_8cc_source.html#l00057">setClip()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  cairo_move_to(cr, x, y);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  cairo_line_to(cr, x + width, y);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  cairo_line_to(cr, x + width, y + height);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  cairo_line_to(cr, x, y + height);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  cairo_line_to(cr, x, y);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  cairo_clip(cr);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
