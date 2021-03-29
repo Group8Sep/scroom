@@ -2,8 +2,7 @@ var searchData=
 [
   ['wait',['wait',['../classanonymous__namespace_02threadpoolimpl_8cc_03_1_1ThreadList.html#abf93f2d0fa75c03620dd3ef3763728ca',1,'anonymous_namespace{threadpoolimpl.cc}::ThreadList']]],
   ['waiter',['waiter',['../namespaceanonymous__namespace_02threadpoolimpl_8cc_03.html#a32b816d0a8f58ae1cd2d35e52e0b93ee',1,'anonymous_namespace{threadpoolimpl.cc}']]],
-  ['waiting',['WAITING',['../classScroom_1_1Utils_1_1ProgressStateInterface.html#af17b9367dd613c97f7a56479638aff55a15ae6d5362ebc47965ad0d4ba88d51ee',1,'Scroom::Utils::ProgressStateInterface::WAITING()'],['../classFileOperation.html#af00314f9a1a2e07c59635a81090bcba9',1,'FileOperation::waiting()']]],
-  ['waitingmutex',['waitingMutex',['../classFileOperation.html#a07f8f52592dfe936f8eac90bb2a78259',1,'FileOperation']]],
+  ['waiting',['WAITING',['../classScroom_1_1Utils_1_1ProgressStateInterface.html#af17b9367dd613c97f7a56479638aff55a15ae6d5362ebc47965ad0d4ba88d51ee',1,'Scroom::Utils::ProgressStateInterface']]],
   ['wasdisabled',['wasDisabled',['../classPipetteHandler.html#aea8c9cbc3fb7450069b71411a092a91f',1,'PipetteHandler']]],
   ['weak',['weak',['../classThreadPool_1_1Queue.html#aa317640e62284800e58120f8d702ba20',1,'ThreadPool::Queue']]],
   ['weakdata',['weakData',['../classScroom_1_1MemoryBlobs_1_1Blob.html#ae30591679a07ec57c3d8b6a55fecec01',1,'Scroom::MemoryBlobs::Blob']]],
@@ -12,7 +11,7 @@ var searchData=
   ['weaktoken',['WeakToken',['../namespaceScroom_1_1Bookkeeping.html#a9a246ed917abe21b6bc95f463e992c94',1,'Scroom::Bookkeeping']]],
   ['whitish',['whitish',['../classMonochromeColormapHelper.html#ae1561b1293e79049b7d0f83119bccaf4',1,'MonochromeColormapHelper']]],
   ['widgets',['widgets',['../classSidebarManager.html#af0dbdadde464305fa2234da905494438',1,'SidebarManager']]],
-  ['width',['width',['../classTile.html#adbb086e3041864b3079bd5088dc571fb',1,'Tile::width()'],['../classConstTile.html#a1c76a49105f44d4091d359f16bf9bf84',1,'ConstTile::width()'],['../classLayer.html#a724d3020ddbe5f9280caa325541e70a3',1,'Layer::width()'],['../classTiffPresentation.html#a41967ab3b41a41aa932b0e85ace2b1cf',1,'TiffPresentation::width()'],['../classScroom_1_1Utils_1_1Rectangle.html#aac53b13b110251e6666a6e8499c19f27',1,'Scroom::Utils::Rectangle::width()'],['../structSelection.html#a272d8037d9c5dbba114fe0931232ee4c',1,'Selection::width()']]],
+  ['width',['width',['../classTile.html#adbb086e3041864b3079bd5088dc571fb',1,'Tile::width()'],['../classConstTile.html#a1c76a49105f44d4091d359f16bf9bf84',1,'ConstTile::width()'],['../classLayer.html#a724d3020ddbe5f9280caa325541e70a3',1,'Layer::width()'],['../classScroom_1_1Utils_1_1Rectangle.html#aac53b13b110251e6666a6e8499c19f27',1,'Scroom::Utils::Rectangle::width()'],['../structSelection.html#a272d8037d9c5dbba114fe0931232ee4c',1,'Selection::width()']]],
   ['window',['window',['../classView.html#a6842509e655b042cbd7af3fe10ded06f',1,'View']]],
   ['windowpointtopresentationpoint',['windowPointToPresentationPoint',['../classView.html#a5a4745103b54de5a823c53f2b204a45b',1,'View']]],
   ['work',['work',['../classThreadPool.html#aa18fc8ec52d22c4ed14f781d22730ad3',1,'ThreadPool']]],
@@ -20,5 +19,5 @@ var searchData=
   ['workinterface',['WorkInterface',['../classWorkInterface.html',1,'']]],
   ['workinterface_2ehh',['workinterface.hh',['../workinterface_8hh.html',1,'']]],
   ['wrap',['wrap',['../namespaceScroom_1_1GtkHelpers.html#a968ac1d1becfe0819715f89916a81248',1,'Scroom::GtkHelpers']]],
-  ['wrapper',['Wrapper',['../classScroom_1_1GtkHelpers_1_1Wrapper.html',1,'Scroom::GtkHelpers::Wrapper'],['../classScroom_1_1GtkHelpers_1_1Detail_1_1Wrapper.html',1,'Scroom::GtkHelpers::Detail::Wrapper'],['../classScroom_1_1GtkHelpers_1_1Wrapper.html#aefa0d79762e3da33a561fd919b0cdb3e',1,'Scroom::GtkHelpers::Wrapper::Wrapper()'],['../classScroom_1_1GtkHelpers_1_1Detail_1_1Wrapper.html#ae2dc7c3f4c732a6523b02e56d119edd8',1,'Scroom::GtkHelpers::Detail::Wrapper::Wrapper()']]]
+  ['wrapper',['Wrapper',['../classScroom_1_1GtkHelpers_1_1Detail_1_1Wrapper.html',1,'Scroom::GtkHelpers::Detail::Wrapper'],['../classScroom_1_1GtkHelpers_1_1Wrapper.html',1,'Scroom::GtkHelpers::Wrapper'],['../classScroom_1_1GtkHelpers_1_1Wrapper.html#aefa0d79762e3da33a561fd919b0cdb3e',1,'Scroom::GtkHelpers::Wrapper::Wrapper()'],['../classScroom_1_1GtkHelpers_1_1Detail_1_1Wrapper.html#ae2dc7c3f4c732a6523b02e56d119edd8',1,'Scroom::GtkHelpers::Detail::Wrapper::Wrapper()']]]
 ];

@@ -8,7 +8,6 @@ var searchData=
   ['desiredstate',['desiredState',['../classTileViewState.html#a29b0becb1c1c438a908679ce9258db48',1,'TileViewState']]],
   ['devmode',['devMode',['../classPluginManager.html#a3087e1afe6a7075bc0a3a14da3acf602',1,'PluginManager']]],
   ['dirs',['dirs',['../classPluginManager.html#a15f829b11a018ca1baff4f688365750e',1,'PluginManager']]],
-  ['done',['done',['../classLoadOperation.html#a007ac2637dafe19611ebcfd94bb8d2f4',1,'LoadOperation']]],
   ['drawingarea',['drawingArea',['../classView.html#accd8ae17f10cca1c351ac03a33963b70',1,'View']]],
   ['drawingareaheight',['drawingAreaHeight',['../classView.html#abdc971eac08e9b97748cc05a1e528d49',1,'View']]],
   ['drawingareawidth',['drawingAreaWidth',['../classView.html#a3021316c974469f0463d410b2a0b3c77',1,'View']]]

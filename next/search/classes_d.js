@@ -15,6 +15,7 @@ var searchData=
   ['point_3c_20double_20_3e',['Point&lt; double &gt;',['../classScroom_1_1Utils_1_1Point.html',1,'Scroom::Utils']]],
   ['postrenderer',['PostRenderer',['../classPostRenderer.html',1,'']]],
   ['presentationbase',['PresentationBase',['../classPresentationBase.html',1,'']]],
+  ['presentationbasesimple',['PresentationBaseSimple',['../classPresentationBaseSimple.html',1,'']]],
   ['presentationdata',['PresentationData',['../classSizeDeterminer_1_1PresentationData.html',1,'SizeDeterminer']]],
   ['presentationinterface',['PresentationInterface',['../classPresentationInterface.html',1,'']]],
   ['presentationmock',['PresentationMock',['../classPresentationMock.html',1,'']]],

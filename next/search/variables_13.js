@@ -1,16 +1,14 @@
 var searchData=
 [
   ['t',['t',['../classScroom_1_1Bookkeeping_1_1Detail_1_1MapTokenImpl.html#a296eaa4df7c9cbf673734b297da4764b',1,'Scroom::Bookkeeping::Detail::MapTokenImpl::t()'],['../classScroom_1_1Utils_1_1Timer.html#a512166efa5805a06ca14f17195217006',1,'Scroom::Utils::Timer::t()'],['../classanonymous__namespace_02threadpoolimpl_8cc_03_1_1NotifyThreadList.html#a43ee376e1bae7ebd37ac5fdfd259b0e7',1,'anonymous_namespace{threadpoolimpl.cc}::NotifyThreadList::t()']]],
-  ['target',['target',['../classLoadOperation.html#a2ea06133ccdfbc079c04c17b880d2e43',1,'LoadOperation']]],
   ['targettile',['targetTile',['../classLayerCoordinator.html#a62cf504f112d2bcefde5f28cc8fbea0a',1,'LayerCoordinator']]],
   ['targettiledata',['targetTileData',['../classLayerCoordinator.html#a1999356ab8aa0850573f166cc67dd6e5',1,'LayerCoordinator']]],
-  ['tbi',['tbi',['../classTiffPresentation.html#af86729f2d170f613f879f7ee24f12c8b',1,'TiffPresentation']]],
+  ['tbi',['tbi',['../classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a86c5f1a23208e9dcbeee319be0078eef',1,'anonymous_namespace{tiledbitmappresentation.cc}::TiledBitmapPresentation']]],
   ['tbvd',['tbvd',['../classTileViewState.html#a73e07f6a0d86a50ccfc9102b65c2141a',1,'TileViewState']]],
-  ['thepresentation',['thePresentation',['../classLoadOperation.html#af501fd502cfb009f25023317e5096c67',1,'LoadOperation']]],
   ['threadlist',['threadList',['../classanonymous__namespace_02threadpoolimpl_8cc_03_1_1ThreadWaiter.html#a0b01f8545139812908055c33497d8cb1',1,'anonymous_namespace{threadpoolimpl.cc}::ThreadWaiter']]],
   ['threadpool',['threadPool',['../classDataFetcher.html#a45e10065fbb9e73028f6fe866e7507aa',1,'DataFetcher']]],
   ['threads',['threads',['../classThreadPool.html#a02868ba7fdf289e346b325bee1c346ca',1,'ThreadPool::threads()'],['../classanonymous__namespace_02threadpoolimpl_8cc_03_1_1ThreadList.html#ad97651e0256cc8db36501d834fff73c3',1,'anonymous_namespace{threadpoolimpl.cc}::ThreadList::threads()']]],
-  ['tif',['tif',['../classTiffPresentation.html#aac35dad6bbff309dfe6021632190d84d',1,'TiffPresentation']]],
+  ['tif',['tif',['../classScroom_1_1Tiff_1_1Source.html#a5666b3e44b95672cf088a7523f76eff5',1,'Scroom::Tiff::Source']]],
   ['tile',['tile',['../classCompressedTile.html#a690dea215c3d52f42c35c7a7d242fc52',1,'CompressedTile::tile()'],['../classTileViewState.html#a6ed489ad4c3346c14fd15d3ff46924a4',1,'TileViewState::tile()']]],
   ['tilecount',['tileCount',['../classTiledBitmap.html#abec813ddb2f08f62dbacd234b21ae83f',1,'TiledBitmap']]],
   ['tiledata',['tileData',['../classCompressedTile.html#ab9f3cfcf96b745f1421b4c87737bdf2b',1,'CompressedTile']]],
@@ -23,7 +21,8 @@ var searchData=
   ['toolbarcount',['toolBarCount',['../classView.html#a71ff40556a2a42e00a7ccfb76b005c5d',1,'View']]],
   ['toolbarseparator',['toolBarSeparator',['../classView.html#ab832ddee7f1270101c05330c4a69f649',1,'View']]],
   ['tools',['tools',['../classView.html#ae91605291354259fe55edf6bfef4059e',1,'View']]],
-  ['transformationdata',['transformationData',['../classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a',1,'TransformPresentation::transformationData()'],['../classTiffPresentation.html#a2352068d634d34fe9e16d02f768a1067',1,'TiffPresentation::transformationData()']]],
+  ['transformationdata',['transformationData',['../classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a',1,'TransformPresentation']]],
   ['transparent_5fbackground_5fproperty_5fname',['TRANSPARENT_BACKGROUND_PROPERTY_NAME',['../colormappable_8hh.html#aa9ccccaacd6a2d008759fcaac53b9bf2',1,'colormappable.hh']]],
-  ['transparentbackground',['transparentBackground',['../classMonochromeColormapHelper.html#aa54b09eb5b74f13bb333f5211893240e',1,'MonochromeColormapHelper']]]
+  ['transparentbackground',['transparentBackground',['../classMonochromeColormapHelper.html#aa54b09eb5b74f13bb333f5211893240e',1,'MonochromeColormapHelper']]],
+  ['type',['type',['../structScroom_1_1TiledBitmap_1_1BitmapMetaData.html#a253565042c3ccff0767b1a71f168158e',1,'Scroom::TiledBitmap::BitmapMetaData']]]
 ];

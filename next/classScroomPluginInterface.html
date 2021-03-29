@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-211-g203b929</span>
+   &#160;<span id="projectnumber">0.11.1-230-g6e488eb</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ Inheritance diagram for ScroomPluginInterface:</div>
 <div class="dyncontent">
 <div class="center"><img src="classScroomPluginInterface__inherit__graph.png" border="0" usemap="#ScroomPluginInterface_inherit__map" alt="Inheritance graph"/></div>
 <map name="ScroomPluginInterface_inherit__map" id="ScroomPluginInterface_inherit__map">
-<area shape="rect" id="node3" href="classPluginManager.html" title="{PluginManager\n|&#45; devMode\l&#45; state\l&#45; dirs\l&#45; currentDir\l&#45; files\l&#45; currentFile\l&#45; pluginInformationList\l&#45; newPresentationInterfaces\l&#45; newAggregateInterfaces\l&#45; openPresentationInterfaces\l&#45; openInterfaces\l&#45; viewObservers\l&#45; presentationObservers\l|+ doWork()\l+ addHook()\l+ registerNewPresentationInterface()\l+ registerNewAggregateInterface()\l+ registerOpenPresentation\lInterface()\l+ registerOpenInterface()\l+ registerViewObserver()\l+ registerPresentationObserver()\l+ getNewPresentationInterfaces()\l+ getNewAggregateInterfaces()\l+ getOpenPresentationInterfaces()\l+ getOpenInterfaces()\l+ getViewObservers()\l+ getPresentationObservers()\l+ create()\l+ getInstance()\l&#45; setStatusBarMessage()\l&#45; PluginManager()\l}" alt="" coords="5,417,272,935"/>
+<area shape="rect" id="node3" href="classPluginManager.html" title="{PluginManager\n|&#45; devMode\l&#45; state\l&#45; dirs\l&#45; currentDir\l&#45; files\l&#45; currentFile\l&#45; pluginInformationList\l&#45; newPresentationInterfaces\l&#45; newAggregateInterfaces\l&#45; openPresentationInterfaces\l&#45; openTiledBitmapInterfaces\l&#45; openInterfaces\l&#45; viewObservers\l&#45; presentationObservers\l|+ doWork()\l+ addHook()\l+ registerNewPresentationInterface()\l+ registerNewAggregateInterface()\l+ registerOpenPresentation\lInterface()\l+ registerOpenTiledBitmapInterface()\l+ registerOpenInterface()\l+ registerViewObserver()\l+ registerPresentationObserver()\l+ getNewPresentationInterfaces()\land 6 more...\l+ create()\l+ getInstance()\l&#45; setStatusBarMessage()\l&#45; PluginManager()\l}" alt="" coords="5,432,273,920"/>
 <area shape="rect" id="node2" href="classInterface.html" title="{Interface\n||+ Interface()\l+ Interface()\l+ operator=()\l+ Interface()\l+ operator=()\l+ ~Interface()\l}" alt="" coords="81,5,197,156"/>
 </map>
 </div>
@@ -121,6 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae695a416b703bf195830fde9d1850ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9fb29cc2661840ad2053a88eb2d6748"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroomPluginInterface.html#ae9fb29cc2661840ad2053a88eb2d6748">registerOpenPresentationInterface</a> (const std::string &amp;identifier, <a class="el" href="classOpenPresentationInterface.html#a024ac5be2e623d00e52bea88d45781ac">OpenPresentationInterface::Ptr</a> openPresentationInterface)=0</td></tr>
 <tr class="separator:ae9fb29cc2661840ad2053a88eb2d6748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf278248e6a61c5f95d7a37943b0b32"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroomPluginInterface.html#a9bf278248e6a61c5f95d7a37943b0b32">registerOpenTiledBitmapInterface</a> (const std::string &amp;identifier, boost::shared_ptr&lt; <a class="el" href="classScroom_1_1TiledBitmap_1_1OpenTiledBitmapInterface.html">Scroom::TiledBitmap::OpenTiledBitmapInterface</a> &gt; openTiledBitmapInterface)=0</td></tr>
+<tr class="separator:a9bf278248e6a61c5f95d7a37943b0b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c064c4635f01c41a24abf631c682a3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroomPluginInterface.html#aa8c064c4635f01c41a24abf631c682a3">registerOpenInterface</a> (const std::string &amp;identifier, <a class="el" href="classOpenInterface.html#a8987718d6c296aa9682bc024a1467270">OpenInterface::Ptr</a> openInterface)=0</td></tr>
 <tr class="separator:aa8c064c4635f01c41a24abf631c682a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad65598609a6044b1b89ece482fe07bb0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroomPluginInterface.html#ad65598609a6044b1b89ece482fe07bb0">registerViewObserver</a> (const std::string &amp;identifier, <a class="el" href="classViewObserver.html#acc9e0991763361f294500ea2c9979954">ViewObserver::Ptr</a> observer)=0</td></tr>
@@ -146,7 +148,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="scroominterface_8hh_source.html#l00094">94</a> of file <a class="el" href="scroominterface_8hh_source.html">scroominterface.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scroominterface_8hh_source.html#l00102">102</a> of file <a class="el" href="scroominterface_8hh_source.html">scroominterface.hh</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a312afb591ade347d5e06f76d042adc1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a312afb591ade347d5e06f76d042adc1c">&#9670;&nbsp;</a></span>Ptr</h2>
@@ -160,7 +162,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scroominterface_8hh_source.html#l00097">97</a> of file <a class="el" href="scroominterface_8hh_source.html">scroominterface.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scroominterface_8hh_source.html#l00105">105</a> of file <a class="el" href="scroominterface_8hh_source.html">scroominterface.hh</a>.</p>
 
 </div>
 </div>
@@ -314,6 +316,44 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classPluginManager.html#aefafd32717c2c4fc20cfb96c0e72e4a5">PluginManager</a>.</p>
+
+</div>
+</div>
+<a id="a9bf278248e6a61c5f95d7a37943b0b32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bf278248e6a61c5f95d7a37943b0b32">&#9670;&nbsp;</a></span>registerOpenTiledBitmapInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ScroomPluginInterface::registerOpenTiledBitmapInterface </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>identifier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="classScroom_1_1TiledBitmap_1_1OpenTiledBitmapInterface.html">Scroom::TiledBitmap::OpenTiledBitmapInterface</a> &gt;&#160;</td>
+          <td class="paramname"><em>openTiledBitmapInterface</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classPluginManager.html#a7075491b02317be7560b7571cdbcdb1f">PluginManager</a>.</p>
 
 </div>
 </div>

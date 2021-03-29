@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['empty',['Empty',['../namespaceScroom_1_1Utils.html#a053ab918264fd8b7dca49cacf95060d9',1,'Scroom::Utils']]],
   ['enabled',['enabled',['../classMeasureHandler.html#ad1f0ab100e7270bb54688bb8e071cfc6',1,'MeasureHandler::enabled()'],['../classPipetteHandler.html#a2ce9973151e38a38fe910c230028c12d',1,'PipetteHandler::enabled()']]],
   ['end',['end',['../structSelection.html#aa9f0d2ba632840298b9c04fd68393a79',1,'Selection']]],
   ['endsat',['endsAt',['../structSelection.html#a311320b610bbd371df0d6fff72095d97',1,'Selection']]],

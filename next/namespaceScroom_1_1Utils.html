@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1-211-g203b929</span>
+   &#160;<span id="projectnumber">0.11.1-230-g6e488eb</span>
    </div>
   </td>
  </tr>
@@ -108,6 +108,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html">Observable</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classScroom_1_1Utils_1_1Base.html" title="Base class that inherits from boost::enable_shared_from_this. ">Base</a> class for something that accepts observers.  <a href="classScroom_1_1Utils_1_1Observable.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1on__scope__exit.html">on_scope_exit</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1optional__cleanup.html">optional_cleanup</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Point.html">Point</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,6 +202,11 @@ Functions</h2></td></tr>
 <tr class="separator:a75073e42c960a7f5adbd862de366dca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93a5e37a0f4affbe05b5a1de2c51a900"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Rectangle</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1Utils.html#a93a5e37a0f4affbe05b5a1de2c51a900">roundOutward</a> (<a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Rectangle</a>&lt; double &gt; r)</td></tr>
 <tr class="separator:a93a5e37a0f4affbe05b5a1de2c51a900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053ab918264fd8b7dca49cacf95060d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Stuff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1Utils.html#a053ab918264fd8b7dca49cacf95060d9">Empty</a> ()</td></tr>
+<tr class="separator:a053ab918264fd8b7dca49cacf95060d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656a62a7b83145b5ef24da8e62277bf8"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:a656a62a7b83145b5ef24da8e62277bf8"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1Utils.html#a656a62a7b83145b5ef24da8e62277bf8">on_destruction</a> (F f)</td></tr>
+<tr class="separator:a656a62a7b83145b5ef24da8e62277bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0688885798e7f3f3c0c4d510577119f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1Utils.html#a0688885798e7f3f3c0c4d510577119f4">dumpCounts</a> ()</td></tr>
 <tr class="separator:a0688885798e7f3f3c0c4d510577119f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -303,10 +312,40 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="counter_8cc_source.html#l00021">21</a> of file <a class="el" href="counter_8cc_source.html">counter.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="counter_8cc_source.html#l00020">20</a> of file <a class="el" href="counter_8cc_source.html">counter.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilities_8hh_source.html#l00064">Scroom::Utils::Base::shared_from_this()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{ <a class="code" href="namespaceanonymous__namespace_02progressbarmanager_8cc_03.html#a1cd7ce2821db8912b252ffaa3ec97af9">Counter::instance</a>()-&gt;dump(); }</div><div class="ttc" id="namespaceanonymous__namespace_02progressbarmanager_8cc_03_html_a1cd7ce2821db8912b252ffaa3ec97af9"><div class="ttname"><a href="namespaceanonymous__namespace_02progressbarmanager_8cc_03.html#a1cd7ce2821db8912b252ffaa3ec97af9">anonymous_namespace{progressbarmanager.cc}::instance</a></div><div class="ttdeci">ProgressBarPulser::Ptr instance()</div><div class="ttdef"><b>Definition:</b> <a href="progressbarmanager_8cc_source.html#l00043">progressbarmanager.cc:43</a></div></div>
+<p class="reference">Referenced by <a class="el" href="utilities_8hh_source.html#l00115">Scroom::Utils::Base::shared_from_this()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{ <a class="code" href="namespaceanonymous__namespace_02progressbarmanager_8cc_03.html#a1cd7ce2821db8912b252ffaa3ec97af9">Counter::instance</a>()-&gt;dump(); }</div><div class="ttc" id="namespaceanonymous__namespace_02progressbarmanager_8cc_03_html_a1cd7ce2821db8912b252ffaa3ec97af9"><div class="ttname"><a href="namespaceanonymous__namespace_02progressbarmanager_8cc_03.html#a1cd7ce2821db8912b252ffaa3ec97af9">anonymous_namespace{progressbarmanager.cc}::instance</a></div><div class="ttdeci">ProgressBarPulser::Ptr instance()</div><div class="ttdef"><b>Definition:</b> <a href="progressbarmanager_8cc_source.html#l00043">progressbarmanager.cc:43</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a053ab918264fd8b7dca49cacf95060d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a053ab918264fd8b7dca49cacf95060d9">&#9670;&nbsp;</a></span>Empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Stuff</a> Scroom::Utils::Empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stuff_8hh_source.html#l00024">24</a> of file <a class="el" href="stuff_8hh_source.html">stuff.hh</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="tiff_8cc_source.html#l00055">Tiff::open()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Stuff</a>(); }</div><div class="ttc" id="namespaceScroom_1_1Utils_html_af120558cf332de898d5e994cc6645d9a"><div class="ttname"><a href="namespaceScroom_1_1Utils.html#af120558cf332de898d5e994cc6645d9a">Scroom::Utils::Stuff</a></div><div class="ttdeci">boost::shared_ptr&lt; void &gt; Stuff</div><div class="ttdoc">Stuff is a pointer to some private data. </div><div class="ttdef"><b>Definition:</b> <a href="stuff_8hh_source.html#l00020">stuff.hh:20</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -420,10 +459,10 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="point_8hh_source.html#l00096">96</a> of file <a class="el" href="point_8hh_source.html">point.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point_8hh_source.html#l00099">99</a> of file <a class="el" href="point_8hh_source.html">point.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="presentationinterface_8hh_source.html#l00110">PresentationInterface::getAspectRatio()</a>, and <a class="el" href="transformpresentation_8cc_source.html#l00021">TransformationData::setAspectRatio()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">return</span> Point&lt;T&gt;(x, y);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div></div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="presentationinterface_8hh_source.html#l00110">PresentationInterface::getAspectRatio()</a>, and <a class="el" href="transformpresentation_8cc_source.html#l00030">TransformationData::setAspectRatio()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">return</span> Point&lt;T&gt;(x, y);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab180ef35718c488735a883d3798c6c8b"></a>
@@ -500,6 +539,30 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="linearsegment_8hh_source.html#l00197">197</a> of file <a class="el" href="linearsegment_8hh_source.html">linearsegment.hh</a>.</p>
 <div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    {</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      <span class="keywordflow">return</span> Segment&lt;T&gt;(start, size);</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a656a62a7b83145b5ef24da8e62277bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a656a62a7b83145b5ef24da8e62277bf8">&#9670;&nbsp;</a></span>on_destruction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;void&gt; Scroom::Utils::on_destruction </td>
+          <td>(</td>
+          <td class="paramtype">F&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="utilities_8hh_source.html#l00076">76</a> of file <a class="el" href="utilities_8hh_source.html">utilities.hh</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="tiled-bitmap_8cc_source.html#l00030">Scroom::TiledBitmap::scheduleLoadingBitmap()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">return</span> boost::make_shared&lt;on_scope_exit&lt;F&gt;&gt;(std::move(f));</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8d0cf039a6a38245abf928fa5f042c01"></a>
@@ -670,8 +733,8 @@ template&lt;typename T , typename U &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="point_8hh_source.html#l00118">118</a> of file <a class="el" href="point_8hh_source.html">point.hh</a>.</p>
-<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="keyword">using</span> R = <span class="keyword">typename</span> std::common_type&lt;T, U&gt;::type;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      Point&lt;R&gt; result(left);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      result += Point&lt;R&gt;(right);</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="point_8hh_source.html#l00121">121</a> of file <a class="el" href="point_8hh_source.html">point.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <span class="keyword">using</span> R = <span class="keyword">typename</span> std::common_type&lt;T, U&gt;::type;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      Point&lt;R&gt; result(left);</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      result += Point&lt;R&gt;(right);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a687fe942f26a1884e4887aa9694235eb"></a>
@@ -702,8 +765,8 @@ template&lt;typename T , typename U &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="point_8hh_source.html#l00108">108</a> of file <a class="el" href="point_8hh_source.html">point.hh</a>.</p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keyword">using</span> R = <span class="keyword">typename</span> std::common_type&lt;T, U&gt;::type;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      Point&lt;R&gt; result(left);</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      result -= Point&lt;R&gt;(right);</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="point_8hh_source.html#l00111">111</a> of file <a class="el" href="point_8hh_source.html">point.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="keyword">using</span> R = <span class="keyword">typename</span> std::common_type&lt;T, U&gt;::type;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      Point&lt;R&gt; result(left);</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      result -= Point&lt;R&gt;(right);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a75073e42c960a7f5adbd862de366dca5"></a>
@@ -766,8 +829,8 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="point_8hh_source.html#l00102">102</a> of file <a class="el" href="point_8hh_source.html">point.hh</a>.</p>
-<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordflow">return</span> os &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; p.x &lt;&lt; <span class="charliteral">&#39;,&#39;</span> &lt;&lt; p.y &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="point_8hh_source.html#l00105">105</a> of file <a class="el" href="point_8hh_source.html">point.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keywordflow">return</span> os &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; p.x &lt;&lt; <span class="charliteral">&#39;,&#39;</span> &lt;&lt; p.y &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a0caa939fe4026a1877ff417d351afc68"></a>
@@ -898,7 +961,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="rectangle_8hh_source.html#l00328">328</a> of file <a class="el" href="rectangle_8hh_source.html">rectangle.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="layeroperations_8cc_source.html#l00336">Operations1bpp::draw()</a>, <a class="el" href="layeroperations_8cc_source.html#l00455">Operations8bpp::draw()</a>, and <a class="el" href="layeroperations_8cc_source.html#l00678">Operations::draw()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="layeroperations_8cc_source.html#l00335">Operations1bpp::draw()</a>, <a class="el" href="layeroperations_8cc_source.html#l00454">Operations8bpp::draw()</a>, and <a class="el" href="layeroperations_8cc_source.html#l00677">Operations::draw()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    {</div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      <span class="keywordtype">int</span> x      = floor(r.<a class="code" href="classScroom_1_1Utils_1_1Rectangle.html#ad623b0b902d4e2cd1d858300728c78d1">getLeft</a>());</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      <span class="keywordtype">int</span> y      = floor(r.<a class="code" href="classScroom_1_1Utils_1_1Rectangle.html#a23ed938b3f63186f48c5828024a9d6ab">getTop</a>());</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;      <span class="keywordtype">int</span> width  = ceil(r.<a class="code" href="classScroom_1_1Utils_1_1Rectangle.html#ac0a99c1ecbac98201ef36d88bf56eb40">getRight</a>()) - x;</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      <span class="keywordtype">int</span> height = ceil(r.<a class="code" href="classScroom_1_1Utils_1_1Rectangle.html#af497bd1988b10b5e521a82bc05285eed">getBottom</a>()) - y;</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      <span class="keywordflow">return</span> Rectangle&lt;int&gt;(x, y, width, height);</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    }</div><div class="ttc" id="classScroom_1_1Utils_1_1Rectangle_html_ac0a99c1ecbac98201ef36d88bf56eb40"><div class="ttname"><a href="classScroom_1_1Utils_1_1Rectangle.html#ac0a99c1ecbac98201ef36d88bf56eb40">Scroom::Utils::Rectangle::getRight</a></div><div class="ttdeci">value_type getRight() const</div><div class="ttdef"><b>Definition:</b> <a href="rectangle_8hh_source.html#l00118">rectangle.hh:118</a></div></div>
 <div class="ttc" id="classScroom_1_1Utils_1_1Rectangle_html_ad623b0b902d4e2cd1d858300728c78d1"><div class="ttname"><a href="classScroom_1_1Utils_1_1Rectangle.html#ad623b0b902d4e2cd1d858300728c78d1">Scroom::Utils::Rectangle::getLeft</a></div><div class="ttdeci">value_type getLeft() const</div><div class="ttdef"><b>Definition:</b> <a href="rectangle_8hh_source.html#l00114">rectangle.hh:114</a></div></div>
 <div class="ttc" id="classScroom_1_1Utils_1_1Rectangle_html_a23ed938b3f63186f48c5828024a9d6ab"><div class="ttname"><a href="classScroom_1_1Utils_1_1Rectangle.html#a23ed938b3f63186f48c5828024a9d6ab">Scroom::Utils::Rectangle::getTop</a></div><div class="ttdeci">value_type getTop() const</div><div class="ttdef"><b>Definition:</b> <a href="rectangle_8hh_source.html#l00112">rectangle.hh:112</a></div></div>
