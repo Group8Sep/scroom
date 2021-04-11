@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gtkfilefilterinfoptr',['GtkFileFilterInfoPtr',['../loader_8cc.html#ada868b81f68025b18398cb63fc363581',1,'loader.cc']]],
-  ['gtkfuncptr',['GtkFuncPtr',['../gtk-helpers_8cc.html#a4cb247cd7e7f2d00ada2c3a0bcced04b',1,'gtk-helpers.cc']]]
+  ['gtkfilefilterinfoptr',['GtkFileFilterInfoPtr',['../loader_8cc.html#aaa2bcc997dd40c9cba73d9beb88ecbc4',1,'loader.cc']]],
+  ['gtkfuncptr',['GtkFuncPtr',['../gtk-helpers_8cc.html#a3b65a7f555d7809b40228a7d522f3fd1',1,'gtk-helpers.cc']]]
 ];

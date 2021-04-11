@@ -1,7 +1,7 @@
 var classConstTile =
 [
-    [ "Ptr", "classConstTile.html#a81a28d4a0497d21235f38c35462a000c", null ],
-    [ "WeakPtr", "classConstTile.html#ac3214df64c3e522848283d08c54b14f0", null ],
+    [ "Ptr", "classConstTile.html#aa3d92cdcb7283a3957fd4511817ae162", null ],
+    [ "WeakPtr", "classConstTile.html#ac0f01f6c772fd31a13a1145e7030092a", null ],
     [ "ConstTile", "classConstTile.html#a0a30e8ef4bf85ed4f56398c436c61bdd", null ],
     [ "create", "classConstTile.html#a0bee773e41ba11b043df595c9156d599", null ],
     [ "bpp", "classConstTile.html#a2baa3b6df07d32ff84a0b774def1da03", null ],

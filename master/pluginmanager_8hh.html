@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1</span>
+   &#160;<span id="projectnumber">0.12.1</span>
    </div>
   </td>
  </tr>
@@ -87,40 +87,51 @@ $(document).ready(function(){initNavTree('pluginmanager_8hh.html','');});
 <div class="title">pluginmanager.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;gtk/gtk.h&gt;</code><br />
-<code>#include &lt;list&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;list&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
-<code>#include &lt;<a class="el" href="scroomplugin_8hh_source.html">scroom/scroomplugin.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="scroominterface_8hh_source.html">scroom/scroominterface.hh</a>&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;gtk/gtk.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="opentiledbitmapinterface_8hh_source.html">scroom/opentiledbitmapinterface.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="plugininformationinterface_8hh_source.html">scroom/plugininformationinterface.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="scroominterface_8hh_source.html">scroom/scroominterface.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="scroomplugin_8hh_source.html">scroom/scroomplugin.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="utilities_8hh_source.html">scroom/utilities.hh</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="workinterface_8hh_source.html">workinterface.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="view_8hh_source.html">view.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="workinterface_8hh_source.html">workinterface.hh</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for pluginmanager.hh:</div>
 <div class="dyncontent">
 <div class="center"><img src="pluginmanager_8hh__incl.png" border="0" usemap="#gui_2src_2pluginmanager_8hh" alt=""/></div>
 <map name="gui_2src_2pluginmanager_8hh" id="gui_2src_2pluginmanager_8hh">
-<area shape="rect" id="node6" href="scroomplugin_8hh.html" title="scroom/scroomplugin.hh" alt="" coords="98,80,281,107"/>
-<area shape="rect" id="node9" href="scroominterface_8hh.html" title="scroom/scroominterface.hh" alt="" coords="932,155,1132,181"/>
-<area shape="rect" id="node29" href="utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="297,453,439,480"/>
-<area shape="rect" id="node36" href="plugininformationinterface_8hh.html" title="scroom/plugininformationinterface.hh" alt="" coords="882,80,1150,107"/>
-<area shape="rect" id="node37" href="workinterface_8hh.html" title="workinterface.hh" alt="" coords="1751,80,1883,107"/>
-<area shape="rect" id="node38" href="view_8hh.html" title="view.hh" alt="" coords="1655,80,1727,107"/>
-<area shape="rect" id="node10" href="presentationinterface_8hh.html" title="scroom/presentationinterface.hh" alt="" coords="1685,229,1920,256"/>
-<area shape="rect" id="node15" href="viewinterface_8hh.html" title="scroom/viewinterface.hh" alt="" coords="1891,304,2074,331"/>
-<area shape="rect" id="node31" href="bookkeeping_8hh.html" title="scroom/bookkeeping.hh" alt="" coords="752,379,931,405"/>
-<area shape="rect" id="node19" href="rectangle_8hh.html" title="scroom/rectangle.hh" alt="" coords="2069,379,2224,405"/>
-<area shape="rect" id="node27" href="observable_8hh.html" title="scroom/observable.hh" alt="" coords="1107,304,1274,331"/>
-<area shape="rect" id="node18" href="progressinterface_8hh.html" title="scroom/progressinterface.hh" alt="" coords="1736,379,1944,405"/>
-<area shape="rect" id="node22" href="gtk-helpers_8hh.html" title="scroom/gtk&#45;helpers.hh" alt="" coords="2040,453,2208,480"/>
-<area shape="rect" id="node24" href="linearsegment_8hh.html" title="scroom/linearsegment.hh" alt="" coords="2283,453,2471,480"/>
-<area shape="rect" id="node26" href="point_8hh.html" title="scroom/point.hh" alt="" coords="1889,453,2015,480"/>
-<area shape="rect" id="node33" href="stuff_8hh.html" title="scroom/stuff.hh" alt="" coords="1027,453,1149,480"/>
-<area shape="rect" id="node34" href="bookkeepingimpl_8hh.html" title="scroom/impl/bookkeepingimpl.hh" alt="" coords="515,453,755,480"/>
-<area shape="rect" id="node41" href="sidebarmanager_8hh.html" title="sidebarmanager.hh" alt="" coords="1501,304,1648,331"/>
-<area shape="rect" id="node42" href="progressbarmanager_8hh.html" title="progressbarmanager.hh" alt="" coords="2149,229,2325,256"/>
+<area shape="rect" id="node6" href="opentiledbitmapinterface_8hh.html" title="scroom/opentiledbitmapinterface.hh" alt="" coords="1975,80,2233,107"/>
+<area shape="rect" id="node24" href="utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="2467,603,2610,629"/>
+<area shape="rect" id="node43" href="scroominterface_8hh.html" title="scroom/scroominterface.hh" alt="" coords="1152,304,1352,331"/>
+<area shape="rect" id="node44" href="plugininformationinterface_8hh.html" title="scroom/plugininformationinterface.hh" alt="" coords="711,229,979,256"/>
+<area shape="rect" id="node45" href="scroomplugin_8hh.html" title="scroom/scroomplugin.hh" alt="" coords="1159,80,1342,107"/>
+<area shape="rect" id="node46" href="view_8hh.html" title="view.hh" alt="" coords="1216,229,1288,256"/>
+<area shape="rect" id="node50" href="workinterface_8hh.html" title="workinterface.hh" alt="" coords="145,155,277,181"/>
+<area shape="rect" id="node8" href="colormappable_8hh.html" title="scroom/colormappable.hh" alt="" coords="2990,304,3181,331"/>
+<area shape="rect" id="node29" href="interface_8hh.html" title="scroom/interface.hh" alt="" coords="1075,603,1227,629"/>
+<area shape="rect" id="node30" href="rectangle_8hh.html" title="scroom/rectangle.hh" alt="" coords="4080,528,4235,555"/>
+<area shape="rect" id="node34" href="point_8hh.html" title="scroom/point.hh" alt="" coords="4489,603,4615,629"/>
+<area shape="rect" id="node38" href="tiledbitmaplayer_8hh.html" title="scroom/tiledbitmaplayer.hh" alt="" coords="2775,155,2977,181"/>
+<area shape="rect" id="node11" href="assertions_8hh.html" title="scroom/assertions.hh" alt="" coords="3142,379,3303,405"/>
+<area shape="rect" id="node13" href="color_8hh.html" title="scroom/color.hh" alt="" coords="3627,528,3752,555"/>
+<area shape="rect" id="node19" href="observable_8hh.html" title="scroom/observable.hh" alt="" coords="2443,453,2610,480"/>
+<area shape="rect" id="node27" href="presentationinterface_8hh.html" title="scroom/presentationinterface.hh" alt="" coords="2528,379,2763,405"/>
+<area shape="rect" id="node21" href="bookkeeping_8hh.html" title="scroom/bookkeeping.hh" alt="" coords="1867,528,2045,555"/>
+<area shape="rect" id="node23" href="stuff_8hh.html" title="scroom/stuff.hh" alt="" coords="2067,603,2189,629"/>
+<area shape="rect" id="node26" href="bookkeepingimpl_8hh.html" title="scroom/impl/bookkeepingimpl.hh" alt="" coords="1752,603,1992,629"/>
+<area shape="rect" id="node35" href="viewinterface_8hh.html" title="scroom/viewinterface.hh" alt="" coords="1305,453,1487,480"/>
+<area shape="rect" id="node32" href="gtk-helpers_8hh.html" title="scroom/gtk&#45;helpers.hh" alt="" coords="3080,603,3248,629"/>
+<area shape="rect" id="node33" href="linearsegment_8hh.html" title="scroom/linearsegment.hh" alt="" coords="4225,603,4413,629"/>
+<area shape="rect" id="node37" href="progressinterface_8hh.html" title="scroom/progressinterface.hh" alt="" coords="1128,528,1336,555"/>
+<area shape="rect" id="node39" href="memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="3368,528,3552,555"/>
+<area shape="rect" id="node40" href="threadpool_8hh.html" title="scroom/threadpool.hh" alt="" coords="3482,304,3646,331"/>
+<area shape="rect" id="node41" href="tile_8hh.html" title="scroom/tile.hh" alt="" coords="3209,453,3324,480"/>
+<area shape="rect" id="node42" href="tiledbitmapinterface_8hh.html" title="scroom/tiledbitmapinterface.hh" alt="" coords="2688,229,2915,256"/>
+<area shape="rect" id="node48" href="progressbarmanager_8hh.html" title="progressbarmanager.hh" alt="" coords="800,379,976,405"/>
+<area shape="rect" id="node49" href="sidebarmanager_8hh.html" title="sidebarmanager.hh" alt="" coords="549,453,696,480"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -166,10 +177,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pluginmanager_8cc_source.html#l00038">38</a> of file <a class="el" href="pluginmanager_8cc_source.html">pluginmanager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pluginmanager_8cc_source.html#l00032">32</a> of file <a class="el" href="pluginmanager_8cc_source.html">pluginmanager.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="callbacks_8cc_source.html#l00417">on_scroom_bootstrap()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="pluginmanager_8cc.html#ac86aff0855ed87e1b3b09b8c5f50528e">pluginManager</a>-&gt;addHook(devMode);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div><div class="ttc" id="pluginmanager_8cc_html_ac86aff0855ed87e1b3b09b8c5f50528e"><div class="ttname"><a href="pluginmanager_8cc.html#ac86aff0855ed87e1b3b09b8c5f50528e">pluginManager</a></div><div class="ttdeci">static PluginManager::Ptr pluginManager</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8cc_source.html#l00026">pluginmanager.cc:26</a></div></div>
+<p class="reference">Referenced by <a class="el" href="callbacks_8cc_source.html#l00411">on_scroom_bootstrap()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{ <a class="code" href="pluginmanager_8cc.html#ac86aff0855ed87e1b3b09b8c5f50528e">pluginManager</a>-&gt;addHook(devMode); }</div><div class="ttc" id="pluginmanager_8cc_html_ac86aff0855ed87e1b3b09b8c5f50528e"><div class="ttname"><a href="pluginmanager_8cc.html#ac86aff0855ed87e1b3b09b8c5f50528e">pluginManager</a></div><div class="ttdeci">static PluginManager::Ptr pluginManager</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8cc_source.html#l00028">pluginmanager.cc:28</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -179,7 +190,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_11bc0974ce736ce9a6fadebbeb7a8314.html">gui</a></li><li class="navelem"><a class="el" href="dir_a051efa06104b2c378e6b4d01090bb62.html">src</a></li><li class="navelem"><a class="el" href="pluginmanager_8hh.html">pluginmanager.hh</a></li>
-    <li class="footer">Generated on Fri Sep 11 2020 10:09:30 for Scroom by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1</span>
+   &#160;<span id="projectnumber">0.12.1</span>
    </div>
   </td>
  </tr>
@@ -98,8 +98,9 @@ Inheritance diagram for Layer:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLayer__inherit__graph.png" border="0" usemap="#Layer_inherit__map" alt="Inheritance graph"/></div>
 <map name="Layer_inherit__map" id="Layer_inherit__map">
-<area shape="rect" id="node2" href="classViewable.html" title="Implement Viewable if you want to be able to receive events when a View is created and/or deleted..." alt="" coords="5,145,124,252"/>
-<area shape="rect" id="node3" href="classScroom_1_1Utils_1_1Base.html" title="Base class that inherits from boost::enable_shared_from_this. " alt="" coords="147,145,307,252"/>
+<area shape="rect" id="node2" href="classViewable.html" title="Implement Viewable if you want to be able to receive events when a View is created and/or deleted..." alt="" coords="26,248,109,340"/>
+<area shape="rect" id="node3" href="classInterface.html" title="{Interface\n||+ Interface()\l+ Interface()\l+ operator=()\l+ Interface()\l+ operator=()\l+ ~Interface()\l}" alt="" coords="5,5,121,156"/>
+<area shape="rect" id="node4" href="classScroom_1_1Utils_1_1Base.html" title="Base class that inherits from boost::enable_shared_from_this. " alt="" coords="141,204,301,384"/>
 </map>
 </div>
 <div class="dynheader">
@@ -107,55 +108,66 @@ Collaboration diagram for Layer:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLayer__coll__graph.png" border="0" usemap="#Layer_coll__map" alt="Collaboration graph"/></div>
 <map name="Layer_coll__map" id="Layer_coll__map">
-<area shape="rect" id="node2" href="classViewable.html" title="Implement Viewable if you want to be able to receive events when a View is created and/or deleted..." alt="" coords="5,300,124,407"/>
-<area shape="rect" id="node3" href="classScroom_1_1Utils_1_1Base.html" title="Base class that inherits from boost::enable_shared_from_this. " alt="" coords="147,300,307,407"/>
-<area shape="rect" id="node7" title="STL class. " alt="" coords="516,153,624,230"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="685,153,815,230"/>
+<area shape="rect" id="node2" href="classViewable.html" title="Implement Viewable if you want to be able to receive events when a View is created and/or deleted..." alt="" coords="30,403,113,495"/>
+<area shape="rect" id="node3" href="classInterface.html" title="{Interface\n||+ Interface()\l+ Interface()\l+ operator=()\l+ Interface()\l+ operator=()\l+ ~Interface()\l}" alt="" coords="5,145,121,296"/>
+<area shape="rect" id="node4" href="classScroom_1_1Utils_1_1Base.html" title="Base class that inherits from boost::enable_shared_from_this. " alt="" coords="141,359,301,539"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="561,182,691,259"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1ac49e190484eca087cd57658d7a9644"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classLayer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a1ac49e190484eca087cd57658d7a9644">Ptr</a></td></tr>
-<tr class="separator:a1ac49e190484eca087cd57658d7a9644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0d4b7e8822cfd565b9adbb4a0e46f03"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#ae0d4b7e8822cfd565b9adbb4a0e46f03">Ptr</a> = boost::shared_ptr&lt; <a class="el" href="classLayer.html">Layer</a> &gt;</td></tr>
+<tr class="separator:ae0d4b7e8822cfd565b9adbb4a0e46f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classViewable"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classViewable')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classViewable.html">Viewable</a></td></tr>
-<tr class="memitem:a398306f9e46a4b682714c04804cf4b16 inherit pub_types_classViewable"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classViewable.html">Viewable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#a398306f9e46a4b682714c04804cf4b16">Ptr</a></td></tr>
-<tr class="separator:a398306f9e46a4b682714c04804cf4b16 inherit pub_types_classViewable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0405efb13a5af46c0c85080c296c1375 inherit pub_types_classViewable"><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr&lt; <a class="el" href="classViewable.html">Viewable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#a0405efb13a5af46c0c85080c296c1375">WeakPtr</a></td></tr>
-<tr class="separator:a0405efb13a5af46c0c85080c296c1375 inherit pub_types_classViewable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10726c0caf60975a47e8bcec14c8e0e inherit pub_types_classViewable"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#ac10726c0caf60975a47e8bcec14c8e0e">Ptr</a> = boost::shared_ptr&lt; <a class="el" href="classViewable.html">Viewable</a> &gt;</td></tr>
+<tr class="separator:ac10726c0caf60975a47e8bcec14c8e0e inherit pub_types_classViewable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabdfb7ab64727c93444d8d445ed82b8 inherit pub_types_classViewable"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#aaabdfb7ab64727c93444d8d445ed82b8">WeakPtr</a> = boost::weak_ptr&lt; <a class="el" href="classViewable.html">Viewable</a> &gt;</td></tr>
+<tr class="separator:aaabdfb7ab64727c93444d8d445ed82b8 inherit pub_types_classViewable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a06c476f570760876f20ca9ddc70be6c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a06c476f570760876f20ca9ddc70be6c5">getHorTileCount</a> ()</td></tr>
-<tr class="separator:a06c476f570760876f20ca9ddc70be6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b0a9e864d755c8743448e65cb7b3dc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a3b0a9e864d755c8743448e65cb7b3dc7">getVerTileCount</a> ()</td></tr>
-<tr class="separator:a3b0a9e864d755c8743448e65cb7b3dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7428a55d293b5d3a0c3a1da17bbb19c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCompressedTile.html#aa2fdbb75653efab03bb955998cfc47aa">CompressedTile::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a7428a55d293b5d3a0c3a1da17bbb19c4">getTile</a> (int i, int j)</td></tr>
+<tr class="memitem:aa95b82451c1bf40bfc09200d4c1336ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#aa95b82451c1bf40bfc09200d4c1336ea">getHorTileCount</a> () const</td></tr>
+<tr class="separator:aa95b82451c1bf40bfc09200d4c1336ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ca3869b234ba456c3add5bd67e4860"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#ad3ca3869b234ba456c3add5bd67e4860">getVerTileCount</a> () const</td></tr>
+<tr class="separator:ad3ca3869b234ba456c3add5bd67e4860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7428a55d293b5d3a0c3a1da17bbb19c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a7428a55d293b5d3a0c3a1da17bbb19c4">getTile</a> (int i, int j)</td></tr>
 <tr class="separator:a7428a55d293b5d3a0c3a1da17bbb19c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af90b35813138ca6b6881f78ab67cea33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#af90b35813138ca6b6881f78ab67cea33">getTileLine</a> (int j)</td></tr>
+<tr class="memitem:af90b35813138ca6b6881f78ab67cea33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#af90b35813138ca6b6881f78ab67cea33">getTileLine</a> (int j)</td></tr>
 <tr class="separator:af90b35813138ca6b6881f78ab67cea33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3047bcacbe02b1aa960b4440d8aaacfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a3047bcacbe02b1aa960b4440d8aaacfa">fetchData</a> (<a class="el" href="classSourcePresentation.html#a48995c55873abf43957f484d91886632">SourcePresentation::Ptr</a> sp, <a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">ThreadPool::WeakQueue::Ptr</a> queue)</td></tr>
-<tr class="separator:a3047bcacbe02b1aa960b4440d8aaacfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39e3b346235715e15d99a0a8ac95e0a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a39e3b346235715e15d99a0a8ac95e0a7">getWidth</a> ()</td></tr>
-<tr class="separator:a39e3b346235715e15d99a0a8ac95e0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a974c0866509db4c131f8f38d281fbcd1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a974c0866509db4c131f8f38d281fbcd1">getHeight</a> ()</td></tr>
-<tr class="separator:a974c0866509db4c131f8f38d281fbcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72c5400a904c8d8e0bb78ac522a60460"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a72c5400a904c8d8e0bb78ac522a60460">getDepth</a> ()</td></tr>
-<tr class="separator:a72c5400a904c8d8e0bb78ac522a60460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a089cad953ab1e8ce3ccc69893fa7fe61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a089cad953ab1e8ce3ccc69893fa7fe61">getRect</a> ()</td></tr>
-<tr class="separator:a089cad953ab1e8ce3ccc69893fa7fe61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0275d5354f7f68e22354c62f579c334"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#af0275d5354f7f68e22354c62f579c334">open</a> (<a class="el" href="classViewInterface.html#ae92933d2303923b3c487674dff4ab999">ViewInterface::WeakPtr</a> vi)</td></tr>
-<tr class="memdesc:af0275d5354f7f68e22354c62f579c334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets called just after the <a class="el" href="classView.html">View</a> is created.  <a href="#af0275d5354f7f68e22354c62f579c334">More...</a><br /></td></tr>
-<tr class="separator:af0275d5354f7f68e22354c62f579c334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3873ac09f791303a2966b2a4a260189c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a3873ac09f791303a2966b2a4a260189c">close</a> (<a class="el" href="classViewInterface.html#ae92933d2303923b3c487674dff4ab999">ViewInterface::WeakPtr</a> vi)</td></tr>
-<tr class="memdesc:a3873ac09f791303a2966b2a4a260189c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets called just before the <a class="el" href="classView.html">View</a> is destroyed.  <a href="#a3873ac09f791303a2966b2a4a260189c">More...</a><br /></td></tr>
-<tr class="separator:a3873ac09f791303a2966b2a4a260189c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classViewable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classViewable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classViewable.html">Viewable</a></td></tr>
-<tr class="memitem:a88daba2706a00e4d0f283dbf89bd6dee inherit pub_methods_classViewable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#a88daba2706a00e4d0f283dbf89bd6dee">~Viewable</a> ()</td></tr>
-<tr class="separator:a88daba2706a00e4d0f283dbf89bd6dee inherit pub_methods_classViewable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d2253a27e5b42cde01f15c85959580c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a3d2253a27e5b42cde01f15c85959580c">fetchData</a> (<a class="el" href="classSourcePresentation.html#adcc8551f0f8572a899f4270c353375b2">SourcePresentation::Ptr</a> sp, const <a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">ThreadPool::WeakQueue::Ptr</a> &amp;queue, std::function&lt; void()&gt; on_finished)</td></tr>
+<tr class="separator:a3d2253a27e5b42cde01f15c85959580c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96bf85488cb3fb1f1e4f078f1d7c767"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#ac96bf85488cb3fb1f1e4f078f1d7c767">getWidth</a> () const</td></tr>
+<tr class="separator:ac96bf85488cb3fb1f1e4f078f1d7c767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93762cbd22847abe210805c546329e51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a93762cbd22847abe210805c546329e51">getHeight</a> () const</td></tr>
+<tr class="separator:a93762cbd22847abe210805c546329e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7496892cad703e085e3e0145026f1c42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a7496892cad703e085e3e0145026f1c42">getDepth</a> () const</td></tr>
+<tr class="separator:a7496892cad703e085e3e0145026f1c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9ccf7e5749b9f6bfa0de956fcac772"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a9a9ccf7e5749b9f6bfa0de956fcac772">getRect</a> () const</td></tr>
+<tr class="separator:a9a9ccf7e5749b9f6bfa0de956fcac772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48dc1b9f287e3552fc501292ee16ac36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Bookkeeping_1_1Token.html">Scroom::Bookkeeping::Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a48dc1b9f287e3552fc501292ee16ac36">registerObserver</a> (const <a class="el" href="classTileInitialisationObserver.html#ab0cb48cb4f6a517aca577eaae7e47983">TileInitialisationObserver::Ptr</a> &amp;observer)</td></tr>
+<tr class="separator:a48dc1b9f287e3552fc501292ee16ac36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193fccd8bdd01f7d86b364cf6cecd042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1MemoryBlobs_1_1PageProvider.html#a7105b86c9fdfc1a88fe83bee19fa6859">Scroom::MemoryBlobs::PageProvider::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a193fccd8bdd01f7d86b364cf6cecd042">getPageProvider</a> ()</td></tr>
+<tr class="separator:a193fccd8bdd01f7d86b364cf6cecd042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd25e081ea14b44723ccbf3bb1510b35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#afd25e081ea14b44723ccbf3bb1510b35">open</a> (<a class="el" href="classViewInterface.html#a728bb2c185daaeaa562a624b7ab96c23">ViewInterface::WeakPtr</a> vi) override</td></tr>
+<tr class="memdesc:afd25e081ea14b44723ccbf3bb1510b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets called just after the <a class="el" href="classView.html">View</a> is created.  <a href="#afd25e081ea14b44723ccbf3bb1510b35">More...</a><br /></td></tr>
+<tr class="separator:afd25e081ea14b44723ccbf3bb1510b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1a9f997012b05c921c35c66677c347"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a0e1a9f997012b05c921c35c66677c347">close</a> (<a class="el" href="classViewInterface.html#a728bb2c185daaeaa562a624b7ab96c23">ViewInterface::WeakPtr</a> vi) override</td></tr>
+<tr class="memdesc:a0e1a9f997012b05c921c35c66677c347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets called just before the <a class="el" href="classView.html">View</a> is destroyed.  <a href="#a0e1a9f997012b05c921c35c66677c347">More...</a><br /></td></tr>
+<tr class="separator:a0e1a9f997012b05c921c35c66677c347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classScroom_1_1Utils_1_1Base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classScroom_1_1Utils_1_1Base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classScroom_1_1Utils_1_1Base.html">Scroom::Utils::Base</a></td></tr>
-<tr class="memitem:a4258b6973d6ed05258dffb123f3b94b9 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#a4258b6973d6ed05258dffb123f3b94b9">~Base</a> ()</td></tr>
-<tr class="separator:a4258b6973d6ed05258dffb123f3b94b9 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cfb041b339d8cdd32b01f346ac4a33 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#ab5cfb041b339d8cdd32b01f346ac4a33">Base</a> ()=default</td></tr>
+<tr class="separator:ab5cfb041b339d8cdd32b01f346ac4a33 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0905ca89614ba5543bec1668ced1f2bf inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#a0905ca89614ba5543bec1668ced1f2bf">Base</a> (const <a class="el" href="classScroom_1_1Utils_1_1Base.html">Base</a> &amp;)=delete</td></tr>
+<tr class="separator:a0905ca89614ba5543bec1668ced1f2bf inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af745d1e7c7e25e4de67ef69ad92819d3 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#af745d1e7c7e25e4de67ef69ad92819d3">Base</a> (<a class="el" href="classScroom_1_1Utils_1_1Base.html">Base</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:af745d1e7c7e25e4de67ef69ad92819d3 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8985009df1baba1a1c81993a656f7e97 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Utils_1_1Base.html">Base</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#a8985009df1baba1a1c81993a656f7e97">operator=</a> (const <a class="el" href="classScroom_1_1Utils_1_1Base.html">Base</a> &amp;)=delete</td></tr>
+<tr class="separator:a8985009df1baba1a1c81993a656f7e97 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87284b95256cad0952fb87652e4ed98c inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Utils_1_1Base.html">Base</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#a87284b95256cad0952fb87652e4ed98c">operator=</a> (<a class="el" href="classScroom_1_1Utils_1_1Base.html">Base</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a87284b95256cad0952fb87652e4ed98c inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4bdad20963b6957da0277e4f1dae600 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#af4bdad20963b6957da0277e4f1dae600">~Base</a> ()=default</td></tr>
+<tr class="separator:af4bdad20963b6957da0277e4f1dae600 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47d10b0709de4fd393084e19192b073c inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memTemplParams" colspan="2">template&lt;typename R &gt; </td></tr>
 <tr class="memitem:a47d10b0709de4fd393084e19192b073c inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#a47d10b0709de4fd393084e19192b073c">shared_from_this</a> ()</td></tr>
 <tr class="memdesc:a47d10b0709de4fd393084e19192b073c inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="classScroom_1_1Utils_1_1Base.html#a47d10b0709de4fd393084e19192b073c" title="Calls shared_from_this() with a built-in dynamic cast, to make it usable in subclasses. ">shared_from_this()</a> with a built-in dynamic cast, to make it usable in subclasses.  <a href="classScroom_1_1Utils_1_1Base.html#a47d10b0709de4fd393084e19192b073c">More...</a><br /></td></tr>
@@ -167,14 +179,16 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a79fd1cab4c003fa2376466bc812fddfa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classViewable.html#a398306f9e46a4b682714c04804cf4b16">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a79fd1cab4c003fa2376466bc812fddfa">create</a> (<a class="el" href="classTileInitialisationObserver.html#a13222e337b9c7ad30c1cbed66a583855">TileInitialisationObserver::Ptr</a> observer, int <a class="el" href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">depth</a>, int layerWidth, int layerHeight, int bpp, <a class="el" href="classScroom_1_1MemoryBlobs_1_1PageProvider.html#a4fb870b6934b76259ab87c66b8f189d1">Scroom::MemoryBlobs::PageProvider::Ptr</a> provider)</td></tr>
-<tr class="separator:a79fd1cab4c003fa2376466bc812fddfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3623d32725dbc8537779fb7f682e46"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classViewable.html#ac10726c0caf60975a47e8bcec14c8e0e">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a8f3623d32725dbc8537779fb7f682e46">create</a> (int <a class="el" href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">depth</a>, int layerWidth, int layerHeight, int bpp, <a class="el" href="classScroom_1_1MemoryBlobs_1_1PageProvider.html#a7105b86c9fdfc1a88fe83bee19fa6859">Scroom::MemoryBlobs::PageProvider::Ptr</a> provider)</td></tr>
+<tr class="separator:a8f3623d32725dbc8537779fb7f682e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91888355ff587ff45d585488dc21132"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classViewable.html#ac10726c0caf60975a47e8bcec14c8e0e">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#ad91888355ff587ff45d585488dc21132">create</a> (int layerWidth, int layerHeight, int bpp)</td></tr>
+<tr class="separator:ad91888355ff587ff45d585488dc21132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a7f2c6033253283440a0574d8fcfb571d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a7f2c6033253283440a0574d8fcfb571d">Layer</a> (<a class="el" href="classTileInitialisationObserver.html#a13222e337b9c7ad30c1cbed66a583855">TileInitialisationObserver::Ptr</a> observer, int <a class="el" href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">depth</a>, int layerWidth, int layerHeight, int bpp, <a class="el" href="classScroom_1_1MemoryBlobs_1_1PageProvider.html#a4fb870b6934b76259ab87c66b8f189d1">Scroom::MemoryBlobs::PageProvider::Ptr</a> provider)</td></tr>
-<tr class="memdesc:a7f2c6033253283440a0574d8fcfb571d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classLayer.html">Layer</a>.  <a href="#a7f2c6033253283440a0574d8fcfb571d">More...</a><br /></td></tr>
-<tr class="separator:a7f2c6033253283440a0574d8fcfb571d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461f24acc6b9fac1f007516bcd380c25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a461f24acc6b9fac1f007516bcd380c25">Layer</a> (int <a class="el" href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">depth</a>, int layerWidth, int layerHeight, int bpp, <a class="el" href="classScroom_1_1MemoryBlobs_1_1PageProvider.html#a7105b86c9fdfc1a88fe83bee19fa6859">Scroom::MemoryBlobs::PageProvider::Ptr</a> provider)</td></tr>
+<tr class="memdesc:a461f24acc6b9fac1f007516bcd380c25"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classLayer.html">Layer</a>.  <a href="#a461f24acc6b9fac1f007516bcd380c25">More...</a><br /></td></tr>
+<tr class="separator:a461f24acc6b9fac1f007516bcd380c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -184,42 +198,42 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a724d3020ddbe5f9280caa325541e70a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a0bc24033339368a0ca9747485f0053"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">height</a></td></tr>
 <tr class="separator:a6a0bc24033339368a0ca9747485f0053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7700d72c9d586d6e7fb690912726045"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceScroom_1_1Utils.html#ac88165bf484ff84c1e61bd82244371fd">Scroom::Utils::StuffList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#ac7700d72c9d586d6e7fb690912726045">registrations</a></td></tr>
-<tr class="separator:ac7700d72c9d586d6e7fb690912726045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09a8f2e20d2c509376948e9e8be89a5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">horTileCount</a></td></tr>
 <tr class="separator:a09a8f2e20d2c509376948e9e8be89a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f270463756cb7dc9897564b3bff23d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">verTileCount</a></td></tr>
 <tr class="separator:a8f270463756cb7dc9897564b3bff23d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd8097c5fc4b8523de8e2e64478df49c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tiledbitmaplayer_8hh.html#a7a2a850f232ebb5180c094605ad209a8">CompressedTileGrid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a></td></tr>
+<tr class="memitem:acd8097c5fc4b8523de8e2e64478df49c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tiledbitmaplayer_8hh.html#a6a439d385552614de1a0814da3706395">CompressedTileGrid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a></td></tr>
 <tr class="separator:acd8097c5fc4b8523de8e2e64478df49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6276fa23dbc72e1813dea0ce909fbc51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCompressedTile.html#aa2fdbb75653efab03bb955998cfc47aa">CompressedTile::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">outOfBounds</a></td></tr>
+<tr class="memitem:a6276fa23dbc72e1813dea0ce909fbc51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">outOfBounds</a></td></tr>
 <tr class="separator:a6276fa23dbc72e1813dea0ce909fbc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a293b3e4be5e6edc8c3b83718f8c7ee33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">lineOutOfBounds</a></td></tr>
+<tr class="memitem:a293b3e4be5e6edc8c3b83718f8c7ee33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">lineOutOfBounds</a></td></tr>
 <tr class="separator:a293b3e4be5e6edc8c3b83718f8c7ee33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ce25fb2fef0a59b6520ed131d31d15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1MemoryBlobs_1_1PageProvider.html#a7105b86c9fdfc1a88fe83bee19fa6859">Scroom::MemoryBlobs::PageProvider::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#ad3ce25fb2fef0a59b6520ed131d31d15">pageProvider</a></td></tr>
+<tr class="separator:ad3ce25fb2fef0a59b6520ed131d31d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00228">228</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00237">237</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a1ac49e190484eca087cd57658d7a9644"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ac49e190484eca087cd57658d7a9644">&#9670;&nbsp;</a></span>Ptr</h2>
+<a id="ae0d4b7e8822cfd565b9adbb4a0e46f03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0d4b7e8822cfd565b9adbb4a0e46f03">&#9670;&nbsp;</a></span>Ptr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="classLayer.html">Layer</a>&gt; <a class="el" href="classLayer.html#a1ac49e190484eca087cd57658d7a9644">Layer::Ptr</a></td>
+          <td class="memname">using <a class="el" href="classLayer.html#ae0d4b7e8822cfd565b9adbb4a0e46f03">Layer::Ptr</a> =  boost::shared_ptr&lt;<a class="el" href="classLayer.html">Layer</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00231">231</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00242">242</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7f2c6033253283440a0574d8fcfb571d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f2c6033253283440a0574d8fcfb571d">&#9670;&nbsp;</a></span>Layer()</h2>
+<a id="a461f24acc6b9fac1f007516bcd380c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a461f24acc6b9fac1f007516bcd380c25">&#9670;&nbsp;</a></span>Layer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,12 +244,6 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">Layer::Layer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classTileInitialisationObserver.html#a13222e337b9c7ad30c1cbed66a583855">TileInitialisationObserver::Ptr</a>&#160;</td>
-          <td class="paramname"><em>observer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>depth</em>, </td>
         </tr>
@@ -260,7 +268,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classScroom_1_1MemoryBlobs_1_1PageProvider.html#a4fb870b6934b76259ab87c66b8f189d1">Scroom::MemoryBlobs::PageProvider::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classScroom_1_1MemoryBlobs_1_1PageProvider.html#a7105b86c9fdfc1a88fe83bee19fa6859">Scroom::MemoryBlobs::PageProvider::Ptr</a>&#160;</td>
           <td class="paramname"><em>provider</em>&#160;</td>
         </tr>
         <tr>
@@ -278,29 +286,29 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="classLayer.html">Layer</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00041">41</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00068">68</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00069">create()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  : <a class="code" href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">depth</a>(depth_), <a class="code" href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">width</a>(layerWidth), <a class="code" href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">height</a>(layerHeight)</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">horTileCount</a> = (<a class="code" href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">width</a>+<a class="code" href="tiledbitmaplayer_8hh.html#a07ae61ed7dc31e9cddbdf9da244567c7">TILESIZE</a>-1)/<a class="code" href="tiledbitmaplayer_8hh.html#a07ae61ed7dc31e9cddbdf9da244567c7">TILESIZE</a>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">verTileCount</a> = (<a class="code" href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">height</a>+<a class="code" href="tiledbitmaplayer_8hh.html#a07ae61ed7dc31e9cddbdf9da244567c7">TILESIZE</a>-1)/<a class="code" href="tiledbitmaplayer_8hh.html#a07ae61ed7dc31e9cddbdf9da244567c7">TILESIZE</a>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;<a class="code" href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">verTileCount</a>; j++)</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a>.push_back(<a class="code" href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a>());</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a>&amp; tl = <a class="code" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a>[j];</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">horTileCount</a>; i++)</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <a class="code" href="classCompressedTile.html#aa2fdbb75653efab03bb955998cfc47aa">CompressedTile::Ptr</a> tile = <a class="code" href="classCompressedTile.html#a119060da78b456e201a7b60419c77cad">CompressedTile::create</a>(depth_, i, j, bpp, provider);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="classLayer.html#ac7700d72c9d586d6e7fb690912726045">registrations</a>.push_back(tile-&gt;registerObserver(observer));</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      tl.push_back(tile);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">outOfBounds</a> = <a class="code" href="classCompressedTile.html#a119060da78b456e201a7b60419c77cad">CompressedTile::create</a>(depth_, -1, -1, bpp, provider, <a class="code" href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a5a84d269a576456f9a8a1771672325a6">TSI_OUT_OF_BOUNDS</a>);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">horTileCount</a>; i++)</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">lineOutOfBounds</a>.push_back(<a class="code" href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">outOfBounds</a>);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  printf(<span class="stringliteral">&quot;Layer %d (%d bpp), %d*%d, TileCount %d*%d\n&quot;</span>,</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;         depth_, bpp, <a class="code" href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">width</a>, <a class="code" href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">height</a>, horTileCount, verTileCount);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div><div class="ttc" id="classLayer_html_a6a0bc24033339368a0ca9747485f0053"><div class="ttname"><a href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">Layer::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00236">tiledbitmaplayer.hh:236</a></div></div>
-<div class="ttc" id="classLayer_html_ac7700d72c9d586d6e7fb690912726045"><div class="ttname"><a href="classLayer.html#ac7700d72c9d586d6e7fb690912726045">Layer::registrations</a></div><div class="ttdeci">Scroom::Utils::StuffList registrations</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00237">tiledbitmaplayer.hh:237</a></div></div>
-<div class="ttc" id="classLayer_html_a6276fa23dbc72e1813dea0ce909fbc51"><div class="ttname"><a href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">Layer::outOfBounds</a></div><div class="ttdeci">CompressedTile::Ptr outOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00241">tiledbitmaplayer.hh:241</a></div></div>
-<div class="ttc" id="tiledbitmaplayer_8hh_html_a07ae61ed7dc31e9cddbdf9da244567c7"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a07ae61ed7dc31e9cddbdf9da244567c7">TILESIZE</a></div><div class="ttdeci">#define TILESIZE</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00027">tiledbitmaplayer.hh:27</a></div></div>
-<div class="ttc" id="classLayer_html_a293b3e4be5e6edc8c3b83718f8c7ee33"><div class="ttname"><a href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">Layer::lineOutOfBounds</a></div><div class="ttdeci">CompressedTileLine lineOutOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00242">tiledbitmaplayer.hh:242</a></div></div>
-<div class="ttc" id="classLayer_html_a09a8f2e20d2c509376948e9e8be89a5c"><div class="ttname"><a href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">Layer::horTileCount</a></div><div class="ttdeci">int horTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00238">tiledbitmaplayer.hh:238</a></div></div>
-<div class="ttc" id="classLayer_html_a724d3020ddbe5f9280caa325541e70a3"><div class="ttname"><a href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">Layer::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00235">tiledbitmaplayer.hh:235</a></div></div>
-<div class="ttc" id="classLayer_html_acd8097c5fc4b8523de8e2e64478df49c"><div class="ttname"><a href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">Layer::tiles</a></div><div class="ttdeci">CompressedTileGrid tiles</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00240">tiledbitmaplayer.hh:240</a></div></div>
-<div class="ttc" id="classLayer_html_a1f53ce854eed0215bbe94d3b23e6bc25"><div class="ttname"><a href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">Layer::depth</a></div><div class="ttdeci">int depth</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00234">tiledbitmaplayer.hh:234</a></div></div>
-<div class="ttc" id="tiledbitmaplayer_8hh_html_a5845555afcece45c0982c85a3563c18e"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a></div><div class="ttdeci">std::vector&lt; CompressedTile::Ptr &gt; CompressedTileLine</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00223">tiledbitmaplayer.hh:223</a></div></div>
-<div class="ttc" id="classCompressedTile_html_aa2fdbb75653efab03bb955998cfc47aa"><div class="ttname"><a href="classCompressedTile.html#aa2fdbb75653efab03bb955998cfc47aa">CompressedTile::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; CompressedTile &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00111">tiledbitmaplayer.hh:111</a></div></div>
+<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00096">create()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  : <a class="code" href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">depth</a>(depth_)</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  , <a class="code" href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">width</a>(layerWidth)</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  , <a class="code" href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">height</a>(layerHeight)</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  , <a class="code" href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">horTileCount</a>((<a class="code" href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">width</a> + <a class="code" href="tiledbitmaplayer_8hh.html#a07ae61ed7dc31e9cddbdf9da244567c7">TILESIZE</a> - 1) / <a class="code" href="tiledbitmaplayer_8hh.html#a07ae61ed7dc31e9cddbdf9da244567c7">TILESIZE</a>)</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  , <a class="code" href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">verTileCount</a>((<a class="code" href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">height</a> + <a class="code" href="tiledbitmaplayer_8hh.html#a07ae61ed7dc31e9cddbdf9da244567c7">TILESIZE</a> - 1) / <a class="code" href="tiledbitmaplayer_8hh.html#a07ae61ed7dc31e9cddbdf9da244567c7">TILESIZE</a>)</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  , <a class="code" href="classLayer.html#ad3ce25fb2fef0a59b6520ed131d31d15">pageProvider</a>(std::move(provider))</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">verTileCount</a>; j++)</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a>.push_back(<a class="code" href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a>());</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a>&amp; tl = <a class="code" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a>[j];</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">horTileCount</a>; i++)</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <a class="code" href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a> tile = <a class="code" href="classCompressedTile.html#a119060da78b456e201a7b60419c77cad">CompressedTile::create</a>(depth_, i, j, bpp, <a class="code" href="classLayer.html#ad3ce25fb2fef0a59b6520ed131d31d15">pageProvider</a>);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      tl.push_back(tile);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">outOfBounds</a> = <a class="code" href="classCompressedTile.html#a119060da78b456e201a7b60419c77cad">CompressedTile::create</a>(depth_, -1, -1, bpp, <a class="code" href="classLayer.html#ad3ce25fb2fef0a59b6520ed131d31d15">pageProvider</a>, <a class="code" href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a5a84d269a576456f9a8a1771672325a6">TSI_OUT_OF_BOUNDS</a>);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">horTileCount</a>; i++)</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">lineOutOfBounds</a>.push_back(<a class="code" href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">outOfBounds</a>);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  printf(<span class="stringliteral">&quot;Layer %d (%d bpp), %d*%d, TileCount %d*%d\n&quot;</span>, depth_, bpp, <a class="code" href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">width</a>, <a class="code" href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">height</a>, horTileCount, verTileCount);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div><div class="ttc" id="classLayer_html_a6a0bc24033339368a0ca9747485f0053"><div class="ttname"><a href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">Layer::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00247">tiledbitmaplayer.hh:247</a></div></div>
+<div class="ttc" id="classLayer_html_a6276fa23dbc72e1813dea0ce909fbc51"><div class="ttname"><a href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">Layer::outOfBounds</a></div><div class="ttdeci">CompressedTile::Ptr outOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00251">tiledbitmaplayer.hh:251</a></div></div>
+<div class="ttc" id="tiledbitmaplayer_8hh_html_a07ae61ed7dc31e9cddbdf9da244567c7"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a07ae61ed7dc31e9cddbdf9da244567c7">TILESIZE</a></div><div class="ttdeci">#define TILESIZE</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00028">tiledbitmaplayer.hh:28</a></div></div>
+<div class="ttc" id="classLayer_html_ad3ce25fb2fef0a59b6520ed131d31d15"><div class="ttname"><a href="classLayer.html#ad3ce25fb2fef0a59b6520ed131d31d15">Layer::pageProvider</a></div><div class="ttdeci">Scroom::MemoryBlobs::PageProvider::Ptr pageProvider</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00253">tiledbitmaplayer.hh:253</a></div></div>
+<div class="ttc" id="classLayer_html_a293b3e4be5e6edc8c3b83718f8c7ee33"><div class="ttname"><a href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">Layer::lineOutOfBounds</a></div><div class="ttdeci">CompressedTileLine lineOutOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00252">tiledbitmaplayer.hh:252</a></div></div>
+<div class="ttc" id="classLayer_html_a09a8f2e20d2c509376948e9e8be89a5c"><div class="ttname"><a href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">Layer::horTileCount</a></div><div class="ttdeci">int horTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00248">tiledbitmaplayer.hh:248</a></div></div>
+<div class="ttc" id="classLayer_html_a724d3020ddbe5f9280caa325541e70a3"><div class="ttname"><a href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">Layer::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00246">tiledbitmaplayer.hh:246</a></div></div>
+<div class="ttc" id="classLayer_html_acd8097c5fc4b8523de8e2e64478df49c"><div class="ttname"><a href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">Layer::tiles</a></div><div class="ttdeci">CompressedTileGrid tiles</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00250">tiledbitmaplayer.hh:250</a></div></div>
+<div class="ttc" id="classLayer_html_a1f53ce854eed0215bbe94d3b23e6bc25"><div class="ttname"><a href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">Layer::depth</a></div><div class="ttdeci">int depth</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00245">tiledbitmaplayer.hh:245</a></div></div>
+<div class="ttc" id="tiledbitmaplayer_8hh_html_a3902e4a779f862590474adb2068255b5"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a></div><div class="ttdeci">std::vector&lt; CompressedTile::Ptr &gt; CompressedTileLine</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00232">tiledbitmaplayer.hh:232</a></div></div>
 <div class="ttc" id="tiledbitmaplayer_8hh_html_a4f52bb8f2d5da2afbcf302a471a7aa22a5a84d269a576456f9a8a1771672325a6"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a4f52bb8f2d5da2afbcf302a471a7aa22a5a84d269a576456f9a8a1771672325a6">TSI_OUT_OF_BOUNDS</a></div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00038">tiledbitmaplayer.hh:38</a></div></div>
-<div class="ttc" id="classCompressedTile_html_a119060da78b456e201a7b60419c77cad"><div class="ttname"><a href="classCompressedTile.html#a119060da78b456e201a7b60419c77cad">CompressedTile::create</a></div><div class="ttdeci">static Ptr create(int depth, int x, int y, int bpp, Scroom::MemoryBlobs::PageProvider::Ptr provider, TileStateInternal state=TSI_UNINITIALIZED)</div><div class="ttdef"><b>Definition:</b> <a href="compressedtile_8cc_source.html#l00025">compressedtile.cc:25</a></div></div>
-<div class="ttc" id="classLayer_html_a8f270463756cb7dc9897564b3bff23d4"><div class="ttname"><a href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">Layer::verTileCount</a></div><div class="ttdeci">int verTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00239">tiledbitmaplayer.hh:239</a></div></div>
+<div class="ttc" id="classCompressedTile_html_a119060da78b456e201a7b60419c77cad"><div class="ttname"><a href="classCompressedTile.html#a119060da78b456e201a7b60419c77cad">CompressedTile::create</a></div><div class="ttdeci">static Ptr create(int depth, int x, int y, int bpp, Scroom::MemoryBlobs::PageProvider::Ptr provider, TileStateInternal state=TSI_UNINITIALIZED)</div><div class="ttdef"><b>Definition:</b> <a href="compressedtile_8cc_source.html#l00030">compressedtile.cc:30</a></div></div>
+<div class="ttc" id="classLayer_html_a8f270463756cb7dc9897564b3bff23d4"><div class="ttname"><a href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">Layer::verTileCount</a></div><div class="ttdeci">int verTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00249">tiledbitmaplayer.hh:249</a></div></div>
+<div class="ttc" id="classCompressedTile_html_a808f3171290f6850961c8cee236589a1"><div class="ttname"><a href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; CompressedTile &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00108">tiledbitmaplayer.hh:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3873ac09f791303a2966b2a4a260189c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3873ac09f791303a2966b2a4a260189c">&#9670;&nbsp;</a></span>close()</h2>
+<a id="a0e1a9f997012b05c921c35c66677c347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e1a9f997012b05c921c35c66677c347">&#9670;&nbsp;</a></span>close()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,14 +319,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Layer::close </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classViewInterface.html#ae92933d2303923b3c487674dff4ab999">ViewInterface::WeakPtr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classViewInterface.html#a728bb2c185daaeaa562a624b7ab96c23">ViewInterface::WeakPtr</a>&#160;</td>
           <td class="paramname"><em>vi</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -328,17 +336,17 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classViewable.html#a8068b9af988bf0eb34fad7f8d0c79722">Viewable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00136">136</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordflow">for</span>(<a class="code" href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a>&amp; line: <a class="code" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a>)</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  {</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="classCompressedTile.html#aa2fdbb75653efab03bb955998cfc47aa">CompressedTile::Ptr</a> tile: line)</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    {</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      tile-&gt;close(vi);</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  }</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordflow">for</span>(<a class="code" href="classCompressedTile.html#aa2fdbb75653efab03bb955998cfc47aa">CompressedTile::Ptr</a> tile: <a class="code" href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">lineOutOfBounds</a>)</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  {</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    tile-&gt;close(vi);</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  }</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <a class="code" href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">outOfBounds</a>-&gt;close(vi);</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}</div><div class="ttc" id="classLayer_html_a6276fa23dbc72e1813dea0ce909fbc51"><div class="ttname"><a href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">Layer::outOfBounds</a></div><div class="ttdeci">CompressedTile::Ptr outOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00241">tiledbitmaplayer.hh:241</a></div></div>
-<div class="ttc" id="classLayer_html_a293b3e4be5e6edc8c3b83718f8c7ee33"><div class="ttname"><a href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">Layer::lineOutOfBounds</a></div><div class="ttdeci">CompressedTileLine lineOutOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00242">tiledbitmaplayer.hh:242</a></div></div>
-<div class="ttc" id="classLayer_html_acd8097c5fc4b8523de8e2e64478df49c"><div class="ttname"><a href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">Layer::tiles</a></div><div class="ttdeci">CompressedTileGrid tiles</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00240">tiledbitmaplayer.hh:240</a></div></div>
-<div class="ttc" id="tiledbitmaplayer_8hh_html_a5845555afcece45c0982c85a3563c18e"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a></div><div class="ttdeci">std::vector&lt; CompressedTile::Ptr &gt; CompressedTileLine</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00223">tiledbitmaplayer.hh:223</a></div></div>
-<div class="ttc" id="classCompressedTile_html_aa2fdbb75653efab03bb955998cfc47aa"><div class="ttname"><a href="classCompressedTile.html#aa2fdbb75653efab03bb955998cfc47aa">CompressedTile::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; CompressedTile &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00111">tiledbitmaplayer.hh:111</a></div></div>
+<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00170">170</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;{</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordflow">for</span>(<a class="code" href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a>&amp; line: <a class="code" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a>)</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  {</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code" href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a>&amp; tile: line)</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    {</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      tile-&gt;close(vi);</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  }</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code" href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a>&amp; tile: <a class="code" href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">lineOutOfBounds</a>)</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  {</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    tile-&gt;close(vi);</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  }</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <a class="code" href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">outOfBounds</a>-&gt;close(vi);</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div><div class="ttc" id="classLayer_html_a6276fa23dbc72e1813dea0ce909fbc51"><div class="ttname"><a href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">Layer::outOfBounds</a></div><div class="ttdeci">CompressedTile::Ptr outOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00251">tiledbitmaplayer.hh:251</a></div></div>
+<div class="ttc" id="classLayer_html_a293b3e4be5e6edc8c3b83718f8c7ee33"><div class="ttname"><a href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">Layer::lineOutOfBounds</a></div><div class="ttdeci">CompressedTileLine lineOutOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00252">tiledbitmaplayer.hh:252</a></div></div>
+<div class="ttc" id="classLayer_html_acd8097c5fc4b8523de8e2e64478df49c"><div class="ttname"><a href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">Layer::tiles</a></div><div class="ttdeci">CompressedTileGrid tiles</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00250">tiledbitmaplayer.hh:250</a></div></div>
+<div class="ttc" id="tiledbitmaplayer_8hh_html_a3902e4a779f862590474adb2068255b5"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a></div><div class="ttdeci">std::vector&lt; CompressedTile::Ptr &gt; CompressedTileLine</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00232">tiledbitmaplayer.hh:232</a></div></div>
+<div class="ttc" id="classCompressedTile_html_a808f3171290f6850961c8cee236589a1"><div class="ttname"><a href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; CompressedTile &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00108">tiledbitmaplayer.hh:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a79fd1cab4c003fa2376466bc812fddfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79fd1cab4c003fa2376466bc812fddfa">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a8f3623d32725dbc8537779fb7f682e46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3623d32725dbc8537779fb7f682e46">&#9670;&nbsp;</a></span>create() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,14 +355,8 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classLayer.html#a1ac49e190484eca087cd57658d7a9644">Layer::Ptr</a> Layer::create </td>
+          <td class="memname"><a class="el" href="classLayer.html#ae0d4b7e8822cfd565b9adbb4a0e46f03">Layer::Ptr</a> Layer::create </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classTileInitialisationObserver.html#a13222e337b9c7ad30c1cbed66a583855">TileInitialisationObserver::Ptr</a>&#160;</td>
-          <td class="paramname"><em>observer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>depth</em>, </td>
         </tr>
@@ -379,7 +381,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classScroom_1_1MemoryBlobs_1_1PageProvider.html#a4fb870b6934b76259ab87c66b8f189d1">Scroom::MemoryBlobs::PageProvider::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classScroom_1_1MemoryBlobs_1_1PageProvider.html#a7105b86c9fdfc1a88fe83bee19fa6859">Scroom::MemoryBlobs::PageProvider::Ptr</a>&#160;</td>
           <td class="paramname"><em>provider</em>&#160;</td>
         </tr>
         <tr>
@@ -395,17 +397,64 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00069">69</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00096">96</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tiled-bitmap_8cc_source.html#l00148">TiledBitmap::initialize()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a1ac49e190484eca087cd57658d7a9644">Ptr</a>(<span class="keyword">new</span> <a class="code" href="classLayer.html#a7f2c6033253283440a0574d8fcfb571d">Layer</a>(observer, <a class="code" href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">depth</a>, layerWidth, layerHeight, bpp, provider));</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div><div class="ttc" id="classLayer_html_a1ac49e190484eca087cd57658d7a9644"><div class="ttname"><a href="classLayer.html#a1ac49e190484eca087cd57658d7a9644">Layer::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; Layer &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00231">tiledbitmaplayer.hh:231</a></div></div>
-<div class="ttc" id="classLayer_html_a1f53ce854eed0215bbe94d3b23e6bc25"><div class="ttname"><a href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">Layer::depth</a></div><div class="ttdeci">int depth</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00234">tiledbitmaplayer.hh:234</a></div></div>
-<div class="ttc" id="classLayer_html_a7f2c6033253283440a0574d8fcfb571d"><div class="ttname"><a href="classLayer.html#a7f2c6033253283440a0574d8fcfb571d">Layer::Layer</a></div><div class="ttdeci">Layer(TileInitialisationObserver::Ptr observer, int depth, int layerWidth, int layerHeight, int bpp, Scroom::MemoryBlobs::PageProvider::Ptr provider)</div><div class="ttdoc">Layer. </div><div class="ttdef"><b>Definition:</b> <a href="layer_8cc_source.html#l00041">layer.cc:41</a></div></div>
+<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00101">create()</a>, <a class="el" href="tiled-bitmap_8cc_source.html#l00089">TiledBitmap::initialize()</a>, and <a class="el" href="tiff_8cc_source.html#l00055">Tiff::open()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classLayer.html#ae0d4b7e8822cfd565b9adbb4a0e46f03">Ptr</a>(<span class="keyword">new</span> <a class="code" href="classLayer.html#a461f24acc6b9fac1f007516bcd380c25">Layer</a>(<a class="code" href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">depth</a>, layerWidth, layerHeight, bpp, std::move(provider)));</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div><div class="ttc" id="classLayer_html_ae0d4b7e8822cfd565b9adbb4a0e46f03"><div class="ttname"><a href="classLayer.html#ae0d4b7e8822cfd565b9adbb4a0e46f03">Layer::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; Layer &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00242">tiledbitmaplayer.hh:242</a></div></div>
+<div class="ttc" id="classLayer_html_a1f53ce854eed0215bbe94d3b23e6bc25"><div class="ttname"><a href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">Layer::depth</a></div><div class="ttdeci">int depth</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00245">tiledbitmaplayer.hh:245</a></div></div>
+<div class="ttc" id="classLayer_html_a461f24acc6b9fac1f007516bcd380c25"><div class="ttname"><a href="classLayer.html#a461f24acc6b9fac1f007516bcd380c25">Layer::Layer</a></div><div class="ttdeci">Layer(int depth, int layerWidth, int layerHeight, int bpp, Scroom::MemoryBlobs::PageProvider::Ptr provider)</div><div class="ttdoc">Layer. </div><div class="ttdef"><b>Definition:</b> <a href="layer_8cc_source.html#l00068">layer.cc:68</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a3047bcacbe02b1aa960b4440d8aaacfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3047bcacbe02b1aa960b4440d8aaacfa">&#9670;&nbsp;</a></span>fetchData()</h2>
+<a id="ad91888355ff587ff45d585488dc21132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad91888355ff587ff45d585488dc21132">&#9670;&nbsp;</a></span>create() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLayer.html#ae0d4b7e8822cfd565b9adbb4a0e46f03">Layer::Ptr</a> Layer::create </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>layerWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>layerHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bpp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00101">101</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="classScroom_1_1MemoryBlobs_1_1PageProvider.html#a7105b86c9fdfc1a88fe83bee19fa6859">Scroom::MemoryBlobs::PageProvider::Ptr</a> provider = <a class="code" href="layer_8cc.html#a84bb171aac649efd1dab4f77373d08a4">createProvider</a>(layerWidth, layerHeight, bpp);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a8f3623d32725dbc8537779fb7f682e46">create</a>(0, layerWidth, layerHeight, bpp, provider);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div><div class="ttc" id="layer_8cc_html_a84bb171aac649efd1dab4f77373d08a4"><div class="ttname"><a href="layer_8cc.html#a84bb171aac649efd1dab4f77373d08a4">createProvider</a></div><div class="ttdeci">static Scroom::MemoryBlobs::PageProvider::Ptr createProvider(double width, double height, int bpp)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8cc_source.html#l00023">layer.cc:23</a></div></div>
+<div class="ttc" id="classLayer_html_a8f3623d32725dbc8537779fb7f682e46"><div class="ttname"><a href="classLayer.html#a8f3623d32725dbc8537779fb7f682e46">Layer::create</a></div><div class="ttdeci">static Ptr create(int depth, int layerWidth, int layerHeight, int bpp, Scroom::MemoryBlobs::PageProvider::Ptr provider)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8cc_source.html#l00096">layer.cc:96</a></div></div>
+<div class="ttc" id="classScroom_1_1MemoryBlobs_1_1PageProvider_html_a7105b86c9fdfc1a88fe83bee19fa6859"><div class="ttname"><a href="classScroom_1_1MemoryBlobs_1_1PageProvider.html#a7105b86c9fdfc1a88fe83bee19fa6859">Scroom::MemoryBlobs::PageProvider::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; PageProvider &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="memoryblobs_8hh_source.html#l00042">memoryblobs.hh:42</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3d2253a27e5b42cde01f15c85959580c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d2253a27e5b42cde01f15c85959580c">&#9670;&nbsp;</a></span>fetchData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,14 +462,20 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Layer::fetchData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classSourcePresentation.html#a48995c55873abf43957f484d91886632">SourcePresentation::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classSourcePresentation.html#adcc8551f0f8572a899f4270c353375b2">SourcePresentation::Ptr</a>&#160;</td>
           <td class="paramname"><em>sp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classThreadPool_1_1WeakQueue.html#a79cfb2dcef4125f914cf3e84d518ee8f">ThreadPool::WeakQueue::Ptr</a>&#160;</td>
-          <td class="paramname"><em>queue</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classThreadPool_1_1WeakQueue.html#a8af6f12fe2b76a7006900ff5f6d8c5ee">ThreadPool::WeakQueue::Ptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>on_finished</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -430,18 +485,18 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00109">109</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <a class="code" href="classDataFetcher.html">DataFetcher</a> df(shared_from_this&lt;Layer&gt;(),</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                 <a class="code" href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">height</a>,</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                 <a class="code" href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">horTileCount</a>, <a class="code" href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">verTileCount</a>,</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                 sp, queue);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <a class="code" href="threadpool_8hh.html#a4a99c6a6be48be73a9ecf92e6e3f6e9b">CpuBound</a>()-&gt;schedule(df, <a class="code" href="local_8hh.html#ae2de07f0f9ff468e76d12f302807d3d8">DATAFETCH_PRIO</a>, queue);</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div><div class="ttc" id="classLayer_html_a6a0bc24033339368a0ca9747485f0053"><div class="ttname"><a href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">Layer::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00236">tiledbitmaplayer.hh:236</a></div></div>
-<div class="ttc" id="classLayer_html_a09a8f2e20d2c509376948e9e8be89a5c"><div class="ttname"><a href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">Layer::horTileCount</a></div><div class="ttdeci">int horTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00238">tiledbitmaplayer.hh:238</a></div></div>
+<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00146">146</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;{</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <a class="code" href="classDataFetcher.html">DataFetcher</a> df(shared_from_this&lt;Layer&gt;(), <a class="code" href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">height</a>, <a class="code" href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">horTileCount</a>, <a class="code" href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">verTileCount</a>, std::move(sp), queue, std::move(on_finished));</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <a class="code" href="threadpool_8hh.html#a4a99c6a6be48be73a9ecf92e6e3f6e9b">CpuBound</a>()-&gt;schedule(df, <a class="code" href="local_8hh.html#ae2de07f0f9ff468e76d12f302807d3d8">DATAFETCH_PRIO</a>, queue);</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}</div><div class="ttc" id="classLayer_html_a6a0bc24033339368a0ca9747485f0053"><div class="ttname"><a href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">Layer::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00247">tiledbitmaplayer.hh:247</a></div></div>
+<div class="ttc" id="classLayer_html_a09a8f2e20d2c509376948e9e8be89a5c"><div class="ttname"><a href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">Layer::horTileCount</a></div><div class="ttdeci">int horTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00248">tiledbitmaplayer.hh:248</a></div></div>
 <div class="ttc" id="local_8hh_html_ae2de07f0f9ff468e76d12f302807d3d8"><div class="ttname"><a href="local_8hh.html#ae2de07f0f9ff468e76d12f302807d3d8">DATAFETCH_PRIO</a></div><div class="ttdeci">#define DATAFETCH_PRIO</div><div class="ttdef"><b>Definition:</b> <a href="local_8hh_source.html#l00011">local.hh:11</a></div></div>
-<div class="ttc" id="classDataFetcher_html"><div class="ttname"><a href="classDataFetcher.html">DataFetcher</a></div><div class="ttdef"><b>Definition:</b> <a href="layer_8cc_source.html#l00016">layer.cc:16</a></div></div>
-<div class="ttc" id="threadpool_8hh_html_a4a99c6a6be48be73a9ecf92e6e3f6e9b"><div class="ttname"><a href="threadpool_8hh.html#a4a99c6a6be48be73a9ecf92e6e3f6e9b">CpuBound</a></div><div class="ttdeci">ThreadPool::Ptr CpuBound()</div><div class="ttdoc">ThreadPool for cpu-bound tasks. </div><div class="ttdef"><b>Definition:</b> <a href="threadpoolimpl_8cc_source.html#l00471">threadpoolimpl.cc:471</a></div></div>
-<div class="ttc" id="classLayer_html_a8f270463756cb7dc9897564b3bff23d4"><div class="ttname"><a href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">Layer::verTileCount</a></div><div class="ttdeci">int verTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00239">tiledbitmaplayer.hh:239</a></div></div>
+<div class="ttc" id="classDataFetcher_html"><div class="ttname"><a href="classDataFetcher.html">DataFetcher</a></div><div class="ttdef"><b>Definition:</b> <a href="layer_8cc_source.html#l00040">layer.cc:40</a></div></div>
+<div class="ttc" id="threadpool_8hh_html_a4a99c6a6be48be73a9ecf92e6e3f6e9b"><div class="ttname"><a href="threadpool_8hh.html#a4a99c6a6be48be73a9ecf92e6e3f6e9b">CpuBound</a></div><div class="ttdeci">ThreadPool::Ptr CpuBound()</div><div class="ttdoc">ThreadPool for cpu-bound tasks. </div><div class="ttdef"><b>Definition:</b> <a href="threadpoolimpl_8cc_source.html#l00462">threadpoolimpl.cc:462</a></div></div>
+<div class="ttc" id="classLayer_html_a8f270463756cb7dc9897564b3bff23d4"><div class="ttname"><a href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">Layer::verTileCount</a></div><div class="ttdeci">int verTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00249">tiledbitmaplayer.hh:249</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a72c5400a904c8d8e0bb78ac522a60460"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72c5400a904c8d8e0bb78ac522a60460">&#9670;&nbsp;</a></span>getDepth()</h2>
+<a id="a7496892cad703e085e3e0145026f1c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7496892cad703e085e3e0145026f1c42">&#9670;&nbsp;</a></span>getDepth()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -453,7 +508,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">int Layer::getDepth </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -463,13 +518,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00263">263</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
-<div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">depth</a>; }</div><div class="ttc" id="classLayer_html_a1f53ce854eed0215bbe94d3b23e6bc25"><div class="ttname"><a href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">Layer::depth</a></div><div class="ttdeci">int depth</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00234">tiledbitmaplayer.hh:234</a></div></div>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00273">273</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">depth</a>; }</div><div class="ttc" id="classLayer_html_a1f53ce854eed0215bbe94d3b23e6bc25"><div class="ttname"><a href="classLayer.html#a1f53ce854eed0215bbe94d3b23e6bc25">Layer::depth</a></div><div class="ttdeci">int depth</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00245">tiledbitmaplayer.hh:245</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a974c0866509db4c131f8f38d281fbcd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a974c0866509db4c131f8f38d281fbcd1">&#9670;&nbsp;</a></span>getHeight()</h2>
+<a id="a93762cbd22847abe210805c546329e51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93762cbd22847abe210805c546329e51">&#9670;&nbsp;</a></span>getHeight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,6 +536,54 @@ Private Attributes</h2></td></tr>
           <td class="memname">int Layer::getHeight </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00271">271</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">height</a>; }</div><div class="ttc" id="classLayer_html_a6a0bc24033339368a0ca9747485f0053"><div class="ttname"><a href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">Layer::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00247">tiledbitmaplayer.hh:247</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa95b82451c1bf40bfc09200d4c1336ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95b82451c1bf40bfc09200d4c1336ea">&#9670;&nbsp;</a></span>getHorTileCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Layer::getHorTileCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00122">122</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">horTileCount</a>; }</div><div class="ttc" id="classLayer_html_a09a8f2e20d2c509376948e9e8be89a5c"><div class="ttname"><a href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">Layer::horTileCount</a></div><div class="ttdeci">int horTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00248">tiledbitmaplayer.hh:248</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a193fccd8bdd01f7d86b364cf6cecd042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a193fccd8bdd01f7d86b364cf6cecd042">&#9670;&nbsp;</a></span>getPageProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classScroom_1_1MemoryBlobs_1_1PageProvider.html#a7105b86c9fdfc1a88fe83bee19fa6859">Scroom::MemoryBlobs::PageProvider::Ptr</a> Layer::getPageProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -491,33 +594,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00260">260</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
-<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">height</a>; }</div><div class="ttc" id="classLayer_html_a6a0bc24033339368a0ca9747485f0053"><div class="ttname"><a href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">Layer::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00236">tiledbitmaplayer.hh:236</a></div></div>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00279">279</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classLayer.html#ad3ce25fb2fef0a59b6520ed131d31d15">pageProvider</a>; }</div><div class="ttc" id="classLayer_html_ad3ce25fb2fef0a59b6520ed131d31d15"><div class="ttname"><a href="classLayer.html#ad3ce25fb2fef0a59b6520ed131d31d15">Layer::pageProvider</a></div><div class="ttdeci">Scroom::MemoryBlobs::PageProvider::Ptr pageProvider</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00253">tiledbitmaplayer.hh:253</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a06c476f570760876f20ca9ddc70be6c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06c476f570760876f20ca9ddc70be6c5">&#9670;&nbsp;</a></span>getHorTileCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Layer::getHorTileCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00074">74</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">horTileCount</a>;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div><div class="ttc" id="classLayer_html_a09a8f2e20d2c509376948e9e8be89a5c"><div class="ttname"><a href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">Layer::horTileCount</a></div><div class="ttdeci">int horTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00238">tiledbitmaplayer.hh:238</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a089cad953ab1e8ce3ccc69893fa7fe61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a089cad953ab1e8ce3ccc69893fa7fe61">&#9670;&nbsp;</a></span>getRect()</h2>
+<a id="a9a9ccf7e5749b9f6bfa0de956fcac772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a9ccf7e5749b9f6bfa0de956fcac772">&#9670;&nbsp;</a></span>getRect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -529,7 +612,7 @@ Private Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt;int&gt; Layer::getRect </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -539,10 +622,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00266">266</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
-<div class="fragment"><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  {</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle&lt;int&gt;</a>(0,0,<a class="code" href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">width</a>,<a class="code" href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">height</a>);</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  }</div><div class="ttc" id="classLayer_html_a6a0bc24033339368a0ca9747485f0053"><div class="ttname"><a href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">Layer::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00236">tiledbitmaplayer.hh:236</a></div></div>
-<div class="ttc" id="classScroom_1_1Utils_1_1Rectangle_html"><div class="ttname"><a href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a></div><div class="ttdef"><b>Definition:</b> <a href="rectangle_8hh_source.html#l00024">rectangle.hh:24</a></div></div>
-<div class="ttc" id="classLayer_html_a724d3020ddbe5f9280caa325541e70a3"><div class="ttname"><a href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">Layer::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00235">tiledbitmaplayer.hh:235</a></div></div>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00275">275</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle&lt;int&gt;</a>(0, 0, <a class="code" href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">width</a>, <a class="code" href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">height</a>); }</div><div class="ttc" id="classLayer_html_a6a0bc24033339368a0ca9747485f0053"><div class="ttname"><a href="classLayer.html#a6a0bc24033339368a0ca9747485f0053">Layer::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00247">tiledbitmaplayer.hh:247</a></div></div>
+<div class="ttc" id="classScroom_1_1Utils_1_1Rectangle_html"><div class="ttname"><a href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle&lt; int &gt;</a></div></div>
+<div class="ttc" id="classLayer_html_a724d3020ddbe5f9280caa325541e70a3"><div class="ttname"><a href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">Layer::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00246">tiledbitmaplayer.hh:246</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -553,7 +636,7 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCompressedTile.html#aa2fdbb75653efab03bb955998cfc47aa">CompressedTile::Ptr</a> Layer::getTile </td>
+          <td class="memname"><a class="el" href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a> Layer::getTile </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>i</em>, </td>
@@ -572,11 +655,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00084">84</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">if</span>(0&lt;=i &amp;&amp; i&lt;<a class="code" href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">horTileCount</a> &amp;&amp;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;     0&lt;=j &amp;&amp; j&lt;<a class="code" href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">verTileCount</a>)</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  {</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a>[j][i];</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">else</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  {</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">outOfBounds</a>;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div><div class="ttc" id="classLayer_html_a6276fa23dbc72e1813dea0ce909fbc51"><div class="ttname"><a href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">Layer::outOfBounds</a></div><div class="ttdeci">CompressedTile::Ptr outOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00241">tiledbitmaplayer.hh:241</a></div></div>
-<div class="ttc" id="classLayer_html_a09a8f2e20d2c509376948e9e8be89a5c"><div class="ttname"><a href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">Layer::horTileCount</a></div><div class="ttdeci">int horTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00238">tiledbitmaplayer.hh:238</a></div></div>
-<div class="ttc" id="classLayer_html_acd8097c5fc4b8523de8e2e64478df49c"><div class="ttname"><a href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">Layer::tiles</a></div><div class="ttdeci">CompressedTileGrid tiles</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00240">tiledbitmaplayer.hh:240</a></div></div>
-<div class="ttc" id="classLayer_html_a8f270463756cb7dc9897564b3bff23d4"><div class="ttname"><a href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">Layer::verTileCount</a></div><div class="ttdeci">int verTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00239">tiledbitmaplayer.hh:239</a></div></div>
+<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00126">126</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordflow">if</span>(0 &lt;= i &amp;&amp; i &lt; <a class="code" href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">horTileCount</a> &amp;&amp; 0 &lt;= j &amp;&amp; j &lt; <a class="code" href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">verTileCount</a>)</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a>[j][i];</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  }</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">outOfBounds</a>;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div><div class="ttc" id="classLayer_html_a6276fa23dbc72e1813dea0ce909fbc51"><div class="ttname"><a href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">Layer::outOfBounds</a></div><div class="ttdeci">CompressedTile::Ptr outOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00251">tiledbitmaplayer.hh:251</a></div></div>
+<div class="ttc" id="classLayer_html_a09a8f2e20d2c509376948e9e8be89a5c"><div class="ttname"><a href="classLayer.html#a09a8f2e20d2c509376948e9e8be89a5c">Layer::horTileCount</a></div><div class="ttdeci">int horTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00248">tiledbitmaplayer.hh:248</a></div></div>
+<div class="ttc" id="classLayer_html_acd8097c5fc4b8523de8e2e64478df49c"><div class="ttname"><a href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">Layer::tiles</a></div><div class="ttdeci">CompressedTileGrid tiles</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00250">tiledbitmaplayer.hh:250</a></div></div>
+<div class="ttc" id="classLayer_html_a8f270463756cb7dc9897564b3bff23d4"><div class="ttname"><a href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">Layer::verTileCount</a></div><div class="ttdeci">int verTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00249">tiledbitmaplayer.hh:249</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -587,7 +670,7 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a> &amp; Layer::getTileLine </td>
+          <td class="memname"><a class="el" href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a> &amp; Layer::getTileLine </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>j</em></td><td>)</td>
@@ -596,15 +679,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00097">97</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">if</span>(0&lt;=j &amp;&amp; j&lt;<a class="code" href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">verTileCount</a>)</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  {</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a>[j];</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">else</span></div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  {</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">lineOutOfBounds</a>;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div><div class="ttc" id="classLayer_html_a293b3e4be5e6edc8c3b83718f8c7ee33"><div class="ttname"><a href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">Layer::lineOutOfBounds</a></div><div class="ttdeci">CompressedTileLine lineOutOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00242">tiledbitmaplayer.hh:242</a></div></div>
-<div class="ttc" id="classLayer_html_acd8097c5fc4b8523de8e2e64478df49c"><div class="ttname"><a href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">Layer::tiles</a></div><div class="ttdeci">CompressedTileGrid tiles</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00240">tiledbitmaplayer.hh:240</a></div></div>
-<div class="ttc" id="classLayer_html_a8f270463756cb7dc9897564b3bff23d4"><div class="ttname"><a href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">Layer::verTileCount</a></div><div class="ttdeci">int verTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00239">tiledbitmaplayer.hh:239</a></div></div>
+<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00136">136</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordflow">if</span>(0 &lt;= j &amp;&amp; j &lt; <a class="code" href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">verTileCount</a>)</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  {</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a>[j];</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  }</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">lineOutOfBounds</a>;</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div><div class="ttc" id="classLayer_html_a293b3e4be5e6edc8c3b83718f8c7ee33"><div class="ttname"><a href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">Layer::lineOutOfBounds</a></div><div class="ttdeci">CompressedTileLine lineOutOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00252">tiledbitmaplayer.hh:252</a></div></div>
+<div class="ttc" id="classLayer_html_acd8097c5fc4b8523de8e2e64478df49c"><div class="ttname"><a href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">Layer::tiles</a></div><div class="ttdeci">CompressedTileGrid tiles</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00250">tiledbitmaplayer.hh:250</a></div></div>
+<div class="ttc" id="classLayer_html_a8f270463756cb7dc9897564b3bff23d4"><div class="ttname"><a href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">Layer::verTileCount</a></div><div class="ttdeci">int verTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00249">tiledbitmaplayer.hh:249</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a3b0a9e864d755c8743448e65cb7b3dc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b0a9e864d755c8743448e65cb7b3dc7">&#9670;&nbsp;</a></span>getVerTileCount()</h2>
+<a id="ad3ca3869b234ba456c3add5bd67e4860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ca3869b234ba456c3add5bd67e4860">&#9670;&nbsp;</a></span>getVerTileCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -613,18 +696,18 @@ Private Attributes</h2></td></tr>
           <td class="memname">int Layer::getVerTileCount </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00079">79</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">verTileCount</a>;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div><div class="ttc" id="classLayer_html_a8f270463756cb7dc9897564b3bff23d4"><div class="ttname"><a href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">Layer::verTileCount</a></div><div class="ttdeci">int verTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00239">tiledbitmaplayer.hh:239</a></div></div>
+<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00124">124</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">verTileCount</a>; }</div><div class="ttc" id="classLayer_html_a8f270463756cb7dc9897564b3bff23d4"><div class="ttname"><a href="classLayer.html#a8f270463756cb7dc9897564b3bff23d4">Layer::verTileCount</a></div><div class="ttdeci">int verTileCount</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00249">tiledbitmaplayer.hh:249</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a39e3b346235715e15d99a0a8ac95e0a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39e3b346235715e15d99a0a8ac95e0a7">&#9670;&nbsp;</a></span>getWidth()</h2>
+<a id="ac96bf85488cb3fb1f1e4f078f1d7c767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96bf85488cb3fb1f1e4f078f1d7c767">&#9670;&nbsp;</a></span>getWidth()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -636,7 +719,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">int Layer::getWidth </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -646,13 +729,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00257">257</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
-<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">width</a>; }</div><div class="ttc" id="classLayer_html_a724d3020ddbe5f9280caa325541e70a3"><div class="ttname"><a href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">Layer::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00235">tiledbitmaplayer.hh:235</a></div></div>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00269">269</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">width</a>; }</div><div class="ttc" id="classLayer_html_a724d3020ddbe5f9280caa325541e70a3"><div class="ttname"><a href="classLayer.html#a724d3020ddbe5f9280caa325541e70a3">Layer::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00246">tiledbitmaplayer.hh:246</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="af0275d5354f7f68e22354c62f579c334"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0275d5354f7f68e22354c62f579c334">&#9670;&nbsp;</a></span>open()</h2>
+<a id="afd25e081ea14b44723ccbf3bb1510b35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd25e081ea14b44723ccbf3bb1510b35">&#9670;&nbsp;</a></span>open()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -663,14 +746,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Layer::open </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classViewInterface.html#ae92933d2303923b3c487674dff4ab999">ViewInterface::WeakPtr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classViewInterface.html#a728bb2c185daaeaa562a624b7ab96c23">ViewInterface::WeakPtr</a>&#160;</td>
           <td class="paramname"><em>vi</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -680,12 +763,35 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classViewable.html#a3e17fe21b5e7bdb916b5c7cbfc65ffbd">Viewable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00120">120</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordflow">for</span>(<a class="code" href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a>&amp; line: <a class="code" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a>)</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  {</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="classCompressedTile.html#aa2fdbb75653efab03bb955998cfc47aa">CompressedTile::Ptr</a> tile: line)</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    {</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      tile-&gt;open(vi);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  }</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordflow">for</span>(<a class="code" href="classCompressedTile.html#aa2fdbb75653efab03bb955998cfc47aa">CompressedTile::Ptr</a> tile: <a class="code" href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">lineOutOfBounds</a>)</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  {</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    tile-&gt;open(vi);</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  }</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <a class="code" href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">outOfBounds</a>-&gt;open(vi);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div><div class="ttc" id="classLayer_html_a6276fa23dbc72e1813dea0ce909fbc51"><div class="ttname"><a href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">Layer::outOfBounds</a></div><div class="ttdeci">CompressedTile::Ptr outOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00241">tiledbitmaplayer.hh:241</a></div></div>
-<div class="ttc" id="classLayer_html_a293b3e4be5e6edc8c3b83718f8c7ee33"><div class="ttname"><a href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">Layer::lineOutOfBounds</a></div><div class="ttdeci">CompressedTileLine lineOutOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00242">tiledbitmaplayer.hh:242</a></div></div>
-<div class="ttc" id="classLayer_html_acd8097c5fc4b8523de8e2e64478df49c"><div class="ttname"><a href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">Layer::tiles</a></div><div class="ttdeci">CompressedTileGrid tiles</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00240">tiledbitmaplayer.hh:240</a></div></div>
-<div class="ttc" id="tiledbitmaplayer_8hh_html_a5845555afcece45c0982c85a3563c18e"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a></div><div class="ttdeci">std::vector&lt; CompressedTile::Ptr &gt; CompressedTileLine</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00223">tiledbitmaplayer.hh:223</a></div></div>
-<div class="ttc" id="classCompressedTile_html_aa2fdbb75653efab03bb955998cfc47aa"><div class="ttname"><a href="classCompressedTile.html#aa2fdbb75653efab03bb955998cfc47aa">CompressedTile::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; CompressedTile &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00111">tiledbitmaplayer.hh:111</a></div></div>
+<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00154">154</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;{</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordflow">for</span>(<a class="code" href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a>&amp; line: <a class="code" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a>)</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  {</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code" href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a>&amp; tile: line)</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    {</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      tile-&gt;open(vi);</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  }</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code" href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a>&amp; tile: <a class="code" href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">lineOutOfBounds</a>)</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  {</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    tile-&gt;open(vi);</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  }</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <a class="code" href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">outOfBounds</a>-&gt;open(vi);</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div><div class="ttc" id="classLayer_html_a6276fa23dbc72e1813dea0ce909fbc51"><div class="ttname"><a href="classLayer.html#a6276fa23dbc72e1813dea0ce909fbc51">Layer::outOfBounds</a></div><div class="ttdeci">CompressedTile::Ptr outOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00251">tiledbitmaplayer.hh:251</a></div></div>
+<div class="ttc" id="classLayer_html_a293b3e4be5e6edc8c3b83718f8c7ee33"><div class="ttname"><a href="classLayer.html#a293b3e4be5e6edc8c3b83718f8c7ee33">Layer::lineOutOfBounds</a></div><div class="ttdeci">CompressedTileLine lineOutOfBounds</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00252">tiledbitmaplayer.hh:252</a></div></div>
+<div class="ttc" id="classLayer_html_acd8097c5fc4b8523de8e2e64478df49c"><div class="ttname"><a href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">Layer::tiles</a></div><div class="ttdeci">CompressedTileGrid tiles</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00250">tiledbitmaplayer.hh:250</a></div></div>
+<div class="ttc" id="tiledbitmaplayer_8hh_html_a3902e4a779f862590474adb2068255b5"><div class="ttname"><a href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a></div><div class="ttdeci">std::vector&lt; CompressedTile::Ptr &gt; CompressedTileLine</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00232">tiledbitmaplayer.hh:232</a></div></div>
+<div class="ttc" id="classCompressedTile_html_a808f3171290f6850961c8cee236589a1"><div class="ttname"><a href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; CompressedTile &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00108">tiledbitmaplayer.hh:108</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a48dc1b9f287e3552fc501292ee16ac36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48dc1b9f287e3552fc501292ee16ac36">&#9670;&nbsp;</a></span>registerObserver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classScroom_1_1Bookkeeping_1_1Token.html">Scroom::Bookkeeping::Token</a> Layer::registerObserver </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTileInitialisationObserver.html#ab0cb48cb4f6a517aca577eaae7e47983">TileInitialisationObserver::Ptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>observer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="layer_8cc_source.html#l00108">108</a> of file <a class="el" href="layer_8cc_source.html">layer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="classScroom_1_1Bookkeeping_1_1Token.html">Scroom::Bookkeeping::Token</a> t;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; line: <a class="code" href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">tiles</a>)</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; tile: line)</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      t.<a class="code" href="classScroom_1_1Bookkeeping_1_1Token.html#ac619f80091875f045710df020bbc5c11">add</a>(tile-&gt;registerObserver(observer));</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">return</span> t;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div><div class="ttc" id="classLayer_html_acd8097c5fc4b8523de8e2e64478df49c"><div class="ttname"><a href="classLayer.html#acd8097c5fc4b8523de8e2e64478df49c">Layer::tiles</a></div><div class="ttdeci">CompressedTileGrid tiles</div><div class="ttdef"><b>Definition:</b> <a href="tiledbitmaplayer_8hh_source.html#l00250">tiledbitmaplayer.hh:250</a></div></div>
+<div class="ttc" id="classScroom_1_1Bookkeeping_1_1Token_html_ac619f80091875f045710df020bbc5c11"><div class="ttname"><a href="classScroom_1_1Bookkeeping_1_1Token.html#ac619f80091875f045710df020bbc5c11">Scroom::Bookkeeping::Token::add</a></div><div class="ttdeci">void add(const Stuff &amp;s) const</div><div class="ttdef"><b>Definition:</b> <a href="bookkeepingimpl_8hh_source.html#l00185">bookkeepingimpl.hh:185</a></div></div>
+<div class="ttc" id="classScroom_1_1Bookkeeping_1_1Token_html"><div class="ttname"><a href="classScroom_1_1Bookkeeping_1_1Token.html">Scroom::Bookkeeping::Token</a></div><div class="ttdef"><b>Definition:</b> <a href="bookkeeping_8hh_source.html#l00039">bookkeeping.hh:39</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -710,7 +816,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00234">234</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00245">245</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
 
 </div>
 </div>
@@ -734,9 +840,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00236">236</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00109">fetchData()</a>, and <a class="el" href="layer_8cc_source.html#l00041">Layer()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00247">247</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
 
 </div>
 </div>
@@ -760,9 +864,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00238">238</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00248">248</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00109">fetchData()</a>, <a class="el" href="layer_8cc_source.html#l00074">getHorTileCount()</a>, <a class="el" href="layer_8cc_source.html#l00084">getTile()</a>, and <a class="el" href="layer_8cc_source.html#l00041">Layer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00122">getHorTileCount()</a>, and <a class="el" href="layer_8cc_source.html#l00068">Layer()</a>.</p>
 
 </div>
 </div>
@@ -776,7 +880,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tiledbitmaplayer_8hh.html#a5845555afcece45c0982c85a3563c18e">CompressedTileLine</a> Layer::lineOutOfBounds</td>
+          <td class="memname"><a class="el" href="tiledbitmaplayer_8hh.html#a3902e4a779f862590474adb2068255b5">CompressedTileLine</a> Layer::lineOutOfBounds</td>
         </tr>
       </table>
   </td>
@@ -786,9 +890,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00242">242</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00252">252</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00136">close()</a>, <a class="el" href="layer_8cc_source.html#l00097">getTileLine()</a>, <a class="el" href="layer_8cc_source.html#l00041">Layer()</a>, and <a class="el" href="layer_8cc_source.html#l00120">open()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00170">close()</a>, <a class="el" href="layer_8cc_source.html#l00136">getTileLine()</a>, <a class="el" href="layer_8cc_source.html#l00068">Layer()</a>, and <a class="el" href="layer_8cc_source.html#l00154">open()</a>.</p>
 
 </div>
 </div>
@@ -802,7 +906,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCompressedTile.html#aa2fdbb75653efab03bb955998cfc47aa">CompressedTile::Ptr</a> Layer::outOfBounds</td>
+          <td class="memname"><a class="el" href="classCompressedTile.html#a808f3171290f6850961c8cee236589a1">CompressedTile::Ptr</a> Layer::outOfBounds</td>
         </tr>
       </table>
   </td>
@@ -812,14 +916,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00241">241</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00251">251</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00136">close()</a>, <a class="el" href="layer_8cc_source.html#l00084">getTile()</a>, <a class="el" href="layer_8cc_source.html#l00041">Layer()</a>, and <a class="el" href="layer_8cc_source.html#l00120">open()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00170">close()</a>, <a class="el" href="layer_8cc_source.html#l00126">getTile()</a>, <a class="el" href="layer_8cc_source.html#l00068">Layer()</a>, and <a class="el" href="layer_8cc_source.html#l00154">open()</a>.</p>
 
 </div>
 </div>
-<a id="ac7700d72c9d586d6e7fb690912726045"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7700d72c9d586d6e7fb690912726045">&#9670;&nbsp;</a></span>registrations</h2>
+<a id="ad3ce25fb2fef0a59b6520ed131d31d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ce25fb2fef0a59b6520ed131d31d15">&#9670;&nbsp;</a></span>pageProvider</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -828,7 +932,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceScroom_1_1Utils.html#ac88165bf484ff84c1e61bd82244371fd">Scroom::Utils::StuffList</a> Layer::registrations</td>
+          <td class="memname"><a class="el" href="classScroom_1_1MemoryBlobs_1_1PageProvider.html#a7105b86c9fdfc1a88fe83bee19fa6859">Scroom::MemoryBlobs::PageProvider::Ptr</a> Layer::pageProvider</td>
         </tr>
       </table>
   </td>
@@ -838,9 +942,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00237">237</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00253">253</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00041">Layer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00068">Layer()</a>.</p>
 
 </div>
 </div>
@@ -854,7 +958,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tiledbitmaplayer_8hh.html#a7a2a850f232ebb5180c094605ad209a8">CompressedTileGrid</a> Layer::tiles</td>
+          <td class="memname"><a class="el" href="tiledbitmaplayer_8hh.html#a6a439d385552614de1a0814da3706395">CompressedTileGrid</a> Layer::tiles</td>
         </tr>
       </table>
   </td>
@@ -864,9 +968,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00240">240</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00250">250</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00136">close()</a>, <a class="el" href="layer_8cc_source.html#l00084">getTile()</a>, <a class="el" href="layer_8cc_source.html#l00097">getTileLine()</a>, <a class="el" href="layer_8cc_source.html#l00041">Layer()</a>, and <a class="el" href="layer_8cc_source.html#l00120">open()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00170">close()</a>, <a class="el" href="layer_8cc_source.html#l00126">getTile()</a>, <a class="el" href="layer_8cc_source.html#l00136">getTileLine()</a>, <a class="el" href="layer_8cc_source.html#l00068">Layer()</a>, <a class="el" href="layer_8cc_source.html#l00154">open()</a>, and <a class="el" href="layer_8cc_source.html#l00108">registerObserver()</a>.</p>
 
 </div>
 </div>
@@ -890,9 +994,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00239">239</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00249">249</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00109">fetchData()</a>, <a class="el" href="layer_8cc_source.html#l00084">getTile()</a>, <a class="el" href="layer_8cc_source.html#l00097">getTileLine()</a>, <a class="el" href="layer_8cc_source.html#l00079">getVerTileCount()</a>, and <a class="el" href="layer_8cc_source.html#l00041">Layer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00124">getVerTileCount()</a>, and <a class="el" href="layer_8cc_source.html#l00068">Layer()</a>.</p>
 
 </div>
 </div>
@@ -916,9 +1020,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00235">235</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiledbitmaplayer_8hh_source.html#l00246">246</a> of file <a class="el" href="tiledbitmaplayer_8hh_source.html">tiledbitmaplayer.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00041">Layer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="layer_8cc_source.html#l00068">Layer()</a>.</p>
 
 </div>
 </div>
@@ -932,7 +1036,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classLayer.html">Layer</a></li>
-    <li class="footer">Generated on Fri Sep 11 2020 10:09:31 for Scroom by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

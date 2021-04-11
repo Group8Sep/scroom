@@ -1,7 +1,6 @@
 var classTileLoadingObserver =
 [
-    [ "Ptr", "classTileLoadingObserver.html#a6a4049be272eb8f52752af274c156aba", null ],
-    [ "WeakPtr", "classTileLoadingObserver.html#a4ba2d37e45697091e557a684a0ebc570", null ],
-    [ "~TileLoadingObserver", "classTileLoadingObserver.html#adf0f2b460a79e261ae467d08432635eb", null ],
+    [ "Ptr", "classTileLoadingObserver.html#a1ed1a597796fb51932aa8c9e1cd76aad", null ],
+    [ "WeakPtr", "classTileLoadingObserver.html#a9abfbf9b04a89dcb16cec4407b7446c7", null ],
     [ "tileLoaded", "classTileLoadingObserver.html#afdd49a1d330076f47e13e494c39dc713", null ]
 ];

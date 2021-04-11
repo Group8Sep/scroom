@@ -42,15 +42,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classColormappable.html#a65f7747cb8c21704aed2bcbb05401f8b",
-"classOperations24bpp.html#a3a16af1f5fc66b2f35f8e7667ccb3a8d",
-"classScroom_1_1Bitmap_1_1SampleIterator.html#a1595c51c4266f134f3c24726f30a5ba1",
-"classScroom_1_1Utils_1_1Detail_1_1Registration.html",
-"classThreadPool.html#a02868ba7fdf289e346b325bee1c346ca",
-"classTiledBitmapViewData.html#a8b46ee3f4f6d65987d3301a2e9d45b47",
-"colormappable_8hh.html#aa9ccccaacd6a2d008759fcaac53b9bf2",
-"measure_8hh_source.html",
-"tiledbitmaplayer_8hh_source.html"
+"classColormappable.html#ae43e2fc3d049bbeebac2a64128ea0fc3",
+"classOperationsCMYK16.html#ad3b247fb587bce93d52152b0e7b3fc84",
+"classScroom_1_1Bitmap_1_1SampleIterator.html#afedc31f1aa4db6198eefbe5d9952df73",
+"classScroom_1_1Utils_1_1Counted.html#a768ea200f78d7e7186c99551c34e82ec",
+"classScroom_1_1Utils_1_1Timer.html#ae7a6f8f38141171cb4b6ba82a3cf0d77",
+"classTiledBitmapViewData.html#a6b6aafe842d17dec19e0281ce61c6a18",
+"classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1OpenTiledBitmapAsPresentation.html#a7fd965cfdb8b2ab9cd659c925adf8429",
+"gui_2src_2main_8cc.html#a0ddf1224851353fc92bfbff6f499fa97",
+"structScroom_1_1TiledBitmap_1_1BitmapMetaData.html#a86250b9ade69c4581854e533283e582a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

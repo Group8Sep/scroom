@@ -1,6 +1,5 @@
 var classSidebarManager =
 [
-    [ "SidebarManager", "classSidebarManager.html#a7ebaa232c3e5a2a2ab654d3078ca0f66", null ],
     [ "addSideWidget", "classSidebarManager.html#a1d7f45de701454ffe586fb99ab64b5aa", null ],
     [ "removeSideWidget", "classSidebarManager.html#ad55b76bd7930ee36b08f6962bad0b92d", null ],
     [ "setWidgets", "classSidebarManager.html#ab6f09410682d37810e9f8d8476a50485", null ],

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1</span>
+   &#160;<span id="projectnumber">0.12.1</span>
    </div>
   </td>
  </tr>
@@ -97,15 +97,15 @@ Collaboration diagram for anonymous_namespace{transparentoverlaypresentation.cc}
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a12ee34ea3a4ff363bf3e742d50f03089"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02transparentoverlaypresentation_8cc_03_1_1ColorComparer.html#a12ee34ea3a4ff363bf3e742d50f03089">operator()</a> (<a class="el" href="classColor.html">Color</a> const &amp;left, <a class="el" href="classColor.html">Color</a> const &amp;right)</td></tr>
-<tr class="separator:a12ee34ea3a4ff363bf3e742d50f03089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d830501b5e42bcdf6a0188546059ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02transparentoverlaypresentation_8cc_03_1_1ColorComparer.html#af4d830501b5e42bcdf6a0188546059ea">operator()</a> (<a class="el" href="classColor.html">Color</a> const &amp;left, <a class="el" href="classColor.html">Color</a> const &amp;right) const</td></tr>
+<tr class="separator:af4d830501b5e42bcdf6a0188546059ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="transparentoverlaypresentation_8cc_source.html#l00032">32</a> of file <a class="el" href="transparentoverlaypresentation_8cc_source.html">transparentoverlaypresentation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transparentoverlaypresentation_8cc_source.html#l00031">31</a> of file <a class="el" href="transparentoverlaypresentation_8cc_source.html">transparentoverlaypresentation.cc</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a12ee34ea3a4ff363bf3e742d50f03089"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12ee34ea3a4ff363bf3e742d50f03089">&#9670;&nbsp;</a></span>operator()()</h2>
+<a id="af4d830501b5e42bcdf6a0188546059ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4d830501b5e42bcdf6a0188546059ea">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -128,7 +128,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -138,8 +138,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="transparentoverlaypresentation_8cc_source.html#l00034">34</a> of file <a class="el" href="transparentoverlaypresentation_8cc_source.html">transparentoverlaypresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordflow">return</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        boost::make_tuple(left.alpha, left.red, left.green, left.blue) &lt;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        boost::make_tuple(right.alpha, right.red, right.green, right.blue);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="transparentoverlaypresentation_8cc_source.html#l00033">33</a> of file <a class="el" href="transparentoverlaypresentation_8cc_source.html">transparentoverlaypresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordflow">return</span> boost::make_tuple(left.alpha, left.red, left.green, left.blue)</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;             &lt; boost::make_tuple(right.alpha, right.red, right.green, right.blue);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
@@ -151,7 +151,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceanonymous__namespace_02transparentoverlaypresentation_8cc_03.html">anonymous_namespace{transparentoverlaypresentation.cc}</a></li><li class="navelem"><a class="el" href="structanonymous__namespace_02transparentoverlaypresentation_8cc_03_1_1ColorComparer.html">ColorComparer</a></li>
-    <li class="footer">Generated on Fri Sep 11 2020 10:09:31 for Scroom by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

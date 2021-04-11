@@ -1,7 +1,7 @@
 var classTransparentOverlayViewInfo =
 [
-    [ "ChildMap", "classTransparentOverlayViewInfo.html#aa4eda2b5d7777658cd2fa9348f3e793c", null ],
-    [ "Ptr", "classTransparentOverlayViewInfo.html#acceabdf114b728e3712b996071d3b94d", null ],
+    [ "ChildMap", "classTransparentOverlayViewInfo.html#ade12e9351ba20900568fa33935d33c80", null ],
+    [ "Ptr", "classTransparentOverlayViewInfo.html#aea41926262d8aced54cc361c44ff3b85", null ],
     [ "TransparentOverlayViewInfo", "classTransparentOverlayViewInfo.html#a9607436f451598d52c2222a9b5afddcb", null ],
     [ "addChild", "classTransparentOverlayViewInfo.html#a0febc5a267ab940b43a8f55f428246f6", null ],
     [ "addChildren", "classTransparentOverlayViewInfo.html#a2795eac0eedd4072ed84abc8b260a6cd", null ],

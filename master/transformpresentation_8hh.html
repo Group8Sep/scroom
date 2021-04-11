@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1</span>
+   &#160;<span id="projectnumber">0.12.1</span>
    </div>
   </td>
  </tr>
@@ -88,36 +88,37 @@ $(document).ready(function(){initNavTree('transformpresentation_8hh.html','');})
 <div class="contents">
 <div class="textblock"><code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="colormappable_8hh_source.html">scroom/colormappable.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="pipetteviewinterface_8hh_source.html">scroom/pipetteviewinterface.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="point_8hh_source.html">scroom/point.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="presentationinterface_8hh_source.html">scroom/presentationinterface.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="pipetteviewinterface_8hh_source.html">scroom/pipetteviewinterface.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="rectangle_8hh_source.html">scroom/rectangle.hh</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for transformpresentation.hh:</div>
 <div class="dyncontent">
 <div class="center"><img src="transformpresentation_8hh__incl.png" border="0" usemap="#inc_2scroom_2transformpresentation_8hh" alt=""/></div>
 <map name="inc_2scroom_2transformpresentation_8hh" id="inc_2scroom_2transformpresentation_8hh">
-<area shape="rect" id="node3" href="colormappable_8hh.html" title="scroom/colormappable.hh" alt="" coords="1973,80,2163,107"/>
-<area shape="rect" id="node7" href="presentationinterface_8hh.html" title="scroom/presentationinterface.hh" alt="" coords="1595,155,1829,181"/>
-<area shape="rect" id="node16" href="rectangle_8hh.html" title="scroom/rectangle.hh" alt="" coords="2619,304,2773,331"/>
-<area shape="rect" id="node23" href="point_8hh.html" title="scroom/point.hh" alt="" coords="2734,379,2861,405"/>
-<area shape="rect" id="node39" href="pipetteviewinterface_8hh.html" title="scroom/pipetteviewinterface.hh" alt="" coords="2436,80,2665,107"/>
-<area shape="rect" id="node24" href="observable_8hh.html" title="scroom/observable.hh" alt="" coords="1213,229,1379,256"/>
-<area shape="rect" id="node35" href="color_8hh.html" title="scroom/color.hh" alt="" coords="2269,379,2395,405"/>
-<area shape="rect" id="node37" href="assertions_8hh.html" title="scroom/assertions.hh" alt="" coords="2193,155,2354,181"/>
-<area shape="rect" id="node11" href="viewinterface_8hh.html" title="scroom/viewinterface.hh" alt="" coords="1646,229,1829,256"/>
-<area shape="rect" id="node15" href="progressinterface_8hh.html" title="scroom/progressinterface.hh" alt="" coords="253,304,461,331"/>
-<area shape="rect" id="node19" href="gtk-helpers_8hh.html" title="scroom/gtk&#45;helpers.hh" alt="" coords="2987,379,3155,405"/>
-<area shape="rect" id="node21" href="linearsegment_8hh.html" title="scroom/linearsegment.hh" alt="" coords="2470,379,2658,405"/>
-<area shape="rect" id="node28" href="utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="1899,379,2042,405"/>
-<area shape="rect" id="node30" href="bookkeeping_8hh.html" title="scroom/bookkeeping.hh" alt="" coords="957,304,1136,331"/>
-<area shape="rect" id="node32" href="stuff_8hh.html" title="scroom/stuff.hh" alt="" coords="813,379,936,405"/>
-<area shape="rect" id="node33" href="bookkeepingimpl_8hh.html" title="scroom/impl/bookkeepingimpl.hh" alt="" coords="397,379,637,405"/>
-<area shape="rect" id="node40" href="pipettelayeroperations_8hh.html" title="scroom/pipettelayeroperations.hh" alt="" coords="2429,155,2672,181"/>
-<area shape="rect" id="node41" href="tile_8hh.html" title="scroom/tile.hh" alt="" coords="1904,229,2019,256"/>
-<area shape="rect" id="node42" href="global_8hh.html" title="scroom/global.hh" alt="" coords="2209,304,2343,331"/>
-<area shape="rect" id="node43" href="memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="1797,304,1981,331"/>
-<area shape="rect" id="node45" href="blockallocator_8hh.html" title="scroom/blockallocator.hh" alt="" coords="1385,379,1570,405"/>
+<area shape="rect" id="node3" href="colormappable_8hh.html" title="scroom/colormappable.hh" alt="" coords="1671,80,1862,107"/>
+<area shape="rect" id="node26" href="presentationinterface_8hh.html" title="scroom/presentationinterface.hh" alt="" coords="2145,155,2380,181"/>
+<area shape="rect" id="node29" href="rectangle_8hh.html" title="scroom/rectangle.hh" alt="" coords="3049,304,3204,331"/>
+<area shape="rect" id="node36" href="point_8hh.html" title="scroom/point.hh" alt="" coords="3239,379,3366,405"/>
+<area shape="rect" id="node40" href="pipetteviewinterface_8hh.html" title="scroom/pipetteviewinterface.hh" alt="" coords="2749,80,2979,107"/>
+<area shape="rect" id="node7" href="assertions_8hh.html" title="scroom/assertions.hh" alt="" coords="903,155,1065,181"/>
+<area shape="rect" id="node9" href="color_8hh.html" title="scroom/color.hh" alt="" coords="2796,379,2921,405"/>
+<area shape="rect" id="node15" href="observable_8hh.html" title="scroom/observable.hh" alt="" coords="853,229,1019,256"/>
+<area shape="rect" id="node19" href="bookkeeping_8hh.html" title="scroom/bookkeeping.hh" alt="" coords="671,304,849,331"/>
+<area shape="rect" id="node22" href="utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="141,379,283,405"/>
+<area shape="rect" id="node21" href="stuff_8hh.html" title="scroom/stuff.hh" alt="" coords="1023,379,1145,405"/>
+<area shape="rect" id="node24" href="bookkeepingimpl_8hh.html" title="scroom/impl/bookkeepingimpl.hh" alt="" coords="308,379,548,405"/>
+<area shape="rect" id="node28" href="interface_8hh.html" title="scroom/interface.hh" alt="" coords="2311,461,2463,487"/>
+<area shape="rect" id="node37" href="viewinterface_8hh.html" title="scroom/viewinterface.hh" alt="" coords="2409,229,2591,256"/>
+<area shape="rect" id="node31" href="gtk-helpers_8hh.html" title="scroom/gtk&#45;helpers.hh" alt="" coords="2996,379,3164,405"/>
+<area shape="rect" id="node34" href="linearsegment_8hh.html" title="scroom/linearsegment.hh" alt="" coords="3390,379,3578,405"/>
+<area shape="rect" id="node39" href="progressinterface_8hh.html" title="scroom/progressinterface.hh" alt="" coords="2260,379,2468,405"/>
+<area shape="rect" id="node41" href="pipettelayeroperations_8hh.html" title="scroom/pipettelayeroperations.hh" alt="" coords="2663,155,2905,181"/>
+<area shape="rect" id="node42" href="tile_8hh.html" title="scroom/tile.hh" alt="" coords="1988,229,2103,256"/>
+<area shape="rect" id="node43" href="global_8hh.html" title="scroom/global.hh" alt="" coords="2039,304,2174,331"/>
+<area shape="rect" id="node44" href="memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="1475,304,1659,331"/>
+<area shape="rect" id="node45" href="blockallocator_8hh.html" title="scroom/blockallocator.hh" alt="" coords="1525,379,1710,405"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -125,10 +126,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="transformpresentation_8hh__dep__incl.png" border="0" usemap="#inc_2scroom_2transformpresentation_8hhdep" alt=""/></div>
 <map name="inc_2scroom_2transformpresentation_8hhdep" id="inc_2scroom_2transformpresentation_8hhdep">
-<area shape="rect" id="node2" href="tiff_8cc.html" title="plugins/tiff/src/tiff.cc" alt="" coords="5,155,160,181"/>
-<area shape="rect" id="node3" href="tiffpresentation_8hh.html" title="plugins/tiff/src/tiffpresentation.hh" alt="" coords="121,80,359,107"/>
-<area shape="rect" id="node5" href="transformpresentation_8cc.html" title="libs/scroom/src/transformpresentation.cc" alt="" coords="384,80,672,107"/>
-<area shape="rect" id="node4" href="tiffpresentation_8cc.html" title="plugins/tiff/src/tiffpresentation.cc" alt="" coords="185,155,421,181"/>
+<area shape="rect" id="node2" href="transformpresentation_8cc.html" title="libs/scroom/src/transformpresentation.cc" alt="" coords="5,87,293,114"/>
+<area shape="rect" id="node3" href="tiledbitmappresentation_8cc.html" title="libs/tiled&#45;bitmap/src\l/tiledbitmappresentation.cc" alt="" coords="318,80,519,121"/>
+<area shape="rect" id="node4" href="tiff_8cc.html" title="plugins/tiff/src/tiff.cc" alt="" coords="480,169,635,196"/>
+<area shape="rect" id="node5" href="tiffsource_8hh.html" title="plugins/tiff/src/tiffsource.hh" alt="" coords="594,87,793,114"/>
+<area shape="rect" id="node6" href="tiffsource_8cc.html" title="plugins/tiff/src/tiffsource.cc" alt="" coords="659,169,856,196"/>
 </map>
 </div>
 </div>
@@ -147,7 +149,7 @@ Classes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="dir_fdaa98eacd9d0ebd1873ba3405fc94c8.html">scroom</a></li><li class="navelem"><a class="el" href="transformpresentation_8hh.html">transformpresentation.hh</a></li>
-    <li class="footer">Generated on Fri Sep 11 2020 10:09:30 for Scroom by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

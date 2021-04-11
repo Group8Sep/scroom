@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1</span>
+   &#160;<span id="projectnumber">0.12.1</span>
    </div>
   </td>
  </tr>
@@ -84,8 +84,8 @@ $(document).ready(function(){initNavTree('compressedtile_8cc.html','');});
 <div class="title">compressedtile.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="tiledbitmaplayer_8hh_source.html">scroom/tiledbitmaplayer.hh</a>&quot;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;<a class="el" href="tiledbitmaplayer_8hh_source.html">scroom/tiledbitmaplayer.hh</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="local_8hh_source.html">local.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="tileviewstate_8hh_source.html">tileviewstate.hh</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -93,31 +93,32 @@ Include dependency graph for compressedtile.cc:</div>
 <div class="dyncontent">
 <div class="center"><img src="compressedtile_8cc__incl.png" border="0" usemap="#libs_2tiled-bitmap_2src_2compressedtile_8cc" alt=""/></div>
 <map name="libs_2tiled-bitmap_2src_2compressedtile_8cc" id="libs_2tiled-bitmap_2src_2compressedtile_8cc">
-<area shape="rect" id="node2" href="tiledbitmaplayer_8hh.html" title="scroom/tiledbitmaplayer.hh" alt="" coords="1181,169,1382,196"/>
-<area shape="rect" id="node49" href="local_8hh.html" title="local.hh" alt="" coords="1291,95,1365,121"/>
-<area shape="rect" id="node50" href="tileviewstate_8hh.html" title="tileviewstate.hh" alt="" coords="1389,95,1515,121"/>
-<area shape="rect" id="node9" href="memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="617,557,801,584"/>
-<area shape="rect" id="node14" href="observable_8hh.html" title="scroom/observable.hh" alt="" coords="1095,483,1262,509"/>
-<area shape="rect" id="node17" href="stuff_8hh.html" title="scroom/stuff.hh" alt="" coords="1321,632,1444,659"/>
-<area shape="rect" id="node20" href="presentationinterface_8hh.html" title="scroom/presentationinterface.hh" alt="" coords="1817,401,2052,427"/>
-<area shape="rect" id="node30" href="rectangle_8hh.html" title="scroom/rectangle.hh" alt="" coords="3049,557,3204,584"/>
-<area shape="rect" id="node38" href="threadpool_8hh.html" title="scroom/threadpool.hh" alt="" coords="2867,244,3031,271"/>
-<area shape="rect" id="node43" href="tile_8hh.html" title="scroom/tile.hh" alt="" coords="652,483,767,509"/>
-<area shape="rect" id="node45" href="tiledbitmapinterface_8hh.html" title="scroom/tiledbitmapinterface.hh" alt="" coords="1925,244,2152,271"/>
-<area shape="rect" id="node12" href="blockallocator_8hh.html" title="scroom/blockallocator.hh" alt="" coords="682,632,867,659"/>
-<area shape="rect" id="node13" href="utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="463,632,606,659"/>
-<area shape="rect" id="node15" href="bookkeeping_8hh.html" title="scroom/bookkeeping.hh" alt="" coords="1540,557,1719,584"/>
-<area shape="rect" id="node18" href="bookkeepingimpl_8hh.html" title="scroom/impl/bookkeepingimpl.hh" alt="" coords="1817,632,2057,659"/>
-<area shape="rect" id="node24" href="viewinterface_8hh.html" title="scroom/viewinterface.hh" alt="" coords="2443,483,2626,509"/>
-<area shape="rect" id="node29" href="progressinterface_8hh.html" title="scroom/progressinterface.hh" alt="" coords="2431,557,2639,584"/>
-<area shape="rect" id="node33" href="gtk-helpers_8hh.html" title="scroom/gtk&#45;helpers.hh" alt="" coords="3308,632,3476,659"/>
-<area shape="rect" id="node35" href="linearsegment_8hh.html" title="scroom/linearsegment.hh" alt="" coords="3045,632,3233,659"/>
-<area shape="rect" id="node37" href="point_8hh.html" title="scroom/point.hh" alt="" coords="2842,632,2969,659"/>
-<area shape="rect" id="node40" href="semaphore_8hh.html" title="scroom/semaphore.hh" alt="" coords="2233,319,2399,345"/>
-<area shape="rect" id="node42" href="threadpoolimpl_8hh.html" title="scroom/impl/threadpoolimpl.hh" alt="" coords="3056,319,3283,345"/>
-<area shape="rect" id="node44" href="global_8hh.html" title="scroom/global.hh" alt="" coords="210,557,345,584"/>
-<area shape="rect" id="node46" href="scroominterface_8hh.html" title="scroom/scroominterface.hh" alt="" coords="2428,319,2628,345"/>
-<area shape="rect" id="node47" href="unused_8hh.html" title="scroom/unused.hh" alt="" coords="1915,319,2056,345"/>
+<area shape="rect" id="node3" href="tiledbitmaplayer_8hh.html" title="scroom/tiledbitmaplayer.hh" alt="" coords="1174,169,1375,196"/>
+<area shape="rect" id="node49" href="local_8hh.html" title="local.hh" alt="" coords="1313,95,1386,121"/>
+<area shape="rect" id="node50" href="tileviewstate_8hh.html" title="tileviewstate.hh" alt="" coords="1410,95,1537,121"/>
+<area shape="rect" id="node10" href="interface_8hh.html" title="scroom/interface.hh" alt="" coords="1953,714,2105,741"/>
+<area shape="rect" id="node11" href="memoryblobs_8hh.html" title="scroom/memoryblobs.hh" alt="" coords="589,557,773,584"/>
+<area shape="rect" id="node16" href="observable_8hh.html" title="scroom/observable.hh" alt="" coords="1363,483,1530,509"/>
+<area shape="rect" id="node19" href="stuff_8hh.html" title="scroom/stuff.hh" alt="" coords="811,632,933,659"/>
+<area shape="rect" id="node21" href="presentationinterface_8hh.html" title="scroom/presentationinterface.hh" alt="" coords="2069,401,2304,427"/>
+<area shape="rect" id="node25" href="rectangle_8hh.html" title="scroom/rectangle.hh" alt="" coords="3349,557,3504,584"/>
+<area shape="rect" id="node39" href="threadpool_8hh.html" title="scroom/threadpool.hh" alt="" coords="3211,244,3375,271"/>
+<area shape="rect" id="node44" href="tile_8hh.html" title="scroom/tile.hh" alt="" coords="813,483,928,509"/>
+<area shape="rect" id="node46" href="tiledbitmapinterface_8hh.html" title="scroom/tiledbitmapinterface.hh" alt="" coords="2401,244,2628,271"/>
+<area shape="rect" id="node14" href="blockallocator_8hh.html" title="scroom/blockallocator.hh" alt="" coords="601,632,786,659"/>
+<area shape="rect" id="node15" href="utilities_8hh.html" title="scroom/utilities.hh" alt="" coords="1211,632,1354,659"/>
+<area shape="rect" id="node17" href="bookkeeping_8hh.html" title="scroom/bookkeeping.hh" alt="" coords="1428,557,1607,584"/>
+<area shape="rect" id="node20" href="bookkeepingimpl_8hh.html" title="scroom/impl/bookkeepingimpl.hh" alt="" coords="1701,632,1941,659"/>
+<area shape="rect" id="node35" href="viewinterface_8hh.html" title="scroom/viewinterface.hh" alt="" coords="2611,483,2794,509"/>
+<area shape="rect" id="node28" href="gtk-helpers_8hh.html" title="scroom/gtk&#45;helpers.hh" alt="" coords="3777,632,3945,659"/>
+<area shape="rect" id="node31" href="linearsegment_8hh.html" title="scroom/linearsegment.hh" alt="" coords="3514,632,3702,659"/>
+<area shape="rect" id="node34" href="point_8hh.html" title="scroom/point.hh" alt="" coords="3363,632,3490,659"/>
+<area shape="rect" id="node38" href="progressinterface_8hh.html" title="scroom/progressinterface.hh" alt="" coords="2421,632,2629,659"/>
+<area shape="rect" id="node41" href="semaphore_8hh.html" title="scroom/semaphore.hh" alt="" coords="3262,319,3429,345"/>
+<area shape="rect" id="node43" href="threadpoolimpl_8hh.html" title="scroom/impl/threadpoolimpl.hh" alt="" coords="3783,319,4009,345"/>
+<area shape="rect" id="node45" href="global_8hh.html" title="scroom/global.hh" alt="" coords="798,557,933,584"/>
+<area shape="rect" id="node47" href="scroominterface_8hh.html" title="scroom/scroominterface.hh" alt="" coords="2241,319,2441,345"/>
+<area shape="rect" id="node48" href="unused_8hh.html" title="scroom/unused.hh" alt="" coords="2603,319,2744,345"/>
 </map>
 </div>
 </div>
@@ -128,7 +129,7 @@ Include dependency graph for compressedtile.cc:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_34499b84b85e584e38a8425c472b2a40.html">tiled-bitmap</a></li><li class="navelem"><a class="el" href="dir_6cf97d29360585fa7f1004e648779306.html">src</a></li><li class="navelem"><a class="el" href="compressedtile_8cc.html">compressedtile.cc</a></li>
-    <li class="footer">Generated on Fri Sep 11 2020 10:09:31 for Scroom by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

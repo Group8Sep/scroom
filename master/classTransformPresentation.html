@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1</span>
+   &#160;<span id="projectnumber">0.12.1</span>
    </div>
   </td>
  </tr>
@@ -98,12 +98,15 @@ Inheritance diagram for TransformPresentation:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTransformPresentation__inherit__graph.png" border="0" usemap="#TransformPresentation_inherit__map" alt="Inheritance graph"/></div>
 <map name="TransformPresentation_inherit__map" id="TransformPresentation_inherit__map">
-<area shape="rect" id="node2" href="classPresentationInterface.html" title="Represent some 2D content. " alt="" coords="109,572,271,723"/>
-<area shape="rect" id="node3" href="classViewable.html" title="Implement Viewable if you want to be able to receive events when a View is created and/or deleted..." alt="" coords="5,329,124,436"/>
-<area shape="rect" id="node4" href="classScroom_1_1Utils_1_1Observable.html" title="Base class for something that accepts observers. " alt="" coords="148,300,347,465"/>
-<area shape="rect" id="node6" href="classScroom_1_1Utils_1_1Base.html" title="Base class that inherits from boost::enable_shared_from_this. " alt="" coords="313,145,473,252"/>
-<area shape="rect" id="node9" href="classPipetteViewInterface.html" title="{PipetteViewInterface\n||+ ~PipetteViewInterface()\l+ getPixelAverages()\l}" alt="" coords="295,601,490,693"/>
-<area shape="rect" id="node8" href="classColormappable.html" title="Interface for Colormappable presentations. " alt="" coords="515,513,761,781"/>
+<area shape="rect" id="node2" href="classPresentationBaseSimple.html" title="{PresentationBaseSimple\n|&#45; views\l|&#45; viewAdded()\l&#45; viewRemoved()\l&#45; getViews()\l}" alt="" coords="342,1145,523,1252"/>
+<area shape="rect" id="node3" href="classPresentationBase.html" title="{PresentationBase\n||+ open()\l+ close()\l# observerAdded()\l# viewAdded()\l# viewRemoved()\l# getViews()\l}" alt="" coords="360,947,505,1097"/>
+<area shape="rect" id="node4" href="classPresentationInterface.html" title="Represent some 2D content. " alt="" coords="351,697,514,847"/>
+<area shape="rect" id="node5" href="classViewable.html" title="Implement Viewable if you want to be able to receive events when a View is created and/or deleted..." alt="" coords="134,439,217,531"/>
+<area shape="rect" id="node6" href="classInterface.html" title="{Interface\n||+ Interface()\l+ Interface()\l+ operator=()\l+ Interface()\l+ operator=()\l+ ~Interface()\l}" alt="" coords="117,160,233,311"/>
+<area shape="rect" id="node10" href="classColormappable.html" title="Interface for Colormappable presentations. " alt="" coords="5,645,252,899"/>
+<area shape="rect" id="node11" href="classPipetteViewInterface.html" title="{PipetteViewInterface\n||+ getPixelAverages()\l}" alt="" coords="241,447,401,524"/>
+<area shape="rect" id="node7" href="classScroom_1_1Utils_1_1Observable.html" title="Base class for something that accepts observers. " alt="" coords="425,373,624,597"/>
+<area shape="rect" id="node8" href="classScroom_1_1Utils_1_1Base.html" title="Base class that inherits from boost::enable_shared_from_this. " alt="" coords="351,145,511,325"/>
 </map>
 </div>
 <div class="dynheader">
@@ -111,110 +114,128 @@ Collaboration diagram for TransformPresentation:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTransformPresentation__coll__graph.png" border="0" usemap="#TransformPresentation_coll__map" alt="Collaboration graph"/></div>
 <map name="TransformPresentation_coll__map" id="TransformPresentation_coll__map">
-<area shape="rect" id="node2" href="classPresentationInterface.html" title="Represent some 2D content. " alt="" coords="411,1728,573,1879"/>
-<area shape="rect" id="node3" href="classViewable.html" title="Implement Viewable if you want to be able to receive events when a View is created and/or deleted..." alt="" coords="542,1484,661,1591"/>
-<area shape="rect" id="node4" href="classScroom_1_1Utils_1_1Observable.html" title="Base class for something that accepts observers. " alt="" coords="319,1455,518,1620"/>
-<area shape="rect" id="node9" href="classScroom_1_1Bookkeeping_1_1MapBase.html" title="{Scroom::Bookkeeping\l::MapBase\&lt; ObserverWeak,\l typename Registration::Ptr \&gt;\n|&#45; mut\l|+ reserve()\l+ reReserve()\l+ remove()\l+ remove()\l+ at()\l+ set()\l+ get()\l+ keys()\l+ values()\l}" alt="" coords="446,969,661,1193"/>
-<area shape="rect" id="node14" href="classScroom_1_1Bookkeeping_1_1MapBase.html" title="{Scroom::Bookkeeping\l::MapBase\&lt; K, V \&gt;\n|&#45; mut\l|+ reserve()\l+ reReserve()\l+ remove()\l+ remove()\l+ at()\l+ set()\l+ get()\l+ keys()\l+ values()\l}" alt="" coords="317,620,481,829"/>
-<area shape="rect" id="node6" href="classScroom_1_1Utils_1_1Base.html" title="Base class that inherits from boost::enable_shared_from_this. " alt="" coords="140,329,300,436"/>
-<area shape="rect" id="node18" href="classPipetteViewInterface.html" title="{PipetteViewInterface\n||+ ~PipetteViewInterface()\l+ getPixelAverages()\l}" alt="" coords="5,853,200,945"/>
-<area shape="rect" id="node8" href="classScroom_1_1Bookkeeping_1_1Map.html" title="{Scroom::Bookkeeping\l::Map\&lt; ObserverWeak,\l typename Registration\l::Ptr \&gt;\n||+ create()\l}" alt="" coords="331,1271,506,1392"/>
-<area shape="rect" id="node11" title="STL class. " alt="" coords="367,153,502,230"/>
-<area shape="rect" id="node16" href="classScroom_1_1Bookkeeping_1_1Map.html" title="{Scroom::Bookkeeping\l::Map\&lt; K, V \&gt;\n||+ create()\l}" alt="" coords="258,1035,422,1127"/>
-<area shape="rect" id="node17" href="classColormappable.html" title="Interface for Colormappable presentations. " alt="" coords="139,1669,386,1937"/>
+<area shape="rect" id="node2" href="classPresentationBaseSimple.html" title="{PresentationBaseSimple\n||&#45; viewAdded()\l&#45; viewRemoved()\l&#45; getViews()\l}" alt="" coords="287,2159,468,2265"/>
+<area shape="rect" id="node3" href="classPresentationBase.html" title="{PresentationBase\n||+ open()\l+ close()\l# observerAdded()\l# viewAdded()\l# viewRemoved()\l# getViews()\l}" alt="" coords="305,1945,450,2096"/>
+<area shape="rect" id="node4" href="classPresentationInterface.html" title="Represent some 2D content. " alt="" coords="296,1732,459,1883"/>
+<area shape="rect" id="node5" href="classViewable.html" title="Implement Viewable if you want to be able to receive events when a View is created and/or deleted..." alt="" coords="240,1273,323,1365"/>
+<area shape="rect" id="node6" href="classInterface.html" title="{Interface\n||+ Interface()\l+ Interface()\l+ operator=()\l+ Interface()\l+ operator=()\l+ ~Interface()\l}" alt="" coords="137,993,253,1144"/>
+<area shape="rect" id="node19" href="classColormappable.html" title="Interface for Colormappable presentations. " alt="" coords="105,1455,351,1708"/>
+<area shape="rect" id="node20" href="classPipetteViewInterface.html" title="{PipetteViewInterface\n||+ getPixelAverages()\l}" alt="" coords="5,1280,165,1357"/>
+<area shape="rect" id="node7" href="classScroom_1_1Utils_1_1Observable.html" title="Base class for something that accepts observers. " alt="" coords="346,1207,545,1431"/>
+<area shape="rect" id="node8" href="classScroom_1_1Utils_1_1Base.html" title="Base class that inherits from boost::enable_shared_from_this. " alt="" coords="236,147,396,327"/>
+<area shape="rect" id="node11" href="classScroom_1_1Bookkeeping_1_1MapBase.html" title="{Scroom::Bookkeeping\l::MapBase\&lt; ObserverWeak,\l typename Registration::Ptr \&gt;\n|&#45; map\l&#45; mut\l|+ reserve()\l+ reReserve()\l+ remove()\l+ remove()\l+ at()\l+ set()\l+ get()\l+ keys()\l+ values()\l}" alt="" coords="343,677,558,916"/>
+<area shape="rect" id="node13" href="classScroom_1_1Bookkeeping_1_1MapBase.html" title="{Scroom::Bookkeeping\l::MapBase\&lt; K, V \&gt;\n|&#45; map\l&#45; mut\l|+ reserve()\l+ reReserve()\l+ remove()\l+ remove()\l+ at()\l+ set()\l+ get()\l+ keys()\l+ values()\l}" alt="" coords="553,376,717,600"/>
+<area shape="rect" id="node10" href="classScroom_1_1Bookkeeping_1_1Map.html" title="{Scroom::Bookkeeping\l::Map\&lt; ObserverWeak,\l typename Registration\l::Ptr \&gt;\n||+ create()\l}" alt="" coords="363,1008,538,1129"/>
+<area shape="rect" id="node15" href="classScroom_1_1Bookkeeping_1_1Map.html" title="{Scroom::Bookkeeping\l::Map\&lt; K, V \&gt;\n||+ create()\l}" alt="" coords="602,751,766,843"/>
+<area shape="rect" id="node17" title="STL class. " alt="" coords="532,1769,641,1846"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1cf97b20e85ffeb532430da4da7dc72b"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classTransformPresentation.html">TransformPresentation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a1cf97b20e85ffeb532430da4da7dc72b">Ptr</a></td></tr>
-<tr class="separator:a1cf97b20e85ffeb532430da4da7dc72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd467360b0f5b53ab8ff7ceb11b0db4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#adfd467360b0f5b53ab8ff7ceb11b0db4">Ptr</a> = boost::shared_ptr&lt; <a class="el" href="classTransformPresentation.html">TransformPresentation</a> &gt;</td></tr>
+<tr class="separator:adfd467360b0f5b53ab8ff7ceb11b0db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classPresentationInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classPresentationInterface')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classPresentationInterface.html">PresentationInterface</a></td></tr>
-<tr class="memitem:ad8733b321c78f6170c1370ec26dbb112 inherit pub_types_classPresentationInterface"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classPresentationInterface.html">PresentationInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresentationInterface.html#ad8733b321c78f6170c1370ec26dbb112">Ptr</a></td></tr>
-<tr class="separator:ad8733b321c78f6170c1370ec26dbb112 inherit pub_types_classPresentationInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eb55c0d640aeeae3c5d0b07733e0fa9 inherit pub_types_classPresentationInterface"><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr&lt; <a class="el" href="classPresentationInterface.html">PresentationInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresentationInterface.html#a0eb55c0d640aeeae3c5d0b07733e0fa9">WeakPtr</a></td></tr>
-<tr class="separator:a0eb55c0d640aeeae3c5d0b07733e0fa9 inherit pub_types_classPresentationInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf309de388e9733c4434f8e1ed78edd5 inherit pub_types_classPresentationInterface"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresentationInterface.html#abf309de388e9733c4434f8e1ed78edd5">Ptr</a> = boost::shared_ptr&lt; <a class="el" href="classPresentationInterface.html">PresentationInterface</a> &gt;</td></tr>
+<tr class="separator:abf309de388e9733c4434f8e1ed78edd5 inherit pub_types_classPresentationInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec767500138cc39cfa79125913aee506 inherit pub_types_classPresentationInterface"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresentationInterface.html#aec767500138cc39cfa79125913aee506">WeakPtr</a> = boost::weak_ptr&lt; <a class="el" href="classPresentationInterface.html">PresentationInterface</a> &gt;</td></tr>
+<tr class="separator:aec767500138cc39cfa79125913aee506 inherit pub_types_classPresentationInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classViewable"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classViewable')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classViewable.html">Viewable</a></td></tr>
-<tr class="memitem:a398306f9e46a4b682714c04804cf4b16 inherit pub_types_classViewable"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classViewable.html">Viewable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#a398306f9e46a4b682714c04804cf4b16">Ptr</a></td></tr>
-<tr class="separator:a398306f9e46a4b682714c04804cf4b16 inherit pub_types_classViewable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0405efb13a5af46c0c85080c296c1375 inherit pub_types_classViewable"><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr&lt; <a class="el" href="classViewable.html">Viewable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#a0405efb13a5af46c0c85080c296c1375">WeakPtr</a></td></tr>
-<tr class="separator:a0405efb13a5af46c0c85080c296c1375 inherit pub_types_classViewable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10726c0caf60975a47e8bcec14c8e0e inherit pub_types_classViewable"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#ac10726c0caf60975a47e8bcec14c8e0e">Ptr</a> = boost::shared_ptr&lt; <a class="el" href="classViewable.html">Viewable</a> &gt;</td></tr>
+<tr class="separator:ac10726c0caf60975a47e8bcec14c8e0e inherit pub_types_classViewable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabdfb7ab64727c93444d8d445ed82b8 inherit pub_types_classViewable"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#aaabdfb7ab64727c93444d8d445ed82b8">WeakPtr</a> = boost::weak_ptr&lt; <a class="el" href="classViewable.html">Viewable</a> &gt;</td></tr>
+<tr class="separator:aaabdfb7ab64727c93444d8d445ed82b8 inherit pub_types_classViewable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classScroom_1_1Utils_1_1Observable"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classScroom_1_1Utils_1_1Observable')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classScroom_1_1Utils_1_1Observable.html">Scroom::Utils::Observable&lt; T &gt;</a></td></tr>
-<tr class="memitem:a1b91453d48fc1e7a5e0e0520c30d2412 inherit pub_types_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#a1b91453d48fc1e7a5e0e0520c30d2412">Observer</a></td></tr>
-<tr class="separator:a1b91453d48fc1e7a5e0e0520c30d2412 inherit pub_types_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2b51932c0b5130739d996eda364965f inherit pub_types_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classScroom_1_1Utils_1_1Observable.html">Observable</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#ad2b51932c0b5130739d996eda364965f">Ptr</a></td></tr>
-<tr class="separator:ad2b51932c0b5130739d996eda364965f inherit pub_types_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a1837c0230f0e4dfb37e3fd0b7ba28 inherit pub_types_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#a12a1837c0230f0e4dfb37e3fd0b7ba28">Observer</a> = boost::shared_ptr&lt; T &gt;</td></tr>
+<tr class="separator:a12a1837c0230f0e4dfb37e3fd0b7ba28 inherit pub_types_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054af58052bc14936265bf628f21180c inherit pub_types_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#a054af58052bc14936265bf628f21180c">Ptr</a> = boost::shared_ptr&lt; <a class="el" href="classScroom_1_1Utils_1_1Observable.html">Observable</a>&lt; T &gt; &gt;</td></tr>
+<tr class="separator:a054af58052bc14936265bf628f21180c inherit pub_types_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classColormappable"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classColormappable')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classColormappable.html">Colormappable</a></td></tr>
-<tr class="memitem:a4c1b71a942d06c46de4d958f3f03be67 inherit pub_types_classColormappable"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classColormappable.html">Colormappable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classColormappable.html#a4c1b71a942d06c46de4d958f3f03be67">Ptr</a></td></tr>
-<tr class="separator:a4c1b71a942d06c46de4d958f3f03be67 inherit pub_types_classColormappable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dfb47bee0008a29f1cc46c84a0d9f12 inherit pub_types_classColormappable"><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr&lt; <a class="el" href="classColormappable.html">Colormappable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classColormappable.html#a1dfb47bee0008a29f1cc46c84a0d9f12">WeakPtr</a></td></tr>
-<tr class="separator:a1dfb47bee0008a29f1cc46c84a0d9f12 inherit pub_types_classColormappable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2dddbfd773d930baaaf6de9c6444940 inherit pub_types_classColormappable"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classColormappable.html#af2dddbfd773d930baaaf6de9c6444940">Ptr</a> = boost::shared_ptr&lt; <a class="el" href="classColormappable.html">Colormappable</a> &gt;</td></tr>
+<tr class="separator:af2dddbfd773d930baaaf6de9c6444940 inherit pub_types_classColormappable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cbb412029ae862660a9e99d34d70e2a inherit pub_types_classColormappable"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classColormappable.html#a6cbb412029ae862660a9e99d34d70e2a">WeakPtr</a> = boost::weak_ptr&lt; <a class="el" href="classColormappable.html">Colormappable</a> &gt;</td></tr>
+<tr class="separator:a6cbb412029ae862660a9e99d34d70e2a inherit pub_types_classColormappable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classPipetteViewInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classPipetteViewInterface')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classPipetteViewInterface.html">PipetteViewInterface</a></td></tr>
-<tr class="memitem:a648e1ed54c4d40419174cd74dcbabc27 inherit pub_types_classPipetteViewInterface"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classPipetteViewInterface.html">PipetteViewInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPipetteViewInterface.html#a648e1ed54c4d40419174cd74dcbabc27">Ptr</a></td></tr>
-<tr class="separator:a648e1ed54c4d40419174cd74dcbabc27 inherit pub_types_classPipetteViewInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a265ead333d477679e6fbef6a5f7ed116 inherit pub_types_classPipetteViewInterface"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPipetteViewInterface.html#a265ead333d477679e6fbef6a5f7ed116">Ptr</a> = boost::shared_ptr&lt; <a class="el" href="classPipetteViewInterface.html">PipetteViewInterface</a> &gt;</td></tr>
+<tr class="separator:a265ead333d477679e6fbef6a5f7ed116 inherit pub_types_classPipetteViewInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abadcacf12bd2631161b72c5042ec99bc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#abadcacf12bd2631161b72c5042ec99bc">open</a> (<a class="el" href="classViewInterface.html#ae92933d2303923b3c487674dff4ab999">ViewInterface::WeakPtr</a> vi)</td></tr>
-<tr class="memdesc:abadcacf12bd2631161b72c5042ec99bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets called just after the <a class="el" href="classView.html">View</a> is created.  <a href="#abadcacf12bd2631161b72c5042ec99bc">More...</a><br /></td></tr>
-<tr class="separator:abadcacf12bd2631161b72c5042ec99bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae3ccb779a416bfe416f26223104c1bf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#aae3ccb779a416bfe416f26223104c1bf">close</a> (<a class="el" href="classViewInterface.html#ae92933d2303923b3c487674dff4ab999">ViewInterface::WeakPtr</a> vi)</td></tr>
-<tr class="memdesc:aae3ccb779a416bfe416f26223104c1bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets called just before the <a class="el" href="classView.html">View</a> is destroyed.  <a href="#aae3ccb779a416bfe416f26223104c1bf">More...</a><br /></td></tr>
-<tr class="separator:aae3ccb779a416bfe416f26223104c1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6d70ec0e60da0355604d5078f1446ab"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#ac6d70ec0e60da0355604d5078f1446ab">getRect</a> ()</td></tr>
-<tr class="memdesc:ac6d70ec0e60da0355604d5078f1446ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the dimensions of your presentation.  <a href="#ac6d70ec0e60da0355604d5078f1446ab">More...</a><br /></td></tr>
-<tr class="separator:ac6d70ec0e60da0355604d5078f1446ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf6ebf778f5c9ec4096c0769a92080a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#aaf6ebf778f5c9ec4096c0769a92080a7">redraw</a> (<a class="el" href="classViewInterface.html#ac7a08ed3d90712571bd4308c154d8503">ViewInterface::Ptr</a> const &amp;vi, cairo_t *cr, <a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; double &gt; presentationArea, int zoom)</td></tr>
-<tr class="memdesc:aaf6ebf778f5c9ec4096c0769a92080a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the requested ara at the requested zoom level.  <a href="#aaf6ebf778f5c9ec4096c0769a92080a7">More...</a><br /></td></tr>
-<tr class="separator:aaf6ebf778f5c9ec4096c0769a92080a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa88aeeb585e754a85722f25d0d8f90ea"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#aa88aeeb585e754a85722f25d0d8f90ea">getProperty</a> (const std::string &amp;name, std::string &amp;value)</td></tr>
-<tr class="memdesc:aa88aeeb585e754a85722f25d0d8f90ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the value of the requested property.  <a href="#aa88aeeb585e754a85722f25d0d8f90ea">More...</a><br /></td></tr>
-<tr class="separator:aa88aeeb585e754a85722f25d0d8f90ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4309c40f10596c6cbc06fe8561e46f00"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a4309c40f10596c6cbc06fe8561e46f00">isPropertyDefined</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:a4309c40f10596c6cbc06fe8561e46f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the named property exists.  <a href="#a4309c40f10596c6cbc06fe8561e46f00">More...</a><br /></td></tr>
-<tr class="separator:a4309c40f10596c6cbc06fe8561e46f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acba07727425bc799870cb1e6c6fc64a3"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#acba07727425bc799870cb1e6c6fc64a3">getTitle</a> ()</td></tr>
-<tr class="memdesc:acba07727425bc799870cb1e6c6fc64a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the title of the presentation.  <a href="#acba07727425bc799870cb1e6c6fc64a3">More...</a><br /></td></tr>
-<tr class="separator:acba07727425bc799870cb1e6c6fc64a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0944de3ecde1372791db8d528b870a47"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classScroom_1_1Utils_1_1Point.html">Scroom::Utils::Point</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a0944de3ecde1372791db8d528b870a47">getAspectRatio</a> () const</td></tr>
-<tr class="separator:a0944de3ecde1372791db8d528b870a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1152724f7f8958f81e6df96b55e978ea"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classPipetteLayerOperations.html#a30d2a9fef8c4ee26fba0f448162fa393">PipetteLayerOperations::PipetteColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a1152724f7f8958f81e6df96b55e978ea">getPixelAverages</a> (<a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; int &gt; area)</td></tr>
-<tr class="memdesc:a1152724f7f8958f81e6df96b55e978ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the average pixel values for each component, contained in the area.  <a href="#a1152724f7f8958f81e6df96b55e978ea">More...</a><br /></td></tr>
-<tr class="separator:a1152724f7f8958f81e6df96b55e978ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acce3ffd77966420d301498a6193199e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#acce3ffd77966420d301498a6193199e4">setColormap</a> (<a class="el" href="classColormap.html#a6bf9e09dab6a6185a568d29bb0a6bd39">Colormap::Ptr</a> colormap)</td></tr>
-<tr class="memdesc:acce3ffd77966420d301498a6193199e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request that the presentation use the given colormap.  <a href="#acce3ffd77966420d301498a6193199e4">More...</a><br /></td></tr>
-<tr class="separator:acce3ffd77966420d301498a6193199e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9256689bf700da022b65bc35bd8e9fb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classColormap.html#a6bf9e09dab6a6185a568d29bb0a6bd39">Colormap::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#ad9256689bf700da022b65bc35bd8e9fb">getOriginalColormap</a> ()</td></tr>
-<tr class="memdesc:ad9256689bf700da022b65bc35bd8e9fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the images colormap (if any)  <a href="#ad9256689bf700da022b65bc35bd8e9fb">More...</a><br /></td></tr>
-<tr class="separator:ad9256689bf700da022b65bc35bd8e9fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf6250edef3a2e1aa800d1e1d7508c94"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#aaf6250edef3a2e1aa800d1e1d7508c94">getNumberOfColors</a> ()</td></tr>
-<tr class="memdesc:aaf6250edef3a2e1aa800d1e1d7508c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the number of colors in use by the presentation.  <a href="#aaf6250edef3a2e1aa800d1e1d7508c94">More...</a><br /></td></tr>
-<tr class="separator:aaf6250edef3a2e1aa800d1e1d7508c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e9f93e8ea6d431a87567d108f05aa18"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classColor.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a2e9f93e8ea6d431a87567d108f05aa18">getMonochromeColor</a> ()</td></tr>
-<tr class="separator:a2e9f93e8ea6d431a87567d108f05aa18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93ac34113b66c18f9cf73e42648addf0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a93ac34113b66c18f9cf73e42648addf0">setMonochromeColor</a> (const <a class="el" href="classColor.html">Color</a> &amp;c)</td></tr>
-<tr class="separator:a93ac34113b66c18f9cf73e42648addf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad04bde49b0a28eaaf992e8fa91c3f506"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#ad04bde49b0a28eaaf992e8fa91c3f506">setTransparentBackground</a> ()</td></tr>
-<tr class="separator:ad04bde49b0a28eaaf992e8fa91c3f506"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad45df75870c8f294b5b9333f5b592a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#aad45df75870c8f294b5b9333f5b592a0">disableTransparentBackground</a> ()</td></tr>
-<tr class="separator:aad45df75870c8f294b5b9333f5b592a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f3a59a3d074d5111473779dffbc1d5c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a0f3a59a3d074d5111473779dffbc1d5c">getTransparentBackground</a> ()</td></tr>
-<tr class="separator:a0f3a59a3d074d5111473779dffbc1d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classViewable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classViewable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classViewable.html">Viewable</a></td></tr>
-<tr class="memitem:a88daba2706a00e4d0f283dbf89bd6dee inherit pub_methods_classViewable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewable.html#a88daba2706a00e4d0f283dbf89bd6dee">~Viewable</a> ()</td></tr>
-<tr class="separator:a88daba2706a00e4d0f283dbf89bd6dee inherit pub_methods_classViewable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aac4359f5f251bf4c89882857d1b0f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a8aac4359f5f251bf4c89882857d1b0f9">open</a> (<a class="el" href="classViewInterface.html#a728bb2c185daaeaa562a624b7ab96c23">ViewInterface::WeakPtr</a> vi) override</td></tr>
+<tr class="memdesc:a8aac4359f5f251bf4c89882857d1b0f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets called just after the <a class="el" href="classView.html">View</a> is created.  <a href="#a8aac4359f5f251bf4c89882857d1b0f9">More...</a><br /></td></tr>
+<tr class="separator:a8aac4359f5f251bf4c89882857d1b0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a233e2cf3d2b78088f64321ec0cc6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#aa8a233e2cf3d2b78088f64321ec0cc6e">close</a> (<a class="el" href="classViewInterface.html#a728bb2c185daaeaa562a624b7ab96c23">ViewInterface::WeakPtr</a> vi) override</td></tr>
+<tr class="memdesc:aa8a233e2cf3d2b78088f64321ec0cc6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets called just before the <a class="el" href="classView.html">View</a> is destroyed.  <a href="#aa8a233e2cf3d2b78088f64321ec0cc6e">More...</a><br /></td></tr>
+<tr class="separator:aa8a233e2cf3d2b78088f64321ec0cc6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8896ce9e1b7bc669f6c4febc8823dd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#ae8896ce9e1b7bc669f6c4febc8823dd1">getRect</a> () override</td></tr>
+<tr class="memdesc:ae8896ce9e1b7bc669f6c4febc8823dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the dimensions of your presentation.  <a href="#ae8896ce9e1b7bc669f6c4febc8823dd1">More...</a><br /></td></tr>
+<tr class="separator:ae8896ce9e1b7bc669f6c4febc8823dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae93c031e922657598b8a3047e699267"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#aae93c031e922657598b8a3047e699267">redraw</a> (<a class="el" href="classViewInterface.html#a6cf7cb7ff0cd58e749beac9b636e5b41">ViewInterface::Ptr</a> const &amp;vi, cairo_t *cr, <a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; double &gt; presentationArea, int zoom) override</td></tr>
+<tr class="memdesc:aae93c031e922657598b8a3047e699267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the requested ara at the requested zoom level.  <a href="#aae93c031e922657598b8a3047e699267">More...</a><br /></td></tr>
+<tr class="separator:aae93c031e922657598b8a3047e699267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8202e9c8f864e64bf5071a1297401d05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a8202e9c8f864e64bf5071a1297401d05">getProperty</a> (const std::string &amp;name, std::string &amp;value) override</td></tr>
+<tr class="memdesc:a8202e9c8f864e64bf5071a1297401d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the value of the requested property.  <a href="#a8202e9c8f864e64bf5071a1297401d05">More...</a><br /></td></tr>
+<tr class="separator:a8202e9c8f864e64bf5071a1297401d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5638f266baa20a20901f9ae3225a2944"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a5638f266baa20a20901f9ae3225a2944">isPropertyDefined</a> (const std::string &amp;name) override</td></tr>
+<tr class="memdesc:a5638f266baa20a20901f9ae3225a2944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the named property exists.  <a href="#a5638f266baa20a20901f9ae3225a2944">More...</a><br /></td></tr>
+<tr class="separator:a5638f266baa20a20901f9ae3225a2944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40750146eb0946054dd322371dfdf6da"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a40750146eb0946054dd322371dfdf6da">getTitle</a> () override</td></tr>
+<tr class="memdesc:a40750146eb0946054dd322371dfdf6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the title of the presentation.  <a href="#a40750146eb0946054dd322371dfdf6da">More...</a><br /></td></tr>
+<tr class="separator:a40750146eb0946054dd322371dfdf6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a969c44d9131e0318d039ff509f8dbed9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Utils_1_1Point.html">Scroom::Utils::Point</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a969c44d9131e0318d039ff509f8dbed9">getAspectRatio</a> () const override</td></tr>
+<tr class="separator:a969c44d9131e0318d039ff509f8dbed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5988d5b21dda784830481bd4a5a88fb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPipetteLayerOperations.html#ac2e1230385d4439b30668e66df245485">PipetteLayerOperations::PipetteColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a5988d5b21dda784830481bd4a5a88fb6">getPixelAverages</a> (<a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; int &gt; area) override</td></tr>
+<tr class="memdesc:a5988d5b21dda784830481bd4a5a88fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the average pixel values for each component, contained in the area.  <a href="#a5988d5b21dda784830481bd4a5a88fb6">More...</a><br /></td></tr>
+<tr class="separator:a5988d5b21dda784830481bd4a5a88fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54fec8e9d05effd1b8377a52a91ee1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#ac54fec8e9d05effd1b8377a52a91ee1a">setColormap</a> (<a class="el" href="classColormap.html#a490aa33223a81e71c130036dc980cd63">Colormap::Ptr</a> colormap) override</td></tr>
+<tr class="memdesc:ac54fec8e9d05effd1b8377a52a91ee1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request that the presentation use the given colormap.  <a href="#ac54fec8e9d05effd1b8377a52a91ee1a">More...</a><br /></td></tr>
+<tr class="separator:ac54fec8e9d05effd1b8377a52a91ee1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12344a3eeaf492b1c7bdd2fa80db7729"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classColormap.html#a490aa33223a81e71c130036dc980cd63">Colormap::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a12344a3eeaf492b1c7bdd2fa80db7729">getOriginalColormap</a> () override</td></tr>
+<tr class="memdesc:a12344a3eeaf492b1c7bdd2fa80db7729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the images colormap (if any)  <a href="#a12344a3eeaf492b1c7bdd2fa80db7729">More...</a><br /></td></tr>
+<tr class="separator:a12344a3eeaf492b1c7bdd2fa80db7729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc20cee82ebc28404c074b10e44add9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a7fc20cee82ebc28404c074b10e44add9">getNumberOfColors</a> () override</td></tr>
+<tr class="memdesc:a7fc20cee82ebc28404c074b10e44add9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the number of colors in use by the presentation.  <a href="#a7fc20cee82ebc28404c074b10e44add9">More...</a><br /></td></tr>
+<tr class="separator:a7fc20cee82ebc28404c074b10e44add9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d508b386f74549c2fff13c04f5b970e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classColor.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a1d508b386f74549c2fff13c04f5b970e">getMonochromeColor</a> () override</td></tr>
+<tr class="separator:a1d508b386f74549c2fff13c04f5b970e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a778ce565d6a8d478c5655008174fb949"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a778ce565d6a8d478c5655008174fb949">setMonochromeColor</a> (const <a class="el" href="classColor.html">Color</a> &amp;c) override</td></tr>
+<tr class="separator:a778ce565d6a8d478c5655008174fb949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e5ba7edfebb16456fefec941e4f3eb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a7e5ba7edfebb16456fefec941e4f3eb3">setTransparentBackground</a> () override</td></tr>
+<tr class="separator:a7e5ba7edfebb16456fefec941e4f3eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7471c9df007b7595fd1177adcef2abfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a7471c9df007b7595fd1177adcef2abfa">disableTransparentBackground</a> () override</td></tr>
+<tr class="separator:a7471c9df007b7595fd1177adcef2abfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30829d965c1917a27fe95501a6e094df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a30829d965c1917a27fe95501a6e094df">getTransparentBackground</a> () override</td></tr>
+<tr class="separator:a30829d965c1917a27fe95501a6e094df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classScroom_1_1Utils_1_1Observable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classScroom_1_1Utils_1_1Observable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classScroom_1_1Utils_1_1Observable.html">Scroom::Utils::Observable&lt; T &gt;</a></td></tr>
 <tr class="memitem:a0985c831266bda7104445a9f0babee03 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#a0985c831266bda7104445a9f0babee03">Observable</a> ()</td></tr>
 <tr class="separator:a0985c831266bda7104445a9f0babee03 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f493e580237853ca4b3e585b2b0f248 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#a8f493e580237853ca4b3e585b2b0f248">~Observable</a> ()</td></tr>
-<tr class="separator:a8f493e580237853ca4b3e585b2b0f248 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8eb66519da1d1f30aaaa8a46b82def4 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Bookkeeping_1_1Token.html">Scroom::Bookkeeping::Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#ac8eb66519da1d1f30aaaa8a46b82def4">registerStrongObserver</a> (<a class="el" href="classScroom_1_1Utils_1_1Observable.html#a1b91453d48fc1e7a5e0e0520c30d2412">Observer</a> const &amp;observer)</td></tr>
+<tr class="memitem:a4f0d66bf65eaa61b77987c2b47e38ac1 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#a4f0d66bf65eaa61b77987c2b47e38ac1">~Observable</a> () override</td></tr>
+<tr class="separator:a4f0d66bf65eaa61b77987c2b47e38ac1 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a64dcee35b761f9096c802c9fc2139b inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#a9a64dcee35b761f9096c802c9fc2139b">Observable</a> (const <a class="el" href="classScroom_1_1Utils_1_1Observable.html">Observable</a> &amp;)=delete</td></tr>
+<tr class="separator:a9a64dcee35b761f9096c802c9fc2139b inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6401fbf84e5e0fae0071f3ef083852 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#aaf6401fbf84e5e0fae0071f3ef083852">Observable</a> (<a class="el" href="classScroom_1_1Utils_1_1Observable.html">Observable</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:aaf6401fbf84e5e0fae0071f3ef083852 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a1120fb34ca9873cb4f7236628e1dc6 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Utils_1_1Observable.html">Observable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#a4a1120fb34ca9873cb4f7236628e1dc6">operator=</a> (const <a class="el" href="classScroom_1_1Utils_1_1Observable.html">Observable</a> &amp;)=delete</td></tr>
+<tr class="separator:a4a1120fb34ca9873cb4f7236628e1dc6 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d957956960766feef1a4ab10ecda1a inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Utils_1_1Observable.html">Observable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#a18d957956960766feef1a4ab10ecda1a">operator=</a> (<a class="el" href="classScroom_1_1Utils_1_1Observable.html">Observable</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a18d957956960766feef1a4ab10ecda1a inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8eb66519da1d1f30aaaa8a46b82def4 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Bookkeeping_1_1Token.html">Scroom::Bookkeeping::Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#ac8eb66519da1d1f30aaaa8a46b82def4">registerStrongObserver</a> (<a class="el" href="classScroom_1_1Utils_1_1Observable.html#a12a1837c0230f0e4dfb37e3fd0b7ba28">Observer</a> const &amp;observer)</td></tr>
 <tr class="separator:ac8eb66519da1d1f30aaaa8a46b82def4 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af513d91b5b1ca025d34f428208512c45 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Bookkeeping_1_1Token.html">Scroom::Bookkeeping::Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#af513d91b5b1ca025d34f428208512c45">registerObserver</a> (<a class="el" href="classScroom_1_1Utils_1_1Observable.html#ac289138305703abac219ec2e89161df1">ObserverWeak</a> const &amp;observer)</td></tr>
+<tr class="memitem:af513d91b5b1ca025d34f428208512c45 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Bookkeeping_1_1Token.html">Scroom::Bookkeeping::Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#af513d91b5b1ca025d34f428208512c45">registerObserver</a> (<a class="el" href="classScroom_1_1Utils_1_1Observable.html#abc0d74223619b6f121a0368d7c58e474">ObserverWeak</a> const &amp;observer)</td></tr>
 <tr class="separator:af513d91b5b1ca025d34f428208512c45 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classScroom_1_1Utils_1_1Base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classScroom_1_1Utils_1_1Base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classScroom_1_1Utils_1_1Base.html">Scroom::Utils::Base</a></td></tr>
-<tr class="memitem:a4258b6973d6ed05258dffb123f3b94b9 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#a4258b6973d6ed05258dffb123f3b94b9">~Base</a> ()</td></tr>
-<tr class="separator:a4258b6973d6ed05258dffb123f3b94b9 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cfb041b339d8cdd32b01f346ac4a33 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#ab5cfb041b339d8cdd32b01f346ac4a33">Base</a> ()=default</td></tr>
+<tr class="separator:ab5cfb041b339d8cdd32b01f346ac4a33 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0905ca89614ba5543bec1668ced1f2bf inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#a0905ca89614ba5543bec1668ced1f2bf">Base</a> (const <a class="el" href="classScroom_1_1Utils_1_1Base.html">Base</a> &amp;)=delete</td></tr>
+<tr class="separator:a0905ca89614ba5543bec1668ced1f2bf inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af745d1e7c7e25e4de67ef69ad92819d3 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#af745d1e7c7e25e4de67ef69ad92819d3">Base</a> (<a class="el" href="classScroom_1_1Utils_1_1Base.html">Base</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:af745d1e7c7e25e4de67ef69ad92819d3 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8985009df1baba1a1c81993a656f7e97 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Utils_1_1Base.html">Base</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#a8985009df1baba1a1c81993a656f7e97">operator=</a> (const <a class="el" href="classScroom_1_1Utils_1_1Base.html">Base</a> &amp;)=delete</td></tr>
+<tr class="separator:a8985009df1baba1a1c81993a656f7e97 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87284b95256cad0952fb87652e4ed98c inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScroom_1_1Utils_1_1Base.html">Base</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#a87284b95256cad0952fb87652e4ed98c">operator=</a> (<a class="el" href="classScroom_1_1Utils_1_1Base.html">Base</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a87284b95256cad0952fb87652e4ed98c inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4bdad20963b6957da0277e4f1dae600 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#af4bdad20963b6957da0277e4f1dae600">~Base</a> ()=default</td></tr>
+<tr class="separator:af4bdad20963b6957da0277e4f1dae600 inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47d10b0709de4fd393084e19192b073c inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memTemplParams" colspan="2">template&lt;typename R &gt; </td></tr>
 <tr class="memitem:a47d10b0709de4fd393084e19192b073c inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#a47d10b0709de4fd393084e19192b073c">shared_from_this</a> ()</td></tr>
 <tr class="memdesc:a47d10b0709de4fd393084e19192b073c inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="classScroom_1_1Utils_1_1Base.html#a47d10b0709de4fd393084e19192b073c" title="Calls shared_from_this() with a built-in dynamic cast, to make it usable in subclasses. ">shared_from_this()</a> with a built-in dynamic cast, to make it usable in subclasses.  <a href="classScroom_1_1Utils_1_1Base.html#a47d10b0709de4fd393084e19192b073c">More...</a><br /></td></tr>
@@ -223,60 +244,58 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a298806589c1a076e0fc32657b2ef2f0c inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; R const  &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Base.html#a298806589c1a076e0fc32657b2ef2f0c">shared_from_this</a> () const</td></tr>
 <tr class="memdesc:a298806589c1a076e0fc32657b2ef2f0c inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="classScroom_1_1Utils_1_1Base.html#a47d10b0709de4fd393084e19192b073c" title="Calls shared_from_this() with a built-in dynamic cast, to make it usable in subclasses. ">shared_from_this()</a> with a built-in dynamic cast, to make it usable in subclasses.  <a href="classScroom_1_1Utils_1_1Base.html#a298806589c1a076e0fc32657b2ef2f0c">More...</a><br /></td></tr>
 <tr class="separator:a298806589c1a076e0fc32657b2ef2f0c inherit pub_methods_classScroom_1_1Utils_1_1Base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classColormappable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classColormappable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classColormappable.html">Colormappable</a></td></tr>
-<tr class="memitem:a5c14de14ef530d4c3f8f59ee5610896d inherit pub_methods_classColormappable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classColormappable.html#a5c14de14ef530d4c3f8f59ee5610896d">~Colormappable</a> ()</td></tr>
-<tr class="memdesc:a5c14de14ef530d4c3f8f59ee5610896d inherit pub_methods_classColormappable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="classColormappable.html#a5c14de14ef530d4c3f8f59ee5610896d">More...</a><br /></td></tr>
-<tr class="separator:a5c14de14ef530d4c3f8f59ee5610896d inherit pub_methods_classColormappable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classPipetteViewInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classPipetteViewInterface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classPipetteViewInterface.html">PipetteViewInterface</a></td></tr>
-<tr class="memitem:a464ba01151ff929df63db40783fbb8e9 inherit pub_methods_classPipetteViewInterface"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPipetteViewInterface.html#a464ba01151ff929df63db40783fbb8e9">~PipetteViewInterface</a> ()</td></tr>
-<tr class="separator:a464ba01151ff929df63db40783fbb8e9 inherit pub_methods_classPipetteViewInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">For monochrome presentations: Set/Get the current color</div></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Manipulate the "Transparent Background" setting of the presentation</div></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0bb3a42de4a22b82be66bffff34c4e7d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classColormappable.html#a4c1b71a942d06c46de4d958f3f03be67">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a0bb3a42de4a22b82be66bffff34c4e7d">create</a> (<a class="el" href="classPresentationInterface.html#ad8733b321c78f6170c1370ec26dbb112">PresentationInterface::Ptr</a> const &amp;<a class="el" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>, <a class="el" href="classTransformationData.html#a5d29ed9abd2d116f1880dfc73f5b1c3e">TransformationData::Ptr</a> const &amp;<a class="el" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a>)</td></tr>
+<tr class="memitem:a0bb3a42de4a22b82be66bffff34c4e7d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classColormappable.html#af2dddbfd773d930baaaf6de9c6444940">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a0bb3a42de4a22b82be66bffff34c4e7d">create</a> (<a class="el" href="classPresentationInterface.html#abf309de388e9733c4434f8e1ed78edd5">PresentationInterface::Ptr</a> const &amp;<a class="el" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>, <a class="el" href="classTransformationData.html#ad529cd0d56ade19d7729df9825367c03">TransformationData::Ptr</a> const &amp;<a class="el" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a>)</td></tr>
 <tr class="separator:a0bb3a42de4a22b82be66bffff34c4e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a3961047491e98aea707dd6870046c1fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a3961047491e98aea707dd6870046c1fb">TransformPresentation</a> (<a class="el" href="classPresentationInterface.html#ad8733b321c78f6170c1370ec26dbb112">PresentationInterface::Ptr</a> const &amp;<a class="el" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>, <a class="el" href="classTransformationData.html#a5d29ed9abd2d116f1880dfc73f5b1c3e">TransformationData::Ptr</a> const &amp;<a class="el" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a>)</td></tr>
+<tr class="memitem:a3961047491e98aea707dd6870046c1fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a3961047491e98aea707dd6870046c1fb">TransformPresentation</a> (<a class="el" href="classPresentationInterface.html#abf309de388e9733c4434f8e1ed78edd5">PresentationInterface::Ptr</a> const &amp;<a class="el" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>, <a class="el" href="classTransformationData.html#ad529cd0d56ade19d7729df9825367c03">TransformationData::Ptr</a> const &amp;<a class="el" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a>)</td></tr>
 <tr class="separator:a3961047491e98aea707dd6870046c1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ad5804a0827bf975f5dd39061f7a5060a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTransformationData.html#a5d29ed9abd2d116f1880dfc73f5b1c3e">TransformationData::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a></td></tr>
+<tr class="memitem:ad5804a0827bf975f5dd39061f7a5060a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTransformationData.html#ad529cd0d56ade19d7729df9825367c03">TransformationData::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a></td></tr>
 <tr class="separator:ad5804a0827bf975f5dd39061f7a5060a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aac13bb64cc63cb76adbb42a0770cee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPresentationInterface.html#ad8733b321c78f6170c1370ec26dbb112">PresentationInterface::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a></td></tr>
+<tr class="memitem:a5aac13bb64cc63cb76adbb42a0770cee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPresentationInterface.html#abf309de388e9733c4434f8e1ed78edd5">PresentationInterface::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a></td></tr>
 <tr class="separator:a5aac13bb64cc63cb76adbb42a0770cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad383e05a9aa2cbd83a077bd83ced7abd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classColormappable.html#a4c1b71a942d06c46de4d958f3f03be67">Colormappable::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a></td></tr>
+<tr class="memitem:ad383e05a9aa2cbd83a077bd83ced7abd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classColormappable.html#af2dddbfd773d930baaaf6de9c6444940">Colormappable::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a></td></tr>
 <tr class="separator:ad383e05a9aa2cbd83a077bd83ced7abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classPresentationBase"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classPresentationBase')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classPresentationBase.html">PresentationBase</a></td></tr>
+<tr class="memitem:ae9ba8f45a97f1a153503e98d91bff99a inherit pro_methods_classPresentationBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresentationBase.html#ae9ba8f45a97f1a153503e98d91bff99a">observerAdded</a> (<a class="el" href="classViewable.html#ac10726c0caf60975a47e8bcec14c8e0e">Viewable::Ptr</a> const &amp;viewable, <a class="el" href="classScroom_1_1Bookkeeping_1_1Token.html">Scroom::Bookkeeping::Token</a> const &amp;t) override</td></tr>
+<tr class="separator:ae9ba8f45a97f1a153503e98d91bff99a inherit pro_methods_classPresentationBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classScroom_1_1Utils_1_1Observable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classScroom_1_1Utils_1_1Observable')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classScroom_1_1Utils_1_1Observable.html">Scroom::Utils::Observable&lt; T &gt;</a></td></tr>
-<tr class="memitem:ae215a3f722f5894dd8fdc1cb9b190c0e inherit pro_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="classScroom_1_1Utils_1_1Observable.html#a1b91453d48fc1e7a5e0e0520c30d2412">Observer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#ae215a3f722f5894dd8fdc1cb9b190c0e">getObservers</a> ()</td></tr>
+<tr class="memitem:ae215a3f722f5894dd8fdc1cb9b190c0e inherit pro_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="classScroom_1_1Utils_1_1Observable.html#a12a1837c0230f0e4dfb37e3fd0b7ba28">Observer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#ae215a3f722f5894dd8fdc1cb9b190c0e">getObservers</a> ()</td></tr>
 <tr class="memdesc:ae215a3f722f5894dd8fdc1cb9b190c0e inherit pro_methods_classScroom_1_1Utils_1_1Observable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a list of current observers.  <a href="classScroom_1_1Utils_1_1Observable.html#ae215a3f722f5894dd8fdc1cb9b190c0e">More...</a><br /></td></tr>
 <tr class="separator:ae215a3f722f5894dd8fdc1cb9b190c0e inherit pro_methods_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acef811808cd92423e56ca29abd5ef880 inherit pro_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#acef811808cd92423e56ca29abd5ef880">observerAdded</a> (<a class="el" href="classScroom_1_1Utils_1_1Observable.html#a1b91453d48fc1e7a5e0e0520c30d2412">Observer</a> const &amp;observer, <a class="el" href="classScroom_1_1Bookkeeping_1_1Token.html">Scroom::Bookkeeping::Token</a> const &amp;token)</td></tr>
+<tr class="memitem:acef811808cd92423e56ca29abd5ef880 inherit pro_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#acef811808cd92423e56ca29abd5ef880">observerAdded</a> (<a class="el" href="classScroom_1_1Utils_1_1Observable.html#a12a1837c0230f0e4dfb37e3fd0b7ba28">Observer</a> const &amp;observer, <a class="el" href="classScroom_1_1Bookkeeping_1_1Token.html">Scroom::Bookkeeping::Token</a> const &amp;token)</td></tr>
 <tr class="memdesc:acef811808cd92423e56ca29abd5ef880 inherit pro_methods_classScroom_1_1Utils_1_1Observable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this function if you want to be notified of new observers registering.  <a href="classScroom_1_1Utils_1_1Observable.html#acef811808cd92423e56ca29abd5ef880">More...</a><br /></td></tr>
 <tr class="separator:acef811808cd92423e56ca29abd5ef880 inherit pro_methods_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8hh_source.html#l00035">35</a> of file <a class="el" href="transformpresentation_8hh_source.html">transformpresentation.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8hh_source.html#l00038">38</a> of file <a class="el" href="transformpresentation_8hh_source.html">transformpresentation.hh</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a1cf97b20e85ffeb532430da4da7dc72b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cf97b20e85ffeb532430da4da7dc72b">&#9670;&nbsp;</a></span>Ptr</h2>
+<a id="adfd467360b0f5b53ab8ff7ceb11b0db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd467360b0f5b53ab8ff7ceb11b0db4">&#9670;&nbsp;</a></span>Ptr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="classTransformPresentation.html">TransformPresentation</a>&gt; <a class="el" href="classTransformPresentation.html#a1cf97b20e85ffeb532430da4da7dc72b">TransformPresentation::Ptr</a></td>
+          <td class="memname">using <a class="el" href="classTransformPresentation.html#adfd467360b0f5b53ab8ff7ceb11b0db4">TransformPresentation::Ptr</a> =  boost::shared_ptr&lt;<a class="el" href="classTransformPresentation.html">TransformPresentation</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8hh_source.html#l00038">38</a> of file <a class="el" href="transformpresentation_8hh_source.html">transformpresentation.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8hh_source.html#l00044">44</a> of file <a class="el" href="transformpresentation_8hh_source.html">transformpresentation.hh</a>.</p>
 
 </div>
 </div>
@@ -293,13 +312,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">TransformPresentation::TransformPresentation </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classPresentationInterface.html#ad8733b321c78f6170c1370ec26dbb112">PresentationInterface::Ptr</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classPresentationInterface.html#abf309de388e9733c4434f8e1ed78edd5">PresentationInterface::Ptr</a> const &amp;&#160;</td>
           <td class="paramname"><em>presentation</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classTransformationData.html#a5d29ed9abd2d116f1880dfc73f5b1c3e">TransformationData::Ptr</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classTransformationData.html#ad529cd0d56ade19d7729df9825367c03">TransformationData::Ptr</a> const &amp;&#160;</td>
           <td class="paramname"><em>transformationData</em>&#160;</td>
         </tr>
         <tr>
@@ -315,18 +334,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00025">25</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00037">37</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="transformpresentation_8cc_source.html#l00030">create()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  : <a class="code" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a>(transformationData_), <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>(presentation_),</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>(boost::dynamic_pointer_cast&lt;Colormappable&gt;(presentation_))</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{}</div><div class="ttc" id="classTransformPresentation_html_ad5804a0827bf975f5dd39061f7a5060a"><div class="ttname"><a href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">TransformPresentation::transformationData</a></div><div class="ttdeci">TransformationData::Ptr transformationData</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00041">transformpresentation.hh:41</a></div></div>
-<div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00043">transformpresentation.hh:43</a></div></div>
-<div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00042">transformpresentation.hh:42</a></div></div>
+<p class="reference">Referenced by <a class="el" href="transformpresentation_8cc_source.html#l00044">create()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  : <a class="code" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a>(transformationData_)</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  , <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>(presentation_)</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  , <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>(boost::dynamic_pointer_cast&lt;Colormappable&gt;(presentation_))</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{}</div><div class="ttc" id="classTransformPresentation_html_ad5804a0827bf975f5dd39061f7a5060a"><div class="ttname"><a href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">TransformPresentation::transformationData</a></div><div class="ttdeci">TransformationData::Ptr transformationData</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00047">transformpresentation.hh:47</a></div></div>
+<div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00049">transformpresentation.hh:49</a></div></div>
+<div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00048">transformpresentation.hh:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aae3ccb779a416bfe416f26223104c1bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae3ccb779a416bfe416f26223104c1bf">&#9670;&nbsp;</a></span>close()</h2>
+<a id="aa8a233e2cf3d2b78088f64321ec0cc6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8a233e2cf3d2b78088f64321ec0cc6e">&#9670;&nbsp;</a></span>close()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -337,14 +356,14 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void TransformPresentation::close </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classViewInterface.html#ae92933d2303923b3c487674dff4ab999">ViewInterface::WeakPtr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classViewInterface.html#a728bb2c185daaeaa562a624b7ab96c23">ViewInterface::WeakPtr</a>&#160;</td>
           <td class="paramname"><em>vi</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -352,10 +371,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets called just before the <a class="el" href="classView.html">View</a> is destroyed. </p>
 <dl class="section pre"><dt>Precondition</dt><dd>Should be called from within a Gdk critical section (i.e. between gdk_threads_enter() and gdk_threads_leave() calls) </dd></dl>
 
-<p>Implements <a class="el" href="classViewable.html#a8068b9af988bf0eb34fad7f8d0c79722">Viewable</a>.</p>
+<p>Reimplemented from <a class="el" href="classPresentationBase.html#a81cfe78e3adf5a1fecc307e2284578fc">PresentationBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00045">45</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>-&gt;close(viewInterface);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00042">transformpresentation.hh:42</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00061">61</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="classPresentationBase.html#a81cfe78e3adf5a1fecc307e2284578fc">PresentationBase::close</a>(viewInterface);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>-&gt;close(viewInterface);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div><div class="ttc" id="classPresentationBase_html_a81cfe78e3adf5a1fecc307e2284578fc"><div class="ttname"><a href="classPresentationBase.html#a81cfe78e3adf5a1fecc307e2284578fc">PresentationBase::close</a></div><div class="ttdeci">void close(ViewInterface::WeakPtr vi) override</div><div class="ttdoc">Gets called just before the View is destroyed. </div><div class="ttdef"><b>Definition:</b> <a href="presentationinterface_8cc_source.html#l00023">presentationinterface.cc:23</a></div></div>
+<div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00048">transformpresentation.hh:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -369,15 +389,15 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classTransformPresentation.html#a1cf97b20e85ffeb532430da4da7dc72b">TransformPresentation::Ptr</a> TransformPresentation::create </td>
+          <td class="memname"><a class="el" href="classTransformPresentation.html#adfd467360b0f5b53ab8ff7ceb11b0db4">TransformPresentation::Ptr</a> TransformPresentation::create </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classPresentationInterface.html#ad8733b321c78f6170c1370ec26dbb112">PresentationInterface::Ptr</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classPresentationInterface.html#abf309de388e9733c4434f8e1ed78edd5">PresentationInterface::Ptr</a> const &amp;&#160;</td>
           <td class="paramname"><em>presentation</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classTransformationData.html#a5d29ed9abd2d116f1880dfc73f5b1c3e">TransformationData::Ptr</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classTransformationData.html#ad529cd0d56ade19d7729df9825367c03">TransformationData::Ptr</a> const &amp;&#160;</td>
           <td class="paramname"><em>transformationData</em>&#160;</td>
         </tr>
         <tr>
@@ -393,18 +413,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00030">30</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00044">44</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tiff_8cc_source.html#l00065">Tiff::open()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#a1cf97b20e85ffeb532430da4da7dc72b">Ptr</a>(<span class="keyword">new</span> <a class="code" href="classTransformPresentation.html#a3961047491e98aea707dd6870046c1fb">TransformPresentation</a>(<a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>, <a class="code" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a>));</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad5804a0827bf975f5dd39061f7a5060a"><div class="ttname"><a href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">TransformPresentation::transformationData</a></div><div class="ttdeci">TransformationData::Ptr transformationData</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00041">transformpresentation.hh:41</a></div></div>
-<div class="ttc" id="classTransformPresentation_html_a3961047491e98aea707dd6870046c1fb"><div class="ttname"><a href="classTransformPresentation.html#a3961047491e98aea707dd6870046c1fb">TransformPresentation::TransformPresentation</a></div><div class="ttdeci">TransformPresentation(PresentationInterface::Ptr const &amp;presentation, TransformationData::Ptr const &amp;transformationData)</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8cc_source.html#l00025">transformpresentation.cc:25</a></div></div>
-<div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00042">transformpresentation.hh:42</a></div></div>
-<div class="ttc" id="classTransformPresentation_html_a1cf97b20e85ffeb532430da4da7dc72b"><div class="ttname"><a href="classTransformPresentation.html#a1cf97b20e85ffeb532430da4da7dc72b">TransformPresentation::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; TransformPresentation &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00038">transformpresentation.hh:38</a></div></div>
+<p class="reference">Referenced by <a class="el" href="tiledbitmappresentation_8cc_source.html#l00348">anonymous_namespace{tiledbitmappresentation.cc}::OpenTiledBitmapAsPresentation::open()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#adfd467360b0f5b53ab8ff7ceb11b0db4">Ptr</a>(<span class="keyword">new</span> <a class="code" href="classTransformPresentation.html#a3961047491e98aea707dd6870046c1fb">TransformPresentation</a>(<a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>, <a class="code" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a>));</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad5804a0827bf975f5dd39061f7a5060a"><div class="ttname"><a href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">TransformPresentation::transformationData</a></div><div class="ttdeci">TransformationData::Ptr transformationData</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00047">transformpresentation.hh:47</a></div></div>
+<div class="ttc" id="classTransformPresentation_html_a3961047491e98aea707dd6870046c1fb"><div class="ttname"><a href="classTransformPresentation.html#a3961047491e98aea707dd6870046c1fb">TransformPresentation::TransformPresentation</a></div><div class="ttdeci">TransformPresentation(PresentationInterface::Ptr const &amp;presentation, TransformationData::Ptr const &amp;transformationData)</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8cc_source.html#l00037">transformpresentation.cc:37</a></div></div>
+<div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00048">transformpresentation.hh:48</a></div></div>
+<div class="ttc" id="classTransformPresentation_html_adfd467360b0f5b53ab8ff7ceb11b0db4"><div class="ttname"><a href="classTransformPresentation.html#adfd467360b0f5b53ab8ff7ceb11b0db4">TransformPresentation::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; TransformPresentation &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00044">transformpresentation.hh:44</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aad45df75870c8f294b5b9333f5b592a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad45df75870c8f294b5b9333f5b592a0">&#9670;&nbsp;</a></span>disableTransparentBackground()</h2>
+<a id="a7471c9df007b7595fd1177adcef2abfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7471c9df007b7595fd1177adcef2abfa">&#9670;&nbsp;</a></span>disableTransparentBackground()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,20 +441,20 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classColormappable.html#a65f7747cb8c21704aed2bcbb05401f8b">Colormappable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00106">106</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;disableTransparentBackground();</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00043">transformpresentation.hh:43</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00101">101</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{ <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;disableTransparentBackground(); }</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00049">transformpresentation.hh:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a0944de3ecde1372791db8d528b870a47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0944de3ecde1372791db8d528b870a47">&#9670;&nbsp;</a></span>getAspectRatio()</h2>
+<a id="a969c44d9131e0318d039ff509f8dbed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a969c44d9131e0318d039ff509f8dbed9">&#9670;&nbsp;</a></span>getAspectRatio()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -451,20 +471,20 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="classPresentationInterface.html#a29ca008cd80d5a7ea8683dafe8ba4114">PresentationInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00123">123</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a>-&gt;getAspectRatio();</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad5804a0827bf975f5dd39061f7a5060a"><div class="ttname"><a href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">TransformPresentation::transformationData</a></div><div class="ttdeci">TransformationData::Ptr transformationData</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00041">transformpresentation.hh:41</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00112">112</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a>-&gt;getAspectRatio(); }</div><div class="ttc" id="classTransformPresentation_html_ad5804a0827bf975f5dd39061f7a5060a"><div class="ttname"><a href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">TransformPresentation::transformationData</a></div><div class="ttdeci">TransformationData::Ptr transformationData</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00047">transformpresentation.hh:47</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a2e9f93e8ea6d431a87567d108f05aa18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e9f93e8ea6d431a87567d108f05aa18">&#9670;&nbsp;</a></span>getMonochromeColor()</h2>
+<a id="a1d508b386f74549c2fff13c04f5b970e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d508b386f74549c2fff13c04f5b970e">&#9670;&nbsp;</a></span>getMonochromeColor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,20 +501,20 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classColormappable.html#a64ff1a16f7e036ab0e212d8e51716059">Colormappable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00091">91</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;getMonochromeColor();</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00043">transformpresentation.hh:43</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00095">95</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;getMonochromeColor(); }</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00049">transformpresentation.hh:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aaf6250edef3a2e1aa800d1e1d7508c94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf6250edef3a2e1aa800d1e1d7508c94">&#9670;&nbsp;</a></span>getNumberOfColors()</h2>
+<a id="a7fc20cee82ebc28404c074b10e44add9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc20cee82ebc28404c074b10e44add9">&#9670;&nbsp;</a></span>getNumberOfColors()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -511,7 +531,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -520,13 +540,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classColormappable.html#a16b7176e5ad12c8754b51e583270cea4">Colormappable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00086">86</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;getNumberOfColors();</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00043">transformpresentation.hh:43</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00093">93</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;getNumberOfColors(); }</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00049">transformpresentation.hh:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ad9256689bf700da022b65bc35bd8e9fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9256689bf700da022b65bc35bd8e9fb">&#9670;&nbsp;</a></span>getOriginalColormap()</h2>
+<a id="a12344a3eeaf492b1c7bdd2fa80db7729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12344a3eeaf492b1c7bdd2fa80db7729">&#9670;&nbsp;</a></span>getOriginalColormap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -535,7 +555,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classColormap.html#a6bf9e09dab6a6185a568d29bb0a6bd39">Colormap::Ptr</a> TransformPresentation::getOriginalColormap </td>
+          <td class="memname"><a class="el" href="classColormap.html#a490aa33223a81e71c130036dc980cd63">Colormap::Ptr</a> TransformPresentation::getOriginalColormap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -543,7 +563,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -552,13 +572,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classColormappable.html#a16128d0a4c8afa05f8720352bea2a3de">Colormappable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00081">81</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;getOriginalColormap();</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00043">transformpresentation.hh:43</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00091">91</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;getOriginalColormap(); }</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00049">transformpresentation.hh:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a1152724f7f8958f81e6df96b55e978ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1152724f7f8958f81e6df96b55e978ea">&#9670;&nbsp;</a></span>getPixelAverages()</h2>
+<a id="a5988d5b21dda784830481bd4a5a88fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5988d5b21dda784830481bd4a5a88fb6">&#9670;&nbsp;</a></span>getPixelAverages()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -567,7 +587,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classPipetteLayerOperations.html#a30d2a9fef8c4ee26fba0f448162fa393">PipetteLayerOperations::PipetteColor</a> TransformPresentation::getPixelAverages </td>
+          <td class="memname"><a class="el" href="classPipetteLayerOperations.html#ac2e1230385d4439b30668e66df245485">PipetteLayerOperations::PipetteColor</a> TransformPresentation::getPixelAverages </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; int &gt;&#160;</td>
           <td class="paramname"><em>area</em></td><td>)</td>
@@ -576,7 +596,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -591,16 +611,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classPipetteViewInterface.html#a31fc76e0bb8c9e326b16f6929a47df88">PipetteViewInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00116">116</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="classPipetteViewInterface.html#a648e1ed54c4d40419174cd74dcbabc27">PipetteViewInterface::Ptr</a> pipettePresentation = boost::dynamic_pointer_cast&lt;<a class="code" href="classPipetteViewInterface.html">PipetteViewInterface</a>&gt;(<a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="assertions_8hh.html#ae925d7587e34145cd52f674b2012539a">require</a>(pipettePresentation);</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordflow">return</span> pipettePresentation-&gt;getPixelAverages(area);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div><div class="ttc" id="assertions_8hh_html_ae925d7587e34145cd52f674b2012539a"><div class="ttname"><a href="assertions_8hh.html#ae925d7587e34145cd52f674b2012539a">require</a></div><div class="ttdeci">#define require(expr)</div><div class="ttdef"><b>Definition:</b> <a href="assertions_8hh_source.html#l00033">assertions.hh:33</a></div></div>
-<div class="ttc" id="classPipetteViewInterface_html_a648e1ed54c4d40419174cd74dcbabc27"><div class="ttname"><a href="classPipetteViewInterface.html#a648e1ed54c4d40419174cd74dcbabc27">PipetteViewInterface::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; PipetteViewInterface &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="pipetteviewinterface_8hh_source.html#l00018">pipetteviewinterface.hh:18</a></div></div>
-<div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00042">transformpresentation.hh:42</a></div></div>
-<div class="ttc" id="classPipetteViewInterface_html"><div class="ttname"><a href="classPipetteViewInterface.html">PipetteViewInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="pipetteviewinterface_8hh_source.html#l00015">pipetteviewinterface.hh:15</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00105">105</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="classPipetteViewInterface.html#a265ead333d477679e6fbef6a5f7ed116">PipetteViewInterface::Ptr</a> pipettePresentation = boost::dynamic_pointer_cast&lt;<a class="code" href="classPipetteViewInterface.html">PipetteViewInterface</a>&gt;(<a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <a class="code" href="assertions_8hh.html#ae925d7587e34145cd52f674b2012539a">require</a>(pipettePresentation);</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">return</span> pipettePresentation-&gt;getPixelAverages(area);</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div><div class="ttc" id="assertions_8hh_html_ae925d7587e34145cd52f674b2012539a"><div class="ttname"><a href="assertions_8hh.html#ae925d7587e34145cd52f674b2012539a">require</a></div><div class="ttdeci">#define require(expr)</div><div class="ttdef"><b>Definition:</b> <a href="assertions_8hh_source.html#l00034">assertions.hh:34</a></div></div>
+<div class="ttc" id="classPipetteViewInterface_html_a265ead333d477679e6fbef6a5f7ed116"><div class="ttname"><a href="classPipetteViewInterface.html#a265ead333d477679e6fbef6a5f7ed116">PipetteViewInterface::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; PipetteViewInterface &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="pipetteviewinterface_8hh_source.html#l00021">pipetteviewinterface.hh:21</a></div></div>
+<div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00048">transformpresentation.hh:48</a></div></div>
+<div class="ttc" id="classPipetteViewInterface_html"><div class="ttname"><a href="classPipetteViewInterface.html">PipetteViewInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="pipetteviewinterface_8hh_source.html#l00016">pipetteviewinterface.hh:16</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aa88aeeb585e754a85722f25d0d8f90ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa88aeeb585e754a85722f25d0d8f90ea">&#9670;&nbsp;</a></span>getProperty()</h2>
+<a id="a8202e9c8f864e64bf5071a1297401d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8202e9c8f864e64bf5071a1297401d05">&#9670;&nbsp;</a></span>getProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -628,7 +648,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -651,13 +671,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classPresentationInterface.html#ae454b7a8f8886fe4001700b2fbb83b19">PresentationInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00061">61</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>-&gt;getProperty(name, value);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00042">transformpresentation.hh:42</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00080">80</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>-&gt;getProperty(name, value);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00048">transformpresentation.hh:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ac6d70ec0e60da0355604d5078f1446ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6d70ec0e60da0355604d5078f1446ab">&#9670;&nbsp;</a></span>getRect()</h2>
+<a id="ae8896ce9e1b7bc669f6c4febc8823dd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8896ce9e1b7bc669f6c4febc8823dd1">&#9670;&nbsp;</a></span>getRect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -674,7 +694,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -683,14 +703,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classPresentationInterface.html#a4ff8352b5804eb4518099016face846b">PresentationInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00035">35</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>-&gt;getRect() * <a class="code" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a>-&gt;getAspectRatio();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad5804a0827bf975f5dd39061f7a5060a"><div class="ttname"><a href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">TransformPresentation::transformationData</a></div><div class="ttdeci">TransformationData::Ptr transformationData</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00041">transformpresentation.hh:41</a></div></div>
-<div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00042">transformpresentation.hh:42</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00050">50</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>-&gt;getRect() * <a class="code" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a>-&gt;getAspectRatio();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad5804a0827bf975f5dd39061f7a5060a"><div class="ttname"><a href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">TransformPresentation::transformationData</a></div><div class="ttdeci">TransformationData::Ptr transformationData</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00047">transformpresentation.hh:47</a></div></div>
+<div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00048">transformpresentation.hh:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="acba07727425bc799870cb1e6c6fc64a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acba07727425bc799870cb1e6c6fc64a3">&#9670;&nbsp;</a></span>getTitle()</h2>
+<a id="a40750146eb0946054dd322371dfdf6da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40750146eb0946054dd322371dfdf6da">&#9670;&nbsp;</a></span>getTitle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -707,7 +727,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -716,13 +736,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classPresentationInterface.html#a91974d576458480d37d40c1dbc006d82">PresentationInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00071">71</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>-&gt;getTitle();</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00042">transformpresentation.hh:42</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00087">87</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>-&gt;getTitle(); }</div><div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00048">transformpresentation.hh:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a0f3a59a3d074d5111473779dffbc1d5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f3a59a3d074d5111473779dffbc1d5c">&#9670;&nbsp;</a></span>getTransparentBackground()</h2>
+<a id="a30829d965c1917a27fe95501a6e094df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30829d965c1917a27fe95501a6e094df">&#9670;&nbsp;</a></span>getTransparentBackground()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -739,20 +759,20 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classColormappable.html#ae43e2fc3d049bbeebac2a64128ea0fc3">Colormappable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00111">111</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;getTransparentBackground();</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00043">transformpresentation.hh:43</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00103">103</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;getTransparentBackground(); }</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00049">transformpresentation.hh:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a4309c40f10596c6cbc06fe8561e46f00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4309c40f10596c6cbc06fe8561e46f00">&#9670;&nbsp;</a></span>isPropertyDefined()</h2>
+<a id="a5638f266baa20a20901f9ae3225a2944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5638f266baa20a20901f9ae3225a2944">&#9670;&nbsp;</a></span>isPropertyDefined()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -770,7 +790,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -779,13 +799,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classPresentationInterface.html#afe9df45f557e0c770b93904152ab38f3">PresentationInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00066">66</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>-&gt;isPropertyDefined(name);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00042">transformpresentation.hh:42</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00085">85</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>-&gt;isPropertyDefined(name); }</div><div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00048">transformpresentation.hh:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="abadcacf12bd2631161b72c5042ec99bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abadcacf12bd2631161b72c5042ec99bc">&#9670;&nbsp;</a></span>open()</h2>
+<a id="a8aac4359f5f251bf4c89882857d1b0f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aac4359f5f251bf4c89882857d1b0f9">&#9670;&nbsp;</a></span>open()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -796,14 +816,14 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void TransformPresentation::open </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classViewInterface.html#ae92933d2303923b3c487674dff4ab999">ViewInterface::WeakPtr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classViewInterface.html#a728bb2c185daaeaa562a624b7ab96c23">ViewInterface::WeakPtr</a>&#160;</td>
           <td class="paramname"><em>vi</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -811,15 +831,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets called just after the <a class="el" href="classView.html">View</a> is created. </p>
 <dl class="section pre"><dt>Precondition</dt><dd>Should be called from within a Gdk critical section (i.e. between gdk_threads_enter() and gdk_threads_leave() calls) </dd></dl>
 
-<p>Implements <a class="el" href="classViewable.html#a3e17fe21b5e7bdb916b5c7cbfc65ffbd">Viewable</a>.</p>
+<p>Reimplemented from <a class="el" href="classPresentationBase.html#ae964144f0e8da9e7d7067f3d8183a8e4">PresentationBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00040">40</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>-&gt;open(viewInterface);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00042">transformpresentation.hh:42</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00055">55</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>-&gt;open(viewInterface);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classPresentationBase.html#ae964144f0e8da9e7d7067f3d8183a8e4">PresentationBase::open</a>(viewInterface);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="ttc" id="classPresentationBase_html_ae964144f0e8da9e7d7067f3d8183a8e4"><div class="ttname"><a href="classPresentationBase.html#ae964144f0e8da9e7d7067f3d8183a8e4">PresentationBase::open</a></div><div class="ttdeci">void open(ViewInterface::WeakPtr vi) override</div><div class="ttdoc">Gets called just after the View is created. </div><div class="ttdef"><b>Definition:</b> <a href="presentationinterface_8cc_source.html#l00011">presentationinterface.cc:11</a></div></div>
+<div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00048">transformpresentation.hh:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aaf6ebf778f5c9ec4096c0769a92080a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf6ebf778f5c9ec4096c0769a92080a7">&#9670;&nbsp;</a></span>redraw()</h2>
+<a id="aae93c031e922657598b8a3047e699267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae93c031e922657598b8a3047e699267">&#9670;&nbsp;</a></span>redraw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -830,7 +851,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void TransformPresentation::redraw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classViewInterface.html#ac7a08ed3d90712571bd4308c154d8503">ViewInterface::Ptr</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classViewInterface.html#a6cf7cb7ff0cd58e749beac9b636e5b41">ViewInterface::Ptr</a> const &amp;&#160;</td>
           <td class="paramname"><em>vi</em>, </td>
         </tr>
         <tr>
@@ -859,7 +880,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -877,17 +898,17 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classPresentationInterface.html#a60bc0b48811cb281c9e8da99805b6b66">PresentationInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00050">50</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="classScroom_1_1Utils_1_1Point.html">Scroom::Utils::Point&lt;double&gt;</a> aspectRatio = <a class="code" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a>-&gt;getAspectRatio();</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  cairo_save(cr);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  cairo_scale(cr, aspectRatio.<a class="code" href="classScroom_1_1Utils_1_1Point.html#aef05138a3536382db393d698c80a48ca">x</a>, aspectRatio.<a class="code" href="classScroom_1_1Utils_1_1Point.html#a8f69c38e2593833b1901ef73e935d820">y</a>);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>-&gt;redraw(vi, cr, presentationArea, zoom);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  cairo_restore(cr);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad5804a0827bf975f5dd39061f7a5060a"><div class="ttname"><a href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">TransformPresentation::transformationData</a></div><div class="ttdeci">TransformationData::Ptr transformationData</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00041">transformpresentation.hh:41</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00067">67</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="classScroom_1_1Utils_1_1Point.html">Scroom::Utils::Point&lt;double&gt;</a> aspectRatio = <a class="code" href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">transformationData</a>-&gt;getAspectRatio();</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  cairo_save(cr);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  cairo_scale(cr, aspectRatio.<a class="code" href="classScroom_1_1Utils_1_1Point.html#aef05138a3536382db393d698c80a48ca">x</a>, aspectRatio.<a class="code" href="classScroom_1_1Utils_1_1Point.html#a8f69c38e2593833b1901ef73e935d820">y</a>);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">presentation</a>-&gt;redraw(vi, cr, presentationArea, zoom);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  cairo_restore(cr);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad5804a0827bf975f5dd39061f7a5060a"><div class="ttname"><a href="classTransformPresentation.html#ad5804a0827bf975f5dd39061f7a5060a">TransformPresentation::transformationData</a></div><div class="ttdeci">TransformationData::Ptr transformationData</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00047">transformpresentation.hh:47</a></div></div>
 <div class="ttc" id="classScroom_1_1Utils_1_1Point_html"><div class="ttname"><a href="classScroom_1_1Utils_1_1Point.html">Scroom::Utils::Point&lt; double &gt;</a></div></div>
-<div class="ttc" id="classScroom_1_1Utils_1_1Point_html_aef05138a3536382db393d698c80a48ca"><div class="ttname"><a href="classScroom_1_1Utils_1_1Point.html#aef05138a3536382db393d698c80a48ca">Scroom::Utils::Point::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="point_8hh_source.html#l00098">point.hh:98</a></div></div>
-<div class="ttc" id="classScroom_1_1Utils_1_1Point_html_a8f69c38e2593833b1901ef73e935d820"><div class="ttname"><a href="classScroom_1_1Utils_1_1Point.html#a8f69c38e2593833b1901ef73e935d820">Scroom::Utils::Point::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="point_8hh_source.html#l00099">point.hh:99</a></div></div>
-<div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00042">transformpresentation.hh:42</a></div></div>
+<div class="ttc" id="classScroom_1_1Utils_1_1Point_html_aef05138a3536382db393d698c80a48ca"><div class="ttname"><a href="classScroom_1_1Utils_1_1Point.html#aef05138a3536382db393d698c80a48ca">Scroom::Utils::Point::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="point_8hh_source.html#l00094">point.hh:94</a></div></div>
+<div class="ttc" id="classScroom_1_1Utils_1_1Point_html_a8f69c38e2593833b1901ef73e935d820"><div class="ttname"><a href="classScroom_1_1Utils_1_1Point.html#a8f69c38e2593833b1901ef73e935d820">Scroom::Utils::Point::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="point_8hh_source.html#l00095">point.hh:95</a></div></div>
+<div class="ttc" id="classTransformPresentation_html_a5aac13bb64cc63cb76adbb42a0770cee"><div class="ttname"><a href="classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee">TransformPresentation::presentation</a></div><div class="ttdeci">PresentationInterface::Ptr presentation</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00048">transformpresentation.hh:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="acce3ffd77966420d301498a6193199e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acce3ffd77966420d301498a6193199e4">&#9670;&nbsp;</a></span>setColormap()</h2>
+<a id="ac54fec8e9d05effd1b8377a52a91ee1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac54fec8e9d05effd1b8377a52a91ee1a">&#9670;&nbsp;</a></span>setColormap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -898,14 +919,14 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void TransformPresentation::setColormap </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classColormap.html#a6bf9e09dab6a6185a568d29bb0a6bd39">Colormap::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classColormap.html#a490aa33223a81e71c130036dc980cd63">Colormap::Ptr</a>&#160;</td>
           <td class="paramname"><em>colormap</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -914,13 +935,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classColormappable.html#aa6e4b4bd6dbd16f0da2ba9177a12712a">Colormappable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00076">76</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;setColormap(colormap);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00043">transformpresentation.hh:43</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00089">89</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{ <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;setColormap(colormap); }</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00049">transformpresentation.hh:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a93ac34113b66c18f9cf73e42648addf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93ac34113b66c18f9cf73e42648addf0">&#9670;&nbsp;</a></span>setMonochromeColor()</h2>
+<a id="a778ce565d6a8d478c5655008174fb949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a778ce565d6a8d478c5655008174fb949">&#9670;&nbsp;</a></span>setMonochromeColor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -938,20 +959,20 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classColormappable.html#ace95792d04b6d08fc50021a3c737998c">Colormappable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00096">96</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;setMonochromeColor(c);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00043">transformpresentation.hh:43</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00097">97</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{ <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;setMonochromeColor(c); }</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00049">transformpresentation.hh:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ad04bde49b0a28eaaf992e8fa91c3f506"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad04bde49b0a28eaaf992e8fa91c3f506">&#9670;&nbsp;</a></span>setTransparentBackground()</h2>
+<a id="a7e5ba7edfebb16456fefec941e4f3eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e5ba7edfebb16456fefec941e4f3eb3">&#9670;&nbsp;</a></span>setTransparentBackground()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -968,15 +989,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classColormappable.html#a2bf36ff8421d54ca709ef671b10bd4b6">Colormappable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00101">101</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;setTransparentBackground();</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00043">transformpresentation.hh:43</a></div></div>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8cc_source.html#l00099">99</a> of file <a class="el" href="transformpresentation_8cc_source.html">transformpresentation.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{ <a class="code" href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">colormappable</a>-&gt;setTransparentBackground(); }</div><div class="ttc" id="classTransformPresentation_html_ad383e05a9aa2cbd83a077bd83ced7abd"><div class="ttname"><a href="classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd">TransformPresentation::colormappable</a></div><div class="ttdeci">Colormappable::Ptr colormappable</div><div class="ttdef"><b>Definition:</b> <a href="transformpresentation_8hh_source.html#l00049">transformpresentation.hh:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -991,7 +1012,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classColormappable.html#a4c1b71a942d06c46de4d958f3f03be67">Colormappable::Ptr</a> TransformPresentation::colormappable</td>
+          <td class="memname"><a class="el" href="classColormappable.html#af2dddbfd773d930baaaf6de9c6444940">Colormappable::Ptr</a> TransformPresentation::colormappable</td>
         </tr>
       </table>
   </td>
@@ -1001,9 +1022,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8hh_source.html#l00043">43</a> of file <a class="el" href="transformpresentation_8hh_source.html">transformpresentation.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8hh_source.html#l00049">49</a> of file <a class="el" href="transformpresentation_8hh_source.html">transformpresentation.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="transformpresentation_8cc_source.html#l00106">disableTransparentBackground()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00091">getMonochromeColor()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00086">getNumberOfColors()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00081">getOriginalColormap()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00111">getTransparentBackground()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00076">setColormap()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00096">setMonochromeColor()</a>, and <a class="el" href="transformpresentation_8cc_source.html#l00101">setTransparentBackground()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="transformpresentation_8cc_source.html#l00101">disableTransparentBackground()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00095">getMonochromeColor()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00093">getNumberOfColors()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00091">getOriginalColormap()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00103">getTransparentBackground()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00089">setColormap()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00097">setMonochromeColor()</a>, and <a class="el" href="transformpresentation_8cc_source.html#l00099">setTransparentBackground()</a>.</p>
 
 </div>
 </div>
@@ -1017,7 +1038,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classPresentationInterface.html#ad8733b321c78f6170c1370ec26dbb112">PresentationInterface::Ptr</a> TransformPresentation::presentation</td>
+          <td class="memname"><a class="el" href="classPresentationInterface.html#abf309de388e9733c4434f8e1ed78edd5">PresentationInterface::Ptr</a> TransformPresentation::presentation</td>
         </tr>
       </table>
   </td>
@@ -1027,9 +1048,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8hh_source.html#l00042">42</a> of file <a class="el" href="transformpresentation_8hh_source.html">transformpresentation.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8hh_source.html#l00048">48</a> of file <a class="el" href="transformpresentation_8hh_source.html">transformpresentation.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="transformpresentation_8cc_source.html#l00045">close()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00116">getPixelAverages()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00061">getProperty()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00035">getRect()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00071">getTitle()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00066">isPropertyDefined()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00040">open()</a>, and <a class="el" href="transformpresentation_8cc_source.html#l00050">redraw()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="transformpresentation_8cc_source.html#l00061">close()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00105">getPixelAverages()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00080">getProperty()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00050">getRect()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00087">getTitle()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00085">isPropertyDefined()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00055">open()</a>, and <a class="el" href="transformpresentation_8cc_source.html#l00067">redraw()</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1064,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classTransformationData.html#a5d29ed9abd2d116f1880dfc73f5b1c3e">TransformationData::Ptr</a> TransformPresentation::transformationData</td>
+          <td class="memname"><a class="el" href="classTransformationData.html#ad529cd0d56ade19d7729df9825367c03">TransformationData::Ptr</a> TransformPresentation::transformationData</td>
         </tr>
       </table>
   </td>
@@ -1053,9 +1074,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="transformpresentation_8hh_source.html#l00041">41</a> of file <a class="el" href="transformpresentation_8hh_source.html">transformpresentation.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transformpresentation_8hh_source.html#l00047">47</a> of file <a class="el" href="transformpresentation_8hh_source.html">transformpresentation.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="transformpresentation_8cc_source.html#l00123">getAspectRatio()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00035">getRect()</a>, and <a class="el" href="transformpresentation_8cc_source.html#l00050">redraw()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="transformpresentation_8cc_source.html#l00112">getAspectRatio()</a>, <a class="el" href="transformpresentation_8cc_source.html#l00050">getRect()</a>, and <a class="el" href="transformpresentation_8cc_source.html#l00067">redraw()</a>.</p>
 
 </div>
 </div>
@@ -1069,7 +1090,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classTransformPresentation.html">TransformPresentation</a></li>
-    <li class="footer">Generated on Fri Sep 11 2020 10:09:31 for Scroom by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

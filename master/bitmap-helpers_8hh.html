@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1</span>
+   &#160;<span id="projectnumber">0.12.1</span>
    </div>
   </td>
  </tr>
@@ -87,17 +87,18 @@ $(document).ready(function(){initNavTree('bitmap-helpers_8hh.html','');});
 <div class="title">bitmap-helpers.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
-<code>#include &lt;boost/utility.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;boost/operators.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="global_8hh_source.html">scroom/global.hh</a>&gt;</code><br />
+<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
+<code>#include &lt;boost/utility.hpp&gt;</code><br />
 <code>#include &lt;cairo.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="global_8hh_source.html">scroom/global.hh</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for bitmap-helpers.hh:</div>
 <div class="dyncontent">
 <div class="center"><img src="bitmap-helpers_8hh__incl.png" border="0" usemap="#inc_2scroom_2bitmap-helpers_8hh" alt=""/></div>
 <map name="inc_2scroom_2bitmap-helpers_8hh" id="inc_2scroom_2bitmap-helpers_8hh">
-<area shape="rect" id="node5" href="global_8hh.html" title="scroom/global.hh" alt="" coords="516,80,651,107"/>
+<area shape="rect" id="node7" href="global_8hh.html" title="scroom/global.hh" alt="" coords="724,80,859,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -105,10 +106,10 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="bitmap-helpers_8hh__dep__incl.png" border="0" usemap="#inc_2scroom_2bitmap-helpers_8hhdep" alt=""/></div>
 <map name="inc_2scroom_2bitmap-helpers_8hhdep" id="inc_2scroom_2bitmap-helpers_8hhdep">
-<area shape="rect" id="node2" href="transparentoverlayviewinfo_8cc.html" title="plugins/transparent\l&#45;overlay/src/transparentoverlayviewinfo.cc" alt="" coords="5,80,307,121"/>
-<area shape="rect" id="node3" href="bitmap-helpers_8cc.html" title="libs/scroom/src/bitmap\l&#45;helpers.cc" alt="" coords="331,80,501,121"/>
-<area shape="rect" id="node4" href="cmyklayeroperations_8cc.html" title="libs/tiled&#45;bitmap/src\l/cmyklayeroperations.cc" alt="" coords="526,80,709,121"/>
-<area shape="rect" id="node5" href="layeroperations_8cc.html" title="libs/tiled&#45;bitmap/src\l/layeroperations.cc" alt="" coords="733,80,885,121"/>
+<area shape="rect" id="node2" href="bitmap-helpers_8cc.html" title="libs/scroom/src/bitmap\l&#45;helpers.cc" alt="" coords="5,80,176,121"/>
+<area shape="rect" id="node3" href="cmyklayeroperations_8cc.html" title="libs/tiled&#45;bitmap/src\l/cmyklayeroperations.cc" alt="" coords="201,80,383,121"/>
+<area shape="rect" id="node4" href="layeroperations_8cc.html" title="libs/tiled&#45;bitmap/src\l/layeroperations.cc" alt="" coords="408,80,560,121"/>
+<area shape="rect" id="node5" href="transparentoverlayviewinfo_8cc.html" title="plugins/transparent\l&#45;overlay/src/transparentoverlayviewinfo.cc" alt="" coords="584,80,885,121"/>
 </map>
 </div>
 </div>
@@ -118,7 +119,7 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Bitmap_1_1BitmapSurface.html">Scroom::Bitmap::BitmapSurface</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Bitmap_1_1SampleIterator.html">Scroom::Bitmap::SampleIterator&lt; Base &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Bitmap_1_1SampleIterator.html">Scroom::Bitmap::SampleIterator&lt; ConstBase &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over samples (bits) within a larger type, for example a byte.  <a href="classScroom_1_1Bitmap_1_1SampleIterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -135,7 +136,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="dir_fdaa98eacd9d0ebd1873ba3405fc94c8.html">scroom</a></li><li class="navelem"><a class="el" href="bitmap-helpers_8hh.html">bitmap-helpers.hh</a></li>
-    <li class="footer">Generated on Fri Sep 11 2020 10:09:30 for Scroom by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

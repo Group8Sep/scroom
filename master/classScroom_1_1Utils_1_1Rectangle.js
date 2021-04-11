@@ -1,7 +1,7 @@
 var classScroom_1_1Utils_1_1Rectangle =
 [
-    [ "value_type", "classScroom_1_1Utils_1_1Rectangle.html#ab0e781ff272a021d0c850b400c2bcbae", null ],
-    [ "Rectangle", "classScroom_1_1Utils_1_1Rectangle.html#a3cafad49131d11dc1148bec0eae2d4d9", null ],
+    [ "value_type", "classScroom_1_1Utils_1_1Rectangle.html#ae9da03b7257324aa5280b1e5ffd54a48", null ],
+    [ "Rectangle", "classScroom_1_1Utils_1_1Rectangle.html#a8bafbe715dcf9dc732ea2f197b9ecba1", null ],
     [ "Rectangle", "classScroom_1_1Utils_1_1Rectangle.html#a193a42cdd207109ce301d307246feb62", null ],
     [ "Rectangle", "classScroom_1_1Utils_1_1Rectangle.html#a606827d1c16c8b8ebe05fc1c0fdf4132", null ],
     [ "Rectangle", "classScroom_1_1Utils_1_1Rectangle.html#a2feb4ce927f5186f359ca76e8ac0f4a0", null ],
@@ -28,7 +28,7 @@ var classScroom_1_1Utils_1_1Rectangle =
     [ "getWidth", "classScroom_1_1Utils_1_1Rectangle.html#a3b8d627a36eb56f6f36eea5004591154", null ],
     [ "height", "classScroom_1_1Utils_1_1Rectangle.html#a1262f445c07c33e16069e2497aed581f", null ],
     [ "intersection", "classScroom_1_1Utils_1_1Rectangle.html#aa93bcd537f48183edeb70a668f7352cf", null ],
-    [ "intersection", "classScroom_1_1Utils_1_1Rectangle.html#adc7e52ea83051e4d317a7ef0412b3d56", null ],
+    [ "intersection", "classScroom_1_1Utils_1_1Rectangle.html#aa93cb09f56f99dc681b62f49fb945664", null ],
     [ "intersects", "classScroom_1_1Utils_1_1Rectangle.html#a986e254432e0c921011005312eb9d3c6", null ],
     [ "isEmpty", "classScroom_1_1Utils_1_1Rectangle.html#a63d218d52a6e28b5f3af118feb624019", null ],
     [ "leftOf", "classScroom_1_1Utils_1_1Rectangle.html#adf62135f8fc93f9269d33baf77f0a083", null ],

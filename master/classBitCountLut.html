@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.11.1</span>
+   &#160;<span id="projectnumber">0.12.1</span>
    </div>
   </td>
  </tr>
@@ -100,17 +100,17 @@ Collaboration diagram for BitCountLut:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acd52591421865ddac0e330236ce6fe9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBitCountLut.html#acd52591421865ddac0e330236ce6fe9b">BitCountLut</a> ()</td></tr>
 <tr class="separator:acd52591421865ddac0e330236ce6fe9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9894e0293a024d63740b7c15cf53bff0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="global_8hh.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBitCountLut.html#a9894e0293a024d63740b7c15cf53bff0">lookup</a> (<a class="el" href="global_8hh.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> index)</td></tr>
+<tr class="memitem:a9894e0293a024d63740b7c15cf53bff0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="global_8hh.html#a7528222f65ad403ee1a88ff2b56f9fb7">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBitCountLut.html#a9894e0293a024d63740b7c15cf53bff0">lookup</a> (<a class="el" href="global_8hh.html#a7528222f65ad403ee1a88ff2b56f9fb7">byte</a> index)</td></tr>
 <tr class="separator:a9894e0293a024d63740b7c15cf53bff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a98992a69cd80f781325f971ee1048e58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="global_8hh.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBitCountLut.html#a98992a69cd80f781325f971ee1048e58">lut</a> [256]</td></tr>
+<tr class="memitem:a98992a69cd80f781325f971ee1048e58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="global_8hh.html#a7528222f65ad403ee1a88ff2b56f9fb7">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBitCountLut.html#a98992a69cd80f781325f971ee1048e58">lut</a> [256]</td></tr>
 <tr class="separator:a98992a69cd80f781325f971ee1048e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="layeroperations_8cc_source.html#l00041">41</a> of file <a class="el" href="layeroperations_8cc_source.html">layeroperations.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="layeroperations_8cc_source.html#l00039">39</a> of file <a class="el" href="layeroperations_8cc_source.html">layeroperations.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acd52591421865ddac0e330236ce6fe9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd52591421865ddac0e330236ce6fe9b">&#9670;&nbsp;</a></span>BitCountLut()</h2>
@@ -128,7 +128,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="layeroperations_8cc_source.html#l00053">53</a> of file <a class="el" href="layeroperations_8cc_source.html">layeroperations.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;256; i++)</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> sum=0;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> v=i;v;v&gt;&gt;=1)</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      sum += v&amp;1;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classBitCountLut.html#a98992a69cd80f781325f971ee1048e58">lut</a>[i]=sum;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div><div class="ttc" id="classBitCountLut_html_a98992a69cd80f781325f971ee1048e58"><div class="ttname"><a href="classBitCountLut.html#a98992a69cd80f781325f971ee1048e58">BitCountLut::lut</a></div><div class="ttdeci">byte lut[256]</div><div class="ttdef"><b>Definition:</b> <a href="layeroperations_8cc_source.html#l00044">layeroperations.cc:44</a></div></div>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 256; i++)</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> sum = 0;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> v = i; v; v &gt;&gt;= 1)</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      sum += v &amp; 1;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classBitCountLut.html#a98992a69cd80f781325f971ee1048e58">lut</a>[i] = sum;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div><div class="ttc" id="classBitCountLut_html_a98992a69cd80f781325f971ee1048e58"><div class="ttname"><a href="classBitCountLut.html#a98992a69cd80f781325f971ee1048e58">BitCountLut::lut</a></div><div class="ttdeci">byte lut[256]</div><div class="ttdef"><b>Definition:</b> <a href="layeroperations_8cc_source.html#l00042">layeroperations.cc:42</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -143,9 +143,9 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="global_8hh.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> BitCountLut::lookup </td>
+          <td class="memname"><a class="el" href="global_8hh.html#a7528222f65ad403ee1a88ff2b56f9fb7">byte</a> BitCountLut::lookup </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="global_8hh.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="global_8hh.html#a7528222f65ad403ee1a88ff2b56f9fb7">byte</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
@@ -159,8 +159,8 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="layeroperations_8cc_source.html#l00066">66</a> of file <a class="el" href="layeroperations_8cc_source.html">layeroperations.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="layeroperations_8cc_source.html#l00303">Operations1bpp::reduce()</a>, and <a class="el" href="layeroperations_8cc_source.html#l00909">Operations1bppClipped::reduce()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classBitCountLut.html#a98992a69cd80f781325f971ee1048e58">lut</a>[index];</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div><div class="ttc" id="classBitCountLut_html_a98992a69cd80f781325f971ee1048e58"><div class="ttname"><a href="classBitCountLut.html#a98992a69cd80f781325f971ee1048e58">BitCountLut::lut</a></div><div class="ttdeci">byte lut[256]</div><div class="ttdef"><b>Definition:</b> <a href="layeroperations_8cc_source.html#l00044">layeroperations.cc:44</a></div></div>
+<p class="reference">Referenced by <a class="el" href="layeroperations_8cc_source.html#l00299">Operations1bpp::reduce()</a>, and <a class="el" href="layeroperations_8cc_source.html#l00891">Operations1bppClipped::reduce()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classBitCountLut.html#a98992a69cd80f781325f971ee1048e58">lut</a>[index]; }</div><div class="ttc" id="classBitCountLut_html_a98992a69cd80f781325f971ee1048e58"><div class="ttname"><a href="classBitCountLut.html#a98992a69cd80f781325f971ee1048e58">BitCountLut::lut</a></div><div class="ttdeci">byte lut[256]</div><div class="ttdef"><b>Definition:</b> <a href="layeroperations_8cc_source.html#l00042">layeroperations.cc:42</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -175,7 +175,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="global_8hh.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> BitCountLut::lut[256]</td>
+          <td class="memname"><a class="el" href="global_8hh.html#a7528222f65ad403ee1a88ff2b56f9fb7">byte</a> BitCountLut::lut[256]</td>
         </tr>
       </table>
   </td>
@@ -185,7 +185,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="layeroperations_8cc_source.html#l00044">44</a> of file <a class="el" href="layeroperations_8cc_source.html">layeroperations.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="layeroperations_8cc_source.html#l00042">42</a> of file <a class="el" href="layeroperations_8cc_source.html">layeroperations.cc</a>.</p>
 
 </div>
 </div>
@@ -198,7 +198,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classBitCountLut.html">BitCountLut</a></li>
-    <li class="footer">Generated on Fri Sep 11 2020 10:09:31 for Scroom by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
