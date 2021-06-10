@@ -14,9 +14,8 @@
 #include <vector>
 
 #include <gdk/gdk.h>
+#include <glade/glade.h>
 #include <gtk/gtk.h>
-
-
 
 #include <cairo.h>
 
@@ -26,7 +25,6 @@
 #include <scroom/utilities.hh>
 #include <scroom/viewinterface.hh>
 
-#include "gtkruler.h"
 #include "progressbarmanager.hh"
 #include "sidebarmanager.hh"
 
@@ -38,7 +36,7 @@ public:
   using Ptr = boost::shared_ptr<View>;
 
 private:
-  GtkBuilder*                                        scroomXml;
+  GladeXML*                                          scroomXml;
   PresentationInterface::Ptr                         presentation;
   SidebarManager                                     sidebarManager;
   GtkWindow*                                         window;
@@ -47,8 +45,8 @@ private:
   int                                                drawingAreaWidth;
   int                                                drawingAreaHeight;
   Scroom::Utils::Rectangle<double>                   presentationRect;
-  GtkScrollbar*                                      vscrollbar;
-  GtkScrollbar*                                      hscrollbar;
+  GtkVScrollbar*                                     vscrollbar;
+  GtkHScrollbar*                                     hscrollbar;
   GtkAdjustment*                                     vscrollbaradjustment;
   GtkAdjustment*                                     hscrollbaradjustment;
   GtkRuler*                                          hruler;
@@ -90,16 +88,17 @@ private:
   };
 
 private:
-  View(GtkBuilder* scroomXml);
+  View(GladeXML* scroomXml);
 
 public:
-  static Ptr create(GtkBuilder* scroomXml, PresentationInterface::Ptr presentation);
+  static Ptr create(GladeXML* scroomXml, PresentationInterface::Ptr presentation);
 
   ~View() override;
   View(const View&) = delete;
   View(View&&)      = delete;
   View operator=(const View&) = delete;
   View operator=(View&&) = delete;
+
 
   void redraw(cairo_t* cr);
   void hide();
@@ -118,7 +117,7 @@ public:
   void        updateRulers();
   void        updateTextbox();
   void        toolButtonToggled(GtkToggleButton* button);
-  void            propertiesWindow();
+
   ////////////////////////////////////////////////////////////////////////
   // Scroom events
 

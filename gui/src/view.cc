@@ -13,11 +13,13 @@
 
 #include <cmath>
 #include <sstream>
+
 #include <boost/lexical_cast.hpp>
+
 #include <glib-object.h>
+
 #include "callbacks.hh"
 #include "pluginmanager.hh"
-#include <scroom/tiledbitmaplayer.hh>
 
 #ifndef G_VALUE_INIT
 #  define G_VALUE_INIT \
@@ -47,7 +49,6 @@ enum
   N_COLUMNS
 };
 
-
 ////////////////////////////////////////////////////////////////////////
 /// Helpers
 
@@ -64,7 +65,7 @@ static void on_newWindow_activate(GtkMenuItem*, gpointer user_data)
 
 ////////////////////////////////////////////////////////////////////////
 
-View::View(GtkBuilder* scroomXml_)
+View::View(GladeXML* scroomXml_)
   : scroomXml(scroomXml_)
   , drawingAreaWidth(0)
   , drawingAreaHeight(0)
@@ -75,22 +76,22 @@ View::View(GtkBuilder* scroomXml_)
   , modifiermove(0)
 {
   PluginManager::Ptr pluginManager = PluginManager::getInstance();
-  window                           = GTK_WINDOW(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "scroom")));
-  drawingArea                      = GTK_WIDGET(gtk_builder_get_object(scroomXml_, "drawingarea"));
-  vscrollbar                       = GTK_SCROLLBAR(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "vscrollbar")));
-  hscrollbar                       = GTK_SCROLLBAR(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "hscrollbar")));
+  window                           = GTK_WINDOW(glade_xml_get_widget(scroomXml_, "scroom"));
+  drawingArea                      = glade_xml_get_widget(scroomXml_, "drawingarea");
+  vscrollbar                       = GTK_VSCROLLBAR(glade_xml_get_widget(scroomXml_, "vscrollbar"));
+  hscrollbar                       = GTK_HSCROLLBAR(glade_xml_get_widget(scroomXml_, "hscrollbar"));
   vscrollbaradjustment             = gtk_range_get_adjustment(GTK_RANGE(vscrollbar));
   hscrollbaradjustment             = gtk_range_get_adjustment(GTK_RANGE(hscrollbar));
-  vruler                           = GTK_RULER(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "vruler")));
-  hruler                           = GTK_RULER(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "hruler")));
-  xTextBox                         = GTK_ENTRY(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "x_textbox")));
-  yTextBox                         = GTK_ENTRY(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "y_textbox")));
+  vruler                           = GTK_RULER(glade_xml_get_widget(scroomXml_, "vruler"));
+  hruler                           = GTK_RULER(glade_xml_get_widget(scroomXml_, "hruler"));
+  xTextBox                         = GTK_ENTRY(glade_xml_get_widget(scroomXml_, "x_textbox"));
+  yTextBox                         = GTK_ENTRY(glade_xml_get_widget(scroomXml_, "y_textbox"));
 
-  menubar     = GTK_WIDGET(gtk_builder_get_object(scroomXml_, "menubar"));
-  statusArea  = GTK_WIDGET(gtk_builder_get_object(scroomXml_, "status_area"));
-  toolbarArea = GTK_WIDGET(gtk_builder_get_object(scroomXml_, "toolbar_area"));
+  menubar     = GTK_WIDGET(glade_xml_get_widget(scroomXml_, "menubar"));
+  statusArea  = GTK_WIDGET(glade_xml_get_widget(scroomXml_, "status_area"));
+  toolbarArea = GTK_WIDGET(glade_xml_get_widget(scroomXml_, "toolbar_area"));
 
-  zoomBox   = GTK_COMBO_BOX(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "zoomboxcombo")));
+  zoomBox   = GTK_COMBO_BOX(glade_xml_get_widget(scroomXml_, "zoomboxcombo"));
   zoomItems = gtk_list_store_new(N_COLUMNS, G_TYPE_STRING, G_TYPE_INT);
 
   gtk_combo_box_set_model(zoomBox, GTK_TREE_MODEL(zoomItems));
@@ -98,15 +99,15 @@ View::View(GtkBuilder* scroomXml_)
   gtk_cell_layout_pack_end(GTK_CELL_LAYOUT(zoomBox), txt, true);
   gtk_cell_layout_set_attributes(GTK_CELL_LAYOUT(zoomBox), txt, "text", COLUMN_TEXT, NULL);
 
-  progressBar        = GTK_PROGRESS_BAR(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "progressbar")));
+  progressBar        = GTK_PROGRESS_BAR(glade_xml_get_widget(scroomXml_, "progressbar"));
   progressBarManager = ProgressBarManager::create(progressBar);
-  statusBar          = GTK_STATUSBAR(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "statusbar")));
+  statusBar          = GTK_STATUSBAR(glade_xml_get_widget(scroomXml_, "statusbar"));
   statusBarContextId = gtk_statusbar_get_context_id(statusBar, "View");
 
-  GtkWidget* panelWindow = GTK_WIDGET(gtk_builder_get_object(scroomXml_, "panelWindow"));
-  GtkBox*    panel       = GTK_BOX(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "panel")));
+  GtkWidget* panelWindow = glade_xml_get_widget(scroomXml_, "panelWindow");
+  GtkBox*    panel       = GTK_BOX(glade_xml_get_widget(scroomXml_, "panel"));
   sidebarManager.setWidgets(panelWindow, panel);
-  toolBar          = GTK_TOOLBAR(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "toolbar")));
+  toolBar          = GTK_TOOLBAR(glade_xml_get_widget(scroomXml_, "toolbar"));
   toolBarSeparator = nullptr;
   toolBarCount     = 0;
 
@@ -115,7 +116,7 @@ View::View(GtkBuilder* scroomXml_)
   on_configure();
 }
 
-View::Ptr View::create(GtkBuilder* scroomXml, PresentationInterface::Ptr presentation)
+View::Ptr View::create(GladeXML* scroomXml, PresentationInterface::Ptr presentation)
 {
   Ptr view(new View(scroomXml));
   printf("Creating a new view\n");
@@ -138,7 +139,7 @@ void View::redraw(cairo_t* cr)
 {
   if(presentation)
   {
-    cairo_rectangle_int_t rect;
+    GdkRectangle rect;
     rect.x = x;
     rect.y = y;
     if(zoom >= 0)
@@ -275,7 +276,7 @@ void View::updateScrollbars()
 
     updateScrollbar(hscrollbaradjustment, zoom, x, presentationRect.x(), presentationRect.width(), drawingAreaWidth);
     updateScrollbar(vscrollbaradjustment, zoom, y, presentationRect.y(), presentationRect.height(), drawingAreaHeight);
-    // updateRulers();
+    updateRulers();
   }
   else
   {
@@ -384,32 +385,6 @@ void View::updateRulers()
   }
 }
 
-void View::propertiesWindow()
-{
-  GtkWidget* popup_window;
-  GtkBuilder* builder;
-
-  builder = gtk_builder_new();
-  gtk_builder_add_from_file( builder, "popup.builder", NULL );
-
-  popup_window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-
-  gtk_window_set_title (GTK_WINDOW (popup_window), "Properties");
-
-  gtk_container_set_border_width (GTK_CONTAINER (popup_window), 10);
-  gtk_window_set_resizable (GTK_WINDOW (popup_window), TRUE);
-  gtk_window_set_decorated (GTK_WINDOW (popup_window), TRUE);
-  gtk_window_set_skip_taskbar_hint (GTK_WINDOW (popup_window), TRUE);
-  gtk_window_set_skip_pager_hint (GTK_WINDOW (popup_window), TRUE);
-  gtk_widget_set_size_request (popup_window, 600, 600);
-  gtk_window_set_position (GTK_WINDOW (popup_window), GTK_WIN_POS_CENTER);
-
-  gtk_builder_connect_signals( builder, popup_window);
-  g_object_unref( G_OBJECT( builder ) );
-  gtk_widget_show_all (popup_window);
-  gtk_widget_grab_focus (popup_window);
-}
-
 void View::toolButtonToggled(GtkToggleButton* button)
 {
   if(gtk_toggle_button_get_active(button))
@@ -434,7 +409,7 @@ void View::toolButtonToggled(GtkToggleButton* button)
 void View::on_newPresentationInterfaces_update(
   const std::map<NewPresentationInterface::Ptr, std::string>& newPresentationInterfaces)
 {
-  GtkWidget* new_menu_item = GTK_WIDGET(gtk_builder_get_object(scroomXml, "new"));
+  GtkWidget* new_menu_item = glade_xml_get_widget(scroomXml, "new");
 
   if(newPresentationInterfaces.empty())
   {
@@ -470,9 +445,9 @@ void View::on_presentation_destroyed() { updateNewWindowMenu(); }
 void View::on_configure()
 {
   // There should be a simpler way to do this...
-  cairo_region_t*       r = gdk_window_get_visible_region(gtk_widget_get_window(drawingArea));
-  cairo_rectangle_int_t rect;
-  cairo_region_get_extents(r, &rect);
+  GdkRegion*   r = gdk_drawable_get_visible_region(GDK_DRAWABLE(gtk_widget_get_window(drawingArea)));
+  GdkRectangle rect;
+  gdk_region_get_clipbox(r, &rect);
 
   int newWidth  = rect.width;
   int newHeight = rect.height;
@@ -482,7 +457,7 @@ void View::on_configure()
     on_window_size_changed(newWidth, newHeight);
   }
 
-  cairo_region_destroy(r);
+  gdk_region_destroy(r);
 }
 
 void View::on_window_size_changed(int newWidth, int newHeight)
@@ -872,7 +847,7 @@ GdkPoint View::eventToPoint(GdkEventMotion* event)
 
 void View::updateNewWindowMenu()
 {
-  GtkWidget* newWindow_menu_item = GTK_WIDGET(gtk_builder_get_object(scroomXml, "newWindow"));
+  GtkWidget* newWindow_menu_item = glade_xml_get_widget(scroomXml, "newWindow");
 
   GtkWidget* newWindow_menu = gtk_menu_item_get_submenu(GTK_MENU_ITEM(newWindow_menu_item));
   if(!newWindow_menu)
@@ -972,7 +947,7 @@ void View::updateXY(int x_, int y_, LocationChangeCause source)
     }
     else
     {
-      // updateRulers();
+      updateRulers();
     }
 
     if(source != TEXTBOX)
