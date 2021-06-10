@@ -51,9 +51,6 @@ static std::string xmlFileName;
 static GladeXML*   aboutDialogXml = nullptr;
 static GtkWidget*  aboutDialog    = nullptr;
 
-static GladeXML* propertiesDialogXml = nullptr;
-static GtkWidget* propertiesDialog = nullptr;
-
 using Views = std::map<View::Ptr, Scroom::Bookkeeping::Token>;
 static Views                                     views;
 static std::list<PresentationInterface::WeakPtr> presentations;
@@ -109,15 +106,6 @@ gboolean combinedFileFilter(const GtkFileFilterInfo* filter_info, gpointer data)
 
   // None of the filters matched
   return false;
-}
-void on_properties_activate(GtkMenuItem*, gpointer user_data)
-{
-  GtkWidget* dialog;
-  auto* scroom = static_cast<GtkWidget*>(user_data);
-
-  printf("Creating the propeties dialog\n");
-  gtk_dialog_run(GTK_DIALOG(propertiesDialog));
-  gtk_widget_hide(propertiesDialog);
 }
 
 void on_open_activate(GtkMenuItem*, gpointer user_data)
@@ -459,7 +447,6 @@ void on_scroom_bootstrap(const FileNameMap& newFilenames)
   if(aboutDialogXml != nullptr)
   {
     aboutDialog = glade_xml_get_widget(aboutDialogXml, "aboutDialog");
-    propertiesDialog = glade_xml_get_widget(propertiesDialogXml, "propertiesDialog");
     gtk_about_dialog_set_program_name(GTK_ABOUT_DIALOG(aboutDialog), "Scroom");
     gtk_about_dialog_set_version(GTK_ABOUT_DIALOG(aboutDialog), PACKAGE_VERSION);
 #ifdef _WIN32
@@ -542,13 +529,12 @@ void create_scroom(PresentationInterface::Ptr presentation)
   on_view_created(view);
 
   GtkWidget* scroom = glade_xml_get_widget(xml, "scroom");
-   GtkWidget* propertiesMenuItem = glade_xml_get_widget(xml, "properties");
+  // GtkWidget* newMenuItem = glade_xml_get_widget(xml, "new");
   GtkWidget*     openMenuItem         = glade_xml_get_widget(xml, "open");
   GtkWidget*     closeMenuItem        = glade_xml_get_widget(xml, "close");
   GtkWidget*     quitMenuItem         = glade_xml_get_widget(xml, "quit");
   GtkWidget*     fullScreenMenuItem   = glade_xml_get_widget(xml, "fullscreen_menu_item");
   GtkWidget*     aboutMenuItem        = glade_xml_get_widget(xml, "about");
-
   GtkWidget*     drawingArea          = glade_xml_get_widget(xml, "drawingarea");
   GtkWidget*     zoomBox              = glade_xml_get_widget(xml, "zoomboxcombo");
   GtkWidget*     vscrollbar           = glade_xml_get_widget(xml, "vscrollbar");
@@ -583,7 +569,6 @@ void create_scroom(PresentationInterface::Ptr presentation)
   //                   G_CALLBACK (on_delete_activate),
   //                   view.get());
   g_signal_connect(static_cast<gpointer>(aboutMenuItem), "activate", G_CALLBACK(on_about_activate), view.get());
-  g_signal_connect(static_cast<gpointer>(propertiesMenuItem), "activate", G_CALLBACK(on_properties_activate), view.get());
   g_signal_connect(static_cast<gpointer>(drawingArea), "expose_event", G_CALLBACK(on_drawingarea_expose_event), view.get());
   g_signal_connect(static_cast<gpointer>(drawingArea), "configure_event", G_CALLBACK(on_drawingarea_configure_event), view.get());
   g_signal_connect(static_cast<gpointer>(drawingArea), "button-press-event", G_CALLBACK(on_button_press_event), view.get());
