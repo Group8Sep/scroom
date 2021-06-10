@@ -24,8 +24,9 @@
 #include <boost/format.hpp>
 
 #include <gdk/gdk.h>
-#include <glade/glade.h>
 #include <gtk/gtk.h>
+
+#include <tiffio.h>
 
 #include <cairo.h>
 
@@ -48,11 +49,9 @@ static const std::string SCROOM_DEV_MODE = "SCROOM_DEV_MODE";
 const std::string        REGULAR_FILES   = "Regular files";
 
 static std::string xmlFileName;
-static GladeXML*   aboutDialogXml = nullptr;
+static GtkBuilder* aboutDialogXml = nullptr;
+GError*            error          = NULL;
 static GtkWidget*  aboutDialog    = nullptr;
-
-static GladeXML* propertiesDialogXml = nullptr;
-static GtkWidget* propertiesDialog = nullptr;
 
 using Views = std::map<View::Ptr, Scroom::Bookkeeping::Token>;
 static Views                                     views;
@@ -110,15 +109,6 @@ gboolean combinedFileFilter(const GtkFileFilterInfo* filter_info, gpointer data)
   // None of the filters matched
   return false;
 }
-void on_properties_activate(GtkMenuItem*, gpointer user_data)
-{
-  GtkWidget* dialog;
-  auto* scroom = static_cast<GtkWidget*>(user_data);
-
-  printf("Creating the propeties dialog\n");
-  gtk_dialog_run(GTK_DIALOG(propertiesDialog));
-  gtk_widget_hide(propertiesDialog);
-}
 
 void on_open_activate(GtkMenuItem*, gpointer user_data)
 {
@@ -129,9 +119,9 @@ void on_open_activate(GtkMenuItem*, gpointer user_data)
   dialog = gtk_file_chooser_dialog_new("Open File",
                                        GTK_WINDOW(scroom),
                                        GTK_FILE_CHOOSER_ACTION_OPEN,
-                                       GTK_STOCK_CANCEL,
+                                       ("_Cancel"),
                                        GTK_RESPONSE_CANCEL,
-                                       GTK_STOCK_OPEN,
+                                       ("_Open"),
                                        GTK_RESPONSE_ACCEPT,
                                        NULL);
   gtk_file_chooser_set_current_folder(GTK_FILE_CHOOSER(dialog), currentFolder.c_str());
@@ -222,6 +212,11 @@ void on_paste_activate(GtkMenuItem*, gpointer) {}
 
 void on_delete_activate(GtkMenuItem*, gpointer) {}
 
+void on_properties_activate(GtkMenuItem* item, gpointer user_data) {
+  View*             view   = static_cast<View*>(user_data);
+  view->propertiesWindow();
+}
+
 void on_fullscreen_activate(GtkMenuItem* item, gpointer user_data)
 {
   View*             view   = static_cast<View*>(user_data);
@@ -258,7 +253,7 @@ gboolean on_drawingarea_expose_event(GtkWidget* widget, GdkEventExpose*, gpointe
 {
   // printf("expose\n");
 
-  cairo_t* cr   = gdk_cairo_create(widget->window);
+  cairo_t* cr   = gdk_cairo_create(gtk_widget_get_window(widget));
   View*    view = static_cast<View*>(user_data);
   view->redraw(cr);
 
@@ -455,11 +450,15 @@ void on_scroom_bootstrap(const FileNameMap& newFilenames)
   }
 
 
-  aboutDialogXml = glade_xml_new(xmlFileName.c_str(), "aboutDialog", nullptr);
+  aboutDialogXml = gtk_builder_new();
+  gchar** obj    = new gchar*[1];
+  obj[0]         = "aboutDialog";
+  gtk_builder_add_objects_from_file(aboutDialogXml, xmlFileName.c_str(), obj, NULL);
+
+
   if(aboutDialogXml != nullptr)
   {
-    aboutDialog = glade_xml_get_widget(aboutDialogXml, "aboutDialog");
-    propertiesDialog = glade_xml_get_widget(propertiesDialogXml, "propertiesDialog");
+    aboutDialog = GTK_WIDGET(gtk_builder_get_object(aboutDialogXml, "aboutDialog"));
     gtk_about_dialog_set_program_name(GTK_ABOUT_DIALOG(aboutDialog), "Scroom");
     gtk_about_dialog_set_version(GTK_ABOUT_DIALOG(aboutDialog), PACKAGE_VERSION);
 #ifdef _WIN32
@@ -497,7 +496,7 @@ void find_or_create_scroom(PresentationInterface::Ptr presentation)
 void onDragDataReceived(GtkWidget*, GdkDragContext*, int, int, GtkSelectionData* seldata, guint, guint, gpointer)
 {
   printf("Dropping file(s) onto Scroom:\n");
-  gchar** uris = g_uri_list_extract_uris(reinterpret_cast<const gchar*>(seldata->data));
+  gchar** uris = g_uri_list_extract_uris(reinterpret_cast<const gchar*>(gtk_selection_data_get_data(seldata)));
   for(gchar** uri = uris; *uri != nullptr; uri++)
   {
     printf("\t%s\n", *uri);
@@ -530,7 +529,10 @@ void onDragDataReceived(GtkWidget*, GdkDragContext*, int, int, GtkSelectionData*
 
 void create_scroom(PresentationInterface::Ptr presentation)
 {
-  GladeXML* xml = glade_xml_new(xmlFileName.c_str(), "scroom", nullptr);
+  GtkBuilder* xml = gtk_builder_new();
+  gchar**     obj = new gchar*[1];
+  obj[0]          = "scroom";
+  gtk_builder_add_objects_from_file(xml, xmlFileName.c_str(), obj, NULL);
 
   if(xml == nullptr)
   {
@@ -541,22 +543,22 @@ void create_scroom(PresentationInterface::Ptr presentation)
   View::Ptr view = View::create(xml, presentation);
   on_view_created(view);
 
-  GtkWidget* scroom = glade_xml_get_widget(xml, "scroom");
-   GtkWidget* propertiesMenuItem = glade_xml_get_widget(xml, "properties");
-  GtkWidget*     openMenuItem         = glade_xml_get_widget(xml, "open");
-  GtkWidget*     closeMenuItem        = glade_xml_get_widget(xml, "close");
-  GtkWidget*     quitMenuItem         = glade_xml_get_widget(xml, "quit");
-  GtkWidget*     fullScreenMenuItem   = glade_xml_get_widget(xml, "fullscreen_menu_item");
-  GtkWidget*     aboutMenuItem        = glade_xml_get_widget(xml, "about");
-
-  GtkWidget*     drawingArea          = glade_xml_get_widget(xml, "drawingarea");
-  GtkWidget*     zoomBox              = glade_xml_get_widget(xml, "zoomboxcombo");
-  GtkWidget*     vscrollbar           = glade_xml_get_widget(xml, "vscrollbar");
-  GtkWidget*     hscrollbar           = glade_xml_get_widget(xml, "hscrollbar");
+  GtkWidget* scroom = GTK_WIDGET(gtk_builder_get_object(xml, "scroom"));
+  // GtkWidget* newMenuItem = glade_xml_get_widget(xml, "new");
+  GtkWidget*     openMenuItem         = GTK_WIDGET(gtk_builder_get_object(xml, "open"));
+  GtkWidget*     closeMenuItem        = GTK_WIDGET(gtk_builder_get_object(xml, "close"));
+  GtkWidget*     quitMenuItem         = GTK_WIDGET(gtk_builder_get_object(xml, "quit"));
+  GtkWidget*     fullScreenMenuItem   = GTK_WIDGET(gtk_builder_get_object(xml, "fullscreen_menu_item"));
+  GtkWidget*     aboutMenuItem        = GTK_WIDGET(gtk_builder_get_object(xml, "about"));
+  GtkWidget*     propertiesMenuItem   = GTK_WIDGET(gtk_builder_get_object(xml, "properties"));
+  GtkWidget*     drawingArea          = GTK_WIDGET(gtk_builder_get_object(xml, "drawingarea"));
+  GtkWidget*     zoomBox              = GTK_WIDGET(gtk_builder_get_object(xml, "zoomboxcombo"));
+  GtkWidget*     vscrollbar           = GTK_WIDGET(gtk_builder_get_object(xml, "vscrollbar"));
+  GtkWidget*     hscrollbar           = GTK_WIDGET(gtk_builder_get_object(xml, "hscrollbar"));
   GtkAdjustment* vscrollbaradjustment = gtk_range_get_adjustment(GTK_RANGE(vscrollbar));
   GtkAdjustment* hscrollbaradjustment = gtk_range_get_adjustment(GTK_RANGE(hscrollbar));
-  GtkEditable*   xTextBox             = GTK_EDITABLE(glade_xml_get_widget(xml, "x_textbox"));
-  GtkEditable*   yTextBox             = GTK_EDITABLE(glade_xml_get_widget(xml, "y_textbox"));
+  GtkEditable*   xTextBox             = GTK_EDITABLE(GTK_WIDGET(gtk_builder_get_object(xml, "x_textbox")));
+  GtkEditable*   yTextBox             = GTK_EDITABLE(GTK_WIDGET(gtk_builder_get_object(xml, "y_textbox")));
 
   g_signal_connect(static_cast<gpointer>(scroom), "hide", G_CALLBACK(on_scroom_hide), view.get());
   g_signal_connect(static_cast<gpointer>(closeMenuItem), "activate", G_CALLBACK(on_close_activate), view.get());
@@ -582,9 +584,9 @@ void create_scroom(PresentationInterface::Ptr presentation)
   // g_signal_connect ((gpointer) delete, "activate",
   //                   G_CALLBACK (on_delete_activate),
   //                   view.get());
-  g_signal_connect(static_cast<gpointer>(aboutMenuItem), "activate", G_CALLBACK(on_about_activate), view.get());
   g_signal_connect(static_cast<gpointer>(propertiesMenuItem), "activate", G_CALLBACK(on_properties_activate), view.get());
-  g_signal_connect(static_cast<gpointer>(drawingArea), "expose_event", G_CALLBACK(on_drawingarea_expose_event), view.get());
+  g_signal_connect(static_cast<gpointer>(aboutMenuItem), "activate", G_CALLBACK(on_about_activate), view.get());
+  g_signal_connect(static_cast<gpointer>(drawingArea), "draw", G_CALLBACK(on_drawingarea_expose_event), view.get());
   g_signal_connect(static_cast<gpointer>(drawingArea), "configure_event", G_CALLBACK(on_drawingarea_configure_event), view.get());
   g_signal_connect(static_cast<gpointer>(drawingArea), "button-press-event", G_CALLBACK(on_button_press_event), view.get());
   g_signal_connect(static_cast<gpointer>(drawingArea), "button-release-event", G_CALLBACK(on_button_release_event), view.get());
