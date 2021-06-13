@@ -235,6 +235,27 @@ Clker-Free-Vector-Images from Pixabay</property>
               </object>
             </child>
             <child>
+              <object class="GtkMenuItem" id="image_properties">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">_Image</property>
+                <property name="use_underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkMenuItem" id="properties">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Properties</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
               <object class="GtkMenuItem" id="help_menu_item">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>

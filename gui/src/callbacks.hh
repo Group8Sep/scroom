@@ -41,6 +41,8 @@ void on_paste_activate(GtkMenuItem* menuitem, gpointer user_data);
 
 void on_delete_activate(GtkMenuItem* menuitem, gpointer user_data);
 
+void on_image_properties_activate(GtkMenuItem* menuitem, gpointer user_data);
+
 void on_fullscreen_activate(GtkMenuItem* menuitem, gpointer user_data);
 
 void on_close_activate(GtkMenuItem* menuitem, gpointer user_data);

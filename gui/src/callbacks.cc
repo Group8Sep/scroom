@@ -211,6 +211,30 @@ void on_paste_activate(GtkMenuItem*, gpointer) {}
 
 void on_delete_activate(GtkMenuItem*, gpointer) {}
 
+void on_image_properties_activate(GtkMenuItem* item, gpointer user_data)
+{
+  GtkWidget* dialog;
+  auto*      scroom = static_cast<GtkWidget*>(user_data);
+  GtkBuilder* builder;
+
+  builder = gtk_builder_new();
+  gtk_builder_add_from_file( builder, "popup.builder", NULL );
+  printf("Creating the properties window.\n");
+  dialog = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+  gtk_window_set_title (GTK_WINDOW (dialog), "Properties");
+  gtk_window_set_decorated (GTK_WINDOW (dialog), TRUE);
+  gtk_window_set_position (GTK_WINDOW (dialog), GTK_WIN_POS_CENTER);
+  gtk_builder_connect_signals( builder, dialog);
+  g_object_unref( G_OBJECT( builder ) );
+  gtk_widget_show_all (dialog);
+  gtk_widget_grab_focus (dialog);
+
+  const auto  pm                         = PluginManager::getInstance();
+  const auto& openInterfaces             = pm->getOpenInterfaces();
+  const auto& openPresentationInterfaces = pm->getOpenTiledBitmapInterfaces();
+
+}
+
 void on_fullscreen_activate(GtkMenuItem* item, gpointer user_data)
 {
   View*             view   = static_cast<View*>(user_data);
@@ -542,6 +566,7 @@ void create_scroom(PresentationInterface::Ptr presentation)
   GtkWidget* scroom = GTK_WIDGET(gtk_builder_get_object(xml, "scroom"));
   // GtkWidget* newMenuItem = glade_xml_get_widget(xml, "new");
   GtkWidget*     openMenuItem         = GTK_WIDGET(gtk_builder_get_object(xml, "open"));
+  GtkWidget*     propertiesMenuItem   = GTK_WIDGET(gtk_builder_get_object(xml, "properties"));
   GtkWidget*     closeMenuItem        = GTK_WIDGET(gtk_builder_get_object(xml, "close"));
   GtkWidget*     quitMenuItem         = GTK_WIDGET(gtk_builder_get_object(xml, "quit"));
   GtkWidget*     fullScreenMenuItem   = GTK_WIDGET(gtk_builder_get_object(xml, "fullscreen_menu_item"));
@@ -559,6 +584,7 @@ void create_scroom(PresentationInterface::Ptr presentation)
   g_signal_connect(static_cast<gpointer>(closeMenuItem), "activate", G_CALLBACK(on_close_activate), view.get());
   g_signal_connect(static_cast<gpointer>(quitMenuItem), "activate", G_CALLBACK(on_quit_activate), view.get());
   g_signal_connect(static_cast<gpointer>(openMenuItem), "activate", G_CALLBACK(on_open_activate), scroom);
+  g_signal_connect(static_cast<gpointer>(propertiesMenuItem), "activate", G_CALLBACK(on_image_properties_activate), scroom);
   g_signal_connect(static_cast<gpointer>(fullScreenMenuItem), "activate", G_CALLBACK(on_fullscreen_activate), view.get());
   g_signal_connect(static_cast<gpointer>(zoomBox), "changed", G_CALLBACK(on_zoombox_changed), view.get());
   g_signal_connect(

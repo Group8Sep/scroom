@@ -1,0 +1,29 @@
+//
+// Created by andy on 13-06-21.
+//
+
+#include "metadata.hh"
+
+#include <gdk/gdk.h>
+
+#include <scroom/unused.hh>
+
+////////////////////////////////////////////////////////////////////////
+// Metadata
+////////////////////////////////////////////////////////////////////////
+
+Metadata::Ptr Metadata::create() { return Ptr(new Metadata()); }
+
+////////////////////////////////////////////////////////////////////////
+// PluginInformationInterface
+////////////////////////////////////////////////////////////////////////
+
+std::string Metadata::getPluginName() { return "Metadata"; }
+
+std::string Metadata::getPluginVersion() { return "0.0"; }
+
+void Metadata::registerCapabilities(ScroomPluginInterface::Ptr host)
+{
+}
+
+
