@@ -10,6 +10,7 @@
 #include <scroom/cairo-helpers.hh>
 #include <scroom/opentiledbitmapinterface.hh>
 #include <scroom/pipetteviewinterface.hh>
+#include <scroom/imagemdinterface.hh>
 #include <scroom/transformpresentation.hh>
 
 #include "tiled-bitmap.hh"
@@ -52,6 +53,7 @@ namespace
     : public PresentationBase
     , public Colormappable
     , public PipetteViewInterface
+    , public MetadataViewInterface
   {
   public:
     using Ptr = boost::shared_ptr<TiledBitmapPresentation>;

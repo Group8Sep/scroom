@@ -230,8 +230,7 @@ void on_image_properties_activate(GtkMenuItem* item, gpointer user_data)
   gtk_widget_grab_focus (dialog);
 
   const auto  pm                         = PluginManager::getInstance();
-  const auto& openInterfaces             = pm->getOpenInterfaces();
-  const auto& openPresentationInterfaces = pm->getOpenTiledBitmapInterfaces();
+  const auto& openTilledBitmapInterface  = pm->getOpenTiledBitmapInterfaces();
 
 }
 
