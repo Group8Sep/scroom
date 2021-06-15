@@ -470,6 +470,8 @@ void on_scroom_bootstrap(const FileNameMap& newFilenames)
   {
     create_scroom(PresentationInterface::Ptr());
   }
+
+  g_object_unref(aboutDialogXml);
 }
 
 void on_scroom_terminating() { ensure(views.empty()); }
