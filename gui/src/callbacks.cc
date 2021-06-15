@@ -213,25 +213,33 @@ void on_delete_activate(GtkMenuItem*, gpointer) {}
 
 void on_image_properties_activate(GtkMenuItem* item, gpointer user_data)
 {
-  GtkWidget* dialog;
-  auto*      scroom = static_cast<GtkWidget*>(user_data);
-  GtkBuilder* builder;
+  //  GtkWidget*  dialog;
+  //  GtkWidget*  label;
+  //  auto*       scroom = static_cast<GtkWidget*>(user_data);
+  //  GtkBuilder* builder;
+  //  GtkWidget*  box;
+  //
+  //  builder = gtk_builder_new();
+  //  gtk_builder_add_from_file(builder, "popup.builder", NULL);
+  //  printf("Creating the properties window.\n");
+  //  dialog = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+  //  gtk_window_set_title(GTK_WINDOW(dialog), "Properties");
+  //  gtk_window_set_decorated(GTK_WINDOW(dialog), TRUE);
+  //  gtk_window_set_position(GTK_WINDOW(dialog), GTK_WIN_POS_CENTER);
+  //  gtk_builder_connect_signals(builder, dialog);
+  //  g_object_unref(G_OBJECT(builder));
+  //  label = gtk_label_new("test");
+  //  box   = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
+  //  gtk_box_pack_start(GTK_BOX(box), label, false, false, 0);
+  //  gtk_box_pack_start(GTK_BOX(box), gtk_label_new("werkt!"), false, false, 0);
+  //  gtk_container_add(GTK_CONTAINER(dialog), box);
+  //  gtk_widget_show_all(dialog);
+  //  gtk_widget_grab_focus(dialog);
 
-  builder = gtk_builder_new();
-  gtk_builder_add_from_file( builder, "popup.builder", NULL );
-  printf("Creating the properties window.\n");
-  dialog = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-  gtk_window_set_title (GTK_WINDOW (dialog), "Properties");
-  gtk_window_set_decorated (GTK_WINDOW (dialog), TRUE);
-  gtk_window_set_position (GTK_WINDOW (dialog), GTK_WIN_POS_CENTER);
-  gtk_builder_connect_signals( builder, dialog);
-  g_object_unref( G_OBJECT( builder ) );
-  gtk_widget_show_all (dialog);
-  gtk_widget_grab_focus (dialog);
+  TiledBitmapPresentation::showMetadata();
 
-  const auto  pm                         = PluginManager::getInstance();
-  const auto& openTilledBitmapInterface  = pm->getOpenTiledBitmapInterfaces();
-
+  const auto  pm                        = PluginManager::getInstance();
+  const auto& openTilledBitmapInterface = pm->getOpenTiledBitmapInterfaces();
 }
 
 void on_fullscreen_activate(GtkMenuItem* item, gpointer user_data)
@@ -469,8 +477,8 @@ void on_scroom_bootstrap(const FileNameMap& newFilenames)
 
   aboutDialogXml = gtk_builder_new();
   boost::scoped_array<gchar*> obj{new gchar*[2]};
-  obj[0]         = "aboutDialog";
-  obj[1]         = nullptr;
+  obj[0] = "aboutDialog";
+  obj[1] = nullptr;
   gtk_builder_add_objects_from_file(aboutDialogXml, xmlFileName.c_str(), obj.get(), NULL);
 
 
@@ -547,10 +555,10 @@ void onDragDataReceived(GtkWidget*, GdkDragContext*, int, int, GtkSelectionData*
 
 void create_scroom(PresentationInterface::Ptr presentation)
 {
-  GtkBuilder* xml = gtk_builder_new();
-  boost::scoped_array<char*>    obj { new gchar*[2] };
-  obj[0]          = "scroom";
-  obj[1]          = nullptr;
+  GtkBuilder*                xml = gtk_builder_new();
+  boost::scoped_array<char*> obj{new gchar*[2]};
+  obj[0] = "scroom";
+  obj[1] = nullptr;
   gtk_builder_add_objects_from_file(xml, xmlFileName.c_str(), obj.get(), NULL);
 
   if(xml == nullptr)
@@ -583,7 +591,7 @@ void create_scroom(PresentationInterface::Ptr presentation)
   g_signal_connect(static_cast<gpointer>(closeMenuItem), "activate", G_CALLBACK(on_close_activate), view.get());
   g_signal_connect(static_cast<gpointer>(quitMenuItem), "activate", G_CALLBACK(on_quit_activate), view.get());
   g_signal_connect(static_cast<gpointer>(openMenuItem), "activate", G_CALLBACK(on_open_activate), scroom);
-  g_signal_connect(static_cast<gpointer>(propertiesMenuItem), "activate", G_CALLBACK(on_image_properties_activate), scroom);
+  // g_signal_connect(static_cast<gpointer>(propertiesMenuItem), "activate", G_CALLBACK(on_image_properties_activate), scroom);
   g_signal_connect(static_cast<gpointer>(fullScreenMenuItem), "activate", G_CALLBACK(on_fullscreen_activate), view.get());
   g_signal_connect(static_cast<gpointer>(zoomBox), "changed", G_CALLBACK(on_zoombox_changed), view.get());
   g_signal_connect(
@@ -618,7 +626,7 @@ void create_scroom(PresentationInterface::Ptr presentation)
     scroom, GTK_DEST_DEFAULT_ALL, targets, 1, static_cast<GdkDragAction>(GDK_ACTION_COPY | GDK_ACTION_MOVE | GDK_ACTION_LINK));
 
   g_signal_connect(static_cast<gpointer>(scroom), "drag_data_received", G_CALLBACK(onDragDataReceived), NULL);
-  //delete xml; //Breaks code for some reason. It seems that this xml is freed somewhere else...
+  // delete xml; //Breaks code for some reason. It seems that this xml is freed somewhere else...
 }
 
 void on_newPresentationInterfaces_update(const std::map<NewPresentationInterface::Ptr, std::string>& newPresentationInterfaces)

@@ -7,6 +7,8 @@
 #include <scroom/interface.hh>
 #include <scroom/rectangle.hh>
 
+#include "utilities.hh"
+
 const std::string METADATA_PROPERTY_NAME = "Metadata";
 
 class MetadataViewInterface
@@ -16,4 +18,6 @@ class MetadataViewInterface
 public:
   using Ptr = boost::shared_ptr<MetadataViewInterface>;
 
+public:
+  virtual void showMetadata() = 0;
 };

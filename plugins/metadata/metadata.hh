@@ -2,6 +2,7 @@
 // Created by andy on 13-06-21.
 //
 
+#include <scroom/imagemdinterface.hh>
 #include <scroom/plugininformationinterface.hh>
 #include <scroom/threadpool.hh>
 #include <scroom/utilities.hh>
@@ -9,7 +10,8 @@
 
 class Metadata
   : public PluginInformationInterface
-    , virtual public Scroom::Utils::Base
+  , public ViewObserver
+  , virtual public Scroom::Utils::Base
 {
 public:
   using Ptr = boost::shared_ptr<Metadata>;
@@ -28,4 +30,10 @@ public:
   std::string getPluginVersion() override;
   void        registerCapabilities(ScroomPluginInterface::Ptr host) override;
 
+  ////////////////////////////////////////////////////////////////////////
+  // ViewObserver
+
+  Scroom::Bookkeeping::Token viewAdded(ViewInterface::Ptr v) override;
+
+  ////////////////////////////////////////////////////////////////////////
 };

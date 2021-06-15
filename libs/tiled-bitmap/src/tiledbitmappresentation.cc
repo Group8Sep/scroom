@@ -8,13 +8,14 @@
 #include <utility>
 
 #include <scroom/cairo-helpers.hh>
+#include <scroom/imagemdinterface.hh>
 #include <scroom/opentiledbitmapinterface.hh>
 #include <scroom/pipetteviewinterface.hh>
-#include <scroom/imagemdinterface.hh>
 #include <scroom/transformpresentation.hh>
 
 #include "tiled-bitmap.hh"
 
+Scroom::TiledBitmap::BitmapMetaData bmd;
 namespace
 {
   using namespace Scroom::TiledBitmap;
@@ -101,6 +102,12 @@ namespace
     ////////////////////////////////////////////////////////////////////////
 
     PipetteLayerOperations::PipetteColor getPixelAverages(Scroom::Utils::Rectangle<int> area) override;
+
+    ////////////////////////////////////////////////////////////////////////
+    // imageMdInterface
+    ////////////////////////////////////////////////////////////////////////
+
+    void showMetadata() override;
 
     ////////////////////////////////////////////////////////////////////////
     // Colormappable
@@ -254,6 +261,36 @@ namespace
   }
 
   ////////////////////////////////////////////////////////////////////////
+  // imageMdInterface
+  ////////////////////////////////////////////////////////////////////////
+
+  void TiledBitmapPresentation::showMetadata()
+  {
+    printf("test meta data");
+    GtkWidget*  dialog;
+    GtkWidget*  label;
+    GtkBuilder* builder;
+    GtkWidget*  box;
+
+    builder = gtk_builder_new();
+    gtk_builder_add_from_file(builder, "popup.builder", NULL);
+    printf("Creating the properties window.\n");
+    dialog = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+    gtk_window_set_title(GTK_WINDOW(dialog), "Properties");
+    gtk_window_set_decorated(GTK_WINDOW(dialog), TRUE);
+    gtk_window_set_position(GTK_WINDOW(dialog), GTK_WIN_POS_CENTER);
+    gtk_builder_connect_signals(builder, dialog);
+    g_object_unref(G_OBJECT(builder));
+    label = gtk_label_new(bmd.type.c_str());
+    box   = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
+    gtk_box_pack_start(GTK_BOX(box), label, false, false, 0);
+    gtk_box_pack_start(GTK_BOX(box), gtk_label_new("werkt!"), false, false, 0);
+    gtk_container_add(GTK_CONTAINER(dialog), box);
+    gtk_widget_show_all(dialog);
+    gtk_widget_grab_focus(dialog);
+  }
+
+  ////////////////////////////////////////////////////////////////////////
   // PresentationBase
   ////////////////////////////////////////////////////////////////////////
 
@@ -349,8 +386,8 @@ namespace
 
   PresentationInterface::Ptr OpenTiledBitmapAsPresentation::open(const std::string& fileName)
   {
-    auto           t           = openTiledBitmapInterface->open(fileName);
-    BitmapMetaData bmd         = std::move(std::get<0>(t));
+    auto t                     = openTiledBitmapInterface->open(fileName);
+    bmd                        = std::move(std::get<0>(t));
     Layer::Ptr     bottomLayer = std::move(std::get<1>(t));
     ReloadFunction load        = std::move(std::get<2>(t));
 
