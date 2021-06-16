@@ -80,16 +80,16 @@ View::View(GtkBuilder* scroomXml_)
   // Increase GtkBuilder's reference count
   g_object_ref_sink(scroomXml_);
 
-  window                           = GTK_WINDOW(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "scroom")));
-  drawingArea                      = GTK_WIDGET(gtk_builder_get_object(scroomXml_, "drawingarea"));
-  vscrollbar                       = GTK_SCROLLBAR(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "vscrollbar")));
-  hscrollbar                       = GTK_SCROLLBAR(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "hscrollbar")));
-  vscrollbaradjustment             = gtk_range_get_adjustment(GTK_RANGE(vscrollbar));
-  hscrollbaradjustment             = gtk_range_get_adjustment(GTK_RANGE(hscrollbar));
-  vruler                           = GTK_RULER(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "vruler")));
-  hruler                           = GTK_RULER(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "hruler")));
-  xTextBox                         = GTK_ENTRY(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "x_textbox")));
-  yTextBox                         = GTK_ENTRY(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "y_textbox")));
+  window               = GTK_WINDOW(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "scroom")));
+  drawingArea          = GTK_WIDGET(gtk_builder_get_object(scroomXml_, "drawingarea"));
+  vscrollbar           = GTK_SCROLLBAR(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "vscrollbar")));
+  hscrollbar           = GTK_SCROLLBAR(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "hscrollbar")));
+  vscrollbaradjustment = gtk_range_get_adjustment(GTK_RANGE(vscrollbar));
+  hscrollbaradjustment = gtk_range_get_adjustment(GTK_RANGE(hscrollbar));
+  vruler               = GTK_RULER(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "vruler")));
+  hruler               = GTK_RULER(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "hruler")));
+  xTextBox             = GTK_ENTRY(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "x_textbox")));
+  yTextBox             = GTK_ENTRY(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "y_textbox")));
 
   menubar     = GTK_WIDGET(gtk_builder_get_object(scroomXml_, "menubar"));
   statusArea  = GTK_WIDGET(gtk_builder_get_object(scroomXml_, "status_area"));
