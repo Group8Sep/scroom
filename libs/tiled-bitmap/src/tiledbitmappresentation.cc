@@ -268,6 +268,10 @@ namespace
     printf("test meta data");
     GtkWidget*  dialog;
     GtkWidget*  label;
+    GtkWidget*  label2;
+    GtkWidget*  label3;
+    GtkWidget*  label4;
+    GtkWidget*  label5;
     GtkBuilder* builder;
     GtkWidget*  box;
 
@@ -278,12 +282,17 @@ namespace
     gtk_window_set_title(GTK_WINDOW(dialog), "Properties");
     gtk_window_set_decorated(GTK_WINDOW(dialog), TRUE);
     gtk_window_set_position(GTK_WINDOW(dialog), GTK_WIN_POS_CENTER);
+    gtk_window_set_default_size(GTK_WINDOW(dialog), 200, 200);
     gtk_builder_connect_signals(builder, dialog);
     g_object_unref(G_OBJECT(builder));
-    label = gtk_label_new(bmd.type.c_str());
+//    label = gtk_label_new("Type: " + bmd.type.c_str());
+    label2 = gtk_label_new(std::to_string(bmd.samplesPerPixel).c_str());
+    label3 = gtk_label_new(std::to_string(bmd.bitsPerSample).c_str());
+
     box   = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
-    gtk_box_pack_start(GTK_BOX(box), label, false, false, 0);
-    gtk_box_pack_start(GTK_BOX(box), gtk_label_new("werkt!"), false, false, 0);
+//    gtk_box_pack_start(GTK_BOX(box), label, true, false, 0);
+    gtk_box_pack_start(GTK_BOX(box), label2, true, true, 0);
+    gtk_box_pack_start(GTK_BOX(box), label3, true, true, 0);
     gtk_container_add(GTK_CONTAINER(dialog), box);
     gtk_widget_show_all(dialog);
     gtk_widget_grab_focus(dialog);

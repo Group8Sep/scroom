@@ -720,7 +720,7 @@ void on_image_properties_activate(GtkMenuItem*, gpointer user_data)
 {
   ViewInterface* view = static_cast<ViewInterface*>(user_data);
 
-  view->getCurrentPresentation()->showMetadata();
+ view->getCurrentPresentation()->showMetadata();
 
 
 }

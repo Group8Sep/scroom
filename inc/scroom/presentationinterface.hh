@@ -70,7 +70,7 @@ using ViewObservable = Scroom::Utils::Observable<Viewable>;
 class PresentationInterface
   : public Viewable
   , public ViewObservable
-  , public MetadataViewInterface
+  , public virtual MetadataViewInterface
 {
 public:
   using Ptr     = boost::shared_ptr<PresentationInterface>;
@@ -119,7 +119,7 @@ public:
   // Viewable
   void open(ViewInterface::WeakPtr vi) override;
   void close(ViewInterface::WeakPtr vi) override;
-  void showMetadata() override;
+  void showMetadata()  override;
 
 protected:
   // ViewObservable

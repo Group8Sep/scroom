@@ -57,6 +57,7 @@ public:
   // Viewable
   void open(ViewInterface::WeakPtr vi) override;
   void close(ViewInterface::WeakPtr vi) override;
+  void showMetadata() override;
 
   // PresentationInterface
   Scroom::Utils::Rectangle<double> getRect() override;
