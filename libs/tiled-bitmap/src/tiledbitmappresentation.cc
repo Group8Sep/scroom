@@ -281,9 +281,10 @@ namespace
     gtk_builder_connect_signals(builder, dialog);
     g_object_unref(G_OBJECT(builder));
     label = gtk_label_new(bmd.type.c_str());
+    label = gtk_label_new(bmd.type.c_str());
     box   = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
     gtk_box_pack_start(GTK_BOX(box), label, false, false, 0);
-    gtk_box_pack_start(GTK_BOX(box), gtk_label_new("werkt!"), false, false, 0);
+    gtk_box_pack_start(GTK_BOX(box), label, false, false, 0);
     gtk_container_add(GTK_CONTAINER(dialog), box);
     gtk_widget_show_all(dialog);
     gtk_widget_grab_focus(dialog);
