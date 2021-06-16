@@ -716,11 +716,19 @@ void on_new_viewobserver(ViewObserver::Ptr v)
   }
 }
 
+
+template<typename Base, typename T>
+inline bool instanceof(const T*) {
+  return std::is_base_of<Base, T>::value;
+}
+
 void on_image_properties_activate(GtkMenuItem*, gpointer user_data)
 {
   ViewInterface* view = static_cast<ViewInterface*>(user_data);
 
- view->getCurrentPresentation()->showMetadata();
+
+
+  view->getCurrentPresentation()->showMetadata();
 
 
 }

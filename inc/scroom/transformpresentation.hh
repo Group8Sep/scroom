@@ -79,4 +79,5 @@ public:
   void          setTransparentBackground() override;
   void          disableTransparentBackground() override;
   bool          getTransparentBackground() override;
+  void          showMetadata() override;
 };
