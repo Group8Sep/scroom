@@ -40,9 +40,10 @@ Scroom::Bookkeeping::Token Metadata::viewAdded(ViewInterface::Ptr view)
   GtkToolItem* button         = gtk_tool_item_new();
   GtkWidget*   buttonMetadata = gtk_button_new_with_label("Metadata");
   gtk_widget_set_visible(buttonMetadata, true);
-
+  gpointer presentation = view.get();
   gtk_container_add(GTK_CONTAINER(button), buttonMetadata);
-  g_signal_connect(static_cast<gpointer>(buttonMetadata), "pressed", G_CALLBACK(on_image_properties_activate), this);
+  g_signal_connect(static_cast<gpointer>(buttonMetadata), "pressed", G_CALLBACK(on_image_properties_activate),
+                   presentation);
 
   gdk_threads_enter();
   view->addToToolbar(button);

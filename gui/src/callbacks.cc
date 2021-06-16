@@ -211,36 +211,7 @@ void on_paste_activate(GtkMenuItem*, gpointer) {}
 
 void on_delete_activate(GtkMenuItem*, gpointer) {}
 
-void on_image_properties_activate(GtkMenuItem* item, gpointer user_data)
-{
-  //  GtkWidget*  dialog;
-  //  GtkWidget*  label;
-  //  auto*       scroom = static_cast<GtkWidget*>(user_data);
-  //  GtkBuilder* builder;
-  //  GtkWidget*  box;
-  //
-  //  builder = gtk_builder_new();
-  //  gtk_builder_add_from_file(builder, "popup.builder", NULL);
-  //  printf("Creating the properties window.\n");
-  //  dialog = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-  //  gtk_window_set_title(GTK_WINDOW(dialog), "Properties");
-  //  gtk_window_set_decorated(GTK_WINDOW(dialog), TRUE);
-  //  gtk_window_set_position(GTK_WINDOW(dialog), GTK_WIN_POS_CENTER);
-  //  gtk_builder_connect_signals(builder, dialog);
-  //  g_object_unref(G_OBJECT(builder));
-  //  label = gtk_label_new("test");
-  //  box   = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
-  //  gtk_box_pack_start(GTK_BOX(box), label, false, false, 0);
-  //  gtk_box_pack_start(GTK_BOX(box), gtk_label_new("werkt!"), false, false, 0);
-  //  gtk_container_add(GTK_CONTAINER(dialog), box);
-  //  gtk_widget_show_all(dialog);
-  //  gtk_widget_grab_focus(dialog);
 
-  TiledBitmapPresentation::showMetadata();
-
-  const auto  pm                        = PluginManager::getInstance();
-  const auto& openTilledBitmapInterface = pm->getOpenTiledBitmapInterfaces();
-}
 
 void on_fullscreen_activate(GtkMenuItem* item, gpointer user_data)
 {
@@ -743,4 +714,13 @@ void on_new_viewobserver(ViewObserver::Ptr v)
   {
     p.second.add(v->viewAdded(p.first));
   }
+}
+
+void on_image_properties_activate(GtkMenuItem*, gpointer user_data)
+{
+  ViewInterface* view = static_cast<ViewInterface*>(user_data);
+
+  view->getCurrentPresentation()->showMetadata();
+
+
 }

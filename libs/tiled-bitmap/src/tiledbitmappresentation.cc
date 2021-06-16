@@ -54,7 +54,6 @@ namespace
     : public PresentationBase
     , public Colormappable
     , public PipetteViewInterface
-    , public MetadataViewInterface
   {
   public:
     using Ptr = boost::shared_ptr<TiledBitmapPresentation>;
