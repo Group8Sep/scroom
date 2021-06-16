@@ -247,11 +247,20 @@ gboolean on_drawingarea_expose_event(GtkWidget* widget, GdkEventExpose*, gpointe
 {
   // printf("expose\n");
 
-  cairo_t* cr   = gdk_cairo_create(gtk_widget_get_window(widget));
-  View*    view = static_cast<View*>(user_data);
+  cairo_region_t* re = cairo_region_create();
+
+  GdkDrawingContext* dc;
+  dc = gdk_window_begin_draw_frame(gtk_widget_get_window(widget), re);
+
+  cairo_t* cr = gdk_drawing_context_get_cairo_context(dc);
+
+  View* view = static_cast<View*>(user_data);
   view->redraw(cr);
 
-  cairo_destroy(cr);
+  gdk_window_end_draw_frame(gtk_widget_get_window(widget), dc);
+
+  cairo_region_destroy(re);
+
   return FALSE;
 }
 
