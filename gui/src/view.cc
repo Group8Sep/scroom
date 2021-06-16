@@ -76,6 +76,10 @@ View::View(GtkBuilder* scroomXml_)
   , modifiermove(0)
 {
   PluginManager::Ptr pluginManager = PluginManager::getInstance();
+
+  // Increase GtkBuilder's reference count
+  g_object_ref_sink(scroomXml_);
+
   window                           = GTK_WINDOW(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "scroom")));
   drawingArea                      = GTK_WIDGET(gtk_builder_get_object(scroomXml_, "drawingarea"));
   vscrollbar                       = GTK_SCROLLBAR(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "vscrollbar")));
@@ -132,6 +136,7 @@ View::Ptr View::create(GtkBuilder* scroomXml, PresentationInterface::Ptr present
 View::~View()
 {
   printf("Destroying view...\n");
+  g_object_unref(scroomXml);
   gtk_widget_destroy(GTK_WIDGET(window));
 }
 
