@@ -270,113 +270,77 @@ namespace
   void TiledBitmapPresentation::showMetadata()
   {
 
-    GtkSizeGroup *group, *group2, *group3, *group4,*group5, *group6;
-    GtkWidget *window, *grid, *label, *label2, *label3, *label4, *label5, *label6,
-      *label7, *label8, *label9, *label10, *label11, *label12;
+    GtkSizeGroup *group, *group2, *group3, *group4, *group5, *group6;
+    GtkWidget *window, *grid, *label, *label2, *label3, *label4, *label5, *label6, *label7, *label8, *label9, *label10, *label11,
+      *label12;
 
     // Store values for properties in the correct type for the gtk label
-    int aspect_x = std::round(bmd.aspectRatio->x);
-    int aspect_y = std::round(bmd.aspectRatio->y);
-    std::string sign = ":";
+    int         aspect_x     = std::round(bmd.aspectRatio->x);
+    int         aspect_y     = std::round(bmd.aspectRatio->y);
+    std::string sign         = ":";
     std::string aspect_ratio = std::to_string(aspect_x) + sign + std::to_string(aspect_y);
 
     // Create properties window
-    window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+    window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
     gtk_window_set_title((GtkWindow*)window, "Properties");
-    grid = gtk_grid_new ();
-    gtk_container_add (GTK_CONTAINER (window), grid);
+    grid = gtk_grid_new();
+    gtk_container_add(GTK_CONTAINER(window), grid);
 
 
     // Add properties value to the labels
-    label = gtk_label_new ("Color representation: ");
-    gtk_widget_modify_font (label,
-                            pango_font_description_from_string ("Sans Bold 10"));
-    gtk_grid_attach(GTK_GRID (grid), label,
-                             NULL, GTK_POS_RIGHT,
-                             3, 3);
+    label = gtk_label_new("Color representation: ");
+    gtk_widget_modify_font(label, pango_font_description_from_string("Sans Bold 10"));
+    gtk_grid_attach(GTK_GRID(grid), label, NULL, GTK_POS_RIGHT, 3, 3);
 
-    label2 = gtk_label_new (bmd.type.c_str());
-    gtk_widget_modify_font (label2,
-                            pango_font_description_from_string ("Sans 10"));
-    gtk_grid_attach_next_to (GTK_GRID (grid), label2,
-                             label, GTK_POS_RIGHT,
-                             3, 3);
+    label2 = gtk_label_new(bmd.type.c_str());
+    gtk_widget_modify_font(label2, pango_font_description_from_string("Sans 10"));
+    gtk_grid_attach_next_to(GTK_GRID(grid), label2, label, GTK_POS_RIGHT, 3, 3);
 
-    label3 = gtk_label_new ("Sample per pixels: ");
-    gtk_widget_modify_font (label3,
-                            pango_font_description_from_string ("Sans Bold 10"));
+    label3 = gtk_label_new("Sample per pixels: ");
+    gtk_widget_modify_font(label3, pango_font_description_from_string("Sans Bold 10"));
 
-    gtk_grid_attach_next_to(GTK_GRID (grid), label3,
-                             label, GTK_POS_BOTTOM,
-                             3, 3);
+    gtk_grid_attach_next_to(GTK_GRID(grid), label3, label, GTK_POS_BOTTOM, 3, 3);
 
-    label4 = gtk_label_new (std::to_string(bmd.samplesPerPixel).c_str());
-    gtk_widget_modify_font (label4,
-                            pango_font_description_from_string ("Sans 10"));
-    gtk_grid_attach_next_to (GTK_GRID (grid), label4,
-                             label3, GTK_POS_RIGHT,
-                             3, 3);
+    label4 = gtk_label_new(std::to_string(bmd.samplesPerPixel).c_str());
+    gtk_widget_modify_font(label4, pango_font_description_from_string("Sans 10"));
+    gtk_grid_attach_next_to(GTK_GRID(grid), label4, label3, GTK_POS_RIGHT, 3, 3);
 
-    label5 = gtk_label_new ("Bits per sample: ");
-    gtk_widget_modify_font (label5,
-                            pango_font_description_from_string ("Sans Bold 10"));
-    gtk_grid_attach_next_to (GTK_GRID (grid), label5,
-                             label3, GTK_POS_BOTTOM,
-                             3, 3);
+    label5 = gtk_label_new("Bits per sample: ");
+    gtk_widget_modify_font(label5, pango_font_description_from_string("Sans Bold 10"));
+    gtk_grid_attach_next_to(GTK_GRID(grid), label5, label3, GTK_POS_BOTTOM, 3, 3);
 
-    label6 = gtk_label_new (std::to_string(bmd.bitsPerSample).c_str());
-    gtk_widget_modify_font (label6,
-                            pango_font_description_from_string ("Sans 10"));
-    gtk_grid_attach_next_to (GTK_GRID (grid), label6,
-                             label5, GTK_POS_RIGHT,
-                             3, 3);
+    label6 = gtk_label_new(std::to_string(bmd.bitsPerSample).c_str());
+    gtk_widget_modify_font(label6, pango_font_description_from_string("Sans 10"));
+    gtk_grid_attach_next_to(GTK_GRID(grid), label6, label5, GTK_POS_RIGHT, 3, 3);
 
-    label7 = gtk_label_new ("Aspect ratio: ");
-    gtk_widget_modify_font (label7,
-                            pango_font_description_from_string ("Sans Bold 10"));
-    gtk_grid_attach_next_to (GTK_GRID (grid), label7,
-                             label5, GTK_POS_BOTTOM,
-                             3, 3);
+    label7 = gtk_label_new("Aspect ratio: ");
+    gtk_widget_modify_font(label7, pango_font_description_from_string("Sans Bold 10"));
+    gtk_grid_attach_next_to(GTK_GRID(grid), label7, label5, GTK_POS_BOTTOM, 3, 3);
 
-    label8 = gtk_label_new (aspect_ratio.c_str());
-    gtk_widget_modify_font (label8,
-                            pango_font_description_from_string ("Sans 10"));
-    gtk_grid_attach_next_to (GTK_GRID (grid), label8,
-                             label7, GTK_POS_RIGHT,
-                             3, 3);
+    label8 = gtk_label_new(aspect_ratio.c_str());
+    gtk_widget_modify_font(label8, pango_font_description_from_string("Sans 10"));
+    gtk_grid_attach_next_to(GTK_GRID(grid), label8, label7, GTK_POS_RIGHT, 3, 3);
 
-    label9 = gtk_label_new ("Width: ");
-    gtk_widget_modify_font (label9,
-                            pango_font_description_from_string ("Sans Bold 10"));
-    gtk_grid_attach_next_to (GTK_GRID (grid), label9,
-                             label7, GTK_POS_BOTTOM,
-                             3, 3);
+    label9 = gtk_label_new("Width: ");
+    gtk_widget_modify_font(label9, pango_font_description_from_string("Sans Bold 10"));
+    gtk_grid_attach_next_to(GTK_GRID(grid), label9, label7, GTK_POS_BOTTOM, 3, 3);
 
-    label10 = gtk_label_new (std::to_string(bmd.rect.getWidth()).c_str());
-    gtk_widget_modify_font (label8,
-                            pango_font_description_from_string ("Sans 10"));
-    gtk_grid_attach_next_to (GTK_GRID (grid), label10,
-                             label9, GTK_POS_RIGHT,
-                             3, 3);
+    label10 = gtk_label_new(std::to_string(bmd.rect.getWidth()).c_str());
+    gtk_widget_modify_font(label8, pango_font_description_from_string("Sans 10"));
+    gtk_grid_attach_next_to(GTK_GRID(grid), label10, label9, GTK_POS_RIGHT, 3, 3);
 
-    label11 = gtk_label_new ("Height: ");
-    gtk_widget_modify_font (label11,
-                            pango_font_description_from_string ("Sans Bold 10"));
-    gtk_grid_attach_next_to (GTK_GRID (grid), label11,
-                             label9, GTK_POS_BOTTOM,
-                             3, 3);
+    label11 = gtk_label_new("Height: ");
+    gtk_widget_modify_font(label11, pango_font_description_from_string("Sans Bold 10"));
+    gtk_grid_attach_next_to(GTK_GRID(grid), label11, label9, GTK_POS_BOTTOM, 3, 3);
 
-    label12 = gtk_label_new (std::to_string(bmd.rect.getHeight()).c_str());
-    gtk_widget_modify_font (label12,
-                            pango_font_description_from_string ("Sans 10"));
-    gtk_grid_attach_next_to (GTK_GRID (grid), label12,
-                             label11, GTK_POS_RIGHT,
-                             3, 3);
+    label12 = gtk_label_new(std::to_string(bmd.rect.getHeight()).c_str());
+    gtk_widget_modify_font(label12, pango_font_description_from_string("Sans 10"));
+    gtk_grid_attach_next_to(GTK_GRID(grid), label12, label11, GTK_POS_RIGHT, 3, 3);
 
     // Create separate groups for the view
-    group = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
-    gtk_size_group_add_widget (group, label);
-    gtk_size_group_add_widget (group, label2);
+    group = gtk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
+    gtk_size_group_add_widget(group, label);
+    gtk_size_group_add_widget(group, label2);
 
     group2 = gtk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
     gtk_size_group_add_widget(group2, label3);
@@ -399,9 +363,8 @@ namespace
     gtk_size_group_add_widget(group6, label12);
 
     // Display the widgets
-    gtk_widget_show_all (window);
+    gtk_widget_show_all(window);
     gtk_widget_grab_focus(window);
-
   }
 
 
