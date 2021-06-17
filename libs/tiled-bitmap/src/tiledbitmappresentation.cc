@@ -275,10 +275,14 @@ namespace
       *label12;
 
     // Store values for properties in the correct type for the gtk label
-    int         aspect_x     = std::round(bmd.aspectRatio->x);
-    int         aspect_y     = std::round(bmd.aspectRatio->y);
-    std::string sign         = ":";
-    std::string aspect_ratio = std::to_string(aspect_x) + sign + std::to_string(aspect_y);
+    std::string aspect_ratio = "Unknown";
+    if (bmd.aspectRatio)
+    {
+      int         aspect_x     = std::round(bmd.aspectRatio->x);
+      int         aspect_y     = std::round(bmd.aspectRatio->y);
+      std::string sign         = ":";
+      aspect_ratio = std::to_string(aspect_x) + sign + std::to_string(aspect_y);
+    }
 
     // Create properties window
     window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
