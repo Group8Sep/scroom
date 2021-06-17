@@ -118,6 +118,7 @@ public:
   // Viewable
   void open(ViewInterface::WeakPtr vi) override;
   void close(ViewInterface::WeakPtr vi) override;
+  /** Show image metadata of the current presentation */
   void showMetadata() override;
 
 protected:

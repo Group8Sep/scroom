@@ -715,19 +715,23 @@ void on_new_viewobserver(ViewObserver::Ptr v)
   }
 }
 
-// On Metadata button press open and populate properties window
+/** On Metadata button press, open and populate properties window
+ *
+ *  @param user_data gpointer to the view passed on clicking metadata button
+ *  @post metadata of image is shown in window if presentation != null
+ **/
 void on_image_properties_activate(GtkMenuItem*, gpointer user_data)
 {
   auto*      view = static_cast<ViewInterface*>(user_data);
   GtkWidget* dialog;
   GtkWindow* main;
 
-  if(view->getCurrentPresentation().get() != nullptr)
+  if(view->getCurrentPresentation().get() != nullptr) // if there is a presentation
   {
-    view->getCurrentPresentation()->showMetadata();
+    view->getCurrentPresentation()->showMetadata(); // call method to show metadata
   }
   else
-  {
+  { // there is no presentation => Show window with warning
     dialog = gtk_message_dialog_new(main,
                                     static_cast<GtkDialogFlags>(GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT),
                                     GTK_MESSAGE_WARNING,

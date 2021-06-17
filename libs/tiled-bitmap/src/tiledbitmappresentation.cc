@@ -264,6 +264,10 @@ namespace
   // imageMdInterface
   ////////////////////////////////////////////////////////////////////////
 
+  /**
+   * Show all metadata in the image properties window for a tiledbitmappresentation
+   * @override the base showMetadata() function in PresentationBase
+   */
   void TiledBitmapPresentation::showMetadata()
   {
     GtkWidget*  dialog;
