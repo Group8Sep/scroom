@@ -6,7 +6,7 @@
 
 #include <gdk/gdk.h>
 
-#include "../../gui/src/callbacks.hh"
+#include "callbacks.hh"
 
 ////////////////////////////////////////////////////////////////////////
 // Metadata
