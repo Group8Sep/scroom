@@ -444,14 +444,14 @@ void on_scroom_bootstrap(const FileNameMap& newFilenames)
 #endif
   }
 
-
+  // create a gtk builder and add the widgets from the glade file
   aboutDialogXml = gtk_builder_new();
   boost::scoped_array<gchar*> obj{new gchar*[2]};
   obj[0] = "aboutDialog";
   obj[1] = nullptr;
   gtk_builder_add_objects_from_file(aboutDialogXml, xmlFileName.c_str(), obj.get(), NULL);
 
-
+  // make sure the gtk builder is not null
   if(aboutDialogXml != nullptr)
   {
     aboutDialog = GTK_WIDGET(gtk_builder_get_object(aboutDialogXml, "aboutDialog"));
@@ -715,19 +715,23 @@ void on_new_viewobserver(ViewObserver::Ptr v)
   }
 }
 
-// On Metadata button press open and populate properties window
+/** On Metadata button press, open and populate properties window
+ *
+ *  @param user_data gpointer to the view passed on clicking metadata button
+ *  @post metadata of image is shown in window if presentation != null
+ **/
 void on_image_properties_activate(GtkMenuItem*, gpointer user_data)
 {
-  ViewInterface* view = static_cast<ViewInterface*>(user_data);
-  GtkWidget*     dialog;
-  GtkWindow*     main;
+  auto*      view = static_cast<ViewInterface*>(user_data);
+  GtkWidget* dialog;
+  GtkWindow* main = nullptr;
 
-  if(view->getCurrentPresentation().get() != nullptr)
+  if(view->getCurrentPresentation().get() != nullptr) // if there is a presentation
   {
-    view->getCurrentPresentation()->showMetadata();
+    view->getCurrentPresentation()->showMetadata(); // call method to show metadata
   }
   else
-  {
+  { // there is no presentation => Show window with warning
     dialog = gtk_message_dialog_new(main,
                                     static_cast<GtkDialogFlags>(GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT),
                                     GTK_MESSAGE_WARNING,

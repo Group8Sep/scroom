@@ -263,6 +263,10 @@ namespace
   // imageMdInterface
   ////////////////////////////////////////////////////////////////////////
 
+  /**
+   * Show all metadata in the image properties window for a tiledbitmappresentation
+   * @override the base showMetadata() function in PresentationBase
+   */
   void TiledBitmapPresentation::showMetadata()
   {
 
@@ -275,7 +279,7 @@ namespace
     int aspect_y = std::round(bmd.aspectRatio->y);
     std::string sign = ":";
     std::string aspect_ratio = std::to_string(aspect_x) + sign + std::to_string(aspect_y);
-                               
+
     // Create properties window
     window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
     gtk_window_set_title((GtkWindow*)window, "Properties");
@@ -399,7 +403,6 @@ namespace
     gtk_widget_grab_focus(window);
 
   }
-
 
 
   ////////////////////////////////////////////////////////////////////////
