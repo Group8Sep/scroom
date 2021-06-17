@@ -107,7 +107,6 @@ namespace
     ////////////////////////////////////////////////////////////////////////
 
     void showMetadata() override;
-    char* addString(const char* addThis, const char* toThis);
 
     ////////////////////////////////////////////////////////////////////////
     // Colormappable
@@ -266,48 +265,139 @@ namespace
 
   void TiledBitmapPresentation::showMetadata()
   {
-    GtkWidget*  dialog;
-    GtkWidget*  label;
-    GtkWidget*  label2;
-    GtkWidget*  label3;
-    GtkWidget*  label4;
-    GtkWidget*  label5;
-    GtkBuilder* builder;
-    GtkWidget*  box;
-    const char* color_rep = "Color  representation: ";
-    char* concat_color_rep = addString(color_rep, bmd.type.c_str());
 
-    // Create the properties window
-    builder = gtk_builder_new();
-    gtk_builder_add_from_file(builder, "popup.builder", NULL);
-    printf("Creating the properties window.\n");
-    dialog = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-    gtk_window_set_title(GTK_WINDOW(dialog), "Properties");
-    gtk_window_set_decorated(GTK_WINDOW(dialog), TRUE);
-    gtk_window_set_position(GTK_WINDOW(dialog), GTK_WIN_POS_CENTER);
-    gtk_window_set_default_size(GTK_WINDOW(dialog), 200, 200);
-    gtk_builder_connect_signals(builder, dialog);
-    g_object_unref(G_OBJECT(builder));
+    GtkSizeGroup *group, *group2, *group3, *group4,*group5, *group6;
+    GtkWidget *window, *grid, *label, *label2, *label3, *label4, *label5, *label6,
+      *label7, *label8, *label9, *label10, *label11, *label12;
 
-    // Assign image properties to the labels
-    label = gtk_label_new(concat_color_rep);
-    label2 = gtk_label_new(std::to_string(bmd.samplesPerPixel).c_str());
-    label3 = gtk_label_new(std::to_string(bmd.bitsPerSample).c_str());
+    // Store values for properties in the correct type for the gtk label
+    int aspect_x = std::round(bmd.aspectRatio->x);
+    int aspect_y = std::round(bmd.aspectRatio->y);
+    std::string sign = ":";
+    std::string aspect_ratio = std::to_string(aspect_x) + sign + std::to_string(aspect_y);
+                               
+    // Create properties window
+    window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+    gtk_window_set_title((GtkWindow*)window, "Properties");
+    grid = gtk_grid_new ();
+    gtk_container_add (GTK_CONTAINER (window), grid);
 
-    // Create container for the labels
-    box   = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
 
-    // Add labels to the container
-//    gtk_box_pack_start(GTK_BOX(box), label, true, false, 0);
-    gtk_box_pack_start(GTK_BOX(box), label, false, false, 0);
-    gtk_box_pack_start(GTK_BOX(box), label3, false, false, 0);
+    // Add properties value to the labels
+    label = gtk_label_new ("Color representation: ");
+    gtk_widget_modify_font (label,
+                            pango_font_description_from_string ("Sans Bold 10"));
+    gtk_grid_attach(GTK_GRID (grid), label,
+                             NULL, GTK_POS_RIGHT,
+                             3, 3);
 
-    // Add the container to the window
-    gtk_container_add(GTK_CONTAINER(dialog), box);
+    label2 = gtk_label_new (bmd.type.c_str());
+    gtk_widget_modify_font (label2,
+                            pango_font_description_from_string ("Sans 10"));
+    gtk_grid_attach_next_to (GTK_GRID (grid), label2,
+                             label, GTK_POS_RIGHT,
+                             3, 3);
+
+    label3 = gtk_label_new ("Sample per pixels: ");
+    gtk_widget_modify_font (label3,
+                            pango_font_description_from_string ("Sans Bold 10"));
+
+    gtk_grid_attach_next_to(GTK_GRID (grid), label3,
+                             label, GTK_POS_BOTTOM,
+                             3, 3);
+
+    label4 = gtk_label_new (std::to_string(bmd.samplesPerPixel).c_str());
+    gtk_widget_modify_font (label4,
+                            pango_font_description_from_string ("Sans 10"));
+    gtk_grid_attach_next_to (GTK_GRID (grid), label4,
+                             label3, GTK_POS_RIGHT,
+                             3, 3);
+
+    label5 = gtk_label_new ("Bits per sample: ");
+    gtk_widget_modify_font (label5,
+                            pango_font_description_from_string ("Sans Bold 10"));
+    gtk_grid_attach_next_to (GTK_GRID (grid), label5,
+                             label3, GTK_POS_BOTTOM,
+                             3, 3);
+
+    label6 = gtk_label_new (std::to_string(bmd.bitsPerSample).c_str());
+    gtk_widget_modify_font (label6,
+                            pango_font_description_from_string ("Sans 10"));
+    gtk_grid_attach_next_to (GTK_GRID (grid), label6,
+                             label5, GTK_POS_RIGHT,
+                             3, 3);
+
+    label7 = gtk_label_new ("Aspect ratio: ");
+    gtk_widget_modify_font (label7,
+                            pango_font_description_from_string ("Sans Bold 10"));
+    gtk_grid_attach_next_to (GTK_GRID (grid), label7,
+                             label5, GTK_POS_BOTTOM,
+                             3, 3);
+
+    label8 = gtk_label_new (aspect_ratio.c_str());
+    gtk_widget_modify_font (label8,
+                            pango_font_description_from_string ("Sans 10"));
+    gtk_grid_attach_next_to (GTK_GRID (grid), label8,
+                             label7, GTK_POS_RIGHT,
+                             3, 3);
+
+    label9 = gtk_label_new ("Width: ");
+    gtk_widget_modify_font (label9,
+                            pango_font_description_from_string ("Sans Bold 10"));
+    gtk_grid_attach_next_to (GTK_GRID (grid), label9,
+                             label7, GTK_POS_BOTTOM,
+                             3, 3);
+
+    label10 = gtk_label_new (std::to_string(bmd.rect.getWidth()).c_str());
+    gtk_widget_modify_font (label8,
+                            pango_font_description_from_string ("Sans 10"));
+    gtk_grid_attach_next_to (GTK_GRID (grid), label10,
+                             label9, GTK_POS_RIGHT,
+                             3, 3);
+
+    label11 = gtk_label_new ("Height: ");
+    gtk_widget_modify_font (label11,
+                            pango_font_description_from_string ("Sans Bold 10"));
+    gtk_grid_attach_next_to (GTK_GRID (grid), label11,
+                             label9, GTK_POS_BOTTOM,
+                             3, 3);
+
+    label12 = gtk_label_new (std::to_string(bmd.rect.getHeight()).c_str());
+    gtk_widget_modify_font (label12,
+                            pango_font_description_from_string ("Sans 10"));
+    gtk_grid_attach_next_to (GTK_GRID (grid), label12,
+                             label11, GTK_POS_RIGHT,
+                             3, 3);
+
+    // Create separate groups for the view
+    group = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
+    gtk_size_group_add_widget (group, label);
+    gtk_size_group_add_widget (group, label2);
+
+    group2 = gtk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
+    gtk_size_group_add_widget(group2, label3);
+    gtk_size_group_add_widget(group2, label4);
+
+    group3 = gtk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
+    gtk_size_group_add_widget(group3, label5);
+    gtk_size_group_add_widget(group3, label6);
+
+    group4 = gtk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
+    gtk_size_group_add_widget(group4, label7);
+    gtk_size_group_add_widget(group4, label8);
+
+    group5 = gtk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
+    gtk_size_group_add_widget(group5, label9);
+    gtk_size_group_add_widget(group5, label10);
+
+    group6 = gtk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
+    gtk_size_group_add_widget(group6, label11);
+    gtk_size_group_add_widget(group6, label12);
 
     // Display the widgets
-    gtk_widget_show_all(dialog);
-    gtk_widget_grab_focus(dialog);
+    gtk_widget_show_all (window);
+    gtk_widget_grab_focus(window);
+
   }
 
 
@@ -380,12 +470,6 @@ namespace
 
   bool TiledBitmapPresentation::getTransparentBackground() { return colormapHelper->getTransparentBackground(); }
 
-  // Concatenate two chars
-  char* TiledBitmapPresentation::addString(const char* addThis, const char* toThis) {
-    char* destination = (char*)malloc( strlen( addThis ) + strlen( toThis ) + 1 );
-    strcpy( destination, addThis );
-    strcat( destination, toThis );
-    return destination; }
 
   // OpenTiledBitmapAsPresentation ////////////////////////////////////
   class OpenTiledBitmapAsPresentation : public OpenPresentationInterface
