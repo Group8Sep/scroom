@@ -76,16 +76,20 @@ View::View(GtkBuilder* scroomXml_)
   , modifiermove(0)
 {
   PluginManager::Ptr pluginManager = PluginManager::getInstance();
-  window                           = GTK_WINDOW(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "scroom")));
-  drawingArea                      = GTK_WIDGET(gtk_builder_get_object(scroomXml_, "drawingarea"));
-  vscrollbar                       = GTK_SCROLLBAR(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "vscrollbar")));
-  hscrollbar                       = GTK_SCROLLBAR(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "hscrollbar")));
-  vscrollbaradjustment             = gtk_range_get_adjustment(GTK_RANGE(vscrollbar));
-  hscrollbaradjustment             = gtk_range_get_adjustment(GTK_RANGE(hscrollbar));
+
+  // Increase GtkBuilder's reference count
+  g_object_ref_sink(scroomXml_);
+
+  window               = GTK_WINDOW(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "scroom")));
+  drawingArea          = GTK_WIDGET(gtk_builder_get_object(scroomXml_, "drawingarea"));
+  vscrollbar           = GTK_SCROLLBAR(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "vscrollbar")));
+  hscrollbar           = GTK_SCROLLBAR(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "hscrollbar")));
+  vscrollbaradjustment = gtk_range_get_adjustment(GTK_RANGE(vscrollbar));
+  hscrollbaradjustment = gtk_range_get_adjustment(GTK_RANGE(hscrollbar));
+  xTextBox             = GTK_ENTRY(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "x_textbox")));
+  yTextBox             = GTK_ENTRY(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "y_textbox")));
   vruler_area                      = GTK_DRAWING_AREA(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "vruler_area")));
   hruler_area                      = GTK_DRAWING_AREA(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "hruler_area")));
-  xTextBox                         = GTK_ENTRY(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "x_textbox")));
-  yTextBox                         = GTK_ENTRY(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "y_textbox")));
 
   // Create rulers and attach ruler areas to them
   vruler = Ruler::create(Ruler::VERTICAL, GTK_WIDGET(vruler_area));
@@ -136,6 +140,7 @@ View::Ptr View::create(GtkBuilder* scroomXml, PresentationInterface::Ptr present
 View::~View()
 {
   printf("Destroying view...\n");
+  g_object_unref(scroomXml);
   gtk_widget_destroy(GTK_WIDGET(window));
 }
 
