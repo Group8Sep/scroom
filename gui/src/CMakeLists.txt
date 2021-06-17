@@ -14,9 +14,7 @@ target_sources(
           sidebarmanager.hh
           view.cc
           view.hh
-          workinterface.hh
-          ruler.cc
-          ruler.hh)
+          workinterface.hh)
 
 if(WIN32)
   target_sources(scroom PRIVATE ../icon/icon.rc)
@@ -34,7 +32,8 @@ target_link_libraries(
          Boost::program_options
          util
          tiledbitmap
-         m)
+         m
+         ruler_lib)
 target_compile_definitions(scroom PRIVATE PLUGIN_DIR="${PLUGIN_INSTALL_LOCATION_ABSOLUTE}"
                                           TOP_SRCDIR="${Scroom_SOURCE_DIR}" PACKAGE_DATA_DIR="${PKG_DIR_ABSOLUTE}")
 
