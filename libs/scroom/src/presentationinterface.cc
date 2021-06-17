@@ -43,7 +43,7 @@ void PresentationBase::observerAdded(Viewable::Ptr const& viewable, Scroom::Book
 }
 void PresentationBase::showMetadata()
 {
-  printf("test meta data");
+
   GtkWidget*  dialog;
   GtkWidget*  label;
   GtkBuilder* builder;
@@ -56,12 +56,12 @@ void PresentationBase::showMetadata()
   gtk_window_set_title(GTK_WINDOW(dialog), "Properties");
   gtk_window_set_decorated(GTK_WINDOW(dialog), TRUE);
   gtk_window_set_position(GTK_WINDOW(dialog), GTK_WIN_POS_CENTER);
+  gtk_window_set_default_size(GTK_WINDOW(dialog), 400, 300);
   gtk_builder_connect_signals(builder, dialog);
   g_object_unref(G_OBJECT(builder));
-  label = gtk_label_new("NOT IMPLEMENTED");
+  label = gtk_label_new("NOT IMPLEMENTED FOR THIS PRESENTATION");
   box   = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
-  gtk_box_pack_start(GTK_BOX(box), label, false, false, 0);
-  gtk_box_pack_start(GTK_BOX(box), gtk_label_new("vanuit presentationinterface!"), false, false, 0);
+  gtk_box_pack_start(GTK_BOX(box), label, true, false, 5);
   gtk_container_add(GTK_CONTAINER(dialog), box);
   gtk_widget_show_all(dialog);
   gtk_widget_grab_focus(dialog);
