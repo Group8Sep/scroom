@@ -16,11 +16,11 @@
 
 #include <cairo.h>
 
+#include <scroom/imagemdinterface.hh>
 #include <scroom/interface.hh>
 #include <scroom/observable.hh>
 #include <scroom/rectangle.hh>
 #include <scroom/viewinterface.hh>
-#include <scroom/imagemdinterface.hh>
 
 /**
  * Implement Viewable if you want to be able to receive events when a
@@ -110,7 +110,6 @@ public:
   virtual std::string getTitle() = 0;
 
   virtual Scroom::Utils::Point<double> getAspectRatio() const { return Scroom::Utils::make_point(1.0, 1.0); }
-
 };
 
 class PresentationBase : public PresentationInterface
@@ -119,7 +118,7 @@ public:
   // Viewable
   void open(ViewInterface::WeakPtr vi) override;
   void close(ViewInterface::WeakPtr vi) override;
-  void showMetadata()  override;
+  void showMetadata() override;
 
 protected:
   // ViewObservable

@@ -6,10 +6,7 @@
 
 #include <gdk/gdk.h>
 
-#include <scroom/unused.hh>
-
 #include "../../gui/src/callbacks.hh"
-#include "../../inc/scroom/imagemdinterface.hh"
 
 ////////////////////////////////////////////////////////////////////////
 // Metadata

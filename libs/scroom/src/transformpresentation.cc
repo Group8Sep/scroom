@@ -102,7 +102,7 @@ void TransformPresentation::disableTransparentBackground() { colormappable->disa
 
 bool TransformPresentation::getTransparentBackground() { return colormappable->getTransparentBackground(); }
 
-void TransformPresentation::showMetadata() {presentation->showMetadata(); }
+void TransformPresentation::showMetadata() { presentation->showMetadata(); }
 
 PipetteLayerOperations::PipetteColor TransformPresentation::getPixelAverages(Scroom::Utils::Rectangle<int> area)
 {
@@ -112,4 +112,3 @@ PipetteLayerOperations::PipetteColor TransformPresentation::getPixelAverages(Scr
 }
 
 Scroom::Utils::Point<double> TransformPresentation::getAspectRatio() const { return transformationData->getAspectRatio(); }
-

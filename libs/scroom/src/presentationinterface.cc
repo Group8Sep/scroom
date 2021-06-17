@@ -41,7 +41,8 @@ void PresentationBase::observerAdded(Viewable::Ptr const& viewable, Scroom::Book
     viewable->open(view);
   }
 }
-void PresentationBase::showMetadata() {
+void PresentationBase::showMetadata()
+{
   printf("test meta data");
   GtkWidget*  dialog;
   GtkWidget*  label;

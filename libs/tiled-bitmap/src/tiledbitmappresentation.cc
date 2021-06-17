@@ -106,7 +106,7 @@ namespace
     // imageMdInterface
     ////////////////////////////////////////////////////////////////////////
 
-    void showMetadata() override;
+    void  showMetadata() override;
     char* addString(const char* addThis, const char* toThis);
 
     ////////////////////////////////////////////////////////////////////////
@@ -274,8 +274,8 @@ namespace
     GtkWidget*  label5;
     GtkBuilder* builder;
     GtkWidget*  box;
-    const char* color_rep = "Color  representation: ";
-    char* concat_color_rep = addString(color_rep, bmd.type.c_str());
+    const char* color_rep        = "Color  representation: ";
+    char*       concat_color_rep = addString(color_rep, bmd.type.c_str());
 
     // Create the properties window
     builder = gtk_builder_new();
@@ -290,15 +290,15 @@ namespace
     g_object_unref(G_OBJECT(builder));
 
     // Assign image properties to the labels
-    label = gtk_label_new(concat_color_rep);
+    label  = gtk_label_new(concat_color_rep);
     label2 = gtk_label_new(std::to_string(bmd.samplesPerPixel).c_str());
     label3 = gtk_label_new(std::to_string(bmd.bitsPerSample).c_str());
 
     // Create container for the labels
-    box   = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
+    box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
 
     // Add labels to the container
-//    gtk_box_pack_start(GTK_BOX(box), label, true, false, 0);
+    //    gtk_box_pack_start(GTK_BOX(box), label, true, false, 0);
     gtk_box_pack_start(GTK_BOX(box), label, false, false, 0);
     gtk_box_pack_start(GTK_BOX(box), label3, false, false, 0);
 
@@ -309,7 +309,6 @@ namespace
     gtk_widget_show_all(dialog);
     gtk_widget_grab_focus(dialog);
   }
-
 
 
   ////////////////////////////////////////////////////////////////////////
@@ -381,11 +380,13 @@ namespace
   bool TiledBitmapPresentation::getTransparentBackground() { return colormapHelper->getTransparentBackground(); }
 
   // Concatenate two chars
-  char* TiledBitmapPresentation::addString(const char* addThis, const char* toThis) {
-    char* destination = (char*)malloc( strlen( addThis ) + strlen( toThis ) + 1 );
-    strcpy( destination, addThis );
-    strcat( destination, toThis );
-    return destination; }
+  char* TiledBitmapPresentation::addString(const char* addThis, const char* toThis)
+  {
+    char* destination = (char*)malloc(strlen(addThis) + strlen(toThis) + 1);
+    strcpy(destination, addThis);
+    strcat(destination, toThis);
+    return destination;
+  }
 
   // OpenTiledBitmapAsPresentation ////////////////////////////////////
   class OpenTiledBitmapAsPresentation : public OpenPresentationInterface

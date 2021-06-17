@@ -718,9 +718,9 @@ void on_new_viewobserver(ViewObserver::Ptr v)
 // On Metadata button press open and populate properties window
 void on_image_properties_activate(GtkMenuItem*, gpointer user_data)
 {
-  ViewInterface* view = static_cast<ViewInterface*>(user_data);
-  GtkWidget*     dialog;
-  GtkWindow*     main;
+  auto*      view = static_cast<ViewInterface*>(user_data);
+  GtkWidget* dialog;
+  GtkWindow* main;
 
   if(view->getCurrentPresentation().get() != nullptr)
   {
