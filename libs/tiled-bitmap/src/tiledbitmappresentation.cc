@@ -107,6 +107,7 @@ namespace
     ////////////////////////////////////////////////////////////////////////
 
     void showMetadata() override;
+    char* addString(const char* addThis, const char* toThis);
 
     ////////////////////////////////////////////////////////////////////////
     // Colormappable
@@ -265,7 +266,6 @@ namespace
 
   void TiledBitmapPresentation::showMetadata()
   {
-    printf("test meta data");
     GtkWidget*  dialog;
     GtkWidget*  label;
     GtkWidget*  label2;
@@ -274,7 +274,10 @@ namespace
     GtkWidget*  label5;
     GtkBuilder* builder;
     GtkWidget*  box;
+    const char* color_rep = "Color  representation: ";
+    char* concat_color_rep = addString(color_rep, bmd.type.c_str());
 
+    // Create the properties window
     builder = gtk_builder_new();
     gtk_builder_add_from_file(builder, "popup.builder", NULL);
     printf("Creating the properties window.\n");
@@ -285,18 +288,29 @@ namespace
     gtk_window_set_default_size(GTK_WINDOW(dialog), 200, 200);
     gtk_builder_connect_signals(builder, dialog);
     g_object_unref(G_OBJECT(builder));
-//    label = gtk_label_new("Type: " + bmd.type.c_str());
+
+    // Assign image properties to the labels
+    label = gtk_label_new(concat_color_rep);
     label2 = gtk_label_new(std::to_string(bmd.samplesPerPixel).c_str());
     label3 = gtk_label_new(std::to_string(bmd.bitsPerSample).c_str());
 
+    // Create container for the labels
     box   = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
+
+    // Add labels to the container
 //    gtk_box_pack_start(GTK_BOX(box), label, true, false, 0);
-    gtk_box_pack_start(GTK_BOX(box), label2, true, true, 0);
-    gtk_box_pack_start(GTK_BOX(box), label3, true, true, 0);
+    gtk_box_pack_start(GTK_BOX(box), label, false, false, 0);
+    gtk_box_pack_start(GTK_BOX(box), label3, false, false, 0);
+
+    // Add the container to the window
     gtk_container_add(GTK_CONTAINER(dialog), box);
+
+    // Display the widgets
     gtk_widget_show_all(dialog);
     gtk_widget_grab_focus(dialog);
   }
+
+
 
   ////////////////////////////////////////////////////////////////////////
   // PresentationBase
@@ -365,6 +379,13 @@ namespace
   }
 
   bool TiledBitmapPresentation::getTransparentBackground() { return colormapHelper->getTransparentBackground(); }
+
+  // Concatenate two chars
+  char* TiledBitmapPresentation::addString(const char* addThis, const char* toThis) {
+    char* destination = (char*)malloc( strlen( addThis ) + strlen( toThis ) + 1 );
+    strcpy( destination, addThis );
+    strcat( destination, toThis );
+    return destination; }
 
   // OpenTiledBitmapAsPresentation ////////////////////////////////////
   class OpenTiledBitmapAsPresentation : public OpenPresentationInterface
