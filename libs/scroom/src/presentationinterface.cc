@@ -41,9 +41,14 @@ void PresentationBase::observerAdded(Viewable::Ptr const& viewable, Scroom::Book
     viewable->open(view);
   }
 }
+
+/**
+ * Base method that shows image metadata window for unimplemented
+ * presentations on which the user clicks the metadata button.
+ *
+ */
 void PresentationBase::showMetadata()
 {
-
   GtkWidget*  dialog;
   GtkWidget*  label;
   GtkBuilder* builder;
