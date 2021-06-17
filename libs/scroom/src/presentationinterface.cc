@@ -41,9 +41,10 @@ void PresentationBase::observerAdded(Viewable::Ptr const& viewable, Scroom::Book
     viewable->open(view);
   }
 }
+
 void PresentationBase::showMetadata()
 {
-
+  // declaring widget variables
   GtkWidget*  dialog;
   GtkWidget*  label;
   GtkBuilder* builder;

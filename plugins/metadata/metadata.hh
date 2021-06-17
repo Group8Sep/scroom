@@ -1,4 +1,4 @@
-//
+// Metadata plugin class
 // Created by andy on 13-06-21.
 //
 

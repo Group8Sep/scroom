@@ -61,6 +61,7 @@ void Metadata::registerCapabilities(ScroomPluginInterface::Ptr host)
  */
 Scroom::Bookkeeping::Token Metadata::viewAdded(ViewInterface::Ptr view)
 {
+  // create button for metadata and add it to the toolbar
   GtkToolItem* button         = gtk_tool_item_new();
   GtkWidget*   buttonMetadata = gtk_button_new_with_label("Metadata");
   gtk_widget_set_visible(buttonMetadata, true);
