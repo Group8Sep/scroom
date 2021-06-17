@@ -8,6 +8,8 @@
 #include <scroom/utilities.hh>
 #include <scroom/viewinterface.hh>
 
+void on_image_properties_activate(GtkMenuItem*, gpointer user_data);
+
 class Metadata
   : public PluginInformationInterface
   , public ViewObserver

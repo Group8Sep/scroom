@@ -4,6 +4,5 @@ target_link_libraries(
   spmetadata
   PRIVATE project_options project_warnings
   PUBLIC PkgConfig::gtk threadpool PkgConfig::cairo)
-target_include_directories(spmetadata PRIVATE "${CMAKE_SOURCE_DIR}/gui/src")
 install(TARGETS spmetadata DESTINATION ${PLUGIN_INSTALL_LOCATION_RELATIVE})
 install_plugin_dependencies(spmetadata)
