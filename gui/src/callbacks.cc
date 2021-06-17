@@ -212,7 +212,6 @@ void on_paste_activate(GtkMenuItem*, gpointer) {}
 void on_delete_activate(GtkMenuItem*, gpointer) {}
 
 
-
 void on_fullscreen_activate(GtkMenuItem* item, gpointer user_data)
 {
   View*             view   = static_cast<View*>(user_data);
@@ -720,7 +719,21 @@ void on_new_viewobserver(ViewObserver::Ptr v)
 void on_image_properties_activate(GtkMenuItem*, gpointer user_data)
 {
   ViewInterface* view = static_cast<ViewInterface*>(user_data);
+  GtkWidget*     dialog;
+  GtkWindow*     main;
 
+  if(view->getCurrentPresentation().get() != nullptr)
+  {
     view->getCurrentPresentation()->showMetadata();
-
+  }
+  else
+  {
+    dialog = gtk_message_dialog_new(main,
+                                    static_cast<GtkDialogFlags>(GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT),
+                                    GTK_MESSAGE_WARNING,
+                                    GTK_BUTTONS_OK,
+                                    "No image loaded!");
+    gtk_dialog_run(GTK_DIALOG(dialog));
+    gtk_widget_hide(dialog);
+  }
 }

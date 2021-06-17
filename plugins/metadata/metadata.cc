@@ -42,16 +42,10 @@ Scroom::Bookkeeping::Token Metadata::viewAdded(ViewInterface::Ptr view)
   gtk_widget_set_visible(buttonMetadata, true);
   gpointer presentation = view.get();
   gtk_container_add(GTK_CONTAINER(button), buttonMetadata);
-  if(view->getCurrentPresentation().get() == nullptr){
-    gtk_widget_set_sensitive(buttonMetadata, FALSE);
-  }else{
-    gtk_widget_set_sensitive(buttonMetadata, TRUE);
-    g_signal_connect(static_cast<gpointer>(buttonMetadata), "pressed", G_CALLBACK(on_image_properties_activate),
-                     presentation);
-  }
-
+  g_signal_connect(static_cast<gpointer>(buttonMetadata), "pressed", G_CALLBACK(on_image_properties_activate), presentation);
 
   gdk_threads_enter();
   view->addToToolbar(button);
   gdk_threads_leave();
+  return Scroom::Bookkeeping::Token();
 }
