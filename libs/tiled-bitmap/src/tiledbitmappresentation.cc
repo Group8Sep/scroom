@@ -5,6 +5,7 @@
  * SPDX-License-Identifier: LGPL-2.1
  */
 
+#include <sstream>
 #include <utility>
 
 #include <scroom/cairo-helpers.hh>
@@ -14,7 +15,6 @@
 #include <scroom/transformpresentation.hh>
 
 #include "tiled-bitmap.hh"
-#include <sstream>
 
 
 namespace
@@ -279,23 +279,23 @@ namespace
       *label12;
 
     // Check for which file is the metadata requested
-    auto it = bmd.find(getTitle());
-    std::string fileName = "Properties: " +  getTitle().substr(getTitle().find_last_of("/\\") + 1);
+    auto        it       = bmd.find(getTitle());
+    std::string fileName = "Properties: " + getTitle().substr(getTitle().find_last_of("/\\") + 1);
 
     // Store values for properties in the correct type for the gtk label
     std::string aspect_ratio = "Unknown";
-    if (it->second.aspectRatio)
+    if(it->second.aspectRatio)
     {
-      float aspect_x     = it->second.aspectRatio->x;
-      float aspect_y     = it->second.aspectRatio->y;
-      std::string sign         = ":";
+      float             aspect_x = it->second.aspectRatio->x;
+      float             aspect_y = it->second.aspectRatio->y;
+      std::string       sign     = ":";
       std::stringstream stream;
       std::stringstream stream2;
-      stream<<std::fixed<<std::setprecision(2)<<aspect_x;
-      stream2<<std::fixed<<std::setprecision(2)<<aspect_y;
+      stream << std::fixed << std::setprecision(2) << aspect_x;
+      stream2 << std::fixed << std::setprecision(2) << aspect_y;
       std::string str_aspect_x = stream.str();
       std::string str_aspect_y = stream2.str();
-      aspect_ratio = str_aspect_x + " " + sign + " " + str_aspect_y;
+      aspect_ratio             = str_aspect_x + " " + sign + " " + str_aspect_y;
     }
 
     // Create properties window
