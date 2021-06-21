@@ -728,5 +728,3 @@ void on_new_viewobserver(ViewObserver::Ptr v)
     p.second.add(v->viewAdded(p.first));
   }
 }
-
-
