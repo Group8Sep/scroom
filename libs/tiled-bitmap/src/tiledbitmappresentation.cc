@@ -16,7 +16,7 @@
 #include "tiled-bitmap.hh"
 #include <sstream>
 
-std::map<std::string, Scroom::TiledBitmap::BitmapMetaData> bmd;
+
 namespace
 {
   using namespace Scroom::TiledBitmap;
@@ -70,6 +70,7 @@ namespace
     ColormapHelperBase::Ptr            colormapHelper;
     PipetteLayerOperations::Ptr        pipetteLayerOperation;
     Scroom::Utils::StuffList           stuff;
+    std::map<std::string, Scroom::TiledBitmap::BitmapMetaData> bmd;
 
   public:
     static TiledBitmapPresentation::Ptr create(std::string                        name_,
@@ -108,6 +109,7 @@ namespace
     ////////////////////////////////////////////////////////////////////////
 
     void showMetadata() override;
+    void getMap(std::map<std::string, Scroom::TiledBitmap::BitmapMetaData> bm) { bmd = bm;}
 
     ////////////////////////////////////////////////////////////////////////
     // Colormappable
@@ -272,7 +274,8 @@ namespace
   {
 
     GtkSizeGroup *group, *group2, *group3, *group4, *group5, *group6;
-    GtkWidget *window, *grid, *label, *label2, *label3, *label4, *label5, *label6, *label7, *label8, *label9, *label10, *label11,
+    GtkWidget *window, *grid, *label, *label2, *label3, *label4, *label5,
+      *label6, *label7, *label8, *label9, *label10, *label11,
       *label12;
 
     // Check for which file is the metadata requested
@@ -481,9 +484,11 @@ namespace
   PresentationInterface::Ptr OpenTiledBitmapAsPresentation::open(const std::string& fileName)
   {
     auto t                     = openTiledBitmapInterface->open(fileName);
-    std::string fileName_holder = fileName;
-    bmd.insert({fileName_holder, std::move(std::get<0>(t))});
-    auto it = bmd.find(fileName_holder);
+
+    // Map to hold the bitmap medata values for a specific file
+    std::map<std::string, Scroom::TiledBitmap::BitmapMetaData> bm;
+    bm.insert({fileName, std::move(std::get<0>(t))});
+    auto it = bm.find(fileName);
     Layer::Ptr     bottomLayer = std::move(std::get<1>(t));
     ReloadFunction load        = std::move(std::get<2>(t));
 
@@ -508,7 +513,9 @@ namespace
       }
 
       auto tiledBitmapPresentation =
-        TiledBitmapPresentation::create(fileName, it->second.rect, tiledBitmap, properties, colormapHelper, pipetteLayerOperation);
+        TiledBitmapPresentation::create(fileName, it->second.rect, tiledBitmap, properties, colormapHelper,
+                                        pipetteLayerOperation);
+      tiledBitmapPresentation->getMap(bm);
       tiledBitmapPresentation->add(load(tiledBitmap->progressInterface()));
 
       if(it->second.aspectRatio)
