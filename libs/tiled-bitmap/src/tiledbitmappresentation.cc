@@ -14,6 +14,7 @@
 #include <scroom/transformpresentation.hh>
 
 #include "tiled-bitmap.hh"
+#include <sstream>
 
 Scroom::TiledBitmap::BitmapMetaData bmd;
 namespace
@@ -278,10 +279,16 @@ namespace
     std::string aspect_ratio = "Unknown";
     if (bmd.aspectRatio)
     {
-      int         aspect_x     = std::round(bmd.aspectRatio->x);
-      int         aspect_y     = std::round(bmd.aspectRatio->y);
+      float aspect_x     = bmd.aspectRatio->x;
+      float aspect_y     = bmd.aspectRatio->y;
       std::string sign         = ":";
-      aspect_ratio = std::to_string(aspect_x) + sign + std::to_string(aspect_y);
+      std::stringstream stream;
+      std::stringstream stream2;
+      stream<<std::fixed<<std::setprecision(2)<<aspect_x;
+      stream2<<std::fixed<<std::setprecision(2)<<aspect_y;
+      std::string str_aspect_x = stream.str();
+      std::string str_aspect_y = stream2.str();
+      aspect_ratio = str_aspect_x + " " + sign + " " + str_aspect_y;
     }
 
     // Create properties window
