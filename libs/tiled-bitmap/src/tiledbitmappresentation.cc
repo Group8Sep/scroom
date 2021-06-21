@@ -5,6 +5,7 @@
  * SPDX-License-Identifier: LGPL-2.1
  */
 
+#include <sstream>
 #include <utility>
 
 #include <scroom/cairo-helpers.hh>
@@ -14,7 +15,6 @@
 #include <scroom/transformpresentation.hh>
 
 #include "tiled-bitmap.hh"
-#include <sstream>
 
 std::map<std::string, Scroom::TiledBitmap::BitmapMetaData> bmd;
 namespace
@@ -276,23 +276,23 @@ namespace
       *label12;
 
     // Check for which file is the metadata requested
-    auto it = bmd.find(getTitle());
-    std::string fileName = "Properties: " +  getTitle().substr(getTitle().find_last_of("/\\") + 1);
+    auto        it       = bmd.find(getTitle());
+    std::string fileName = "Properties: " + getTitle().substr(getTitle().find_last_of("/\\") + 1);
 
     // Store values for properties in the correct type for the gtk label
     std::string aspect_ratio = "Unknown";
-    if (it->second.aspectRatio)
+    if(it->second.aspectRatio)
     {
-      float aspect_x     = it->second.aspectRatio->x;
-      float aspect_y     = it->second.aspectRatio->y;
-      std::string sign         = ":";
+      float             aspect_x = it->second.aspectRatio->x;
+      float             aspect_y = it->second.aspectRatio->y;
+      std::string       sign     = ":";
       std::stringstream stream;
       std::stringstream stream2;
-      stream<<std::fixed<<std::setprecision(2)<<aspect_x;
-      stream2<<std::fixed<<std::setprecision(2)<<aspect_y;
+      stream << std::fixed << std::setprecision(2) << aspect_x;
+      stream2 << std::fixed << std::setprecision(2) << aspect_y;
       std::string str_aspect_x = stream.str();
       std::string str_aspect_y = stream2.str();
-      aspect_ratio = str_aspect_x + " " + sign + " " + str_aspect_y;
+      aspect_ratio             = str_aspect_x + " " + sign + " " + str_aspect_y;
     }
 
     // Create properties window
@@ -480,10 +480,10 @@ namespace
 
   PresentationInterface::Ptr OpenTiledBitmapAsPresentation::open(const std::string& fileName)
   {
-    auto t                     = openTiledBitmapInterface->open(fileName);
+    auto        t               = openTiledBitmapInterface->open(fileName);
     std::string fileName_holder = fileName;
     bmd.insert({fileName_holder, std::move(std::get<0>(t))});
-    auto it = bmd.find(fileName_holder);
+    auto           it          = bmd.find(fileName_holder);
     Layer::Ptr     bottomLayer = std::move(std::get<1>(t));
     ReloadFunction load        = std::move(std::get<2>(t));
 
@@ -507,8 +507,8 @@ namespace
         properties[PIPETTE_PROPERTY_NAME] = "";
       }
 
-      auto tiledBitmapPresentation =
-        TiledBitmapPresentation::create(fileName, it->second.rect, tiledBitmap, properties, colormapHelper, pipetteLayerOperation);
+      auto tiledBitmapPresentation = TiledBitmapPresentation::create(
+        fileName, it->second.rect, tiledBitmap, properties, colormapHelper, pipetteLayerOperation);
       tiledBitmapPresentation->add(load(tiledBitmap->progressInterface()));
 
       if(it->second.aspectRatio)
