@@ -16,7 +16,7 @@
 #include "tiled-bitmap.hh"
 #include <sstream>
 
-Scroom::TiledBitmap::BitmapMetaData bmd;
+std::map<std::string, Scroom::TiledBitmap::BitmapMetaData> bmd;
 namespace
 {
   using namespace Scroom::TiledBitmap;
@@ -275,12 +275,16 @@ namespace
     GtkWidget *window, *grid, *label, *label2, *label3, *label4, *label5, *label6, *label7, *label8, *label9, *label10, *label11,
       *label12;
 
+    // Check for which file is the metadata requested
+    auto it = bmd.find(getTitle());
+    std::string fileName = "Properties: " +  getTitle().substr(getTitle().find_last_of("/\\") + 1);
+
     // Store values for properties in the correct type for the gtk label
     std::string aspect_ratio = "Unknown";
-    if (bmd.aspectRatio)
+    if (it->second.aspectRatio)
     {
-      float aspect_x     = bmd.aspectRatio->x;
-      float aspect_y     = bmd.aspectRatio->y;
+      float aspect_x     = it->second.aspectRatio->x;
+      float aspect_y     = it->second.aspectRatio->y;
       std::string sign         = ":";
       std::stringstream stream;
       std::stringstream stream2;
@@ -293,7 +297,7 @@ namespace
 
     // Create properties window
     window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-    gtk_window_set_title((GtkWindow*)window, "Properties");
+    gtk_window_set_title((GtkWindow*)window, fileName.c_str());
     grid = gtk_grid_new();
     gtk_container_add(GTK_CONTAINER(window), grid);
 
@@ -303,7 +307,7 @@ namespace
     gtk_widget_modify_font(label, pango_font_description_from_string("Sans Bold 10"));
     gtk_grid_attach(GTK_GRID(grid), label, NULL, GTK_POS_RIGHT, 3, 3);
 
-    label2 = gtk_label_new(bmd.type.c_str());
+    label2 = gtk_label_new(it->second.type.c_str());
     gtk_widget_modify_font(label2, pango_font_description_from_string("Sans 10"));
     gtk_grid_attach_next_to(GTK_GRID(grid), label2, label, GTK_POS_RIGHT, 3, 3);
 
@@ -312,7 +316,7 @@ namespace
 
     gtk_grid_attach_next_to(GTK_GRID(grid), label3, label, GTK_POS_BOTTOM, 3, 3);
 
-    label4 = gtk_label_new(std::to_string(bmd.samplesPerPixel).c_str());
+    label4 = gtk_label_new(std::to_string(it->second.samplesPerPixel).c_str());
     gtk_widget_modify_font(label4, pango_font_description_from_string("Sans 10"));
     gtk_grid_attach_next_to(GTK_GRID(grid), label4, label3, GTK_POS_RIGHT, 3, 3);
 
@@ -320,7 +324,7 @@ namespace
     gtk_widget_modify_font(label5, pango_font_description_from_string("Sans Bold 10"));
     gtk_grid_attach_next_to(GTK_GRID(grid), label5, label3, GTK_POS_BOTTOM, 3, 3);
 
-    label6 = gtk_label_new(std::to_string(bmd.bitsPerSample).c_str());
+    label6 = gtk_label_new(std::to_string(it->second.bitsPerSample).c_str());
     gtk_widget_modify_font(label6, pango_font_description_from_string("Sans 10"));
     gtk_grid_attach_next_to(GTK_GRID(grid), label6, label5, GTK_POS_RIGHT, 3, 3);
 
@@ -336,7 +340,7 @@ namespace
     gtk_widget_modify_font(label9, pango_font_description_from_string("Sans Bold 10"));
     gtk_grid_attach_next_to(GTK_GRID(grid), label9, label7, GTK_POS_BOTTOM, 3, 3);
 
-    label10 = gtk_label_new(std::to_string(bmd.rect.getWidth()).c_str());
+    label10 = gtk_label_new(std::to_string(it->second.rect.getWidth()).c_str());
     gtk_widget_modify_font(label8, pango_font_description_from_string("Sans 10"));
     gtk_grid_attach_next_to(GTK_GRID(grid), label10, label9, GTK_POS_RIGHT, 3, 3);
 
@@ -344,7 +348,7 @@ namespace
     gtk_widget_modify_font(label11, pango_font_description_from_string("Sans Bold 10"));
     gtk_grid_attach_next_to(GTK_GRID(grid), label11, label9, GTK_POS_BOTTOM, 3, 3);
 
-    label12 = gtk_label_new(std::to_string(bmd.rect.getHeight()).c_str());
+    label12 = gtk_label_new(std::to_string(it->second.rect.getHeight()).c_str());
     gtk_widget_modify_font(label12, pango_font_description_from_string("Sans 10"));
     gtk_grid_attach_next_to(GTK_GRID(grid), label12, label11, GTK_POS_RIGHT, 3, 3);
 
@@ -477,11 +481,13 @@ namespace
   PresentationInterface::Ptr OpenTiledBitmapAsPresentation::open(const std::string& fileName)
   {
     auto t                     = openTiledBitmapInterface->open(fileName);
-    bmd                        = std::move(std::get<0>(t));
+    std::string fileName_holder = fileName;
+    bmd.insert({fileName_holder, std::move(std::get<0>(t))});
+    auto it = bmd.find(fileName_holder);
     Layer::Ptr     bottomLayer = std::move(std::get<1>(t));
     ReloadFunction load        = std::move(std::get<2>(t));
 
-    auto                    lsr            = LayerSpecForBitmap(bmd);
+    auto                    lsr            = LayerSpecForBitmap(it->second);
     LayerSpec               layerSpec      = std::move(std::get<0>(lsr));
     ColormapHelperBase::Ptr colormapHelper = std::move(std::get<1>(lsr));
 
@@ -492,9 +498,9 @@ namespace
       PipetteLayerOperations::Ptr pipetteLayerOperation = boost::dynamic_pointer_cast<PipetteLayerOperations>(layerSpec[0]);
 
       std::map<std::string, std::string> properties;
-      if(bmd.colormapHelper)
+      if(it->second.colormapHelper)
       {
-        properties = bmd.colormapHelper->getProperties();
+        properties = it->second.colormapHelper->getProperties();
       }
       if(pipetteLayerOperation)
       {
@@ -502,12 +508,12 @@ namespace
       }
 
       auto tiledBitmapPresentation =
-        TiledBitmapPresentation::create(fileName, bmd.rect, tiledBitmap, properties, colormapHelper, pipetteLayerOperation);
+        TiledBitmapPresentation::create(fileName, it->second.rect, tiledBitmap, properties, colormapHelper, pipetteLayerOperation);
       tiledBitmapPresentation->add(load(tiledBitmap->progressInterface()));
 
-      if(bmd.aspectRatio)
+      if(it->second.aspectRatio)
       {
-        result = TransformPresentation::create(tiledBitmapPresentation, TransformationData::create(*bmd.aspectRatio));
+        result = TransformPresentation::create(tiledBitmapPresentation, TransformationData::create(*it->second.aspectRatio));
       }
       else
       {
