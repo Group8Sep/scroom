@@ -88,8 +88,8 @@ View::View(GtkBuilder* scroomXml_)
   hscrollbaradjustment = gtk_range_get_adjustment(GTK_RANGE(hscrollbar));
   xTextBox             = GTK_ENTRY(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "x_textbox")));
   yTextBox             = GTK_ENTRY(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "y_textbox")));
-  vruler_area                      = GTK_DRAWING_AREA(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "vruler_area")));
-  hruler_area                      = GTK_DRAWING_AREA(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "hruler_area")));
+  vruler_area          = GTK_DRAWING_AREA(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "vruler_area")));
+  hruler_area          = GTK_DRAWING_AREA(GTK_WIDGET(gtk_builder_get_object(scroomXml_, "hruler_area")));
 
   // Create rulers and attach ruler areas to them
   vruler = Ruler::create(Ruler::VERTICAL, GTK_WIDGET(vruler_area));

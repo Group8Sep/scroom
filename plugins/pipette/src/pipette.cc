@@ -127,11 +127,13 @@ void PipetteHandler::onSelectionEnd(Selection::Ptr s, ViewInterface::Ptr view)
   {
     selection = s;
 
-    if (selection->start.x == selection->end.x) {
+    if(selection->start.x == selection->end.x)
+    {
       selection->end.x += 1;
     }
 
-    if (selection->start.y == selection->end.y) {
+    if(selection->start.y == selection->end.y)
+    {
       selection->end.y += 1;
     }
 
