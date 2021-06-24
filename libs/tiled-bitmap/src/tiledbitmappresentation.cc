@@ -282,7 +282,7 @@ namespace
     std::string fileName = "Properties: " + getTitle().substr(getTitle().find_last_of("/\\") + 1);
 
     // Store values for properties in the correct type for the gtk label
-    std::string aspect_ratio = "Unknown";
+    std::string aspect_ratio = "1.00 : 1.00";
     if(it->second.aspectRatio)
     {
       float             aspect_x = it->second.aspectRatio->x;
