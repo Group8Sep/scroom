@@ -39,14 +39,22 @@ static void on_hide(GtkWidget*, gpointer) { gtk_main_quit(); }
 
 static gboolean on_expose(GtkWidget* widget, GdkEventExpose*, gpointer)
 {
-  cairo_t* cr = gdk_cairo_create(gtk_widget_get_window(widget));
+  cairo_region_t* re = cairo_region_create();
+
+  GdkDrawingContext* dc;
+  dc = gdk_window_begin_draw_frame(gtk_widget_get_window(widget), re);
+
+  cairo_t* cr = gdk_drawing_context_get_cairo_context(dc);
 
   if(testData)
   {
     testData->redraw(cr);
   }
 
-  cairo_destroy(cr);
+  gdk_window_end_draw_frame(gtk_widget_get_window(widget), dc);
+
+  cairo_region_destroy(re);
+
   return FALSE;
 }
 
@@ -93,8 +101,4 @@ void invalidate()
 {
   GdkWindow* window = gtk_widget_get_window(drawingArea);
   gdk_window_invalidate_rect(window, nullptr, false);
-
-  gdk_threads_enter();
-  gdk_window_process_all_updates();
-  gdk_threads_leave();
 }
