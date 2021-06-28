@@ -9,6 +9,8 @@
 
 #include <cmath>
 #include <cstdint>
+#include <iomanip>
+#include <sstream>
 
 #include <boost/operators.hpp>
 
@@ -84,6 +86,20 @@ public:
     green *= d;
     blue *= d;
     return *this;
+  }
+
+  [[nodiscard]] std::string getHex() const
+  {
+    std::stringstream ss;
+
+    ss << std::hex << std::setfill('0');
+
+
+    ss << std::hex << std::setw(2) << static_cast<int>(byteFromDouble(red));
+    ss << std::hex << std::setw(2) << static_cast<int>(byteFromDouble(green));
+    ss << std::hex << std::setw(2) << static_cast<int>(byteFromDouble(blue));
+
+    return ss.str();
   }
 
   [[nodiscard]] uint32_t getRGB24() const

@@ -4,6 +4,8 @@
 
 #include <gtk/gtk.h>
 
+#include "rulerstrategies.hh"
+
 /**
  * This class draws a ruler to a GtkDrawingArea.
  * It is intended as a replacement for the old GTK2 ruler widget and is written
@@ -42,18 +44,6 @@ public:
    */
   void setRange(double lower, double upper);
 
-  /**
-   * Returns the current lower limit of the ruler's range.
-   * @return The current lower limit of the ruler's range.
-   */
-  [[nodiscard]] double getLowerLimit() const;
-
-  /**
-   * Returns the current upper limit of the ruler's range.
-   * @return The current upper limit of the ruler's range.
-   */
-  [[nodiscard]] double getUpperLimit() const;
-
 private:
   GtkWidget* drawingArea{};
 
@@ -66,8 +56,6 @@ private:
    */
   constexpr static std::array<int, 2> SUBTICK_SEGMENTS{5, 2};
 
-  Orientation orientation;
-
   // The range to be displayed.
   double lowerLimit{DEFAULT_LOWER};
   double upperLimit{DEFAULT_UPPER};
@@ -77,19 +65,14 @@ private:
   int height{};
 
   /** The chosen interval between major ticks. */
-  double majorInterval{1};
+  int majorInterval{1};
 
   /** The space between major ticks when drawn. */
   int majorTickSpacing{};
 
   // ==== DRAWING PROPERTIES ====
 
-  /**
-   * Cairo integer coordinates map to points halfway between pixels.
-   * Therefore, if we offset coordinates by 0.5 in the appropriate
-   * direction, we can draw clear lines.
-   */
-  static constexpr double LINE_COORD_OFFSET{0.5};
+  RulerDrawStrategy::Ptr drawStrategy;
 
   /** The minimum space between sub-ticks. */
   static constexpr int MIN_SPACE_SUBTICKS{5};
@@ -103,7 +86,7 @@ private:
   static constexpr double LABEL_ALIGN{0.7};
 
   /** The length of a tick one "level" down, as a fraction of the line length of the ticks one level up. */
-  static constexpr double LINE_MULTIPLIER{0.5};
+  static constexpr double LINE_MULTIPLIER{0.6};
 
   GdkRGBA lineColor{0, 0, 0, 1};
 
@@ -114,10 +97,10 @@ private:
 
   /**
    * Creates a Ruler.
-   * @param orientation The orientation of the ruler.
+   * @param rulerOrientation The rulerOrientation of the ruler.
    * @param drawingArea The GtkDrawingArea to draw the ruler to.
    */
-  Ruler(Orientation orientation, GtkWidget* drawingArea);
+  Ruler(RulerDrawStrategy::Ptr strategy, GtkWidget* drawingArea);
 
   /**
    * A callback to be connected to a GtkDrawingArea's "draw" signal.
@@ -146,19 +129,25 @@ private:
   static void sizeAllocateCallback(GtkWidget* widget, GdkRectangle* allocation, gpointer data);
 
   /**
-   * Calculates an appropriate interval between major ticks, given the current range and dimensions.
+   * Updates the stored allocated size of the ruler.
+   * @param newWidth The newWidth of the ruler in pixels.
+   * @param newHeight The newHeight of the ruler in pixels.
    */
-  void calculateTickIntervals();
+  void updateAllocatedSize(int newWidth, int newHeight);
 
   /**
-   * Draws the tick marks of the ruler for a given subset of the range.
+   * Calculates an appropriate interval between major ticks, given the current range and dimensions.
+   */
+  void updateMajorTickInterval();
+
+  /**
+   * Draws the tick marks of the ruler for a given subset of the range from left-to-right / bottom-to-top.
    * @param cr Cairo context to draw to.
    * @param lower The lower limit of the range to draw.
    * @param upper The upper limit of the range to draw.
-   * @param lowerToUpper True if the ticks should be drawn from lower to upper. False if from upper to lower.
    * @param lineLength Length of the lines in pixels.
    */
-  void drawTicks(cairo_t* cr, double lower, double upper, bool lowerToUpper, double lineLength);
+  void drawTicks(cairo_t* cr, double lower, double upper, double lineLength);
 
   /**
    * Draws a single tick, taking into account the ruler's orientation.
@@ -171,15 +160,14 @@ private:
   void drawSingleTick(cairo_t* cr, double linePosition, double lineLength, bool drawLabel, const std::string& label);
 
   /**
-   * Draws the smaller ticks in between the major ticks.
+   * Draws the smaller ticks in between the major ticks from left-to-right / bottom-to-top.
    * @param cr Cairo context to draw to.
    * @param lower The lower limit of the range in draw space.
    * @param upper The upper limit of the range in draw space.
    * @param depth The depth of this recursive function. Functions as an index into the ruler's SUBTICK_SEGMENTS array.
    * @param lineLength Length of the lines in pixels.
-   * @param lowerToUpper True if the ticks should be drawn from lower to upper. False if from upper to lower.
    */
-  void drawSubTicks(cairo_t* cr, double lower, double upper, int depth, double lineLength, bool lowerToUpper);
+  void drawSubTicks(cairo_t* cr, double lower, double upper, int depth, double lineLength);
 };
 
 /**
@@ -188,13 +176,13 @@ private:
 class RulerCalculations
 {
 private:
-  /** The minimum space between major ticks. */
-  static constexpr int MIN_SPACE_MAJORTICKS{80};
-
   /** Valid intervals between major ticks. */
   constexpr static std::array<int, 4> VALID_INTERVALS{1, 5, 10, 25};
 
 public:
+  /** The minimum space between major ticks. */
+  static constexpr int MIN_SPACE_MAJORTICKS{80};
+
   /**
    * Calculates an appropriate interval between major ticks on a ruler.
    * @param lower Lower limit of the ruler range. Must be strictly less than \p upper.
@@ -209,10 +197,18 @@ public:
    * @param interval The interval to calculate the spacing for.
    * @param lower Lower limit of the ruler range. Must be strictly less than \p upper.
    * @param upper Upper limit of the ruler range. Must be strictly greater than \p lower.
-   * @param allocatedSize The allocated width/height in pixels for the ruler.
+   * @param allocatedSize The allocated width/height in pixels for the ruler. Must be greater than 0.
    * @return The spacing in pixels between tick marks for a given interval, or -1 if the given range is invalid.
    */
   static int intervalPixelSpacing(double interval, double lower, double upper, double allocatedSize);
+
+  /**
+   * Returns the position in the ruler range to start drawing from.
+   * @param lower The lower limit of the ruler range.
+   * @param interval The interval between major ticks that the ruler will be drawn with.
+   * @return The position of in the ruler to start drawing from.
+   */
+  static int firstTick(double lower, int interval);
 
   /**
    * Scales a number \p x in the range [\p src_lower, \p src_upper] to the range [\p dest_lower, \p dest_upper].
