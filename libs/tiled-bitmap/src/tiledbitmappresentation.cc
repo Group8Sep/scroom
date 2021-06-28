@@ -62,14 +62,14 @@ namespace
   private:
     using Views = std::set<ViewInterface::WeakPtr>;
 
-    std::string                        name;
-    Scroom::Utils::Rectangle<int>      rect;
-    TiledBitmapInterface::Ptr          tbi;
-    std::map<std::string, std::string> properties;
-    Views                              views;
-    ColormapHelperBase::Ptr            colormapHelper;
-    PipetteLayerOperations::Ptr        pipetteLayerOperation;
-    Scroom::Utils::StuffList           stuff;
+    std::string                                                name;
+    Scroom::Utils::Rectangle<int>                              rect;
+    TiledBitmapInterface::Ptr                                  tbi;
+    std::map<std::string, std::string>                         properties;
+    Views                                                      views;
+    ColormapHelperBase::Ptr                                    colormapHelper;
+    PipetteLayerOperations::Ptr                                pipetteLayerOperation;
+    Scroom::Utils::StuffList                                   stuff;
     std::map<std::string, Scroom::TiledBitmap::BitmapMetaData> bmd;
 
   public:
@@ -109,7 +109,7 @@ namespace
     ////////////////////////////////////////////////////////////////////////
 
     void showMetadata() override;
-    void getMap(std::map<std::string, Scroom::TiledBitmap::BitmapMetaData> bm) { bmd = bm;}
+    void getMap(std::map<std::string, Scroom::TiledBitmap::BitmapMetaData> bm) { bmd = bm; }
 
     ////////////////////////////////////////////////////////////////////////
     // Colormappable
@@ -274,8 +274,7 @@ namespace
   {
 
     GtkSizeGroup *group, *group2, *group3, *group4, *group5, *group6;
-    GtkWidget *window, *grid, *label, *label2, *label3, *label4, *label5,
-      *label6, *label7, *label8, *label9, *label10, *label11,
+    GtkWidget *window, *grid, *label, *label2, *label3, *label4, *label5, *label6, *label7, *label8, *label9, *label10, *label11,
       *label12;
 
     // Check for which file is the metadata requested
@@ -483,12 +482,12 @@ namespace
 
   PresentationInterface::Ptr OpenTiledBitmapAsPresentation::open(const std::string& fileName)
   {
-    auto t                     = openTiledBitmapInterface->open(fileName);
+    auto t = openTiledBitmapInterface->open(fileName);
 
     // Map to hold the bitmap medata values for a specific file
     std::map<std::string, Scroom::TiledBitmap::BitmapMetaData> bm;
     bm.insert({fileName, std::move(std::get<0>(t))});
-    auto it = bm.find(fileName);
+    auto           it          = bm.find(fileName);
     Layer::Ptr     bottomLayer = std::move(std::get<1>(t));
     ReloadFunction load        = std::move(std::get<2>(t));
 
@@ -512,9 +511,8 @@ namespace
         properties[PIPETTE_PROPERTY_NAME] = "";
       }
 
-      auto tiledBitmapPresentation =
-        TiledBitmapPresentation::create(fileName, it->second.rect, tiledBitmap, properties, colormapHelper,
-                                        pipetteLayerOperation);
+      auto tiledBitmapPresentation = TiledBitmapPresentation::create(
+        fileName, it->second.rect, tiledBitmap, properties, colormapHelper, pipetteLayerOperation);
       tiledBitmapPresentation->getMap(bm);
       tiledBitmapPresentation->add(load(tiledBitmap->progressInterface()));
 
