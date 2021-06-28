@@ -13,9 +13,9 @@
  **/
 void on_image_properties_activate(GtkMenuItem*, gpointer user_data)
 {
-  auto*      view = static_cast<ViewInterface*>(user_data);
-  GtkWidget* dialog;
-  GtkWindow* main = nullptr;
+  auto*      view   = static_cast<ViewInterface*>(user_data);
+  GtkWidget* dialog = nullptr;
+  GtkWindow* main   = nullptr;
 
   if(view->getCurrentPresentation().get() != nullptr) // if there is a presentation
   {
