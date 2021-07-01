@@ -481,6 +481,8 @@ void on_scroom_bootstrap(const FileNameMap& newFilenames)
   {
     create_scroom(PresentationInterface::Ptr());
   }
+
+  g_object_unref(aboutDialogXml);
 }
 
 void on_scroom_terminating() { ensure(views.empty()); }
@@ -607,7 +609,8 @@ void create_scroom(PresentationInterface::Ptr presentation)
     scroom, GTK_DEST_DEFAULT_ALL, targets, 1, static_cast<GdkDragAction>(GDK_ACTION_COPY | GDK_ACTION_MOVE | GDK_ACTION_LINK));
 
   g_signal_connect(static_cast<gpointer>(scroom), "drag_data_received", G_CALLBACK(onDragDataReceived), NULL);
-  // delete xml; //Breaks code for some reason. It seems that this xml is freed somewhere else...
+
+  g_object_unref(xml);
 }
 
 void on_newPresentationInterfaces_update(const std::map<NewPresentationInterface::Ptr, std::string>& newPresentationInterfaces)

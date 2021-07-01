@@ -127,6 +127,16 @@ void PipetteHandler::onSelectionEnd(Selection::Ptr s, ViewInterface::Ptr view)
   {
     selection = s;
 
+    if(selection->start.x == selection->end.x)
+    {
+      selection->end.x += 1;
+    }
+
+    if(selection->start.y == selection->end.y)
+    {
+      selection->end.y += 1;
+    }
+
     // Get the selection rectangle
     auto sel_rect = Scroom::Utils::Rectangle<int>(selection->start, selection->end);
     Sequentially()->schedule(boost::bind(&PipetteHandler::computeValues, shared_from_this<PipetteHandler>(), view, sel_rect),
