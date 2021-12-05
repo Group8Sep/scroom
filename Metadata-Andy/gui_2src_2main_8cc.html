@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.12.2-185-g66c01cb1</span>
+   &#160;<span id="projectnumber">0.12.2-186-g59b9b9a62</span>
    </div>
   </td>
  </tr>
@@ -92,10 +92,10 @@ $(document).ready(function(){initNavTree('gui_2src_2main_8cc.html',''); initResi
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;list&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;boost/program_options.hpp&gt;</code><br />
 <code>#include &lt;spdlog/sinks/stdout_color_sinks.h&gt;</code><br />
 <code>#include &lt;spdlog/spdlog.h&gt;</code><br />
 <code>#include &lt;boost/lexical_cast.hpp&gt;</code><br />
+<code>#include &lt;boost/program_options.hpp&gt;</code><br />
 <code>#include &lt;gtk/gtk.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="callbacks_8hh_source.html">callbacks.hh</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -103,15 +103,15 @@ Include dependency graph for main.cc:</div>
 <div class="dyncontent">
 <div class="center"><img src="gui_2src_2main_8cc__incl.png" border="0" usemap="#gui_2src_2main_8cc" alt=""/></div>
 <map name="gui_2src_2main_8cc" id="gui_2src_2main_8cc">
-<area shape="rect" title=" " alt="" coords="2828,5,2948,32"/>
+<area shape="rect" title=" " alt="" coords="2783,5,2903,32"/>
 <area shape="rect" title=" " alt="" coords="2361,468,2426,495"/>
 <area shape="rect" title=" " alt="" coords="2316,87,2396,114"/>
 <area shape="rect" title=" " alt="" coords="111,625,153,651"/>
 <area shape="rect" title=" " alt="" coords="2967,468,3025,495"/>
-<area shape="rect" title=" " alt="" coords="2689,87,2889,114"/>
-<area shape="rect" title=" " alt="" coords="2913,80,3061,121"/>
-<area shape="rect" title=" " alt="" coords="3085,87,3209,114"/>
-<area shape="rect" title=" " alt="" coords="3233,87,3399,114"/>
+<area shape="rect" title=" " alt="" coords="2689,80,2837,121"/>
+<area shape="rect" title=" " alt="" coords="2861,87,2985,114"/>
+<area shape="rect" title=" " alt="" coords="3009,87,3175,114"/>
+<area shape="rect" title=" " alt="" coords="3200,87,3400,114"/>
 <area shape="rect" title=" " alt="" coords="2839,625,2919,651"/>
 <area shape="rect" href="callbacks_8hh.html" title=" " alt="" coords="2562,87,2665,114"/>
 <area shape="rect" title=" " alt="" coords="3037,543,3088,569"/>
@@ -189,76 +189,76 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  std::string                                   me = argv[0]; <span class="comment">// NOLINT(cppcoreguidelines-pro-bounds-pointer-arithmetic)</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  std::map&lt;std::string, std::list&lt;std::string&gt;&gt; <a class="code" href="callbacks_8cc.html#ab35928a72da8049cfafad38e61c458e0">filenames</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// In windows, redirect all logging to file.</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">// On the off-chance that we&#39;re running in a debugger that does capture console logging, redirect to console as well.</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> logDirParent = <a class="code" href="callbacks_8cc.html#a301e3ea806e687d48f817b7ed7bf8aa7">in_devmode</a>() ? boost::filesystem::path(TOP_SRCDIR) : boost::dll::program_location().parent_path();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> logDir       = logDirParent / <span class="stringliteral">&quot;logs&quot;</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> logFile      = logDir / fmt::format(<span class="stringliteral">&quot;scroom-log-{}.txt&quot;</span>, getpid());</div>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  std::string                                   me = argv[0]; <span class="comment">// NOLINT(cppcoreguidelines-pro-bounds-pointer-arithmetic)</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::map&lt;std::string, std::list&lt;std::string&gt;&gt; <a class="code" href="callbacks_8cc.html#ab35928a72da8049cfafad38e61c458e0">filenames</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// In windows, redirect all logging to file.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// On the off-chance that we&#39;re running in a debugger that does capture console logging, redirect to console as well.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> logDirParent = <a class="code" href="callbacks_8cc.html#a301e3ea806e687d48f817b7ed7bf8aa7">in_devmode</a>() ? boost::filesystem::path(TOP_SRCDIR) : boost::dll::program_location().parent_path();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> logDir       = logDirParent / <span class="stringliteral">&quot;logs&quot;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> logFile      = logDir / fmt::format(<span class="stringliteral">&quot;scroom-log-{}.txt&quot;</span>, getpid());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  boost::filesystem::create_directory(logDir);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  boost::filesystem::create_directory(logDir);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">auto</span> console_sink = std::make_shared&lt;spdlog::sinks::stdout_color_sink_mt&gt;();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">auto</span> file_sink    = std::make_shared&lt;spdlog::sinks::basic_file_sink_mt&gt;(logFile.string(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  std::shared_ptr&lt;spdlog::logger&gt; logger(<span class="keyword">new</span> spdlog::logger(<span class="stringliteral">&quot;scroom&quot;</span>, {console_sink, file_sink}));</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  spdlog::set_default_logger(logger);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  spdlog::set_level(spdlog::level::debug);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  spdlog::set_pattern(<span class="stringliteral">&quot;[%Y-%m-%d %H:%M:%S.%e] [%t] [%^%-5l%$] %v&quot;</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  po::options_description desc(<span class="stringliteral">&quot;Available options&quot;</span>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  desc.add_options()(<span class="stringliteral">&quot;help,h&quot;</span>, <span class="stringliteral">&quot;Show this help message&quot;</span>)(<span class="stringliteral">&quot;load,l&quot;</span>, po::value&lt;std::vector&lt;std::string&gt;&gt;(), <span class="stringliteral">&quot;Load given filenames&quot;</span>)(</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="stringliteral">&quot;transparent-overlay&quot;</span>, po::value&lt;std::vector&lt;std::string&gt;&gt;()-&gt;multitoken(), <span class="stringliteral">&quot;Show given files in transparent overlay&quot;</span>);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  po::positional_options_description p;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  p.add(<span class="stringliteral">&quot;load&quot;</span>, -1);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">auto</span> console_sink = std::make_shared&lt;spdlog::sinks::stdout_color_sink_mt&gt;();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">auto</span> file_sink    = std::make_shared&lt;spdlog::sinks::basic_file_sink_mt&gt;(logFile.string(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  std::shared_ptr&lt;spdlog::logger&gt; logger(<span class="keyword">new</span> spdlog::logger(<span class="stringliteral">&quot;scroom&quot;</span>, {console_sink, file_sink}));</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  spdlog::set_default_logger(logger);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  spdlog::set_level(spdlog::level::debug);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  spdlog::set_pattern(<span class="stringliteral">&quot;[%Y-%m-%d %H:%M:%S.%e] [%t] [%^%-5l%$] %v&quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  po::options_description desc(<span class="stringliteral">&quot;Available options&quot;</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  desc.add_options()(<span class="stringliteral">&quot;help,h&quot;</span>, <span class="stringliteral">&quot;Show this help message&quot;</span>)(<span class="stringliteral">&quot;load,l&quot;</span>, po::value&lt;std::vector&lt;std::string&gt;&gt;(), <span class="stringliteral">&quot;Load given filenames&quot;</span>)(</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="stringliteral">&quot;transparent-overlay&quot;</span>, po::value&lt;std::vector&lt;std::string&gt;&gt;()-&gt;multitoken(), <span class="stringliteral">&quot;Show given files in transparent overlay&quot;</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  po::positional_options_description p;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  p.add(<span class="stringliteral">&quot;load&quot;</span>, -1);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  po::variables_map vm;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  po::variables_map vm;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    po::store(po::command_line_parser(argc, argv).options(desc).positional(p).run(), vm);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    po::notify(vm);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span>(vm.count(<span class="stringliteral">&quot;help&quot;</span>))</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <a class="code" href="gui_2src_2main_8cc.html#a5d5deb0dceee1db056c8400fa052e13a">usage</a>(me, desc);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span>(vm.count(<span class="stringliteral">&quot;load&quot;</span>))</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; names = vm[<span class="stringliteral">&quot;load&quot;</span>].as&lt;std::vector&lt;std::string&gt;&gt;();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <a class="code" href="callbacks_8cc.html#ab35928a72da8049cfafad38e61c458e0">filenames</a>[<a class="code" href="callbacks_8cc.html#a88a43ec881bd1f752d469b9747767544">REGULAR_FILES</a>].assign(names.begin(), names.end());</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span>(vm.count(<span class="stringliteral">&quot;transparent-overlay&quot;</span>))</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; names = vm[<span class="stringliteral">&quot;transparent-overlay&quot;</span>].as&lt;std::vector&lt;std::string&gt;&gt;();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <a class="code" href="callbacks_8cc.html#ab35928a72da8049cfafad38e61c458e0">filenames</a>[<span class="stringliteral">&quot;Transparent Overlay&quot;</span>].assign(names.begin(), names.end());</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordflow">catch</span>(std::exception&amp; ex)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="gui_2src_2main_8cc.html#a5d5deb0dceee1db056c8400fa052e13a">usage</a>(me, desc, ex.what());</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  setlocale(LC_ALL, <span class="stringliteral">&quot;&quot;</span>); <span class="comment">// NOLINT(concurrency-mt-unsafe)</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  gtk_init(&amp;argc, &amp;argv);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    po::store(po::command_line_parser(argc, argv).options(desc).positional(p).run(), vm);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    po::notify(vm);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span>(vm.count(<span class="stringliteral">&quot;help&quot;</span>))</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <a class="code" href="gui_2src_2main_8cc.html#a5d5deb0dceee1db056c8400fa052e13a">usage</a>(me, desc);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span>(vm.count(<span class="stringliteral">&quot;load&quot;</span>))</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; names = vm[<span class="stringliteral">&quot;load&quot;</span>].as&lt;std::vector&lt;std::string&gt;&gt;();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <a class="code" href="callbacks_8cc.html#ab35928a72da8049cfafad38e61c458e0">filenames</a>[<a class="code" href="callbacks_8cc.html#a88a43ec881bd1f752d469b9747767544">REGULAR_FILES</a>].assign(names.begin(), names.end());</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span>(vm.count(<span class="stringliteral">&quot;transparent-overlay&quot;</span>))</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; names = vm[<span class="stringliteral">&quot;transparent-overlay&quot;</span>].as&lt;std::vector&lt;std::string&gt;&gt;();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <a class="code" href="callbacks_8cc.html#ab35928a72da8049cfafad38e61c458e0">filenames</a>[<span class="stringliteral">&quot;Transparent Overlay&quot;</span>].assign(names.begin(), names.end());</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">catch</span>(std::exception&amp; ex)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="gui_2src_2main_8cc.html#a5d5deb0dceee1db056c8400fa052e13a">usage</a>(me, desc, ex.what());</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  setlocale(LC_ALL, <span class="stringliteral">&quot;&quot;</span>); <span class="comment">// NOLINT(concurrency-mt-unsafe)</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  gtk_init(&amp;argc, &amp;argv);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="callbacks_8cc.html#ad1e18a647c5ecc3a2235b4e14f08bd74">on_scroom_bootstrap</a>(<a class="code" href="callbacks_8cc.html#ab35928a72da8049cfafad38e61c458e0">filenames</a>);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="callbacks_8cc.html#ad1e18a647c5ecc3a2235b4e14f08bd74">on_scroom_bootstrap</a>(<a class="code" href="callbacks_8cc.html#ab35928a72da8049cfafad38e61c458e0">filenames</a>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  gtk_main();</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  gtk_main();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="callbacks_8cc.html#a8aaa627c06109f99958936ba0e3888ad">on_scroom_terminating</a>();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  spdlog::debug(<span class="stringliteral">&quot;Scroom terminating...&quot;</span>);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <a class="code" href="callbacks_8cc.html#a8aaa627c06109f99958936ba0e3888ad">on_scroom_terminating</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  spdlog::debug(<span class="stringliteral">&quot;Scroom terminating...&quot;</span>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -350,18 +350,18 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordflow">if</span>(message.length() != 0)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="callbacks_8cc.html#abc39a4bba3587c275762137dee2c3fc1">spdlog::error</a>(<span class="stringliteral">&quot;{}&quot;</span>, message);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">if</span>(message.length() != 0)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="callbacks_8cc.html#abc39a4bba3587c275762137dee2c3fc1">spdlog::error</a>(<span class="stringliteral">&quot;{}&quot;</span>, message);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  spdlog::info(<span class="stringliteral">&quot;Usage: {}  [options] [input files]&quot;</span>, me);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  spdlog::info(<span class="stringliteral">&quot;Usage: {}  [options] [input files]&quot;</span>, me);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  spdlog::info(<span class="stringliteral">&quot;{}&quot;</span>, boost::lexical_cast&lt;std::string&gt;(desc));</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  spdlog::info(<span class="stringliteral">&quot;{}&quot;</span>, boost::lexical_cast&lt;std::string&gt;(desc));</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  exit(-1); <span class="comment">// NOLINT(concurrency-mt-unsafe)</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  exit(-1); <span class="comment">// NOLINT(concurrency-mt-unsafe)</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="gui_2src_2main_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>.</p>
 <div class="dynheader">
@@ -381,7 +381,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="acallbacks_8cc_html_a8aaa627c06109f99958936ba0e3888ad"><div class="ttname"><a href="callbacks_8cc.html#a8aaa627c06109f99958936ba0e3888ad">on_scroom_terminating</a></div><div class="ttdeci">void on_scroom_terminating()</div><div class="ttdef"><b>Definition:</b> callbacks.cc:485</div></div>
 <div class="ttc" id="acallbacks_8cc_html_abc39a4bba3587c275762137dee2c3fc1"><div class="ttname"><a href="callbacks_8cc.html#abc39a4bba3587c275762137dee2c3fc1">error</a></div><div class="ttdeci">GError * error</div><div class="ttdef"><b>Definition:</b> callbacks.cc:53</div></div>
 <div class="ttc" id="acallbacks_8cc_html_a301e3ea806e687d48f817b7ed7bf8aa7"><div class="ttname"><a href="callbacks_8cc.html#a301e3ea806e687d48f817b7ed7bf8aa7">in_devmode</a></div><div class="ttdeci">bool in_devmode()</div><div class="ttdef"><b>Definition:</b> callbacks.cc:420</div></div>
-<div class="ttc" id="agui_2src_2main_8cc_html_a5d5deb0dceee1db056c8400fa052e13a"><div class="ttname"><a href="gui_2src_2main_8cc.html#a5d5deb0dceee1db056c8400fa052e13a">usage</a></div><div class="ttdeci">void usage(const std::string &amp;me, const po::options_description &amp;desc, const std::string &amp;message=std::string())</div><div class="ttdef"><b>Definition:</b> main.cc:35</div></div>
+<div class="ttc" id="agui_2src_2main_8cc_html_a5d5deb0dceee1db056c8400fa052e13a"><div class="ttname"><a href="gui_2src_2main_8cc.html#a5d5deb0dceee1db056c8400fa052e13a">usage</a></div><div class="ttdeci">void usage(const std::string &amp;me, const po::options_description &amp;desc, const std::string &amp;message=std::string())</div><div class="ttdef"><b>Definition:</b> main.cc:33</div></div>
 <div class="ttc" id="acallbacks_8cc_html_ad1e18a647c5ecc3a2235b4e14f08bd74"><div class="ttname"><a href="callbacks_8cc.html#ad1e18a647c5ecc3a2235b4e14f08bd74">on_scroom_bootstrap</a></div><div class="ttdeci">void on_scroom_bootstrap(const FileNameMap &amp;newFilenames)</div><div class="ttdef"><b>Definition:</b> callbacks.cc:422</div></div>
 <div class="ttc" id="acallbacks_8cc_html_a88a43ec881bd1f752d469b9747767544"><div class="ttname"><a href="callbacks_8cc.html#a88a43ec881bd1f752d469b9747767544">REGULAR_FILES</a></div><div class="ttdeci">const std::string REGULAR_FILES</div><div class="ttdef"><b>Definition:</b> callbacks.cc:49</div></div>
 <div class="ttc" id="acallbacks_8cc_html_ab35928a72da8049cfafad38e61c458e0"><div class="ttname"><a href="callbacks_8cc.html#ab35928a72da8049cfafad38e61c458e0">filenames</a></div><div class="ttdeci">static FileNameMap filenames</div><div class="ttdef"><b>Definition:</b> callbacks.cc:59</div></div>

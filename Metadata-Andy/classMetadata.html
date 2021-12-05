@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.12.2-185-g66c01cb1</span>
+   &#160;<span id="projectnumber">0.12.2-186-g59b9b9a62</span>
    </div>
   </td>
  </tr>
@@ -426,9 +426,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="comment">// connect signal to the button for when it is being pressed</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  g_signal_connect(<span class="keyword">static_cast&lt;</span>gpointer<span class="keyword">&gt;</span>(buttonMetadata), <span class="stringliteral">&quot;pressed&quot;</span>, G_CALLBACK(<a class="code" href="metadata_8cc.html#a92cd826e4d3385a0a62247d45b7df6a8">on_image_properties_activate</a>), presentation);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  gdk_threads_enter();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  view-&gt;addToToolbar(button); <span class="comment">// adds metadata button next to other tools in toolbar</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  gdk_threads_leave();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="namespaceScroom_1_1GtkHelpers.html#a41d93c131774cfff3137ec807ead3e94">Scroom::GtkHelpers::sync_on_ui_thread</a>([&amp;] {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    view-&gt;addToToolbar(button); <span class="comment">// adds metadata button next to other tools in toolbar</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  });</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classScroom_1_1Bookkeeping_1_1Token.html">Scroom::Bookkeeping::Token</a>();</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
@@ -437,9 +437,14 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMetadata_aa72fe849c13ba718f14644f1eb60c7e8_cgraph.png" border="0" usemap="#classMetadata_aa72fe849c13ba718f14644f1eb60c7e8_cgraph" alt=""/></div>
 <map name="classMetadata_aa72fe849c13ba718f14644f1eb60c7e8_cgraph" id="classMetadata_aa72fe849c13ba718f14644f1eb60c7e8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,169,39"/>
+<area shape="rect" title=" " alt="" coords="5,46,169,73"/>
 <area shape="rect" href="metadata_8cc.html#a92cd826e4d3385a0a62247d45b7df6a8" title=" " alt="" coords="217,5,376,47"/>
-<area shape="rect" href="CheckMacHIDAPI_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="424,13,479,39"/>
+<area shape="rect" href="namespaceScroom_1_1GtkHelpers.html#a41d93c131774cfff3137ec807ead3e94" title=" " alt="" coords="221,71,373,112"/>
+<area shape="rect" href="CheckMacHIDAPI_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="476,13,531,39"/>
+<area shape="rect" href="namespaceScroom_1_1GtkHelpers.html#a37a36328ffc6b0e7468a02d64724c21d" title=" " alt="" coords="424,63,583,119"/>
+<area shape="rect" href="namespaceScroom_1_1GtkHelpers.html#a2ade52a9fdfe46700036def64d00f9da" title=" " alt="" coords="634,136,786,177"/>
+<area shape="rect" href="namespaceScroom_1_1GtkHelpers.html#ac2709d76d34bc51f4310e34502d17ed1" title=" " alt="" coords="631,71,789,112"/>
+<area shape="rect" href="namespaceScroom_1_1GtkHelpers.html#ac6ea38c746831ab3ff96ce29ffe5bf7a" title=" " alt="" coords="837,71,989,112"/>
 </map>
 </div>
 
@@ -452,6 +457,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="ametadata_8cc_html_a92cd826e4d3385a0a62247d45b7df6a8"><div class="ttname"><a href="metadata_8cc.html#a92cd826e4d3385a0a62247d45b7df6a8">on_image_properties_activate</a></div><div class="ttdeci">void on_image_properties_activate(GtkMenuItem *, gpointer user_data)</div><div class="ttdef"><b>Definition:</b> metadata.cc:14</div></div>
+<div class="ttc" id="anamespaceScroom_1_1GtkHelpers_html_a41d93c131774cfff3137ec807ead3e94"><div class="ttname"><a href="namespaceScroom_1_1GtkHelpers.html#a41d93c131774cfff3137ec807ead3e94">Scroom::GtkHelpers::sync_on_ui_thread</a></div><div class="ttdeci">void sync_on_ui_thread(T f)</div><div class="ttdef"><b>Definition:</b> gtk-helpers.hh:59</div></div>
 <div class="ttc" id="aclassMetadata_html_ae849560667461008cb72e83919c20be0"><div class="ttname"><a href="classMetadata.html#ae849560667461008cb72e83919c20be0">Metadata::Metadata</a></div><div class="ttdeci">Metadata()=default</div></div>
 <div class="ttc" id="aclassMetadata_html_aa2559ea8f852935d8530d9d7455c4a02"><div class="ttname"><a href="classMetadata.html#aa2559ea8f852935d8530d9d7455c4a02">Metadata::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; Metadata &gt; Ptr</div><div class="ttdef"><b>Definition:</b> metadata.hh:19</div></div>
 <div class="ttc" id="aclassScroom_1_1Bookkeeping_1_1Token_html"><div class="ttname"><a href="classScroom_1_1Bookkeeping_1_1Token.html">Scroom::Bookkeeping::Token</a></div><div class="ttdef"><b>Definition:</b> bookkeeping.hh:39</div></div>
