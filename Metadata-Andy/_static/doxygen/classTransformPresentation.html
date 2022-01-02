@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.12.2-195-g61dbd9864</span>
+   &#160;<span id="projectnumber">0.12.2-196-g3e98c083c</span>
    </div>
   </td>
  </tr>
@@ -205,8 +205,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7471c9df007b7595fd1177adcef2abfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30829d965c1917a27fe95501a6e094df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a30829d965c1917a27fe95501a6e094df">getTransparentBackground</a> () override</td></tr>
 <tr class="separator:a30829d965c1917a27fe95501a6e094df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41321f9bdce412d29b5f0f3d6502c456"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a41321f9bdce412d29b5f0f3d6502c456">showMetadata</a> () override</td></tr>
-<tr class="separator:a41321f9bdce412d29b5f0f3d6502c456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a840aef2c9255e4da089567f73d8a6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformPresentation.html#a9a840aef2c9255e4da089567f73d8a6c">showMetadata</a> (GtkWindow *parent) override</td></tr>
+<tr class="separator:a9a840aef2c9255e4da089567f73d8a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classScroom_1_1Utils_1_1Observable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classScroom_1_1Utils_1_1Observable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classScroom_1_1Utils_1_1Observable.html">Scroom::Utils::Observable&lt; T &gt;</a></td></tr>
 <tr class="memitem:a0985c831266bda7104445a9f0babee03 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScroom_1_1Utils_1_1Observable.html#a0985c831266bda7104445a9f0babee03">Observable</a> ()</td></tr>
 <tr class="separator:a0985c831266bda7104445a9f0babee03 inherit pub_methods_classScroom_1_1Utils_1_1Observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1010,8 +1010,8 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a41321f9bdce412d29b5f0f3d6502c456"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41321f9bdce412d29b5f0f3d6502c456">&#9670;&nbsp;</a></span>showMetadata()</h2>
+<a id="a9a840aef2c9255e4da089567f73d8a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a840aef2c9255e4da089567f73d8a6c">&#9670;&nbsp;</a></span>showMetadata()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1022,7 +1022,8 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void TransformPresentation::showMetadata </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">GtkWindow *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1032,9 +1033,16 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Request to show a window containing the presentation metadata</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the parent window, if found. Nullptr otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implements <a class="el" href="classShowMetadataInterface.html#ab09108dc59c8c179468af171ba9a44b3">ShowMetadataInterface</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{ <a class="code" href="classTransformPresentation.html#a29fd4e7f86ebe745c74a833cc1daba25">showMetaDataInterface</a>-&gt;showMetadata(); }</div>
+<p>Implements <a class="el" href="classShowMetadataInterface.html#a0cfca83af258e923b84ac898fee150f0">ShowMetadataInterface</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{ <a class="code" href="classTransformPresentation.html#a29fd4e7f86ebe745c74a833cc1daba25">showMetaDataInterface</a>-&gt;showMetadata(parent); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1107,7 +1115,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classTransformPresentation.html#a41321f9bdce412d29b5f0f3d6502c456">showMetadata()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classTransformPresentation.html#a9a840aef2c9255e4da089567f73d8a6c">showMetadata()</a>.</p>
 
 </div>
 </div>

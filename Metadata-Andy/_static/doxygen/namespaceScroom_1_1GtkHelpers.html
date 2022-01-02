@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.12.2-195-g61dbd9864</span>
+   &#160;<span id="projectnumber">0.12.2-196-g3e98c083c</span>
    </div>
   </td>
  </tr>
@@ -113,6 +113,8 @@ Functions</h2></td></tr>
 <tr class="separator:a41d93c131774cfff3137ec807ead3e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5260b667cc757819028aac849da3304e"><td class="memItemLeft" align="right" valign="top">cairo_rectangle_int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1GtkHelpers.html#a5260b667cc757819028aac849da3304e">createCairoIntRectangle</a> (int x, int y, int width, int height)</td></tr>
 <tr class="separator:a5260b667cc757819028aac849da3304e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ad2ca25cec0ca8c5f9174039ea86fa"><td class="memItemLeft" align="right" valign="top">GtkWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1GtkHelpers.html#a68ad2ca25cec0ca8c5f9174039ea86fa">get_parent_window</a> (GtkWidget *widget)</td></tr>
+<tr class="separator:a68ad2ca25cec0ca8c5f9174039ea86fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ac2709d76d34bc51f4310e34502d17ed1"></a>
@@ -301,6 +303,47 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="244,27,431,69"/>
 <area shape="rect" href="rectangletests_8cc.html#a8db307fdddadfda0f7f86caf46cfbb98" title=" " alt="" coords="5,5,196,32"/>
 <area shape="rect" href="classScroom_1_1Utils_1_1Rectangle.html#a2b1f95eea80820e7f6434cc7ec1bee52" title=" " alt="" coords="9,57,192,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a68ad2ca25cec0ca8c5f9174039ea86fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ad2ca25cec0ca8c5f9174039ea86fa">&#9670;&nbsp;</a></span>get_parent_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GtkWindow * Scroom::GtkHelpers::get_parent_window </td>
+          <td>(</td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>widget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">auto</span>* topLevel = gtk_widget_get_toplevel(widget);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span>(GTK_IS_WINDOW(topLevel))</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keywordflow">return</span> GTK_WINDOW(topLevel);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  }</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="metadata_8cc.html#a05befa08789279605954b2fd767ddeb9">on_image_properties_activate()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceScroom_1_1GtkHelpers_a68ad2ca25cec0ca8c5f9174039ea86fa_icgraph.png" border="0" usemap="#namespaceScroom_1_1GtkHelpers_a68ad2ca25cec0ca8c5f9174039ea86fa_icgraph" alt=""/></div>
+<map name="namespaceScroom_1_1GtkHelpers_a68ad2ca25cec0ca8c5f9174039ea86fa_icgraph" id="namespaceScroom_1_1GtkHelpers_a68ad2ca25cec0ca8c5f9174039ea86fa_icgraph">
+<area shape="rect" title=" " alt="" coords="424,5,581,47"/>
+<area shape="rect" href="metadata_8cc.html#a05befa08789279605954b2fd767ddeb9" title=" " alt="" coords="217,5,376,47"/>
+<area shape="rect" href="classMetadata.html#aa72fe849c13ba718f14644f1eb60c7e8" title=" " alt="" coords="5,13,169,39"/>
 </map>
 </div>
 

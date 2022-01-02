@@ -82,9 +82,9 @@ var NAVTREEINDEX =
 "classView.html#a3021316c974469f0463d410b2a0b3c77",
 "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#ae212e34133282a532f5b811e3939d81f",
 "functions_vars_s.html",
-"memoryblobs_8hh.html#aa30db602fa289e14a9db8bfd0f36d5ab",
-"ruler-tests_8cc.html#a35a7eff7b84c1919c80ac8c2b007d69a",
-"tile_8hh_source.html"
+"memoryblobs_8hh.html#a2f9b0138bfddef61fcad37357ae398ed",
+"ruler-tests_8cc.html#a33bae65f7b74d3ced3a592ad689d622d",
+"tiffsource_8hh_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

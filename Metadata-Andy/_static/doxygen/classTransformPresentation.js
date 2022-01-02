@@ -20,7 +20,7 @@ var classTransformPresentation =
     [ "setColormap", "classTransformPresentation.html#ac54fec8e9d05effd1b8377a52a91ee1a", null ],
     [ "setMonochromeColor", "classTransformPresentation.html#a778ce565d6a8d478c5655008174fb949", null ],
     [ "setTransparentBackground", "classTransformPresentation.html#a7e5ba7edfebb16456fefec941e4f3eb3", null ],
-    [ "showMetadata", "classTransformPresentation.html#a41321f9bdce412d29b5f0f3d6502c456", null ],
+    [ "showMetadata", "classTransformPresentation.html#a9a840aef2c9255e4da089567f73d8a6c", null ],
     [ "colormappable", "classTransformPresentation.html#ad383e05a9aa2cbd83a077bd83ced7abd", null ],
     [ "presentation", "classTransformPresentation.html#a5aac13bb64cc63cb76adbb42a0770cee", null ],
     [ "showMetaDataInterface", "classTransformPresentation.html#a29fd4e7f86ebe745c74a833cc1daba25", null ],

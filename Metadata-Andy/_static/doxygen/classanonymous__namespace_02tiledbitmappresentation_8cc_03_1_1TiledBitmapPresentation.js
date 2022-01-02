@@ -21,7 +21,7 @@ var classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPre
     [ "setColormap", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a4d639424858716d045683aa789718410", null ],
     [ "setMonochromeColor", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#aba58bf256b66fd4d2248d4967774562d", null ],
     [ "setTransparentBackground", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#ab26fbefe59aa772b77400cdf2c14952b", null ],
-    [ "showMetadata", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a9ca60b988126bdc1d4027aa410fa5b31", null ],
+    [ "showMetadata", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a3677652d121d09345fe7993107c15f66", null ],
     [ "viewAdded", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a0573026ebb6ffb13633159eb65d7c01a", null ],
     [ "viewRemoved", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#ae212e34133282a532f5b811e3939d81f", null ],
     [ "bmd", "classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a3c78f4e5c6b1ed9a2e91bd94042dae0c", null ],

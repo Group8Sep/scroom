@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.12.2-195-g61dbd9864</span>
+   &#160;<span id="projectnumber">0.12.2-196-g3e98c083c</span>
    </div>
   </td>
  </tr>
@@ -200,8 +200,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a71907f1d9e95bf600061a20392da56f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f4c32d6682af86bd5e91c870be78561"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPipetteLayerOperations.html#ac2e1230385d4439b30668e66df245485">PipetteLayerOperations::PipetteColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a3f4c32d6682af86bd5e91c870be78561">getPixelAverages</a> (<a class="el" href="classScroom_1_1Utils_1_1Rectangle.html">Scroom::Utils::Rectangle</a>&lt; int &gt; area) override</td></tr>
 <tr class="separator:a3f4c32d6682af86bd5e91c870be78561"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ca60b988126bdc1d4027aa410fa5b31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a9ca60b988126bdc1d4027aa410fa5b31">showMetadata</a> () override</td></tr>
-<tr class="separator:a9ca60b988126bdc1d4027aa410fa5b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3677652d121d09345fe7993107c15f66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a3677652d121d09345fe7993107c15f66">showMetadata</a> (GtkWindow *parent) override</td></tr>
+<tr class="separator:a3677652d121d09345fe7993107c15f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d639424858716d045683aa789718410"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a4d639424858716d045683aa789718410">setColormap</a> (<a class="el" href="classColormap.html#a490aa33223a81e71c130036dc980cd63">Colormap::Ptr</a> <a class="el" href="colormaphelpers__test_8cc.html#a6d3be1eefb3bdbb932f5124245d31513">colormap</a>) override</td></tr>
 <tr class="separator:a4d639424858716d045683aa789718410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e94f8c02827f278b09de1e84285be3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classColormap.html#a490aa33223a81e71c130036dc980cd63">Colormap::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#a0e94f8c02827f278b09de1e84285be3b">getOriginalColormap</a> () override</td></tr>
@@ -1172,8 +1172,8 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a9ca60b988126bdc1d4027aa410fa5b31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ca60b988126bdc1d4027aa410fa5b31">&#9670;&nbsp;</a></span>showMetadata()</h2>
+<a id="a3677652d121d09345fe7993107c15f66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3677652d121d09345fe7993107c15f66">&#9670;&nbsp;</a></span>showMetadata()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1184,7 +1184,8 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void anonymous_namespace{tiledbitmappresentation.cc}::TiledBitmapPresentation::showMetadata </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">GtkWindow *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1194,8 +1195,15 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Request to show a window containing the presentation metadata</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the parent window, if found. Nullptr otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implements <a class="el" href="classShowMetadataInterface.html#ab09108dc59c8c179468af171ba9a44b3">ShowMetadataInterface</a>.</p>
+<p>Implements <a class="el" href="classShowMetadataInterface.html#a0cfca83af258e923b84ac898fee150f0">ShowMetadataInterface</a>.</p>
 
 </div>
 </div>

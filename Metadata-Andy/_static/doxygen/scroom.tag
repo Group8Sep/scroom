@@ -2561,6 +2561,13 @@
       <arglist>(int x, int y, int width, int height)</arglist>
     </member>
     <member kind="function">
+      <type>GtkWindow *</type>
+      <name>get_parent_window</name>
+      <anchorfile>namespaceScroom_1_1GtkHelpers.html</anchorfile>
+      <anchor>a68ad2ca25cec0ca8c5f9174039ea86fa</anchor>
+      <arglist>(GtkWidget *widget)</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>operator==</name>
       <anchorfile>gtk-helpers_8hh.html</anchorfile>
@@ -3114,8 +3121,8 @@
       <type>void</type>
       <name>showMetaData</name>
       <anchorfile>namespaceScroom_1_1Metadata.html</anchorfile>
-      <anchor>a02bfcc791c19437392cb84b49efd568d</anchor>
-      <arglist>(std::string title, Metadata data)</arglist>
+      <anchor>a0e30bfa9bfb8d9471c0b6b7a9445b81a</anchor>
+      <arglist>(GtkWindow *parent, std::string title, Metadata data)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -3893,8 +3900,8 @@
       <type>void</type>
       <name>showMetaData</name>
       <anchorfile>namespaceScroom_1_1Metadata.html</anchorfile>
-      <anchor>a02bfcc791c19437392cb84b49efd568d</anchor>
-      <arglist>(std::string title, Metadata data)</arglist>
+      <anchor>a0e30bfa9bfb8d9471c0b6b7a9445b81a</anchor>
+      <arglist>(GtkWindow *parent, std::string title, Metadata data)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -5607,6 +5614,13 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
+      <type>GtkWindow *</type>
+      <name>get_parent_window</name>
+      <anchorfile>namespaceScroom_1_1GtkHelpers.html</anchorfile>
+      <anchor>a68ad2ca25cec0ca8c5f9174039ea86fa</anchor>
+      <arglist>(GtkWidget *widget)</arglist>
+    </member>
+    <member kind="function">
       <type>std::ostream &amp;</type>
       <name>operator&lt;&lt;</name>
       <anchorfile>gtk-helpers_8cc.html</anchorfile>
@@ -6286,8 +6300,8 @@
       <type>void</type>
       <name>on_image_properties_activate</name>
       <anchorfile>metadata_8cc.html</anchorfile>
-      <anchor>a92cd826e4d3385a0a62247d45b7df6a8</anchor>
-      <arglist>(GtkMenuItem *, gpointer user_data)</arglist>
+      <anchor>a05befa08789279605954b2fd767ddeb9</anchor>
+      <arglist>(GtkButton *self, gpointer user_data)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -18256,8 +18270,8 @@
       <type>virtual void</type>
       <name>showMetadata</name>
       <anchorfile>classShowMetadataInterface.html</anchorfile>
-      <anchor>ab09108dc59c8c179468af171ba9a44b3</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a0cfca83af258e923b84ac898fee150f0</anchor>
+      <arglist>(GtkWindow *parent)=0</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -19801,8 +19815,8 @@
       <type>void</type>
       <name>showMetadata</name>
       <anchorfile>classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html</anchorfile>
-      <anchor>a9ca60b988126bdc1d4027aa410fa5b31</anchor>
-      <arglist>() override</arglist>
+      <anchor>a3677652d121d09345fe7993107c15f66</anchor>
+      <arglist>(GtkWindow *parent) override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -21006,8 +21020,8 @@
       <type>void</type>
       <name>showMetadata</name>
       <anchorfile>classTransformPresentation.html</anchorfile>
-      <anchor>a41321f9bdce412d29b5f0f3d6502c456</anchor>
-      <arglist>() override</arglist>
+      <anchor>a9a840aef2c9255e4da089567f73d8a6c</anchor>
+      <arglist>(GtkWindow *parent) override</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Ptr</type>
@@ -23335,6 +23349,13 @@
       <anchor>a5260b667cc757819028aac849da3304e</anchor>
       <arglist>(int x, int y, int width, int height)</arglist>
     </member>
+    <member kind="function">
+      <type>GtkWindow *</type>
+      <name>get_parent_window</name>
+      <anchorfile>namespaceScroom_1_1GtkHelpers.html</anchorfile>
+      <anchor>a68ad2ca25cec0ca8c5f9174039ea86fa</anchor>
+      <arglist>(GtkWidget *widget)</arglist>
+    </member>
   </compound>
   <compound kind="namespace">
     <name>Scroom::GtkHelpers::Detail</name>
@@ -23490,8 +23511,8 @@
       <type>void</type>
       <name>showMetaData</name>
       <anchorfile>namespaceScroom_1_1Metadata.html</anchorfile>
-      <anchor>a02bfcc791c19437392cb84b49efd568d</anchor>
-      <arglist>(std::string title, Metadata data)</arglist>
+      <anchor>a0e30bfa9bfb8d9471c0b6b7a9445b81a</anchor>
+      <arglist>(GtkWindow *parent, std::string title, Metadata data)</arglist>
     </member>
   </compound>
   <compound kind="namespace">

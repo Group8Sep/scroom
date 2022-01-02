@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.12.2-195-g61dbd9864</span>
+   &#160;<span id="projectnumber">0.12.2-196-g3e98c083c</span>
    </div>
   </td>
  </tr>
@@ -103,8 +103,8 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a02bfcc791c19437392cb84b49efd568d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1Metadata.html#a02bfcc791c19437392cb84b49efd568d">showMetaData</a> (std::string title, <a class="el" href="namespaceScroom_1_1Metadata.html#a51350b5aec7cb7add0d90fdeb7ead3eb">Metadata</a> data)</td></tr>
-<tr class="separator:a02bfcc791c19437392cb84b49efd568d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e30bfa9bfb8d9471c0b6b7a9445b81a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1Metadata.html#a0e30bfa9bfb8d9471c0b6b7a9445b81a">showMetaData</a> (GtkWindow *parent, std::string title, <a class="el" href="namespaceScroom_1_1Metadata.html#a51350b5aec7cb7add0d90fdeb7ead3eb">Metadata</a> data)</td></tr>
+<tr class="separator:a0e30bfa9bfb8d9471c0b6b7a9445b81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a51350b5aec7cb7add0d90fdeb7ead3eb"></a>
@@ -122,8 +122,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a02bfcc791c19437392cb84b49efd568d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02bfcc791c19437392cb84b49efd568d">&#9670;&nbsp;</a></span>showMetaData()</h2>
+<a id="a0e30bfa9bfb8d9471c0b6b7a9445b81a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e30bfa9bfb8d9471c0b6b7a9445b81a">&#9670;&nbsp;</a></span>showMetaData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,6 +131,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void Scroom::Metadata::showMetaData </td>
           <td>(</td>
+          <td class="paramtype">GtkWindow *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>title</em>, </td>
         </tr>
@@ -175,14 +181,16 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      previousKey = key;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    gtk_widget_show_all(window);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    gtk_widget_grab_focus(window);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    gtk_window_set_transient_for(GTK_WINDOW(window), parent);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER_ON_PARENT);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    gtk_widget_show_all(window);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    gtk_widget_grab_focus(window);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceScroom_1_1Metadata_a02bfcc791c19437392cb84b49efd568d_cgraph.png" border="0" usemap="#namespaceScroom_1_1Metadata_a02bfcc791c19437392cb84b49efd568d_cgraph" alt=""/></div>
-<map name="namespaceScroom_1_1Metadata_a02bfcc791c19437392cb84b49efd568d_cgraph" id="namespaceScroom_1_1Metadata_a02bfcc791c19437392cb84b49efd568d_cgraph">
+<div class="center"><img src="namespaceScroom_1_1Metadata_a0e30bfa9bfb8d9471c0b6b7a9445b81a_cgraph.png" border="0" usemap="#namespaceScroom_1_1Metadata_a0e30bfa9bfb8d9471c0b6b7a9445b81a_cgraph" alt=""/></div>
+<map name="namespaceScroom_1_1Metadata_a0e30bfa9bfb8d9471c0b6b7a9445b81a_cgraph" id="namespaceScroom_1_1Metadata_a0e30bfa9bfb8d9471c0b6b7a9445b81a_cgraph">
 <area shape="rect" title=" " alt="" coords="5,140,252,167"/>
 <area shape="rect" href="namespaceScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03.html#a24a89c6dd6a60001d1e7c00c21204caa" title=" " alt="" coords="300,5,549,61"/>
 <area shape="rect" href="namespaceScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03.html#a19d8ccee7f35235deb2483d465de5014" title=" " alt="" coords="312,85,537,141"/>

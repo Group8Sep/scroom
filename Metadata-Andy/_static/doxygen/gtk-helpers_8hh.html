@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Scroom
-   &#160;<span id="projectnumber">0.12.2-195-g61dbd9864</span>
+   &#160;<span id="projectnumber">0.12.2-196-g3e98c083c</span>
    </div>
   </td>
  </tr>
@@ -199,6 +199,8 @@ Functions</h2></td></tr>
 <tr class="separator:a41d93c131774cfff3137ec807ead3e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5260b667cc757819028aac849da3304e"><td class="memItemLeft" align="right" valign="top">cairo_rectangle_int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1GtkHelpers.html#a5260b667cc757819028aac849da3304e">Scroom::GtkHelpers::createCairoIntRectangle</a> (int x, int y, int width, int height)</td></tr>
 <tr class="separator:a5260b667cc757819028aac849da3304e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ad2ca25cec0ca8c5f9174039ea86fa"><td class="memItemLeft" align="right" valign="top">GtkWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceScroom_1_1GtkHelpers.html#a68ad2ca25cec0ca8c5f9174039ea86fa">Scroom::GtkHelpers::get_parent_window</a> (GtkWidget *widget)</td></tr>
+<tr class="separator:a68ad2ca25cec0ca8c5f9174039ea86fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5066a3f0522489a2ebd89f62e2139b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtk-helpers_8hh.html#ad5066a3f0522489a2ebd89f62e2139b7">operator==</a> (cairo_rectangle_int_t const &amp;left, cairo_rectangle_int_t const &amp;right)</td></tr>
 <tr class="separator:ad5066a3f0522489a2ebd89f62e2139b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12ac64ec4a585b9f297dd751adf6f80b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtk-helpers_8hh.html#a12ac64ec4a585b9f297dd751adf6f80b">operator==</a> (GdkPoint const &amp;left, GdkPoint const &amp;right)</td></tr>
@@ -282,7 +284,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{ <span class="keywordflow">return</span> os &lt;&lt; <span class="stringliteral">&quot;GdkPoint(&quot;</span> &lt;&lt; p.x &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; p.y &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>; }</div>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{ <span class="keywordflow">return</span> os &lt;&lt; <span class="stringliteral">&quot;GdkPoint(&quot;</span> &lt;&lt; p.x &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; p.y &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -319,9 +321,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">return</span> left.x == right.x &amp;&amp; left.y == right.y &amp;&amp; left.width == right.width &amp;&amp; left.height == right.height;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">return</span> left.x == right.x &amp;&amp; left.y == right.y &amp;&amp; left.width == right.width &amp;&amp; left.height == right.height;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -358,7 +360,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{ <span class="keywordflow">return</span> left.x == right.x &amp;&amp; left.y == right.y; }</div>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{ <span class="keywordflow">return</span> left.x == right.x &amp;&amp; left.y == right.y; }</div>
 </div><!-- fragment -->
 </div>
 </div>

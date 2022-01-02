@@ -6,5 +6,5 @@ var showmetadata_8cc =
     [ "addNewValueToGrid", "showmetadata_8cc.html#a7103ae9eb13109a562cb1ebaa74a6531", null ],
     [ "gtk_label_with_markup", "showmetadata_8cc.html#a8baf0999de5c8e17f5051b7087f90219", null ],
     [ "on_metadata_destroyed", "showmetadata_8cc.html#afaaa35bf934dc1911db8395244289b60", null ],
-    [ "showMetaData", "showmetadata_8cc.html#a02bfcc791c19437392cb84b49efd568d", null ]
+    [ "showMetaData", "showmetadata_8cc.html#a0e30bfa9bfb8d9471c0b6b7a9445b81a", null ]
 ];
