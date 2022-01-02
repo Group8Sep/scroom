@@ -296,6 +296,7 @@ var hierarchy =
     [ "Scroom::TiledBitmap::LayerSpecForBitmapper", "classScroom_1_1TiledBitmap_1_1LayerSpecForBitmapper.html", null ],
     [ "Scroom::Bookkeeping::Detail::LValue< V >", "classScroom_1_1Bookkeeping_1_1Detail_1_1LValue.html", null ],
     [ "Scroom::MemoryBlobs::PageProvider::MarkPageFree", "classScroom_1_1MemoryBlobs_1_1PageProvider_1_1MarkPageFree.html", null ],
+    [ "Scroom::Metadata::anonymous_namespace{showmetadata.cc}::MetaDataWindowData", "structScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03_1_1MetaDataWindowData.html", null ],
     [ "multipliable2", null, [
       [ "Scroom::Utils::Point< double >", "classScroom_1_1Utils_1_1Point.html", null ],
       [ "Scroom::Utils::Rectangle< double >", "classScroom_1_1Utils_1_1Rectangle.html", null ],

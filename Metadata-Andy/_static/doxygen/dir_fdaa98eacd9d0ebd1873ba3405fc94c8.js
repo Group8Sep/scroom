@@ -90,6 +90,7 @@ var dir_fdaa98eacd9d0ebd1873ba3405fc94c8 =
     [ "semaphore.hh", "semaphore_8hh.html", [
       [ "Semaphore", "classScroom_1_1Semaphore.html", "classScroom_1_1Semaphore" ]
     ] ],
+    [ "showmetadata.hh", "showmetadata_8hh.html", "showmetadata_8hh" ],
     [ "showmetadatainterface.hh", "showmetadatainterface_8hh.html", "showmetadatainterface_8hh" ],
     [ "stuff.hh", "stuff_8hh.html", "stuff_8hh" ],
     [ "threadpool.hh", "threadpool_8hh.html", "threadpool_8hh" ],

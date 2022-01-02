@@ -2773,6 +2773,7 @@
     <includes id="interface_8hh" name="interface.hh" local="no" imported="no">scroom/interface.hh</includes>
     <includes id="point_8hh" name="point.hh" local="no" imported="no">scroom/point.hh</includes>
     <includes id="rectangle_8hh" name="rectangle.hh" local="no" imported="no">scroom/rectangle.hh</includes>
+    <includes id="showmetadata_8hh" name="showmetadata.hh" local="no" imported="no">scroom/showmetadata.hh</includes>
     <includes id="tiledbitmaplayer_8hh" name="tiledbitmaplayer.hh" local="no" imported="no">scroom/tiledbitmaplayer.hh</includes>
     <class kind="struct">Scroom::TiledBitmap::BitmapMetaData</class>
     <class kind="class">Scroom::TiledBitmap::OpenTiledBitmapInterface</class>
@@ -2811,6 +2812,13 @@
       <name>to_string</name>
       <anchorfile>namespaceScroom_1_1TiledBitmap.html</anchorfile>
       <anchor>a90b98df77076cf30312ea6e57d3e75d2</anchor>
+      <arglist>(const BitmapMetaData &amp;bmd)</arglist>
+    </member>
+    <member kind="function">
+      <type>Metadata::Metadata</type>
+      <name>to_metadata</name>
+      <anchorfile>namespaceScroom_1_1TiledBitmap.html</anchorfile>
+      <anchor>a57ca2a55cf5fd640d3e3e3e2d59c4a62</anchor>
       <arglist>(const BitmapMetaData &amp;bmd)</arglist>
     </member>
     <member kind="function">
@@ -3088,6 +3096,27 @@
     <filename>semaphore_8hh.html</filename>
     <class kind="class">Scroom::Semaphore</class>
     <namespace>Scroom</namespace>
+  </compound>
+  <compound kind="file">
+    <name>showmetadata.hh</name>
+    <path>/home/runner/work/scroom/scroom/inc/scroom/</path>
+    <filename>showmetadata_8hh.html</filename>
+    <namespace>Scroom</namespace>
+    <namespace>Scroom::Metadata</namespace>
+    <member kind="typedef">
+      <type>std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;</type>
+      <name>Metadata</name>
+      <anchorfile>namespaceScroom_1_1Metadata.html</anchorfile>
+      <anchor>a51350b5aec7cb7add0d90fdeb7ead3eb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>showMetaData</name>
+      <anchorfile>namespaceScroom_1_1Metadata.html</anchorfile>
+      <anchor>a02bfcc791c19437392cb84b49efd568d</anchor>
+      <arglist>(std::string title, Metadata data)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>showmetadatainterface.hh</name>
@@ -3815,6 +3844,58 @@
     <filename>presentationinterface_8cc.html</filename>
     <includes id="presentationinterface_8hh" name="presentationinterface.hh" local="no" imported="no">scroom/presentationinterface.hh</includes>
     <includes id="viewinterface_8hh" name="viewinterface.hh" local="no" imported="no">scroom/viewinterface.hh</includes>
+  </compound>
+  <compound kind="file">
+    <name>showmetadata.cc</name>
+    <path>/home/runner/work/scroom/scroom/libs/scroom/src/</path>
+    <filename>showmetadata_8cc.html</filename>
+    <includes id="showmetadata_8hh" name="showmetadata.hh" local="no" imported="no">scroom/showmetadata.hh</includes>
+    <class kind="struct">Scroom::Metadata::anonymous_namespace{showmetadata.cc}::MetaDataWindowData</class>
+    <namespace>Scroom</namespace>
+    <namespace>Scroom::Metadata</namespace>
+    <namespace>Scroom::Metadata::anonymous_namespace{showmetadata.cc}</namespace>
+    <member kind="function">
+      <type>GtkWidget *</type>
+      <name>gtk_label_with_markup</name>
+      <anchorfile>namespaceScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03.html</anchorfile>
+      <anchor>a8baf0999de5c8e17f5051b7087f90219</anchor>
+      <arglist>(const char *text)</arglist>
+    </member>
+    <member kind="function">
+      <type>GtkWidget *</type>
+      <name>addNewKeyToGrid</name>
+      <anchorfile>namespaceScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03.html</anchorfile>
+      <anchor>a19d8ccee7f35235deb2483d465de5014</anchor>
+      <arglist>(const GtkWidget *grid, GtkWidget *previousKey, const std::string &amp;keyText)</arglist>
+    </member>
+    <member kind="function">
+      <type>GtkWidget *</type>
+      <name>addNewValueToGrid</name>
+      <anchorfile>namespaceScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03.html</anchorfile>
+      <anchor>a7103ae9eb13109a562cb1ebaa74a6531</anchor>
+      <arglist>(const GtkWidget *grid, const std::string &amp;valueText, GtkWidget *key)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addKeyAndValueToSizeGroup</name>
+      <anchorfile>namespaceScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03.html</anchorfile>
+      <anchor>a24a89c6dd6a60001d1e7c00c21204caa</anchor>
+      <arglist>(GtkWidget *key, GtkWidget *value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>on_metadata_destroyed</name>
+      <anchorfile>namespaceScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03.html</anchorfile>
+      <anchor>afaaa35bf934dc1911db8395244289b60</anchor>
+      <arglist>(GtkWidget *, gpointer user_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>showMetaData</name>
+      <anchorfile>namespaceScroom_1_1Metadata.html</anchorfile>
+      <anchor>a02bfcc791c19437392cb84b49efd568d</anchor>
+      <arglist>(std::string title, Metadata data)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>transformpresentation.cc</name>
@@ -4727,6 +4808,13 @@
       <arglist>(const BitmapMetaData &amp;bmd)</arglist>
     </member>
     <member kind="function">
+      <type>Metadata::Metadata</type>
+      <name>to_metadata</name>
+      <anchorfile>namespaceScroom_1_1TiledBitmap.html</anchorfile>
+      <anchor>a57ca2a55cf5fd640d3e3e3e2d59c4a62</anchor>
+      <arglist>(const BitmapMetaData &amp;bmd)</arglist>
+    </member>
+    <member kind="function">
       <type>LayerSpecResult</type>
       <name>RGBBitmap</name>
       <anchorfile>namespaceScroom_1_1TiledBitmap.html</anchorfile>
@@ -4834,6 +4922,7 @@
     <includes id="cairo-helpers_8hh" name="cairo-helpers.hh" local="no" imported="no">scroom/cairo-helpers.hh</includes>
     <includes id="opentiledbitmapinterface_8hh" name="opentiledbitmapinterface.hh" local="no" imported="no">scroom/opentiledbitmapinterface.hh</includes>
     <includes id="pipetteviewinterface_8hh" name="pipetteviewinterface.hh" local="no" imported="no">scroom/pipetteviewinterface.hh</includes>
+    <includes id="showmetadata_8hh" name="showmetadata.hh" local="no" imported="no">scroom/showmetadata.hh</includes>
     <includes id="showmetadatainterface_8hh" name="showmetadatainterface.hh" local="no" imported="no">scroom/showmetadatainterface.hh</includes>
     <includes id="transformpresentation_8hh" name="transformpresentation.hh" local="no" imported="no">scroom/transformpresentation.hh</includes>
     <includes id="tiled-bitmap_8hh" name="tiled-bitmap.hh" local="yes" imported="no">tiled-bitmap.hh</includes>
@@ -11292,6 +11381,24 @@
       <anchorfile>classMetadata.html</anchorfile>
       <anchor>ae849560667461008cb72e83919c20be0</anchor>
       <arglist>()=default</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>Scroom::Metadata::anonymous_namespace{showmetadata.cc}::MetaDataWindowData</name>
+    <filename>structScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03_1_1MetaDataWindowData.html</filename>
+    <member kind="variable">
+      <type>std::string</type>
+      <name>title</name>
+      <anchorfile>structScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03_1_1MetaDataWindowData.html</anchorfile>
+      <anchor>a52cde22d38318913db11aa5a28318978</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Metadata</type>
+      <name>data</name>
+      <anchorfile>structScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03_1_1MetaDataWindowData.html</anchorfile>
+      <anchor>ad9310f6ff27a36b0a59943291287775c</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -19699,13 +19806,6 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>getMap</name>
-      <anchorfile>classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html</anchorfile>
-      <anchor>a685819845bc56fcefedfeee53bf07b70</anchor>
-      <arglist>(std::map&lt; std::string, Scroom::TiledBitmap::BitmapMetaData &gt; bm)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
       <name>setColormap</name>
       <anchorfile>classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html</anchorfile>
       <anchor>a4d639424858716d045683aa789718410</anchor>
@@ -19771,8 +19871,8 @@
       <type>static TiledBitmapPresentation::Ptr</type>
       <name>create</name>
       <anchorfile>classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html</anchorfile>
-      <anchor>ad342babfeae8bd7fbbe4ba4c81513a25</anchor>
-      <arglist>(std::string name_, Scroom::Utils::Rectangle&lt; int &gt; rect_, TiledBitmapInterface::Ptr tbi_, std::map&lt; std::string, std::string &gt; properties_, ColormapHelperBase::Ptr colormapHelper_, PipetteLayerOperations::Ptr pipetteLayerOperation_)</arglist>
+      <anchor>a20c38e97f488672179ad159a2b3221af</anchor>
+      <arglist>(std::string name_, BitmapMetaData bmd_, TiledBitmapInterface::Ptr tbi_, std::map&lt; std::string, std::string &gt; properties_, ColormapHelperBase::Ptr colormapHelper_, PipetteLayerOperations::Ptr pipetteLayerOperation_)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -19813,8 +19913,8 @@
       <type></type>
       <name>TiledBitmapPresentation</name>
       <anchorfile>classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html</anchorfile>
-      <anchor>a9adef95e0e33535f8eae9efbddbaed72</anchor>
-      <arglist>(std::string &amp;&amp;name_, Scroom::Utils::Rectangle&lt; int &gt; &amp;&amp;rect_, TiledBitmapInterface::Ptr &amp;&amp;tbi_, std::map&lt; std::string, std::string &gt; &amp;&amp;properties_, ColormapHelperBase::Ptr &amp;&amp;colormapHelper_, PipetteLayerOperations::Ptr &amp;&amp;pipetteLayerOperation_)</arglist>
+      <anchor>a4a1f60f65225b0e12814eda8f7b13b11</anchor>
+      <arglist>(std::string &amp;&amp;name_, BitmapMetaData &amp;&amp;bmd_, TiledBitmapInterface::Ptr &amp;&amp;tbi_, std::map&lt; std::string, std::string &gt; &amp;&amp;properties_, ColormapHelperBase::Ptr &amp;&amp;colormapHelper_, PipetteLayerOperations::Ptr &amp;&amp;pipetteLayerOperation_)</arglist>
     </member>
     <member kind="variable" protection="private">
       <type>std::string</type>
@@ -19824,10 +19924,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="private">
-      <type>Scroom::Utils::Rectangle&lt; int &gt;</type>
-      <name>rect</name>
+      <type>Scroom::TiledBitmap::BitmapMetaData</type>
+      <name>bmd</name>
       <anchorfile>classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html</anchorfile>
-      <anchor>aca4abc9cf480ae179e3dd255ddc3a705</anchor>
+      <anchor>a3c78f4e5c6b1ed9a2e91bd94042dae0c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="private">
@@ -19870,13 +19970,6 @@
       <name>stuff</name>
       <anchorfile>classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html</anchorfile>
       <anchor>a09f6dc59fbd08bcfb03ca255c0325f94</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="private">
-      <type>std::map&lt; std::string, Scroom::TiledBitmap::BitmapMetaData &gt;</type>
-      <name>bmd</name>
-      <anchorfile>classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html</anchorfile>
-      <anchor>a07444db1a5c99966bc49cdf3c856a3e6</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -23108,6 +23201,7 @@
     <namespace>Scroom::GtkTestHelpers</namespace>
     <namespace>Scroom::MemoryBlobs</namespace>
     <namespace>Scroom::MemoryBlocks</namespace>
+    <namespace>Scroom::Metadata</namespace>
     <namespace>Scroom::Tiff</namespace>
     <namespace>Scroom::TiledBitmap</namespace>
     <namespace>Scroom::Utils</namespace>
@@ -23382,6 +23476,65 @@
     </member>
   </compound>
   <compound kind="namespace">
+    <name>Scroom::Metadata</name>
+    <filename>namespaceScroom_1_1Metadata.html</filename>
+    <namespace>Scroom::Metadata::anonymous_namespace{showmetadata.cc}</namespace>
+    <member kind="typedef">
+      <type>std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;</type>
+      <name>Metadata</name>
+      <anchorfile>namespaceScroom_1_1Metadata.html</anchorfile>
+      <anchor>a51350b5aec7cb7add0d90fdeb7ead3eb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>showMetaData</name>
+      <anchorfile>namespaceScroom_1_1Metadata.html</anchorfile>
+      <anchor>a02bfcc791c19437392cb84b49efd568d</anchor>
+      <arglist>(std::string title, Metadata data)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>Scroom::Metadata::anonymous_namespace{showmetadata.cc}</name>
+    <filename>namespaceScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03.html</filename>
+    <class kind="struct">Scroom::Metadata::anonymous_namespace{showmetadata.cc}::MetaDataWindowData</class>
+    <member kind="function">
+      <type>GtkWidget *</type>
+      <name>gtk_label_with_markup</name>
+      <anchorfile>namespaceScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03.html</anchorfile>
+      <anchor>a8baf0999de5c8e17f5051b7087f90219</anchor>
+      <arglist>(const char *text)</arglist>
+    </member>
+    <member kind="function">
+      <type>GtkWidget *</type>
+      <name>addNewKeyToGrid</name>
+      <anchorfile>namespaceScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03.html</anchorfile>
+      <anchor>a19d8ccee7f35235deb2483d465de5014</anchor>
+      <arglist>(const GtkWidget *grid, GtkWidget *previousKey, const std::string &amp;keyText)</arglist>
+    </member>
+    <member kind="function">
+      <type>GtkWidget *</type>
+      <name>addNewValueToGrid</name>
+      <anchorfile>namespaceScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03.html</anchorfile>
+      <anchor>a7103ae9eb13109a562cb1ebaa74a6531</anchor>
+      <arglist>(const GtkWidget *grid, const std::string &amp;valueText, GtkWidget *key)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addKeyAndValueToSizeGroup</name>
+      <anchorfile>namespaceScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03.html</anchorfile>
+      <anchor>a24a89c6dd6a60001d1e7c00c21204caa</anchor>
+      <arglist>(GtkWidget *key, GtkWidget *value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>on_metadata_destroyed</name>
+      <anchorfile>namespaceScroom_1_1Metadata_1_1anonymous__namespace_02showmetadata_8cc_03.html</anchorfile>
+      <anchor>afaaa35bf934dc1911db8395244289b60</anchor>
+      <arglist>(GtkWidget *, gpointer user_data)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
     <name>Scroom::Tiff</name>
     <filename>namespaceScroom_1_1Tiff.html</filename>
     <class kind="class">Scroom::Tiff::Source</class>
@@ -23461,6 +23614,13 @@
       <name>to_string</name>
       <anchorfile>namespaceScroom_1_1TiledBitmap.html</anchorfile>
       <anchor>a90b98df77076cf30312ea6e57d3e75d2</anchor>
+      <arglist>(const BitmapMetaData &amp;bmd)</arglist>
+    </member>
+    <member kind="function">
+      <type>Metadata::Metadata</type>
+      <name>to_metadata</name>
+      <anchorfile>namespaceScroom_1_1TiledBitmap.html</anchorfile>
+      <anchor>a57ca2a55cf5fd640d3e3e3e2d59c4a62</anchor>
       <arglist>(const BitmapMetaData &amp;bmd)</arglist>
     </member>
     <member kind="function">

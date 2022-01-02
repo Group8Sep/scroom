@@ -1,7 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"functions_vars_q.html":[2,3,2,16],
-"functions_vars_r.html":[2,3,2,17],
 "functions_vars_s.html":[2,3,2,18],
 "functions_vars_t.html":[2,3,2,19],
 "functions_vars_u.html":[2,3,2,20],
@@ -20,8 +18,8 @@ var NAVTREEINDEX10 =
 "global_8hh.html":[3,0,3,0,13],
 "global_8hh.html#a7528222f65ad403ee1a88ff2b56f9fb7":[3,0,3,0,13,0],
 "global_8hh_source.html":[3,0,3,0,13],
-"globals.html":[3,1,0],
 "globals.html":[3,1,0,0],
+"globals.html":[3,1,0],
 "globals_a.html":[3,1,0,1],
 "globals_b.html":[3,1,0,2],
 "globals_c.html":[3,1,0,3],
@@ -142,10 +140,11 @@ var NAVTREEINDEX10 =
 "layerspecforbitmap_8cc.html#a1c8c49cce636d826f4a7426a55ba5aa0":[3,0,4,5,0,6,1],
 "layerspecforbitmap_8cc.html#a22a1bb4f862ef52ed08042515ffca9da":[3,0,4,5,0,6,4],
 "layerspecforbitmap_8cc.html#a2fac0e54aad7e9d259220cf19bc83ac4":[3,0,4,5,0,6,3],
+"layerspecforbitmap_8cc.html#a57ca2a55cf5fd640d3e3e3e2d59c4a62":[3,0,4,5,0,6,6],
 "layerspecforbitmap_8cc.html#a6f47ad908b18e8214e9bc60808ed6466":[3,0,4,5,0,6,5],
-"layerspecforbitmap_8cc.html#a90b98df77076cf30312ea6e57d3e75d2":[3,0,4,5,0,6,8],
-"layerspecforbitmap_8cc.html#a9fd3fb8f5d0079d26686c582e803dc54":[3,0,4,5,0,6,7],
-"layerspecforbitmap_8cc.html#ad48ffa08ebee955f5039811162e0df4a":[3,0,4,5,0,6,6],
+"layerspecforbitmap_8cc.html#a90b98df77076cf30312ea6e57d3e75d2":[3,0,4,5,0,6,9],
+"layerspecforbitmap_8cc.html#a9fd3fb8f5d0079d26686c582e803dc54":[3,0,4,5,0,6,8],
+"layerspecforbitmap_8cc.html#ad48ffa08ebee955f5039811162e0df4a":[3,0,4,5,0,6,7],
 "layerspecforbitmap_8cc.html#ae9bb2ffc268c966862573f2ef383ed7d":[3,0,4,5,0,6,2],
 "libs_2boost-test-helper_2test_2main_8cc.html":[3,0,4,0,1,0],
 "libs_2boost-test-helper_2test_2main_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[3,0,4,0,1,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "memoryblobs_8hh.html":[3,0,3,0,19],
 "memoryblobs_8hh.html#a099d91eabdf7188b170145a09420c53f":[3,0,3,0,19,4],
 "memoryblobs_8hh.html#a261176336ad658e5e754c6d01b972779":[3,0,3,0,19,8],
-"memoryblobs_8hh.html#a2f9b0138bfddef61fcad37357ae398ed":[3,0,3,0,19,6]
+"memoryblobs_8hh.html#a2f9b0138bfddef61fcad37357ae398ed":[3,0,3,0,19,6],
+"memoryblobs_8hh.html#a4e946aed897a1f97c27d5c4154d7b8af":[3,0,3,0,19,7]
 };

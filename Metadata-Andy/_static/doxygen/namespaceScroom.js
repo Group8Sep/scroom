@@ -8,6 +8,7 @@ var namespaceScroom =
     [ "GtkTestHelpers", "namespaceScroom_1_1GtkTestHelpers.html", "namespaceScroom_1_1GtkTestHelpers" ],
     [ "MemoryBlobs", "namespaceScroom_1_1MemoryBlobs.html", "namespaceScroom_1_1MemoryBlobs" ],
     [ "MemoryBlocks", "namespaceScroom_1_1MemoryBlocks.html", "namespaceScroom_1_1MemoryBlocks" ],
+    [ "Metadata", "namespaceScroom_1_1Metadata.html", "namespaceScroom_1_1Metadata" ],
     [ "Tiff", "namespaceScroom_1_1Tiff.html", "namespaceScroom_1_1Tiff" ],
     [ "TiledBitmap", "namespaceScroom_1_1TiledBitmap.html", "namespaceScroom_1_1TiledBitmap" ],
     [ "Utils", "namespaceScroom_1_1Utils.html", "namespaceScroom_1_1Utils" ],
