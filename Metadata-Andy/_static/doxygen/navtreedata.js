@@ -72,19 +72,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "BoostTestTargetsDynamic_8h.html",
-"classChildView.html#abe41bb6680f4e923486f1eb9bab9839e",
-"classHorizontalDrawStrategy.html#a83df0b6bd51072291adbf30a5aec5694",
-"classPluginInformationInterface.html",
-"classScroomInterfaceImpl.html#ac226ed73d5f4b7ce880166b4923e0124",
-"classScroom_1_1MemoryBlocks_1_1Detail_1_1SwapBasedBlockAllocator.html#a91690132ce1797f7054c398e2fe6c4da",
-"classScroom_1_1Utils_1_1Rectangle.html#a4b1bfd88dfb9f4e74ec2410a62b14ab6",
-"classThreadPool_1_1WeakQueue.html#a5f6a2803545db98255cd837f4ab0ae93",
-"classView.html#a3021316c974469f0463d410b2a0b3c77",
-"classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#ae212e34133282a532f5b811e3939d81f",
-"functions_vars_s.html",
-"memoryblobs_8hh.html#a2f9b0138bfddef61fcad37357ae398ed",
-"ruler-tests_8cc.html#a33bae65f7b74d3ced3a592ad689d622d",
-"tiffsource_8hh_source.html"
+"classChildView.html#a9ac3b04d66ee53e1ff8ee916933fe11d",
+"classHorizontalDrawStrategy.html#a5194809d2e6eaaae87e3c0f5eed8f070",
+"classPipetteViewInterface.html#a265ead333d477679e6fbef6a5f7ed116",
+"classScroomInterfaceImpl.html#a3e8a5e572e1df0329737e382521166f9",
+"classScroom_1_1MemoryBlocks_1_1Detail_1_1SwapBasedBlockAllocator.html#a58b97109a7fe67f5ce832ed6cc6e6fde",
+"classScroom_1_1Utils_1_1Rectangle.html#a43102752684fdab60cd76112fe6a43a7",
+"classThreadPool_1_1WeakQueue.html#a505621d98fa3f01d828eb90e8ec23bbd",
+"classView.html#a2089f2c4bd81f6d368370b5716b92565",
+"classanonymous__namespace_02tiledbitmappresentation_8cc_03_1_1TiledBitmapPresentation.html#ad36fe40b3793407726915be296cf3af8",
+"functions_vars_q.html",
+"memoryblobs_8hh.html#a099d91eabdf7188b170145a09420c53f",
+"ruler-tests_8cc.html#a28453ae12af3348f4af4fda3a1faebc2",
+"tiffsource_8hh.html#a00d5531d85940d3394940e7ceb1bc63a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

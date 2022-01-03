@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"classHorizontalDrawStrategy.html#a5194809d2e6eaaae87e3c0f5eed8f070":[2,0,43,4],
+"classHorizontalDrawStrategy.html#a72d3b0cbcee1d7997cfc22173f7c43c3":[2,0,43,0],
 "classHorizontalDrawStrategy.html#a83df0b6bd51072291adbf30a5aec5694":[2,0,43,5],
 "classHorizontalDrawStrategy.html#a8b7409e7a2c96de1a5fe6fdb2d62435d":[2,0,43,1],
 "classHorizontalDrawStrategy.html#a9e9201354fc44a0b6f296e7f74138cea":[2,0,43,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "classPipetteLayerOperations.html#ac2e1230385d4439b30668e66df245485":[2,0,72,0],
 "classPipetteLayerOperations.html#ae4db37c03a87e091fb312f7756da22e0":[2,0,72,2],
 "classPipetteLayerOperations.html#af6270105ef3fb21466ece4c480905540":[2,0,72,1],
-"classPipetteViewInterface.html":[2,0,73],
-"classPipetteViewInterface.html#a265ead333d477679e6fbef6a5f7ed116":[2,0,73,0],
-"classPipetteViewInterface.html#a31fc76e0bb8c9e326b16f6929a47df88":[2,0,73,1]
+"classPipetteViewInterface.html":[2,0,73]
 };

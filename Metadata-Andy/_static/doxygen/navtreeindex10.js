@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"functions_vars_q.html":[2,3,2,16],
+"functions_vars_r.html":[2,3,2,17],
 "functions_vars_s.html":[2,3,2,18],
 "functions_vars_t.html":[2,3,2,19],
 "functions_vars_u.html":[2,3,2,20],
@@ -18,8 +20,8 @@ var NAVTREEINDEX10 =
 "global_8hh.html":[3,0,3,0,13],
 "global_8hh.html#a7528222f65ad403ee1a88ff2b56f9fb7":[3,0,3,0,13,0],
 "global_8hh_source.html":[3,0,3,0,13],
-"globals.html":[3,1,0],
 "globals.html":[3,1,0,0],
+"globals.html":[3,1,0],
 "globals_a.html":[3,1,0,1],
 "globals_b.html":[3,1,0,2],
 "globals_c.html":[3,1,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "measure_8hh_source.html":[3,0,5,2,0,2],
 "memoryblobs_8cc.html":[3,0,4,1,0,2],
 "memoryblobs_8cc.html#a9f1b6c9f67956f08621bb659a79f6535":[3,0,4,1,0,2,0],
-"memoryblobs_8hh.html":[3,0,3,0,19],
-"memoryblobs_8hh.html#a099d91eabdf7188b170145a09420c53f":[3,0,3,0,19,4],
-"memoryblobs_8hh.html#a261176336ad658e5e754c6d01b972779":[3,0,3,0,19,8]
+"memoryblobs_8hh.html":[3,0,3,0,19]
 };

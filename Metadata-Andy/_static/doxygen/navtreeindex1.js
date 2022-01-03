@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"classChildView.html#a9ac3b04d66ee53e1ff8ee916933fe11d":[2,0,15,3],
+"classChildView.html#aac1588838574fb015a14f52394e049cb":[2,0,15,12],
 "classChildView.html#abe41bb6680f4e923486f1eb9bab9839e":[2,0,15,10],
 "classChildView.html#ac02cc478ae940994824652b44e0ff5f4":[2,0,15,15],
 "classChildView.html#ad53ec871927c7e56baab1871cd2711a0":[2,0,15,13],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "classGtkFileFilterListDestroyer.html#a77947f21592b1cf557e4b490114c5a38":[2,0,39,0],
 "classGtkFileFilterListDestroyer.html#a8b415a606d83083198486cc8a70d9b5d":[2,0,39,4],
 "classGtkFileFilterListDestroyer.html#ad533c517085e3505e4f3f2bc0b9253d6":[2,0,39,3],
-"classHorizontalDrawStrategy.html":[2,0,43],
-"classHorizontalDrawStrategy.html#a5194809d2e6eaaae87e3c0f5eed8f070":[2,0,43,4],
-"classHorizontalDrawStrategy.html#a72d3b0cbcee1d7997cfc22173f7c43c3":[2,0,43,0]
+"classHorizontalDrawStrategy.html":[2,0,43]
 };

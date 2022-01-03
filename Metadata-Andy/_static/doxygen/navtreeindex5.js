@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"classScroom_1_1MemoryBlocks_1_1Detail_1_1SwapBasedBlockAllocator.html#a58b97109a7fe67f5ce832ed6cc6e6fde":[2,0,8,7,0,1,0],
+"classScroom_1_1MemoryBlocks_1_1Detail_1_1SwapBasedBlockAllocator.html#a78174c0875d49ce5e8421663bdfafd47":[2,0,8,7,0,1,6],
 "classScroom_1_1MemoryBlocks_1_1Detail_1_1SwapBasedBlockAllocator.html#a91690132ce1797f7054c398e2fe6c4da":[2,0,8,7,0,1,5],
 "classScroom_1_1MemoryBlocks_1_1Detail_1_1SwapBasedBlockAllocator.html#aa6b113bf9e3176551a2bf4ccf1a80744":[2,0,8,7,0,1,1],
 "classScroom_1_1MemoryBlocks_1_1Detail_1_1SwapBasedBlockAllocator.html#ad940b63bbeed2cbab4b8955ccdb32573":[2,0,8,7,0,1,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "classScroom_1_1Utils_1_1Rectangle.html#a3b8d627a36eb56f6f36eea5004591154":[2,0,8,11,16,25],
 "classScroom_1_1Utils_1_1Rectangle.html#a3d2618221702c89e904a995910dd19f5":[2,0,8,11,16,48],
 "classScroom_1_1Utils_1_1Rectangle.html#a3dd77e8e9b2f865301221b251fd12140":[2,0,8,11,16,20],
-"classScroom_1_1Utils_1_1Rectangle.html#a405cfffb11cdb9f2fa5600e2bf15231c":[2,0,8,11,16,51],
-"classScroom_1_1Utils_1_1Rectangle.html#a43102752684fdab60cd76112fe6a43a7":[2,0,8,11,16,44],
-"classScroom_1_1Utils_1_1Rectangle.html#a45f125b53ab806b73092a57132733ded":[2,0,8,11,16,41]
+"classScroom_1_1Utils_1_1Rectangle.html#a405cfffb11cdb9f2fa5600e2bf15231c":[2,0,8,11,16,51]
 };

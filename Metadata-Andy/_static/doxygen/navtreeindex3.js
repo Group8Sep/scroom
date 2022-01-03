@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"classPipetteViewInterface.html#a265ead333d477679e6fbef6a5f7ed116":[2,0,73,0],
+"classPipetteViewInterface.html#a31fc76e0bb8c9e326b16f6929a47df88":[2,0,73,1],
 "classPluginInformationInterface.html":[2,0,75],
 "classPluginInformationInterface.html#a18663b4d0919580d5502bb4a682a9eae":[2,0,75,4],
 "classPluginInformationInterface.html#a1a07f743409718f35d483567902c96fd":[2,0,75,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "classScroomInterfaceImpl.html":[2,0,96],
 "classScroomInterfaceImpl.html#a0619433d662056ef32b8f99d77cb17ee":[2,0,96,6],
 "classScroomInterfaceImpl.html#a21e8dc226005368241f3444cce7b1a81":[2,0,96,0],
-"classScroomInterfaceImpl.html#a3a3f671f0022edcf0221f232fd884437":[2,0,96,3],
-"classScroomInterfaceImpl.html#a3e8a5e572e1df0329737e382521166f9":[2,0,96,2],
-"classScroomInterfaceImpl.html#a776cc57e01b5fb3c3b1b3499c227b85a":[2,0,96,1]
+"classScroomInterfaceImpl.html#a3a3f671f0022edcf0221f232fd884437":[2,0,96,3]
 };

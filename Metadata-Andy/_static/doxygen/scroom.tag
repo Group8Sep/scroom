@@ -1415,8 +1415,15 @@
       <type>void</type>
       <name>on_view_created</name>
       <anchorfile>callbacks_8cc.html</anchorfile>
-      <anchor>a5ac1b33be34d6a38608ccf208179d1ee</anchor>
-      <arglist>(View::Ptr v)</arglist>
+      <anchor>ab216dda22af978bbc755a31acf60f302</anchor>
+      <arglist>(const View::Ptr &amp;v)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>on_presentation_added_to_view</name>
+      <anchorfile>callbacks_8cc.html</anchorfile>
+      <anchor>aeba2cf448752ce6617c03f7dd34ffc7b</anchor>
+      <arglist>(const View::Ptr &amp;v)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -1443,8 +1450,8 @@
       <type>void</type>
       <name>on_new_viewobserver</name>
       <anchorfile>callbacks_8cc.html</anchorfile>
-      <anchor>a333be7a62c93f7e8ca6d054fb7a5c10e</anchor>
-      <arglist>(ViewObserver::Ptr v)</arglist>
+      <anchor>a804275f2177ac14df4106b7701ec0160</anchor>
+      <arglist>(ViewObserver::Ptr viewObserver)</arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static const std::string</type>
@@ -1717,8 +1724,15 @@
       <type>void</type>
       <name>on_view_created</name>
       <anchorfile>callbacks_8hh.html</anchorfile>
-      <anchor>a5ac1b33be34d6a38608ccf208179d1ee</anchor>
-      <arglist>(View::Ptr v)</arglist>
+      <anchor>ab216dda22af978bbc755a31acf60f302</anchor>
+      <arglist>(const View::Ptr &amp;v)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>on_presentation_added_to_view</name>
+      <anchorfile>callbacks_8hh.html</anchorfile>
+      <anchor>aeba2cf448752ce6617c03f7dd34ffc7b</anchor>
+      <arglist>(const View::Ptr &amp;v)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -1738,8 +1752,8 @@
       <type>void</type>
       <name>on_new_viewobserver</name>
       <anchorfile>callbacks_8hh.html</anchorfile>
-      <anchor>a333be7a62c93f7e8ca6d054fb7a5c10e</anchor>
-      <arglist>(ViewObserver::Ptr v)</arglist>
+      <anchor>a804275f2177ac14df4106b7701ec0160</anchor>
+      <arglist>(ViewObserver::Ptr viewObserver)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
